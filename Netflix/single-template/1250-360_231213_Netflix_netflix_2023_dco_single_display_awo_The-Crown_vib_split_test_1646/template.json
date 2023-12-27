@@ -1,0 +1,11 @@
+{
+  "placeholders": {
+    "main_copy": { "type": "text" },
+    "cta_copy": { "type": "text" },
+    "logo": { "type": "image" },
+    "world_click": { "type": "click" },
+    "useVideo": { "type": "text" },
+    "video_src": { "type": "text" },
+    "video_tracker": { "type": "text" }
+  }
+}
