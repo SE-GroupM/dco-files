@@ -1,0 +1,47 @@
+{
+  "id": "108c8a75-3158-458a-af75-f97206569489",
+  "version": "1.2.0",
+  "name": "cewe_980x600_slider",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 600,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "copy_1_text": {
+        "type": "text",
+        "source": "manual"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "copy_1_text": {
+            "value": "copy_1_text"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 988,
+    "name": "Cewe"
+  },
+  "port": 60927
+}
