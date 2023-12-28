@@ -1,0 +1,136 @@
+{
+  "id": "a977a797-3d87-4af7-8ea8-45602f545f4a",
+  "version": "1.2.0",
+  "name": "320x400_v2",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "ctaCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "subCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "bgImage": {
+        "type": "image",
+        "source": "create"
+      },
+      "mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "overCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "copyBeforeCity": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "houseImg": {
+        "type": "image",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "subCopy": {
+            "value": "subCopy"
+          },
+          "bgImage": {
+            "value": ""
+          },
+          "mainCopy": {
+            "value": "mainCopy"
+          },
+          "overCopy": {
+            "value": "overCopy"
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "copyBeforeCity": {
+            "value": "copyBeforeCity"
+          },
+          "logo": {
+            "value": ""
+          },
+          "houseImg": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSDisplay-Medium?v=500",
+        "family": "OBOSDisplay-Medium",
+        "variant": "500"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-Medium?v=500",
+        "family": "OBOSText-Medium",
+        "variant": "500"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-Regular?v=400",
+        "family": "OBOSText-Regular",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSDisplay?v=700",
+        "family": "OBOSDisplay-Bold",
+        "variant": "700"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1024,
+    "name": "OBOS"
+  },
+  "port": 52423,
+  "folders": {
+    "selectedFolderId": 2430
+  }
+}
