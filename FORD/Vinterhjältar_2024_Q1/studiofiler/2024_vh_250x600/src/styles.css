@@ -50,7 +50,6 @@ html, body {
   user-select: none;
 }
 
-
 #bg_image {
   position: absolute;
   width: 250px;
@@ -63,7 +62,6 @@ html, body {
   position: absolute; 
   color: rgb(255, 255, 255);
   left: 19px;
-  opacity: 1;
   font-size: 34px;
   line-height: 36px;
   text-align: left;
@@ -77,7 +75,6 @@ html, body {
   font-family: "FordAntennaExtraCond-Black";
   position: absolute;
   left: 19px;
-  opacity: 0;
   font-size: 34px;
   line-height: 36px;
   text-align: left;
@@ -127,7 +124,7 @@ html, body {
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 19.92px;
-  line-height: 19px;
+  line-height: 20px;
   width: 215px;
   height: 70.49px;
   left: 26px;
@@ -199,8 +196,8 @@ html, body {
   color: rgb(255, 255, 255);
   opacity: 1;
   font-family: FordAntennaCond-Light;
-  top: 45px;
-  line-height: 15px;
+  top: 43px;
+  line-height: 17px;
   width: 115px;
   height: 113px;
   text-align: center;

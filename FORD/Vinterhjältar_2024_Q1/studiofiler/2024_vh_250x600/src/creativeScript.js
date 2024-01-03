@@ -54,22 +54,18 @@ var mt = new TimelineMax({repeat: -1});
 //gsap.set("#splash", { opacity: 0 });
 
 if (use_one_headline_bool){
-  mt.to("#frame_1_copy, #subCopy_static", {opacity: 1, duration: 1.5})
+  mt.to("#frame_1_copy, #subCopy_static", {opacity: 1, duration: 1.1})
  // .to("#subCopy_static", {opacity: 1, duration: 1.5})
-  // .to("#splash", {scale: 1.1, duration: 1})
-  // .to("#splash", {scale: 1, duration: 1})
-  .to("#splash", {
-    scaleX: 1.07,
-    scaleY: 1.07, 
-    duration: 0.5,
-    ease: "back.out(1.7)" 
-    })
-  .to("#splash", {
-    scaleX: 1,
-    scaleY: 1,
-    duration: 0.5
-  })
-
+ .to("#splash", {scale: 1, duration: 0.2, ease: Power2.easeInOut})
+ .to("#splash", {
+     scale: 1.2,
+     left: 103,
+     duration: 0.3,
+     repeat: 1,
+     yoyo: true,
+     ease: Power2.easeInOut
+ })
+ 
   .to("#frame_1_copy,#subCopy_static", {opacity: 0, duration: 0.5, delay: 1.5})
   
   .to("#frame_1_copy,#subCopy_static", {opacity: 1, duration: 0.5})
@@ -83,8 +79,6 @@ if (use_one_headline_bool){
     .to("#frame_2_copy", {opacity: 0, duration: 0.5, delay: 1.5})
     .to("#frame_1_copy", {opacity: 1, duration: 0.5});
 }
-
-
 
 // end of code
 })
