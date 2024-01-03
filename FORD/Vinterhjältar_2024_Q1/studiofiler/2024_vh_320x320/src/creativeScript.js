@@ -56,9 +56,15 @@ var mt = new TimelineMax({repeat: -1});
 if (use_one_headline_bool){
   mt.to("#frame_1_copy, #subCopy_static", {opacity: 1, duration: 1.1})
  // .to("#subCopy_static", {opacity: 1, duration: 1.5})
-   .to("#splash", {scale: 1, duration: 0.1})
-   .to("#splash", {scale: 0.4, left: 207, duration: 0.2, scale: 1.2, repeat: 1, yoyo: true, ease: Power1.easeInOut})
-  
+ .to("#splash", {scale: 1, duration: 0.2, ease: Power2.easeInOut})
+ .to("#splash", {
+     scale: 1.2,
+     left: 207,
+     duration: 0.2,
+     repeat: 1,
+     yoyo: true,
+     ease: Power2.easeInOut
+ })
   .to("#frame_1_copy,#subCopy_static", {opacity: 0, duration: 0.5, delay: 1.5})
   
   .to("#frame_1_copy,#subCopy_static", {opacity: 1, duration: 0.5})

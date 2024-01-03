@@ -60,7 +60,7 @@ if (use_one_headline_bool){
  .to("#splash", {
      scale: 1.2,
      left: 103,
-     duration: 0.3,
+     duration: 0.2,
      repeat: 1,
      yoyo: true,
      ease: Power2.easeInOut
