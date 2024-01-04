@@ -3,14 +3,10 @@
   * @Owner Name Developer
   * @Date
 */
-
 window.addEventListener('lemonpi.content/ready', event => {
   console.clear();
   const content = event.detail.content
   const source = event.detail.source
-
-
-  //console.log(content)
 
   var subCopy = $('#subCopy_static');
   subCopy.append(content.subCopy_static.value)
@@ -26,16 +22,13 @@ window.addEventListener('lemonpi.content/ready', event => {
   if (use_one_headline == 1 || use_one_headline == 'yes'){
     use_one_headline_bool = true;
   }
-
   $('#splash_text').html(content.splash_text.value);
-
   $('#splash_img').css({
     content: 'url('+ content.splash.value + ')',
     'background-position': 'center center',
     'position' : 'absolute',
     'background-size': 'contain',
   });
-
 TweenMax.set('#legal_bg', {autoAlpha:0});
 
 $('#legal_btn')
@@ -45,11 +38,9 @@ $('#legal_btn')
 function onUserEnter() {
   TweenMax.fromTo('#legal_bg', 0.2, { autoAlpha: 0}, { autoAlpha: 1})
 }
-
 function onUserLeave() {
   TweenMax.fromTo('#legal_bg', 0.2, { autoAlpha: 1}, { autoAlpha: 0})
 }
-
 var mt = new TimelineMax({repeat: -1});
 //gsap.set("#splash", { opacity: 0 });
 
@@ -79,15 +70,4 @@ if (use_one_headline_bool){
     .to("#frame_1_copy", {opacity: 1, duration: 0.5});
 }
 
-
-
-// end of code
 })
-  // Do stuff
-/*
-
-// Callback to retrieve the adset data
-lemonpi.subscribe(function callback(content) {
-  //code here
-});
-  */

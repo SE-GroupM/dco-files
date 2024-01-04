@@ -62,28 +62,25 @@ html, body {
   position: absolute; 
   color: rgb(255, 255, 255);
   left: 19px;
-  font-size: 34px;
-  line-height: 36px;
+  font-size: 38px;
+  line-height: 40px;
   text-align: left;
   width: 216px;
   height: 81.12px;
-  transform: translate3d(5px, 247px, 0px);
+  transform: translate3d(5px, 244px, 0px);
 }
-
 #frame_2_copy {
   color: #fff;
   font-family: "FordAntennaExtraCond-Black";
   position: absolute;
   left: 19px;
-  font-size: 34px;
-  line-height: 36px;
+  font-size: 38px;
+  line-height: 40px;
   text-align: left;
   width: 216px;
   height: 81.12px;
-  transform: translate3d(5px, 247px, 0px);
+  transform: translate3d(5px, 244px, 0px);
 }
-
-
 #cta_text {
   position: absolute;
   text-align: center;
@@ -97,7 +94,7 @@ html, body {
   font-size: 12px;
   width: 99px;
   height: 28.89px;
-  top: 448px;
+  top: 466px;
 }
 #cta_button {
   position: absolute;
@@ -108,7 +105,7 @@ html, body {
   line-height: 100px;
   color: rgb(255, 255, 255);
   left: 24px;
-  top: 454px;
+  top: 472px;
   width: 101px;
   height: 31.44px;
 }
@@ -137,9 +134,8 @@ html, body {
   width: 183px;
   height: 33px;
   left: 57px;
-  top: 518px;
+  top: 523px;
 }
-
 #af_image {
   position: absolute;
   width: 50%;
@@ -147,7 +143,6 @@ html, body {
   left: 50%;
   top: 515px;
   transform: translate(-50%, -50%);
-
 }
 #legal_btn {
   opacity: 0.6;
@@ -162,7 +157,6 @@ html, body {
   top: 575px;
 }
 #legal_txt {
-  
   color: rgb(255, 255, 255);
   font-family: "FordAntennaCond-Regular";
   font-size: 14px;
@@ -176,7 +170,6 @@ html, body {
   left: 13px;
   top: 37px;
 }
-
 #legal_bg {
   width: 300px;
   height: 600px;
