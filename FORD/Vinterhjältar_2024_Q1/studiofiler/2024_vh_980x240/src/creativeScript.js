@@ -79,13 +79,4 @@ if (use_one_headline_bool){
     .to("#frame_1_copy", {opacity: 1, duration: 0.5});
 }
 
-// end of code
 })
-  // Do stuff
-/*
-
-// Callback to retrieve the adset data
-lemonpi.subscribe(function callback(content) {
-  //code here
-});
-  */

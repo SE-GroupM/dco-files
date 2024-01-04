@@ -9,9 +9,6 @@ window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content
   const source = event.detail.source
 
-
-  //console.log(content)
-
   var subCopy = $('#subCopy_static');
   subCopy.append(content.subCopy_static.value)
   
@@ -51,11 +48,11 @@ function onUserLeave() {
 }
 
 var mt = new TimelineMax({repeat: -1});
-//gsap.set("#splash", { opacity: 0 });
+
 
 if (use_one_headline_bool){
   mt.to("#frame_1_copy, #subCopy_static", {opacity: 1, duration: 1.1})
- // .to("#subCopy_static", {opacity: 1, duration: 1.5})
+
  .to("#splash", {scale: 1, duration: 0.2, ease: Power2.easeInOut})
  .to("#splash", {
      scale: 1.2,
@@ -79,15 +76,4 @@ if (use_one_headline_bool){
     .to("#frame_1_copy", {opacity: 1, duration: 0.5});
 }
 
-
-
-// end of code
 })
-  // Do stuff
-/*
-
-// Callback to retrieve the adset data
-lemonpi.subscribe(function callback(content) {
-  //code here
-});
-  */

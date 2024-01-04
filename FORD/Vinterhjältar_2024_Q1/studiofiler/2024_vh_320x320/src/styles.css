@@ -111,9 +111,9 @@ html, body {
   height: 65.9px;
   width: 254px;
   left: 18px;
-  font-size: 16px;
-  line-height: 18px;
-  top: 207px;
+  font-size: 15.5px;
+  line-height: 17px;
+  top: 195px;
 
 }
 #logo_image {
@@ -137,9 +137,10 @@ html, body {
     width: 50px;
     height: 18px;
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     left: 273px;
     top: 7px;
+    opacity: 76%;
 }
 #legal_txt {
   color: rgb(255, 255, 255);
@@ -174,7 +175,7 @@ html, body {
   color: rgb(255, 255, 255);
   opacity: 1;
   font-family: FordAntennaCond-Light;
-  top: 31px;
+  top: 28px;
   line-height: 15px;
   width: 88px;
   height: 113px;
