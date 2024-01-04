@@ -233,12 +233,17 @@ function onLemonpiReady(cb) {
               oldPlayerDiv.remove();
   
               // build a new video player with the new CURRENT videoSrc
-              var player = new SeenthisPlayer('.player', newTitleContent.video_src.value, videoTracker, options); 
+              var player = new SeenthisPlayer('.player', newTitleContent.video_src.value, newTitleContent.video_tracker.value, options); 
   
               // BEST PRACTISE is to use this code below and load the new src on input and play it. //JOOS
               //videoPlayer.src = newTitleContent;
               //videoPlayer.load(); // Needed to load the new source
               //videoPlayer.play();
+              //Options for video script
+            var options = {
+              loop: true,
+              loopCount: 1,
+          };
           } else {
               console.error("Video player not found");
           }

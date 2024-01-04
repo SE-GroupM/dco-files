@@ -28,7 +28,7 @@
     -webkit-user-select: none;
     user-select: none;
   }
-  
+  /* Container class from Figma */
   .Frame_980X240Multi {
     width: 980px;
     height: 240px;
@@ -40,7 +40,7 @@
     margin: 0;
     box-sizing: border-box;
   }
-  
+  /* CTA copy */
   #cta_copy {
     display: flex;
     width: 120px;
@@ -62,7 +62,6 @@
     background-color: #e50914;
     opacity: 0;
   }
-  
   /*Added class for player*/
   .player {
     position: absolute;
@@ -70,13 +69,14 @@
     height: 240px;
     top: 0px;
     left: 0px;
+    background-color: black;
   }
-  
+  /* Title image */
   #title_image {
     position: relative;
     display: block;
   }
-  
+  /* Right panel container */
   #panel_container {
     width: 529px;
     height: 240px;
@@ -91,41 +91,7 @@
     box-sizing: border-box;
     z-index: 0;
   }
-  #worldClick {
-    width: 529px;
-    height: 240px;
-    display: block;
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    left: 0px;
-    top: 0px;
-    box-sizing: border-box;
-    cursor: pointer;
-    z-index: 3;
-    
-  }
-  #clickAreaLEFT {
-    z-index: 1;
-    position: absolute;
-    width: 450px;
-    height: 240px;
-  }
-  
-  #clickArea {
-    z-index: 1;
-    clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 4% 43%, 96% 43%, 96% 93%, 4% 92%, 2% 100%, 100% 100%, 100% 0%);
-    position: absolute;
-    width: 100%;
-    height: 240px;
-  }
-  
-  .clickable {
-    /* Common styles for clickable items */
-    cursor: pointer;
-    /*margin: 10px;*/
-  }
-  
+   /* Title covers on right panel */
   .covers {
     width: 529px;
     height: 110px;
@@ -141,7 +107,16 @@
     /* top: 80px; */
     box-sizing: border-box;
   }
-  
+  /* Title covers hover state */
+  #covers img:hover {
+    cursor: pointer;
+    border: 1px solid rgb(44, 44, 44);
+    transition: transform 0.5s;
+    transform: scale(1.125);
+    /* Shadow styles */
+    box-shadow: 0 4px 8px rgba(97, 97, 97,97);
+  }
+  /* Copy on right panel */
   #main_copy {
     width: 529px;
     height: 18px;
@@ -157,6 +132,7 @@
     left: 451px;
     top: 20px;
   }
+/* Logo on right panel */
   #logo_big {
     z-index: 1;
     height: 28px;
@@ -164,12 +140,40 @@
     top:200px;
     position: absolute;
   }
-  
-  #covers img:hover {
+
+  /* World click area */
+  #worldClick {
+    width: 529px;
+    height: 240px;
+    display: block;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
     cursor: pointer;
-    border: 1px solid rgb(44, 44, 44);
-    transition: transform 0.5s;
-    transform: scale(1.125);
-    /* Shadow styles */
-    box-shadow: 0 4px 8px rgba(97, 97, 97,97);
+    z-index: 3;
   }
+   /* World click area */
+  #clickAreaLEFT {
+    z-index: 1;
+    position: absolute;
+    width: 450px;
+    height: 240px;
+  }
+  /* Click area */
+  #clickArea {
+    z-index: 1;
+    clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 4% 43%, 96% 43%, 96% 93%, 4% 92%, 2% 100%, 100% 100%, 100% 0%);
+    position: absolute;
+    width: 100%;
+    height: 240px;
+  }
+  
+  .clickable {
+    /* Common styles for clickable items */
+    cursor: pointer;
+    /*margin: 10px;*/
+  }
+  
