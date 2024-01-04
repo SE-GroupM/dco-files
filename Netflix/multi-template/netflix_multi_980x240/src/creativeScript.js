@@ -206,8 +206,9 @@ function onLemonpiReady(cb) {
                     'height': '240px',
                     'top': '0px',
                     'left': '0px',
-                    'position': 'absolute',
                     'display': 'block',
+                    'background-position': 'center right',
+                    'background-size': 'cover'
                 }
             }).appendTo(leftImageContainer);
             // select the first slot in array from the beginning
@@ -256,8 +257,9 @@ function onLemonpiReady(cb) {
                   'height': '240px',
                   'top': '0px',
                   'left': '0px',
-                  'position': 'absolute',
                   'display': 'block',
+                  'background-position': 'center right',
+                  'background-size': 'cover'
               }
           }).appendTo(leftImageContainer);
         
