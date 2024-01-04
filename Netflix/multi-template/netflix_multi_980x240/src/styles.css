@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  #creative_container {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .Frame_980X240Multi {
+    width: 980px;
+    height: 240px;
+    background: #FFF;
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #cta_copy {
+    display: flex;
+    width: 120px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Netflix Sans Medium";
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    line-height: normal;
+    position: fixed;
+    left: 745px;
+    top: 200px;
+    z-index: 100;
+    background-color: #e50914;
+    opacity: 0;
+  }
+  
+  /*Added class for player*/
+  .player {
+    position: absolute;
+    width: 451px;
+    height: 240px;
+    top: 0px;
+    left: 0px;
+  }
+  
+  #title_image {
+    position: relative;
+    display: block;
+  }
+  
+  #panel_container {
+    width: 529px;
+    height: 240px;
+    background: #000;
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 451px;
+    top: 0px;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+  #worldClick {
+    width: 529px;
+    height: 240px;
+    display: block;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 3;
+    
+  }
+  #clickAreaLEFT {
+    z-index: 1;
+    position: absolute;
+    width: 450px;
+    height: 240px;
+  }
+  
+  #clickArea {
+    z-index: 1;
+    clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 4% 43%, 96% 43%, 96% 93%, 4% 92%, 2% 100%, 100% 100%, 100% 0%);
+    position: absolute;
+    width: 100%;
+    height: 240px;
+  }
+  
+  .clickable {
+    /* Common styles for clickable items */
+    cursor: pointer;
+    /*margin: 10px;*/
+  }
+  
+  .covers {
+    width: 529px;
+    height: 110px;
+    background: #000;
+    display: block;
+    position: fixed;
+    /* use hidden if covers should remain inside covers-class */
+    /* overflow: hidden; */
+    padding: 0;
+    margin: 0;
+    left: 451px;
+    top: 80px;
+    /* top: 80px; */
+    box-sizing: border-box;
+  }
+  
+  #main_copy {
+    width: 529px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    /* Change between Regular, Medium or Bold */
+    font-family: "Netflix Sans Regular";
+    line-height: normal;
+    position: fixed;
+    left: 451px;
+    top: 20px;
+  }
+  #logo_big {
+    z-index: 1;
+    height: 28px;
+    left: 570px;
+    top:200px;
+    position: absolute;
+  }
+  
+  #covers img:hover {
+    cursor: pointer;
+    border: 1px solid rgb(44, 44, 44);
+    transition: transform 0.5s;
+    transform: scale(1.125);
+    /* Shadow styles */
+    box-shadow: 0 4px 8px rgba(97, 97, 97,97);
+  }

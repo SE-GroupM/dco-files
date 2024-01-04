@@ -1,0 +1,127 @@
+{
+  "id": "d7dc41a4-f03d-46d8-b6a5-eb049276d7a8",
+  "version": "1.2.0",
+  "name": "multi_980x240_test",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "main_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_small": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo_big": {
+        "type": "image",
+        "source": "create"
+      },
+      "world_click": {
+        "type": "click",
+        "source": "create"
+      },
+      "amountOfVisibleTitles": {
+        "type": "text",
+        "source": "create"
+      },
+      "leftPositionsOfCovers": {
+        "type": "text",
+        "source": "create"
+      },
+      "leftMarginsOfCovers": {
+        "type": "text",
+        "source": "create"
+      },
+      "useVideo": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "main_copy": {
+            "value": "main_copy"
+          },
+          "cta_copy": {
+            "value": "cta_copy"
+          },
+          "logo_small": {
+            "value": ""
+          },
+          "logo_big": {
+            "value": ""
+          },
+          "world_click": {
+            "value": ""
+          },
+          "amountOfVisibleTitles": {
+            "value": "amountOfVisibleTitles"
+          },
+          "leftPositionsOfCovers": {
+            "value": "leftPositionsOfCovers"
+          },
+          "leftMarginsOfCovers": {
+            "value": "leftMarginsOfCovers"
+          },
+          "useVideo": {
+            "value": "useVideo"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1152,
+        "url": "https://assets.lemonpi.io/a/font/1152/Netflix+Sans+Medium?v=500",
+        "family": "Netflix Sans Medium",
+        "variant": "500"
+      },
+      {
+        "advertiserId": 1152,
+        "url": "https://assets.lemonpi.io/a/font/1152/Netflix+Sans+Bold?v=700",
+        "family": "Netflix Sans Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1152,
+        "url": "https://assets.lemonpi.io/a/font/1152/Netflix+Sans?v=400",
+        "family": "Netflix Sans",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1152,
+    "name": "Netflix"
+  },
+  "port": 59636
+}
