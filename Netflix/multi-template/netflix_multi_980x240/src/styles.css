@@ -114,7 +114,7 @@
     transition: transform 0.5s;
     transform: scale(1.125);
     /* Shadow styles */
-    box-shadow: 0 4px 8px rgba(97, 97, 97,97);
+    box-shadow: 0 4px 8px rgba(97, 97, 97,97); 
   }
   /* Copy on right panel */
   #main_copy {

@@ -137,7 +137,7 @@ function onLemonpiReady(cb) {
       //coverContainer.style.left = leftValueForTitles +'px'; // Adjust the spacing as needed
       imgElement.style.width = widthCover+'px';
       imgElement.style.height =heigthCover+'px';
-      imgElement.style.paddingRight='8px';
+      imgElement.style.marginRight='8px';
   
       // Append the img element to the image container
       imageContainer.appendChild(imgElement);
@@ -167,7 +167,7 @@ function onLemonpiReady(cb) {
             //coverContainer.style.left = leftValueForTitles +'px'; // Adjust the spacing as needed
             imgElement.style.width = widthCover+'px';
             imgElement.style.height =heigthCover+'px';
-            imgElement.style.paddingRight='8px';
+            imgElement.style.marginRight='8px';
   
             // Append the img element to the image container
             imageContainer.appendChild(imgElement);
@@ -202,13 +202,11 @@ function onLemonpiReady(cb) {
                 css: {
                     content: 'url('+ titles[0].title_cover_2.value + ')',
                     'position': 'absolute',
-                    'width': '451px',
+                    'width': 'auto',
                     'height': '240px',
                     'top': '0px',
                     'left': '0px',
                     'display': 'block',
-                    'background-position': 'center right',
-                    'background-size': 'cover'
                 }
             }).appendTo(leftImageContainer);
             // select the first slot in array from the beginning
@@ -258,13 +256,11 @@ function onLemonpiReady(cb) {
               css: {
                   content: 'url('+ newTitleContent.title_cover_2.value + ')',
                   'position': 'absolute',
-                  'width': '451px',
+                  'width': 'auto',
                   'height': '240px',
                   'top': '0px',
                   'left': '0px',
                   'display': 'block',
-                  'background-position': 'center right',
-                  'background-size': 'cover'
               }
           }).appendTo(leftImageContainer);
         
