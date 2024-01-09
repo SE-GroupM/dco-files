@@ -1,0 +1,36 @@
+{
+    "2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1": [{
+        "_id": 0,
+        "Unique_ID": "1",
+        "Report_Label": "Sjomatradet_Godfisk_320x400_Skalldyr",
+        "Report_Dynamic_Label": "Sjomatradet_Godfisk_320x400_Skalldyr",
+        "Line_item_ID": ["19143076", "19143077"],
+        "Background_Color": "rgb(252, 212, 171)",
+        "Headline_Text": "Nå er skalldyr på sitt beste!",
+        "Body_Text": "Visste du at krabbe, hummer og blåskjell er aller best om høsten?",
+        "CTA_Text": "Les mer",
+        "CTA_Background": "rgb(0, 0, 0)",
+        "Hero_Image": {
+            "Url": "https://s0.2mdn.net/creatives/assets/4689974/1skalldyr.jpg"
+        },
+        "Tag_Text": "I sesong",
+        "Tag_Background": "#EF7D71",
+        "Impressions_Tracker": {
+            "Url": "https://s0.2mdn.net/creatives/assets/4689974/img_impressions_tracker.png"
+        },
+        "Destination_URL": {
+            "Url": "https://godfisk.no/oppskrifter/reker/skalldyrfat/"
+        },
+        "Active": true,
+        "Default": false,
+        "Start_date": {
+            "RawValue": "11/1/2022",
+            "UtcValue": 1667286000000
+        },
+        "End_date": {
+            "RawValue": "11/7/2022",
+            "UtcValue": 1667808000000
+        },
+        "CM_Campaign_ID": ""
+    }]
+}
