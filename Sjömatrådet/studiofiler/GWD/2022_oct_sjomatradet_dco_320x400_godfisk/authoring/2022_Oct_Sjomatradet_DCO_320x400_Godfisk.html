@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta name="gwd:studio-creative-association" content="acct=60011938;adv=60136544;camp=60354412;cr=62530200;assets={90816423,90815901,90319243,90815910,90815904,94977176,};">
+  <meta name="gwd:studio-creative-association" content="acct=60011938;adv=60136544;camp=60354412;cr=62531244;assets={90815910,90815901,95050125,90319243,90815904,90816423,};">
   <meta charset="utf-8">
   <meta name="generator" content="Google Web Designer 15.3.0.0828">
   <meta name="template" content="Banner 3.0.0">
@@ -95,6 +95,7 @@
       opacity: 1;
       left: -7px;
       top: -23px;
+      transform: scale3d(1, 1, 1);
     }
     .gwd-svg-10mj {
       position: absolute;
@@ -166,6 +167,19 @@
       left: 0px;
       top: 0px;
     }
+    @keyframes gwd-gen-4yt3gwdanimation_gwd-keyframes {
+      0% {
+        transform: scale3d(1, 1, 1);
+        animation-timing-function: linear;
+      }
+      100% {
+        transform: scale3d(1.1, 1.1, 1);
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-4yt3gwdanimation {
+      animation: 5s linear 0s 1 normal forwards running gwd-gen-4yt3gwdanimation_gwd-keyframes;
+    }
   </style>
   <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
   <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
@@ -215,22 +229,43 @@
     Enabler.setDevDynamicContent(devDynamicContent);
   </script>
   <script type="text/javascript" src="gwd-dynamic-binders.js" gwd-dynamic-binder-runtime=""></script>
+  <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+  <script type="text/javascript" gwd-events="handlers">
+    gwd.auto_Page1Event_1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.gotoAndPlayNTimes('page1', 'start', 5, 'counter');
+    };
+  </script>
+  <script type="text/javascript" gwd-events="registration">
+    // Support code for event handling in Google Web Designer
+    // This script block is auto-generated. Please do not edit!
+    gwd.actions.events.registerEventHandlers = function(event) {
+      gwd.actions.events.addHandler('page1', 'event-1', gwd.auto_Page1Event_1, false);
+      gwd.actions.timeline.captureAnimationEnd(document.body);
+    };
+    gwd.actions.events.deregisterEventHandlers = function(event) {
+      gwd.actions.events.removeHandler('page1', 'event-1', gwd.auto_Page1Event_1, false);
+      gwd.actions.timeline.releaseAnimationEnd(document.body);
+    };
+    document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
+    document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
+  </script>
 </head>
 
 <body>
   <gwd-text-helper id="gwd-text-helper_1" fit-font-size-for-selector="[data-gwd-fit-font-size],[gwd-fitting-truncate]" data-gwd-fit-font-size="false"></gwd-text-helper>
-  <gwd-gpa-data-provider id="gpa-data-provider" gwd-schema-id="10794826" is-custom-schema="" network-schema-id="" account-id="60001872" account-name="Mstudio Sweden" advertiser-id="60136544" advertiser-name="Sjømatrådet - NO" profile-id="10794826" profile-name="2022_october_godfisk_display_dco"></gwd-gpa-data-provider>
+  <gwd-gpa-data-provider id="gpa-data-provider" gwd-schema-id="10794826" is-custom-schema="" network-schema-id="" account-id="60011938" account-name="" advertiser-id="60136544" advertiser-name="" profile-id="0" profile-name=""></gwd-gpa-data-provider>
   <gwd-data-binder id="gwd-data-binder_1"></gwd-data-binder>
   <gwd-google-ad id="gwd-ad" polite-load="" data-provider="gpa-data-provider">
     <gwd-metric-configuration>
       <gwd-metric-event source="Destination_URL" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
     </gwd-metric-configuration>
     <gwd-pagedeck class="gwd-page-container" id="pagedeck">
-      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-1azk" data-gwd-width="320px" data-gwd-height="400px">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-1azk" data-gwd-width="320px" data-gwd-height="400px" data-gwd-animation-labels="start,0">
         <div class="gwd-page-content gwd-page-size gwd-div-1r0f">
           <gwd-image id="backup" source="assets/320x400.jpg" scaling="stretch" class="gwd-image-yf57" data-gwd-tl-locked="" data-gwd-tl-hidden=""></gwd-image>
           <gwd-image id="Impressions_Tracker" source="assets/img_impressions_tracker.png" scaling="stretch" class="gwd-image-1h6u" bind-source="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Impressions_Tracker.Url"></gwd-image>
-          <gwd-image id="Hero_Image" source="assets/hero_skalldyr.jpg" scaling="stretch" class="gwd-image-m9sj" bind-source="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Hero_Image.Url"></gwd-image>
+          <gwd-image id="Hero_Image" source="assets/hero_skalldyr.jpg" scaling="stretch" class="gwd-image-m9sj gwd-gen-4yt3gwdanimation" bind-source="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Hero_Image.Url"></gwd-image>
           <svg data-gwd-shape="rectangle" class="gwd-rect-1hnd" id="bg" bind-style-background-color="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Background_Color"></svg>
           <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2617.4 656.8" preserveAspectRatio="none" class="gwd-svg-10mj">
             <style type="text/css">
@@ -266,9 +301,10 @@
 	l-1.3-6.7c-25.4,4.7-38.1-9.4-38.1-37.4V204.1l-4.7-0.7c-22.7,14.7-54.1,20-112.2,20h-42.8v-56.7c0-80.8,10.7-101.5,28.1-112.9v-6.7
 	c-56.8,4-113.6,47.4-113.6,136.3v40.1h-42.1v16h42.1v370.1L1055.9,610.3z"></path>
           </svg>
-          <span class="gwd-p-h06t" id="Headline_Text" data-gwd-fit-font-size="" gwd-min-font-size-px="6" style="" bind-html="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Headline_Text">Nå er skalldyr på sitt beste!</span>
+          <span class="gwd-p-h06t" id="Headline_Text" data-gwd-fit-font-size="" gwd-min-font-size-px="6" bind-html="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Headline_Text" bind-style-color="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Tag_Background">Nå er skalldyr på sitt beste!</span>
           <span class="gwd-p-18ec" id="CTA_Text" style="text-align: center; justify-content: center; align-items: center; display: flex;" data-gwd-fit-font-size="" gwd-min-font-size-px="6" bind-html="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.CTA_Text" bind-style-background-color="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.CTA_Background">Les mer</span>
           <gwd-taparea id="Destination_URL" class="gwd-taparea-1s3p" bind-exit-override-url="2022octobersjomatradetgodfiskdisplayDCOFeed__Sheet1.0.Destination_URL.Url"></gwd-taparea>
+          <div class="gwd-animation-event event-1-animation" data-event-name="event-1" data-event-time="5000"></div>
         </div>
       </gwd-page>
     </gwd-pagedeck>
