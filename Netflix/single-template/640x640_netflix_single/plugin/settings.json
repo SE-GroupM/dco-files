@@ -1,0 +1,116 @@
+{
+  "id": "c7f17664-8d8c-4753-a865-5eecea0218ab",
+  "version": "1.3.0",
+  "name": "640x640_netflix_single",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 640,
+        "height": 640,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 640,
+        "height": 640
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "main_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "world_click": {
+        "type": "click",
+        "source": "create"
+      },
+      "useVideo": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_src": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_tracker": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "main_copy": {
+            "value": "main_copy"
+          },
+          "cta_copy": {
+            "value": "cta_copy"
+          },
+          "logo": {
+            "value": ""
+          },
+          "world_click": {
+            "value": ""
+          },
+          "useVideo": {
+            "value": "useVideo"
+          },
+          "video_src": {
+            "value": "video_src"
+          },
+          "video_tracker": {
+            "value": "video_tracker"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1152,
+        "url": "https://assets.lemonpi.io/a/font/1152/Netflix+Sans?v=400",
+        "family": "Netflix Sans",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 1152,
+        "url": "https://assets.lemonpi.io/a/font/1152/Netflix+Sans+Bold?v=700",
+        "family": "Netflix Sans Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1152,
+        "url": "https://assets.lemonpi.io/a/font/1152/Netflix+Sans+Medium?v=500",
+        "family": "Netflix Sans Medium",
+        "variant": "500"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1152,
+    "name": "Netflix"
+  },
+  "folders": {
+    "selectedFolderId": 2682
+  },
+  "port": 61332
+}
