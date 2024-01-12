@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;  
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+
+/* Body of banner */
+.Frame_640x640Multi {
+  width: 640px;
+  height: 640px;
+  background: #000;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Video player div */
+.player {
+  position: absolute;
+  width: 640px;
+  height: 320px;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+  margin-bottom: 200px;
+}
+
+/* Panel container flex div */
+.panel_container {
+  position: absolute;
+  width: 640px;
+  height: 320;
+  top: 338px;
+  bottom: 0px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* Logo image div */
+.logo {
+  width: 250px;
+  height: 70px;
+  z-index: 100;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+/* Main copy div */
+.main_copy {
+  width: 100%;
+  left: 0px;
+  margin-bottom: 20px;
+  padding: 0px 25px 10px 25px;
+  text-align: center;
+  color: white;
+  font-family: "Netflix Sans Regular Comp";
+  font-size: 25px;
+  opacity: 0;
+}
+
+/* Cta button div */
+.cta_copy {
+  background-color: #e50914;
+  padding: 6px 13px 8px 13px;
+  text-align: center;
+  color: #FFF;
+  font-family: "Netflix Sans Bold Comp";
+  font-size: 19px;
+  max-width: fit-content; /* Take width from cta content */
+  margin: auto;
+  opacity: 0;
+}
+
+/* World click div */
+.worldClick {
+  width: 640px;
+  height: 640px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Seenthis player control */
+.seenthis-control-bar {
+  z-index: 200;
+}
