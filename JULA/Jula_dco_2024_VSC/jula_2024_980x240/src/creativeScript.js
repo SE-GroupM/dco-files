@@ -37,8 +37,9 @@ console.log(content)
   var mainCopy = content.mainCopy.value; 
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
-  var regularPrice = product_collection[0].regularPrice.value; 
-  
+  var productPrice = product_collection[0].productPrice.value; 
+  $('#productPrice').html(productPrice + ':-');
+
       // Append image to product
       var productImage =  product_collection[0].productImage.value;
       $('#productImage').css({
@@ -64,14 +65,4 @@ console.log(content)
    // Opens the specified URL in a new window or tab
    // window.open('');
  });
- /////////////////////
-//// ANIMATIONS /////
-////////////////////
-var imgProduct_leftvalue = '-194px';
-
-var animateOnce = new TimelineMax({ repeat: 0, delay: 0.2 }) // starts the entire timeline after a 1.5-second delay
-.from('#subCopy, #mainCopy', 0.2, { autoAlpha: 0 }) // fades in #imgCopy over 1.5 seconds
-.from('#imgCopy', 0.4, { autoAlpha: 0 }) // fades in #imgCopy over 1.5 seconds
-.from('#imgProduct', 0.7, { autoAlpha: 0, left: imgProduct_leftvalue }) // fades in #img and moves it from left -94px to its current position
-.fromTo('#subCopy', 0.2, { scale: 1 }, { scale: 1.2, repeat: 1, yoyo: true, ease: Power1.easeInOut }); // "inflates" and "deflates" #subCopy
 });

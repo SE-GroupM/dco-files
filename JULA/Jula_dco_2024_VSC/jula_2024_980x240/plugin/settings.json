@@ -32,11 +32,7 @@
         "type": "text",
         "source": "create"
       },
-      "regularPrice": {
-        "type": "text",
-        "source": "create"
-      },
-      "discountedPrice": {
+      "productPrice": {
         "type": "text",
         "source": "create"
       },
@@ -70,11 +66,8 @@
           "mainCopy": {
             "value": "mainCopy"
           },
-          "regularPrice": {
-            "value": "regularPrice"
-          },
-          "discountedPrice": {
-            "value": "discountedPrice"
+          "productPrice": {
+            "value": "productPrice"
           },
           "productName": {
             "value": "productName"
@@ -104,5 +97,5 @@
     "id": 884,
     "name": "Jula"
   },
-  "port": 52767
+  "port": 54059
 }
