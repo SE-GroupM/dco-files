@@ -28,11 +28,11 @@ html, body {
 
 /* Main copy on left */
 .mainCopy {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "CreightonPro-Bold";
   font-style: bold;
   position: absolute;
   left: 76px;
-  top: 162px;
+  top: 172px;
   font-size: 31px;
   color: white;
   max-width: 350px;
@@ -43,7 +43,7 @@ position: absolute;
 width: 196px;
 height: 81px;
 left: 76px;
-top: 60px;
+top: 70px;
 }
 /* Product box background */
 .productBox {
@@ -61,13 +61,13 @@ top: 60px;
   height: 189px;
   width: 200px;
   top: 15px;
-  left: 70px;
+  left: 30px;
 }
 /* Price element  */
-.productPrice {
+.regularPrice {
   position: absolute;
-  font-size: 75px;
-  font-family: 'helvetica';
+  font-size: 85px;
+  font-family: "CreightonPro-Bold";
   font-style: bold;
   color: black;
   top: 60px;
@@ -78,6 +78,7 @@ top: 60px;
 /* Product name text */
 .productName {
   position: absolute;
+  font-family: "CreightonPro-Bold";
   font-size: 20px;
   color: black;
   left: 26px;
@@ -87,8 +88,9 @@ top: 60px;
 .cta {
   position: absolute;
   background-color: #c42d34;
+  font-family: "CreightonPro-Bold";
   color: white;
-  font-size: 12px;
+  font-size: 17px;
   padding: 6px 25px;
   left: auto;
   right: 18px;

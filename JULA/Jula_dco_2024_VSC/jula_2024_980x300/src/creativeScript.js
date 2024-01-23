@@ -32,36 +32,36 @@ var product_collection = content.product_collection.value;
   $('#creative_container').css({
     'background-color': bgColor,
   })
+  var productUrl = product_collection[0].productUrl.value;
+  var productUrl = content.productUrl.value;  
   var ctaCopy = content.ctaCopy.value;
   var mainCopy = content.mainCopy.value; 
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
-  var productPrice = product_collection[0].productPrice.value; 
-  $('#productPrice').html(productPrice + ':-');
-
-      // Append image to product
-      var productImage =  product_collection[0].productImage.value;
-      $('#productImage').css({
-      backgroundImage: 'url("' + productImage + '")',
-      'background-size': 'contain',
-      'background-repeat': 'no-repeat',
-      });
-    
+        // Append price to product
+        var regularPrice = product_collection[0].regularPrice.value;
+        $('#regularPrice').html(regularPrice + ':-');
+            // Append image to product
+            var productImage =  product_collection[0].productImage.value;
+            $('#productImage').css({
+            backgroundImage: 'url("' + productImage + '")',
+            'background-size': 'contain',
+            'background-repeat': 'no-repeat',
+            });
+          
   //$('#regularPrice').html(regularPrice)
   var logo = content.logo.value;
   $('#logo').css({
     'position': 'absolute',
-    'top': '20px',
     });
     });
 
-// Get the div element by its id
- // Get the div element by its id
- var worldClickDiv = document.getElementById('worldClick');
-  
- // Add a click event listener to the div
- worldClickDiv.addEventListener('click', function() {
-   // Opens the specified URL in a new window or tab
-   // window.open('');
+    document.getElementById('productUrl').onclick = () =>
+    window.dispatchEvent(
+        new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['productUrl'],
+        }
+    })
+    );
  });
-});
