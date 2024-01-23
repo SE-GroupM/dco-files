@@ -32,14 +32,15 @@ var product_collection = content.product_collection.value;
   $('#creative_container').css({
     'background-color': bgColor,
   })
+  var productUrl = product_collection[0].productUrl.value;
+  var productUrl = content.productUrl.value;  
   var ctaCopy = content.ctaCopy.value;
   var mainCopy = content.mainCopy.value; 
-  var productUrl = product_collection[0].productUrl.value;
-  $('#productUrl').html(productUrl)
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
         // Append price to product
   var regularPrice = product_collection[0].regularPrice.value;
+  console.log(product_collection)
   $('#regularPrice').html(regularPrice + ':-');
       // Append image to product
       var productImage =  product_collection[0].productImage.value;
@@ -53,17 +54,16 @@ var product_collection = content.product_collection.value;
   var logo = content.logo.value;
   $('#logo').css({
     'position': 'absolute',
-    'top': '20px',
+    'top': '30px',
     });
     });
 
-// Get the div element by its id
- // Get the div element by its id
- var worldClickDiv = document.getElementById('worldClick');
-  
- // Add a click event listener to the div
- worldClickDiv.addEventListener('click', function() {
-   // Opens the specified URL in a new window or tab
-   // window.open('');
+    document.getElementById('productUrl').onclick = () =>
+    window.dispatchEvent(
+        new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['productUrl'],
+        }
+    })
+    );
  });
-});

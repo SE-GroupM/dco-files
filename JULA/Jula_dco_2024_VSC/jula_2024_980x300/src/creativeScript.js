@@ -34,13 +34,11 @@ var product_collection = content.product_collection.value;
   })
   var ctaCopy = content.ctaCopy.value;
   var mainCopy = content.mainCopy.value; 
-  var productUrl = product_collection[0].productUrl.value;
-  $('#productUrl').html(productUrl)
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
-        // Append price to product
-  var regularPrice = product_collection[0].regularPrice.value;
-  $('#regularPrice').html(regularPrice + ':-');
+  var productPrice = product_collection[0].productPrice.value; 
+  $('#productPrice').html(productPrice + ':-');
+
       // Append image to product
       var productImage =  product_collection[0].productImage.value;
       $('#productImage').css({
