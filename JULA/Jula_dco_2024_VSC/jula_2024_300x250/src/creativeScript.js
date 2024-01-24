@@ -26,33 +26,84 @@ onLemonpiReady(function () {
     // Advanced mapping of dynamic content
     // You can call the content directly once it's collected by lemonpi.subscribe method
     // Example content.[placeholder_name].value
+    
+    //Append main copy
+    var mainCopy = content.mainCopy.value;
+    $('#mainCopy').html(mainCopy);
 
-var product_collection = content.product_collection.value; 
-  var bgColor = content.bgColor.value;
-  $('#creative_container').css({
-    'background-color': bgColor,
-  })
-  var productUrl = product_collection[0].productUrl.value;
-  var productUrl = content.productUrl.value;  
-  var ctaCopy = content.ctaCopy.value;
-  var mainCopy = content.mainCopy.value; 
-  var productName = product_collection[0].productName.value;
-  $('#productName').html(productName)
-  // Append price to product
-  var regularPrice = product_collection[0].regularPrice.value;
-  $('#regularPrice').html(regularPrice + ':-');
-      // Append image to product
-      var productImage =  product_collection[0].productImage.value;
-      $('#productImage').css({
-      backgroundImage: 'url("' + productImage + '")',
-      'background-size': 'contain',
-      'background-repeat': 'no-repeat',
-      });
+    //Append main copy
+    var ctaCopy = content.ctaCopy.value;
+    $('#ctaCopy').html(ctaCopy);
 
-      $('#creative_container').click(onClick)
+    //Background color of container
+    var bgColor = content.bgColor.value;
+    $('#creative_container').css({
+      'background-color': bgColor,
+    })
+
+    //Product click funtion
+    $('#creative_container').click(onClick);
+
+    //Product collection from adset
+    var product_collection = content.product_collection.value; 
+
+    // Append name to product
+    var productName = product_collection[0].productName.value;
+    $('#productName').html(productName);
+
+    // Append price to product
+    var regularPrice = product_collection[0].regularPrice.value;
+    var productSaving = product_collection[0].productPriceSaving.value;
+    var productPriceType = product_collection[0].productPriceType.value;
+
+    //Split regular price to find decimals 
+    var normalPrice = parseFloat(regularPrice);
+    normalPrice = normalPrice.toFixed(2);
+    var tempNormal = normalPrice.split(".")
+
+    //Append sup class on decimals
+    if (tempNormal[1] > 0o0) {
+      //Ex. 88.88
+      $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
+    } else {
+      //Ex. 88,-
+      $('#regularPrice').html(tempNormal[0] + '.-');
+    }
+
+    //Check product price type and append css
+    if (productPriceType === 'regular') {
+      $('#regularPrice').addClass('regularPrice');
+    } else if (productPriceType === 'sale') {
+      $('#regularPrice').addClass('salePrice')
+    } else if (productPriceType === 'julaclub') {
+      $('#regularPrice').html('JulaClub <br><span style="font-size: 37px; line-height: 37px;">' + regularPrice + '.-</span>')
+      $('#regularPrice').addClass('clubPrice');
+    }
+
+    //Check if product saving is !=0 and append saleElement class
+    if (productSaving !== '0') {
+      $('#priceElement').html('Spara ' + productSaving);
+      $('#priceElement').addClass('saleElement');
+    }
+
+    //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
+    if (productPriceType === 'tokbilligt') {
+      $('#regularPrice').addClass('salePrice')
+      $('#priceElement').html('Tokbilligt');
+      $('#priceElement').addClass('heroElement');
+    }
+
+    // Append image to product
+    var productImage =  product_collection[0].productImage.value;
+    $('#productImage').css({
+    backgroundImage: 'url("' + productImage + '")',
+    'background-size': 'contain',
+    'background-repeat': 'no-repeat',
+    'background-position': 'center'
+    });
 
   /////////////////////
-//// ANIMATIONS /////
+ //// ANIMATIONS /////
 ////////////////////
 
 // Animation of product boxes
@@ -62,23 +113,22 @@ t2.fromTo('#productBox', 1, { x: -300 }, { x: 0 }, 0.1)
   .set('#productBox', { x: -300 }); // Reset to start position for seamless looping
     });
 
-      var productUrl = product_collection[0].productUrl.value;
-      $('#productUrl').click(onClick)
-      $('#productUrl').html(productUrl)
-
-  //$('#regularPrice').html(regularPrice)
-  var logo = content.logo.value;
-  $('#logo').css({
-    'position': 'absolute',
-    });
-
-    function onClick (event) {
+  // Append click to product box
+  function onClick (event) {
       return window.dispatchEvent(
         new CustomEvent('lemonpi.interaction/click', {
           detail: {
             placeholder: ['product_collection', 0, 'productUrl'],
           }
       }));
-  }
+    } 
+});
 
-})
+ // Get the div element by its id
+ var worldClickDiv = document.getElementById('worldClick');
+  
+ // Add a click event listener to the div
+ worldClickDiv.addEventListener('click', function() {
+   // Opens the specified URL in a new window or tab
+   // window.open('');
+ });
