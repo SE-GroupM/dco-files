@@ -32,13 +32,13 @@ var product_collection = content.product_collection.value;
   $('#creative_container').css({
     'background-color': bgColor,
   })
+  var productUrl = product_collection[0].productUrl.value;
+  var productUrl = content.productUrl.value;  
   var ctaCopy = content.ctaCopy.value;
   var mainCopy = content.mainCopy.value; 
-  var productUrl = product_collection[0].productUrl.value;
-  $('#productUrl').html(productUrl)
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
-        // Append price to product
+  // Append price to product
   var regularPrice = product_collection[0].regularPrice.value;
   $('#regularPrice').html(regularPrice + ':-');
       // Append image to product
@@ -48,22 +48,37 @@ var product_collection = content.product_collection.value;
       'background-size': 'contain',
       'background-repeat': 'no-repeat',
       });
-    
+
+      $('#creative_container').click(onClick)
+
+  /////////////////////
+//// ANIMATIONS /////
+////////////////////
+
+// Animation of product boxes
+var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
+t2.fromTo('#productBox', 1, { y: -500 }, { y: 0 }, 0.1)
+  .to('#productBox', 0.6, { y: 500 }, "+=1.5")
+  .set('#productBox', { y: -500 }); // Reset to start position for seamless looping
+    });
+
+      var productUrl = product_collection[0].productUrl.value;
+      $('#productUrl').click(onClick)
+      $('#productUrl').html(productUrl)
+
   //$('#regularPrice').html(regularPrice)
   var logo = content.logo.value;
   $('#logo').css({
     'position': 'absolute',
-    'top': '20px',
-    });
     });
 
-// Get the div element by its id
- // Get the div element by its id
- var worldClickDiv = document.getElementById('worldClick');
-  
- // Add a click event listener to the div
- worldClickDiv.addEventListener('click', function() {
-   // Opens the specified URL in a new window or tab
-   // window.open('');
- });
-});
+    function onClick (event) {
+      return window.dispatchEvent(
+        new CustomEvent('lemonpi.interaction/click', {
+          detail: {
+            placeholder: ['product_collection', 0, 'productUrl'],
+          }
+      }));
+  }
+
+})

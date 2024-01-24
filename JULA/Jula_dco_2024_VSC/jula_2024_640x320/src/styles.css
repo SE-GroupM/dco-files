@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 640px;
   height: 320px;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -79,7 +79,7 @@ top: 15px;
 .productName {
   position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   left: 26px;
   top: 175px;
@@ -103,4 +103,5 @@ top: 15px;
   height: 100%;
   top: 0px;
   left: 0px;
+  z-index: -1;
 }

@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 980px;
   height: 240px;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,7 +30,7 @@ html, body {
 .mainCopy {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  left: 76px;
+  left: 65px;
   top: 152px;
   font-size: 31px;
   color: white;
@@ -41,7 +41,7 @@ html, body {
 position: absolute;
 width: 196px;
 height: 81px;
-left: 76px;
+left: 65px;
 top: 46px;
 }
 /* Product box background */
@@ -103,4 +103,5 @@ top: 46px;
   height: 100%;
   top: 0px;
   left: 0px;
+  z-index: -1;
 }

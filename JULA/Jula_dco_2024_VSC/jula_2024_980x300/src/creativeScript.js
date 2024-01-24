@@ -38,30 +38,47 @@ var product_collection = content.product_collection.value;
   var mainCopy = content.mainCopy.value; 
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
-        // Append price to product
-        var regularPrice = product_collection[0].regularPrice.value;
-        $('#regularPrice').html(regularPrice + ':-');
-            // Append image to product
-            var productImage =  product_collection[0].productImage.value;
-            $('#productImage').css({
-            backgroundImage: 'url("' + productImage + '")',
-            'background-size': 'contain',
-            'background-repeat': 'no-repeat',
-            });
-          
+  // Append price to product
+  var regularPrice = product_collection[0].regularPrice.value;
+  $('#regularPrice').html(regularPrice + ':-');
+      // Append image to product
+      var productImage =  product_collection[0].productImage.value;
+      $('#productImage').css({
+      backgroundImage: 'url("' + productImage + '")',
+      'background-size': 'contain',
+      'background-repeat': 'no-repeat',
+      });
+
+      $('#creative_container').click(onClick)
+
+  /////////////////////
+//// ANIMATIONS /////
+////////////////////
+
+// Animation of product boxes
+var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
+t2.fromTo('#productBox', 1, { y: -700 }, { y: 0 }, 0.1)
+  .to('#productBox', 0.6, { y: 700 }, "+=1.5")
+  .set('#productBox', { y: -700 }); // Reset to start position for seamless looping
+    });
+
+      var productUrl = product_collection[0].productUrl.value;
+      $('#productUrl').click(onClick)
+      $('#productUrl').html(productUrl)
+
   //$('#regularPrice').html(regularPrice)
   var logo = content.logo.value;
   $('#logo').css({
     'position': 'absolute',
     });
-    });
 
-    document.getElementById('productUrl').onclick = () =>
-    window.dispatchEvent(
+    function onClick (event) {
+      return window.dispatchEvent(
         new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-            placeholder: ['productUrl'],
-        }
-    })
-    );
- });
+          detail: {
+            placeholder: ['product_collection', 0, 'productUrl'],
+          }
+      }));
+  }
+
+})

@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 300px;
   height: 250px;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,30 +59,31 @@ top: 15px;
 .productImage {
   position: absolute;
   height: 150px;
-  width: 120px;
-  top: 10px;
-  left: 15px;
+  width: 115px;
+  top: 5px;
+  left: 5px;
 }
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 77px;
+  font-size: 52px;
   font-family: "CreightonPro-Bold";
   font-style: bold;
   color: black;
-  top: 0px;
+  top: 10px;
   left: auto;
-  right: 18px;
+  right: 15px;
   text-align: right;
 }
 /* Product name text */
 .productName {
   position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 14px;
+  font-size: 13px;
   color: black;
   left: 15px;
-  top: 139px;
+  top: 125px;
+  max-width: 130px;
 }
 /* Call to action button */
 .cta {
@@ -90,7 +91,7 @@ top: 15px;
   background-color: #c42d34;
   font-family: "CreightonPro-Bold";
   color: white;
-  font-size: 13px;
+  font-size: 12px;
   padding: 6px 25px;
   top: 125px;
   left: 165px;
@@ -102,4 +103,5 @@ top: 15px;
   height: 100%;
   top: 0px;
   left: 0px;
+  z-index: -1;
 }

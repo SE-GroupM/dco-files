@@ -38,40 +38,47 @@ var product_collection = content.product_collection.value;
   var mainCopy = content.mainCopy.value; 
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
-        // Append price to product
-        var regularPrice = product_collection[0].regularPrice.value;
-        $('#regularPrice').html(regularPrice + ':-');
-            // Append image to product
-            var productImage =  product_collection[0].productImage.value;
-            $('#productImage').css({
-            backgroundImage: 'url("' + productImage + '")',
-            'background-size': 'contain',
-            'background-repeat': 'no-repeat',
-            });
-          
-  //$('#regularPrice').html(regularPrice)
-  var logo = content.logo.value;
-  $('#logo').css({
-    'position': 'absolute',
-    });
-    });
+  // Append price to product
+  var regularPrice = product_collection[0].regularPrice.value;
+  $('#regularPrice').html(regularPrice + ':-');
+      // Append image to product
+      var productImage =  product_collection[0].productImage.value;
+      $('#productImage').css({
+      backgroundImage: 'url("' + productImage + '")',
+      'background-size': 'contain',
+      'background-repeat': 'no-repeat',
+      });
 
-    document.getElementById('productUrl').onclick = () =>
-    window.dispatchEvent(
-        new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-            placeholder: ['productUrl'],
-        }
-    })
-    );
+      $('#creative_container').click(onClick)
 
   /////////////////////
 //// ANIMATIONS /////
 ////////////////////
 
-  var animateOnce = new TimelineMax({ repeat: 0, delay: 0.2 }) // starts the entire timeline after a 1.5-second delay
-  .from('#subCopy, #mainCopy', 0.2, { autoAlpha: 0 }) // fades in #imgCopy over 1.5 seconds
-  .from('#imgCopy', 0.4, { autoAlpha: 0 }) // fades in #imgCopy over 1.5 seconds
-  .from('#imgProduct', 0.7, { autoAlpha: 0, left: '-94px' }) // fades in #img and moves it from left -94px to its current position
-  .fromTo('#subCopy', 0.2, { scale: 1 }, { scale: 1.2, repeat: 1, yoyo: true, ease: Power1.easeInOut }); // "inflates" and "deflates" #subCopy
-  });
+// Animation of product boxes
+var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
+t2.fromTo('#productBox', 1, { x: -300 }, { x: 0 }, 0.1)
+  .to('#productBox', 0.3, { x: 300 }, "+=1.5")
+  .set('#productBox', { x: -300 }); // Reset to start position for seamless looping
+    });
+
+      var productUrl = product_collection[0].productUrl.value;
+      $('#productUrl').click(onClick)
+      $('#productUrl').html(productUrl)
+
+  //$('#regularPrice').html(regularPrice)
+  var logo = content.logo.value;
+  $('#logo').css({
+    'position': 'absolute',
+    });
+
+    function onClick (event) {
+      return window.dispatchEvent(
+        new CustomEvent('lemonpi.interaction/click', {
+          detail: {
+            placeholder: ['product_collection', 0, 'productUrl'],
+          }
+      }));
+  }
+
+})

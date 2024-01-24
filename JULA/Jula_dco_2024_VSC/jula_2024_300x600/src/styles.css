@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 300px;
   height: 600px;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,15 +58,15 @@ top: 15px;
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 200px;
-  width: 250px;
-  top: 120px;
+  height: 220px;
+  width: 270px;
+  top: 100px;
   left: 15px;
 }
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 82px;
+  font-size: 70px;
   font-family: "CreightonPro-Bold";
   font-style: bold;
   color: black;
@@ -83,6 +83,7 @@ top: 15px;
   color: black;
   left: 20px;
   top: 330px;
+  max-width: 235px;
 }
 /* Call to action button */
 .cta {
@@ -103,4 +104,5 @@ top: 15px;
   height: 100%;
   top: 0px;
   left: 0px;
+  z-index: -1;
 }

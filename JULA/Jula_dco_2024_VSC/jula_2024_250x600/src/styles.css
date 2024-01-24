@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 250px;
   height: 600px;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -67,7 +67,7 @@ html, body {
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 82px;
+  font-size: 65px;
   font-family: "CreightonPro-Bold";
   font-style: bold;
   color: black;
@@ -80,10 +80,11 @@ html, body {
 .productName {
   position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 18px;
+  font-size: 16px;
   color: black;
-  left: 20px;
+  left: 15px;
   top: 330px;
+  max-width: 190px;
 }
 /* Call to action button */
 .cta {
@@ -104,4 +105,5 @@ html, body {
   height: 100%;
   top: 0px;
   left: 0px;
+  z-index: -1;
 }

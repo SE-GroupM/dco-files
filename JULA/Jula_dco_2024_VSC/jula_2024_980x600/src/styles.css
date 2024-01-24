@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 980px;
   height: 600px;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,7 +42,7 @@ position: absolute;
 width: 196px;
 height: 81px;
 left: 40px;
-top: 45px;
+top: 30px;
 }
 /* Product box background */
 .productBox {
@@ -102,4 +102,5 @@ top: 45px;
   height: 100%;
   top: 0px;
   left: 0px;
+  z-index: -1;
 }
