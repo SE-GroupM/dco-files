@@ -31,7 +31,7 @@ html, body {
   font-family: "CreightonPro-Bold";
   position: absolute;
   left: 270px;
-  top: 40px;
+  top: 50px;
   font-size: 35px;
   color: white;
   max-width: 500px;
@@ -65,7 +65,7 @@ top: 45px;
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 125px;
+  font-size: 135px;
   font-family: "CreightonPro-Bold";
   color: black;
   top: 100px;
@@ -96,7 +96,7 @@ top: 45px;
   border-radius: 3px;
 }
 
-#productUrl {
+#worldClick {
   position: absolute;
   width: 100%;
   height: 100%;

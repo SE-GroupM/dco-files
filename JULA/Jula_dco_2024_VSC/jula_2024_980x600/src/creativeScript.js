@@ -39,17 +39,16 @@ var product_collection = content.product_collection.value;
   var productName = product_collection[0].productName.value;
   $('#productName').html(productName)
         // Append price to product
-  var regularPrice = product_collection[0].regularPrice.value;
-  console.log(product_collection)
-  $('#regularPrice').html(regularPrice + ':-');
-      // Append image to product
-      var productImage =  product_collection[0].productImage.value;
-      $('#productImage').css({
-      backgroundImage: 'url("' + productImage + '")',
-      'background-size': 'contain',
-      'background-repeat': 'no-repeat',
-      });
-    
+        var regularPrice = product_collection[0].regularPrice.value;
+        $('#regularPrice').html(regularPrice + ':-');
+            // Append image to product
+            var productImage =  product_collection[0].productImage.value;
+            $('#productImage').css({
+            backgroundImage: 'url("' + productImage + '")',
+            'background-size': 'contain',
+            'background-repeat': 'no-repeat',
+            });
+          
   //$('#regularPrice').html(regularPrice)
   var logo = content.logo.value;
   $('#logo').css({

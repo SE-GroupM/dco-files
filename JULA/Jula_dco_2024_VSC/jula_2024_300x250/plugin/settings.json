@@ -1,22 +1,17 @@
 {
-  "id": "9e92446a-5c28-4195-baf2-fdd59d4e89d3",
+  "id": "8389ca06-b074-4328-9d5a-61d1f57538d1",
   "version": "1.3.0",
-  "name": "jula_2024_980x600",
+  "name": "jula_2024_300x250",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 600,
-        "isCustom": true
+        "width": 300,
+        "height": 250,
+        "isCustom": false
       }
     ],
-    "customSizes": [
-      {
-        "width": 980,
-        "height": 600
-      }
-    ]
+    "customSizes": []
   },
   "placeholders": {
     "schema": {
@@ -51,6 +46,10 @@
       "productUrl": {
         "type": "click",
         "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
       }
     },
     "data": {
@@ -80,6 +79,9 @@
           },
           "productUrl": {
             "value": ""
+          },
+          "worldClick": {
+            "value": ""
           }
         }
       ]
@@ -97,5 +99,5 @@
     "id": 884,
     "name": "Jula"
   },
-  "port": 53516
+  "port": 61278
 }

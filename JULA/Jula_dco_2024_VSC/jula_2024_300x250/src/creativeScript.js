@@ -64,4 +64,14 @@ var product_collection = content.product_collection.value;
         }
     })
     );
- });
+
+  /////////////////////
+//// ANIMATIONS /////
+////////////////////
+
+  var animateOnce = new TimelineMax({ repeat: 0, delay: 0.2 }) // starts the entire timeline after a 1.5-second delay
+  .from('#subCopy, #mainCopy', 0.2, { autoAlpha: 0 }) // fades in #imgCopy over 1.5 seconds
+  .from('#imgCopy', 0.4, { autoAlpha: 0 }) // fades in #imgCopy over 1.5 seconds
+  .from('#imgProduct', 0.7, { autoAlpha: 0, left: '-94px' }) // fades in #img and moves it from left -94px to its current position
+  .fromTo('#subCopy', 0.2, { scale: 1 }, { scale: 1.2, repeat: 1, yoyo: true, ease: Power1.easeInOut }); // "inflates" and "deflates" #subCopy
+  });

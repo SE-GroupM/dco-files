@@ -1,20 +1,20 @@
 {
-  "id": "9e92446a-5c28-4195-baf2-fdd59d4e89d3",
+  "id": "fe38cfed-aef2-4272-a2b3-a4f77ef7aea1",
   "version": "1.3.0",
-  "name": "jula_2024_980x600",
+  "name": "jula_2024_320x400",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 600,
+        "width": 320,
+        "height": 400,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 600
+        "width": 320,
+        "height": 400
       }
     ]
   },
@@ -51,6 +51,10 @@
       "productUrl": {
         "type": "click",
         "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
       }
     },
     "data": {
@@ -80,6 +84,9 @@
           },
           "productUrl": {
             "value": ""
+          },
+          "worldClick": {
+            "value": ""
           }
         }
       ]
@@ -97,5 +104,5 @@
     "id": 884,
     "name": "Jula"
   },
-  "port": 53516
+  "port": 64202
 }

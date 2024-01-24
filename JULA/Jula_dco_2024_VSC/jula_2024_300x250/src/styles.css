@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 980px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -31,46 +31,46 @@ html, body {
   font-family: "CreightonPro-Bold";
   font-style: bold;
   position: absolute;
-  left: 76px;
-  top: 172px;
-  font-size: 31px;
+  left: 125px;
+  top: 26px;
+  font-size: 15px;
   color: white;
   max-width: 350px;
 }
 /* Position of logo */
 .logo {
 position: absolute;
-width: 196px;
-height: 81px;
-left: 76px;
-top: 70px;
+width: 140px;
+height: 38px;
+left: 20px;
+top: 15px;
 }
 /* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
-  height: 270px;
-  width: 500px;
-  left: 455px;
-  top: 14px;
+  height: 165px;
+  width: 260px;
+  left: 20px;
+  top: 65px;
   border-radius: 5px;
 }
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 189px;
-  width: 200px;
-  top: 15px;
-  left: 30px;
+  height: 150px;
+  width: 120px;
+  top: 10px;
+  left: 15px;
 }
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 85px;
+  font-size: 77px;
   font-family: "CreightonPro-Bold";
   font-style: bold;
   color: black;
-  top: 60px;
+  top: 0px;
   left: auto;
   right: 18px;
   text-align: right;
@@ -79,10 +79,10 @@ top: 70px;
 .productName {
   position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 20px;
+  font-size: 14px;
   color: black;
-  left: 26px;
-  top: 230px;
+  left: 15px;
+  top: 139px;
 }
 /* Call to action button */
 .cta {
@@ -90,11 +90,10 @@ top: 70px;
   background-color: #c42d34;
   font-family: "CreightonPro-Bold";
   color: white;
-  font-size: 17px;
+  font-size: 13px;
   padding: 6px 25px;
-  left: auto;
-  right: 18px;
-  top: 225px;
+  top: 125px;
+  left: 165px;
   border-radius: 3px;
 }
 #worldClick {
