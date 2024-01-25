@@ -67,7 +67,7 @@ onLemonpiReady(function () {
       $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
     } else {
       //Ex. 88,-
-      $('#regularPrice').html(tempNormal[0] + ',-');
+      $('#regularPrice').html(tempNormal[0] + '.-');
     }
 
     //Check product price type and append css
@@ -76,7 +76,7 @@ onLemonpiReady(function () {
     } else if (productPriceType === 'sale') {
       $('#regularPrice').addClass('salePrice')
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 55px; line-height: 55px;">' + regularPrice + ',-</span>')
+      $('#regularPrice').html('JulaClub <br><span style="font-size: 55px; line-height: 55px;">' + regularPrice + '.-</span>')
       $('#regularPrice').addClass('clubPrice');
     }
 
