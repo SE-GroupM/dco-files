@@ -60,8 +60,8 @@ html, body {
 .productImage {
   position: absolute;
   height: 180px;
-  width: 220px;
-  top: 120px;
+  width: 180px;
+  top: 130px;
   left: 15px;
 }
 /* Price element  */
@@ -76,6 +76,73 @@ html, body {
   right: 20px;
   text-align: right;
 }
+/* Price sup element */
+.priceSup {
+  font-size: 50%;
+  vertical-align: super;
+  top: 0;
+}
+/* Discounted price element with yellow background and red text, ex. "99,-" */
+.salePrice {
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 6px;
+  border-radius: 12px;
+  font-size: 45px;
+  top: 25px;
+  left: auto;
+  right: 40px;
+  text-align: right;
+  color: #c42d34;
+  background-color: #ffe100;
+  transform: rotate(-4deg);
+}
+/* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
+.clubPrice {
+  display: inline-block;
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 6px;
+  border-radius: 12px;
+  font-size: 13px;
+  top: 18px;
+  left: auto;
+  right: 30px;
+  text-align: right;
+  color: #fff;
+  background-color: #B32013;
+  transform: rotate(-4deg);
+}
+/* Sale price element ex. "Spara 199,-" */
+.saleElement {
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 7px;
+  border-radius: 2px;
+  font-size: 13px;
+  color: white;
+  top: 80px;
+  left: auto;
+  right: 15px;
+  text-align: right;
+  background-color: #d4332e;
+  transform: rotate(-4deg);
+}
+/* Hero element ex. "Tokbilligt" */
+.heroElement {
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 5px;
+  border-radius: 1px;
+  font-size: 14px;
+  color: white;
+  top: 78px;
+  left: auto;
+  right: 20px;
+  text-align: right;
+  background-color: #333;
+  transform: rotate(-4deg);
+}
 /* Product name text */
 .productName {
   position: absolute;
@@ -84,7 +151,7 @@ html, body {
   color: black;
   left: 15px;
   top: 330px;
-  max-width: 190px;
+  max-width: 184px;
 }
 /* Call to action button */
 .cta {
