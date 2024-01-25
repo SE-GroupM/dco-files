@@ -31,9 +31,9 @@ html, body {
   font-family: "CreightonPro-Bold";
   font-style: bold;
   position: absolute;
-  left: 65px;
+  left: 82px;
   top: 172px;
-  font-size: 31px;
+  font-size: 33px;
   color: white;
   max-width: 350px;
 }
@@ -42,7 +42,7 @@ html, body {
 position: absolute;
 width: 196px;
 height: 81px;
-left: 65px;
+left: 82px;
 top: 70px;
 }
 /* Product box background */

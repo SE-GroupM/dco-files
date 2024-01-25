@@ -89,7 +89,7 @@ onLemonpiReady(function () {
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
     if (productPriceType === 'tokbilligt') {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt');
+      $('#priceElement').html('Tokbilligt!');
       $('#priceElement').addClass('heroElement');
     }
 
@@ -102,9 +102,10 @@ onLemonpiReady(function () {
     'background-position': 'center'
     });
 
-    //Animation of product boxes
-    var t2 = new TimelineMax();
-    t2.fromTo('#productBox', 0.7, {y: -240, opacity: 0} ,{y: 0, opacity: 1},0.2)
+    var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
+    t2.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
+      .to('#productBox', 0.3, { y: 240 }, "+=1.5")
+      .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {
