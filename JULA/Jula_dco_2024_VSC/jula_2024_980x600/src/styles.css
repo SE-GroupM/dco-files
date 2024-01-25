@@ -57,8 +57,8 @@ top: 30px;
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 286px;
-  width: 286px;
+  height: 330px;
+  width: 500px;
   top: 15px;
   left: 30px;
 }
@@ -72,6 +72,74 @@ top: 30px;
   left: auto;
   right: 25px;
   text-align: right;
+}
+/* Price sup element */
+.priceSup {
+  font-size: 50%;
+  vertical-align: super;
+  top: 0;
+}
+/* Discounted price element with yellow background and red text, ex. "99,-" */
+.salePrice {
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 12px 20px;
+  border-radius: 18px;
+  font-size: 150px;
+  top: 30px;
+  left: auto;
+  right: 50px;
+  text-align: right;
+  color: #c42d34;
+  background-color: #ffe100;
+  transform: rotate(-4deg);
+}
+/* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
+.clubPrice {
+  display: inline-block;
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 12px 20px;
+  border-radius: 18px;
+  font-size: 25px;
+  top: 30px;
+  left: auto;
+  right: 50px;
+  text-align: right;
+  color: #fff;
+  background-color: #B32013;
+  transform: rotate(-4deg);
+}
+
+/* Sale price element ex. "Spara 199,-" */
+.saleElement {
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 7px 20px;
+  border-radius: 10px;
+  font-size: 36px;
+  color: white;
+  top: 197px;
+  left: auto;
+  right: 30px;
+  text-align: right;
+  background-color: #d4332e;
+  transform: rotate(-4deg);
+}
+/* Hero element ex. "Tokbilligt" */
+.heroElement {
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 9px 20px;
+  border-radius: 10px;
+  font-size: 36px;
+  color: white;
+  top: 197px;
+  left: auto;
+  right: 30px;
+  text-align: right;
+  background-color: #333;
+  transform: rotate(-4deg);
 }
 /* Product name text */
 .productName {
