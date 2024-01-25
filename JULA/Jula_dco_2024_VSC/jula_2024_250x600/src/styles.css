@@ -60,26 +60,14 @@ html, body {
 .productImage {
   position: absolute;
   height: 180px;
-  width: 200px;
-  top: 135px;
+  width: 180px;
+  top: 130px;
   left: 15px;
 }
 /* Price element  */
 .regularPrice {
   position: absolute;
   font-size: 65px;
-  font-family: "CreightonPro-Bold";
-  font-style: bold;
-  color: black;
-  top: 20px;
-  left: auto;
-  right: 20px;
-  text-align: right;
-}
-/* Price element  */
-.regularPrice {
-  position: absolute;
-  font-size: 70px;
   font-family: "CreightonPro-Bold";
   font-style: bold;
   color: black;
@@ -116,7 +104,7 @@ html, body {
   position: absolute;
   padding: 6px;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 13px;
   top: 18px;
   left: auto;
   right: 30px;
@@ -163,7 +151,7 @@ html, body {
   color: black;
   left: 15px;
   top: 330px;
-  max-width: 190px;
+  max-width: 184px;
 }
 /* Call to action button */
 .cta {

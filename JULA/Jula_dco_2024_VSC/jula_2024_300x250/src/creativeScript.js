@@ -89,7 +89,7 @@ onLemonpiReady(function () {
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
     if (productPriceType === 'tokbilligt') {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt');
+      $('#priceElement').html('Tokbilligt!');
       $('#priceElement').addClass('heroElement');
     }
 

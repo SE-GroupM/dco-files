@@ -60,7 +60,7 @@ top: 15px;
   position: absolute;
   height: 180px;
   width: 180px;
-  top: 70px;
+  top: 65px;
   left: 15px;
 }
 /* Price element  */
@@ -103,8 +103,8 @@ top: 15px;
   position: absolute;
   padding: 6px;
   border-radius: 12px;
-  font-size: 16px;
-  top: 6px;
+  font-size: 14px;
+  top: 10px;
   left: auto;
   right: 25px;
   text-align: right;
@@ -118,11 +118,11 @@ top: 15px;
   position: absolute;
   padding: 7px;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 13px;
   color: white;
   top: 75px;
   left: auto;
-  right: 10px;
+  right: 18px;
   text-align: right;
   background-color: #d4332e;
   transform: rotate(-4deg);
@@ -137,7 +137,7 @@ top: 15px;
   color: white;
   top: 78px;
   left: auto;
-  right: 20px;
+  right: 18px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
@@ -146,10 +146,10 @@ top: 15px;
 .productName {
   position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 15px;
+  font-size: 14px;
   color: black;
   left: 15px;
-  max-width: 135px;
+  max-width: 140px;
   top: 253px;
 }
 /* Call to action button */
@@ -161,7 +161,8 @@ top: 15px;
   font-size: 15px;
   padding: 6px 25px;
   top: 255px;
-  left: 175px;
+  left: auto;
+  right: 18px;
   border-radius: 3px;
 }
 #worldClick {
