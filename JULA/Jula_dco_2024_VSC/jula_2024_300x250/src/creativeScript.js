@@ -22,30 +22,29 @@ window.addEventListener('lemonpi.content/ready', event => {
 // Callback to retrieve the adset data
 onLemonpiReady(function () {
   lemonpi.subscribe(function callback(content) {
-    // code here
-    // Advanced mapping of dynamic content
-    // You can call the content directly once it's collected by lemonpi.subscribe method
-    // Example content.[placeholder_name].value
     
-    //Append main copy
-    var mainCopy = content.mainCopy.value;
-    $('#mainCopy').html(mainCopy);
+    //Local variable for content
+    var local_content = content;
 
     //Append main copy
-    var ctaCopy = content.ctaCopy.value;
+    var mainCopy = local_content.mainCopy.value;
+    $('#mainCopy').html(mainCopy);
+
+    //Append cta copy
+    var ctaCopy = local_content.ctaCopy.value;
     $('#ctaCopy').html(ctaCopy);
 
     //Background color of container
-    var bgColor = content.bgColor.value;
+    var bgColor = local_content.bgColor.value;
     $('#creative_container').css({
       'background-color': bgColor,
     })
 
-    //Product click funtion
+    //Product click function
     $('#creative_container').click(onClick);
 
     //Product collection from adset
-    var product_collection = content.product_collection.value; 
+    var product_collection = local_content.product_collection.value; 
 
     // Append name to product
     var productName = product_collection[0].productName.value;
@@ -74,9 +73,9 @@ onLemonpiReady(function () {
     if (productPriceType === 'regular') {
       $('#regularPrice').addClass('regularPrice');
     } else if (productPriceType === 'sale') {
-      $('#regularPrice').addClass('salePrice')
+      $('#regularPrice').addClass('salePrice');
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 37px; line-height: 37px;">' + regularPrice + '.-</span>')
+      $('#regularPrice').html('JulaClub <br><span style="font-size: 37px; line-height: 37px;">' + regularPrice + '.-</span>');
       $('#regularPrice').addClass('clubPrice');
     }
 
@@ -103,15 +102,15 @@ onLemonpiReady(function () {
     });
 
   /////////////////////
- //// ANIMATIONS /////
-////////////////////
+  //// ANIMATIONS /////
+  ////////////////////
 
-// Animation of product boxes
-var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
-t2.fromTo('#productBox', 1, { x: -300 }, { x: 0 }, 0.1)
-  .to('#productBox', 0.3, { x: 300 }, "+=1.5")
-  .set('#productBox', { x: -300 }); // Reset to start position for seamless looping
-    });
+  // Animation of product boxes
+  var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
+  main_timeline.fromTo('#productBox', 1, { x: -300 }, { x: 0 }, 0.1)
+    .to('#productBox', 0.3, { x: 300 }, "+=1.5")
+    .set('#productBox', { x: -300 }); // Reset to start position for seamless looping
+  });
 
   // Append click to product box
   function onClick (event) {
@@ -123,12 +122,3 @@ t2.fromTo('#productBox', 1, { x: -300 }, { x: 0 }, 0.1)
       }));
     } 
 });
-
- // Get the div element by its id
- var worldClickDiv = document.getElementById('worldClick');
-  
- // Add a click event listener to the div
- worldClickDiv.addEventListener('click', function() {
-   // Opens the specified URL in a new window or tab
-   // window.open('');
- });

@@ -66,6 +66,7 @@ top: 30px;
 .regularPrice {
   position: absolute;
   font-size: 135px;
+  letter-spacing: -130;
   font-family: "CreightonPro-Bold";
   color: black;
   top: 100px;
@@ -83,15 +84,16 @@ top: 30px;
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 12px 20px;
-  border-radius: 18px;
-  font-size: 150px;
-  top: 30px;
+  padding: 8px 8px 6px 12px;
+  border-radius: 16px;
+  font-size: 70px;
+  top: 50px;
   left: auto;
   right: 50px;
   text-align: right;
-  color: #c42d34;
-  background-color: #ffe100;
+  color: #B32013;
+  min-width: 130px;
+  background-color: #FFE500;
   transform: rotate(-4deg);
 }
 /* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
@@ -99,12 +101,13 @@ top: 30px;
   display: inline-block;
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 12px 20px;
+  padding: 8px 8px 6px 12px;
   border-radius: 18px;
-  font-size: 25px;
+  font-size: 24px;
   top: 30px;
   left: auto;
   right: 50px;
+  min-width: 130px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
@@ -113,31 +116,33 @@ top: 30px;
 
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 7px 20px;
-  border-radius: 10px;
-  font-size: 36px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 197px;
+  top: 131px;
   left: auto;
-  right: 30px;
-  text-align: right;
-  background-color: #d4332e;
+  right: 40px;
+  text-align: left;
+  background-color: #DA3A35;
   transform: rotate(-4deg);
 }
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 9px 20px;
-  border-radius: 10px;
-  font-size: 36px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 197px;
+  top: 131px;
   left: auto;
-  right: 30px;
-  text-align: right;
+  right: 40px;
+  text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
 }
@@ -162,13 +167,4 @@ top: 30px;
   right: 25px;
   top: 350px;
   border-radius: 3px;
-}
-
-#worldClick {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
 }
