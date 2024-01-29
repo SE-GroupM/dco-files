@@ -38,7 +38,6 @@ function onLemonpiReady(cb) {
     }
   // list of all covers
     var listOfAllCovers = createObjectList(listOftitles);
-    console.log(listOfAllCovers)
   
     // Boolean for using video or not
     let useVideo = parseInt(local_content.useVideo.value);
@@ -51,7 +50,6 @@ function onLemonpiReady(cb) {
     let startPositionForCovers = parseInt(local_content.leftPositionsOfCovers.value);    
     // Margin between title covers
     let titleMargins = parseInt(local_content.leftMarginsOfCovers.value);
-    console.log(titleMargins);
     // logo from adset
     const logoBig = local_content.logo_big.value;
     // Width title cover (should also be able to change this dynamically)
@@ -114,9 +112,8 @@ function onLemonpiReady(cb) {
       return objectList;
     }
   
-      // Function to add images to the HTML div
+  // Function to add images to the HTML div
   function addImageCoversToContainerOld(coverObjects) {
-    console.log('HUR MÅNGA GÅNGER SKA DEN HÄR KÖRAS EGENTLIGEN!!!!!');
     
     // Get the reference to the image container div
     const imageContainer = coverContainer;
@@ -125,7 +122,6 @@ function onLemonpiReady(cb) {
      // Left value calculation
      let leftValueForTitles = (startPositionForCovers + (widthCover + titleMargins));
      coverContainer.style.left = leftValueForTitles +'px'; // Adjust the spacing as needed
-     console.log(leftValueForTitles);
   
     imageList.forEach((image, index) => {
       const imgElement = document.createElement('img');
@@ -202,8 +198,8 @@ function onLemonpiReady(cb) {
                 css: {
                     content: 'url('+ titles[0].title_cover_2.value + ')',
                     'position': 'absolute',
-                    'width': '480px',
-                    'height': '240px',
+                    'width': '320px',
+                    'height': '180px',
                     'top': '0px',
                     'left': '0px',
                     'display': 'block',
@@ -256,8 +252,8 @@ function onLemonpiReady(cb) {
               css: {
                   content: 'url('+ newTitleContent.title_cover_2.value + ')',
                   'position': 'absolute',
-                  'width': '480px',
-                  'height': '240px',
+                  'width': '320px',
+                  'height': '180px',
                   'top': '0px',
                   'left': '0px',
                   'display': 'block',
@@ -271,36 +267,36 @@ function onLemonpiReady(cb) {
     ///////// EVENT HANDLERS ///////
     ///////////////////////////////
   
-      // Add event listener to your click area
-      document.getElementById('covers').addEventListener('click', function(event) {
-        let divName = event.target.getAttribute('id');
-        if (divName.includes("title")) {
-            // Fetch the selected title integer from HTML
-            currentIndexClick = event.target.getAttribute('id').replace("title_", "");
-            // Append new title object as current
-            currentTitleObject = titles[currentIndexClick];
-            // Change content
-            changeTitleContent(currentTitleObject, currentIndexClick);
-        }
-    });
-    // exit url handler based on collection "products"
-    document.getElementById('worldClick').onclick = () =>
-        window.dispatchEvent(
-            new CustomEvent('lemonpi.interaction/click', {
-            detail: {
-                placeholder: ['titles', parseInt(currentIndexClick), 'title_click'],
-            }
-        })
-    );
-    // exit url handler based on collection "products"
-    document.querySelectorAll('.clickArea').onclick = () =>
-        window.dispatchEvent(
-            new CustomEvent('lemonpi.interaction/click', {
-            detail: {
-                placeholder: ['titles', parseInt(currentIndexClick), 'title_click'],
-            }
-        })
-    );
+    // Add event listener to your click area
+    document.getElementById('covers').addEventListener('click', function(event) {
+      let divName = event.target.getAttribute('id');
+      if (divName.includes("title")) {
+          // Fetch the selected title integer from HTML
+          currentIndexClick = event.target.getAttribute('id').replace("title_", "");
+          // Append new title object as current
+          currentTitleObject = titles[currentIndexClick];
+          // Change content
+          changeTitleContent(currentTitleObject, currentIndexClick);
+      }
+  });
+  // exit url handler based on collection "products"
+  document.getElementById('worldClick').onclick = () =>
+      window.dispatchEvent(
+          new CustomEvent('lemonpi.interaction/click', {
+          detail: {
+              placeholder: ['titles', parseInt(currentIndexClick), 'title_click'],
+          }
+      })
+  );
+  // exit url handler based on collection "products"
+  document.querySelectorAll('.clickArea').onclick = () =>
+      window.dispatchEvent(
+          new CustomEvent('lemonpi.interaction/click', {
+          detail: {
+              placeholder: ['titles', parseInt(currentIndexClick), 'title_click'],
+          }
+      })
+  );
   
   // Pause the timeline on mouseover
   const container = document.getElementById('covers'); // You can change this to the specific container if needed
@@ -318,33 +314,33 @@ function onLemonpiReady(cb) {
   
   mainFunction();
   
-    /////////////////////////////////
-    ///////// ANIMATIONS ///////////
-    ///////////////////////////////
-  
-    // timeline holding animation of covers
-    var attentionAnimation = gsap.timeline({ repeat: -1 })
-    .add(animateCovers, 1);
-  
-    // main timleline
-    var mt = gsap.timeline({ repeat: 0, delay: 1 })
-    .from('.covers', 1, { left: 470,scale: 0, ease: Power1.easeOut, },) 
-    .to('#main_copy', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
-    .to('#cta_copy', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
-    .call(animateCovers) // call function to animate covers
-    .fromTo('#main_copy', 0.2, { scale: 1 }, { scale: 1.1, repeat: 1, yoyo: true, ease: Power1.easeInOut },2); // "inflates" and "deflates" #subCopy
-      
-    // function controlling the animation of the covers bumping
-    function animateCovers(){
-      // Select all images with the class '.title_cover'
-      const coverImages = document.querySelectorAll('.covers img');
-      // Create a timeline
-      // Add aniamtion to each image in the list using forEach
-      coverImages.forEach((image, index) => {
-        attentionAnimation.to(image, { duration:0.3, scale: 1.125, delay: 1 })
-        .to(image, {duration: 0.3, scale: 1})
-    });
-  }
+  /////////////////////////////////
+  ///////// ANIMATIONS ///////////
+  ///////////////////////////////
+
+  // timeline holding animation of covers
+  var attentionAnimation = gsap.timeline({ repeat: -1 })
+  .add(animateCovers, 1);
+
+  // main timleline
+  var mt = gsap.timeline({ repeat: 0, delay: 1 })
+  .from('.covers', 1, { left: 20,scale: 0, ease: Power1.easeOut, },) 
+  .to('#main_copy', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
+  .to('#cta_copy', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
+  .call(animateCovers) // call function to animate covers
+  .fromTo('#main_copy', 0.2, { scale: 1 }, { scale: 1.1, repeat: 1, yoyo: true, ease: Power1.easeInOut },2); // "inflates" and "deflates" #subCopy
+    
+  // function controlling the animation of the covers bumping
+  function animateCovers(){
+    // Select all images with the class '.title_cover'
+    const coverImages = document.querySelectorAll('.covers img');
+    // Create a timeline
+    // Add aniamtion to each image in the list using forEach
+    coverImages.forEach((image, index) => {
+      attentionAnimation.to(image, { duration:0.3, scale: 1.125, delay: 1 })
+      .to(image, {duration: 0.3, scale: 1})
+  });
+}
   
     // end of code
   
