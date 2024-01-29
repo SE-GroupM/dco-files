@@ -52,7 +52,6 @@ onLemonpiReady(function () {
 
     // Append price to product
     var regularPrice = local_product_collection[0].regularPrice.value;
-    var productSaving = local_product_collection[0].productPriceSaving.value;
     var productPriceType = local_product_collection[0].productPriceType.value;
 
     //Split regular price to find decimals 
@@ -75,13 +74,17 @@ onLemonpiReady(function () {
     } else if (productPriceType === 'sale') {
       $('#regularPrice').addClass('salePrice')
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 55px;">' + regularPrice + '.-</span>')
+      $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 55px;">' + regularPrice + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span></span>')
       $('#regularPrice').addClass('clubPrice');
     }
 
-    //Check if product saving is !=0 and append saleElement class
-    if (productSaving !== '0') {
-      $('#priceElement').html('Spara ' + productSaving);
+    // Saving element ex. '60.-'
+    var productSaving = local_product_collection[0].productPriceSaving.value;
+    // Slice '.-' to style it according to guidelines
+    productSaving = productSaving.slice(0, -2);
+    //Check if product saving is > 0 and append saleElement class
+    if (productSaving > 0) {
+      $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }
 
@@ -101,8 +104,9 @@ onLemonpiReady(function () {
     'background-position': 'center'
     });
 
-    var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
-    t2.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
+    //Animation
+    var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
+    main_timeline.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
       .to('#productBox', 0.3, { y: 240 }, "+=1.5")
       .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
 

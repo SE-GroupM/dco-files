@@ -44,16 +44,15 @@ onLemonpiReady(function () {
     $('#creative_container').click(onClick);
 
     //Product collection from adset
-    var product_collection = local_content.product_collection.value; 
+    var local_product_collection = local_content.product_collection.value; 
 
     // Append name to product
-    var productName = product_collection[0].productName.value;
+    var productName = local_product_collection[0].productName.value;
     $('#productName').html(productName);
 
     // Append price to product
-    var regularPrice = product_collection[0].regularPrice.value;
-    var productSaving = product_collection[0].productPriceSaving.value;
-    var productPriceType = product_collection[0].productPriceType.value;
+    var regularPrice = local_product_collection[0].regularPrice.value;
+    var productPriceType = local_product_collection[0].productPriceType.value;
 
     //Split regular price to find decimals 
     var normalPrice = parseFloat(regularPrice);
@@ -66,7 +65,7 @@ onLemonpiReady(function () {
       $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
     } else {
       //Ex. 88,-
-      $('#regularPrice').html(tempNormal[0] + '.-');
+      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -6px; padding-right: 6px;">.-</span>');
     }
 
     //Check product price type and append css
@@ -75,13 +74,16 @@ onLemonpiReady(function () {
     } else if (productPriceType === 'sale') {
       $('#regularPrice').addClass('salePrice');
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 37px; line-height: 37px;">' + regularPrice + '.-</span>');
+      $('#regularPrice').html('JulaClub <br><span style="font-size: 40px; line-height: 40px;">' + regularPrice + '<span style="letter-spacing: -6px; padding-right: 6px;">.-</span></span>');
       $('#regularPrice').addClass('clubPrice');
     }
-
-    //Check if product saving is !=0 and append saleElement class
-    if (productSaving !== '0') {
-      $('#priceElement').html('Spara ' + productSaving);
+    // Saving element ex. '60.-'
+    var productSaving = local_product_collection[0].productPriceSaving.value;
+    // Slice '.-' to style it according to guidelines
+    productSaving = productSaving.slice(0, -2);
+    //Check if product saving is > 0 and append saleElement class
+    if (productSaving > 0) {
+      $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }
 
@@ -93,7 +95,7 @@ onLemonpiReady(function () {
     }
 
     // Append image to product
-    var productImage =  product_collection[0].productImage.value;
+    var productImage =  local_product_collection[0].productImage.value;
     $('#productImage').css({
     backgroundImage: 'url("' + productImage + '")',
     'background-size': 'contain',
@@ -110,7 +112,7 @@ onLemonpiReady(function () {
   main_timeline.fromTo('#productBox', 1, { x: -300 }, { x: 0 }, 0.1)
     .to('#productBox', 0.3, { x: 300 }, "+=1.5")
     .set('#productBox', { x: -300 }); // Reset to start position for seamless looping
-  });
+  
 
   // Append click to product box
   function onClick (event) {
@@ -121,4 +123,5 @@ onLemonpiReady(function () {
           }
       }));
     } 
+  });
 });

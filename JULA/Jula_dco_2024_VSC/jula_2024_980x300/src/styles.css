@@ -66,13 +66,13 @@ top: 70px;
 /* Regular price element with black text, ex. "99,-"  */
 .regularPrice {
   position: absolute;
-  font-size: 95px;
+  font-size: 60px;
   font-family: "CreightonPro-Bold";
   font-style: bold;
-  color: black;
+  color: #333;
   top: 60px;
   left: auto;
-  right: 18px;
+  right: 20px;
   text-align: right;
 }
 /* Price sup element */
@@ -153,21 +153,21 @@ top: 70px;
 .productName {
   position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 20px;
-  color: black;
+  font-size: 18px;
+  color: #333;
   left: 26px;
   top: 230px;
 }
 /* Call to action button */
 .cta {
   position: absolute;
-  background-color: #c42d34;
+  background-color: #CB333B;
   font-family: "CreightonPro-Bold";
   color: white;
   font-size: 17px;
   padding: 6px 25px;
   left: auto;
-  right: 18px;
+  right: 20px;
   top: 225px;
   border-radius: 3px;
 }

@@ -82,8 +82,8 @@ onLemonpiReady(function () {
     var productSaving = local_product_collection[0].productPriceSaving.value;
     // Slice '.-' to style it according to guidelines
     productSaving = productSaving.slice(0, -2);
-    //Check if product saving is !=0 and append saleElement class
-    if (productSaving !== '0') {
+    //Check if product saving is > 0 and append saleElement class
+    if (productSaving > 0) {
       $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 4px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }
@@ -104,11 +104,11 @@ onLemonpiReady(function () {
     'background-position': 'center'
     });
 
-    // //Animation of product boxes
-    // var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
-    // t2.fromTo('#productBox', 1, { x: -980 }, { x: 0 }, 0.1)
-    // .to('#productBox', 0.3, { x: 980 }, "+=1.5")
-    // .set('#productBox', { x: -980 }); // Reset to start position for seamless looping
+    //Animation of product boxes
+    var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
+    t2.fromTo('#productBox', 1, { x: -980 }, { x: 0 }, 0.1)
+    .to('#productBox', 0.3, { x: 980 }, "+=1.5")
+    .set('#productBox', { x: -980 }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {

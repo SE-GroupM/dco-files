@@ -43,8 +43,7 @@ html, body {
   width: 190px;
   height: 60px;
   top: 20px;
-  left: -45px;
-  transform: translate(50%);
+  left: 50px;
 }
 /* Product box background */
 .productBox {
@@ -67,10 +66,10 @@ html, body {
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 65px;
+  font-size: 40px;
   font-family: "CreightonPro-Bold";
   font-style: bold;
-  color: black;
+  color: #333;
   top: 20px;
   left: auto;
   right: 20px;
@@ -86,15 +85,16 @@ html, body {
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px;
-  border-radius: 12px;
-  font-size: 45px;
+  padding: 6px 6px 6px 8px;
+  border-radius: 8px;
+  font-size: 40px;
   top: 25px;
   left: auto;
-  right: 40px;
+  right: 30px;
   text-align: right;
-  color: #c42d34;
-  background-color: #ffe100;
+  color: #B32013;
+  min-width: 75px;
+  background-color: #FFE500;
   transform: rotate(-4deg);
 }
 /* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
@@ -102,44 +102,49 @@ html, body {
   display: inline-block;
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px;
-  border-radius: 12px;
+  padding: 6px 6px 6px 8px;
+  border-radius: 8px;
   font-size: 13px;
-  top: 18px;
+  line-height: 13px;
+  top: 15px;
   left: auto;
   right: 30px;
+  min-width: 75px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
   transform: rotate(-4deg);
 }
+
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 7px;
+  padding: 2px 4px 2px 4px;
   border-radius: 2px;
   font-size: 13px;
   color: white;
-  top: 80px;
+  top: 72px;
   left: auto;
   right: 20px;
-  text-align: right;
-  background-color: #d4332e;
+  text-align: left;
+  background-color: #DA3A35;
   transform: rotate(-4deg);
 }
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 5px;
-  border-radius: 1px;
-  font-size: 14px;
+  padding: 2px 4px 2px 4px;
+  border-radius: 2px;
+  font-size: 13px;
   color: white;
-  top: 78px;
+  top: 72px;
   left: auto;
   right: 20px;
-  text-align: right;
+  text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
 }
@@ -148,7 +153,7 @@ html, body {
   position: absolute;
   font-family: "CreightonPro-Bold";
   font-size: 16px;
-  color: black;
+  color: #333;
   left: 15px;
   top: 330px;
   max-width: 184px;
@@ -156,7 +161,7 @@ html, body {
 /* Call to action button */
 .cta {
   position: absolute;
-  background-color: #c42d34;
+  background-color: #CB333B;
   font-family: "CreightonPro-Bold";
   color: white;
   font-size: 18px;
