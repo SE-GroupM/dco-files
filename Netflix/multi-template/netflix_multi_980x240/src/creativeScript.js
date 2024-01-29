@@ -202,7 +202,7 @@ function onLemonpiReady(cb) {
                 css: {
                     content: 'url('+ titles[0].title_cover_2.value + ')',
                     'position': 'absolute',
-                    'width': 'auto',
+                    'width': '480px',
                     'height': '240px',
                     'top': '0px',
                     'left': '0px',
