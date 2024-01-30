@@ -65,7 +65,7 @@ onLemonpiReady(function () {
       $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
     } else {
       //Ex. 88,-
-      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -6px; padding-right: 6px;">.-</span>');
+      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
     }
 
     //Check product price type and append css
@@ -74,15 +74,15 @@ onLemonpiReady(function () {
     } else if (productPriceType === 'sale') {
       $('#regularPrice').addClass('salePrice')
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 40px; line-height: 40px;">' + regularPrice + '<span style="letter-spacing: -6px; padding-right: 6px;">.-</span></span>')
+      $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 55px;">' + regularPrice + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span></span>')
       $('#regularPrice').addClass('clubPrice');
     }
      // Saving element ex. '60.-'
      var productSaving = local_product_collection[0].productPriceSaving.value;
      // Slice '.-' to style it according to guidelines
-     productSaving = productSaving.slice(0, -2);
+     productSaving = productSaving.replace(".-", "");
     //Check if product saving is > 0 and append saleElement class
-    if (productSaving > 0) {
+    if (productSaving !== "0") {
       $('#priceElement').html('Spara ' + productSaving +'<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }

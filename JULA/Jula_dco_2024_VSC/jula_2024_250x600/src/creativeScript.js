@@ -68,6 +68,16 @@ onLemonpiReady(function () {
       $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -10px; padding-right: 8px;">.-</span>');
     }
 
+    // Saving element ex. '60.-'
+    var productSaving = local_product_collection[0].productPriceSaving.value;
+    // Slice '.-' to style it according to guidelines
+    productSaving = productSaving.replace(".-", "");
+    //Check if product saving is != 0 and append saleElement class
+    if (productSaving !== "0") {
+      $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 4px;">.-</span>');
+      $('#priceElement').addClass('saleElement');
+    }
+
     //Check product price type and append css
     if (productPriceType === 'regular') {
       $('#regularPrice').addClass('regularPrice');
@@ -78,15 +88,6 @@ onLemonpiReady(function () {
       $('#regularPrice').addClass('clubPrice');
     }
 
-    // Saving element ex. '60.-'
-    var productSaving = local_product_collection[0].productPriceSaving.value;
-    // Slice '.-' to style it according to guidelines
-    productSaving = productSaving.slice(0, -2);
-    //Check if product saving is > 0 and append saleElement class
-    if (productSaving > 0) {
-      $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 4px;">.-</span>');
-      $('#priceElement').addClass('saleElement');
-    }
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
     if (productPriceType === 'tokbilligt') {
       $('#regularPrice').addClass('salePrice')

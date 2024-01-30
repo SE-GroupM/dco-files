@@ -81,9 +81,9 @@ onLemonpiReady(function () {
     // Saving element ex. '60.-'
     var productSaving = local_product_collection[0].productPriceSaving.value;
     // Slice '.-' to style it according to guidelines
-    productSaving = productSaving.slice(0, -2);
+    productSaving = productSaving.replace(".-","");
     //Check if product saving is > 0 and append saleElement class
-    if (productSaving > 0) {
+    if (productSaving !== "0") {
       $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 4px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }
