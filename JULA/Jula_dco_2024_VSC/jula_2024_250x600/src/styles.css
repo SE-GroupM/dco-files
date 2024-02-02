@@ -101,9 +101,10 @@ html, body {
   display: inline-block;
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 8px 8px 6px 12px;
+  padding: 8px 8px 12px 8px;
   border-radius: 18px;
   font-size: 24px;
+  line-height: 24px;
   top: 10px;
   left: auto;
   right: 20px;
