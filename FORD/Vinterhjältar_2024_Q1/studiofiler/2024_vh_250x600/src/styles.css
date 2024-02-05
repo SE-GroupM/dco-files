@@ -2,21 +2,12 @@
   box-sizing: border-box;
 } 
 @font-face {
-  font-family: FordAntennaCond-Regular;
-  src: url("https://s0.2mdn.net/creatives/assets/4977512/FordAntennaCond-Regular.otf");
-}
-@font-face {
   font-family: FordAntennaCond-Black;
   src: url("https://s0.2mdn.net/creatives/assets/4977512/FordAntennaCond-Black.otf");
 }
 @font-face {
   font-family: FordAntennaCond-Light;
   src: url("https://s0.2mdn.net/creatives/assets/4977512/FordAntennaCond-Light.otf");
-}
-
-@font-face {
-  font-family: FordAntennaCond-Bold;
-  src: url("https://s0.2mdn.net/creatives/assets/4977512/FordAntennaCond-Bold.otf");
 }
 @font-face {
   font-family: FordAntenna-Regular;
