@@ -41,16 +41,16 @@ html, body {
 position: absolute;
 width: 196px;
 height: 81px;
-left: 76px;
-top: 46px;
+left: 15px;
+top: 15px;
 }
 /* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
   height: 210px;
-  width: 500px;
-  left: 455px;
+  width: 700px;
+  left: 265px;
   top: 14px;
   border-radius: 5px;
 }
@@ -58,22 +58,24 @@ top: 46px;
 .productImage {
   background-color: #ffffff;
   position: absolute;
-  height: 145px;
-  width: 200px;
-  top: 15px;
-  left: 30px;
+  height: 200px;
+  width: 276px;
+  top: 10px;
+  left: 80px;
 }
-/* Regular price element with black text, ex. "99,-"  */
+/* Price element  */
 .regularPrice {
-  font-family: "CreightonPro-Bold";
   position: absolute;
-  font-size: 72px;
+  font-size: 60px;
+  font-family: "CreightonPro-Bold";
+  font-style: bold;
   color: #333;
-  top: 45px;
+  top: 20px;
   left: auto;
-  right: 20px;
-  text-align: right;
+  right: 40px;
+  text-align: center;
 }
+
 /* Price sup element */
 .priceSup {
   font-size: 50%;
@@ -85,14 +87,14 @@ top: 46px;
   font-family: "CreightonPro-Bold";
   position: absolute;
   padding: 8px 8px 6px 12px;
-  border-radius: 16px;
-  font-size: 70px;
-  top: 40px;
+  border-radius: 12px;
+  font-size: 60px;
+  top: 20px;
   left: auto;
-  right: 32px;
+  right: 86px;
   text-align: right;
   color: #B32013;
-  min-width: 130px;
+  min-width: 111px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -101,14 +103,14 @@ top: 46px;
   display: inline-block;
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 8px 8px 12px 8px;
-  border-radius: 18px;
-  font-size: 24px;
-  line-height: 24px;
-  top: 20px;
+  padding: 8px 8px 12px 6px;
+  border-radius: 12px;
+  font-size: 21px;
+  line-height: 21px;
+  top: 5px;
   left: auto;
-  right: 32px;
-  min-width: 130px;
+  right: 86px;
+  min-width: 111px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
@@ -118,15 +120,14 @@ top: 46px;
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
   font-family: "Arial";
-  font-weight: bold;
   position: absolute;
   padding: 4px 8px 4px 8px;
   border-radius: 4px;
   font-size: 15px;
   color: white;
-  top: 121px;
+  top: 90px;
   left: auto;
-  right: 20px;
+  right: 74px;
   text-align: left;
   background-color: #DA3A35;
   transform: rotate(-4deg);
@@ -140,9 +141,9 @@ top: 46px;
   border-radius: 4px;
   font-size: 15px;
   color: white;
-  top: 121px;
+  top: 90px;
   left: auto;
-  right: 20px;
+  right: 74px;
   text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
@@ -152,12 +153,14 @@ top: 46px;
 .productName {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  font-size: 18px;
+  font-size: 14px;
   color: #333;
-  left: 26px;
-  top: 175px;
+  left: 490px;
+  top: 140px;
+  width: 200px;
+  text-align: center;
 }
-/* Call to action button */
+/* Call to action button
 .cta {
   position: absolute;
   background-color: #CB333B;
@@ -169,4 +172,4 @@ top: 46px;
   right: 20px;
   top: 172px;
   border-radius: 3px;
-}
+} */

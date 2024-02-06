@@ -26,18 +26,24 @@ onLemonpiReady(function () {
     //Local content variable
     var local_content = content;
 
-    //Append main copy
-    var mainCopy = local_content.mainCopy.value;
-    $('#mainCopy').html(mainCopy);
+    // //Append main copy
+    // var mainCopy = local_content.mainCopy.value;
+    // $('#mainCopy').html(mainCopy);
 
-    //Append CTA copy
-    var ctaCopy = local_content.ctaCopy.value;
-    $('#ctaCopy').html(ctaCopy);
+    // //Append CTA copy
+    // var ctaCopy = local_content.ctaCopy.value;
+    // $('#ctaCopy').html(ctaCopy);
 
     //Background color of container
     var bgColor = local_content.bgColor.value;
     $('#creative_container').css({
       'background-color': bgColor,
+    })
+
+    //Background color of product box
+    var productBgColor = local_content.productBgColor.value;
+    $('#productBox').css({
+      'background-color': productBgColor,
     })
 
     //Product click funtion
@@ -49,6 +55,11 @@ onLemonpiReady(function () {
     // Append name to product
     var productName = local_product_collection[0].productName.value;
     $('#productName').html(productName);
+    //Text color of product name
+    var productNameColor = local_content.productNameColor.value;
+    $('#productName').css({
+      'color': productNameColor,
+    })
 
     // Append price to product
     var regularPrice = local_product_collection[0].regularPrice.value;
@@ -70,11 +81,15 @@ onLemonpiReady(function () {
 
     //Check product price type and append css
     if (productPriceType === 'regular') {
-      $('#regularPrice').addClass('regularPrice');
+      //Text color of product name
+    var productPriceColor = local_content.productPriceColor.value;
+    $('.regularPrice').css({
+      'color': productPriceColor,
+    })
     } else if (productPriceType === 'sale') {
       $('#regularPrice').addClass('salePrice')
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 72px; line-height: 72px;">' + regularPrice + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span></span>')
+      $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 55px;">' + regularPrice + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span></span>')
       $('#regularPrice').addClass('clubPrice');
     }
 
@@ -104,11 +119,11 @@ onLemonpiReady(function () {
     'background-position': 'center'
     });
 
-    //Animation
-    var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-    main_timeline.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
-      .to('#productBox', 0.3, { y: 240 }, "+=1.5")
-      .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
+    // //Animation
+    // var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
+    // main_timeline.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
+    //   .to('#productBox', 0.3, { y: 240 }, "+=1.5")
+    //   .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {
