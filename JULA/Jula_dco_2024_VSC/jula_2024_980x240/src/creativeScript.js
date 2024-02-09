@@ -26,13 +26,8 @@ onLemonpiReady(function () {
     //Local content variable
     var local_content = content;
 
-    // //Append main copy
-    // var mainCopy = local_content.mainCopy.value;
-    // $('#mainCopy').html(mainCopy);
-
-    // //Append CTA copy
-    // var ctaCopy = local_content.ctaCopy.value;
-    // $('#ctaCopy').html(ctaCopy);
+    //Product click funtion
+    $('#creative_container').click(onClick);
 
     //Background color of container
     var bgColor = local_content.bgColor.value;
@@ -45,9 +40,6 @@ onLemonpiReady(function () {
     $('#productBox').css({
       'background-color': productBgColor,
     })
-
-    //Product click funtion
-    $('#creative_container').click(onClick);
 
     //Product collection from adset
     var local_product_collection = local_content.product_collection.value; 
@@ -70,6 +62,7 @@ onLemonpiReady(function () {
     normalPrice = normalPrice.toFixed(2);
     var tempNormal = normalPrice.split(".")
 
+
     //Append sup class on decimals
     if (tempNormal[1] > 0o0) {
       //Ex. 88.88
@@ -81,11 +74,11 @@ onLemonpiReady(function () {
 
     //Check product price type and append css
     if (productPriceType === 'regular') {
-      //Text color of product name
-    var productPriceColor = local_content.productPriceColor.value;
-    $('.regularPrice').css({
-      'color': productPriceColor,
-    })
+      //Text color of product price
+      var productPriceColor = local_content.productPriceColor.value;
+      $('.regularPrice').css({
+        'color': productPriceColor,
+      })
     } else if (productPriceType === 'sale') {
       $('#regularPrice').addClass('salePrice')
     } else if (productPriceType === 'julaclub') {
@@ -119,11 +112,15 @@ onLemonpiReady(function () {
     'background-position': 'center'
     });
 
-    // //Animation
-    // var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-    // main_timeline.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
-    //   .to('#productBox', 0.3, { y: 240 }, "+=1.5")
-    //   .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
+    // Append lowest price last 30 days
+    var priceInfo = local_product_collection[0].productLatestPrice.value;
+    $('#priceInfo').html(priceInfo);
+
+  // //Animation
+  var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
+  main_timeline.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
+  .to('#productBox', 0.3, { y: 240 }, "+=1.5")
+  .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {
