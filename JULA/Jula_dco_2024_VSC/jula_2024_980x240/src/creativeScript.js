@@ -76,15 +76,31 @@ onLemonpiReady(function () {
     if (productPriceType === 'regular') {
       //Text color of product price
       var productPriceColor = local_content.productPriceColor.value;
-      $('.regularPrice').css({
+      $('#regularPrice').css({
         'color': productPriceColor,
       })
     } else if (productPriceType === 'sale') {
-      $('#regularPrice').addClass('salePrice')
+      //If product price type is sale
+      if (tempNormal[1] > 0o0) {
+        //Ex. 88.88
+        $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
+      } else {
+        //Ex. 88,-
+        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+      }
+      $('#regularPrice').addClass('salePrice');
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 55px;">' + regularPrice + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span></span>')
+      //If product price type is Jula club
+      if (tempNormal[1] > 0o0) {
+        //Ex. 88.88
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 40px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+      } else {
+        //Ex. 88,-
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 40px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+      }
       $('#regularPrice').addClass('clubPrice');
     }
+    
 
     // Saving element ex. '60.-'
     var productSaving = local_product_collection[0].productPriceSaving.value;
