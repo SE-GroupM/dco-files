@@ -93,10 +93,10 @@ onLemonpiReady(function () {
       //If product price type is Jula club
       if (tempNormal[1] > 0o0) {
         //Ex. 88.88
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 40px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 55px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 40px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 55px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
     }
@@ -134,9 +134,9 @@ onLemonpiReady(function () {
 
   // //Animation
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 1, { x: -640 }, { x: 0 }, 0.1)
-  .to('#productBox', 0.3, { x: 640 }, "+=1.5")
-  .set('#productBox', { x: -640 }); // Reset to start position for seamless looping
+  main_timeline.fromTo('#productBox', 1, { x: 300 }, { x: 0 }, 0.1)
+  .to('#productBox', 0.3, { x: -300 }, "+=1.5")
+  .set('#productBox', { x: 300 }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {

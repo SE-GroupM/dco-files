@@ -29,35 +29,35 @@ html, body {
 /* Position of logo */
 .logo {
 position: absolute;
-width: 190px;
-height: 60px;
-left: 85px;
+width: 112px;
+height: 45px;
+left: 104px;
 top: 15px;
 }
 /* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
-  height: 480px;
-  width: 210px;
+  height: 300px;
+  width: 280px;
   left: 20px;
-  top: 100px;
+  top: 70px;
   border-radius: 5px;
 }
 /* Container for product info */
 .productInfo {
   position: fixed;
-  width: 210px;
-  height: 240px;
+  width: 280px;
+  height: 300px;
   left: 0px;
 }
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 220px;
-  width: 210px;
-  top: 130px;
-  left: 0px;
+  height: 140px;
+  width: 200px;
+  top: 100px;
+  left: 50px;
 }
 /* Price element  */
 .regularPrice {
@@ -66,8 +66,8 @@ top: 15px;
   font-family: "CreightonPro-Bold";
   color: #333;
   text-align: center;
-  top: 30px;
-  min-width: 210px;
+  top: 15px;
+  min-width: 280px;
 }
 
 /* Price sup element */
@@ -83,9 +83,9 @@ top: 15px;
   padding: 8px 8px 6px 12px;
   border-radius: 12px;
   font-size: 60px;
-  top: 20px;
+  top: 15px;
   left: auto;
-  right: 66px;
+  right: 86px;
   text-align: right;
   color: #B32013;
   min-width: 111px;
@@ -101,9 +101,9 @@ top: 15px;
   border-radius: 12px;
   font-size: 21px;
   line-height: 21px;
-  top: 5px;
+  top: 0px;
   left: auto;
-  right: 66px;
+  right: 86px;
   min-width: 111px;
   text-align: right;
   color: #fff;
@@ -119,9 +119,9 @@ top: 15px;
   border-radius: 4px;
   font-size: 15px;
   color: white;
-  top: 90px;
+  top: 85px;
   left: auto;
-  right: 54px;
+  right: 74px;
   text-align: right;
   background-color: #DA3A35;
   transform: rotate(-4deg);
@@ -135,9 +135,9 @@ top: 15px;
   border-radius: 4px;
   font-size: 15px;
   color: white;
-  top: 90px;
+  top: 85px;
   left: auto;
-  right: 54px;
+  right: 74px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
@@ -149,8 +149,8 @@ top: 15px;
   font-size: 17px;
   color: #333;
   left: 0px;
-  top: 390px;
-  width: 210px;
+  top:254px;
+  width: 280px;
   text-align: center;
 }
 /* Product price info text */
@@ -160,8 +160,8 @@ top: 15px;
   font-size: 11px;
   color: #fff;
   left: 0px;
-  top: 465px;
-  width: 210px;
+  top: 300px;
+  width: 280px;
   text-align: center;
 }
 
