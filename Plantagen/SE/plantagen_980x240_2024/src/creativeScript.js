@@ -149,19 +149,11 @@ function onClick (event) {
   // Check coordinates for which product area is clicked on.
   var x = showCoords(event);
   // Slide 1 clicks
-  if (x >= 512 && x <= 737) {
+  if (x >= 552 && x <= 980) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
           placeholder: ['products', 0, 'click'],
-        }
-    }));
-  }
-  else if (x >= 745 && x <= 970) {
-    return window.dispatchEvent(
-      new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-            placeholder: ['products', 1, 'click'],
         }
     }));
   }
