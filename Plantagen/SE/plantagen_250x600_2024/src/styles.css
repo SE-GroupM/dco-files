@@ -1,0 +1,165 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 250px;
+  height: 600px;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Dynamic image */
+.dynamic_image {
+  position: absolute;
+  width: 250px;
+  height: 310px;
+  left: 0px;
+  top: 0px;
+  background-size: cover;
+  background-position: center center;
+}
+/* Copy container to flex copy */
+.copy_container {
+  position: absolute;
+  width: 250px;
+  height: 240px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Main copy */
+.mainCopy {
+  font-family: "plantagen-bold";
+  margin: auto;
+  padding: 20px 0px;
+  text-align: center;
+  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+}
+/* Overlay of dynamic image */
+.overlay {
+  position: absolute;
+  width: 250px;
+  height: 310px;
+  left: 0px;
+  top: 0px;
+}
+/* Badge images */
+.badgeElement {
+  position: absolute;
+  left: 162px;
+  top: 93px;
+  width: 121px;
+  height: 93px;
+  background-size: contain;
+  background-position: top center;
+}
+/* Logo placeholder for svg element */
+.logo {
+  position: absolute;
+  width: 157px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
+  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+}
+/* Panel for products */
+.product_panel {
+  position: absolute;
+  width: 478px;
+  height: 240px;
+  right: auto;
+  left: 0;
+}
+/* Product image */
+.product_img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 200px;
+  width: 200px;
+}
+/* Product info container */
+.product_info {
+  position: absolute;
+  left: 220px;
+  height: 220px;
+  width: 240px;
+  padding: 35px 20px 10px 20px;
+}
+/* Title for products */
+.title {
+  font-family: "plantagen-bold";
+  font-size: 17px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+/* Description for products */
+.description {
+  font-family: "plantagen-regular";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* Price elements */
+.price_elements {
+  position: absolute;
+  font-family: "plantagen-bold";
+  font-size: 22px;
+  top: 150px;
+}
+
+/* Sup class for price elemts */
+.supPlantagen {
+  font-size: 50%;
+  position: relative;
+  top: -0.7em;
+}
+
+/* Price discount color */
+.discountColor {
+  color: #d82316;
+}
+
+/* Product box 1 */
+.card_0 {
+  position: absolute;
+  background-color: white;
+  height: 220px;
+  width: 458px;
+  top: 10px;
+  left: 512px;
+}
+
+/* Cta */
+.cta {
+  position: absolute;
+  color: white;
+  font-family: "plantagen-bold";
+  height: 25px;
+  width: 205px;
+  border-radius: 6rem;
+  font-size: 12px;
+  bottom: 10px;
+  top: auto;
+  text-align: center;
+  padding: 4px;
+}
