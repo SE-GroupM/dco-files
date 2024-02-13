@@ -141,15 +141,15 @@ for (var i = 0; i < 3; i++){
 
 // Get coordinates for product boxes
 function showCoords(event) {
-  var x = event.clientX;
-  var coords = x;
+  var y = event.clientY;
+  var coords = y;
   return coords;
 }
 function onClick (event) {
   // Check coordinates for which product area is clicked on.
-  var x = showCoords(event);
+  var y = showCoords(event);
   // Slide 1 clicks
-  if (x >= 552 && x <= 980) {
+  if (y >= 235 && y <= 600) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
@@ -161,7 +161,7 @@ function onClick (event) {
 
 //Animation of product boxes
 var t2 = new TimelineMax();
-  t2.fromTo('#product_panel', 0.7, {x: 460} ,{x: 0},0.2)
+  t2.fromTo('#product_panel', 0.7, {x: 250} ,{x: 0},0.2)
 
 //Animation of badge elements
 var t1 = new TimelineMax({repeat:-1});

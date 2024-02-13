@@ -39,7 +39,7 @@ html, body {
 .copy_container {
   position: absolute;
   width: 250px;
-  height: 240px;
+  height: 270px;
   left: 0px;
   top: 0px;
   display: flex;
@@ -50,7 +50,7 @@ html, body {
 .mainCopy {
   font-family: "plantagen-bold";
   margin: auto;
-  padding: 20px 0px;
+  padding: 10px 10px;
   text-align: center;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
@@ -64,10 +64,11 @@ html, body {
 }
 /* Badge images */
 .badgeElement {
+  z-index: 1;
   position: absolute;
   left: 162px;
-  top: 93px;
-  width: 121px;
+  top: 190px;
+  width: 79px;
   height: 93px;
   background-size: contain;
   background-position: top center;
@@ -75,9 +76,9 @@ html, body {
 /* Logo placeholder for svg element */
 .logo {
   position: absolute;
-  width: 157px;
-  height: 30px;
-  left: 20px;
+  width: 202px;
+  height: 38px;
+  left: 25px;
   top: 20px;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
@@ -94,37 +95,38 @@ html, body {
   position: absolute;
   top: 10px;
   left: 10px;
-  height: 200px;
+  height: 170px;
   width: 200px;
 }
 /* Product info container */
 .product_info {
   position: absolute;
-  left: 220px;
-  height: 220px;
-  width: 240px;
-  padding: 35px 20px 10px 20px;
+  top: 170px;
+  left: 0px;
+  height: 180px;
+  width: 220px;
+  padding: 30px 15px 10px 15px;
 }
 /* Title for products */
 .title {
   font-family: "plantagen-bold";
-  font-size: 17px;
-  line-height: 19px;
+  font-size: 15px;
+  line-height: 17px;
   margin-bottom: 8px;
 }
 /* Description for products */
 .description {
   font-family: "plantagen-regular";
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 /* Price elements */
 .price_elements {
   position: absolute;
   font-family: "plantagen-bold";
-  font-size: 22px;
-  top: 150px;
+  font-size: 20px;
+  top: 110px;
 }
 
 /* Sup class for price elemts */
@@ -143,10 +145,10 @@ html, body {
 .card_0 {
   position: absolute;
   background-color: white;
-  height: 220px;
-  width: 458px;
-  top: 10px;
-  left: 512px;
+  height:350px;
+  width: 220px;
+  top: 235px;
+  left: 15px;
 }
 
 /* Cta */
@@ -155,7 +157,7 @@ html, body {
   color: white;
   font-family: "plantagen-bold";
   height: 25px;
-  width: 205px;
+  width: 185px;
   border-radius: 6rem;
   font-size: 12px;
   bottom: 10px;
