@@ -100,7 +100,7 @@ top: 20px;
   padding: 8px 8px 12px 6px;
   border-radius: 12px;
   font-size: 21px;
-  line-height: 28px;
+  line-height: 16px;
   top: 5px;
   left: auto;
   right: 56px;
@@ -114,6 +114,7 @@ top: 20px;
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
   font-family: "Arial";
+  font-weight: bold;
   position: absolute;
   padding: 4px 8px 4px 8px;
   border-radius: 4px;

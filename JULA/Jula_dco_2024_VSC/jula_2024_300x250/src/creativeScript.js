@@ -93,10 +93,10 @@ onLemonpiReady(function () {
       //If product price type is Jula club
       if (tempNormal[1] > 0o0) {
         //Ex. 88.88
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 40px; line-height: 30px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 40px; line-height: 30px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 40px; line-height: 30px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 40px; line-height: 30px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
     }
@@ -113,7 +113,7 @@ onLemonpiReady(function () {
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType === 'tokbilligt') {
+    if (productPriceType.toLowerCase().includes('tokbilligt')) {
       $('#regularPrice').addClass('salePrice')
       $('#priceElement').html('Tokbilligt!');
       $('#priceElement').addClass('heroElement');
