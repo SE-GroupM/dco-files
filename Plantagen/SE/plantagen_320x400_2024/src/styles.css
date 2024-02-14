@@ -38,8 +38,8 @@ html, body {
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 250px;
-  height: 270px;
+  width: 320px;
+  height: 175px;
   left: 0px;
   top: 0px;
   display: flex;
@@ -67,7 +67,7 @@ html, body {
   z-index: 1;
   position: absolute;
   left: 232px;
-  top: 80px;
+  top: 120px;
   width: 79px;
   height: 93px;
   background-size: contain;
@@ -95,38 +95,38 @@ html, body {
   position: absolute;
   top: 10px;
   left: 10px;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 135px;
 }
 /* Product info container */
 .product_info {
   position: absolute;
   top: 0px;
   left: 150px;
-  height: 180px;
-  width: 220px;
-  padding: 30px 15px 10px 15px;
+  height: 200px;
+  width: 140px;
+  padding: 60px 10px 10px 10px;
 }
 /* Title for products */
 .title {
   font-family: "plantagen-bold";
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   margin-bottom: 8px;
 }
 /* Description for products */
 .description {
   font-family: "plantagen-regular";
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 /* Price elements */
 .price_elements {
   position: absolute;
   font-family: "plantagen-bold";
-  font-size: 15px;
-  top: 110px;
+  font-size: 17px;
+  top: 155px;
 }
 
 /* Sup class for price elemts */
@@ -145,7 +145,7 @@ html, body {
 .card_0 {
   position: absolute;
   background-color: white;
-  height:230px;
+  height:235px;
   width: 290px;
   top: 150px;
   left: 15px;
@@ -159,8 +159,9 @@ html, body {
   height: 25px;
   width: 185px;
   border-radius: 6rem;
-  font-size: 9px;
+  font-size: 12px;
   bottom: 10px;
+  left: 55px;
   top: auto;
   text-align: center;
   padding: 4px;
