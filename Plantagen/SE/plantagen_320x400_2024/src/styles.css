@@ -67,7 +67,7 @@ html, body {
   z-index: 1;
   position: absolute;
   left: 232px;
-  top: 120px;
+  top: 140px;
   width: 79px;
   height: 93px;
   background-size: contain;
@@ -95,17 +95,17 @@ html, body {
   position: absolute;
   top: 10px;
   left: 10px;
-  height: 180px;
+  height: 140px;
   width: 135px;
 }
 /* Product info container */
 .product_info {
   position: absolute;
   top: 0px;
-  left: 150px;
-  height: 200px;
-  width: 140px;
-  padding: 60px 10px 10px 10px;
+  left: 140px;
+  height: 150px;
+  width: 150px;
+  padding: 30px 10px 10px 10px;
 }
 /* Title for products */
 .title {
@@ -126,7 +126,7 @@ html, body {
   position: absolute;
   font-family: "plantagen-bold";
   font-size: 17px;
-  top: 155px;
+  top: 125px;
 }
 
 /* Sup class for price elemts */
@@ -145,9 +145,9 @@ html, body {
 .card_0 {
   position: absolute;
   background-color: white;
-  height:235px;
+  height:195px;
   width: 290px;
-  top: 150px;
+  top: 190px;
   left: 15px;
 }
 

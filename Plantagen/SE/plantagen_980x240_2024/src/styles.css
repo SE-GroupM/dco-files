@@ -28,7 +28,7 @@ html, body {
 /* Dynamic image */
 .dynamic_image {
   position: absolute;
-  width: 502px;
+  width: 550px;
   height: 240px;
   left: 0px;
   top: 0px;
@@ -38,7 +38,7 @@ html, body {
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 502px;
+  width: 550px;
   height: 240px;
   left: 0px;
   top: 0px;
@@ -57,7 +57,7 @@ html, body {
 /* Overlay of dynamic image */
 .overlay {
   position: absolute;
-  width: 502px;
+  width: 550px;
   height: 240px;
   left: 0px;
   top: 0px;
@@ -65,7 +65,7 @@ html, body {
 /* Badge images */
 .badgeElement {
   position: absolute;
-  left: 398px;
+  left: 445px;
   top: 20px;
   width: 90px;
   height: 106px;
@@ -94,16 +94,16 @@ html, body {
   position: absolute;
   top: 10px;
   left: 10px;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 190px;
 }
 /* Product info container */
 .product_info {
   position: absolute;
-  left: 220px;
+  left: 200px;
   height: 220px;
-  width: 240px;
-  padding: 35px 20px 10px 20px;
+  width: 210px;
+  padding: 35px 10px 10px 10px;
 }
 /* Title for products */
 .title {
@@ -144,9 +144,9 @@ html, body {
   position: absolute;
   background-color: white;
   height: 220px;
-  width: 458px;
+  width: 408px;
   top: 10px;
-  left: 512px;
+  left: 560px;
 }
 
 /* Cta */
@@ -155,7 +155,7 @@ html, body {
   color: white;
   font-family: "plantagen-bold";
   height: 25px;
-  width: 205px;
+  width: 185px;
   border-radius: 6rem;
   font-size: 12px;
   bottom: 10px;
