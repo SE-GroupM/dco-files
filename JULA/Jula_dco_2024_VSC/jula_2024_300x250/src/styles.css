@@ -50,7 +50,8 @@ z-index: 1;
   position: fixed;
   width: 270px;
   height: 220px;
-  left: 0px;
+  left: 10px;
+  top: 15px;
 }
 /* Product image size and position */
 .productImage {
@@ -152,7 +153,7 @@ z-index: 1;
   font-size: 17px;
   color: #333;
   left: 0px;
-  top:165px;
+  top:170px;
   width: 270px;
   text-align: center;
 }
@@ -162,7 +163,7 @@ z-index: 1;
   font-family: "Arial";
   font-size: 9px;
   color: #fff;
-  left: 0px;
+  left: 6px;
   top: 215px;
   width: 270px;
   text-align: center;

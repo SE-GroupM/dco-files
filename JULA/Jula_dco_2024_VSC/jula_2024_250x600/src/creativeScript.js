@@ -1,7 +1,8 @@
 /**
   * Template Name
-  * @Owner Developer Name 
-  * @Date
+  * 16/02/2024 - A-S Larsson & J.Östling - Initial dco retargeting template for Jula
+  * 
+  * 
 */
 
 function onLemonpiReady(cb) {
@@ -131,11 +132,15 @@ onLemonpiReady(function () {
     // Append lowest price last 30 days
     var priceInfo = local_product_collection[0].productLatestPrice.value;
     $('#priceInfo').html(priceInfo);
-
+  
+  // The animation should be somewhat like the product slides in from right side and out on the left,
+  // and the product information fades in and out.
   // //Animation
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 1, { x: 250 }, { x: 0 }, 0.1)
-  .to('#productBox', 0.3, { x: -250 }, "+=1.5")
+  main_timeline.fromTo('#productBox', 0.3, { x: 250 }, { x: 0 }, 0.1)
+  .from('#productInfo',0.6,{autoAlpha:0},0.2)
+  .to('#productBox', 0.3, { x: -250 }, "+=2.5")
+  .to('#productInfo',0.25,{autoAlpha:0},3.2)
   .set('#productBox', { x: 250 }); // Reset to start position for seamless looping
 
   // Append click to product box

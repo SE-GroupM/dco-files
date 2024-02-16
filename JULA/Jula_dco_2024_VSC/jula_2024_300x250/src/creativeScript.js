@@ -135,7 +135,9 @@ onLemonpiReady(function () {
   //Animation
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
   main_timeline.fromTo('#productBox', 1, { x: 300 }, { x: 0 }, 0.1)
-  .to('#productBox', 0.3, { x: -300 }, "+=1.5")
+  .from('#productInfo',0.6,{autoAlpha:0},0.2)
+  .to('#productBox', 0.3, { x: -300 }, "+=2.5")
+  .to('#productInfo',0.25,{autoAlpha:0},3.2)
   .set('#productBox', { x: 300 }); // Reset to start position for seamless looping
 
   // Append click to product box
