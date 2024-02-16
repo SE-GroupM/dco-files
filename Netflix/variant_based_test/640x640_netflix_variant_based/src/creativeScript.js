@@ -19,16 +19,22 @@ window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content
   // Local content declaration
   const local_content = content;
-  // Collection variable for titles
-  //let titles = local_content.titles.value;
+  
   // Boolean for using video or not
-  let useVideo = JSON.parse(local_content.useVideo);   
-
+  let useVideo = (local_content.use_video.value.toLowerCase() === 'true');
+  
   // Append main copy
-  $('#main_copy').html(local_content.main_copy.value);  // Append Cta copy and arrow
-  $('#cta_copy').html(local_content.cta_copy.value);
+  $('#main_copy').html(local_content.Message.value);  // Append Cta copy and arrow
+  $('#cta_copy').html(local_content.Cta_copy.value);
   //Container size
   var panelSize = parseInt(local_content.panel_size.value);
+  // logo file source
+  var logo_source = "https://assets.lemonpi.io/a/1152/5863bb1b98276ea402943702e5f240d5.svg";
+  // Logo append
+  
+  $('#logo').css({
+    content: 'url('+ logo_source + ')',
+  });
 
   /////////////////////
   //// ANIMATIONS /////
@@ -38,10 +44,10 @@ window.addEventListener('lemonpi.content/ready', event => {
   .to('#main_copy', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
   .to('#cta_copy', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
   .fromTo('#main_copy', 0.2, { scale: 1 }, { scale: 1.1, repeat: 1, yoyo: true, ease: Power1.easeInOut },2); // "inflates" and "deflates" #subCopy
-  
+
   // Check if we're going to dislay video or images 
   if (useVideo) {
-
+    
   //Video player 
   var e = document.createElement('script');
   e.src = 'https://video.seenthis.se/v2/player/74/player.js';
@@ -60,8 +66,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   };
 
   //Variables for video
-  var videoSrc = local_content.video_src;
-  var videoTracker = local_content.video_tracker;
+  var videoSrc = local_content.video_src.value;
+  var videoTracker = local_content.video_tracker.value;
 
 } else {
   // Add image of title instead
@@ -70,7 +76,7 @@ window.addEventListener('lemonpi.content/ready', event => {
       'class': "leftImage",
 
       css: {
-          content: 'url('+ local_content.image_asset_wide + ')',
+          content: 'url('+ local_content.image_asset_wide.value + ')',
           'position': 'absolute',
           'width': '640px',
           'height': 'auto',
@@ -79,14 +85,12 @@ window.addEventListener('lemonpi.content/ready', event => {
           'display':'inline-block',
       }
   }).appendTo('#leftImage');
-
+  
  //Append container width based on title image
  $('#panel_container').css({
   'height': panelSize,
 });
 
-// select the first slot in array from the beginning
-currentTitleObject = titles[0];
-currentIndexClick = 0;
 }
+
 });
