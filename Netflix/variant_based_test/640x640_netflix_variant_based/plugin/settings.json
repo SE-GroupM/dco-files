@@ -5519,8 +5519,8 @@
     "id": 1152,
     "name": "Netflix"
   },
-  "port": 55963,
   "folders": {
     "selectedFolderId": 2975
-  }
+  },
+  "port": 53657
 }

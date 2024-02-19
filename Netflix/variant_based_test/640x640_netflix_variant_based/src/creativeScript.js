@@ -30,11 +30,14 @@ window.addEventListener('lemonpi.content/ready', event => {
   var panelSize = parseInt(local_content.panel_size.value);
   // logo file source
   var logo_source = "https://assets.lemonpi.io/a/1152/5863bb1b98276ea402943702e5f240d5.svg";
-  // Logo append
   
   $('#logo').css({
     content: 'url('+ logo_source + ')',
   });
+
+
+  // World click event caller
+  $('#worldClick').click(onClick);
 
   /////////////////////
   //// ANIMATIONS /////
@@ -83,14 +86,22 @@ window.addEventListener('lemonpi.content/ready', event => {
           'top': '0px',
           'left': '0px',
           'display':'inline-block',
-      }
-  }).appendTo('#leftImage');
-  
- //Append container width based on title image
- $('#panel_container').css({
-  'height': panelSize,
-});
+        }
+    }).appendTo('#leftImage');
+    
+  //Append container width based on title image
+  $('#panel_container').css({
+    'height': panelSize,
+  });
 
+}
+function onClick (event) {
+  return window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+        placeholder: 'exit_url'
+      }
+  }));
 }
 
 });
