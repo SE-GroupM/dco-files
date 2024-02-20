@@ -58,8 +58,8 @@ body {
 .panel_container {
   position: absolute;
   width: 640px;
-  height: 320;
-  top: 338px;
+  height: auto;
+  top: 355px;
   bottom: 0px;
   background: #000;
   display: flex;
