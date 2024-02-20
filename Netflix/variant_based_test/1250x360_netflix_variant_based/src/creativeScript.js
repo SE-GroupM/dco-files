@@ -13,9 +13,10 @@ function onLemonpiReady(cb) {
       }
     }, 0);
   }
-} 
+}
 
 window.addEventListener('lemonpi.content/ready', event => {
+
   const content = event.detail.content
   // Local content declaration
   const local_content = content;
@@ -37,7 +38,8 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   // World click event caller
   $('#worldClick').click(onClick);
-  
+
+
 
   /////////////////////
   //// ANIMATIONS /////
@@ -73,29 +75,28 @@ window.addEventListener('lemonpi.content/ready', event => {
   var videoTracker = local_content.video_tracker.value;
 
 } else {
-  // Add image of title instead
-  $("<div>", {
-        'id' : 'leftImage',
-        'class': "leftImage",
+    // Add image of title instead
+    $("<div>", {
+        'id' : 'title_image',
+        'class': "title_image",
 
         css: {
           content: 'url('+ local_content.image_asset_wide.value + ')',
           'position': 'absolute',
-          'width': '320px',
-          'height': 'auto',
+          'width': 'auto',
+          'height': '360px',
           'top': '0px',
           'left': '0px',
           'display':'inline-block',
         }
-    }).appendTo('#leftImage');
+    }).appendTo(leftImage);
 
+  //Append container width based on title image
+  $('#panel_container').css({
+    'width': panelSize,
+ });
+}
 
-    //Append container width based on title image
-    $('#panel_container').css({
-      'height': panelSize,
-  });
-
-  }
 function onClick (event) {
   return window.dispatchEvent(
     new CustomEvent('lemonpi.interaction/click', {

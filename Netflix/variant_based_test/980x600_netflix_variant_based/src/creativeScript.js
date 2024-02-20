@@ -16,29 +16,28 @@ function onLemonpiReady(cb) {
 }
 
 window.addEventListener('lemonpi.content/ready', event => {
+
+    const content = event.detail.content
+    // Local content declaration
+    const local_content = content;
+    // Boolean for using video or not
+    let useVideo = (local_content.use_video.value.toLowerCase() === 'true');
+  
+    // Append main copy
+    $('#main_copy').html(local_content.Message.value);
+    // Append Cta copy and arrow
+    $('#cta_copy').html(local_content.Cta_copy.value);
+    //Container size
+    var panelSize = parseInt(local_content.panel_size.value);
     
-  const content = event.detail.content
-  // Local content declaration
-  const local_content = content;
-  // Boolean for using video or not
-  let useVideo = (local_content.use_video.value.toLowerCase() === 'true');
-
-  // Append main copy
-  $('#main_copy').html(local_content.Message.value);
-  // Append Cta copy and arrow
-  $('#cta_copy').html(local_content.Cta_copy.value);
-  //Container size
-  var panelSize = parseInt(local_content.panel_size.value);
+    var logo_source = "https://assets.lemonpi.io/a/1152/5863bb1b98276ea402943702e5f240d5.svg";
+    
+    $('#logo').css({
+      content: 'url('+ logo_source + ')',
+    });
   
-  var logo_source = "https://assets.lemonpi.io/a/1152/5863bb1b98276ea402943702e5f240d5.svg";
-  
-  $('#logo').css({
-    content: 'url('+ logo_source + ')',
-  });
-
-  // World click event caller
-  $('#worldClick').click(onClick);
-
+    // World click event caller
+    $('#worldClick').click(onClick);
 
     /////////////////////
     //// ANIMATIONS /////
@@ -81,19 +80,19 @@ window.addEventListener('lemonpi.content/ready', event => {
 
           css: {
             content: 'url('+ local_content.image_asset_wide.value + ')',
-              'position': 'absolute',
-              'width': 'auto',
-              'height': '551px',
-              'top': '0px',
-              'left': '0px',
-              'display':'inline-block',
+            'position': 'absolute',
+            'width': 'auto',
+            'height': '600px',
+            'top': '0px',
+            'left': '0px',
+            'display':'inline-block',
           }
       }).appendTo(leftImage);
 
-    //Append container width based on title image
+   //Append container width based on title image
    $('#panel_container').css({
-        'width': panelSize,
-    });
+    'width': panelSize,
+ });
   }
 
 function onClick (event) {

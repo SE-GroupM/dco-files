@@ -22,7 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;  
+  -webkit-tap-highlight-color: transparent; 
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -31,9 +31,9 @@ body {
 }
 
 /* Body of banner */
-.Frame_320x320_single {
-  width: 320px;
-  height: 320px;
+.Frame_1250x360Multi {
+  width: 1250px;
+  height: 360px;
   background: #000;
   display: block;
   position: fixed;
@@ -44,12 +44,11 @@ body {
  
 }
 
-
 /* Video player div */
 .player {
   position: absolute;
-  width: 320px;
-  height: 167px;
+  width: 640px;
+  height: 363px;
   top: 0px;
   left: 0px;
   background-color: #000;
@@ -58,10 +57,10 @@ body {
 /* Panel container flex div */
 .panel_container {
   position: absolute;
-  width: 320px;
-  height: 140px;
-  top: 170px;
-  bottom: 0px;
+  width: 612px;
+  height: 360px;
+  left:auto;
+  right: 0px;
   background: #000;
   display: flex;
   align-items: center;
@@ -71,34 +70,34 @@ body {
 
 /* Logo image div */
 .logo {
-  width: 119px;
-  height: 29px;
+  width: 213px;
+  height: 57px;
   z-index: 100;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /* Main copy div */
 .main_copy {
   width: 100%;
   left: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
   padding: 0px 20px 10px 20px;
   text-align: center;
   color: white;
   font-family: "Netflix Sans Regular Comp";
-  font-size: 14px;
+  font-size: 22px;
   opacity: 0;
 }
 
 /* Cta button div */
 .cta_copy {
   background-color: #e50914;
-  padding: 0px 7px 4px 10px;
+  padding: 1px 20px 8px 15px;
   text-align: center;
   color: #FFF;
   font-family: "Netflix Sans Bold Comp";
-  font-size: 12px;
+  font-size: 14px;
   max-width: fit-content; /* Take width from cta content */
   margin: auto;
   opacity: 0;
@@ -106,8 +105,8 @@ body {
 
 /* World click div */
 .worldClick {
-  width: 320px;
-  height: 320px;
+  width: 1250px;
+  height: 360px;
   display: block;
   position: fixed;
   overflow: hidden;

@@ -69,8 +69,8 @@ window.addEventListener('lemonpi.content/ready', event => {
     };
 
     //Variables for video
-    var videoSrc = titles[0].video_src.value;
-    var videoTracker = titles[0].video_tracker.value;
+    var videoSrc = local_content.video_src.value;
+    var videoTracker = local_content.video_tracker.value;
 
   } else {
       // Add image of title instead
