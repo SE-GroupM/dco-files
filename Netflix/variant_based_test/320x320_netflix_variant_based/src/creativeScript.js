@@ -51,26 +51,27 @@ window.addEventListener('lemonpi.content/ready', event => {
   // Check if we're going to dislay video or images 
   if (useVideo) {
 
-  //Video player 
-  var e = document.createElement('script');
-  e.src = 'https://video.seenthis.se/v2/player/74/player.js';
-  e.onload = function(){
-  var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
-  };
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(e, s);
+    //Variables for video
+    var videoSrc = local_content.video_src.value;
+    var videoTracker = local_content.video_tracker.value;
+    //Video player 
+    var e = document.createElement('script');
+    e.src = 'https://video.seenthis.se/v2/player/74/player.js';
+    e.onload = function(){
+    var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
 
-   //Options for video script
-  var options = {
-      loop: true,
-      loopCount: 1,
-      muteButton: true,
-      autoplay: true,
-  };
+    //Options for video script
+    var options = {
+        loop: true,
+        loopCount: 1,
+        muteButton: true,
+        autoplay: true,
+    };
 
-  //Variables for video
-  var videoSrc = local_content.video_src.value;
-  var videoTracker = local_content.video_tracker.value;
+
 
 } else {
     // Add image of title instead
