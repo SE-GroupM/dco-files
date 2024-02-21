@@ -16,30 +16,28 @@ function onLemonpiReady(cb) {
 }
 
 window.addEventListener('lemonpi.content/ready', event => {
-
-  const content = event.detail.content
+  
   // Local content declaration
   const local_content = content;
   // Boolean for using video or not
   let useVideo = (local_content.use_video.value.toLowerCase() === 'true');
-
   // Append main copy
   $('#main_copy').html(local_content.Message.value);
   // Append Cta copy and arrow
   $('#cta_copy').html(local_content.Cta_copy.value);
   //Container size
-  var panelSize = parseInt(local_content.panel_size.value);
-  
-  var logo_source = "https://assets.lemonpi.io/a/1152/5863bb1b98276ea402943702e5f240d5.svg";
-  
+  var panelSize = parseInt(local_content.panel_size.value);  
+  // Logo source from CC assemble
+  var logo_source = "https://assets.lemonpi.io/a/1152/5863bb1b98276ea402943702e5f240d5.svg";  
+  // Logo append
   $('#logo').css({
     content: 'url('+ logo_source + ')',
   });
-
+  //Variables for video
+  var videoSrc = local_content.video_src.value;
+  var videoTracker = local_content.video_tracker.value;
   // World click event caller
   $('#worldClick').click(onClick);
-
-
 
   /////////////////////
   //// ANIMATIONS /////

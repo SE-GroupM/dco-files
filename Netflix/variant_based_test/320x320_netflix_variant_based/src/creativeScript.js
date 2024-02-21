@@ -28,13 +28,15 @@ window.addEventListener('lemonpi.content/ready', event => {
   $('#cta_copy').html(local_content.Cta_copy.value);
   //Container size
   var panelSize = parseInt(local_content.panel_size.value);
-  
+  // Logo source from CC assemble
   var logo_source = "https://assets.lemonpi.io/a/1152/5863bb1b98276ea402943702e5f240d5.svg";
-  
+  // Logo append
   $('#logo').css({
     content: 'url('+ logo_source + ')',
   });
-
+  //Variables for video
+  var videoSrc = local_content.video_src.value;
+  var videoTracker = local_content.video_tracker.value;
   // World click event caller
   $('#worldClick').click(onClick);
 
@@ -51,9 +53,6 @@ window.addEventListener('lemonpi.content/ready', event => {
   // Check if we're going to dislay video or images 
   if (useVideo) {
 
-    //Variables for video
-    var videoSrc = local_content.video_src.value;
-    var videoTracker = local_content.video_tracker.value;
     //Video player 
     var e = document.createElement('script');
     e.src = 'https://video.seenthis.se/v2/player/74/player.js';
