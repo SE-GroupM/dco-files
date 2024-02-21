@@ -55,35 +55,42 @@ body {
   background-color: #000;
 }
 
-/* Panel container flex div */
+/* Panel container */
 .panel_container {
   position: absolute;
   width: 320px;
   height: auto;
-  top: 170px;
-  bottom: 0px;
+  top: auto;
+  bottom: 50px;
   background: #000;
+  z-index: 0;
+}
+/* Copy container flex div */
+.copyContainer {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 0;
 }
 
 /* Logo image div */
 .logo {
+  position: absolute;
+  border-left: solid #e50914 1px;
+  left: 160px;
   width: 119px;
-  height: 29px;
+  height: 30px;
   z-index: 100;
-  margin: auto;
-  margin-bottom: 10px;
+  padding-left: 20px;
+  bottom: 20px;
+  top: auto;
 }
 
 /* Main copy div */
 .main_copy {
   width: 100%;
   left: 0px;
-  margin-bottom: 8px;
-  padding: 0px 20px 10px 20px;
+  padding: 0px 20px 0px 20px;
   text-align: center;
   color: white;
   font-family: "Netflix Sans Regular Comp";
@@ -93,6 +100,7 @@ body {
 
 /* Cta button div */
 .cta_copy {
+  position: absolute;
   background-color: #e50914;
   padding: 0px 7px 4px 10px;
   text-align: center;
@@ -100,8 +108,11 @@ body {
   font-family: "Netflix Sans Bold Comp";
   font-size: 12px;
   max-width: fit-content; /* Take width from cta content */
-  margin: auto;
   opacity: 0;
+  right: 180px;
+  bottom: 20px;
+  left: auto;
+  top: auto;
 }
 
 /* World click div */
