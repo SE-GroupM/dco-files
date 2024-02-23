@@ -31,9 +31,9 @@ body {
 }
 
 /* Body of banner */
-.Frame_980X240Multi {
-  width: 320px;
-  height: 400px;
+.Frame_640x640Multi {
+  width: 640px;
+  height: 640px;
   background: #000;
   display: block;
   position: fixed;
@@ -41,64 +41,63 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
 }
 
 /* Video player div */
 .player {
   position: absolute;
-  width: 320px;
-  height: 165px;
+  width: 640px;
+  height: 320px;
   top: 0px;
   left: 0px;
   background-color: #000;
-  z-index: 70px;
+  margin-bottom: 200px;
 }
 
 /* Panel container flex div */
 .panel_container {
   position: absolute;
-  width: 320px;
-  height: 236px;
+  width: 640px;
+  height: auto;
+  top: 355px;
   bottom: 0px;
-  top: 130px;
   background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 150;
+  z-index: 100;
 }
 
 /* Logo image div */
 .logo {
-  width: 175px;
-  height: 47px;
+  width: 250px;
+  height: 70px;
   z-index: 100;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 /* Main copy div */
 .main_copy {
   width: 100%;
   left: 0px;
-  margin-bottom: 15px;
-  padding: 0px 20px 10px 20px;
+  margin-bottom: 20px;
+  padding: 0px 25px 10px 25px;
   text-align: center;
   color: white;
   font-family: "Netflix Sans Regular Comp";
-  font-size: 18px;
+  font-size: 25px;
   opacity: 0;
 }
 
 /* Cta button div */
 .cta_copy {
   background-color: #e50914;
-  padding: 5px 15px 8px 15px;
+  padding: 6px 13px 8px 13px;
   text-align: center;
   color: #FFF;
   font-family: "Netflix Sans Bold Comp";
-  font-size: 14px;
+  font-size: 19px;
   max-width: fit-content; /* Take width from cta content */
   margin: auto;
   opacity: 0;
@@ -106,8 +105,8 @@ body {
 
 /* World click div */
 .worldClick {
-  width: 320px;
-  height: 400px;
+  width: 640px;
+  height: 640px;
   display: block;
   position: fixed;
   overflow: hidden;
