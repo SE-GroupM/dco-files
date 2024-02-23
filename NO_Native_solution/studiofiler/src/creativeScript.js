@@ -75,7 +75,7 @@ onLemonpiReady(function () {
     // if useFont variable is empty, specify which font to use as default
     if (useFont == '') {
       $('#mainCopy').css({
-        'font-family': "Austin",
+        'font-family': "TV2_bold",
       });
     }else {
       $('#mainCopy').css({

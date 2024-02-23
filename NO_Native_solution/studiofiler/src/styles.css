@@ -37,7 +37,6 @@ html, body {
 
 /* MainCopy in larger font */
 #mainCopy {
-  /* font-family: "Austin"; */
   font-style: bold;
   position: absolute;
   top: 248px;
@@ -46,10 +45,6 @@ html, body {
   color: black;
   max-width: 580px;
 }
-/* 
-font-family: "Siri-Black";
-font-family: "Verdana-Bold"; 
-*/
 
 /* MainCopy in larger font */
 #imgCopy {
