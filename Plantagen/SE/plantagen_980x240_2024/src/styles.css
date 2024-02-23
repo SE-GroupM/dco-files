@@ -84,18 +84,35 @@ html, body {
 /* Panel for products */
 .product_panel {
   position: absolute;
-  width: 478px;
+  width: 430px;
   height: 240px;
-  right: auto;
-  left: 0;
+  left: 550px;
+}
+
+.slider {
+  position: absolute;
+  height: 220px;
+  width: 408px;
+  top: 10px;
+  left: 550px;
+}
+.slide {
+  position: relative;
+  height: 220px;
+  width: 408px;
+  top: 0px;
+  left: 418px;
 }
 /* Product image */
 .product_img {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  height: 180px;
-  width: 190px;
+  top: 30px;
+  left: 20px;
+  height: 150px;
+  width: 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /* Product info container */
 .product_info {
@@ -139,14 +156,14 @@ html, body {
   color: #d82316;
 }
 
-/* Product box 1 */
-.card_0 {
+/* Product box */
+.card {
   position: absolute;
   background-color: white;
   height: 220px;
   width: 408px;
-  top: 10px;
-  left: 560px;
+  top: 0px;
+  left: 0px;
 }
 
 /* Cta */
@@ -162,4 +179,32 @@ html, body {
   top: auto;
   text-align: center;
   padding: 4px;
+}
+
+.next {
+  position: absolute;
+  color: white;
+  background-color: black;
+  font-family: "plantagen-bold";
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+  top: 107px;
+  left: 954px;
+  text-align: center;
+  z-index: 5;
+}
+
+.prev {
+  position: absolute;
+  color: white;
+  background-color: black;
+  font-family: "plantagen-bold";
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+  left: 550px;
+  top: 107px;
+  text-align: center;
+  z-index: 5;
 }

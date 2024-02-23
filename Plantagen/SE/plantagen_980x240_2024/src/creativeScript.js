@@ -62,83 +62,265 @@ $('#mainCopy').css({
   'line-height': copyFontSize + 2,
 })
 
-$('#product_panel').click(onClick)
+var ctaCopyColor = local_content.cta_copy_color.value; //Color of cta copy
+var ctaBgcolor = local_content.cta_color.value; //Color of cta background
+// Append cta color
+$('.cta').css({
+  'color': ctaCopyColor,
+  'background-color': ctaBgcolor,
+})
 
-//Product collection from adset
-var products = local_content.products.value;
+// $('#product_panel').click(onClick)
 
-//For loop to append products to product panel
-for (var i = 0; i < 3; i++){
+const Slider = {
+  currentSlideIndex: 1,
+  create: function(options) {
+      const defaults = {
+          slider: ".slider",
+          slide: ".slide",
+          prevBtn: ".prev",
+          nextBtn: ".next",
+          duration: 0.5,
+          setSlideContent: null,
+          animation: function(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete) {
+              timeline.to(slidesWrapper, {
+                  duration: duration,
+                  ease: "power2.inOut",
+                  x: -target,
+                  onComplete: onComplete
+              });
+          }
+      };
 
-  // Append image to product
-  var productImage =  products[i].product_image.value;
-  $('#product_img_' + i).css({
-      backgroundImage: 'url("' + productImage + '")',
-      'background-size': 'contain',
-      'background-repeat': 'no-repeat',
-      'background-position': 'center center',
-  });
+      const settings = Object.assign({}, defaults, options);
 
-  // Append title to product
-  var title = products[i].title.value;
-  $('#title_'+i).html(title);
+      const slidesContainer = document.querySelector(settings.slider);
+      const duration = settings.duration;
+      const slideTemplate = slidesContainer.querySelector(settings.slide);
+      const slidesWrapper = document.createElement("div");
+      const prevBtn = document.querySelector(settings.prevBtn);
+      const nextBtn = document.querySelector(settings.nextBtn);
+      const slideWidth = slideTemplate.clientWidth;
+      const slidesData = options.slidesData;
 
-  // Append description to product
-  var description = products[i].product_description.value;
-  $('#description_'+i).html(description);
+      let slideIndex = 1;
+      let isAnimating = false;
 
-  // Variables for price
-  var priceNormal = products[i].priceNormal.value;
-  var priceDiscount = products[i].priceDiscount.value;
-  
-  var normalPrice = parseFloat(priceNormal);
-  normalPrice = normalPrice.toFixed(2);
-  var tempNormal = normalPrice.split(".")
-  
-  var discountPrice = parseFloat(priceDiscount);
-  discountPrice = discountPrice.toFixed(2);
-  var tempDiscount = discountPrice.split(".")
-  
-  if (isNaN(discountPrice)) {
-      if (tempNormal[1] > 0o0) {
-        //Ex. 88.88
-        $('#price_elements_' + i).html(tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1]  + ' </span>');
-      } else {
-        //Ex. 88:-
-        $('#price_elements_' + i).html(tempNormal[0] + ':-');
+      if (!slidesData) {
+          console.warn('Slider.create has failed. No slidesData was found.')
+          return
+      } else if (!settings.setSlideContent) {
+          console.warn('Slider.create has failed. createSlide is empty');
+          return
       }
-  } else {
-    if (tempDiscount[1] > 0o0) {
+
+      function createSlide(slideData, index) {
+          const slideDiv = slideTemplate.cloneNode(true);
+          slideTemplate.remove();
+          slideDiv.id = 'slide-' + index;
+          settings.setSlideContent(slideDiv, slideData, index);
+          slidesWrapper.appendChild(slideDiv);
+      }
+
+      function animateSlider(index, previousIndex, onComplete) {
+          const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
+          const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
+          const target = slideWidth * index;
+          const timeline = gsap.timeline({onComplete: onComplete})
+          settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
+      }
+
+      function nextSlide() {
+          if (isAnimating) return;
+          isAnimating = true;
+          slideIndex++;
+          const totalSlides = slidesData.length;
+          if (slideIndex === totalSlides+1) {
+              slideIndex = 1;
+              gsap.set(slidesWrapper, {x: 0})
+              animateSlider(slideIndex, slideIndex-1, function() {
+                  isAnimating = false;
+                });;
+          } else {
+              animateSlider(slideIndex, slideIndex-1, function() {
+                  isAnimating = false;
+                });
+          }
+          Slider.currentSlideIndex = slideIndex;
+        }
+        
+        function prevSlide() {
+          if (isAnimating) return;
+          isAnimating = true;
+          slideIndex--;
+          
+          const totalSlides = slidesData.length;
+          if (slideIndex < 1) {
+              slideIndex = totalSlides;
+              gsap.set(slidesWrapper, {x: -slideWidth*(totalSlides+1)});
+              animateSlider(slideIndex, slideIndex+1, function() {
+                  isAnimating = false;
+                });
+          } else {
+              animateSlider(slideIndex, slideIndex+1, function() {
+                  isAnimating = false;
+                });
+          }
+          Slider.currentSlideIndex = slideIndex;
+        }
+
+
+      slidesData.forEach((slideData, index) => createSlide(slideData, index));
+      // Clone the last slide and append it to the beginning of the slidesWrapper
+      const lastSlide = slidesWrapper.lastChild.cloneNode(true);
+      const firstSlide = slidesWrapper.firstChild.cloneNode(true);
+      lastSlide.id = "slide-2-clone";
+      slidesWrapper.insertBefore(lastSlide, slidesWrapper.firstChild);
+      firstSlide.id = "slide-0-clone";
+      slidesWrapper.appendChild(firstSlide);
+
+      slidesWrapper.id = "slidesWrapper"
+      slidesWrapper.style.width = slideWidth * slidesWrapper.children.length + "px"; // set container width
+      slidesWrapper.style.display = "flex"; // set container display
+      slidesWrapper.style.transform = `translateX(-${slideWidth}px)`;
+      slidesContainer.appendChild(slidesWrapper);
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
+
+  }
+};
+
+// var slider = plugins.slider.create({})
+
+Slider.create({
+	slidesData: local_content.products.value,
+	setSlideContent: function(slideDiv, slideData, slideIndex) {
+    //Find product image div and append image
+		$(slideDiv).find("#product_img").css("background-image","url("+slideData.product_image.value+")");
+    //Find title div and append title
+		$(slideDiv).find("#title").html(slideData.title.value);
+    //Find description div and append description
+    $(slideDiv).find("#description").html(slideData.product_description.value);
+    //Find cta div and append cta copy
+    $(slideDiv).find("#cta").html(local_content.ctaText.value);
+    
+    // Variables for price
+    var priceNormal = slideData.priceNormal.value;
+    var priceDiscount = slideData.priceDiscount.value;
+    
+    var normalPrice = parseFloat(priceNormal);
+    normalPrice = normalPrice.toFixed(2);
+    var tempNormal = normalPrice.split(".")
+    
+    var discountPrice = parseFloat(priceDiscount);
+    discountPrice = discountPrice.toFixed(2);
+    var tempDiscount = discountPrice.split(".")
+
+    if (isNaN(discountPrice)) {
       if (tempNormal[1] > 0o0) {
-        //Ex. 88.88 (88.88)
-        $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+        //Find price div and append price: Ex. 88.88
+        $(slideDiv).find('#price_elements').html(tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1]  + ' </span>');
       } else {
-        //Ex. 88.88 (88:-)
-        $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + ":-)");
+        //Find price div and append price: Ex. 88:-
+        $(slideDiv).find('#price_elements').html(tempNormal[0] + ':-');
       }
     } else {
-      if (tempNormal[1] > 0o0) {
-        //Ex. 88:- (88.88)
-        $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + '</span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+      if (tempDiscount[1] > 0o0) {
+        if (tempNormal[1] > 0o0) {
+          //Find price div and append price: Ex. 88.88 (88.88)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+        } else {
+          //Find price div and append price: Ex. 88.88 (88:-)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + ":-)");
+        }
       } else {
-        //Ex. 88.88 (88.88)
-        $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + ':-</span> (' + tempNormal[0] + ":-)");
+        if (tempNormal[1] > 0o0) {
+          //Find price div and append price: Ex. 88:- (88.88)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + '</span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+        } else {
+          //Find price div and append price: Ex. 88.88 (88.88)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + ':-</span> (' + tempNormal[0] + ":-)");
+        }
       }
     }
-  }
-  // Append cta copy
-  var ctaCopy = local_content.ctaText.value;
-  $('#cta_'+i).html(ctaCopy);
+	}
+});
 
-  var ctaCopyColor = local_content.cta_copy_color.value; //Color of cta copy
-  var ctaBgcolor = local_content.cta_color.value; //Color of cta background
-  // Append cta color
-  $('#cta_'+i).css({
-    'color': ctaCopyColor,
-    'background-color': ctaBgcolor,
-  })
-}
-//End of for loop 
+// //Product collection from adset
+// var products = local_content.products.value;
+
+// //For loop to append products to product panel
+// for (var i = 0; i < 3; i++){
+
+//   // Append image to product
+//   var productImage =  products[i].product_image.value;
+//   $('#product_img_' + i).css({
+//       backgroundImage: 'url("' + productImage + '")',
+//       'background-size': 'contain',
+//       'background-repeat': 'no-repeat',
+//       'background-position': 'center center',
+//   });
+
+//   // Append title to product
+//   var title = products[i].title.value;
+//   $('#title_'+i).html(title);
+
+//   // Append description to product
+//   var description = products[i].product_description.value;
+//   $('#description_'+i).html(description);
+
+//   // Variables for price
+//   var priceNormal = products[i].priceNormal.value;
+//   var priceDiscount = products[i].priceDiscount.value;
+  
+//   var normalPrice = parseFloat(priceNormal);
+//   normalPrice = normalPrice.toFixed(2);
+//   var tempNormal = normalPrice.split(".")
+  
+//   var discountPrice = parseFloat(priceDiscount);
+//   discountPrice = discountPrice.toFixed(2);
+//   var tempDiscount = discountPrice.split(".")
+  
+//   if (isNaN(discountPrice)) {
+//       if (tempNormal[1] > 0o0) {
+//         //Ex. 88.88
+//         $('#price_elements_' + i).html(tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1]  + ' </span>');
+//       } else {
+//         //Ex. 88:-
+//         $('#price_elements_' + i).html(tempNormal[0] + ':-');
+//       }
+//   } else {
+//     if (tempDiscount[1] > 0o0) {
+//       if (tempNormal[1] > 0o0) {
+//         //Ex. 88.88 (88.88)
+//         $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+//       } else {
+//         //Ex. 88.88 (88:-)
+//         $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + ":-)");
+//       }
+//     } else {
+//       if (tempNormal[1] > 0o0) {
+//         //Ex. 88:- (88.88)
+//         $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + '</span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+//       } else {
+//         //Ex. 88.88 (88.88)
+//         $('#price_elements_' + i).html('<span class="discountColor">' + tempDiscount[0] + ':-</span> (' + tempNormal[0] + ":-)");
+//       }
+//     }
+//   }
+//   // Append cta copy
+//   var ctaCopy = local_content.ctaText.value;
+//   $('#cta_'+i).html(ctaCopy);
+
+//   var ctaCopyColor = local_content.cta_copy_color.value; //Color of cta copy
+//   var ctaBgcolor = local_content.cta_color.value; //Color of cta background
+//   // Append cta color
+//   $('#cta_'+i).css({
+//     'color': ctaCopyColor,
+//     'background-color': ctaBgcolor,
+//   })
+// }
+// //End of for loop 
 
 // Get coordinates for product boxes
 function showCoords(event) {
@@ -154,15 +336,15 @@ function onClick (event) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
-          placeholder: ['products', 0, 'click'],
+          placeholder: ['products', slideIndex, 'click'],
         }
     }));
   }
 }
 
-//Animation of product boxes
-var t2 = new TimelineMax();
-  t2.fromTo('#product_panel', 0.7, {x: 460} ,{x: 0},0.2)
+// //Animation of product boxes
+// var t2 = new TimelineMax();
+//   t2.fromTo('#product_panel', 0.7, {x: 460} ,{x: 0},0.2)
 
 //Animation of badge elements
 var t1 = new TimelineMax({repeat:-1});
@@ -171,17 +353,17 @@ var t1 = new TimelineMax({repeat:-1});
   .to('#badgeElement2', 0.3, {rotationY: -90}, 7)
   .to('#badgeElement1', 0.3, {rotationY: 0}, 7.2)
 
-// World click source
-var click = local_content.world_click.value;
-// Get the div element by its id
-var worldClickDiv = document.getElementById('creative_container');
-worldClickDiv.href = click;
- // Add a click event listener to the div
-worldClickDiv.addEventListener('click', function() {
+// // World click source
+// var click = local_content.world_click.value;
+// // Get the div element by its id
+// var worldClickDiv = document.getElementById('creative_container');
+// worldClickDiv.href = click;
+//  // Add a click event listener to the div
+// worldClickDiv.addEventListener('click', function() {
   
-  window.open(click);
-   // Opens the specified URL in a new window or tab
-   //window.open('');
- });
+//   window.open(click);
+//    // Opens the specified URL in a new window or tab
+//    //window.open('');
+//  });
 })
   

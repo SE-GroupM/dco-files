@@ -21,7 +21,7 @@
   <body data-engagement-metrics="true">
     <!-- Creative Content -->
     <div id="content">
-      <div id="creative_container">
+      <div id="creative_container" class="creative_container">
         <!-- Panel with copy, background image, logo and badge -->
         <div id="dynamic_image" class="dynamic_image" data-placeholder="dynamic_image"></div>
         <div id="overlay" class="overlay"></div>
@@ -32,15 +32,19 @@
         </div>
         <div id="logo" class="logo"></div>
         <!-- Product panel -->
-        <div id="product_panel">
-          <!-- Product box content -->
-          <div id="card_0" class="card_0">
-            <div id="product_img_0" class="product_img"></div>
-            <div class="product_info" id="product_info">
-              <div id="title_0" class="title"></div>
-              <div id="description_0" class="description"></div>
-             <div id="price_elements_0" class="price_elements"></div>
-              <div id="cta_0" class="cta"></div>
+        <div id="next" class="next">N</div>
+        <div id="prev" class="prev">P</div>
+        <div id="slider" class="slider">
+          <div id="slide" class="slide">
+            <!-- Product box content -->
+            <div id="card" class="card">
+              <div id="product_img" class="product_img"></div>
+              <div class="product_info" id="product_info">
+                <div id="title" class="title"></div>
+                <div id="description" class="description"></div>
+                <div id="price_elements" class="price_elements"></div>
+                <div id="cta" class="cta"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -48,7 +52,7 @@
     </div>
 
     <!-- Creative Dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Visual Studio Code for Create related file (don't delete)" -->
