@@ -35,13 +35,24 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   // Local variable for hodling all daa from adset/feed
   var local_content = content;
-  console.log(local_content)
-  
   // Variable declaration for city name
   var cityName = local_content.ort.value;
-  //Append Event details
-  var mainCopy = local_content.rubrik.value;
-  var subText = local_content.brodtext_mindre_format.value;
+  // Variable declaration for mainCopy
+  var mainCopy = "";
+  // Variable declaration for subText / Brödtext
+  var subText = "";
+  // If statement to check if creative dimension is small or big. So we lookup the width which is the first
+  // integer and then parse it to an integer and then check if the value is below
+  if (parseInt(local_content.creative_dimension.value.substring(0,3)) > 641) {
+    mainCopy = local_content.rubrik.value;
+    subText = local_content.brodtext.value;
+  } else if (parseInt(local_content.creative_dimension.value.substring(0,3))  > 639) {
+    mainCopy = local_content.rubrik.value;
+    subText = local_content.brodtext_mindre_format.value;
+  } else {
+    mainCopy = local_content.rubrik_mindre_format.value;
+    subText = local_content.brodtext_mindre_format.value;
+  }
   //Append Property title 
   var project_brfName = local_content.projekt.value;
   //Append Cta copy
@@ -131,8 +142,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   // ANIMATIONS //
   ///////////////////
 
-// Assuming content.includeBrf.value is correctly set
-var includeBrf = "0";
+// Assuming content.useHouseIcon.value is correctly set
+var includeBrf = local_content.useHouseIcon.value;
 
 // Adjust initial CSS based on includeBrf
 if (includeBrf === '0') {
