@@ -194,6 +194,7 @@ const Slider = {
 
 Slider.create({
 	slidesData: local_content.products.value,
+  width: 400,
 	setSlideContent: function(slideDiv, slideData, slideIndex) {
     //Find product image div and append image
 		$(slideDiv).find("#product_img").css("background-image","url("+slideData.product_image.value+")");
