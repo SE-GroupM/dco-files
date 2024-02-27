@@ -27,7 +27,6 @@ onLemonpiReady(function () {
 
 window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content
-  const source = event.detail.source
 
   ////////////////////
   // VARIABLES //
@@ -35,8 +34,6 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   // Local variable for hodling all daa from adset/feed
   var local_content = content;
-  // Variable declaration for city name
-  var cityName = local_content.ort.value;
   // Variable declaration for mainCopy
   var mainCopy = "";
   // Variable declaration for subText / Brödtext
@@ -59,7 +56,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   var ctaCopy = content.CTA.value;
   //Append images
   var bgImage = local_content.bg_image_source.value;
-  var logoImg = content.logo_src.value;
+  var logoImg = local_content.logo_src.value;
   var houseIcon = "https://assets.lemonpi.io/a/1024/ded0820142b233c423b01bc2620aabef.png";
 
   // Append villkors copy
@@ -91,12 +88,9 @@ window.addEventListener('lemonpi.content/ready', event => {
   var ctaCopyPlaceholder = $('#ctaTxt');
   ctaCopyPlaceholder.append(ctaCopy);
 
-  var villkorPlaceholder = $('#villkor');
-  villkorPlaceholder.append(villkorCopy);
-
   // dynamic controls of bg image position
-  var dynamic_img_left = content.bgImageCssLeftAdjust.value;
-  var dynamic_img_top = content.bgImageCssTopAdjust.value;
+  var dynamic_img_left = local_content.bgImageCssLeftAdjust.value;
+  var dynamic_img_top = local_content.bgImageCssTopAdjust.value;
 
   $('#bgImage').css({
     content: 'url('+ bgImage + ')',
