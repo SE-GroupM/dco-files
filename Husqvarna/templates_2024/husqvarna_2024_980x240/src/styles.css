@@ -1,7 +1,6 @@
 * { 
   box-sizing: border-box;
 } 
-
 html, body {
   width: 100%;
   height: 100%;
@@ -10,7 +9,6 @@ html, body {
   overflow: hidden;
   background-color: #fff;
 }
-
 #creative_container {
   width: 100%;
   height: 100%;
@@ -25,22 +23,38 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
 }
-
 .copy_frames {
   position: absolute;
+  top: 38px;
+  left: 43px;
   font-size: 46px;
+  line-height: 46px;
   color: #fff;
+  font-family: "Husqvarna Gothic Bold";
+}
+
+#copy_frame_1 {
+  opacity: 1;
+}
+
+#copy_frame_2 {
+  opacity: 0;
+}
+
+.italic {
+  font-family: "Husqvarna Gothic Light Italic";
 }
 
 .cta {
   position: absolute;
   left: 43px;
   top: 167px;
-  padding: 20px 10px;
+  padding: 15px 20px;
   font-size: 16px;
   background-color: #fff;
   color: #273A60;
   border-radius: 14px;
+  font-family: "Husqvarna Gothic Bold";
 }  
 
 .bg_image {
@@ -55,6 +69,8 @@ html, body {
 
 .logo {
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 125px;
   height: 125px;
   left: 804px;
