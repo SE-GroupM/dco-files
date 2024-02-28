@@ -1,25 +1,29 @@
 {
-  "id": "305e6bb1-e0e2-4f84-bd73-0fa2e56a1c2c",
-  "version": "1.2.0",
-  "name": "husqvarna_980x240",
+  "id": "8a8d113e-0c89-4e2a-8d32-04be3ab37ec0",
+  "version": "1.3.0",
+  "name": "husqvarna_2024_300x600",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 240,
+        "width": 300,
+        "height": 600,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 240
+        "width": 300,
+        "height": 600
       }
     ]
   },
   "placeholders": {
     "schema": {
+      "activation_name": {
+        "type": "text",
+        "source": "feed"
+      },
       "frame_1_copy": {
         "type": "text",
         "source": "feed"
@@ -33,11 +37,11 @@
         "source": "feed"
       },
       "image_source": {
-        "type": "image",
+        "type": "text",
         "source": "feed"
       },
       "logo_source": {
-        "type": "image",
+        "type": "text",
         "source": "feed"
       },
       "exit_url": {
@@ -49,11 +53,14 @@
       "defaultRowIndex": 0,
       "list": [
         {
+          "activation_name": {
+            "value": "robotic"
+          },
           "frame_1_copy": {
             "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna <br>robotgräsklippare"
+            "value": "Med Husqvarna<br>robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -65,15 +72,18 @@
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
           },
           "exit_url": {
-            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309338\r"
+            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309338"
           }
         },
         {
+          "activation_name": {
+            "value": "robotic"
+          },
           "frame_1_copy": {
-            "value": "Känslan när allt bara fungerar"
+            "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarna<br>robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -85,15 +95,18 @@
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
           },
           "exit_url": {
-            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309339\r"
+            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309339"
           }
         },
         {
+          "activation_name": {
+            "value": "robotic"
+          },
           "frame_1_copy": {
-            "value": "Känslan när allt bara fungerar"
+            "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarna<br>robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -105,15 +118,18 @@
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
           },
           "exit_url": {
-            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309340\r"
+            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309340"
           }
         },
         {
+          "activation_name": {
+            "value": "robotic"
+          },
           "frame_1_copy": {
-            "value": "Känslan när allt bara fungerar"
+            "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarna<br>robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -124,16 +140,19 @@
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
           },
-          "exit_url\r": {
-            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309341\r"
+          "exit_url": {
+            "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-2024-309338&utm_term=dv360-display-pge-suburbans-landowners-range-2024-309338&utm_content=2024-309341"
           }
         },
         {
+          "activation_name": {
+            "value": "robotic"
+          },
           "frame_1_copy": {
-            "value": "Känslan när allt bara fungerar"
+            "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarna<br>robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -163,5 +182,5 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 56910
+  "port": 58325
 }
