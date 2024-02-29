@@ -42,3 +42,37 @@ window.addEventListener('lemonpi.content/ready', event => {
   $("#logo").css("background-image","url("+local_content.logo_source.value+")");
 })
   
+   /////////////////////
+  //// ANIMATIONS /////
+ ////////////////////
+
+ /*varibale holding fade time
+ var fadeTime = 0.25;*/
+// animation loop timeline setup
+var t1 = new TimelineMax({
+  repeat: 5,  // Adjust repeat count accordingly
+  onComplete: function() {
+      t1.seek("copy_frame_1");  // This will make the timeline stop at #frame1Txt1 animation
+  }
+ });
+ 
+// label to identify the start of frame1Txt1 animation
+t1.addLabel("copy_frame_1")
+
+// Start animation by setting initial lineHeight to 0
+.set('#copy_frame_1, #copy_frame_2', { lineHeight: "7px" })
+
+ // fade in animation 
+ .to('#copy_frame_1', 0.3, { x:0 , opacity:1 , lineHeight: "28px", duration: 1.25, ease: Linear.ease })
+ // hold frame for 4 seconds
+ .to('#copy_frame_1', 2, { opacity:1, lineHeight: "28px", ease: Linear.easeNone , delay:0.5 })
+ // fade out animation over 1 second
+ .to('#copy_frame_1', 0.3, { opacity:0 , lineHeight: "9px", ease: Linear.easeNone })
+ 
+ // fade in animation - main copy over 1 second
+ .to('#copy_frame_2', 0.3, { x:0 , opacity:1 , lineHeight: "28px", ease: Linear.easeNone })
+ // hold frame for 4 seconds
+ .to('#copy_frame_2', 2, { opacity:1, lineHeight: "28px", ease: Linear.easeNone , delay:0.5 })
+ // fade out animation over 1 second
+ .to('#copy_frame_2', 0.3, { opacity:0 , lineHeight: "9px", ease: Linear.easeNone })
+ 
