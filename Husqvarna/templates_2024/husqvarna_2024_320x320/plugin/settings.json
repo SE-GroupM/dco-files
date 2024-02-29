@@ -53,7 +53,7 @@
             "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna <br>robotgräsklippare"
+            "value": "Med Husqvarnas <br>robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -73,7 +73,7 @@
             "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarnas robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -93,7 +93,7 @@
             "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarnas robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -113,7 +113,7 @@
             "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarnas robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -133,7 +133,7 @@
             "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna robotgräsklippare"
+            "value": "Med Husqvarnas robotgräsklippare"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -163,5 +163,5 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 64721
+  "port": 60251
 }

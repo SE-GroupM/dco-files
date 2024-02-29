@@ -25,34 +25,41 @@ html, body {
 }
 
 .copy_frames {
-  position: relative;
+  position: absolute;
   top: 114px;
   width: 180px;
-  left: 76px;
+  left: 66px;
   text-align: center;
   font-size: 30px;
-  line-height: 28px;
   color: #fff;
   font-family: "Husqvarna Gothic Bold";
 }
 
 #copy_frame_1 {
-  opacity: 1;
+  opacity: 0;
 }
 
 #copy_frame_2 {
   opacity: 0;
+  font-size: 30px;
+  font-family: "Husqvarna Gothic Light Italic";
 }
 
 .italic {
   font-family: "Husqvarna Gothic Light Italic";
 }
 
+.cta_container {
+  align-items: center;
+  justify-content: center;
+  display: flex;  
+  width: 320px;
+}
+
 .cta {
   position: absolute;
-  left: 86px;
+  text-align: center;
   top: 270px;
-  height: 35px;
   padding: 11px 11px;
   font-size: 10.77px;
   background-color: #fff;

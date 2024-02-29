@@ -61,6 +61,10 @@ html, body {
 /* Style of cta */
 .cta {
   position: absolute;
+<<<<<<< HEAD
+=======
+  left: 70px;
+>>>>>>> 60e430e02fd71e639022f3d4fbaf68c030d320df
   top: 249px;
   padding: 11px;
   font-size: 10px;
