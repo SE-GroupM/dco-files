@@ -30,16 +30,23 @@ html, body {
   top: 38px;
   left: 43px;
   font-size: 46px;
-  line-height: 46px;
   color: #fff;
   font-family: "Husqvarna Gothic Bold";
 }
 /* Style of copy frame 1 */
-#copy_frame_1 {
+#row1_frame1 {
   opacity: 0;
 }
 /* Style of copy frame 2 */
-#copy_frame_2 {
+#row2_frame1 {
+  opacity: 0;
+}
+/* Style of copy frame 1 */
+#row1_frame2 {
+  opacity: 0;
+}
+/* Style of copy frame 2 */
+#row2_frame2 {
   opacity: 0;
 }
 /* Style of span in copy */

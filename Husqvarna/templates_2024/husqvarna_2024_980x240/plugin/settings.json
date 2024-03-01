@@ -58,10 +58,10 @@
       "list": [
         {
           "frame_1_copy": {
-            "value": "<span class='italic'>Känslan när allt</span><br>bara funkar"
+            "value": "<span id='row1_frame1'class='italic'>Känslan när allt</span><br><span id='row2_frame1'>bara funkar</span>"
           },
           "frame_2_copy": {
-            "value": "Med Husqvarna<br>robotgräsklippare"
+            "value": "<span id='row1_frame2'class='italic'>Med Husqvarna</span><br><span id='row2_frame2'>robotgräsklippare</span>"
           },
           "copy_fontsize": {
             "value": "46px"
@@ -201,5 +201,5 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 54141
+  "port": 64798
 }
