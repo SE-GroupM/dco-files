@@ -38,37 +38,18 @@ window.addEventListener('lemonpi.content/ready', event => {
   //// ANIMATIONS /////
  ////////////////////
 
-// Animation loop timeline setup
-var t1 = new TimelineMax({
-  repeat: 5,  // Adjust repeat count accordingly
-  onComplete: function() {
-      t1.seek("#copy_frame_1");  // This will make the timeline stop at #copy_frame_1 animation
-  }
-  });
-
-  // label to identify the start of copy_frame_1 animation
-  t1.addLabel("#copy_frame_1")
-
-  // Start animation by setting initial lineHeight to 0
-  .set('#copy_frame_1, #copy_frame_2', { lineHeight: "7px" })
-
-  // fade in animation 
-  .to('#copy_frame_1', 0.3, { x:0 , opacity:1 , lineHeight: local_content.copy_fontsize.value, duration: 1.25, ease: Linear.ease })
-  // hold frame for 4 seconds
-  .to('#copy_frame_1', 2, { opacity:1, lineHeight: local_content.copy_fontsize.value, ease: Linear.easeNone , delay:0.5 })
-  // fade out animation over 1 second
-  .to('#copy_frame_1', 0.3, { opacity:0 , lineHeight: "9px", ease: Linear.easeNone })
-
-  // fade in animation - main copy over 1 second
-  .to('#copy_frame_2', 0.3, { x:0 , opacity:1 , lineHeight: local_content.copy_fontsize.value, ease: Linear.easeNone })
-  // hold frame for 4 seconds
-  .to('#copy_frame_2', 2, { opacity:1, lineHeight: local_content.copy_fontsize.value, ease: Linear.easeNone , delay:0.5 })
-  // fade out animation over 1 second
-  .to('#copy_frame_2', 0.3, { opacity:0 , lineHeight: "9px", ease: Linear.easeNone })
+//Animations of copy
+ var tl = new TimelineMax({repeat:-1});
+ TweenMax.set('#copy_frame_1, #copy_frame_2', { opacity: 0 }) //Opacity on copy elements
+  tl.fromTo('#copy_frame_1', 0.4, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
+    .to('#copy_frame_1', 0.4, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 3) //Copy frame 1 fade out
+    .fromTo('#copy_frame_2', 0.4, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 3.5) //Copy frame 2 fade in
+    .to('#copy_frame_2', 0.4, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 6) //Copy frame 2 fade out
   
+
+
   // Get the div element by its id
  var worldClickDiv = document.getElementById('creative_container');
-  
  // Add a click event listener to the div
  worldClickDiv.addEventListener('click', function() {
    // Opens the specified URL in a new window or tab
