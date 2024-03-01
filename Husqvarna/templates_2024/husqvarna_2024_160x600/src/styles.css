@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 100%;
   height: 100%;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,43 +26,50 @@ html, body {
   user-select: none;
 }
 
+/* Style of copy frames */
 .copy_frames {
-  position: relative;
+  position: absolute;
   top: 400px;
-  width: 142px;
-  left: 9px;
+  width: 160px;
+  padding: 0px 10px;
   text-align: center;
-  font-size: 25.6px;
-  line-height: 33px;
+  font-size: 25px;
   color: #fff;
   font-family: "Husqvarna Gothic Bold";
 }
-
+/* Style of copy frame 1 */
 #copy_frame_1 {
   opacity: 1;
 }
-
+/* Style of copy frame 2 */
 #copy_frame_2 {
   opacity: 0;
 }
-
+/* Style of span in copy */
 .italic {
   font-family: "Husqvarna Gothic Light Italic";
 }
-
+/* Style of span in copy */
+.cta_container {
+  align-items: center;
+  justify-content: center;
+  display: flex;  
+  width: 160px;
+}
+/* Style of cta */
 .cta {
   position: absolute;
-  left: 9px;
+  text-align: center;
   top: 523px;
   padding: 10px 7px;
   font-size: 10px;
-  line-height: 12px;
   background-color: #fff;
   color: #273A60;
-  border-radius: 12px;
+  border-radius: 10.5px;
   font-family: "Husqvarna Gothic Bold";
-}  
-
+} 
+ 
+/* Background image position */
 .bg_image {
   position: absolute;
   background-repeat: no-repeat;
@@ -72,7 +79,7 @@ html, body {
   left: 0px;
   top: 0px;
 }  
-
+/* Logo image position */
 .logo {
   position: absolute;
   background-repeat: no-repeat;
