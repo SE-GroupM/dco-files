@@ -27,8 +27,8 @@ html, body {
 .copy_frames {
   position: absolute;
   top: 114px;
-  width: 180px;
-  left: 66px;
+  width: 320px;
+  padding: 0px 10px;
   text-align: center;
   font-size: 30px;
   color: #fff;
