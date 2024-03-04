@@ -37,28 +37,13 @@ window.addEventListener('lemonpi.content/ready', event => {
   //// ANIMATIONS /////
  ////////////////////
 
-// Assuming you're using TimelineMax from GSAP (versions prior to 3)
-var t1 = new TimelineMax({
-  repeat: 5, // Adjust repeat count accordingly
-  onComplete: function() {
-    t1.seek("#row1_frame1"); // Attempting to seek to a label, ensure it's correctly named
-  }
-});
-
-// label to identify the start of copy_frame_1 animation
-t1.addLabel("row1_frame1") // Labels should not include the hash symbol
-
-// fade in animation
-.fromTo('#row1_frame1', 1.25, { lineHeight: 100, opacity: 0, ease: Linear.ease },{ lineHeight: 0, opacity: 1, ease: Linear.ease } ,1) // Corrected duration placement
-.fromTo('#row2_frame1', 1.25, { top: 0, opacity: 0, ease: Linear.ease },{ top: 100, opacity: 1, ease: Linear.ease } ,1) // Corrected duration placement
-
-// // fade in animation
-// .fromTo('#row1_frame1', 1.25, { lineHeight: 100, opacity: 0, ease: Linear.ease },{ lineHeight: 0, opacity: 1, ease: Linear.ease } ,1) // Corrected duration placement
-// .fromTo('#row2_frame1', 1.25, { lineHeight: -100, opacity: 0, ease: Linear.ease },{ lineHeight: 0, opacity: 1, ease: Linear.ease } ,1) // Corrected duration placement
-// hold frame for 4 seconds - You might need another approach to hold, like setting a delay for the next animation
-.to('#row1_frame1', 2, { y: 17, opacity: 1, ease: Linear.easeNone, delay: 0.5 }) // This will not "hold" but will immediately animate to this state over 2 seconds
-// fade out animation over 1 second
-.to('#row1_frame1', 0.3, { y: -17, opacity: 0, ease: Linear.easeNone }); // Correct usage of duration
+//Animations of copy
+var tl = new TimelineMax({repeat:-1});
+TweenMax.set('#copy_frame_1, #copy_frame_2', { opacity: 0 }) //Opacity on copy elements
+ tl.fromTo('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
+   .to('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 3) //Copy frame 1 fade out
+   .fromTo('#copy_frame_2', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 3.3) //Copy frame 2 fade in
+   .to('#copy_frame_2', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 6) //Copy frame 2 fade out
 
 
   // Get the div element by its id
@@ -70,26 +55,5 @@ t1.addLabel("row1_frame1") // Labels should not include the hash symbol
    // window.open('');
  });
 })
-/*
- // Create a new TimelineMax instance
-var tl = new TimelineMax();
-
-// Initially set the opacity of the targets to 0
-tl.set('#row1_frame1, #row2_frame1', { opacity:0 })
-
-  // Animate #row1_frame1 to y: -7 and opacity: 1
-  .to('#row1_frame1', 1.25, { y: -17, opacity:1, ease: "linear" })
-  
-  // Animate #row2_frame1 with the same duration and ease, starting at the same time as the previous animation
-  .to('#row2_frame1', 1.25, { y: 17, opacity:1, ease: "linear" }, "-=1.25")
-  
-  // Animate #row1_frame2, also starting simultaneously
-  .to('#row1_frame1', 1.25, { y: -17, opacity:0, ease: "linear" }, "-=1.25")
-  
-  // Finally, animate #row2_frame2, with the same settings
-  .to('#row2_frame1', 1.25, { y: 17, opacity:0, ease: "linear" }, "-=1.25");
-
-// Note: Adjust the y values as needed to match the desired separation distance
-*/
 
 
