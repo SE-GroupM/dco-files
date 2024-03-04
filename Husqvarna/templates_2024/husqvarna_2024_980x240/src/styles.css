@@ -34,19 +34,11 @@ html, body {
   font-family: "Husqvarna Gothic Bold";
 }
 /* Style of copy frame 1 */
-#row1_frame1 {
+#copy_frame_1 {
   opacity: 0;
 }
 /* Style of copy frame 2 */
-#row2_frame1 {
-  opacity: 0;
-}
-/* Style of copy frame 1 */
-#row1_frame2 {
-  opacity: 0;
-}
-/* Style of copy frame 2 */
-#row2_frame2 {
+#copy_frame_2 {
   opacity: 0;
 }
 /* Style of span in copy */
