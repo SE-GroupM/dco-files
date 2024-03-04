@@ -59,7 +59,7 @@
             "value": "Med Husqvarna<br>robotgräsklippare"
           },
           "copy_fontsize": {
-            "value": "25px"
+            "value": "20px"
           },
           "cta_copy": {
             "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
@@ -196,5 +196,5 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 52663
+  "port": 63202
 }

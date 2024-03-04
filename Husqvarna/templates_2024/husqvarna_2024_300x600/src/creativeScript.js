@@ -45,8 +45,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     .to('#copy_frame_1', 0.3, {lineHeight: '0px', y: 30, opacity:0, ease: Linear.ease}, 3) //Copy frame 1 fade out
     .fromTo('#copy_frame_2', 0.3, {lineHeight: '0px', y: 30, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 3.3) //Copy frame 2 fade in
     .to('#copy_frame_2', 0.3, {lineHeight: '0px', y: 30, opacity:0, ease: Linear.ease}, 6) //Copy frame 2 fade out
-  
-
 
   // Get the div element by its id
  var worldClickDiv = document.getElementById('creative_container');

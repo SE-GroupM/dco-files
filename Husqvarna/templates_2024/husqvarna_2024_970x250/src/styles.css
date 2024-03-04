@@ -45,6 +45,7 @@ html, body {
 #copy_frame_2 {
   position: absolute;
   opacity: 0;
+  font-family: "Husqvarna Gothic Light Italic";
 }
 /* Style of span in copy */
 .italic {

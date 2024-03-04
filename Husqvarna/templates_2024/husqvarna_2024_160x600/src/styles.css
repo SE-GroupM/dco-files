@@ -39,7 +39,7 @@ html, body {
 }
 /* Style of copy frame 1 */
 #copy_frame_1 {
-  opacity: 1;
+  opacity: 0;
 }
 /* Style of copy frame 2 */
 #copy_frame_2 {
