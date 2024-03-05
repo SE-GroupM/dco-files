@@ -26,11 +26,15 @@ onLemonpiReady(function () {
 // Fetch data from adset
 window.addEventListener('lemonpi.content/ready', event => {
   // object holding all data from adset
+  console.clear();
   const content = event.detail.content
   const source = event.detail.source
 
 //Local varaible for content
 var local_content = content;
+
+// Defines how long the slider displays each product before a new one displays
+var timeBetweenSlides = 3;
 
 var bgColor= local_content.content_creative_background_color.value; // Background color source
 // Append background color to container
@@ -69,8 +73,6 @@ $('.cta').css({
   'color': ctaCopyColor,
   'background-color': ctaBgcolor,
 })
-
-// $('#product_panel').click(onClick)
 
 const Slider = {
   currentSlideIndex: 1,
@@ -187,6 +189,24 @@ const Slider = {
       nextBtn.addEventListener("click", nextSlide);
       prevBtn.addEventListener("click", prevSlide);
 
+      const clickSlider = document.querySelector('#slider');
+      clickSlider.addEventListener("click",onClick);
+
+      function onClick (slideIndex) {
+        console.log(slideIndex)
+        console.log(event)
+        console.log(event.x)
+        // Check coordinates for which product area is clicked on.
+        var x = showCoords(event);
+        // Slide 1 clicks
+          return window.dispatchEvent(
+            new CustomEvent('lemonpi.interaction/click', {
+              detail: {
+                placeholder: ['products', slideIndex, 'click'],
+              }
+          }));
+      }
+      
   }
 };
 
@@ -196,6 +216,7 @@ Slider.create({
 	slidesData: local_content.products.value,
   width: 400,
 	setSlideContent: function(slideDiv, slideData, slideIndex) {
+    
     //Find product image div and append image
 		$(slideDiv).find("#product_img").css("background-image","url("+slideData.product_image.value+")");
     //Find title div and append title
@@ -246,6 +267,15 @@ Slider.create({
     }
 	}
 });
+
+// Auto swipe every three seconds
+var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
+ .add(playAutoSwipeAnimation, timeBetweenSlides);
+
+ // Function to auto swipe
+function playAutoSwipeAnimation () {
+  $('#prev').click();
+}
 
 // //Product collection from adset
 // var products = local_content.products.value;
@@ -329,19 +359,7 @@ function showCoords(event) {
   var coords = x;
   return coords;
 }
-function onClick (event) {
-  // Check coordinates for which product area is clicked on.
-  var x = showCoords(event);
-  // Slide 1 clicks
-  if (x >= 552 && x <= 980) {
-    return window.dispatchEvent(
-      new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-          placeholder: ['products', slideIndex, 'click'],
-        }
-    }));
-  }
-}
+
 
 // //Animation of product boxes
 // var t2 = new TimelineMax();
