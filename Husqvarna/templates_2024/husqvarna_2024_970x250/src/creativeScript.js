@@ -41,10 +41,10 @@ window.addEventListener('lemonpi.content/ready', event => {
   //Animations of copy
  var tl = new TimelineMax({repeat:-1});
  TweenMax.set('#copy_frame_1, #copy_frame_2', { opacity: 0 }) //Opacity on copy elements
-  tl.fromTo('#copy_frame_1', 0.3, {lineHeight: '0px', y: 30, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
-    .to('#copy_frame_1', 0.3, {lineHeight: '0px', y: 30, opacity:0, ease: Linear.ease}, 3) //Copy frame 1 fade out
-    .fromTo('#copy_frame_2', 0.3, {lineHeight: '0px', y: 30, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 3.3) //Copy frame 2 fade in
-    .to('#copy_frame_2', 0.3, {lineHeight: '0px', y: 30, opacity:0, ease: Linear.ease}, 6) //Copy frame 2 fade out
+  tl.fromTo('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
+    .to('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 3) //Copy frame 1 fade out
+    .fromTo('#copy_frame_2', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 3.3) //Copy frame 2 fade in
+    .to('#copy_frame_2', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 6) //Copy frame 2 fade out
 
   // Get the div element by its id
  var worldClickDiv = document.getElementById('creative_container');

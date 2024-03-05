@@ -35,7 +35,7 @@ html, body {
   font-size: 40px;
   line-height: 40px;
   color: #fff;
-  font-family: "Husqvarna Gothic Bold";
+  font-family: "HusqvarnaGothic-Bold-comp";
 }
 
 /* Style of copy frame 1 */
@@ -49,7 +49,7 @@ html, body {
 }
 /* Style of span in copy */
 .italic {
-  font-family: "Husqvarna Gothic Light Italic";
+  font-family: "HusqvarnaGothicLightItaliccomp";
 }
 /* Style of cta flex container */
 .cta_container {
@@ -70,7 +70,7 @@ html, body {
   background-color: #fff;
   color: #273A60;
   border-radius: 10.5px;
-  font-family: "Husqvarna Gothic Bold";
+  font-family: "HusqvarnaGothic-Bold-comp";
 }  
 /* Background image position */
 .bg_image {

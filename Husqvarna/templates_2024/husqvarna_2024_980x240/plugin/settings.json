@@ -58,16 +58,16 @@
       "list": [
         {
           "frame_1_copy": {
-            "value": "<span id='row1_frame1'class='italic'>Känslan när allt</span><br><span id='row2_frame1'>bara funkar</span>"
+            "value": "<span class='italic'>Prieks </span>par<br>pareizo izvēli"
           },
           "frame_2_copy": {
-            "value": "<span id='row1_frame2'class='italic'>Med Husqvarna</span><br><span id='row2_frame2'>robotgräsklippare</span>"
+            "value": "<span class='italic'>S robotickou kosačkou husqvarna</span>"
           },
           "copy_fontsize": {
             "value": "46px"
           },
           "cta_copy": {
-            "value": "HITTA TEKNIKEN DU KAN LITA PÅ"
+            "value": "MY TO VIEME, VERTE NÁM"
           },
           "cta_fontsize": {
             "value": "16px"
@@ -201,5 +201,5 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 54002
+  "port": 52161
 }
