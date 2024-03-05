@@ -170,8 +170,5 @@
     "id": 1024,
     "name": "OBOS"
   },
-  "folders": {
-    "selectedFolderId": 951
-  },
-  "port": 65513
+  "port": 64945
 }
