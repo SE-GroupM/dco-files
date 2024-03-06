@@ -1,0 +1,323 @@
+{
+  "id": "9e717c5a-9921-4c08-b63a-23392f676952",
+  "version": "1.3.0",
+  "name": "lexus_1920x1080_vib",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "main_copy": {
+        "type": "text",
+        "source": "feed"
+      },
+      "maincopy_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "sub_copy": {
+        "type": "text",
+        "source": "feed"
+      },
+      "subcopy_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_copy": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "details": {
+        "type": "text",
+        "source": "feed"
+      },
+      "details_content": {
+        "type": "text",
+        "source": "feed"
+      },
+      "image_source": {
+        "type": "image",
+        "source": "feed"
+      },
+      "bg_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "feed"
+      },
+      "videoTracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "mutebutton_on_off": {
+        "type": "text",
+        "source": "feed"
+      },
+      "logo_source": {
+        "type": "image",
+        "source": "feed"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "feed"
+      },
+      "video_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "video_tracker": {
+        "type": "text",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "main_copy": {
+            "value": "LYX FÖR FAMILJEN<br>LEXUS RZ 450"
+          },
+          "maincopy_fontsize": {
+            "value": "64px"
+          },
+          "sub_copy": {
+            "value": "DÄR ELEGANS<br>MÖTER RYMD"
+          },
+          "subcopy_fontsize": {
+            "value": "48px"
+          },
+          "cta_copy": {
+            "value": "FINN UT MER"
+          },
+          "cta_fontsize": {
+            "value": "40px"
+          },
+          "details": {
+            "value": "Se detaljer"
+          },
+          "details_content": {
+            "value": "This version of the Lexus logo is used only for exterior signage. The ‘L’ symbol is enlarged for legibility. Under no circumstances should this be used in print, digital communication or merchandise."
+          },
+          "image_source": {
+            "value": ""
+          },
+          "bg_color": {
+            "value": "#212721"
+          },
+          "videoSrc": {
+            "value": "v3:vog21_SrFz0ZEhaKAY3vw"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31ullby4v42iumz8545r296slzy61ntilf6p22du"
+          },
+          "mutebutton_on_off": {
+            "value": "on"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/k/1a97610e-77bd-47eb-98d0-162854c3f681/Logos/Lexus-liggande-logo-W.png"
+          },
+          "exit_url": {
+            "value": "https://www.lexus.se/"
+          },
+          "video_src": {
+            "value": "v3:vog21_SrFz0ZEhaKAY3vw"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj31ullby4v42iumz8545r296slzy61ntilf6p22du"
+          }
+        },
+        {
+          "main_copy": {
+            "value": "LYX FÖR FAMILJEN LEXUS RZ 450"
+          },
+          "maincopy_fontsize": {
+            "value": "16px"
+          },
+          "sub_copy": {
+            "value": ""
+          },
+          "subcopy_fontsize": {
+            "value": ""
+          },
+          "cta_copy": {
+            "value": "FINN UT MER"
+          },
+          "cta_fontsize": {
+            "value": "11px"
+          },
+          "details": {
+            "value": "Se detaljer"
+          },
+          "details_content": {
+            "value": "This version of the Lexus logo is used only for exterior signage. The ‘L’ symbol is enlarged for legibility. Under no circumstances should this be used in print, digital communication or merchandise."
+          },
+          "image_source": {
+            "value": ""
+          },
+          "bg_color": {
+            "value": "#212721"
+          },
+          "videoSrc": {
+            "value": ""
+          },
+          "videoTracker": {
+            "value": ""
+          },
+          "mutebutton_on_off": {
+            "value": "on"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/k/1a97610e-77bd-47eb-98d0-162854c3f681/Logos/Lexus-liggande-logo-W.png"
+          },
+          "exit_url": {
+            "value": "https://www.lexus.se/"
+          },
+          "video_src": {
+            "value": ""
+          },
+          "video_tracker": {
+            "value": ""
+          }
+        },
+        {
+          "main_copy": {
+            "value": "LYX FÖR FAMILJEN<br>LEXUS RZ 450"
+          },
+          "maincopy_fontsize": {
+            "value": "20px"
+          },
+          "sub_copy": {
+            "value": ""
+          },
+          "subcopy_fontsize": {
+            "value": ""
+          },
+          "cta_copy": {
+            "value": "FINN UT MER"
+          },
+          "cta_fontsize": {
+            "value": "11px"
+          },
+          "details": {
+            "value": "Se detaljer"
+          },
+          "details_content": {
+            "value": "This version of the Lexus logo is used only for exterior signage. The ‘L’ symbol is enlarged for legibility. Under no circumstances should this be used in print, digital communication or merchandise."
+          },
+          "image_source": {
+            "value": ""
+          },
+          "bg_color": {
+            "value": "#212721"
+          },
+          "videoSrc": {
+            "value": ""
+          },
+          "videoTracker": {
+            "value": ""
+          },
+          "mutebutton_on_off": {
+            "value": "on"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/k/1a97610e-77bd-47eb-98d0-162854c3f681/Logos/Lexus-liggande-logo-W.png"
+          },
+          "exit_url": {
+            "value": "https://www.lexus.se/"
+          },
+          "video_src": {
+            "value": ""
+          },
+          "video_tracker": {
+            "value": ""
+          }
+        },
+        {
+          "main_copy": {
+            "value": "LYX FÖR<br>FAMILJEN<br>LEXUS RZ 450"
+          },
+          "maincopy_fontsize": {
+            "value": "20px"
+          },
+          "sub_copy": {
+            "value": "DÄR ELEGANS<br>MÖTER RYMD"
+          },
+          "subcopy_fontsize": {
+            "value": "13px"
+          },
+          "cta_copy": {
+            "value": "FINN UT MER"
+          },
+          "cta_fontsize": {
+            "value": "11px"
+          },
+          "details": {
+            "value": "Se detaljer"
+          },
+          "details_content": {
+            "value": "This version of the Lexus logo is used only for exterior signage. The ‘L’ symbol is enlarged for legibility. Under no circumstances should this be used in print, digital communication or merchandise."
+          },
+          "image_source": {
+            "value": ""
+          },
+          "bg_color": {
+            "value": "#212721"
+          },
+          "videoSrc": {
+            "value": ""
+          },
+          "videoTracker": {
+            "value": ""
+          },
+          "mutebutton_on_off": {
+            "value": "on"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/k/1a97610e-77bd-47eb-98d0-162854c3f681/Logos/Lexus-liggande-logo-W.png"
+          },
+          "exit_url": {
+            "value": "https://www.lexus.se/"
+          },
+          "video_src": {
+            "value": ""
+          },
+          "video_tracker": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 363,
+    "name": "Lexus"
+  },
+  "port": 51042
+}
