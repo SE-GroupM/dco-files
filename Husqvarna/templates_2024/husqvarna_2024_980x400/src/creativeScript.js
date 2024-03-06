@@ -47,12 +47,13 @@ window.addEventListener('lemonpi.content/ready', event => {
     .to('#copy_frame_2', 0.3, {lineHeight: '0px', y: 48, opacity:0, ease: Linear.ease}, 6) //Copy frame 2 fade out
   
 
-  // Get the div element by its id
- var worldClickDiv = document.getElementById('creative_container');
-  
- // Add a click event listener to the div
- worldClickDiv.addEventListener('click', function() {
-   // Opens the specified URL in a new window or tab
-   // window.open('');
- });
+  //Append exit url to creative container
+  document.getElementById('creative_container').onclick = () =>
+  window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+          placeholder: ['exit_url'],
+      }
+    })
+  );
 })
