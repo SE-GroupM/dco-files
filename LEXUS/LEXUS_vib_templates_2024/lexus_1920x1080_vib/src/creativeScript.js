@@ -29,6 +29,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   $(".sub_copy").css({"font-size": local_content.subcopy_fontsize.value, "line-height": local_content.subcopy_fontsize.value});
   //Append sub_copy 
   $("#cta").html(local_content.cta_copy.value);
+  //Append exit_url 
+  $("#exit_url").html(local_content.exit_url.value);
   //Append font size for cta
   $("#cta").css("font-size", local_content.cta_fontsize.value);
   //Append copy to frame 2
@@ -37,6 +39,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   $("#details").html(local_content.details.value);
   //"Details_content" appended 
   $("#details_content").html(local_content.details_content.value);
+ 
   //Append logo image to logo div    
    var bg_color = local_content.bg_color.value;
    //Append container width based on title image
@@ -50,7 +53,8 @@ window.addEventListener('lemonpi.content/ready', event => {
     // Define the video source and tracker variables
     var videoSrc = local_content.videoSrc.value;
     var videoTracker = local_content.videoTracker.value;
-
+  // World click event caller
+  $('#worldClick').click(onClick);
     //Video player 
     var e = document.createElement('script');
     e.src = 'https://video.seenthis.se/v2/player/74/player.js';
@@ -68,17 +72,7 @@ window.addEventListener('lemonpi.content/ready', event => {
         muteButton: false,
     };
 
-
-  // Get the div element by its id
-  var worldClickDiv = document.getElementById('creative_container');
-  
-  // Add a click event listener to the div
-  worldClickDiv.addEventListener('click', function() {
-    // Opens the specified URL in a new window or tab
-    // window.open('');
-  });
-
-/////////////////
+      ////////////////
     /// FUNCTIONS ///
   //////////////////
 
@@ -104,3 +98,12 @@ function onUserLeave() {
   TweenMax.fromTo('#details_bg', 0.2, { autoAlpha: 1}, { autoAlpha: 0})
 }
 var mt = new TimelineMax({repeat: -1});
+
+function onClick (event) {
+  return window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+        placeholder: 'exit_url'
+      }
+  }));
+}
