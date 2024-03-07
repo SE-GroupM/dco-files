@@ -1,0 +1,117 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Panel container flex div */
+.left_panel {
+  position: absolute;
+  width: 334px;
+  height: 300px;
+  top: 0px;
+  left:0px;
+  z-index: 0;
+}
+/* Panel container flex div */
+.img_bg {
+  position: absolute;
+  right:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.cewe_logo{
+  position: absolute;
+  width: 176px;
+  height: 44px;
+  left: 40px;
+  top: 26px;
+}
+.fotobok_logo{
+  position: absolute;
+  width: 136px;
+  height: 47px;
+  left: 802px;
+  top: 26px;
+}
+
+/* Main copy div */
+.mainCopy {
+  position: absolute;
+  width: 270px;
+  left: 41px;
+  top: 94px;
+  /* padding: 0px 20px 10px 20px;
+  text-align: center; */
+  color: white;
+  font-family: "CEWEHead-Bold";
+  font-size: 32px;
+  line-height: 33px;
+}
+/* Main copy div */
+.subCopy {
+  position: absolute;
+  width: 268px;
+  left: 41px;
+  top: 176px;
+  /* padding: 0px 20px 10px 20px;
+  text-align: center; */
+  color: white;
+  font-family: "CEWEHead-Regular";
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Cta button div */
+.ctaText {
+  position: absolute;
+  top: 240px;
+  left: 41px;;
+  padding: 5px 15px 5px 15px; /*Padding top, right, bottom, left */
+  text-align: center;
+  color: #000;
+  font-family: "CEWEHead-Regular";
+  font-size: 15px;
+  max-width: fit-content; /* Take width from cta content */
+  margin: auto;
+  border-radius: 8px; /* Making border radius */
+}
+
+/* World click div */
+.worldClick {
+  width: 980px;
+  height: 300px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}
