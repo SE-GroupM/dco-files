@@ -30,7 +30,6 @@ onLemonpiReady(function () {
   const ctaCopy = local_content.ctaText.value;
   const panel_bg_color = local_content.panel_bg_color.value;
   const bg_img = local_content.img.value;
-  const cewe_logo = local_content.cewe_logo.value;
   const fotobok_logo = local_content.fotobok_logo.value;
   
   const cta_text_color = local_content.ctaText_color.value;
@@ -55,11 +54,10 @@ onLemonpiReady(function () {
    // 'background-position': 'top right',
     'background-size': 'contain',
   })
-  // Append logo 
-  $('#cewe_logo').css({
+   // Append logo 
+   $('#cewe_logo').css({
     content: 'url('+ cewe_logo + ')',
     'background-repeat': 'no-repeat',
-   // 'background-position': 'top right',
     'background-size': 'contain',
   })
    // Append second logo 
@@ -71,6 +69,7 @@ onLemonpiReady(function () {
   })
 
   $('#worldClick').click(onClick);
+
 
   ////////////////////////////////////////////////
   //                FUNCTIONS                   //
