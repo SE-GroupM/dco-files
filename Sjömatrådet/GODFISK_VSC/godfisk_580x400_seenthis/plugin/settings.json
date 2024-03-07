@@ -137,8 +137,8 @@
     "id": 1178,
     "name": "Godfisk"
   },
-  "port": 54187,
   "folders": {
     "selectedFolderId": 3229
-  }
+  },
+  "port": 50413
 }

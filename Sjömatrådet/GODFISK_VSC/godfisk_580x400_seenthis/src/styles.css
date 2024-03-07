@@ -67,7 +67,7 @@ html, body {
 .cta {
   position: absolute;
   width: 152px;
-  height: 32px;
+  height: 38px;
   left: 39px;
   border-radius: 0.5rem;
   display: block;
@@ -78,8 +78,8 @@ html, body {
 
 .cta_text {
   display: flex;
-  width: 92px;
-  height: 30px;
+  width: 120px;
+  height: 35px;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
@@ -91,7 +91,7 @@ html, body {
   font-weight: normal;
   line-height: normal;
   position: fixed;
-  left: 360px;
+  left: 345px;
 }
 
 /* World click div */
