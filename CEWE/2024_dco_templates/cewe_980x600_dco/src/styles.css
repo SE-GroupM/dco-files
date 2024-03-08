@@ -1,7 +1,6 @@
 * { 
   box-sizing: border-box;
 } 
-
 html, body {
   width: 100%;
   height: 100%;
@@ -10,7 +9,6 @@ html, body {
   overflow: hidden;
   background-color: #fff;
 }
-
 #creative_container {
   width: 100%;
   height: 100%;
@@ -28,69 +26,80 @@ html, body {
 /* Panel container flex div */
 .left_panel {
   position: absolute;
-  width: 300px;
-  height: 212px;
-  top: 388px;
+  width: 334px;
+  height: 600px;
+  top: 0px;
   left:0px;
   z-index: 0;
 }
 /* Panel container flex div */
 .img_bg {
   position: absolute;
-  top: 0px;
-  display: flex;
+  height: 600px;
+  
   right: 0px;
+  display: flex;
+  align-items: center;
   justify-content: center;
   z-index: 0;
 }
+.cewe_logo{
+  position: absolute;
+  width: 208px;
+  height: 52px;
+  left: 48px;
+  top: 59px;
+}
 .fotobok_logo{
   position: absolute;
-  width: 128px;
-  height: 45px;
-  right: 10px;
-  top: 0px;
+  width: 173px;
+  height: 61px;
+  left: 759px;
+  top: 60px;
 }
 /* Main copy div */
 .mainCopy {
   position: absolute;
-  width: 241px;
-  left: 32px;
-  top: 20px;
+  width: 208px;
+  left: 48px;
+  top: 167px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
   font-family: "CEWEHead-Bold";
-  font-size: 32px;
-  line-height: 33px;
+  font-size: 44px;
+  line-height: 45px;
 }
 /* Main copy div */
 .subCopy {
   position: absolute;
-  width: 241px;
-  left: 32px;
-  top: 100px;
+  width: 199px;
+  left: 48px;
+  top: 341px;
+  /* padding: 0px 20px 10px 20px;
+  text-align: center; */
   color: white;
   font-family: "CEWEHead-Regular";
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 22px;
+  line-height: 27px;
 }
 /* Cta button div */
 .ctaText {
   position: absolute;
-  top: 160px;
-  left: 32px;
+  top: 492px;
+  left: 48px;;
   padding: 7px 17px 5px 17px; /*Padding top, right, bottom, left */
   text-align: center;
   color: #000;
   font-family: "CEWEHead-Regular";
-  font-size: 13px;
+  font-size: 20px;
   max-width: fit-content; /* Take width from cta content */
   margin: auto;
-  border-radius: 8px; /* Making border radius */
+  border-radius: 10px; /* Making border radius */
 }
 /* World click div */
 .worldClick {
-  width: 300px;
+  width: 980px;
   height: 600px;
   display: block;
   position: fixed;

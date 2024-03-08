@@ -81,9 +81,9 @@ html, body {
 /* Cta button div */
 .ctaText {
   position: absolute;
-  top: 154px;
+  top: 152px;
   left: 30px;;
-  padding: 5px 15px 5px 15px; /*Padding top, right, bottom, left */
+  padding: 7px 15px 5px 15px; /*Padding top, right, bottom, left */
   text-align: center;
   color: #000;
   font-family: "CEWEHead-Regular";

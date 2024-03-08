@@ -128,8 +128,8 @@
     "id": 987,
     "name": "Japanphoto"
   },
-  "port": 59184,
   "folders": {
     "selectedFolderId": 3440
-  }
+  },
+  "port": 53547
 }
