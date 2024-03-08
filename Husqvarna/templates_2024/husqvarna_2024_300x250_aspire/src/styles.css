@@ -29,7 +29,7 @@ html, body {
 /* Style of copy frames */
 .copy_frames {
   position: absolute;
-  top: 76px;
+  top: 120px;
   width: 300px;
   padding: 0px 26px;
   text-align: left;
