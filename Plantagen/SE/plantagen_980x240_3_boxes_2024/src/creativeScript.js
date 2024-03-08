@@ -52,7 +52,7 @@ $('#mainCopy').css({
   'font-size': copyFontSize,
 })
 
-$('#product_panel').click(onClick)
+$('#slider').click(onClick)
 
 //Product collection from adset
 var products = local_content.products.value;
@@ -140,7 +140,7 @@ function onClick (event) {
   // Check coordinates for which product area is clicked on.
   var x = showCoords(event);
   // Slide 1 clicks
-  if (x >= 512 && x <= 737) {
+  if (x >= 519 && x <= 664) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
@@ -148,11 +148,19 @@ function onClick (event) {
         }
     }));
   }
-  else if (x >= 745 && x <= 970) {
+  else if (x >= 668 && x <= 813) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
             placeholder: ['products', 1, 'click'],
+        }
+    }));
+  }
+  else if (x >= 818 && x <= 963) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['products', 2, 'click'],
         }
     }));
   }

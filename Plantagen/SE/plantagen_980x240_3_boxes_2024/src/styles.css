@@ -82,12 +82,16 @@ html, body {
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
 /* Panel for products */
-.product_panel {
+.slider {
   position: absolute;
   width: 478px;
   height: 240px;
-  right: auto;
-  left: 0;
+  left: 519px;
+}
+.slide {
+  position: absolute;
+  width: 478px;
+  height: 240px;
 }
 /* Product image */
 .product_img {
@@ -136,7 +140,7 @@ html, body {
   height: 217px;
   width: 145px;
   top: 10px;
-  left: 517px;
+  left: 0px;
   padding: 10px 15px 10px 15px
 }
 
@@ -144,20 +148,20 @@ html, body {
 .card_1 {
   position: absolute;
   background-color: white;
-  height: 217px;
+  height: 219px;
   width: 145px;
   top: 10px;
-  left: 668px;
+  left: 150px;
   padding: 10px 15px 10px 15px
 }
 /* Product box 3 */
 .card_2 {
   position: absolute;
   background-color: white;
-  height: 217px;
+  height: 219px;
   width: 145px;
   top: 10px;
-  left: 816px;
+  left: 300px;
   padding: 10px 15px 10px 15px
 }
 
