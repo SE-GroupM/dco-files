@@ -64,6 +64,32 @@ onLemonpiReady(function () {
 
   $('#worldClick').click(onClick);
 
+   /////////////////////
+  //// ANIMATIONS /////
+ ////////////////////
+ 
+//Animations of copy
+var tl = new TimelineMax({repeat:0});
+
+// Set initial opacity for #mainCopy and #subCopy
+tl.set('#mainCopy, #subCopy', { opacity: 0 });
+
+// Fade in animations for mainCopy and subCopy
+tl.to('.mainCopy', 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 0.5})
+  .to('.subCopy', 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 0.2});
+
+// Animation for ctaText with yoyo effect - Made faster
+tl.fromTo('.ctaText', 0.2, // Reduced duration to 0.25 seconds for a faster bounce
+  {scale: 1}, 
+  {scale: 1.1, ease: Power1.easeInOut, repeat: 3, // Increased repeat to 4 for more bounces in a similar timeframe
+  yoyo: true}, "+=0.5");
+
+// Add a pause of 3 seconds, then repeat the ctaText animation
+tl.to({}, 3, {}) // Empty tween as a delay of 3 seconds
+  .fromTo('.ctaText', 0.2, 
+    {scale: 1}, 
+    {scale: 1.1, ease: Power1.easeInOut, repeat: 3, yoyo: true});
+
 
   ////////////////////////////////////////////////
   //                FUNCTIONS                   //
