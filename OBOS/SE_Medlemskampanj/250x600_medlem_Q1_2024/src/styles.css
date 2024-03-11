@@ -1,0 +1,93 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Style of main copy */
+.mainCopy {
+  position: absolute;
+  padding: 10px 16px;
+  font-family: "obos-display-bold";
+  font-size: 20px;
+  color: white;
+  background-color: #002169;
+  border-radius: 11px;
+  width: 215px;
+  height: 116px;
+  left: 17px;
+  top: 375px;
+}
+/* Style of sublines */
+.subLines {
+  position: absolute;
+  padding: 8px 8px 8px 15px;
+  font-family: "obos-text-medium";
+  font-size: 12px;
+  color: white;
+  border-radius: 11px;
+  background-color: #0047BA;
+  width: 215px;
+  height: 140px;
+  left: 17px;
+  top: 443px;
+}
+/* Style of cta */
+.cta {
+  position: absolute;
+  text-align: center;
+  font-family: "obos-text-medium";
+  font-size: 11px;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: #008761;
+  left: 30px;
+  top: 546px;
+}
+/* Style of background image */
+.bgImage {
+  position: absolute;
+  height: 600px;
+  width: 250px;
+  left: 0px;
+  top: 0px;
+}
+/* Style of logo image */
+.logo {
+  position: absolute;
+  height: 24px;
+  width: 102px;
+  top: 13px;
+  left: 17px;
+}
+/* Margin of ul list */
+ul {
+  margin: 7px 10px 7px -20px;
+}
+
+
+
+
+

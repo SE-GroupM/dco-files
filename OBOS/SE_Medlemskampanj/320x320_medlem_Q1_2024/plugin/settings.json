@@ -1,19 +1,19 @@
 {
-  "id": "d84d3431-bd74-4e4c-8f40-ae2bcb734d5c",
+  "id": "bd43776c-a767-4655-8bd4-665a682d5ac4",
   "version": "1.2.0",
-  "name": "640x320_medlem_2024",
+  "name": "320x320_medlem_2024",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 640,
+        "width": 320,
         "height": 320,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 640,
+        "width": 320,
         "height": 320
       }
     ]
@@ -118,5 +118,5 @@
     "id": 1024,
     "name": "OBOS"
   },
-  "port": 57974
+  "port": 57951
 }

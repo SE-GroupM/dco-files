@@ -1,20 +1,20 @@
 {
-  "id": "d84d3431-bd74-4e4c-8f40-ae2bcb734d5c",
+  "id": "62725865-ddbb-4a94-a425-a5c3a75def5b",
   "version": "1.2.0",
-  "name": "640x320_medlem_2024",
+  "name": "320x400_medlem_2024",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 640,
-        "height": 320,
+        "width": 320,
+        "height": 400,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 640,
-        "height": 320
+        "width": 320,
+        "height": 400
       }
     ]
   },
@@ -118,5 +118,5 @@
     "id": 1024,
     "name": "OBOS"
   },
-  "port": 57974
+  "port": 57959
 }
