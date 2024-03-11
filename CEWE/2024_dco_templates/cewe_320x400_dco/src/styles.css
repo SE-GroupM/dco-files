@@ -54,14 +54,14 @@ html, body {
 /* Main copy div */
 .mainCopy {
   position: absolute;
-  width: 258px;
+  width: 280px;
   left: 30px;
   top: 20px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
   font-family: "CEWEHead-Bold";
-  font-size: 32px;
+  font-size: 30px;
   line-height: 33px;
 }
 /* Main copy div */
