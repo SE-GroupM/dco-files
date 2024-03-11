@@ -1,9 +1,4 @@
-(function(){/*
-
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
-*/
-'use strict';var e,f="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},g;if("function"==typeof Object.setPrototypeOf)g=Object.setPrototypeOf;else{var h;a:{var l={a:!0},m={};try{m.__proto__=l;h=m.a;break a}catch(a){}h=!1}g=h?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var n=g;/*
+(function(){'use strict';var e,f="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},g;if("function"==typeof Object.setPrototypeOf)g=Object.setPrototypeOf;else{var h;a:{var l={a:!0},m={};try{m.__proto__=l;h=m.a;break a}catch(a){}h=!1}g=h?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var n=g;/*
 
  SPDX-License-Identifier: Apache-2.0
 */
@@ -12,4 +7,4 @@ e.connectedCallback=function(){this.j||(this.i=this.getAttribute("id")+"_data",w
 e.onAdData_=function(a){if(a){a=this.g=this.processAdData_(a);a=void 0===a?null:a;var b=document.createEvent("CustomEvent");b.initCustomEvent("ready",!0,!0,a);this.dispatchEvent(b)}};
 e.processAdData_=function(a){if(!a)return null;a=a.google_template_data;if(!a)throw Error("Incorrect data format: missing google_template_data");a=a.adData;if(!a||!a.length)throw Error("Incorrect data format: missing google_template_data.adData");a=a[0];var b=this.hasAttribute("is-custom-schema");if(b)return window.dynamicContent=a;a=this.toCanonicalForm_(a);var c=this.getAttribute("network-schema-id");if(b)window.dynamicContent=a;else if(c&&416!=c&&311!=c){if(442==c){b=a.screenshots;if("undefined"==
 typeof b){b=[];for(var d=1;4>=d;d++)(c=a["screenshot"+d])&&b.push(c);a.screenshots=b}"undefined"==typeof a.appIcon&&(b=a.appIconStandard,a.appIcon=a.appIconHighRes||b)}}else b=a.Design,Array.isArray(b)&&1==b.length&&(a.Design=b[0]),b=a.Headline,Array.isArray(b)&&1==b.length&&(a.Headline=b[0]);w(this,a);return a};function w(a,b){for(var c=0;c<a.h.length;c++)"function"==typeof a.h[c]&&a.h[c].call(a,b,a)}
-e.toCanonicalForm_=function(a){var b={},c;for(c in a){var d=c.split("_");try{if(1==d.length)q(b,d[0],a[c]);else{var k=d[0];var p=d[1];var x=d[2];b[k]||(b[k]=[]);b[k][p]||q(b[k],p,{});q(b[k][p],x,a[c])}}catch(y){window.console.log("Ignoring invalid flattened property: "+c)}}return b};customElements.define("gwd-gpa-data-provider",r);}).call(this);
+e.toCanonicalForm_=function(a){var b={},c;for(c in a){var d=c.split("_");try{if(1==d.length)q(b,d[0],a[c]);else{var k=d[0];var p=d[1];var x=d.slice(2).join("_");b[k]||(b[k]=[]);b[k][p]||q(b[k],p,{});q(b[k][p],x,a[c])}}catch(y){window.console.log("Ignoring invalid flattened property: "+c)}}return b};customElements.define("gwd-gpa-data-provider",r);}).call(this);
