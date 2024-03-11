@@ -30,7 +30,7 @@ window.addEventListener('lemonpi.content/ready', event => {
     content: 'url('+ local_content.bgImage.value + ')',
     'background-repeat': 'no-repeat',
     'background-position': 'center center',
-    'background-size': 'contain',
+    'background-size': 'cover',
   })
   //Append logo image
   $('#logo').css({
@@ -51,7 +51,6 @@ window.addEventListener('lemonpi.content/ready', event => {
    $('#subLines ul.item-3').css({
     'list-style-image': 'url("'+ local_content.subLine3Icon.value + '")',
   })
-
 
   // Animation for CTA button
   var ctaAnimation = gsap.timeline({repeat:-1, repeatDelay:1});
