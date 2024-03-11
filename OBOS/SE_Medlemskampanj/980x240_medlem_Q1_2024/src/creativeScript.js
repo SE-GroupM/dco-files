@@ -66,16 +66,14 @@ window.addEventListener('lemonpi.content/ready', event => {
   bgImgAnimation.fromTo('#bgImage', 8, {scale: 1}, {scale: 1.1,}, 1);
 
 
-  // Click event caller for worldClick
-  $('#creative_container').click(onClick);
-  // Function for click event
-  function onClick (event) {
-    return window.dispatchEvent(
-      new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-          placeholder: 'workClick' // Placeholder name for click
-        }
-    }));
-  }
-})
+   //Append exit url to creative container
+   document.getElementById('creative_container').onclick = () =>
+   window.dispatchEvent(
+       new CustomEvent('lemonpi.interaction/click', {
+       detail: {
+           placeholder: ['worldClick'],
+       }
+     })
+   );
+ })
   
