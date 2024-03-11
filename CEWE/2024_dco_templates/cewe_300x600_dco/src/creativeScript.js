@@ -93,9 +93,8 @@ tl2.to({}, 2.5, {}) // Empty tween as a delay of 3 seconds
     {scale: 1}, 
     {scale: 1.1, ease: Power1.easeInOut, repeat: 3, yoyo: true});
 
-
-  ////////////////////////////////////////////////
-  //                FUNCTIONS                   //
+    ////////////////////////////////////////////////
+   //                FUNCTIONS                   //
   ////////////////////////////////////////////////
 
   function onClick (event) {
@@ -110,5 +109,4 @@ tl2.to({}, 2.5, {}) // Empty tween as a delay of 3 seconds
 // End of code
   });
 });
-
   

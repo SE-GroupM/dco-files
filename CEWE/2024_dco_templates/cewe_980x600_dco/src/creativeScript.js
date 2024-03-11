@@ -30,6 +30,7 @@ onLemonpiReady(function () {
   const ctaCopy = local_content.ctaText.value;
   const panel_bg_color = local_content.panel_bg_color.value;
   const bg_img = local_content.img.value;
+  const cewe_logo = local_content.cewe_logo.value;
   const fotobok_logo = local_content.fotobok_logo.value;
   
   const cta_text_color = local_content.ctaText_color.value;
@@ -54,6 +55,13 @@ onLemonpiReady(function () {
    // 'background-position': 'top right',
     'background-size': 'contain',
   })
+  // Append logo 
+  $('#cewe_logo').css({
+    content: 'url('+ cewe_logo + ')',
+    'background-repeat': 'no-repeat',
+   // 'background-position': 'top right',
+    'background-size': 'contain',
+  })
    // Append second logo 
    $('#fotobok_logo').css({
     content: 'url('+ fotobok_logo + ')',
@@ -63,6 +71,7 @@ onLemonpiReady(function () {
   })
 
   $('#worldClick').click(onClick);
+
 
    /////////////////////
   //// ANIMATIONS /////
@@ -78,7 +87,7 @@ tl.set('#mainCopy, #subCopy', { opacity: 0 });
 tl.to('.mainCopy', 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 0.5})
   .to('.subCopy', 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 0.2});
 
-//Animations of copy
+  //Animations of copy
 var tl2 = new TimelineMax({repeat:-1});
 
 // Animation for ctaText with yoyo effect - Made faster
@@ -110,5 +119,4 @@ tl2.to({}, 2.5, {}) // Empty tween as a delay of 3 seconds
 // End of code
   });
 });
-
   

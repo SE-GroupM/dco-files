@@ -54,14 +54,14 @@ html, body {
 /* Main copy div */
 .mainCopy {
   position: absolute;
-  width: 258px;
+  width: 280px;
   left: 30px;
   top: 20px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
   font-family: "CEWEHead-Bold";
-  font-size: 32px;
+  font-size: 30px;
   line-height: 33px;
 }
 /* Main copy div */
@@ -81,9 +81,9 @@ html, body {
 /* Cta button div */
 .ctaText {
   position: absolute;
-  top: 154px;
+  top: 152px;
   left: 30px;;
-  padding: 5px 15px 5px 15px; /*Padding top, right, bottom, left */
+  padding: 7px 15px 5px 15px; /*Padding top, right, bottom, left */
   text-align: center;
   color: #000;
   font-family: "CEWEHead-Regular";
