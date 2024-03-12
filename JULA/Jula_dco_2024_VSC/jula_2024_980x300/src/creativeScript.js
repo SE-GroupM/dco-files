@@ -22,44 +22,46 @@ window.addEventListener('lemonpi.content/ready', event => {
 // Callback to retrieve the adset data
 onLemonpiReady(function () {
   lemonpi.subscribe(function callback(content) {
-    // code here
-    // Advanced mapping of dynamic content
-    // You can call the content directly once it's collected by lemonpi.subscribe method
-    // Example content.[placeholder_name].value
     
-    //Append main copy
-    var mainCopy = content.mainCopy.value;
-    $('#mainCopy').html(mainCopy);
-
-    //Append main copy
-    var ctaCopy = content.ctaCopy.value;
-    $('#ctaCopy').html(ctaCopy);
-
-    //Background color of container
-    var bgColor = content.bgColor.value;
-    $('#creative_container').css({
-      'background-color': bgColor,
-    })
+    //Local content variable
+    var local_content = content;
 
     //Product click funtion
     $('#creative_container').click(onClick);
 
+    //Background color of container
+    var bgColor = local_content.bgColor.value;
+    $('#creative_container').css({
+      'background-color': bgColor,
+    })
+
+    //Background color of product box
+    var productBgColor = local_content.productBgColor.value;
+    $('#productBox').css({
+      'background-color': productBgColor,
+    })
+
     //Product collection from adset
-    var product_collection = content.product_collection.value; 
+    var local_product_collection = local_content.product_collection.value; 
 
     // Append name to product
-    var productName = product_collection[0].productName.value;
+    var productName = local_product_collection[0].productName.value;
     $('#productName').html(productName);
+    //Text color of product name
+    var productNameColor = local_content.productNameColor.value;
+    $('#productName').css({
+      'color': productNameColor,
+    })
 
     // Append price to product
-    var regularPrice = product_collection[0].regularPrice.value;
-    var productSaving = product_collection[0].productPriceSaving.value;
-    var productPriceType = product_collection[0].productPriceType.value;
+    var regularPrice = local_product_collection[0].regularPrice.value;
+    var productPriceType = local_product_collection[0].productPriceType.value;
 
     //Split regular price to find decimals 
     var normalPrice = parseFloat(regularPrice);
     normalPrice = normalPrice.toFixed(2);
     var tempNormal = normalPrice.split(".")
+
 
     //Append sup class on decimals
     if (tempNormal[1] > 0o0) {
@@ -67,34 +69,58 @@ onLemonpiReady(function () {
       $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
     } else {
       //Ex. 88,-
-      $('#regularPrice').html(tempNormal[0] + '.-');
+      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
     }
 
     //Check product price type and append css
     if (productPriceType === 'regular') {
-      $('#regularPrice').addClass('regularPrice');
+      //Text color of product price
+      var productPriceColor = local_content.productPriceColor.value;
+      $('#regularPrice').css({
+        'color': productPriceColor,
+      })
     } else if (productPriceType === 'sale') {
-      $('#regularPrice').addClass('salePrice')
+      //If product price type is sale
+      if (tempNormal[1] > 0o0) {
+        //Ex. 88.88
+        $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
+      } else {
+        //Ex. 88,-
+        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+      }
+      $('#regularPrice').addClass('salePrice');
     } else if (productPriceType === 'julaclub') {
-      $('#regularPrice').html('JulaClub <br><span style="font-size: 55px; line-height: 55px;">' + regularPrice + '.-</span>')
+      //If product price type is Jula club
+      if (tempNormal[1] > 0o0) {
+        //Ex. 88.88
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 72px; line-height: 62px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+      } else {
+        //Ex. 88,-
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 72px; line-height: 62px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+      }
       $('#regularPrice').addClass('clubPrice');
     }
+    
 
-    //Check if product saving is !=0 and append saleElement class
-    if (productSaving !== '0') {
-      $('#priceElement').html('Spara ' + productSaving);
+    // Saving element ex. '60.-'
+    var productSaving = local_product_collection[0].productPriceSaving.value;
+    // Slice '.-' to style it according to guidelines
+    productSaving = productSaving.replace(".-","");
+    //Check if product saving is > 0 and append saleElement class
+    if (productSaving !== "0") {
+      $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType === 'tokbilligt') {
+    if (productPriceType.toLowerCase().includes('tokbilligt')) {
       $('#regularPrice').addClass('salePrice')
       $('#priceElement').html('Tokbilligt!');
       $('#priceElement').addClass('heroElement');
     }
 
     // Append image to product
-    var productImage =  product_collection[0].productImage.value;
+    var productImage =  local_product_collection[0].productImage.value;
     $('#productImage').css({
     backgroundImage: 'url("' + productImage + '")',
     'background-size': 'contain',
@@ -102,10 +128,15 @@ onLemonpiReady(function () {
     'background-position': 'center'
     });
 
-    var t2 = new TimelineMax({ repeat: -1, delay: 0.2 });
-    t2.fromTo('#productBox', 1, { y: -300 }, { y: 0 }, 0.1)
-      .to('#productBox', 0.3, { y: 300 }, "+=1.5")
-      .set('#productBox', { y: -300 }); // Reset to start position for seamless looping
+    // Append lowest price last 30 days
+    var priceInfo = local_product_collection[0].productLatestPrice.value;
+    $('#priceInfo').html(priceInfo);
+
+  // //Animation
+  var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
+  main_timeline.fromTo('#productBox', 1, { y: -300 }, { y: 0 }, 0.1)
+  .to('#productBox', 0.3, { y: 300 }, "+=1.5")
+  .set('#productBox', { y: -300 }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {
@@ -116,14 +147,5 @@ onLemonpiReady(function () {
           }
       }));
     } 
-});
-
- // Get the div element by its id
- var worldClickDiv = document.getElementById('worldClick');
-  
- // Add a click event listener to the div
- worldClickDiv.addEventListener('click', function() {
-   // Opens the specified URL in a new window or tab
-   // window.open('');
- });
+  });
 });

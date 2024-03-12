@@ -26,55 +26,50 @@ html, body {
   user-select: none;
 }
 
-/* Main copy on left */
-.mainCopy {
-  font-family: "CreightonPro-Bold";
-  font-style: bold;
-  position: absolute;
-  left: 180px;
-  top: 28px;
-  font-size: 25px;
-  color: white;
-  max-width: 350px;
-}
 /* Position of logo */
 .logo {
 position: absolute;
 width: 196px;
 height: 57px;
-left: 20px;
+left: 15px;
 top: 15px;
 }
 /* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
-  height: 210px;
+  height: 230px;
   width: 600px;
   left: 20px;
-  top: 90px;
+  top: 80px;
   border-radius: 5px;
+}
+/* Container for product info */
+.productInfo {
+  position: fixed;
+  width: 280px;
+  height: 240px;
+  left: 0px;
 }
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 150px;
-  width: 300px;
-  top: 15px;
-  left: 70px;
+  height: 210px;
+  width: 276px;
+  top: -10px;
+  left: 300px;
 }
-/* Regular price element with black text, ex. "99,-"  */
+/* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 110px;
+  font-size: 60px;
   font-family: "CreightonPro-Bold";
-  font-style: bold;
-  color: black;
-  top: 20px;
-  left: auto;
-  right: 18px;
-  text-align: right;
+  color: #333;
+  text-align: center;
+  top: 30px;
+  min-width: 280px;
 }
+
 /* Price sup element */
 .priceSup {
   font-size: 50%;
@@ -85,15 +80,16 @@ top: 15px;
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px;
+  padding: 8px 8px 6px 12px;
   border-radius: 12px;
-  font-size: 80px;
-  top: 30px;
+  font-size: 60px;
+  top: 25px;
   left: auto;
-  right: 70px;
+  right: 86px;
   text-align: right;
-  color: #c42d34;
-  background-color: #ffe100;
+  color: #B32013;
+  min-width: 111px;
+  background-color: #FFE500;
   transform: rotate(-4deg);
 }
 /* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
@@ -101,12 +97,14 @@ top: 15px;
   display: inline-block;
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px;
+  padding: 8px 8px 12px 6px;
   border-radius: 12px;
-  font-size: 16px;
-  top: 20px;
+  font-size: 21px;
+  line-height: 21px;
+  top: 5px;
   left: auto;
-  right: 70px;
+  right: 86px;
+  min-width: 111px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
@@ -115,61 +113,56 @@ top: 15px;
 
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 7px;
-  border-radius: 3px;
-  font-size: 16px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 110px;
+  top: 95px;
   left: auto;
-  right: 50px;
+  right: 74px;
   text-align: right;
-  background-color: #d4332e;
+  background-color: #DA3A35;
   transform: rotate(-4deg);
 }
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 7px;
-  border-radius: 3px;
-  font-size: 16px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 110px;
+  top: 95px;
   left: auto;
-  right: 50px;
+  right: 74px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
 }
 /* Product name text */
 .productName {
-  position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 16px;
-  color: black;
-  left: 26px;
-  top: 175px;
-}
-/* Call to action button */
-.cta {
   position: absolute;
-  background-color: #c42d34;
-  font-family: "CreightonPro-Bold";
-  color: white;
   font-size: 17px;
-  padding: 6px 25px;
-  left: auto;
-  right: 18px;
-  top: 165px;
-  border-radius: 3px;
-}
-#worldClick {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
+  color: #333;
   left: 0px;
-  z-index: -1;
+  top: 140px;
+  width: 270px;
+  text-align: center;
 }
+/* Product price info text */
+.priceInfo {
+  position: absolute;
+  font-family: "Arial";
+  font-size: 11px;
+  color: #fff;
+  left: 0px;
+  top: 195px;
+  width: 270px;
+  text-align: center;
+}
+

@@ -26,23 +26,12 @@ html, body {
   user-select: none;
 }
 
-/* Main copy on left */
-.mainCopy {
-  font-family: "CreightonPro-Bold";
-  font-style: bold;
-  position: absolute;
-  left: 145px;
-  top: 28px;
-  font-size: 15px;
-  color: white;
-  max-width: 350px;
-}
 /* Position of logo */
 .logo {
 position: absolute;
-width: 176px;
+width: 112px;
 height: 45px;
-left: 20px;
+left: 104px;
 top: 15px;
 }
 /* Product box background */
@@ -52,29 +41,35 @@ top: 15px;
   height: 300px;
   width: 280px;
   left: 20px;
-  top: 75px;
+  top: 70px;
   border-radius: 5px;
+}
+/* Container for product info */
+.productInfo {
+  position: fixed;
+  width: 280px;
+  height: 300px;
+  left: 0px;
 }
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 180px;
-  width: 180px;
-  top: 65px;
-  left: 15px;
+  height: 140px;
+  width: 200px;
+  top: 100px;
+  left: 50px;
 }
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 52px;
+  font-size: 60px;
   font-family: "CreightonPro-Bold";
-  font-style: bold;
-  color: black;
-  top: 10px;
-  left: auto;
-  right: 15px;
-  text-align: right;
+  color: #333;
+  text-align: center;
+  top: 15px;
+  min-width: 280px;
 }
+
 /* Price sup element */
 .priceSup {
   font-size: 50%;
@@ -85,15 +80,16 @@ top: 15px;
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px;
+  padding: 8px 8px 6px 12px;
   border-radius: 12px;
-  font-size: 43px;
-  top: 25px;
+  font-size: 60px;
+  top: 20px;
   left: auto;
-  right: 40px;
+  right: 86px;
   text-align: right;
-  color: #c42d34;
-  background-color: #ffe100;
+  color: #B32013;
+  min-width: 111px;
+  background-color: #FFE500;
   transform: rotate(-4deg);
 }
 /* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
@@ -101,75 +97,72 @@ top: 15px;
   display: inline-block;
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px;
+  padding: 8px 8px 12px 6px;
   border-radius: 12px;
-  font-size: 14px;
-  top: 10px;
+  font-size: 21px;
+  line-height: 21px;
+  top: 0px;
   left: auto;
-  right: 25px;
+  right: 86px;
+  min-width: 111px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
   transform: rotate(-4deg);
 }
+
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 7px;
-  border-radius: 3px;
-  font-size: 13px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 75px;
+  top: 90px;
   left: auto;
-  right: 18px;
+  right: 74px;
   text-align: right;
-  background-color: #d4332e;
+  background-color: #DA3A35;
   transform: rotate(-4deg);
 }
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 5px;
-  border-radius: 1px;
-  font-size: 14px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 78px;
+  top: 90px;
   left: auto;
-  right: 18px;
+  right: 74px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
 }
 /* Product name text */
 .productName {
-  position: absolute;
   font-family: "CreightonPro-Bold";
-  font-size: 14px;
-  color: black;
-  left: 15px;
-  max-width: 140px;
-  top: 253px;
-}
-/* Call to action button */
-.cta {
   position: absolute;
-  background-color: #c42d34;
-  font-family: "CreightonPro-Bold";
-  color: white;
-  font-size: 15px;
-  padding: 6px 25px;
-  top: 255px;
-  left: auto;
-  right: 18px;
-  border-radius: 3px;
-}
-#worldClick {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
+  font-size: 17px;
+  color: #333;
   left: 0px;
-  z-index: -1;
+  top:254px;
+  width: 280px;
+  text-align: center;
 }
+/* Product price info text */
+.priceInfo {
+  position: absolute;
+  font-family: "Arial";
+  font-size: 11px;
+  color: #fff;
+  left: 0px;
+  top: 300px;
+  width: 280px;
+  text-align: center;
+}
+
