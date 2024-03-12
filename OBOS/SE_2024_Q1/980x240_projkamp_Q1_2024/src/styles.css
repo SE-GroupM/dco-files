@@ -2,6 +2,11 @@
   box-sizing: border-box;
 } 
 
+@font-face {
+  font-family: ObosDisplay-Bold;
+  src: url("https://s0.2mdn.net/creatives/assets/5034221/OBOSDisplay-Bold.otf");
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -133,7 +138,7 @@ html, body {
   font-family: OBOSDisplay-Bold;
   font-size: 36px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
   line-height: normal;
   position: fixed;
   left: 19px;

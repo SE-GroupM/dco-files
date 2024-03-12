@@ -147,10 +147,10 @@ html, body {
   height: 35px;
   flex-shrink: 0;
   color: #FFF;
-  font-family: "ObosDisplay-Bold";
+  font-family: ObosDisplay-Bold;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
   line-height: 25px;
   position: fixed;
   left: 31px;
@@ -191,7 +191,7 @@ html, body {
 
 .brfName {
   color: #002169;
-  font-family: "ObosDisplay-Bold";
+  font-family: ObosDisplay-Bold;
   font-size: 11px;
   margin-left: 6px;
   /* Additional adjustments for spacing might be needed, depending on your design */

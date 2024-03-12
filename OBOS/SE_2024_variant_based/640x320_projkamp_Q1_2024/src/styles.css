@@ -1,6 +1,11 @@
 * { 
   box-sizing: border-box;
-} 
+}
+
+@font-face {
+  font-family: ObosDisplay-Bold;
+  src: url("https://s0.2mdn.net/creatives/assets/5034221/OBOSDisplay-Bold.otf");
+}
 
 html, body {
   width: 100%;
@@ -81,10 +86,10 @@ html, body {
   height: 55px;
   flex-shrink: 0;
   color: #FFF;
-  font-family: OBOSDisplay-Bold;
+  font-family: ObosDisplay-Bold;
   font-size: 23px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
   line-height: normal;
   position: fixed;
   left: 283px;
@@ -170,7 +175,7 @@ html, body {
 
 .brfName {
   color: #002169;
-  font-family: "ObosDisplay-Bold";
+  font-family: ObosDisplay-Bold;
   font-size: 11.5px;
   margin-left: 6px;
   /* Additional adjustments for spacing might be needed, depending on your design */
