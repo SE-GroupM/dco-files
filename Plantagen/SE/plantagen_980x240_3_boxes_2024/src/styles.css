@@ -108,6 +108,8 @@ html, body {
 }
 /* Description for products */
 .description {
+  resize: none;
+  overflow: auto;
   font-family: "plantagen-regular";
   font-size: 12px;
   line-height: 14px;
@@ -117,8 +119,8 @@ html, body {
 .price_elements {
   position: absolute;
   font-family: "plantagen-bold";
-  font-size: 17px;
-  top: 165px;
+  font-size: 16px;
+  top: 168px;
 }
 
 /* Sup class for price elemts */
@@ -137,7 +139,7 @@ html, body {
 .card_0 {
   position: absolute;
   background-color: white;
-  height: 217px;
+  height: 219px;
   width: 145px;
   top: 10px;
   left: 0px;

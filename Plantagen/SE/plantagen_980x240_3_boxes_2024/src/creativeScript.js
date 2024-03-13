@@ -168,7 +168,7 @@ function onClick (event) {
 
 //Animation of product boxes
 var t2 = new TimelineMax();
-  t2.fromTo('#product_panel', 0.7, {x: 460} ,{x: 0},0.2)
+  t2.fromTo('#slider', 0.7, {x: 460} ,{x: 0},0.2)
 
 //Animation of badge elements
 var t1 = new TimelineMax({repeat:-1});
