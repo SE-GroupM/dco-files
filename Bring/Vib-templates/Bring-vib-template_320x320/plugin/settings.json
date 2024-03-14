@@ -1,0 +1,131 @@
+{
+  "id": "ca999005-cd07-428f-bfdc-7f36a551f289",
+  "version": "1.2.0",
+  "name": "bring_vib_320x320_vs",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 320,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoTracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "loop_true_false": {
+        "type": "text",
+        "source": "create"
+      },
+      "loopCount": {
+        "type": "text",
+        "source": "create"
+      },
+      "smallPlayBtn_true_false": {
+        "type": "text",
+        "source": "create"
+      },
+      "muteBtn_true_false": {
+        "type": "text",
+        "source": "create"
+      },
+      "bigPlayBtn_true_false": {
+        "type": "text",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "mainCopy": {
+            "value": "mainCopy"
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          },
+          "loop_true_false": {
+            "value": "loop_true_false"
+          },
+          "loopCount": {
+            "value": "loopCount"
+          },
+          "smallPlayBtn_true_false": {
+            "value": "smallPlayBtn_true_false"
+          },
+          "muteBtn_true_false": {
+            "value": "muteBtn_true_false"
+          },
+          "bigPlayBtn_true_false": {
+            "value": "bigPlayBtn_true_false"
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "logo": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 788,
+        "url": "https://assets.lemonpi.io/a/font/788/PostenSans-Regular?v=400",
+        "family": "PostenSans-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 788,
+    "name": "Bring"
+  },
+  "port": 53014
+}
