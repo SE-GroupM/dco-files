@@ -69,22 +69,25 @@ html, body {
   position: absolute;
   left: 0px;
   top: 5px;
-  font-size: 90px;
+  font-size: 80px;
   font-family: "Mikro-black-otf";
   color: #eb001e;
+  letter-spacing: -3px;
 }
 /* Product price currency ex. Kr */
 .priceCurrency {
   margin-left: 0px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Mikro-Bold";
+  letter-spacing: 0px;
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
   position: relative;
-  margin-left: -54px;
-  font-size: 30px;
+  margin-left: -34px;
+  font-size: 20px;
   font-family: "Mikro-Bold";
+  letter-spacing: 0px;
 }
 /* Sup class on product price */
 sup {
