@@ -96,6 +96,7 @@ top: 20px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
+
 /* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
 .clubPrice {
   display: inline-block;
@@ -117,6 +118,7 @@ top: 20px;
 
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
+  opacity: 0;
   font-family: "Arial";
   font-weight: bold;
   position: absolute;
@@ -168,6 +170,9 @@ top: 20px;
   top: 465px;
   width: 210px;
   text-align: center;
+}
+.priceElement{
+  opacity: 0;
 }
 
 .player {
