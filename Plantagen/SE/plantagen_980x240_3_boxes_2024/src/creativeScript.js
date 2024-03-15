@@ -17,11 +17,11 @@ function onLemonpiReady(cb) {
 
 // Fetch data from adset
 window.addEventListener('lemonpi.content/ready', event => {
-  // object holding all data from adset
-  const content = event.detail.content
-  const source = event.detail.source
+// object holding all data from adset
+const content = event.detail.content
+const source = event.detail.source
 
-  var local_content = content;
+var local_content = content;
 
 var bgColor= content.content_creative_background_color.value; // Background color source
 // Append background color to container
