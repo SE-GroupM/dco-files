@@ -37,7 +37,7 @@ html, body {
 /* Logo image asset */
 .logo {
   position: absolute;
-  top: 190px;
+  top: 185px;
   left: 10px;
   width: 180px;
   height: 50px;
@@ -121,7 +121,7 @@ sup {
 .productContainer {
   position: absolute;
   top: 0px;
-  left: 190px;
+  left: 175px;
   width: 90px;
   height: 90px;
   background-size: contain;
