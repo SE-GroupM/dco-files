@@ -52,6 +52,22 @@ $('#mainCopy').css({
   'font-size': copyFontSize,
 })
 
+//Variables from adset to control truncate from platform if needed
+var truncateProductTitle = parseInt(local_content.truncateName.value);
+var truncateProductDescription = parseInt(local_content.truncateDescription.value);
+//Set value of truncateProductTitle 
+if (!truncateProductTitle) {
+  truncateProductTitle = 35;
+} else {
+  truncateProductTitle = truncateProductTitle;
+}
+//Set value of truncateProductTitle 
+if (!truncateProductDescription) {
+  truncateProductDescription = 30;
+} else {
+  truncateProductDescription = truncateProductDescription;
+}
+
 $('#slider').click(onClick)
 
 //Product collection from adset
@@ -72,10 +88,12 @@ for (var i = 0; i < 3; i++){
   // Append title to product
   var title = products[i].title.value;
   $('#title_'+i).html(title);
+  truncateProductText(('#title_'+i), truncateProductTitle)
 
   // Append description to product
   var description = products[i].product_description.value;
   $('#description_'+i).html(description);
+  truncateProductText(('#description_'+i), truncateProductDescription)
 
   // Variables for price
   var priceNormal = products[i].priceNormal.value;
@@ -164,6 +182,44 @@ function onClick (event) {
         }
     }));
   }
+}
+
+// Truncate function
+function truncateProductText(selector, truncLength) {
+  var element = $(selector);
+  var truncateLength = truncLength;
+  
+  var sentence = element[0].innerText;
+  var result = sentence;
+  var resultArray = result;
+
+  element.css({
+      height: 'auto',
+  });
+  if (sentence.length >= truncateLength){
+    result = resultArray.split(" ").splice(0, 5).join(" ");
+    
+    splitSentence = result.split(" ")
+
+    secondCheck = splitSentence[0] + ' ' + splitSentence[1];
+    threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
+    fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
+    
+    if (fourWords.length >= truncateLength){
+       result = threeWords;
+    }
+
+    if (threeWords.length >= truncateLength){
+       result = secondCheck;
+    }
+    if (secondCheck.length >= truncateLength){
+       result = splitSentence[0]
+    }
+    element.text(result + '...');
+  } else{
+    element.text(result);
+  }
+  return result;
 }
 
 //Animation of product boxes
