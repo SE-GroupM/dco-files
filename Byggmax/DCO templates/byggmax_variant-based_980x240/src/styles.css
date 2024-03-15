@@ -37,9 +37,9 @@ html, body {
 /* Logo image asset */
 .logo {
   position: absolute;
-  top: 185px;
-  left: 10px;
-  width: 180px;
+  top: 180px;
+  left: 20px;
+  width: 170px;
   height: 50px;
   background-position: left center;
   background-size: contain;
