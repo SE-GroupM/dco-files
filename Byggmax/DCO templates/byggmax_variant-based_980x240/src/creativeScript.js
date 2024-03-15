@@ -41,6 +41,8 @@ onLemonpiReady(function () {
   $("#productName_1").html(local_content.product_1_copy.value);
   //Append product image
   $("#productImage_1").css("background-image","url("+local_content.product_1_image.value+")");
+  //Append product container
+  $("#productContainer_1").css("background-image","url("+local_content.product_1_container.value+")");
 
   //Product box 2
  //Check if price has sup element and append correct CSS class
@@ -53,17 +55,19 @@ onLemonpiReady(function () {
   $("#productName_2").html(local_content.product_2_copy.value);
   //Append product image
   $("#productImage_2").css("background-image","url("+local_content.product_2_image.value+")");
+  //Append product container
+  $("#productContainer_2").css("background-image","url("+local_content.product_2_container.value+")");
 
   //Animation of content
   var tl = new TimelineMax({repeat:-1});
-  TweenMax.set('#productPrice_2, #productName_2, #productImage_2', { opacity: 0 }) //Opacity on product 2
-  tl.fromTo('#productPrice_1, #productName_1', 0.3, {opacity:0, ease: Linear.ease},{opacity:1, ease: Linear.ease}, 0) //Product price and product name 1 fade in
+  TweenMax.set('#productPrice_2, #productName_2, #productImage_2, #productContainer_2', { opacity: 0 }) //Opacity on product 2
+  tl.fromTo('#productPrice_1, #productName_1, #productContainer_1', 0.3, {opacity:0, ease: Linear.ease},{opacity:1, ease: Linear.ease}, 0) //Product price and product name 1 fade in
     .fromTo('#productImage_1', 0.3, {x: 100, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0) //Product image 1 fade in
-    .to('#productPrice_1, #productName_1', 0.3, {opacity:0, ease: Linear.ease}, 3) //Product price and product name 1 fade out
+    .to('#productPrice_1, #productName_1, #productContainer_1', 0.3, {opacity:0, ease: Linear.ease}, 3) //Product price and product name 1 fade out
     .to('#productImage_1', 0.3, {x: 100, opacity:0, ease: Linear.ease}, 3) //Product image 1 fade out
-    .fromTo('#productPrice_2, #productName_2', 0.3, {opacity:0, ease: Linear.ease},{opacity:1, ease: Linear.ease}, 3.3) //Product price and product name 2 fade in
+    .fromTo('#productPrice_2, #productName_2, #productContainer_2', 0.3, {opacity:0, ease: Linear.ease},{opacity:1, ease: Linear.ease}, 3.3) //Product price and product name 2 fade in
     .fromTo('#productImage_2', 0.3, {x: 100, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 3.3) //Product image 2 fade in
-    .to('#productPrice_2, #productName_2', 0.3, {opacity:0, ease: Linear.ease}, 6) //Product price and product name 2 fade out
+    .to('#productPrice_2, #productName_2, #productContainer_2', 0.3, {opacity:0, ease: Linear.ease}, 6) //Product price and product name 2 fade out
     .to('#productImage_2', 0.3, {x: 100, opacity:0, ease: Linear.ease}, 6) //Product image 2 fade ou
   });
 
