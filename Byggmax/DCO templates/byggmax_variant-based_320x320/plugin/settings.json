@@ -1,20 +1,20 @@
 {
-  "id": "9360f80e-dc97-42ff-928e-97e3c543a20d",
+  "id": "8d6fa89a-5372-403f-a23f-5d8d26a064f8",
   "version": "1.2.0",
-  "name": "byggmax_variant-based_980x240",
+  "name": "byggmax_variant-based_320x320",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 240,
+        "width": 320,
+        "height": 320,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 240
+        "width": 320,
+        "height": 320
       }
     ]
   },
@@ -74,7 +74,7 @@
       "list": [
         {
           "product_1_copy": {
-            "value": "Planteringsjord 40 L"
+            "value": "Planteringsjord <br>Basic 40 L"
           },
           "product_1_price": {
             "value": "99<sup>95</sup>"
@@ -109,6 +109,44 @@
           "exit_url": {
             "value": "https://www.byggmax.se/"
           }
+        },
+        {
+          "product_1_copy": {
+            "value": "Planteringsjord <br>Basic 40 L"
+          },
+          "product_1_price": {
+            "value": "99<sup>95</sup>"
+          },
+          "product_1_image": {
+            "value": "https://assets.lemonpi.io/a/k/60a5ac24-e343-4031-9b25-49ee7e629007/Assets/jord_march_2024/158020-jordsack.png"
+          },
+          "product_1_container": {
+            "value": "https://assets.lemonpi.io/a/k/1910d203-9221-4dbe-beea-1521a4b46eef/Assets/jord_march_2024/4for-SE.png"
+          },
+          "product_2_copy": {
+            "value": "Planteringsjord <br>KRAV Wiksbo 50 L"
+          },
+          "product_2_price": {
+            "value": "299"
+          },
+          "product_2_image": {
+            "value": "https://assets.lemonpi.io/a/k/9ca3ca53-76b6-47cd-8361-906dba476f82/Assets/jord_march_2024/158027-Jordsack.png"
+          },
+          "product_2_container": {
+            "value": "https://assets.lemonpi.io/a/k/1910d203-9221-4dbe-beea-1521a4b46eef/Assets/jord_march_2024/4for-SE.png"
+          },
+          "layover_asset": {
+            "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
+          },
+          "background_asset": {
+            "value": "https://assets.lemonpi.io/a/k/ea73a4b0-f78f-4078-abb4-f768f4b8f265/Assets/jord_march_2024/bg_320x320_byggmax_new.jpg"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/k/17eaec12-c595-46fb-af4f-4cdd95d51697/Assets/jord_march_2024/Logo-tagline.png"
+          },
+          "exit_url": {
+            "value": "https://www.byggmax.se/"
+          }
         }
       ]
     }
@@ -125,5 +163,5 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 54378
+  "port": 54590
 }
