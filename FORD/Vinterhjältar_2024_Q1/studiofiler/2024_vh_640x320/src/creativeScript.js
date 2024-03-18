@@ -11,6 +11,9 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   var subCopy = $('#subCopy_static');
   subCopy.append(content.subCopy_static.value)
+ //subtitle_top defined
+  var subtitle_top = $('#subtitle_top');
+  subtitle_top.append(content.subtitle_top.value)
   
   var frame_1 = $('#frame_1_copy');
   frame_1.append(content.frame_1_copy.value)
@@ -50,7 +53,7 @@ function onUserLeave() {
 var mt = new TimelineMax({repeat: -1});
 
 if (use_one_headline_bool){
-  mt.to("#frame_1_copy, #subCopy_static", {opacity: 1, duration: 1.1})
+  mt.to("#frame_1_copy, #subCopy_static, #subtitle_top", {opacity: 1, duration: 1.1})
  .to("#splash", {scale: 1, duration: 0.2, ease: Power2.easeInOut})
  .to("#splash", {
      scale: 1.2,
@@ -61,9 +64,9 @@ if (use_one_headline_bool){
      ease: Power2.easeInOut
  })
 
-  .to("#frame_1_copy,#subCopy_static", {opacity: 0, duration: 0.5, delay: 1.5})
+  .to("#frame_1_copy,#subCopy_static,#subtitle_top", {opacity: 0, duration: 0.5, delay: 1.5})
   
-  .to("#frame_1_copy,#subCopy_static", {opacity: 1, duration: 0.5})
+  .to("#frame_1_copy,#subCopy_static,#subtitle_top", {opacity: 1, duration: 0.5})
   
 } else {
   gsap.set("#frame_2_copy", { opacity: 0 });
