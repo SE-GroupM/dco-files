@@ -1,0 +1,495 @@
+{
+  "id": "b0a56422-9407-4edb-bf4e-6348f28574e0",
+  "version": "1.3.0",
+  "name": "mio_vib_980x240",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "copy_frame_1": {
+        "type": "text",
+        "source": "feed"
+      },
+      "copy_frame_2": {
+        "type": "text",
+        "source": "feed"
+      },
+      "copy_static": {
+        "type": "text",
+        "source": "feed"
+      },
+      "copy_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "sub_copy": {
+        "type": "text",
+        "source": "feed"
+      },
+      "copy_shadow_on_off": {
+        "type": "text",
+        "source": "feed"
+      },
+      "location_name": {
+        "type": "text",
+        "source": "feed"
+      },
+      "copy_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_copy": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_copy_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_bg_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_bg_opacity": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "image_source": {
+        "type": "image",
+        "source": "feed"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "feed"
+      },
+      "videoTracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "use_video": {
+        "type": "text",
+        "source": "feed"
+      },
+      "mutebutton_on_off": {
+        "type": "text",
+        "source": "feed"
+      },
+      "logo_source": {
+        "type": "image",
+        "source": "feed"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "copy_frame_1": {
+            "value": "ÄNTLIGEN TID FÖR UTELIV!"
+          },
+          "copy_frame_2": {
+            "value": "VI HAR ALLT FÖR DIN UTEPLATS."
+          },
+          "copy_static": {
+            "value": ""
+          },
+          "copy_color": {
+            "value": "#b0ffb4"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "on"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "40px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_bg_color": {
+            "value": "#000000"
+          },
+          "cta_bg_opacity": {
+            "value": "0.7"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:TVIcsHyE20c4sePAkNM7f"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        },
+        {
+          "copy_frame_1": {
+            "value": ""
+          },
+          "copy_frame_2": {
+            "value": ""
+          },
+          "copy_static": {
+            "value": "ÄNTLIGEN TID FÖR UTELIV!<BR>VI HAR ALLT FÖR DIN UTEPLATS."
+          },
+          "copy_color": {
+            "value": "#b0ffb4"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "on"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "40px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_bg_color": {
+            "value": "#000000"
+          },
+          "cta_bg_opacity": {
+            "value": "0.7"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:TVIcsHyE20c4sePAkNM7f"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        },
+        {
+          "copy_frame_1": {
+            "value": "ÄNTLIGEN TID FÖR UTELIV!"
+          },
+          "copy_frame_2": {
+            "value": "VI HAR ALLT FÖR DIN UTEPLATS."
+          },
+          "copy_static": {
+            "value": ""
+          },
+          "copy_color": {
+            "value": "#b0ffb4"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "on"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "40px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_bg_color": {
+            "value": "#000000"
+          },
+          "cta_bg_opacity": {
+            "value": "0.7"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:TVIcsHyE20c4sePAkNM7f"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        },
+        {
+          "copy_frame_1": {
+            "value": ""
+          },
+          "copy_frame_2": {
+            "value": ""
+          },
+          "copy_static": {
+            "value": "ÄNTLIGEN TID FÖR UTELIV!<BR>VI HAR ALLT FÖR DIN UTEPLATS."
+          },
+          "copy_color": {
+            "value": "#b0ffb4"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "on"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "40px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_bg_color": {
+            "value": "#000000"
+          },
+          "cta_bg_opacity": {
+            "value": "0.7"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:TVIcsHyE20c4sePAkNM7f"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        },
+        {
+          "copy_frame_1": {
+            "value": "ÄNTLIGEN TID FÖR UTELIV!"
+          },
+          "copy_frame_2": {
+            "value": "VI HAR ALLT FÖR DIN UTEPLATS."
+          },
+          "copy_static": {
+            "value": ""
+          },
+          "copy_color": {
+            "value": "#b0ffb4"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "on"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "40px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_bg_color": {
+            "value": "#000000"
+          },
+          "cta_bg_opacity": {
+            "value": "0.7"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:TVIcsHyE20c4sePAkNM7f"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        },
+        {
+          "copy_frame_1": {
+            "value": ""
+          },
+          "copy_frame_2": {
+            "value": ""
+          },
+          "copy_static": {
+            "value": "ÄNTLIGEN TID FÖR UTELIV!<BR>VI HAR ALLT FÖR DIN UTEPLATS."
+          },
+          "copy_color": {
+            "value": "#b0ffb4"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "on"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "40px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_bg_color": {
+            "value": "#000000"
+          },
+          "cta_bg_opacity": {
+            "value": "0.7"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:TVIcsHyE20c4sePAkNM7f"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 198,
+    "name": "Mio"
+  },
+  "port": 59842
+}
