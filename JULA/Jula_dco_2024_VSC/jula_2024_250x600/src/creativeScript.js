@@ -113,10 +113,10 @@ onLemonpiReady(function () {
       $('#priceElement').addClass('saleElement');
     }
 
-    //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('tokbilligt')) {
+    //Check if price type is 'Tokbilligt' or kalasproduct (update since week 11 on site) and append heroElement class and salePrice class
+    if (productPriceType.toLowerCase().includes('kalasprodukt')) {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt!');
+      $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
     }
 

@@ -89,7 +89,7 @@ top: 20px;
   right: 56px;
   text-align: right;
   color: #B32013;
-  min-width: 111px;
+  min-width: 101px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -144,13 +144,14 @@ top: 20px;
   background-color: #333;
   transform: rotate(-4deg);
 }
+
 /* Product name text */
 .productName {
   font-family: "CreightonPro-Bold";
   position: absolute;
   font-size: 17px;
   color: #333;
-  left: 0px;
+  left: -10px;
   top: 370px;
   width: 210px;
   text-align: center;
@@ -165,4 +166,27 @@ top: 20px;
   top: 465px;
   width: 210px;
   text-align: center;
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+}
+
+/* Adjust right value for Chrome on Windows */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+  @supports (-ms-ime-align:auto) {
+    /* Adjust right value for Chrome on Windows */
+    .heroElement {
+      right: 34px; /* Adjusted value for Windows Chrome devices */
+    }
+  }
+}
+
+/* Adjust right value for Microsoft Edge */
+@supports (-ms-ime-align:auto) {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Adjust right value for Microsoft Edge */
+    .heroElement {
+      right: 34px; /* Adjusted value for Microsoft Edge */
+    }
+  }
 }
