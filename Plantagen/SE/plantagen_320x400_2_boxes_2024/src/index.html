@@ -13,6 +13,8 @@
 
     <!-- Creative Stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://f.lemonpi.io/a/497/f/8b1b0251-4f10-4943-85f6-7a754723a620/font-face.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://f.lemonpi.io/a/497/f/01dd481a-9517-4b1d-bdcb-79dc50271320/font-face.css">
 
     <title>Creative</title>
   </head>
@@ -20,12 +22,36 @@
     <!-- Creative Content -->
     <div id="content">
       <div id="creative_container">
-        <!-- Start creating template here -->
-        <!--         
-          Basic mapping of dynamic content
-          Add data-placeholder attributes to the elements that should contain dynamic content.
-          Example <div id="logo" class="logo" data-placeholder="logo"></div>
-        -->
+        <!-- Panel with copy, background image, logo and badge -->
+        <div id="dynamic_image" class="dynamic_image" data-placeholder="dynamic_image"></div>
+        <div id="overlay" class="overlay"></div>
+        <div id="badgeElement1" class="badgeElement" data-placeholder="badgeImg_1"></div>
+        <div id="badgeElement2" class="badgeElement" data-placeholder="badgeImg_2"></div>
+        <div class="copy_container">
+          <div id="mainCopy" class="mainCopy" data-placeholder="mainCopy"></div>
+        </div>
+        <div id="logo" class="logo"></div>
+        <!-- Product panel -->
+        <div id="slider" class="slider">
+          <div id="slide" class="slide">
+            <!-- Product box 1 and content -->
+            <div id="card_0" class="card_0">
+              <div id="product_img_0" class="product_img"></div>
+              <div id="title_0" class="title"></div>
+              <div id="description_0" class="description"></div>
+              <div id="price_elements_0" class="price_elements"></div>
+              <div id="cta_0" class="cta"></div>
+            </div>
+            <!-- Product box 2 and content -->
+            <div id="card_1" class="card_1">
+              <div id="product_img_1" class="product_img"></div>
+              <div id="title_1" class="title"></div>
+              <div id="description_1" class="description"></div>
+              <div id="price_elements_1" class="price_elements"></div>
+              <div id="cta_1" class="cta"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
