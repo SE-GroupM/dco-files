@@ -29,13 +29,13 @@ html, body {
 /* Style of copy frames */
 .copy_frames {
   position: absolute;
-  top: 35px;
-  font-size: 20px;
+  top: 48px;
+  font-size: 46px;
   color: #fff;
   font-family: "Bulldog Bold Italic";
   text-align: center;
   justify-content: center;
-  width: 320px;
+  width: 1250px;
   z-index: 10;
 }
 /* Style of copy frame 1 */
@@ -58,14 +58,14 @@ html, body {
   position: absolute;
   font-family: "clarice regular";
   color: #FFFFFF;
-  top: 15px;
-  width: 320px;
+  top: 10px;
+  width: 1250px;
   text-align: center;
-  font-size: 16px;
+  font-size: 30px;
 }
 /* Container for your creative */
 .cta-container {
-  width: 320px; /* Fixed width of the creative */
+  width: 1250px; /* Fixed width of the creative */
   display: flex; /* Enables flexbox for this container */
   justify-content: center; /* Centers the content horizontally */
   align-items: center; /* Centers the content vertically */
@@ -75,20 +75,20 @@ html, body {
   position: fixed;
   background-color: white; /* Background color of the button */
   color: #000000;
-  padding: 7px 12px; /* Padding inside the button */
+  padding: 10px 20px; /* Padding inside the button */
   text-align: center; /* Ensures text is centered within the button */
   border: none; /* Removes the default border */
   cursor: pointer; /* Changes cursor to pointer on hover */
   text-decoration: none; /* Removes underline from links if applied to <a> tag */
-  font-size: 13px; /* Font size of the button text */
-  border-radius: 10px; /* Optional: adds rounded corners to the button */
+  font-size: 16px; /* Font size of the button text */
+  border-radius: 14px; /* Optional: adds rounded corners to the button */
   font-family: "Bulldog - Medium";
-  top: 225px; /* Adjust as necessary */
+  top: 208px; /* Adjust as necessary */
 }
 .player {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 1250px;
+  height: 360px;
   top: 0px;
   left: 0px;
   background-color: #000;
@@ -96,29 +96,27 @@ html, body {
 .bg_image {
   position: absolute;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 320px;
-  width: 320px;
-  max-width: 320px;
+  background-size: contain;
+  background-position: center center;
+  height: 360px;
+  width: 1250px;
   left: 0px;
   top: 0px;
-  background-color: #000000;
 }  
 /* Logo image position */
 .logo {
-  position: fixed;
-  top: 280px; /* Center vertically */
-  left: 130px; /* Center horizontally */
+  position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 31px; /* Height of the logo */
-  width: 320px; /* Width of the logo */
+  width: 98px;
+  height: 54px;
+  left: 1120px;
+  top: 285px;
 }
-
 /* World click div */
 .worldClick {
-  width: 320px;
-  height: 320px;
+  width: 1250px;
+  height: 360px;
   display: block;
   position: fixed;
   overflow: hidden;

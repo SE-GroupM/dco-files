@@ -29,13 +29,13 @@ html, body {
 /* Style of copy frames */
 .copy_frames {
   position: absolute;
-  top: 35px;
-  font-size: 20px;
+  top: 45px;
+  font-size: 21px;
   color: #fff;
   font-family: "Bulldog Bold Italic";
   text-align: center;
   justify-content: center;
-  width: 320px;
+  width: 250px;
   z-index: 10;
 }
 /* Style of copy frame 1 */
@@ -58,14 +58,14 @@ html, body {
   position: absolute;
   font-family: "clarice regular";
   color: #FFFFFF;
-  top: 15px;
-  width: 320px;
+  top: 20px;
+  width: 250px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
 }
 /* Container for your creative */
 .cta-container {
-  width: 320px; /* Fixed width of the creative */
+  width: 250px; /* Fixed width of the creative */
   display: flex; /* Enables flexbox for this container */
   justify-content: center; /* Centers the content horizontally */
   align-items: center; /* Centers the content vertically */
@@ -83,12 +83,12 @@ html, body {
   font-size: 13px; /* Font size of the button text */
   border-radius: 10px; /* Optional: adds rounded corners to the button */
   font-family: "Bulldog - Medium";
-  top: 225px; /* Adjust as necessary */
+  top: 500px; /* Adjust as necessary */
 }
 .player {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 250px;
+  height: 600px;
   top: 0px;
   left: 0px;
   background-color: #000;
@@ -97,8 +97,8 @@ html, body {
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 320px;
-  width: 320px;
+  height: 250px;
+  width: 600px;
   max-width: 320px;
   left: 0px;
   top: 0px;
@@ -107,18 +107,18 @@ html, body {
 /* Logo image position */
 .logo {
   position: fixed;
-  top: 280px; /* Center vertically */
-  left: 130px; /* Center horizontally */
+  top: 555px; /* Center vertically */
+  left: 95px; /* Center horizontally */
   background-repeat: no-repeat;
   background-size: contain;
   height: 31px; /* Height of the logo */
-  width: 320px; /* Width of the logo */
+  width: 250px;
 }
 
 /* World click div */
 .worldClick {
-  width: 320px;
-  height: 320px;
+  width: 250px;
+  height: 600px;
   display: block;
   position: fixed;
   overflow: hidden;

@@ -1,17 +1,22 @@
 {
-  "id": "c6581fd6-7cc3-4c4d-aff1-a64fbc2471a2",
+  "id": "8279b293-fa65-4612-be83-86f31e9216e1",
   "version": "1.3.0",
-  "name": "mio_vib_320x320",
+  "name": "mio_vib_1250x360",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 320,
-        "isCustom": false
+        "width": 1250,
+        "height": 360,
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 1250,
+        "height": 360
+      }
+    ]
   },
   "placeholders": {
     "schema": {
@@ -133,10 +138,10 @@
             "value": "25px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "40px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "225px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -269,10 +274,78 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "40px"
           },
           "cta_top_value": {
+            "value": "178px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#000000"
+          },
+          "cta_bg_color": {
+            "value": "#b0ffb4"
+          },
+          "cta_bg_opacity": {
+            "value": "0.9"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:TVIcsHyE20c4sePAkNM7f"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        },
+        {
+          "copy_frame_1": {
+            "value": "ÄNTLIGEN TID FÖR UTELIV!"
+          },
+          "copy_frame_2": {
+            "value": "VI HAR ALLT FÖR DIN UTEPLATS."
+          },
+          "copy_static": {
             "value": ""
+          },
+          "copy_color": {
+            "value": "#b0ffb4"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "on"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "47px"
+          },
+          "copy_top_value": {
+            "value": "45px"
+          },
+          "cta_top_value": {
+            "value": "235px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -337,10 +410,10 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "45px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "240px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -355,7 +428,7 @@
             "value": "0.9"
           },
           "cta_fontsize": {
-            "value": "20px"
+            "value": "15px"
           },
           "image_source": {
             "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
@@ -402,13 +475,13 @@
             "value": ""
           },
           "copy_fontsize": {
-            "value": "40px"
+            "value": "55px"
           },
           "copy_top_value": {
             "value": ""
           },
           "cta_top_value": {
-            "value": ""
+            "value": "285px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -423,75 +496,7 @@
             "value": "0.9"
           },
           "cta_fontsize": {
-            "value": "20px"
-          },
-          "image_source": {
-            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
-          },
-          "videoSrc": {
-            "value": "v3:TVIcsHyE20c4sePAkNM7f"
-          },
-          "videoTracker": {
-            "value": "11ok1ehjs2s1uqbcvj31myur6e541konkprr52on0271f61ntilf6p17ol"
-          },
-          "use_video": {
-            "value": "yes"
-          },
-          "mutebutton_on_off": {
-            "value": "off"
-          },
-          "logo_source": {
-            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
-          },
-          "exit_url": {
-            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
-          }
-        },
-        {
-          "copy_frame_1": {
-            "value": "ÄNTLIGEN TID FÖR UTELIV!"
-          },
-          "copy_frame_2": {
-            "value": "VI HAR ALLT FÖR DIN UTEPLATS."
-          },
-          "copy_static": {
-            "value": ""
-          },
-          "copy_color": {
-            "value": "#b0ffb4"
-          },
-          "sub_copy": {
-            "value": "PÅ MIO.SE"
-          },
-          "copy_shadow_on_off": {
-            "value": "on"
-          },
-          "location_name": {
-            "value": ""
-          },
-          "copy_fontsize": {
-            "value": "40px"
-          },
-          "copy_top_value": {
-            "value": ""
-          },
-          "cta_top_value": {
-            "value": ""
-          },
-          "cta_copy": {
-            "value": "TILL SORTIMENTET"
-          },
-          "cta_copy_color": {
-            "value": "#000000"
-          },
-          "cta_bg_color": {
-            "value": "#b0ffb4"
-          },
-          "cta_bg_opacity": {
-            "value": "0.9"
-          },
-          "cta_fontsize": {
-            "value": "20px"
+            "value": "23px"
           },
           "image_source": {
             "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
@@ -541,10 +546,10 @@
             "value": "25px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "40px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "225px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -677,10 +682,10 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "40px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "178px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -742,13 +747,13 @@
             "value": ""
           },
           "copy_fontsize": {
-            "value": "40px"
+            "value": "47px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "45px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "235px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -769,7 +774,7 @@
             "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
           },
           "videoSrc": {
-            "value": "v3:ePyH6EOKfnftSE4ReJRY7"
+            "value": "v3:ePyH6EOKfnftSE4ReJRY6"
           },
           "videoTracker": {
             "value": "11ok1ehjs2s1uqbcvj31myur6e54139oajpz51o2zfjcl61ntilf6p1cjg"
@@ -813,10 +818,10 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "45px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "240px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -831,13 +836,13 @@
             "value": "0.8"
           },
           "cta_fontsize": {
-            "value": "20px"
+            "value": "15px"
           },
           "image_source": {
             "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
           },
           "videoSrc": {
-            "value": "v3:ePyH6EOKfnftSE4ReJRY8"
+            "value": "v3:ePyH6EOKfnftSE4ReJRY6"
           },
           "videoTracker": {
             "value": "11ok1ehjs2s1uqbcvj31myur6e54139oajpz51o2zfjcl61ntilf6p1cjg"
@@ -881,10 +886,10 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "50px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "470px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -899,13 +904,13 @@
             "value": "0.8"
           },
           "cta_fontsize": {
-            "value": "20px"
+            "value": "23px"
           },
           "image_source": {
             "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
           },
           "videoSrc": {
-            "value": "v3:ePyH6EOKfnftSE4ReJRY9"
+            "value": "v3:ePyH6EOKfnftSE4ReJRY6"
           },
           "videoTracker": {
             "value": "11ok1ehjs2s1uqbcvj31myur6e54139oajpz51o2zfjcl61ntilf6p1cjg"
@@ -949,10 +954,10 @@
             "value": "25px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "40px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "225px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -1085,10 +1090,78 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "40px"
           },
           "cta_top_value": {
+            "value": "178px"
+          },
+          "cta_copy": {
+            "value": "TILL SORTIMENTET"
+          },
+          "cta_copy_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_bg_color": {
+            "value": "#000000"
+          },
+          "cta_bg_opacity": {
+            "value": "0.7"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "image_source": {
+            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
+          },
+          "videoSrc": {
+            "value": "v3:72ZbLEQRlc4Pj_VrxGjqv"
+          },
+          "videoTracker": {
+            "value": "11ok1ehjs2s1uqbcvj31myur6e54u9kzaa3t51ir3q4e661ntilf6p1rjd"
+          },
+          "use_video": {
+            "value": "yes"
+          },
+          "mutebutton_on_off": {
+            "value": "off"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
+          },
+          "exit_url": {
+            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
+          }
+        },
+        {
+          "copy_frame_1": {
+            "value": "BARA REGN IDAG?"
+          },
+          "copy_frame_2": {
+            "value": "FÖRBERED UTEPLATSEN,<BR>SNART KOMMER SOLEN!"
+          },
+          "copy_static": {
             "value": ""
+          },
+          "copy_color": {
+            "value": "#ffffff"
+          },
+          "sub_copy": {
+            "value": "PÅ MIO.SE"
+          },
+          "copy_shadow_on_off": {
+            "value": "off"
+          },
+          "location_name": {
+            "value": ""
+          },
+          "copy_fontsize": {
+            "value": "47px"
+          },
+          "copy_top_value": {
+            "value": "45px"
+          },
+          "cta_top_value": {
+            "value": "235px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -1153,10 +1226,10 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "45px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "240px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -1171,7 +1244,7 @@
             "value": "0.7"
           },
           "cta_fontsize": {
-            "value": "20px"
+            "value": "15px"
           },
           "image_source": {
             "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
@@ -1221,10 +1294,10 @@
             "value": "40px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "50px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "470px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -1239,75 +1312,7 @@
             "value": "0.7"
           },
           "cta_fontsize": {
-            "value": "20px"
-          },
-          "image_source": {
-            "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
-          },
-          "videoSrc": {
-            "value": "v3:72ZbLEQRlc4Pj_VrxGjqv"
-          },
-          "videoTracker": {
-            "value": "11ok1ehjs2s1uqbcvj31myur6e54u9kzaa3t51ir3q4e661ntilf6p1rjd"
-          },
-          "use_video": {
-            "value": "yes"
-          },
-          "mutebutton_on_off": {
-            "value": "off"
-          },
-          "logo_source": {
-            "value": "https://assets.lemonpi.io/a/198/bcb1ec5348294e353bef5b3ee755bc10.png"
-          },
-          "exit_url": {
-            "value": "https://www.mio.se?utm_source=xaxis&utm_medium=dco&utm_campaign=prospecting_24&utm_content=utemobler"
-          }
-        },
-        {
-          "copy_frame_1": {
-            "value": "BARA REGN IDAG?"
-          },
-          "copy_frame_2": {
-            "value": "FÖRBERED UTEPLATSEN,<BR>SNART KOMMER SOLEN!"
-          },
-          "copy_static": {
-            "value": ""
-          },
-          "copy_color": {
-            "value": "#ffffff"
-          },
-          "sub_copy": {
-            "value": "PÅ MIO.SE"
-          },
-          "copy_shadow_on_off": {
-            "value": "off"
-          },
-          "location_name": {
-            "value": ""
-          },
-          "copy_fontsize": {
-            "value": "40px"
-          },
-          "copy_top_value": {
-            "value": ""
-          },
-          "cta_top_value": {
-            "value": ""
-          },
-          "cta_copy": {
-            "value": "TILL SORTIMENTET"
-          },
-          "cta_copy_color": {
-            "value": "#FFFFFF"
-          },
-          "cta_bg_color": {
-            "value": "#000000"
-          },
-          "cta_bg_opacity": {
-            "value": "0.7"
-          },
-          "cta_fontsize": {
-            "value": "20px"
+            "value": "23px"
           },
           "image_source": {
             "value": "https://assets.lemonpi.io/a/k/4ae29cd7-3b0b-49d5-8854-c4d37d73a49c/Assets/images/eyJidWNrZXQiOiJtaXJyb3IuZ2V0Zmxvd2JveC5jb20uZXUtd2VzdC0xLmxpdmUiLCJrZXkiOiJhSFIwY0hNNkx5OTNkM2N1YVc1emRHRm5jbUZ0TG1OdmJTOXdMME16ZUZwM1lsWk9NbTl3THc9PS8wIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwfX19.webp"
@@ -1346,5 +1351,5 @@
     "id": 198,
     "name": "Mio"
   },
-  "port": 60643
+  "port": 49700
 }

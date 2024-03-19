@@ -45,10 +45,10 @@ window.addEventListener('lemonpi.content/ready', event => {
    $("#sub_copy").html(local_content.sub_copy.value);
    //Append font size and line height on copy frames
    $(".cta").css({"opacity": local_content.cta_bg_opacity.value});
-      //Append font size and line height on copy frames
-      $(".copy_frames").css({"top": local_content.copy_top_value.value});
-      //Append font size and line height on cta frames
-      $(".cta").css({"top": local_content.cta_top_value.value});
+   //Append font size and line height on copy frames
+    $(".copy_frames").css({"top": local_content.copy_top_value.value});
+    //Append font size and line height on cta frames
+    $(".cta").css({"top": local_content.cta_top_value.value});
     // World click event caller
     $('#worldClick').click(onClick);
     // Defining mute-button's appearence 
