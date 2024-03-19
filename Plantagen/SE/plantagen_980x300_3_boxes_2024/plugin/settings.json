@@ -1,20 +1,20 @@
 {
-  "id": "516a4f9c-3fbb-42d2-9988-2015cef684c1",
+  "id": "4162bc5c-c8ed-4275-b55b-ef6d326f1c4f",
   "version": "1.2.0",
-  "name": "plantagen_240x980_2024",
+  "name": "plantagen_980x300_2024",
   "description": "",
   "size": {
     "sizes": [
       {
         "width": 980,
-        "height": 240,
+        "height": 300,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
         "width": 980,
-        "height": 240
+        "height": 300
       }
     ]
   },
@@ -85,6 +85,14 @@
         "source": "create"
       },
       "mainCopy_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "truncateName": {
+        "type": "text",
+        "source": "create"
+      },
+      "truncateDescription": {
         "type": "text",
         "source": "create"
       },
@@ -160,6 +168,12 @@
           "mainCopy_color": {
             "value": "mainCopy_color"
           },
+          "truncateName": {
+            "value": "truncateName"
+          },
+          "truncateDescription": {
+            "value": "truncateDescription"
+          },
           "overlay_yes_no": {
             "value": "overlay_yes_no"
           },
@@ -188,5 +202,5 @@
     "id": 497,
     "name": "Plantagen"
   },
-  "port": 58270
+  "port": 55963
 }

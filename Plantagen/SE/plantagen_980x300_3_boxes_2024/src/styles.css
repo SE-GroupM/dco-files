@@ -13,7 +13,7 @@ html, body {
 
 #creative_container {
   width: 980px;
-  height: 240px;
+  height: 300px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@ html, body {
 .dynamic_image {
   position: absolute;
   width: 502px;
-  height: 240px;
+  height: 300px;
   left: 0px;
   top: 0px;
   background-size: cover;
@@ -41,7 +41,7 @@ html, body {
 .copy_container {
   position: absolute;
   width: 502px;
-  height: 240px;
+  height: 300px;
   left: 0px;
   top: 0px;
   display: flex;
@@ -62,7 +62,7 @@ html, body {
 .overlay {
   position: absolute;
   width: 502px;
-  height: 240px;
+  height: 300px;
   left: 0px;
   top: 0px;
 }
@@ -70,10 +70,10 @@ html, body {
 /* Badge images */
 .badgeElement {
   position: absolute;
-  left: 398px;
-  top: 20px;
-  width: 90px;
-  height: 106px;
+  left: 375px;
+  top: 10px;
+  width: 97px;
+  height: 114px;
   background-size: contain;
   background-position: top center;
 }
@@ -92,19 +92,19 @@ html, body {
 .slider {
   position: absolute;
   width: 478px;
-  height: 240px;
+  height: 300px;
   left: 519px;
 }
 
 .slide {
   position: absolute;
   width: 478px;
-  height: 240px;
+  height: 300px;
 }
 
 /* Product image */
 .product_img {
-  height: 90px;
+  height: 140px;
   width: auto;
   margin-bottom: 10px;
 }
@@ -131,7 +131,7 @@ html, body {
   position: absolute;
   font-family: "plantagen-bold";
   font-size: 15px;
-  top: 168px;
+  top: 225px;
 }
 
 /* Sup class for price elemts */
@@ -150,7 +150,7 @@ html, body {
 .card_0 {
   position: absolute;
   background-color: white;
-  height: 219px;
+  height: 280px;
   width: 145px;
   top: 10px;
   left: 0px;
@@ -161,7 +161,7 @@ html, body {
 .card_1 {
   position: absolute;
   background-color: white;
-  height: 219px;
+  height: 280px;
   width: 145px;
   top: 10px;
   left: 150px;
@@ -172,7 +172,7 @@ html, body {
 .card_2 {
   position: absolute;
   background-color: white;
-  height: 219px;
+  height: 280px;
   width: 145px;
   top: 10px;
   left: 300px;
@@ -189,7 +189,7 @@ html, body {
   left: 10px;
   border-radius: 6rem;
   font-size: 9px;
-  top: 190px;
+  top: 250px;
   text-align: center;
   padding: 4px;
 }
