@@ -216,7 +216,9 @@ function truncateProductText(selector, truncLength) {
 
 //Animation of product boxes
 var t2 = new TimelineMax();
-  t2.fromTo('#slider', 0.7, {x: 460} ,{x: 0},0.2)
+  t2.fromTo('#slide_1', 0.7, {x: 460} ,{x: 0},0.2)
+  .fromTo('#slide_1', 0.7, {x: 460} ,{x: 640},3)
+  .fromTo('#slide_2', 0.7, {x: 460} ,{x: 0},3.2)
 
 //Animation of badge elements
 var t1 = new TimelineMax({repeat:-1});

@@ -13,7 +13,7 @@ html, body {
 
 #creative_container {
   width: 640px;
-  height: 360px;
+  height: 320px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@ html, body {
 .dynamic_image {
   position: absolute;
   width: 300px;
-  height: 360px;
+  height: 320px;
   left: 0px;
   top: 0px;
   background-size: cover;
@@ -41,7 +41,7 @@ html, body {
 .copy_container {
   position: absolute;
   width: 300px;
-  height: 360px;
+  height: 320px;
   left: 0px;
   top: 0px;
   display: flex;
@@ -62,7 +62,7 @@ html, body {
 .overlay {
   position: absolute;
   width: 300px;
-  height: 360px;
+  height: 320px;
   left: 0px;
   top: 0px;
 }
@@ -70,8 +70,8 @@ html, body {
 /* Badge images */
 .badgeElement {
   position: absolute;
-  left: 211px;
-  top: 40px;
+  left: 210px;
+  top: 20px;
   width: 80px;
   height: 114px;
   background-size: contain;
@@ -92,19 +92,19 @@ html, body {
 .slider {
   position: absolute;
   width: 295px;
-  height: 360px;
+  height: 320px;
   left: 323px;
 }
 
 .slide {
   position: absolute;
   width: 295px;
-  height: 360px;
+  height: 320px;
 }
 
 /* Product image */
 .product_img {
-  height: 150px;
+  height: 130px;
   width: auto;
   margin-bottom: 10px;
 }
@@ -131,7 +131,7 @@ html, body {
   position: absolute;
   font-family: "plantagen-bold";
   font-size: 15px;
-  top: 255px;
+  top: 225px;
 }
 
 /* Sup class for price elemts */
@@ -150,9 +150,9 @@ html, body {
 .card_0 {
   position: absolute;
   background-color: white;
-  height: 307px;
+  height: 280px;
   width: 145px;
-  top: 30px;
+  top: 20px;
   left: 0px;
   padding: 10px;
 }
@@ -161,9 +161,9 @@ html, body {
 .card_1 {
   position: absolute;
   background-color: white;
-  height: 307px;
+  height: 280px;
   width: 145px;
-  top: 30px;
+  top: 20px;
   left: 150px;
   padding: 10px;
 }
@@ -178,7 +178,7 @@ html, body {
   left: 10px;
   border-radius: 6rem;
   font-size: 9px;
-  top: 278px;
+  top: 248px;
   text-align: center;
   padding: 4px;
 }
