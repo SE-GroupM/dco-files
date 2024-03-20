@@ -49,7 +49,7 @@ top: 15px;
   position: fixed;
   width: 300px;
   height: 300px;
-  left: 390px;
+  left: 660px;
 }
 /* Product image size and position */
 .productImage {
@@ -88,7 +88,7 @@ top: 15px;
   right: 77px;
   text-align: right;
   color: #B32013;
-  min-width: 130px;
+  min-width: 120px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -101,7 +101,7 @@ top: 15px;
   border-radius: 18px;
   font-size: 24px;
   line-height: 24px;
-  top: 17px;
+  top: 27px;
   left: auto;
   right: 77px;
   min-width: 130px;
@@ -164,5 +164,8 @@ top: 15px;
   top: 250px;
   width: 300px;
   text-align: center;
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
 }
 

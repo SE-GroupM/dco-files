@@ -112,10 +112,10 @@ onLemonpiReady(function () {
       $('#priceElement').addClass('saleElement');
     }
 
-    //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('tokbilligt')) {
+    //Check if price type is 'Tokbilligt' or kalasproduct (update since week 11 on site) and append heroElement class and salePrice class
+    if (productPriceType.toLowerCase().includes('kalasprodukt')) {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt!');
+      $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
     }
 
@@ -132,11 +132,16 @@ onLemonpiReady(function () {
     var priceInfo = local_product_collection[0].productLatestPrice.value;
     $('#priceInfo').html(priceInfo);
 
+  // The animation should be somewhat like the product slides in from right side and out on the left,
+  // and the product information fades in and out.
   // //Animation
+  var widthOnBanner = 640;
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 1, { x: 640 }, { x: 0 }, 0.1)
-  .to('#productBox', 0.3, { x: -640 }, "+=1.5")
-  .set('#productBox', { x: 640 }); // Reset to start position for seamless looping
+  main_timeline.fromTo('#productBox', 0.3, { x: widthOnBanner}, { x: 0 }, 0.1)
+  .from('#productInfo',0.6,{autoAlpha:0},0.2)
+  .to('#productBox', 0.3, { x: -widthOnBanner }, "+=2.5")
+  .to('#productInfo',0.25,{autoAlpha:0},3.2)
+  .set('#productBox', { x: widthOnBanner }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {

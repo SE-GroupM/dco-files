@@ -113,9 +113,9 @@ onLemonpiReady(function () {
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('tokbilligt')) {
+    if (productPriceType.toLowerCase().includes('kalasprodukt')) {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt!');
+      $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
     }
 
@@ -134,7 +134,7 @@ onLemonpiReady(function () {
 
   //Animation
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 1, { x: 300 }, { x: 0 }, 0.1)
+  main_timeline.fromTo('#productBox', 0.5, { x: 300 }, { x: 0,ease: Power1.easeInOut }, 0.1)
   .from('#productInfo',0.6,{autoAlpha:0},0.2)
   .to('#productBox', 0.3, { x: -300 }, "+=2.5")
   .to('#productInfo',0.25,{autoAlpha:0},3.2)

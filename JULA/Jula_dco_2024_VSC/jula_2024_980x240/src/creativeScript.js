@@ -112,10 +112,10 @@ onLemonpiReady(function () {
       $('#priceElement').addClass('saleElement');
     }
 
-    //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('tokbilligt')) {
+     //Check if price type is 'Tokbilligt' or kalasproduct (update since week 11 on site) and append heroElement class and salePrice class
+     if (productPriceType.toLowerCase().includes('kalasprodukt')) {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt!');
+      $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
     }
 
@@ -133,10 +133,13 @@ onLemonpiReady(function () {
     $('#priceInfo').html(priceInfo);
 
   // //Animation
+  var heightOnBanner = 240;
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
-  .to('#productBox', 0.3, { y: 240 }, "+=1.5")
-  .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
+  main_timeline.fromTo('#productBox', 0.3, { y: -heightOnBanner }, { y: 0 }, 0.1)
+  .from('#productInfo',0.6,{autoAlpha:0},0.2)
+  .to('#productBox', 0.3, { y: heightOnBanner }, "+=2.5")
+  .to('#productInfo',0.25,{autoAlpha:0},3.2)
+  .set('#productBox', { y: -heightOnBanner }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {

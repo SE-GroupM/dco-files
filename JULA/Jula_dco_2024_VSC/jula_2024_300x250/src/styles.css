@@ -92,7 +92,7 @@ z-index: 1;
   right: 10px;
   text-align: right;
   color: #B32013;
-  min-width: 75px;
+  min-width: 65px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -105,7 +105,7 @@ z-index: 1;
   border-radius: 12px;
   font-size: 13px;
   line-height: 9px;
-  top: 0px;
+  top: 5px;
   left: auto;
   right: 10px;
   min-width: 75px;
@@ -137,7 +137,7 @@ z-index: 1;
   position: absolute;
   padding: 2px 4px 2px 4px;
   border-radius: 2px;
-  font-size: 13px;
+  font-size: 11px;
   color: white;
   top: 57px;
   left: auto;
@@ -167,5 +167,27 @@ z-index: 1;
   top: 215px;
   width: 270px;
   text-align: center;
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
 }
 
+/* Adjust right value for Chrome on Windows */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+  @supports (-ms-ime-align:auto) {
+    /* Adjust right value for Chrome on Windows */
+    .heroElement {
+      right: -10px; /* Adjusted value for Windows Chrome devices */
+    }
+  }
+}
+
+/* Adjust right value for Microsoft Edge */
+@supports (-ms-ime-align:auto) {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Adjust right value for Microsoft Edge */
+    .heroElement {
+      right: -10px; /* Adjusted value for Microsoft Edge */
+    }
+  }
+}

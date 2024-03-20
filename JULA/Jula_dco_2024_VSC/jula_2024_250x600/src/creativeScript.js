@@ -136,12 +136,13 @@ onLemonpiReady(function () {
   // The animation should be somewhat like the product slides in from right side and out on the left,
   // and the product information fades in and out.
   // //Animation
+  var widthOnBanner = 250;
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 0.3, { x: 250 }, { x: 0 }, 0.1)
+  main_timeline.fromTo('#productBox', 0.3, { x: widthOnBanner}, { x: 0 }, 0.1)
   .from('#productInfo',0.6,{autoAlpha:0},0.2)
-  .to('#productBox', 0.3, { x: -250 }, "+=2.5")
+  .to('#productBox', 0.3, { x: -widthOnBanner }, "+=2.5")
   .to('#productInfo',0.25,{autoAlpha:0},3.2)
-  .set('#productBox', { x: 250 }); // Reset to start position for seamless looping
+  .set('#productBox', { x: widthOnBanner }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {
