@@ -40,10 +40,6 @@
         "type": "text",
         "source": "create"
       },
-      "product_description": {
-        "type": "text",
-        "source": "create"
-      },
       "product_name": {
         "type": "text",
         "source": "create"
@@ -91,9 +87,6 @@
           },
           "product_discount": {
             "value": "product_discount"
-          },
-          "product_description": {
-            "value": "product_description"
           },
           "product_name": {
             "value": "product_name"

@@ -11,7 +11,7 @@ function onLemonpiReady(cb) {
         clearInterval(loadLemonpiTimerId);
         cb();
       }
-    }, 100); // Changed from 0 to 100 to reduce CPU usage, but can be adjusted as needed.
+    }, 0); // Changed from 0 to 100 to reduce CPU usage, but can be adjusted as needed.
   }
 }
 
@@ -42,7 +42,6 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   $('#main_copy').html(main_copy);
 
-
   const Slider = {
     currentSlideIndex: 1,
     create: function(options) {
@@ -54,15 +53,15 @@ window.addEventListener('lemonpi.content/ready', event => {
             duration: 0.5,
             setSlideContent: null,
             animation: function(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete) {
-                timeline.to(slidesWrapper, {
-                    duration: duration,
-                    ease: "power2.inOut",
-                    x: -target,
-                    onComplete: onComplete
+              timeline.to(slidesWrapper, {
+                  duration: settings.duration, // Corrected to settings.duration
+                  ease: "power2.inOut",
+                  x: -target,
+                  onComplete: onComplete
                 });
             }
         };
-  
+      
         const settings = Object.assign({}, defaults, options);
   
         const slidesContainer = document.querySelector(settings.slider);
@@ -160,12 +159,9 @@ window.addEventListener('lemonpi.content/ready', event => {
     
           const clickSlider = document.querySelector('#slider');
           clickSlider.addEventListener("click",onClick);
-    
   
-   
-          function onClick (slideIndex) {
-            // Check coordinates for which product area is clicked on.
-            var x = showCoords(event);
+        function onClick(event, slideIndex) {
+          var x = showCoords(event);
             // Slide 1 clicks
               return window.dispatchEvent(
                 new CustomEvent('lemonpi.interaction/click', {
@@ -174,13 +170,10 @@ window.addEventListener('lemonpi.content/ready', event => {
                   }
               }));
           }
-          
-      }
-    };
+        }
+      };
     
-  
     Slider.create({
-
     slidesData: content.products.value, // Assuming this is the correct path to your products data
     setSlideContent: function(slideDiv, slideData, slideIndex) {
       // Now properly setting content using jQuery
@@ -188,14 +181,24 @@ window.addEventListener('lemonpi.content/ready', event => {
       $(slideDiv).find("#product_name").html(slideData.product_name.value);
       $(slideDiv).find("#product_price").html(slideData.product_price.value+",-");
       $(slideDiv).find("#cta_text").html(content.cta_text.value);
+
     }
   });
 });
-// Auto swipe every three seconds
-var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
- .add(playAutoSwipeAnimation, timeBetweenSlides);
+
+function startAutoSwipe() {
+  setInterval(() => {
+      nextSlide(); // Assuming nextSlide is accessible in this context
+  }, timeBetweenSlides * 3); // Convert to milliseconds
+}
 
  // Function to auto swipe
 function playAutoSwipeAnimation () {
   $('#prev').click();
+}
+// Get coordinates for product boxes
+function showCoords(event) {
+  var x = event.clientX;
+  var coords = x;
+  return coords;
 }
