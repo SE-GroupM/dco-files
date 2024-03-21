@@ -1,20 +1,20 @@
 {
-  "id": "10ac4f41-f4bb-46e3-8889-69ead2ebf261",
+  "id": "53073c18-5b46-47f9-9ec7-3f602ae6ec5b",
   "version": "1.2.0",
-  "name": "byggmax_variant-based_930x600",
+  "name": "byggmax_variant-based_980x300",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 930,
-        "height": 600,
+        "width": 980,
+        "height": 300,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 930,
-        "height": 600
+        "width": 980,
+        "height": 300
       }
     ]
   },
@@ -74,25 +74,25 @@
       "list": [
         {
           "product_1_copy": {
-            "value": "Planteskolejord <br>Prima 50 L"
+            "value": "Plantejord <br>Basic 40 L"
           },
           "product_1_price": {
-            "value": "259"
+            "value": "189"
           },
           "product_1_image": {
-            "value": "https://assets.lemonpi.io/a/k/045b548d-e2b8-428c-80fa-9ed1ffe39151/Assets/jord_march_2024/Planteskolejord_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
           },
           "product_1_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantesæk <br>Prima 50 L"
+            "value": "Plantejord <br>Naturgjødslet 40 L"
           },
           "product_2_price": {
-            "value": "59<sup>95</sup>"
+            "value": "289"
           },
           "product_2_image": {
-            "value": "https://assets.lemonpi.io/a/k/da94703d-bb22-442c-93e6-f2408eafe6e7/Assets/jord_march_2024/Plantesaekk_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/819630db-7cb0-406c-a69d-5d49ccaf4513/Assets/jord_march_2024/n-gjodslet-plantejord-packshot.png"
           },
           "product_2_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
@@ -101,36 +101,74 @@
             "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
           },
           "background_asset": {
-            "value": "https://assets.lemonpi.io/a/k/ea73a4b0-f78f-4078-abb4-f768f4b8f265/Assets/jord_march_2024/bg_320x320_byggmax_new.jpg"
+            "value": "https://assets.lemonpi.io/a/k/919a4788-c91f-486c-a0c3-a40a2a305ff2/Assets/jord_march_2024/bg_320x400_byggmax.jpg"
           },
           "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
+            "value": "https://assets.lemonpi.io/a/k/17eaec12-c595-46fb-af4f-4cdd95d51697/Assets/jord_march_2024/Logo-tagline.png"
           },
           "exit_url": {
-            "value": "https://www.byggmax.dk/"
+            "value": "https://www.byggmax.no/"
           }
         },
         {
           "product_1_copy": {
-            "value": "Planteskolejord<br> Prima 50 L"
+            "value": "Plantejord Basic 40 L"
           },
           "product_1_price": {
-            "value": "259"
+            "value": "189"
           },
           "product_1_image": {
-            "value": "https://assets.lemonpi.io/a/k/045b548d-e2b8-428c-80fa-9ed1ffe39151/Assets/jord_march_2024/Planteskolejord_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
           },
           "product_1_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantesæk <br>Prima 50 L"
+            "value": "Plantejord Naturgjødslet 40 L"
           },
           "product_2_price": {
-            "value": "59<sup>95</sup>"
+            "value": "289"
           },
           "product_2_image": {
-            "value": "https://assets.lemonpi.io/a/k/da94703d-bb22-442c-93e6-f2408eafe6e7/Assets/jord_march_2024/Plantesaekk_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/819630db-7cb0-406c-a69d-5d49ccaf4513/Assets/jord_march_2024/n-gjodslet-plantejord-packshot.png"
+          },
+          "product_2_container": {
+            "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
+          },
+          "layover_asset": {
+            "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
+          },
+          "background_asset": {
+            "value": "https://assets.lemonpi.io/a/k/d4485049-5ecb-436d-b5f4-752fa7d03bfb/Assets/jord_march_2024/bg_300x600_byggmax.jpg"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/k/17eaec12-c595-46fb-af4f-4cdd95d51697/Assets/jord_march_2024/Logo-tagline.png"
+          },
+          "exit_url": {
+            "value": "https://www.byggmax.no/"
+          }
+        },
+        {
+          "product_1_copy": {
+            "value": "Plantejord Basic 40 L"
+          },
+          "product_1_price": {
+            "value": "189"
+          },
+          "product_1_image": {
+            "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
+          },
+          "product_1_container": {
+            "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
+          },
+          "product_2_copy": {
+            "value": "Plantejord Naturgjødslet 40 L"
+          },
+          "product_2_price": {
+            "value": "289"
+          },
+          "product_2_image": {
+            "value": "https://assets.lemonpi.io/a/k/819630db-7cb0-406c-a69d-5d49ccaf4513/Assets/jord_march_2024/n-gjodslet-plantejord-packshot.png"
           },
           "product_2_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
@@ -145,30 +183,30 @@
             "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
           },
           "exit_url": {
-            "value": "https://www.byggmax.dk/"
+            "value": "https://www.byggmax.no/"
           }
         },
         {
           "product_1_copy": {
-            "value": "Planteskolejord Prima 50 L"
+            "value": "Plantejord Basic 40 L"
           },
           "product_1_price": {
-            "value": "259"
+            "value": "189"
           },
           "product_1_image": {
-            "value": "https://assets.lemonpi.io/a/k/045b548d-e2b8-428c-80fa-9ed1ffe39151/Assets/jord_march_2024/Planteskolejord_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
           },
           "product_1_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantesæk Prima 50 L"
+            "value": "Plantejord Naturgjødslet 40 L"
           },
           "product_2_price": {
-            "value": "59<sup>95</sup>"
+            "value": "289"
           },
           "product_2_image": {
-            "value": "https://assets.lemonpi.io/a/k/da94703d-bb22-442c-93e6-f2408eafe6e7/Assets/jord_march_2024/Plantesaekk_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/819630db-7cb0-406c-a69d-5d49ccaf4513/Assets/jord_march_2024/n-gjodslet-plantejord-packshot.png"
           },
           "product_2_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
@@ -177,36 +215,36 @@
             "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
           },
           "background_asset": {
-            "value": "https://assets.lemonpi.io/a/k/a7fd9017-0dfc-4284-b515-7cd8965cfc00/Assets/jord_march_2024/bg_930x180_byggmax.jpg"
+            "value": "https://assets.lemonpi.io/a/k/df93e840-c967-4595-83b8-8aee135929a1/Assets/jord_march_2024/bg_980x300_byggmax.jpg"
           },
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
           },
           "exit_url": {
-            "value": "https://www.byggmax.dk/"
+            "value": "https://www.byggmax.no/"
           }
         },
         {
           "product_1_copy": {
-            "value": "Planteskolejord <br>Prima 50 L"
+            "value": "Plantejord Basic 40 L"
           },
           "product_1_price": {
-            "value": "259"
+            "value": "189"
           },
           "product_1_image": {
-            "value": "https://assets.lemonpi.io/a/k/045b548d-e2b8-428c-80fa-9ed1ffe39151/Assets/jord_march_2024/Planteskolejord_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
           },
           "product_1_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantesæk <br>Prima 50 L"
+            "value": "Plantejord Naturgjødslet 40 L"
           },
           "product_2_price": {
-            "value": "59<sup>95</sup>"
+            "value": "289"
           },
           "product_2_image": {
-            "value": "https://assets.lemonpi.io/a/k/da94703d-bb22-442c-93e6-f2408eafe6e7/Assets/jord_march_2024/Plantesaekk_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/819630db-7cb0-406c-a69d-5d49ccaf4513/Assets/jord_march_2024/n-gjodslet-plantejord-packshot.png"
           },
           "product_2_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
@@ -215,36 +253,36 @@
             "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
           },
           "background_asset": {
-            "value": "https://assets.lemonpi.io/a/k/c9815a93-94b1-4c59-a565-432186f681ce/Assets/jord_march_2024/bg_930x600_new_byggmax.jpg"
+            "value": "https://assets.lemonpi.io/a/k/a25d4776-b715-42bf-a8a4-cf438bcb37e4/Assets/jord_march_2024/bg_980x600_byggmax.jpg"
           },
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
           },
           "exit_url": {
-            "value": "https://www.byggmax.dk/"
+            "value": "https://www.byggmax.no/"
           }
         },
         {
           "product_1_copy": {
-            "value": "Planteskolejord Prima 50 L"
+            "value": "Plantejord Basic 40 L"
           },
           "product_1_price": {
-            "value": "259"
+            "value": "189"
           },
           "product_1_image": {
-            "value": "https://assets.lemonpi.io/a/k/045b548d-e2b8-428c-80fa-9ed1ffe39151/Assets/jord_march_2024/Planteskolejord_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
           },
           "product_1_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantesæk Prima 50 L"
+            "value": "Plantejord Naturgjødslet 40 L"
           },
           "product_2_price": {
-            "value": "59<sup>95</sup>"
+            "value": "289"
           },
           "product_2_image": {
-            "value": "https://assets.lemonpi.io/a/k/da94703d-bb22-442c-93e6-f2408eafe6e7/Assets/jord_march_2024/Plantesaekk_packshot.png"
+            "value": "https://assets.lemonpi.io/a/k/819630db-7cb0-406c-a69d-5d49ccaf4513/Assets/jord_march_2024/n-gjodslet-plantejord-packshot.png"
           },
           "product_2_container": {
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
@@ -253,51 +291,13 @@
             "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
           },
           "background_asset": {
-            "value": "https://assets.lemonpi.io/a/k/b8438522-c044-4652-8831-08a8be5712cd/Assets/jord_march_2024/bg_320x480_byggmax.jpg"
+            "value": "https://assets.lemonpi.io/a/k/dcd67b18-2622-4798-b56a-8a548a9064b8/Assets/jord_march_2024/bg_580x400_byggmax.jpg"
           },
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
           },
           "exit_url": {
-            "value": "https://www.byggmax.dk/"
-          }
-        },
-        {
-          "product_1_copy": {
-            "value": "Planteskolejord Prima 50 L"
-          },
-          "product_1_price": {
-            "value": "259"
-          },
-          "product_1_image": {
-            "value": "https://assets.lemonpi.io/a/k/045b548d-e2b8-428c-80fa-9ed1ffe39151/Assets/jord_march_2024/Planteskolejord_packshot.png"
-          },
-          "product_1_container": {
-            "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
-          },
-          "product_2_copy": {
-            "value": "Plantesæk Prima 50 L"
-          },
-          "product_2_price": {
-            "value": "59<sup>95</sup>"
-          },
-          "product_2_image": {
-            "value": "https://assets.lemonpi.io/a/k/da94703d-bb22-442c-93e6-f2408eafe6e7/Assets/jord_march_2024/Plantesaekk_packshot.png"
-          },
-          "product_2_container": {
-            "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
-          },
-          "layover_asset": {
-            "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
-          },
-          "background_asset": {
-            "value": "https://assets.lemonpi.io/a/k/ac323390-89ca-46eb-9d3b-191a282bdc14/Assets/jord_march_2024/bg_160x600_byggmax.jpg"
-          },
-          "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
-          },
-          "exit_url": {
-            "value": "https://www.byggmax.dk/"
+            "value": "https://www.byggmax.no/"
           }
         }
       ]
@@ -315,5 +315,5 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 63254
+  "port": 49626
 }
