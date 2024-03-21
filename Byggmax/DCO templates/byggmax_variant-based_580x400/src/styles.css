@@ -28,8 +28,8 @@ html, body {
 /* Background image asset */
 .bgImage {
   position: absolute;
-  width: 980px;
-  height: 300px;
+  width: 580px;
+  height: 400px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -37,10 +37,10 @@ html, body {
 /* Logo image asset */
 .logo {
   position: absolute;
-  top: 240px;
-  left: 20px;
+  top: 330px;
+  left: 35px;
   width: 170px;
-  height: 50px;
+  height: 60px;
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -48,10 +48,10 @@ html, body {
 /* Product overlay image asset */
 .productOverlay {
   position: absolute;
-  top: 160px;
-  left: 490px;
+  top: 230px;
+  left: 240px;
   width: 450px;
-  height: 160px;
+  height: 180px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -61,16 +61,16 @@ html, body {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 980px;
-  height: 300px;
+  width: 580px;
+  height: 400px;
 }
 /* Product price */
 .productPrice {
   display: block;
   position: absolute;
-  left: 200px;
-  top: 70px;
-  font-size: 80px;
+  left: 35px;
+  top: 80px;
+  font-size: 70px;
   font-family: "Mikro-black-otf";
   color: #eb001e;
   letter-spacing: -3px;
@@ -84,8 +84,7 @@ html, body {
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
-  /* position: relative; */
-  margin-left: -40px;
+  margin-left: -36px;
   font-size: 20px;
   font-family: "Mikro-Bold";
   letter-spacing: 0px;
@@ -98,10 +97,10 @@ sup {
 /* Product image asset */
 .productImage {
   position: absolute;
-  top: 0px;
-  left: 560px;
-  width: 300px;
-  height: 300px;
+  top: 80px;
+  left: 250px;
+  width: 400px;
+  height: 280px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -109,9 +108,9 @@ sup {
 /* Product name */
 .productName {
   position: absolute;
-  left: 200px;
-  top: 155px;
-  font-size: 20px;
+  left: 35px;
+  top: 160px;
+  font-size: 18px;
   font-family: "Mikro-Bold";
   color: #000;
 }
@@ -119,8 +118,8 @@ sup {
 /* Product container ex 4 för */
 .productContainer {
   position: absolute;
-  top: 30px;
-  left: 380px;
+  top: 40px;
+  left: 190px;
   width: 90px;
   height: 90px;
   background-size: contain;

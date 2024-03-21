@@ -1,20 +1,20 @@
 {
-  "id": "53073c18-5b46-47f9-9ec7-3f602ae6ec5b",
+  "id": "50e4048b-4e45-40ac-943a-0e955a251499",
   "version": "1.2.0",
-  "name": "byggmax_variant-based_980x300",
+  "name": "byggmax_variant-based_580x400",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 300,
+        "width": 580,
+        "height": 400,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 300
+        "width": 580,
+        "height": 400
       }
     ]
   },
@@ -104,7 +104,7 @@
             "value": "https://assets.lemonpi.io/a/k/919a4788-c91f-486c-a0c3-a40a2a305ff2/Assets/jord_march_2024/bg_320x400_byggmax.jpg"
           },
           "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/17eaec12-c595-46fb-af4f-4cdd95d51697/Assets/jord_march_2024/Logo-tagline.png"
+            "value": "https://assets.lemonpi.io/a/k/cb38ce93-cac9-4847-bf65-5ce8da3cdefb/Assets/jord_march_2024/Logo-tagline_NO.png"
           },
           "exit_url": {
             "value": "https://www.byggmax.no/"
@@ -142,7 +142,7 @@
             "value": "https://assets.lemonpi.io/a/k/d4485049-5ecb-436d-b5f4-752fa7d03bfb/Assets/jord_march_2024/bg_300x600_byggmax.jpg"
           },
           "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/17eaec12-c595-46fb-af4f-4cdd95d51697/Assets/jord_march_2024/Logo-tagline.png"
+            "value": "https://assets.lemonpi.io/a/k/cb38ce93-cac9-4847-bf65-5ce8da3cdefb/Assets/jord_march_2024/Logo-tagline_NO.png"
           },
           "exit_url": {
             "value": "https://www.byggmax.no/"
@@ -150,7 +150,7 @@
         },
         {
           "product_1_copy": {
-            "value": "Plantejord Basic 40 L"
+            "value": "Plantejord <br>Basic 40 L"
           },
           "product_1_price": {
             "value": "189"
@@ -162,7 +162,7 @@
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantejord Naturgjødslet 40 L"
+            "value": "Plantejord <br>Naturgjødslet 40 L"
           },
           "product_2_price": {
             "value": "289"
@@ -180,7 +180,7 @@
             "value": "https://assets.lemonpi.io/a/k/c183dd28-01eb-4627-843f-0ab85a5d199f/Assets/jord_march_2024/bg_300x250_byggmax.jpg"
           },
           "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
+            "value": "https://assets.lemonpi.io/a/k/cb38ce93-cac9-4847-bf65-5ce8da3cdefb/Assets/jord_march_2024/Logo-tagline_NO.png"
           },
           "exit_url": {
             "value": "https://www.byggmax.no/"
@@ -191,7 +191,7 @@
             "value": "Plantejord Basic 40 L"
           },
           "product_1_price": {
-            "value": "189<sup>90</sup>"
+            "value": "189"
           },
           "product_1_image": {
             "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
@@ -218,7 +218,7 @@
             "value": "https://assets.lemonpi.io/a/k/df93e840-c967-4595-83b8-8aee135929a1/Assets/jord_march_2024/bg_980x300_byggmax.jpg"
           },
           "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
+            "value": "https://assets.lemonpi.io/a/k/cb38ce93-cac9-4847-bf65-5ce8da3cdefb/Assets/jord_march_2024/Logo-tagline_NO.png"
           },
           "exit_url": {
             "value": "https://www.byggmax.no/"
@@ -238,7 +238,7 @@
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantejord Naturgjødslet 40 L"
+            "value": "Plantejord <br>Naturgjødslet 40 L"
           },
           "product_2_price": {
             "value": "289"
@@ -256,7 +256,7 @@
             "value": "https://assets.lemonpi.io/a/k/a25d4776-b715-42bf-a8a4-cf438bcb37e4/Assets/jord_march_2024/bg_980x600_byggmax.jpg"
           },
           "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
+            "value": "https://assets.lemonpi.io/a/k/cb38ce93-cac9-4847-bf65-5ce8da3cdefb/Assets/jord_march_2024/Logo-tagline_NO.png"
           },
           "exit_url": {
             "value": "https://www.byggmax.no/"
@@ -264,10 +264,10 @@
         },
         {
           "product_1_copy": {
-            "value": "Plantejord Basic 40 L"
+            "value": "Plantejord <br>Basic 40 L"
           },
           "product_1_price": {
-            "value": "189"
+            "value": "189<sup>90</sup>"
           },
           "product_1_image": {
             "value": "https://assets.lemonpi.io/a/k/a1c0a425-d0a8-4d3f-8c8a-7577748220f9/Assets/jord_march_2024/plantejord-basic_packshot.png"
@@ -276,7 +276,7 @@
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantejord Naturgjødslet 40 L"
+            "value": "Plantejord <br>Naturgjødslet 40 L"
           },
           "product_2_price": {
             "value": "289"
@@ -294,7 +294,7 @@
             "value": "https://assets.lemonpi.io/a/k/dcd67b18-2622-4798-b56a-8a548a9064b8/Assets/jord_march_2024/bg_580x400_byggmax.jpg"
           },
           "logo_source": {
-            "value": "https://assets.lemonpi.io/a/k/6c95d708-5f28-42c1-9d94-6f840f26fe18/Assets/jord_march_2024/Logo-tagline_DK.png"
+            "value": "https://assets.lemonpi.io/a/k/cb38ce93-cac9-4847-bf65-5ce8da3cdefb/Assets/jord_march_2024/Logo-tagline_NO.png"
           },
           "exit_url": {
             "value": "https://www.byggmax.no/"
@@ -315,5 +315,5 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 51366
+  "port": 50857
 }
