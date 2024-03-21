@@ -63,7 +63,7 @@ top: 30px;
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 70px;
+  font-size: 100px;
   font-family: "CreightonPro-Bold";
   color: #333;
   text-align: center;
@@ -83,10 +83,10 @@ top: 30px;
   position: absolute;
   padding: 8px 8px 6px 12px;
   border-radius: 16px;
-  font-size: 70px;
-  top: 40px;
+  font-size: 100px;
+  top: 20px;
   left: auto;
-  right: 127px;
+  right: 107px;
   text-align: right;
   color: #B32013;
   min-width: 120px;
@@ -119,14 +119,17 @@ top: 30px;
   position: absolute;
   padding: 4px 8px 4px 8px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 21px;
   color: white;
-  top: 121px;
+  top: 131px;
   left: auto;
-  right: 115px;
+  right: 85px;
   text-align: left;
   background-color: #DA3A35;
   transform: rotate(-4deg);
+}
+.clubElementCSS{
+  right: 105px;
 }
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
@@ -135,11 +138,11 @@ top: 30px;
   position: absolute;
   padding: 4px 8px 4px 8px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 22px;
   color: white;
-  top: 121px;
+  top: 126px;
   left: auto;
-  right: 115px;
+  right: 85px;
   text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
@@ -174,9 +177,7 @@ top: 30px;
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
   @supports (-ms-ime-align:auto) {
     /* Adjust right value for Chrome on Windows */
-    .heroElement {
-      /* right: 34px; Adjusted value for Windows Chrome devices */
-    }
+    
   }
 }
 
@@ -184,8 +185,6 @@ top: 30px;
 @supports (-ms-ime-align:auto) {
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     /* Adjust right value for Microsoft Edge */
-    .heroElement {
-      /* right: 34px; Adjusted value for Microsoft Edge */
-    }
+    
   }
 }

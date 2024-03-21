@@ -139,7 +139,7 @@ top: 20px;
   color: white;
   top: 90px;
   left: auto;
-  right: 44px;
+  right: 37px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
@@ -169,24 +169,4 @@ top: 20px;
   text-decoration: line-through;
   text-decoration-line: line-through;
   -webkit-text-decoration-line: line-through;
-}
-
-/* Adjust right value for Chrome on Windows */
-@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
-  @supports (-ms-ime-align:auto) {
-    /* Adjust right value for Chrome on Windows */
-    .heroElement {
-      right: 34px; /* Adjusted value for Windows Chrome devices */
-    }
-  }
-}
-
-/* Adjust right value for Microsoft Edge */
-@supports (-ms-ime-align:auto) {
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    /* Adjust right value for Microsoft Edge */
-    .heroElement {
-      right: 34px; /* Adjusted value for Microsoft Edge */
-    }
-  }
 }

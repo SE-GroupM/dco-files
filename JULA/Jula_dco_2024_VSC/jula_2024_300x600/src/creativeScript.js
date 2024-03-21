@@ -119,6 +119,20 @@ onLemonpiReady(function () {
       $('#priceElement').addClass('heroElement');
     }
 
+    var OSName="Unknown OS";
+    // Specific CSS positioning for Windows browsers
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+ 
+      OSName="Windows";
+      if (navigator.appVersion.includes('Edg')) {
+        
+      }
+      // WIN
+      $('.heroElement').css({
+        right: '44px',
+      });
+    }
+
     // Append image to product
     var productImage =  local_product_collection[0].productImage.value;
     $('#productImage').css({

@@ -139,7 +139,7 @@ top: 15px;
   color: white;
   top: 95px;
   left: auto;
-  right: 74px;
+  right: 64px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
@@ -170,3 +170,18 @@ top: 15px;
   -webkit-text-decoration-line: line-through;
 }
 
+/* Adjust right value for Chrome on Windows */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+  @supports (-ms-ime-align:auto) {
+    /* Adjust right value for Chrome on Windows */
+    
+  }
+}
+
+/* Adjust right value for Microsoft Edge */
+@supports (-ms-ime-align:auto) {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Adjust right value for Microsoft Edge */
+    
+  }
+}
