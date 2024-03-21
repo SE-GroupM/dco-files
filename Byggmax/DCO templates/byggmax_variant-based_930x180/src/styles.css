@@ -28,8 +28,8 @@ html, body {
 /* Background image asset */
 .bgImage {
   position: absolute;
-  width: 640px;
-  height: 320px;
+  width: 930px;
+  height: 180px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -37,8 +37,8 @@ html, body {
 /* Logo image asset */
 .logo {
   position: absolute;
-  top: 260px;
-  left: 35px;
+  top: 130px;
+  left: 20px;
   width: 170px;
   height: 40px;
   background-position: left center;
@@ -48,10 +48,10 @@ html, body {
 /* Product overlay image asset */
 .productOverlay {
   position: absolute;
-  top: 190px;
-  left: 210px;
+  top: 100px;
+  left: 410px;
   width: 450px;
-  height: 140px;
+  height: 110px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -60,16 +60,16 @@ html, body {
 .productPanel {
   position: absolute;
   top: 10px;
-  left: 0px;
-  width: 640px;
-  height: 320px;
+  left: 160px;
+  width: 700px;
+  height: 220px;
 }
 /* Product price */
 .productPrice {
   display: block;
   position: absolute;
-  left: 35px;
-  top: 30px;
+  left: 70px;
+  top: 20px;
   font-size: 70px;
   font-family: "Mikro-black-otf";
   color: #eb001e;
@@ -97,10 +97,11 @@ sup {
 /* Product image asset */
 .productImage {
   position: absolute;
-  top: 70px;
-  left: 210px;
+  top: 0px;
+  right: 20px;
+  left: auto;
   width: 450px;
-  height: 200px;
+  height: 170px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -108,9 +109,9 @@ sup {
 /* Product name */
 .productName {
   position: absolute;
-  left: 35px;
-  top: 115px;
-  font-size: 18px;
+  left: 70px;
+  top: 100px;
+  font-size: 16px;
   font-family: "Mikro-Bold";
   color: #000;
 }
@@ -119,9 +120,9 @@ sup {
 .productContainer {
   position: absolute;
   top: 0px;
-  left: 185px;
-  width: 90px;
-  height: 90px;
+  left: 215px;
+  width: 80px;
+  height: 80px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
