@@ -1,0 +1,136 @@
+{
+  "id": "07e9d67f-73a0-44dd-bc59-4fed065acb37",
+  "version": "1.3.0",
+  "name": "980x300_elektroimportoren_slider",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 300,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 300
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "category": {
+        "type": "text",
+        "source": "create"
+      },
+      "language": {
+        "type": "text",
+        "source": "create"
+      },
+      "promotion_price": {
+        "type": "text",
+        "source": "create"
+      },
+      "currency": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_discount": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_description": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_name": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_price": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "main_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "click": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "category": {
+            "value": "category"
+          },
+          "language": {
+            "value": "language"
+          },
+          "promotion_price": {
+            "value": "promotion_price"
+          },
+          "currency": {
+            "value": "currency"
+          },
+          "product_discount": {
+            "value": "product_discount"
+          },
+          "product_description": {
+            "value": "product_description"
+          },
+          "product_name": {
+            "value": "product_name"
+          },
+          "product_price": {
+            "value": "product_price"
+          },
+          "product_image": {
+            "value": ""
+          },
+          "main_copy": {
+            "value": "main_copy"
+          },
+          "cta_text": {
+            "value": "cta_text"
+          },
+          "logo": {
+            "value": ""
+          },
+          "click": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 393,
+    "name": "Elektroimportøren"
+  },
+  "port": 58090
+}
