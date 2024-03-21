@@ -48,10 +48,10 @@ html, body {
 /* Product overlay image asset */
 .productOverlay {
   position: absolute;
-  top: 380px;
-  left: 330px;
+  top: 280px;
+  left: 370px;
   width: 600px;
-  height: 200px;
+  height: 300px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -97,8 +97,8 @@ sup {
 /* Product image asset */
 .productImage {
   position: absolute;
-  top: 110px;
-  left: 390px;
+  top: 60px;
+  left: 420px;
   width: 450px;
   height: 450px;
   background-size: contain;
@@ -119,7 +119,7 @@ sup {
 .productContainer {
   position: absolute;
   top: 80px;
-  left: 290px;
+  left: 280px;
   width: 110px;
   height: 110px;
   background-size: contain;

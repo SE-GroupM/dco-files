@@ -238,7 +238,7 @@
             "value": "https://assets.lemonpi.io/a/k/87eac1ef-f657-4685-93f2-e615f9cbad86/Assets/jord_march_2024/4for-NO-DK.png"
           },
           "product_2_copy": {
-            "value": "Plantejord Naturgjødslet 40 L"
+            "value": "Plantejord <br>Naturgjødslet 40 L"
           },
           "product_2_price": {
             "value": "289"
@@ -315,5 +315,5 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 63295
+  "port": 50653
 }
