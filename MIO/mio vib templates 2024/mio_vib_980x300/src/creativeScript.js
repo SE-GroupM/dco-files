@@ -78,13 +78,12 @@ window.addEventListener('lemonpi.content/ready', event => {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(e, s);
 
-     //Options for video script
-    var options = {
-        loop: true,
-        loopCount: 3,
-        autoplay: true,
-        muteButton: false,
-    };
+   //Options for video script
+   var options = {
+    loop: true,
+    autoplay: true,
+    muteButton: false,
+   };
 
        /////////////////////
      //// ANIMATIONS /////

@@ -81,7 +81,6 @@ window.addEventListener('lemonpi.content/ready', event => {
      //Options for video script
     var options = {
         loop: true,
-        loopCount: 3,
         autoplay: true,
         muteButton: false,
     };

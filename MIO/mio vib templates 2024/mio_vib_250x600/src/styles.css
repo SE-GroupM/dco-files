@@ -32,7 +32,7 @@ html, body {
   top: 45px;
   font-size: 21px;
   color: #fff;
-  font-family: "Bulldog Bold Italic";
+  font-family: "bulldog - Bold";  
   text-align: center;
   justify-content: center;
   width: 250px;
@@ -107,11 +107,11 @@ html, body {
 /* Logo image position */
 .logo {
   position: fixed;
-  top: 555px; /* Center vertically */
-  left: 95px; /* Center horizontally */
+  top: 530px; /* Center vertically */
+  left: 90px; /* Center horizontally */
   background-repeat: no-repeat;
   background-size: contain;
-  height: 31px; /* Height of the logo */
+  height: 35px; /* Height of the logo */
   width: 250px;
 }
 

@@ -32,7 +32,7 @@ html, body {
   top: 48px;
   font-size: 46px;
   color: #fff;
-  font-family: "Bulldog Bold Italic";
+  font-family: "bulldog - Bold";  
   text-align: center;
   justify-content: center;
   width: 980px;
@@ -108,10 +108,10 @@ html, body {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 98px;
-  height: 44px;
-  left: 870px;
-  top: 240px;
+  width: 140px;
+  height: 52px;
+  left: 860px;
+  top: 235px;
 }
 /* World click div */
 .worldClick {

@@ -271,13 +271,13 @@
             "value": ""
           },
           "copy_fontsize": {
-            "value": "40px"
+            "value": "45px"
           },
           "copy_top_value": {
-            "value": ""
+            "value": "70px"
           },
           "cta_top_value": {
-            "value": ""
+            "value": "170px"
           },
           "cta_copy": {
             "value": "TILL SORTIMENTET"
@@ -1351,5 +1351,8 @@
     "id": 198,
     "name": "Mio"
   },
-  "port": 60845
+  "folders": {
+    "selectedFolderId": 3567
+  },
+  "port": 53424
 }
