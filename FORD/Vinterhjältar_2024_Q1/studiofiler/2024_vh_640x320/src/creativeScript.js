@@ -27,15 +27,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     use_one_headline_bool = true;
   }
 
-  $('#splash_text').html(content.splash_text.value);
-
-  $('#splash_img').css({
-    content: 'url('+ content.splash.value + ')',
-    'background-position': 'center center',
-    'position' : 'absolute',
-    'background-size': 'contain',
-  });
-
 TweenMax.set('#legal_bg', {autoAlpha:0});
 
 $('#legal_btn')
@@ -51,6 +42,35 @@ function onUserLeave() {
 }
 
 var mt = new TimelineMax({repeat: -1});
+
+
+var includeSplash = content.includeSplash.value;
+
+// Adjust initial CSS based on includeSplash
+if (includeSplash === '0') {
+  // Ensure splash is initially hidden if includeSplash is '0'
+  $('#splash').css({
+    'opacity': 0,
+    'display': 'none' // This line is added to ensure that the element does not take up space and is not interactable
+  });
+} else {
+  // If includeSplash is not '0', show the splash content and set up the image
+  $('#splash_text').html(content.splash_text.value);
+
+  $('#splash').css({
+    'opacity': 1,
+    'display': 'block' // Ensure the splash is visible and takes up space
+  });
+
+  $('#splash_img').css({
+    'background-repeat': 'no-repeat',
+    'background-image': 'url(' + content.splash.value + ')', // Changed from content to background-image
+    'background-position': 'center center',
+    'position': 'absolute',
+    'background-size': 'contain'
+  });
+}
+
 
 if (use_one_headline_bool){
   mt.to("#frame_1_copy, #subCopy_static, #subtitle_top", {opacity: 1, duration: 1.1})
