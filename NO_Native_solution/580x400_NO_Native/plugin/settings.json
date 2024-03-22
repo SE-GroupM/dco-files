@@ -1,19 +1,19 @@
 {
-  "id": "1ec8ba91-6942-4c30-a9be-9f3f597e96e4",
+  "id": "4b261f0f-25ab-48dd-beb7-e9ca868dda63",
   "version": "1.2.0",
-  "name": "320x400_elektroimportoren",
+  "name": "580x400_NO_Native",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
+        "width": 580,
         "height": 400,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 320,
+        "width": 580,
         "height": 400
       }
     ]
@@ -42,14 +42,6 @@
       },
       "avaiableFonts": {
         "type": "text",
-        "source": "create"
-      },
-      "click-placeholder": {
-        "type": "click",
-        "source": "create"
-      },
-      "image-placeholder": {
-        "type": "image",
         "source": "create"
       },
       "topValue_imgTxt": {
@@ -99,12 +91,6 @@
           "avaiableFonts": {
             "value": "avaiableFonts"
           },
-          "click-placeholder": {
-            "value": ""
-          },
-          "image-placeholder": {
-            "value": ""
-          },
           "topValue_imgTxt": {
             "value": "topValue_imgTxt"
           },
@@ -131,32 +117,38 @@
     "Google": [],
     "Choreograph": [
       {
-        "advertiserId": 1123,
-        "url": "https://assets.lemonpi.io/a/font/1123/Amedia_montserat_bold?v=800",
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Amedia_montserat_bold?v=800",
         "family": "Amedia_montserat_bold",
         "variant": "800"
       },
       {
-        "advertiserId": 1123,
-        "url": "https://assets.lemonpi.io/a/font/1123/Arial+Narrow-Bold?v=700",
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Amedia_montserat_regular?v=400",
+        "family": "Amedia_montserat_regular",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Arial+Narrow-Bold?v=700",
         "family": "Arial Narrow-Bold",
         "variant": "700"
       },
       {
-        "advertiserId": 1123,
-        "url": "https://assets.lemonpi.io/a/font/1123/Arial+Narrow-Regular?v=400",
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Arial+Narrow-Regular?v=400",
         "family": "Arial Narrow-Regular",
         "variant": "400"
       },
       {
-        "advertiserId": 1123,
-        "url": "https://assets.lemonpi.io/a/font/1123/TV2_bold?v=700",
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/TV2_bold?v=700",
         "family": "TV2_bold",
         "variant": "700"
       },
       {
-        "advertiserId": 1123,
-        "url": "https://assets.lemonpi.io/a/font/1123/TV2_regular?v=400",
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/TV2_regular?v=400",
         "family": "TV2_regular",
         "variant": "400"
       }
@@ -167,8 +159,11 @@
     "name": "Xaxis Norway"
   },
   "advertiser": {
-    "id": 1123,
-    "name": "test_sweden"
+    "id": 1223,
+    "name": "VVS"
   },
-  "port": 52953
+  "folders": {
+    "selectedFolderId": 3630
+  },
+  "port": 63943
 }

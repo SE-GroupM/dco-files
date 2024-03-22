@@ -29,41 +29,44 @@ html, body {
 /* image size and position */
 #img_container {
   position: absolute;
-  height: 200px;
-  width: 320px;
-  top: 0px;
+  height: 100%;
+  width: 100%;
+  top: -100px;
   left: 0px;
 }
 
 #panel_container {
   position: absolute;
   background-color: #fff;
-  top: 200px;
+  top: 220px;
   left: 0px;
-  width: 320px;
-  height: 200px;
+  width: 580px;
+  height: 521px;
+  z-index: 10;
 }
 
 /* MainCopy in larger font */
 #mainCopy {
+  font-family: "Amedia_montserat_regular";
   font-style: bold; 
   line-height: 45px;
   position: absolute;
-  top: 245px;
+  top: 255px;
   font-size: 43px;
   line-height: 62px;
   color: black;
-  max-width: 300px;
+  max-width: 580px;
   z-index: 15;
 }
 
 /* MainCopy in larger font */
 #imgCopy {
+  font-family: "TV2_regular";
   position: absolute;
-  top: 210px;
+  top: 225px;
   font-size: 20px;
   color: #636465;
-  max-width: 320px;
+  max-width: 350px;
   z-index: 15;
 }
 
