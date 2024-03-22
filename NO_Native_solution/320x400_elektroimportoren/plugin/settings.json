@@ -153,6 +153,12 @@
         "url": "https://assets.lemonpi.io/a/font/1123/TV2_bold?v=700",
         "family": "TV2_bold",
         "variant": "700"
+      },
+      {
+        "advertiserId": 1123,
+        "url": "https://assets.lemonpi.io/a/font/1123/TV2_regular?v=400",
+        "family": "TV2_regular",
+        "variant": "400"
       }
     ]
   },
@@ -164,5 +170,5 @@
     "id": 1123,
     "name": "test_sweden"
   },
-  "port": 0
+  "port": 52953
 }

@@ -107,25 +107,19 @@ onLemonpiReady(function () {
     }
 
     // Append image to div
-      
-      $('#img_container').css({
+    $('#img_container').css({
       backgroundImage: 'url("' + imgSrc + '")',
-      'background-size': 'contain',
+      'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'background-position': 'center'
-      });
+    });
 
-      if (topValueImg == '') {
-        // nothing changes
-      } else {
-        $('#img_container').css({
-          'top': topValueImg + 'px', // adjust img position 
-          });
-      }
-
-    ///////////////////////////////////////////////////
-    ////////////////// FUNCTIONS //////////////////////
-    ///////////////////////////////////////////////////
-
+    if (topValueImg == '') {
+      // nothing changes
+    } else {
+      $('#img_container').css({
+        'top': topValueImg + 'px', // adjust img position 
+        });
+    }
   });
 });
