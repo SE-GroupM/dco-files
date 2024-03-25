@@ -119,7 +119,7 @@ if (mutebutton_on_off === 'on') {
 
 // Determine the state of the mute button based on mutebutton_on_off variable
 if (copy_shadow_on_off === 'on') {
-  $("#sub_copy, .copy_frames").css({"text-shadow": "0px 0px 5px rgba(0,0,0,1)"});
+  $("#sub_copy, .copy_frames").css({"text-shadow": "0px 0px 5px rgba(0,0,0,0.5)"});
 } else if (copy_shadow_on_off === 'off') {
   $("#sub_copy, .copy_frames").css({"text-shadow": "none"});
 }
