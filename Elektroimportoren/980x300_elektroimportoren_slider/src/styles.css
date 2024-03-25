@@ -38,8 +38,8 @@ html, body {
   left: -60px;
   top: -40px;
   /* Add shadow below */
-  box-shadow: 0 22px 16px -6px lightgrey;}
-
+  box-shadow: 0 22px 16px -6px lightgrey;
+}
 .slider {
   position: absolute;
   height: 230px;
@@ -164,7 +164,7 @@ width: 234px;
 .border-frame {
   position: fixed;
   box-sizing: border-box;
-  border-width: 0.1px;
+  border-width: 0.5px;
   width: 980px;
   height: 300px;
   border-radius: 0;
