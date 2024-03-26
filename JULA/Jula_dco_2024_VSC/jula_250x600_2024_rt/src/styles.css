@@ -1,0 +1,172 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 250px;
+  height: 600px;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Position of logo */
+.logo {
+position: absolute;
+width: 190px;
+height: 60px;
+left: 50px;
+top: 20px;
+}
+/* Product box background */
+.productBox {
+  position: absolute;
+  background-color: white;
+  height: 480px;
+  width: 210px;
+  left: 20px;
+  top: 100px;
+  border-radius: 5px;
+}
+/* Container for product info */
+.productInfo {
+  position: fixed;
+  width: 210px;
+  height: 240px;
+  left: 30px;
+  top: 100px;
+}
+/* Product image size and position */
+.productImage {
+  position: absolute;
+  height: 220px;
+  width: 210px;
+  top: 130px;
+  left: 0px;
+}
+/* Price element  */
+.regularPrice {
+  position: absolute;
+  font-size: 60px;
+  font-family: "CreightonPro-Bold";
+  color: #333;
+  text-align: center;
+  top: 30px;
+  min-width: 210px;
+}
+
+/* Price sup element */
+.priceSup {
+  font-size: 50%;
+  vertical-align: super;
+  top: 0;
+}
+/* Discounted price element with yellow background and red text, ex. "99,-" */
+.salePrice {
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 8px 8px 6px 12px;
+  border-radius: 12px;
+  font-size: 60px;
+  top: 20px;
+  left: auto;
+  right: 56px;
+  text-align: right;
+  color: #B32013;
+  min-width: 101px;
+  background-color: #FFE500;
+  transform: rotate(-4deg);
+}
+/* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
+.clubPrice {
+  display: inline-block;
+  font-family: "CreightonPro-Bold";
+  position: absolute;
+  padding: 8px 8px 12px 6px;
+  border-radius: 12px;
+  font-size: 21px;
+  line-height: 16px;
+  top: 15px;
+  left: auto;
+  right: 56px;
+  min-width: 111px;
+  text-align: right;
+  color: #fff;
+  background-color: #B32013;
+  transform: rotate(-4deg);
+}
+
+/* Sale price element ex. "Spara 199,-" */
+.saleElement {
+  font-family: "Arial";
+  font-weight: bold;
+  position: absolute;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: white;
+  top: 90px;
+  left: auto;
+  right: 44px;
+  text-align: right;
+  background-color: #DA3A35;
+  transform: rotate(-4deg);
+}
+/* Hero element ex. "Tokbilligt" */
+.heroElement {
+  font-family: "Arial";
+  font-weight: bold;
+  position: absolute;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: white;
+  top: 90px;
+  left: auto;
+  right: 37px;
+  text-align: right;
+  background-color: #333;
+  transform: rotate(-4deg);
+}
+
+/* Product name text */
+.productName {
+  font-family: "Taz-Regular";
+  position: absolute;
+  font-size: 17px;
+  color: #333;
+  left: -10px;
+  top: 370px;
+  width: 210px;
+  text-align: center;
+}
+/* Product price info text */
+.priceInfo {
+  position: absolute;
+  font-family: "Taz-Regular";
+  font-size: 11px;
+  color: #fff;
+  left: -10px;
+  top: 465px;
+  width: 210px;
+  text-align: center;
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+}

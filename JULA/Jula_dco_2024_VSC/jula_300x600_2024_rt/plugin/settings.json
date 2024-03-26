@@ -1,20 +1,20 @@
 {
-  "id": "880d3dc8-1fa4-479d-901a-bd70e1428494",
+  "id": "51826eca-0786-4afc-b48a-d77a9a8413dc",
   "version": "1.3.0",
-  "name": "980x240_rt",
+  "name": "jula_300x600_rt",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 240,
+        "width": 300,
+        "height": 600,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 240
+        "width": 300,
+        "height": 600
       }
     ]
   },
@@ -145,8 +145,8 @@
     "id": 884,
     "name": "Jula"
   },
-  "port": 51197,
   "folders": {
     "selectedFolderId": 3085
-  }
+  },
+  "port": 55666
 }
