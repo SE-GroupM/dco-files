@@ -10,8 +10,7 @@ html, body {
   overflow: hidden;
   background-color: #fff;
   }
-
-#creative_container {
+ #creative_container {
   width: 980px;
   height: 300px;
   cursor: pointer;
@@ -32,9 +31,9 @@ html, body {
   box-sizing: border-box;
   border-color: #c6c6c6;
   z-index: 10;
-}
-/* Product box */
-.card {
+ }
+ /* Product box */
+ .card {
   position: absolute;
   box-sizing: border-box;
   border-width: 1px;

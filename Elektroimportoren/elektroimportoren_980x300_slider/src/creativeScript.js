@@ -184,9 +184,7 @@ Slider.create({
     //Find price div and append price
     $(slideDiv).find("#product_price").html(slideData.product_price.value+",-");
     //Find cta div and append cta copy
-    $(slideDiv).find("#cta_text").html(content.cta_text.value);
-    //Find click div and append click
-    $(slideDiv).find("#click").html(content.click.value);
+    $(slideDiv).find("#cta_text").html(content.cta_text.value);    
 	}
 });
 

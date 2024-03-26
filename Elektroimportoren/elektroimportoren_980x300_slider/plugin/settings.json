@@ -20,38 +20,6 @@
   },
   "placeholders": {
     "schema": {
-      "category": {
-        "type": "text",
-        "source": "create"
-      },
-      "language": {
-        "type": "text",
-        "source": "create"
-      },
-      "promotion_price": {
-        "type": "text",
-        "source": "create"
-      },
-      "currency": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_discount": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_name": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_price": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_image": {
-        "type": "image",
-        "source": "create"
-      },
       "main_copy": {
         "type": "text",
         "source": "create"
@@ -64,16 +32,8 @@
         "type": "image",
         "source": "create"
       },
-      "click": {
-        "type": "click",
-        "source": "create"
-      },
       "worldClick": {
         "type": "click",
-        "source": "create"
-      },
-      "product_description": {
-        "type": "text",
         "source": "create"
       }
     },
@@ -81,30 +41,6 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "category": {
-            "value": "category"
-          },
-          "language": {
-            "value": "language"
-          },
-          "promotion_price": {
-            "value": "promotion_price"
-          },
-          "currency": {
-            "value": "currency"
-          },
-          "product_discount": {
-            "value": "product_discount"
-          },
-          "product_name": {
-            "value": "product_name"
-          },
-          "product_price": {
-            "value": "product_price"
-          },
-          "product_image": {
-            "value": ""
-          },
           "main_copy": {
             "value": "main_copy"
           },
@@ -114,14 +50,8 @@
           "logo": {
             "value": ""
           },
-          "click": {
-            "value": ""
-          },
           "worldClick": {
             "value": ""
-          },
-          "product_description": {
-            "value": "product_description"
           }
         }
       ]
