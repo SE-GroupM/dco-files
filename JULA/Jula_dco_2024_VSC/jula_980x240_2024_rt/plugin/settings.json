@@ -1,7 +1,7 @@
 {
-  "id": "3769e428-49dc-4325-b8ef-fca15847f9a9",
+  "id": "880d3dc8-1fa4-479d-901a-bd70e1428494",
   "version": "1.3.0",
-  "name": "jula_2024_980x240",
+  "name": "980x240_rt",
   "description": "",
   "size": {
     "sizes": [
@@ -32,7 +32,7 @@
         "type": "text",
         "source": "create"
       },
-      "productPrice": {
+      "regularPrice": {
         "type": "text",
         "source": "create"
       },
@@ -48,8 +48,28 @@
         "type": "image",
         "source": "create"
       },
+      "productUrl": {
+        "type": "click",
+        "source": "create"
+      },
+      "productBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productNameColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productPriceColor": {
+        "type": "text",
+        "source": "create"
+      },
       "worldClick": {
         "type": "click",
+        "source": "create"
+      },
+      "productPrice": {
+        "type": "text",
         "source": "create"
       }
     },
@@ -66,8 +86,8 @@
           "mainCopy": {
             "value": "mainCopy"
           },
-          "productPrice": {
-            "value": "productPrice"
+          "regularPrice": {
+            "value": "regularPrice"
           },
           "productName": {
             "value": "productName"
@@ -78,8 +98,23 @@
           "productImage": {
             "value": ""
           },
+          "productUrl": {
+            "value": ""
+          },
+          "productBgColor": {
+            "value": "productBgColor"
+          },
+          "productNameColor": {
+            "value": "productNameColor"
+          },
+          "productPriceColor": {
+            "value": "productPriceColor"
+          },
           "worldClick": {
             "value": ""
+          },
+          "productPrice": {
+            "value": "productPrice"
           }
         }
       ]
@@ -87,7 +122,20 @@
   },
   "fonts": {
     "Google": [],
-    "Choreograph": []
+    "Choreograph": [
+      {
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/CreightonPro-Bold?v=700",
+        "family": "CreightonPro-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/Taz-Regular?v=400",
+        "family": "Taz-Regular",
+        "variant": "400"
+      }
+    ]
   },
   "agency": {
     "id": 7,
@@ -97,5 +145,8 @@
     "id": 884,
     "name": "Jula"
   },
-  "port": 57545
+  "folders": {
+    "selectedFolderId": 3085
+  },
+  "port": 63575
 }

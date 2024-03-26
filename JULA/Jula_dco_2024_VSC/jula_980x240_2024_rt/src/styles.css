@@ -146,7 +146,7 @@ top: 15px;
 }
 /* Product name text */
 .productName {
-  font-family: "CreightonPro-Bold";
+  font-family: "Taz-Regular";
   position: absolute;
   font-size: 17px;
   color: #333;
@@ -158,7 +158,7 @@ top: 15px;
 /* Product price info text */
 .priceInfo {
   position: absolute;
-  font-family: "Arial";
+  font-family: "Taz-Regular";
   font-size: 11px;
   color: #fff;
   left: 0px;
