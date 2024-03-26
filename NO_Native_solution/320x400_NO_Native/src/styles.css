@@ -34,6 +34,13 @@ html, body {
   top: 0px;
   left: 0px;
 }
+#logo_container {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  top: 135px;
+  left: 20px;
+}
 
 #panel_container {
   position: absolute;
