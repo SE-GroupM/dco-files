@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 320px;
-  height: 400px;
+  width: 250px;
+  height: 600px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -29,8 +29,8 @@ html, body {
 /* Dynamic image */
 .dynamic_image {
   position: absolute;
-  width: 320px;
-  height: 172px;
+  width: 250px;
+  height: 310px;
   left: 0px;
   top: 0px;
   background-size: cover;
@@ -40,10 +40,10 @@ html, body {
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 320px;
-  height: 127px;
+  width: 250px;
+  height: 167px;
   left: 0px;
-  top: 35px;
+  top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@ html, body {
 /* Badge images */
 .badgeElement {
   position: absolute;
-  left: 232px;
+  left: 160px;
   top: 10px;
   width: 80px;
   height: 93px;
@@ -91,16 +91,16 @@ html, body {
 /* Panel for products */
 .slider {
   position: absolute;
-  width: 290px;
-  height: 205px;
+  width: 250px;
+  height: 390px;
   left: 10px;
-  top: 184px;
+  top: 206px;
 }
 
 .slide {
   position: absolute;
-  width: 290px;
-  height: 205px;
+  width: 250px;
+  height: 390px;
 }
 
 /* Product image */
@@ -113,9 +113,9 @@ html, body {
 /* Title for products */
 .title {
   font-family: "plantagen-bold";
-  font-size: 13px;
-  line-height: 15px;
-  margin-bottom: 4px;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 3px;
 }
 
 /* Description for products */
@@ -123,16 +123,16 @@ html, body {
   resize: none;
   overflow: auto;
   font-family: "plantagen-regular";
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 /* Price elements */
 .price_elements {
   position: absolute;
   font-family: "plantagen-bold";
-  font-size: 15px;
-  top: 155px;
+  font-size: 13px;
+  top: 150px;
 }
 
 /* Sup class for price elemts */
@@ -151,8 +151,8 @@ html, body {
 .card_0 {
   position: absolute;
   background-color: white;
-  height: 205px;
-  width: 145px;
+  height: 190px;
+  width: 112px;
   top: 0px;
   left: 0px;
   padding: 10px;
@@ -162,10 +162,32 @@ html, body {
 .card_1 {
   position: absolute;
   background-color: white;
-  height: 205px;
-  width: 150px;
+  height: 190px;
+  width: 112px;
   top: 0px;
-  left: 150px;
+  left: 120px;
+  padding: 10px;
+}
+
+/* Product box 3 */
+.card_2 {
+  position: absolute;
+  background-color: white;
+  height: 190px;
+  width: 112px;
+  top: 195px;
+  left: 0px;
+  padding: 10px;
+}
+
+/* Product box 3 */
+.card_3 {
+  position: absolute;
+  background-color: white;
+  height: 190px;
+  width: 112px;
+  top: 195px;
+  left: 120px;
   padding: 10px;
 }
 
@@ -174,12 +196,12 @@ html, body {
   position: absolute;
   color: white;
   font-family: "plantagen-bold";
-  height: 21px;
-  width: 125px;
-  left: 10px;
+  height: 18px;
+  width: 100px;
+  left: 5px;
   border-radius: 6rem;
-  font-size: 9px;
-  top: 178px;
+  font-size: 8px;
+  top: 168px;
   text-align: center;
   padding: 4px;
 }

@@ -1,20 +1,20 @@
 {
-  "id": "0ad46cd5-2ba7-4b95-bbfa-70fea7798cca",
+  "id": "5921d37f-a362-40cf-86e7-752abb288d4d",
   "version": "1.2.0",
-  "name": "plantagen_320x400_2024",
+  "name": "plantagen_250x600_2024",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 400,
+        "width": 250,
+        "height": 600,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 320,
-        "height": 400
+        "width": 250,
+        "height": 600
       }
     ]
   },
@@ -202,5 +202,5 @@
     "id": 497,
     "name": "Plantagen"
   },
-  "port": 65389
+  "port": 0
 }

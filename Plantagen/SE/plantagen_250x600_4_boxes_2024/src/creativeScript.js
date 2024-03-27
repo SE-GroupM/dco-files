@@ -74,7 +74,7 @@ $('#slider').click(onClick)
 var products = local_content.products.value;
 
 //For loop to append products to product panel
-for (var i = 0; i < 2; i++){
+for (var i = 0; i < 4; i++){
 
   // Append image to product
   var productImage =  products[i].product_image.value;
