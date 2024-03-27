@@ -25,12 +25,13 @@ onLemonpiReady(function () {
 
 // Fetch data from adset
 window.addEventListener('lemonpi.content/ready', event => {
-  // object holding all data from adset
+    // object holding all data from adset
   const content = event.detail.content
   const source = event.detail.source
 
 //Local varaible for content
 var local_content = content;
+
 
 const logo = content.logo.value;
 const main_copy = content.main_copy.value;
@@ -47,7 +48,9 @@ var timeBetweenSlides = 3;
 
   $('#main_copy').html(main_copy);
 
-const Slider = {
+ $('#worldClick').click(onClick);
+
+ const Slider = {
   currentSlideIndex: 1,
   create: function(options) {
       const defaults = {
@@ -155,19 +158,6 @@ const Slider = {
       prevBtn.addEventListener("click", prevSlide);
 
       const clickSlider = document.querySelector('#slider');
-      clickSlider.addEventListener("click",onClick);
-
-      function onClick (slideIndex) {
-        // Check coordinates for which product area is clicked on.
-        var x = showCoords(event);
-        // Slide 1 clicks
-          return window.dispatchEvent(
-            new CustomEvent('lemonpi.interaction/click', {
-              detail: {
-                placeholder: ['products', slideIndex, 'click'],
-              }
-          }));
-      }
       
   }
 };
@@ -176,7 +166,7 @@ Slider.create({
 	slidesData: local_content.products.value,
   width: 500,
 	setSlideContent: function(slideDiv, slideData, slideIndex) {
-    
+
     //Find product image div and append image
     $(slideDiv).find("#product_image").css("background-image","url("+slideData.product_image.value+")");
     //Find product name div and append name
@@ -184,10 +174,24 @@ Slider.create({
     //Find price div and append price
     $(slideDiv).find("#product_price").html(slideData.product_price.value+",-");
     //Find cta div and append cta copy
-    $(slideDiv).find("#cta_text").html(content.cta_text.value);    
+    $(slideDiv).find("#cta_text").html(content.cta_text.value); 
+    const clickSlider = document.querySelector('#slider');
+    clickSlider.addEventListener("click",onClick);
+
+    function onClick (slideIndex) {
+
+      // Slide 1 clicks
+        return window.dispatchEvent(
+          new CustomEvent('lemonpi.interaction/click', {
+            detail: {
+              placeholder: ['products', slideIndex, 'click'],
+            }
+        }));
+    }
+    
+
 	}
 });
-
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
  .add(playAutoSwipeAnimation, timeBetweenSlides);
@@ -196,5 +200,14 @@ var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
 function playAutoSwipeAnimation () {
   $('#next').click();
 }
-
 })
+
+
+function onClick (event) {
+  return window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+        placeholder: 'worldClick'
+      }
+  }));
+}

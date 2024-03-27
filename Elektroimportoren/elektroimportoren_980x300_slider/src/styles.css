@@ -48,13 +48,12 @@ html, body {
   /* Add shadow below */
   box-shadow: 0 22px 16px -6px lightgrey;
 }
-
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 550px;
+  width: 371.632px;
   height: 300px;
-  left: 0px;
+  left: 627px;
   top: 0px;
   display: flex;
   align-items: center;
@@ -63,7 +62,7 @@ html, body {
 /* Main copy */
 .main_copy {
   position: absolute;
-  width: 272px;
+  width: 320px;
   height: 158px;
   font-family: 'Roboto - Black';
   font-weight: 900;
@@ -71,17 +70,9 @@ html, body {
   font-size: 31px;
   line-height: 34px;
   top: 71px;
-  left: 673px;
+  left: 16px;
   color: #000000;
   z-index: 15;
-}
-/* Overlay of dynamic image */
-.overlay {
-  position: absolute;
-  width: 550px;
-  height: 300px;
-  left: 0px;
-  top: 0px;
 }
 /* Logo placeholder */
 .logo {
@@ -104,7 +95,7 @@ html, body {
   height: 220px;
   width: 500px;
   top: 10px;
-  left:40px;
+  left: 40px;
 }
 .slide {
   position: relative;
@@ -191,7 +182,7 @@ html, body {
   height: 49px;
   top: 41%;
   left: 578px;
-  z-index: 15;
+  z-index: 20;
 }
 .prev {
   z-index: 1;
@@ -200,7 +191,7 @@ html, body {
   height: 49px;
   left: 0px;
   top: 41%;
-  z-index: 15;
+  z-index: 20;
 }
 .rightSliderBg{
   position: absolute;
@@ -236,4 +227,12 @@ html, body {
   top: 7px;
   background-repeat: no-repeat;
   background-size: 6px 10px;
+}
+.worldClick {
+  position: absolute;
+  width: 371.632px;
+  height: 300px;
+  left: 627px;
+  top: 0px;
+  z-index: 15; 
 }
