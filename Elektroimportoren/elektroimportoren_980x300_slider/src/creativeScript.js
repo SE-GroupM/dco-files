@@ -32,7 +32,6 @@ window.addEventListener('lemonpi.content/ready', event => {
 //Local varaible for content
 var local_content = content;
 
-
 const logo = content.logo.value;
 const main_copy = content.main_copy.value;
 
@@ -156,12 +155,22 @@ var timeBetweenSlides = 3;
       slidesContainer.appendChild(slidesWrapper);
       nextBtn.addEventListener("click", nextSlide);
       prevBtn.addEventListener("click", prevSlide);
-
-      const clickSlider = document.querySelector('#slider');
       
+      const clickSlider = document.querySelector('#slider');
+      clickSlider.addEventListener("click",onClick);
+
+      function onClick (event) {
+        // Slide 1 clicks
+          return window.dispatchEvent(
+            new CustomEvent('lemonpi.interaction/click', {
+              detail: {
+                placeholder: ['products', slideIndex-1, 'click'],
+              }
+          }));
+      }
   }
 };
-
+      
 Slider.create({
 	slidesData: local_content.products.value,
   width: 500,
@@ -175,23 +184,9 @@ Slider.create({
     $(slideDiv).find("#product_price").html(slideData.product_price.value+",-");
     //Find cta div and append cta copy
     $(slideDiv).find("#cta_text").html(content.cta_text.value); 
-    const clickSlider = document.querySelector('#slider');
-    clickSlider.addEventListener("click",onClick);
-
-    function onClick (slideIndex) {
-
-      // Slide 1 clicks
-        return window.dispatchEvent(
-          new CustomEvent('lemonpi.interaction/click', {
-            detail: {
-              placeholder: ['products', slideIndex, 'click'],
-            }
-        }));
-    }
-    
-
 	}
 });
+
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
  .add(playAutoSwipeAnimation, timeBetweenSlides);
@@ -201,7 +196,6 @@ function playAutoSwipeAnimation () {
   $('#next').click();
 }
 })
-
 
 function onClick (event) {
   return window.dispatchEvent(
