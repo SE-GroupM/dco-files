@@ -149,16 +149,25 @@ for (var i = 0; i < 4; i++){
 //End of for loop 
 
 // Get coordinates for product boxes
-function showCoords(event) {
+function showCoordsX(event) {
   var x = event.clientX;
+  var y = event.clientY;
   var coords = x;
   return coords;
 }
+function showCoordsY(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coords = y;
+  return coords;
+}
+
 function onClick (event) {
   // Check coordinates for which product area is clicked on.
-  var x = showCoords(event);
+  var x = showCoordsX(event);
+  var y = showCoordsY(event);
   // Slide 1 clicks
-  if (x >= 14 && x <= 152) {
+  if (x >= 10 && x <= 122 && y >= 203 && y <= 394) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
@@ -166,11 +175,25 @@ function onClick (event) {
         }
     }));
   }
-  else if (x >= 160 && x <= 306) {
+  else if (x >= 129 && x <= 240 && y >= 203 && y <= 394) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
             placeholder: ['products', 1, 'click'],
+        }
+    }));
+  } else if (x >= 10 && x <= 122 && y >= 398 && y <= 588) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['products', 2, 'click'],
+        }
+    }));
+  } else if (x >= 129 && x <= 240 && y >= 398 && y <= 588) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['products', 3, 'click'],
         }
     }));
   }

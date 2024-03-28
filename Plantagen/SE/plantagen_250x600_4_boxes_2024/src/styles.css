@@ -61,8 +61,8 @@ html, body {
 /* Overlay of dynamic image */
 .overlay {
   position: absolute;
-  width: 320px;
-  height: 172px;
+  width: 250px;
+  height: 310px;
   left: 0px;
   top: 0px;
 }
@@ -91,6 +91,7 @@ html, body {
 /* Panel for products */
 .slider {
   position: absolute;
+  cursor: pointer;
   width: 250px;
   height: 390px;
   left: 10px;
