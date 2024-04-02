@@ -443,14 +443,14 @@
     "Google": [],
     "Choreograph": [
       {
-        "advertiserId": 987,
-        "url": "https://assets.lemonpi.io/a/font/987/CEWEHead-Bold?v=700",
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Bold?v=700",
         "family": "CEWEHead-Bold",
         "variant": "700"
       },
       {
-        "advertiserId": 987,
-        "url": "https://assets.lemonpi.io/a/font/987/CEWEHead-Regular?v=400",
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Regular?v=400",
         "family": "CEWEHead-Regular",
         "variant": "400"
       }
@@ -461,11 +461,8 @@
     "name": "Xaxis Norway"
   },
   "advertiser": {
-    "id": 987,
-    "name": "Japanphoto"
+    "id": 988,
+    "name": "Cewe"
   },
-  "folders": {
-    "selectedFolderId": 3440
-  },
-  "port": 56672
+  "port": 62471
 }
