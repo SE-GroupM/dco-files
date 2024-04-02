@@ -42,64 +42,61 @@ html, body {
 }
 
 #bg_image {
-  width: 980px;
-  height: 240px;
+  position: absolute;
+  width: 320px;
+  height: 400px;
+  left: 0px;
+  top: 0px;
 }
 #frame_1_copy {
+  color: #fff;
   font-family: "FordAntennaExtraCond-Black";
   position: absolute;
-  top: 20px; /* Behåller samma höjdposition som tidigare */
-  height: 86px;
-  color: #fff;
-  left: 50%; /* Centrerar horisontellt */
-  transform: translateX(-50%); /* Centrerar horisontellt */
-  line-height: 39px;
-  font-size: 45px;
-  text-align: center;
-  width: 700px;
+  left: 40px;
+  font-size: 30px;
+  line-height: 32px;
+  left: 20px;
+  top: 20px;
 }
 
 #frame_2_copy {
+  color: #fff;
   font-family: "FordAntennaExtraCond-Black";
   position: absolute;
-  top: 20px; /* Behåller samma höjdposition som tidigare */
-  height: 86px;
-  color: #fff;
-  left: 50%; /* Centrerar horisontellt */
-  transform: translateX(-50%); /* Centrerar horisontellt */
-  line-height: 39px;
-  font-size: 45px;
-  text-align: center;
-  width: 700px;
+  left: 40px;
+  font-size: 30px;
+  line-height: 32px;
+  left: 20px;
+  top: 20px;
 }
 
 #cta_text {
   position: absolute;
   text-align: center;
-  color: rgb(255, 255, 255);
-  font-family: "FordAntennaCond-Regular";
+  color: #fff;
+  font-family: FordAntennaCond-Regular;
   font-weight: 400;
   margin-block: 13.28px;
   margin-bottom: 13.28px;
   margin-top: 13.28px;
-  font-size: 15px;
-  height: 30.64px;
-  top: 185px;
-  left: 25px;
-  width: 105px;
+  width: 99px;
+  height: 21px;
+  font-size: 12px;
+  left: 17px;
+  top: 345px;
 }
 #cta_button {
   position: absolute;
-  background-color: rgb(0, 9, 91);
+  background-color: #00095b;
   border-radius: 5px;
   border-width: 0px;
   text-align: center;
   line-height: 100px;
-  color: rgb(255, 255, 255);
-  left: 24px;
-  height: 33px;
-  top: 192px;
-  width: 106px;
+  color: #fff;
+  width: 99px;
+  height: 29.33px;
+  left: 17px;
+  top: 350px;
 }
 #subtitle_top {
   position: absolute;
@@ -114,105 +111,101 @@ html, body {
   width: 300px;
   font-size: 21px;
   line-height: 22px;
-  left: 25px;
+  left: 18px;
   height: 18px;
-  top: 72px;
+  top: 237px;
 }
 #subCopy_static {
   position: absolute;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-weight: 400;
   opacity: 1;
-  font-family: "FordAntennaCond-Regular";
+  font-family: FordAntennaCond-Regular;
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 19.92px;
-  font-size: 20px;
-  line-height: 20px;
   text-align: left;
-  left: 25px;
-  width: 365px;
-  height: 22px;
-  top: 100px;
+  height: 65.9px;
+  width: 254px;
+  left: 18px;
+  font-size: 15.5px;
+  line-height: 17px;
+  top: 267px;
 
 }
 #logo_image {
   position: absolute;
-  width: 201px;
-  height: 35px;
-  left: 764px;
-  top: 187px;
+  width: 161px;
+  height: 28px;
+  left: 145px;
+  top: 348px;
 }
 
 #af_image {
   position: absolute;
-  top: 126px;
-  height: 25.82px;
-  width: 142px;
-  left: 820px;
+  top: 240px;
+  width: 130px;
+  height: 21.06px;
+  left: 179px;
 }
-
 #legal_btn {
-  font-family: FordAntenna-Regular;
-  position: absolute;
-  width: 75px;
-  height: 24px;
-  color: #fff;
-  font-size: 11px;
-  top: 203px;
-  left: 140px;
-  opacity: 75%;
+  font-family: "FordAntenna-Regular";
+    position: absolute;
+    width: 50px;
+    height: 18px;
+    color: #fff;
+    font-size: 9px;
+    left: 273px;
+    top: 7px;
+    opacity: 76%;
 }
-
 #legal_txt {
   color: rgb(255, 255, 255);
   font-family: FordAntennaCond-Regular;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+  height: 240px;
   margin-block: 11.62px;
   margin-bottom: 11.62px;
   margin-top: 11.62px;
-  width: 479px;
-  height: 191px;
-  left: 29px;
-  top: 14px;
-  margin-left: 20px;
-  width: 900px;
+  position: absolute;
+  width: 274px;
+  left: 23px;
+  top: 5px;
 }
 
 #legal_bg {
-  width: 980px;
-  height: 240px;
+  width: 320px;
+  height: 400px;
   background-color: rgba(128, 128, 128, 0.8);
   position: absolute;
   top: 0px;
   left: 0px;
 }
-
 #splash{
   position: absolute;
   top: 20px;
-  left: 827px;
+  left: 212px;
 }
 #splash_text {
   position: absolute;
   color: rgb(255, 255, 255);
   opacity: 1;
   font-family: FordAntennaCond-Light;
-  top: 45px;
-  line-height: 20px;
-  width: 129px;
+  top: 28px;
+  line-height: 15px;
+  width: 88px;
   height: 113px;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
 }
 #splash_img{
-  width: 128px;
-  height: 125px;
+  width: 89px;
+  height: 87px;
 }
 #worldClick {
-  width: 980px;
-  height: 240px;
+  width: 320px;
+  height: 400px;
   cursor: pointer;
   position: absolute;
   top: 0;

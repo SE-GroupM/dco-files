@@ -1,17 +1,22 @@
 {
-  "id": "a6e32f88-2c20-419b-9364-1bfde98413bf",
+  "id": "c50aaecd-7b69-4c1b-a2fd-2f3e2b77aefe",
   "version": "1.3.0",
-  "name": "vinterhjältar_splash_300x600",
+  "name": " vinterhjältar_splash_320x400",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 300,
-        "height": 600,
-        "isCustom": false
+        "width": 320,
+        "height": 400,
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
   },
   "placeholders": {
     "schema": {
@@ -74,6 +79,10 @@
       "subtitle_top": {
         "type": "text",
         "source": "create"
+      },
+      "includeSplash": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -124,6 +133,9 @@
           },
           "subtitle_top": {
             "value": "subtitle_top"
+          },
+          "includeSplash": {
+            "value": "includeSplash"
           }
         }
       ]
@@ -143,6 +155,12 @@
         "url": "https://assets.lemonpi.io/a/font/639/FordAntennaCond-Light?v=300",
         "family": "FordAntennaCond-Light",
         "variant": "300"
+      },
+      {
+        "advertiserId": 639,
+        "url": "https://assets.lemonpi.io/a/font/639/FordAntennaExtraCond-Black?v=900",
+        "family": "FordAntennaExtraCond-Black",
+        "variant": "900"
       }
     ]
   },
@@ -157,5 +175,5 @@
   "folders": {
     "selectedFolderId": 2929
   },
-  "port": 50806
+  "port": 52472
 }

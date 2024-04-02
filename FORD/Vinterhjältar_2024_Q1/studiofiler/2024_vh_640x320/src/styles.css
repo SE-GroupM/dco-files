@@ -80,14 +80,15 @@ html, body {
   font-family: "FordAntennaCond-Regular";
   font-weight: 400;
   margin-block: 13.28px;
-  margin-bottom: 13.28px;
-  margin-top: 13.28px;
-  font-size: 15px;
+  margin-bottom: 14px;
+  margin-top: 15px;
+  font-size: 14px;
   height: 30.64px;
   top: 268px;
   left: 19px;
   width: 105px;
 }
+
 #cta_button {
   position: absolute;
   background-color: rgb(0, 9, 91);
@@ -101,6 +102,25 @@ html, body {
   top: 275px;
   width: 106px;
 }
+
+#subtitle_top {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  opacity: 1;
+  font-family: FordAntennaCond-Black;
+  margin-block: 19.92px;
+  margin-bottom: 19.92px;
+  margin-top: 19.92px;
+  text-align: left;
+  width: 300px;
+  font-size: 21px;
+  line-height: 22px;
+  left: 21px;
+  height: 18px;
+  top: 156px;
+}
+
 #subCopy_static {
   position: absolute;
   color: rgb(255, 255, 255);
@@ -111,12 +131,12 @@ html, body {
   margin-bottom: 19.92px;
   margin-top: 19.92px;
   text-align: left;
-  width: 240px;
+  width: 300px;
   font-size: 21px;
-  line-height: 22px;
+  line-height: 19px;
   left: 21px;
   height: 18px;
-  top: 181px;
+  top: 183px;
 }
 #logo_image {
   position: absolute;
