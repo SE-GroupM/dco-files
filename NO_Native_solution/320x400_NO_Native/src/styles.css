@@ -29,44 +29,48 @@ html, body {
 /* image size and position */
 #img_container {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: -100px;
+  height: 200px;
+  width: 320px;
+  top: 0px;
   left: 0px;
+}
+#logo_container {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  top: 135px;
+  left: 20px;
 }
 
 #panel_container {
   position: absolute;
   background-color: #fff;
-  top: 220px;
+  top: 200px;
   left: 0px;
-  width: 580px;
-  height: 521px;
-  z-index: 10;
+  width: 320px;
+  height: 200px;
 }
 
 /* MainCopy in larger font */
 #mainCopy {
-  font-style: bold;
-  weight: 800; 
-  line-height: 45px;
+  font-style: bold; 
+  line-height: 43px;
   position: absolute;
-  top: 255px;
+  top: 245px;
   font-size: 43px;
   line-height: 62px;
   color: black;
-  max-width: 580px;
+  max-width: 300px;
   z-index: 15;
 }
 
 /* MainCopy in larger font */
 #imgCopy {
-  font-family: "TV2_regular";
   position: absolute;
-  top: 225px;
+  top: 210px;
   font-size: 20px;
   color: #636465;
-  max-width: 350px;
+  max-width: 320px;
   z-index: 15;
 }
 
