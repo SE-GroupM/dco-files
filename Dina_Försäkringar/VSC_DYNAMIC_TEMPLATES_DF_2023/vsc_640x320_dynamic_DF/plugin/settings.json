@@ -1,0 +1,221 @@
+{
+  "id": "8a02f913-0472-46b2-b4b4-38dfbd8ddb4a",
+  "version": "1.2.0",
+  "name": "640x320_dina_vsc",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 640,
+        "height": 320,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 640,
+        "height": 320
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "frame1Txt1": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2Txt1": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2Txt2": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2Txt3": {
+        "type": "text",
+        "source": "create"
+      },
+      "imageBg": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "ctaTxt": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaPlacement": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame_1_size": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame_2_size": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame_1_text_alignment": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame_2_text_alignment": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaLeftValue": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "imageBg_frame1": {
+        "type": "image",
+        "source": "create"
+      },
+      "imageBg_frame2": {
+        "type": "image",
+        "source": "create"
+      },
+      "ctaTopValue": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1Txt1_align": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_main_copy_align": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2Txt4": {
+        "type": "text",
+        "source": "create"
+      },
+      "checklist_size": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "frame1Txt1": {
+            "value": "frame1Txt1"
+          },
+          "frame2Txt1": {
+            "value": "frame2Txt1"
+          },
+          "frame2Txt2": {
+            "value": "frame2Txt2"
+          },
+          "frame2Txt3": {
+            "value": "frame2Txt3"
+          },
+          "imageBg": {
+            "value": ""
+          },
+          "logo": {
+            "value": ""
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "ctaTxt": {
+            "value": "ctaTxt"
+          },
+          "ctaPlacement": {
+            "value": "ctaPlacement"
+          },
+          "frame_1_size": {
+            "value": "frame_1_size"
+          },
+          "frame_2_size": {
+            "value": "frame_2_size"
+          },
+          "frame_1_text_alignment": {
+            "value": "frame_1_text_alignment"
+          },
+          "frame_2_text_alignment": {
+            "value": "frame_2_text_alignment"
+          },
+          "ctaLeftValue": {
+            "value": "ctaLeftValue"
+          },
+          "frame2_mainCopy": {
+            "value": "frame2_mainCopy"
+          },
+          "imageBg_frame1": {
+            "value": ""
+          },
+          "imageBg_frame2": {
+            "value": ""
+          },
+          "ctaTopValue": {
+            "value": "ctaTopValue"
+          },
+          "frame1Txt1_align": {
+            "value": "frame1Txt1_align"
+          },
+          "frame2_main_copy_align": {
+            "value": "frame2_main_copy_align"
+          },
+          "frame2Txt4": {
+            "value": "frame2Txt4"
+          },
+          "checklist_size": {
+            "value": "checklist_size"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 324,
+        "url": "https://assets.lemonpi.io/a/font/324/Dina_Font?v=400",
+        "family": "Dina_Font",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 324,
+        "url": "https://assets.lemonpi.io/a/font/324/DinaHeadline?v=700",
+        "family": "DinaHeadline",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 324,
+        "url": "https://assets.lemonpi.io/a/font/324/DinaHeadline-Bold?v=400",
+        "family": "DinaHeadline-Bold",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 324,
+    "name": "Dina Försäkringar"
+  },
+  "folders": {
+    "selectedFolderId": 1652
+  },
+  "port": 49221
+}

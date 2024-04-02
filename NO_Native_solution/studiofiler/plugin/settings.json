@@ -1,0 +1,95 @@
+{
+  "id": "e13f014a-d88c-4de9-bbaa-93eb5270b1cf",
+  "version": "1.3.0",
+  "name": "580x400_native_no",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 580,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 580,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "mainText": {
+        "type": "text",
+        "source": "create"
+      },
+      "imgText": {
+        "type": "text",
+        "source": "create"
+      },
+      "image-placeholder": {
+        "type": "image",
+        "source": "create"
+      },
+      "click-placeholder": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "mainText": {
+            "value": "mainText"
+          },
+          "imgText": {
+            "value": "imgText"
+          },
+          "image-placeholder": {
+            "value": "img"
+          },
+          "click-placeholder": {
+            "value": "click"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1123,
+        "url": "https://assets.lemonpi.io/a/font/1123/Austin?v=400",
+        "family": "Austin",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 1123,
+        "url": "https://assets.lemonpi.io/a/font/1123/Siri-Black?v=900",
+        "family": "Siri-Black",
+        "variant": "900"
+      },
+      {
+        "advertiserId": 1123,
+        "url": "https://assets.lemonpi.io/a/font/1123/Verdana-Bold?v=700",
+        "family": "Verdana-Bold",
+        "variant": "700"
+      }
+    ]
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 1123,
+    "name": "test_sweden"
+  },
+  "folders": {
+    "selectedFolderId": 2273
+  },
+  "port": 50239
+}

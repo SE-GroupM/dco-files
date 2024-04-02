@@ -1,0 +1,122 @@
+{
+  "id": "7b169e34-556e-4e2a-9d98-d25f69d559a1",
+  "version": "1.2.0",
+  "name": "250x600_medlem_2024",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 250,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 250,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "subLine1": {
+        "type": "text",
+        "source": "create"
+      },
+      "subLine1Icon": {
+        "type": "image",
+        "source": "create"
+      },
+      "subLine2": {
+        "type": "text",
+        "source": "create"
+      },
+      "subLine2Icon": {
+        "type": "image",
+        "source": "create"
+      },
+      "subLine3": {
+        "type": "text",
+        "source": "create"
+      },
+      "subLine3Icon": {
+        "type": "image",
+        "source": "create"
+      },
+      "ctaCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "bgImage": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "mainCopy": {
+            "value": "mainCopy"
+          },
+          "subLine1": {
+            "value": "subLine1"
+          },
+          "subLine1Icon": {
+            "value": ""
+          },
+          "subLine2": {
+            "value": "subLine2"
+          },
+          "subLine2Icon": {
+            "value": ""
+          },
+          "subLine3": {
+            "value": "subLine3"
+          },
+          "subLine3Icon": {
+            "value": ""
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "bgImage": {
+            "value": ""
+          },
+          "logo": {
+            "value": ""
+          },
+          "worldClick": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1024,
+    "name": "OBOS"
+  },
+  "port": 57938
+}

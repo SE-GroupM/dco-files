@@ -1,0 +1,206 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 250px;
+  height: 600px;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: green;
+}
+
+#frame1Txt1 {
+  font-family: "DinaHeadline";
+  color: #fff;
+  top: 9px;
+  left: 0px;
+  width: 215px;
+  position: absolute;
+  opacity:1;
+  z-index: 90;
+}
+  
+#frame2_mainCopy {
+  font-family: "DinaHeadline";
+  color: #fff;
+  top: -5px;
+  left: 0px;
+  width: 215px;
+  position: absolute;
+  opacity:1;
+  z-index: 90;
+}
+
+#ctaTxt {
+  font-family: "DinaHeadline-Bold";
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 435px;
+  left: 31px;
+  width: 186px;
+  height: 121px;
+}
+
+/* CSS for the button */
+.ctaButton {
+  display: flex;
+  justify-content: center; /* Horizontally center the contents */
+  align-items: center;     /* Vertically center the contents */
+  position: absolute;
+  padding: 8px 30px;
+  background-color: #e74c3c; /* Original button color */
+  color: #fff; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out; /* Transition on hover */
+  left: 110px;
+  top: 146px;
+  width: 105px;
+  height: 26px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  z-index: 200;
+  width: auto;       /* Makes the button width based on content */
+  min-width: 115px;  /* Ensures the button won't be smaller than 115px */
+  padding: 8px 30px; /* Left and right padding can give extra space for text */
+  }
+
+    /* Add a hover effect */
+.ctaButton:hover {
+  background-color: #003e27;
+  color: green;
+}
+
+#frame1 {
+  font-family: "DinaHeadline";
+  color: #fff;
+  top: 22px;
+  font-size: 34px; 
+  text-align: right;
+  width: 220px;
+  position: absolute;
+  left: 17px;
+  line-height: 34px;
+  opacity:0;
+}
+
+#frame2 {
+  font-family: "DinaHeadline";
+  color: #fff;
+  top: 24px;
+  width: 220px;
+  position: relative;
+  left: 15px;
+  line-height: 37px;
+  opacity:0;
+}
+
+#worldClick {
+  width: 250px;
+  height: 600px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; 
+}
+
+#frame2 ul {
+  list-style-type: none; /* This removes the default bullet points */
+  padding-left: 0; /* This removes the default padding */
+  z-index: 90;
+  width: 210px;
+}
+
+#frame2 li {
+  position: relative;
+  padding-left: 20px; /* Increased to account for the ::before content */
+  z-index: 90;
+  white-space: normal; /* This ensures text wraps to the next line if it doesn't fit */
+  line-height: 23px;  /* Set the desired line height */
+  width: 220px;
+  top: -10px;
+}
+
+#frame2 li::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  background: url("https://assets.lemonpi.io/a/k/5d78a436-d459-4b82-96cf-22de7dc8f44b/Assets/Bock_dina.png") no-repeat center/contain;
+  position: absolute;
+  left: -5px; /* Adjusted to position within the left padding of the li */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+}
+
+#frame2 li:empty::before {
+  display: none; /* Hide the checkbox when the list item is empty */
+}
+
+#frame2 li > div {
+  /* This would target the second row if it's in a div. If it's not, adjust the selector accordingly. */
+  display: block; /* Ensures the div starts on a new line */
+}
+
+.checkbox {
+  display: none;
+}
+
+.imageBg {
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  width: 250px;
+  height: 600px;
+  z-index: 0; 
+}
+
+.imageBg_frame1 {
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: absolute;
+  top: -7px;
+  left: -18px;
+  width: 250px;
+  height: 600px;
+  z-index: 5; 
+}
+
+.imageBg_frame2 {
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: absolute;
+  top: -25px;
+  left: -15px;
+  width: 250px;
+  height: 600px;
+  z-index: 5; 
+}
+

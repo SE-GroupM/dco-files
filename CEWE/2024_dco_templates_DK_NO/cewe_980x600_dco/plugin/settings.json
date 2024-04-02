@@ -1,0 +1,436 @@
+{
+  "id": "2e2232ae-01e0-48f7-ad81-07795023c1de",
+  "version": "1.3.0",
+  "name": "cewe_980x600",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "mainText": {
+        "type": "text",
+        "source": "feed"
+      },
+      "mainText_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "secondText": {
+        "type": "text",
+        "source": "feed"
+      },
+      "secondText_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "ctaText": {
+        "type": "text",
+        "source": "feed"
+      },
+      "panel_bg_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "ctaText_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "ctaBg_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_fontsize": {
+        "type": "text",
+        "source": "feed"
+      },
+      "img": {
+        "type": "image",
+        "source": "feed"
+      },
+      "cewe_logo": {
+        "type": "image",
+        "source": "feed"
+      },
+      "fotobok_logo": {
+        "type": "image",
+        "source": "feed"
+      },
+      "click": {
+        "type": "click",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "mainText": {
+            "value": "Den mest personlige gaven"
+          },
+          "mainText_fontsize": {
+            "value": "30px"
+          },
+          "secondText": {
+            "value": "Gi en CEWE FOTOBOK med<br>dine egne bilder"
+          },
+          "secondText_fontsize": {
+            "value": "18px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "13px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/762418ed-607a-439d-b7cf-3b34937cb3e7/Assets/2024/display_fotobok_NO/320x400_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        },
+        {
+          "mainText": {
+            "value": "Den mest personlige gaven"
+          },
+          "mainText_fontsize": {
+            "value": "32px"
+          },
+          "secondText": {
+            "value": "Gi en CEWE FOTOBOK med<br>dine egne bilder"
+          },
+          "secondText_fontsize": {
+            "value": "18px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "13px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/9f48229a-e100-4fa8-997e-abba979c92bd/Assets/2024/display_fotobok_NO/300x600_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        },
+        {
+          "mainText": {
+            "value": "Den mest personlige gaven"
+          },
+          "mainText_fontsize": {
+            "value": "44px"
+          },
+          "secondText": {
+            "value": "Gi en CEWE FOTOBOK med<br>dine egne bilder"
+          },
+          "secondText_fontsize": {
+            "value": "22px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/dde78eec-f005-44fe-9f94-2fefe754e06f/Assets/2024/display_fotobok_NO/980x600_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        },
+        {
+          "mainText": {
+            "value": "Den mest personlige gaven"
+          },
+          "mainText_fontsize": {
+            "value": "32px"
+          },
+          "secondText": {
+            "value": "Gi en CEWE FOTOBOK med<br>dine egne bilder"
+          },
+          "secondText_fontsize": {
+            "value": "18px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "15px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/bd170eca-f0fa-4fe0-96ba-67a88fbc1bf6/Assets/2024/display_fotobok_NO/980x300_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        },
+        {
+          "mainText": {
+            "value": "Gi en fotobok<br>som gave"
+          },
+          "mainText_fontsize": {
+            "value": "32px"
+          },
+          "secondText": {
+            "value": "Europas mest<br>populære fotobok"
+          },
+          "secondText_fontsize": {
+            "value": "18px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "13px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/762418ed-607a-439d-b7cf-3b34937cb3e7/Assets/2024/display_fotobok_NO/320x400_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        },
+        {
+          "mainText": {
+            "value": "Gi en fotobok<br>som gave"
+          },
+          "mainText_fontsize": {
+            "value": "32px"
+          },
+          "secondText": {
+            "value": "Europas mest<br>populære fotobok"
+          },
+          "secondText_fontsize": {
+            "value": "18px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "13px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/9f48229a-e100-4fa8-997e-abba979c92bd/Assets/2024/display_fotobok_NO/300x600_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        },
+        {
+          "mainText": {
+            "value": "Gi en fotobok<br>som gave"
+          },
+          "mainText_fontsize": {
+            "value": "44px"
+          },
+          "secondText": {
+            "value": "Europas mest<br>populære fotobok"
+          },
+          "secondText_fontsize": {
+            "value": "22px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "20px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/dde78eec-f005-44fe-9f94-2fefe754e06f/Assets/2024/display_fotobok_NO/980x600_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        },
+        {
+          "mainText": {
+            "value": "Gi en fotobok<br>som gave"
+          },
+          "mainText_fontsize": {
+            "value": "32px"
+          },
+          "secondText": {
+            "value": "Europas mest<br>populære fotobok"
+          },
+          "secondText_fontsize": {
+            "value": "18px"
+          },
+          "ctaText": {
+            "value": "START NÅ"
+          },
+          "panel_bg_color": {
+            "value": "#C30C15"
+          },
+          "ctaText_color": {
+            "value": "#000000"
+          },
+          "ctaBg_color": {
+            "value": "#FFFFFF"
+          },
+          "cta_fontsize": {
+            "value": "15px"
+          },
+          "img": {
+            "value": "https://assets.lemonpi.io/a/k/bd170eca-f0fa-4fe0-96ba-67a88fbc1bf6/Assets/2024/display_fotobok_NO/980x300_wedding.jpg"
+          },
+          "cewe_logo": {
+            "value": "https://assets.lemonpi.io/a/987/4856565c58de948c05bce4c440eb198c.png"
+          },
+          "fotobok_logo": {
+            "value": "https://assets.lemonpi.io/a/987/cc6d8a99d7d32ca147d00cd8535b8bd6.jpg"
+          },
+          "click": {
+            "value": "https://www.cewe.no/"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Bold?v=700",
+        "family": "CEWEHead-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Regular?v=400",
+        "family": "CEWEHead-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 988,
+    "name": "Cewe"
+  },
+  "port": 62748
+}

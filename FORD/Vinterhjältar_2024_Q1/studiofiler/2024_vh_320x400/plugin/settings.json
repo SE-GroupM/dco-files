@@ -1,0 +1,179 @@
+{
+  "id": "c50aaecd-7b69-4c1b-a2fd-2f3e2b77aefe",
+  "version": "1.3.0",
+  "name": " vinterhjältar_splash_320x400",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "frame_1_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame_2_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "legal_txt": {
+        "type": "text",
+        "source": "create"
+      },
+      "message": {
+        "type": "text",
+        "source": "create"
+      },
+      "subCopy_static": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "bg_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "af_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "create"
+      },
+      "splash": {
+        "type": "image",
+        "source": "create"
+      },
+      "splash_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "use_one_headline": {
+        "type": "text",
+        "source": "create"
+      },
+      "subtitle_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "includeSplash": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "frame_1_copy": {
+            "value": "frame_1_copy"
+          },
+          "frame_2_copy": {
+            "value": "frame_2_copy"
+          },
+          "legal_txt": {
+            "value": "legal_txt"
+          },
+          "message": {
+            "value": "message"
+          },
+          "subCopy_static": {
+            "value": "subCopy_static"
+          },
+          "cta_text": {
+            "value": "cta_text"
+          },
+          "bg_image": {
+            "value": ""
+          },
+          "logo_image": {
+            "value": ""
+          },
+          "af_image": {
+            "value": ""
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "exit_url": {
+            "value": ""
+          },
+          "splash": {
+            "value": ""
+          },
+          "splash_text": {
+            "value": "splash_text"
+          },
+          "use_one_headline": {
+            "value": "use_one_headline"
+          },
+          "subtitle_top": {
+            "value": "subtitle_top"
+          },
+          "includeSplash": {
+            "value": "includeSplash"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 639,
+        "url": "https://assets.lemonpi.io/a/font/639/FordAntennaCond-Bold?v=700",
+        "family": "FordAntennaCond-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 639,
+        "url": "https://assets.lemonpi.io/a/font/639/FordAntennaCond-Light?v=300",
+        "family": "FordAntennaCond-Light",
+        "variant": "300"
+      },
+      {
+        "advertiserId": 639,
+        "url": "https://assets.lemonpi.io/a/font/639/FordAntennaExtraCond-Black?v=900",
+        "family": "FordAntennaExtraCond-Black",
+        "variant": "900"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 639,
+    "name": "Ford"
+  },
+  "folders": {
+    "selectedFolderId": 2929
+  },
+  "port": 52472
+}

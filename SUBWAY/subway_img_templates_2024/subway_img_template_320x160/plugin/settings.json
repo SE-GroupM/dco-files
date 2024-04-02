@@ -1,0 +1,62 @@
+{
+  "id": "c0000664-2a46-4252-bff1-ca21372c50ff",
+  "version": "1.3.0",
+  "name": "subway_img_template_320x160",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 160,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 160
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "image": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "image": {
+            "value": ""
+          },
+          "worldClick": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 332,
+    "name": "Subway"
+  },
+  "folders": {
+    "selectedFolderId": 1797
+  },
+  "port": 62903
+}

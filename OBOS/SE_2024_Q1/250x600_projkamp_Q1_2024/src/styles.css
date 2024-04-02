@@ -1,0 +1,221 @@
+* { 
+  box-sizing: border-box;
+} 
+
+@font-face {
+  font-family: ObosDisplay-Bold;
+  src: url("https://s0.2mdn.net/creatives/assets/5034221/OBOSDisplay-Bold.otf");
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.logo {
+  position: absolute;
+  left: 233px;
+  top: 13px;
+}
+
+.cta {
+  width: 92px;
+  height: 20px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 20px;
+  top: 435px;
+  box-sizing: border-box;
+}
+
+.bgImage {
+  height: 478px;
+  background: #D9D9D9;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: -138px;
+  top: 0px;
+  box-sizing: border-box;
+}
+
+.rectangle_darkblue {
+  width: 250px;
+  height: 128px;
+  background: #012169;
+  border-radius: 0px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 472px;
+  box-sizing: border-box;
+}
+
+.rectangle_lightblue {
+  width: 177px;
+  height: 171px;
+  background: #0047BA;
+  /* Specify each corner's border-radius */
+  border-radius: 0 15px 15px 15px; /* top-left, top-right, bottom-right, bottom-left */
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 15px;
+  top: 353px;
+  box-sizing: border-box;
+}
+
+.copy{
+  top: 470px;
+}
+
+.ctaBg {
+  width: 94px;
+  height: 25px;
+  background: #008861;
+  border-radius: 0.3rem;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 33px;
+  /*top: 235px;*/
+  box-sizing: border-box;
+}
+
+.ctaTxt {
+  display: flex;
+  width: 92px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: OBOSText-SemiBold;
+  font-size: 14.5px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  position: fixed;
+  left: 34px;
+}
+
+.headline {
+  width: 129px;
+  height: 54px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "ObosDisplay-Bold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  position: fixed;
+  left: 33px;
+  top: 384px;
+}
+
+.subline {
+  width: 145px;
+  height: 35px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: OBOSText-Medium;
+  font-size: 14.2px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  position: fixed;
+  left: 33px;
+  top: 525px;
+}
+
+.brf {
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  display: flex; /* Changed to flex for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally, adjust if you want the text/icon aligned differently */
+  position: fixed;
+  overflow: hidden;
+  padding: 0 10px; /* Add padding on the sides */
+  margin: 0;
+  left: 15px;
+  top: 338px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.brfName {
+  color: #002169;
+  font-family: "ObosDisplay-Bold";
+  font-size: 11.5px;
+  margin-left: 8px;
+  /* Additional adjustments for spacing might be needed, depending on your design */
+}
+
+.icon{
+  width: 10px; /* Adjust width as necessary */
+  margin-left: 0px; /* Add some space between the icon and the text */
+  /* Removed position absolute and left property */
+}
+
+.villkor {
+  color: #FFF;
+  font-family: OBOSText-Medium;
+  /* 16px*/
+  font-size: 8px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  position: fixed;
+  top: 530px;
+  left: 19px
+}
+
+#worldClick {
+  width: 250px;
+  height: 600px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo{
+  width: 129px;
+  left: 102px;
+  top: 543px;
+}

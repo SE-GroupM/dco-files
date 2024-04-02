@@ -1,0 +1,166 @@
+{
+  "id": "48c1cc46-a041-43e9-91c2-5062ff2aaa23",
+  "version": "1.2.0",
+  "name": "320x400_NO_Native",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "mainText": {
+        "type": "text",
+        "source": "create"
+      },
+      "imgText": {
+        "type": "text",
+        "source": "create"
+      },
+      "imagePlaceholder": {
+        "type": "image",
+        "source": "create"
+      },
+      "click": {
+        "type": "click",
+        "source": "create"
+      },
+      "whichFont": {
+        "type": "text",
+        "source": "create"
+      },
+      "avaiableFonts": {
+        "type": "text",
+        "source": "create"
+      },
+      "topValue_imgTxt": {
+        "type": "text",
+        "source": "create"
+      },
+      "topValue_mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "lineHeight_mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "topValue_img": {
+        "type": "text",
+        "source": "create"
+      },
+      "publicist": {
+        "type": "text",
+        "source": "create"
+      },
+      "panelTopValue": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "mainText": {
+            "value": "mainText"
+          },
+          "imgText": {
+            "value": "imgText"
+          },
+          "imagePlaceholder": {
+            "value": ""
+          },
+          "click": {
+            "value": ""
+          },
+          "whichFont": {
+            "value": "whichFont"
+          },
+          "avaiableFonts": {
+            "value": "avaiableFonts"
+          },
+          "topValue_imgTxt": {
+            "value": "topValue_imgTxt"
+          },
+          "topValue_mainCopy": {
+            "value": "topValue_mainCopy"
+          },
+          "lineHeight_mainCopy": {
+            "value": "lineHeight_mainCopy"
+          },
+          "topValue_img": {
+            "value": "topValue_img"
+          },
+          "publicist": {
+            "value": "publicist"
+          },
+          "panelTopValue": {
+            "value": "panelTopValue"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Amedia_montserat_bold?v=800",
+        "family": "Amedia_montserat_bold",
+        "variant": "800"
+      },
+      {
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Amedia_montserat_regular?v=400",
+        "family": "Amedia_montserat_regular",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Arial+Narrow-Bold?v=700",
+        "family": "Arial Narrow-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/Arial+Narrow-Regular?v=400",
+        "family": "Arial Narrow-Regular",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/TV2_bold?v=700",
+        "family": "TV2_bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1223,
+        "url": "https://assets.lemonpi.io/a/font/1223/TV2_regular?v=400",
+        "family": "TV2_regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 1223,
+    "name": "VVS"
+  },
+  "port": 49704
+}
