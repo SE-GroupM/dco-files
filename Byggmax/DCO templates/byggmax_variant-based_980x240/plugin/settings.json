@@ -1,0 +1,129 @@
+{
+  "id": "9360f80e-dc97-42ff-928e-97e3c543a20d",
+  "version": "1.2.0",
+  "name": "byggmax_variant-based_980x240",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "product_1_copy": {
+        "type": "text",
+        "source": "feed"
+      },
+      "product_1_price": {
+        "type": "text",
+        "source": "feed"
+      },
+      "product_1_image": {
+        "type": "image",
+        "source": "feed"
+      },
+      "product_1_container": {
+        "type": "image",
+        "source": "feed"
+      },
+      "product_2_copy": {
+        "type": "text",
+        "source": "feed"
+      },
+      "product_2_price": {
+        "type": "text",
+        "source": "feed"
+      },
+      "product_2_image": {
+        "type": "image",
+        "source": "feed"
+      },
+      "product_2_container": {
+        "type": "image",
+        "source": "feed"
+      },
+      "layover_asset": {
+        "type": "image",
+        "source": "feed"
+      },
+      "background_asset": {
+        "type": "image",
+        "source": "feed"
+      },
+      "logo_source": {
+        "type": "image",
+        "source": "feed"
+      },
+      "exit_url": {
+        "type": "text",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "product_1_copy": {
+            "value": "Planteringsjord 40 L"
+          },
+          "product_1_price": {
+            "value": "99<sup>95</sup>"
+          },
+          "product_1_image": {
+            "value": "https://assets.lemonpi.io/a/k/bdc1b50e-0b89-4462-ae80-a85f6c7304ab/Assets/jord_march_2024/plantjord_basic.png"
+          },
+          "product_1_container": {
+            "value": "https://assets.lemonpi.io/a/k/1910d203-9221-4dbe-beea-1521a4b46eef/Assets/jord_march_2024/4for-SE.png"
+          },
+          "product_2_copy": {
+            "value": "Planteringsjord KRAV <br> Wiksbo 50 L"
+          },
+          "product_2_price": {
+            "value": "299"
+          },
+          "product_2_image": {
+            "value": "https://assets.lemonpi.io/a/k/5279c02d-c2d5-4c7f-a8c8-1693d611aa37/Assets/jord_march_2024/plantjord_krav.png"
+          },
+          "product_2_container": {
+            "value": "https://assets.lemonpi.io/a/k/1910d203-9221-4dbe-beea-1521a4b46eef/Assets/jord_march_2024/4for-SE.png"
+          },
+          "layover_asset": {
+            "value": "https://assets.lemonpi.io/a/k/9f577bf1-93de-44fe-bd04-feba46394964/Assets/jord_march_2024/jord.png"
+          },
+          "background_asset": {
+            "value": "https://assets.lemonpi.io/a/k/278c6f56-0b85-42e4-954d-ca7dee1d3864/Assets/jord_march_2024/bg_980x240_byggmax.jpg"
+          },
+          "logo_source": {
+            "value": "https://assets.lemonpi.io/a/k/17eaec12-c595-46fb-af4f-4cdd95d51697/Assets/jord_march_2024/Logo-tagline.png"
+          },
+          "exit_url": {
+            "value": "https://www.byggmax.se/"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 398,
+    "name": "Byggmax"
+  },
+  "port": 63580
+}
