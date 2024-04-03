@@ -80,6 +80,10 @@ var timeBetweenSlides = 3;
       const slideWidth = slideTemplate.clientWidth;
       const slidesData = options.slidesData;
 
+     // Setup for 3D perspective
+     slidesContainer.style.perspective = "1000px"; // Adjust as needed
+     slidesWrapper.style.transformStyle = "preserve-3d";
+
       let slideIndex = 1;
       let isAnimating = false;
 
@@ -92,53 +96,89 @@ var timeBetweenSlides = 3;
       }
 
       function animateSlider(index, previousIndex, onComplete) {
-          const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
-          const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
-          const target = slideWidth * index;
-          const timeline = gsap.timeline({onComplete: onComplete})
-          settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
-      }
-
-      function nextSlide() {
-          if (isAnimating) return;
-          isAnimating = true;
-          slideIndex++;
-          const totalSlides = slidesData.length;
-          if (slideIndex === totalSlides+1) {
-              slideIndex = 1;
-              gsap.set(slidesWrapper, {x: 0})
-              animateSlider(slideIndex, slideIndex-1, function() {
-                  isAnimating = false;
-                });;
-          } else {
-              animateSlider(slideIndex, slideIndex-1, function() {
-                  isAnimating = false;
-                });
-          }
-          Slider.currentSlideIndex = slideIndex;
+        // Correcting indices to loop properly
+        const totalSlides = slidesData.length;
+        index = ((index - 1 + totalSlides) % totalSlides); // Ensure index is 0-based and loops
+        previousIndex = ((previousIndex - 1 + totalSlides) % totalSlides); // Same for previousIndex
+        const nextIndex = (index + 1) % totalSlides; // Calculate nextIndex
+    
+        // Safely getting slide elements
+        const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
+        const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
+        const nextSlide = slidesWrapper.querySelectorAll(settings.slide)[nextIndex];
+        
+        // Ensure slides exist before attempting to animate
+        if (currentSlide && lastSlide && nextSlide) {
+            const target = slideWidth * index;
+            const timeline = gsap.timeline({
+                onComplete: function() {
+                    // Reset animation flag and call user's onComplete
+                    isAnimating = false;
+                    if (onComplete) onComplete();
+                }
+            });
+    
+            // Apply transformations
+            gsap.set(currentSlide, {transform: "rotateY(0deg) translateZ(0px) translateX(0%)"});
+            gsap.set(nextSlide, {transform: "rotateY(90deg) translateZ(-100px) translateX(50%)"});
+            gsap.set(lastSlide, {transform: "rotateY(-102deg) translateZ(-100px) translateX(-50%)"});
+    
+            // Your existing animation logic...
+            settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
+        } else {
+            console.error('One or more slides could not be found for animation.');
         }
+    }
+  
+      function nextSlide() {
+        if (isAnimating) return;
+        isAnimating = true;
+        slideIndex++;
+        const totalSlides = slidesData.length;
+
+        // Calculate the next slide index and select the slide
+        let nextSlideIndex = slideIndex % totalSlides; // Adjust if your indexing starts at 1
+        let nextSlide = slidesWrapper.querySelectorAll(settings.slide)[nextSlideIndex];
+        if (slideIndex === totalSlides + 1) {
+            slideIndex = 1;
+            gsap.set(slidesWrapper, {x: 0});
+            // Apply the 3D transformation to the next slide
+            animateSlider(slideIndex, slideIndex - 1, function() {
+                isAnimating = false;
+            });
+        } else {
+            animateSlider(slideIndex, slideIndex - 1, function() {
+                isAnimating = false;
+            });
+        }
+        Slider.currentSlideIndex = slideIndex;
+    }
         
         function prevSlide() {
           if (isAnimating) return;
           isAnimating = true;
           slideIndex--;
-          
           const totalSlides = slidesData.length;
+      
+          // Calculate the previous slide index and select the slide
+          let prevSlideIndex = (slideIndex - 1 + totalSlides) % totalSlides; // Adjust if your indexing starts at 1
+          let prevSlide = slidesWrapper.querySelectorAll(settings.slide)[prevSlideIndex];
           if (slideIndex < 1) {
-              slideIndex = totalSlides;
-              gsap.set(slidesWrapper, {x: -slideWidth*(totalSlides+1)});
-              animateSlider(slideIndex, slideIndex+1, function() {
+              slideIndex = totalSlides;            
+              gsap.set(slidesWrapper, {x: -slideWidth * (totalSlides + 1)});
+              // Apply the 3D transformation to the previous slide
+              animateSlider(slideIndex, slideIndex + 1, function() {
                   isAnimating = false;
-                });
+              });
           } else {
-              animateSlider(slideIndex, slideIndex+1, function() {
+              animateSlider(slideIndex, slideIndex + 1, function() {
                   isAnimating = false;
-                });
+              });
           }
           Slider.currentSlideIndex = slideIndex;
-        }
-
-
+      }
+    
+   
       slidesData.forEach((slideData, index) => createSlide(slideData, index));
       // Clone the last slide and append it to the beginning of the slidesWrapper
       const lastSlide = slidesWrapper.lastChild.cloneNode(true);
