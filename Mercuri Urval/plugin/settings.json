@@ -1,0 +1,78 @@
+{
+  "id": "b70ec33e-719d-46b3-b686-74099ca2072b",
+  "version": "1.3.0",
+  "name": "980x240_SE_vsc_template",
+  "description": "New 2024 templates for Mercuri Urval",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "click": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "cta_text": {
+            "value": "cta_text"
+          },
+          "click": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 216,
+        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeue?v=700",
+        "family": "HelveticaNeue",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 216,
+        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeueLTStd-Heavy?v=900",
+        "family": "HelveticaNeueLTStd-Heavy",
+        "variant": "900"
+      },
+      {
+        "advertiserId": 216,
+        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeueLTStd-Lt?v=300",
+        "family": "HelveticaNeueLTStd-Lt",
+        "variant": "300"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 216,
+    "name": "Mercuri Urval SE"
+  },
+  "port": 63139
+}
