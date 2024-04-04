@@ -89,7 +89,7 @@ top: 20px;
   right: 56px;
   text-align: right;
   color: #B32013;
-  min-width: 111px;
+  min-width: 101px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -102,7 +102,7 @@ top: 20px;
   border-radius: 12px;
   font-size: 21px;
   line-height: 16px;
-  top: 5px;
+  top: 15px;
   left: auto;
   right: 56px;
   min-width: 111px;
@@ -139,18 +139,19 @@ top: 20px;
   color: white;
   top: 90px;
   left: auto;
-  right: 44px;
+  right: 37px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
 }
+
 /* Product name text */
 .productName {
   font-family: "CreightonPro-Bold";
   position: absolute;
   font-size: 17px;
   color: #333;
-  left: 0px;
+  left: -10px;
   top: 370px;
   width: 210px;
   text-align: center;
@@ -165,4 +166,7 @@ top: 20px;
   top: 465px;
   width: 210px;
   text-align: center;
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
 }

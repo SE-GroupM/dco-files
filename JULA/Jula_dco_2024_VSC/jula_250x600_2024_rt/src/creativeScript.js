@@ -1,7 +1,8 @@
 /**
   * Template Name
-  * @Owner Developer Name 
-  * @Date
+  * 16/02/2024 - A-S Larsson & J.Östling - Initial dco retargeting template for Jula
+  * 
+  * 
 */
 
 function onLemonpiReady(cb) {
@@ -93,10 +94,10 @@ onLemonpiReady(function () {
       //If product price type is Jula club
       if (tempNormal[1] > 0o0) {
         //Ex. 88.88
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
     }
@@ -112,11 +113,26 @@ onLemonpiReady(function () {
       $('#priceElement').addClass('saleElement');
     }
 
-    //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('tokbilligt')) {
+    //Check if price type is 'Tokbilligt' or kalasproduct (update since week 11 on site) and append heroElement class and salePrice class
+    if (productPriceType.toLowerCase().includes('kalasprodukt')) {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt!');
+      $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
+    }
+
+    // Browser specific CSS for heroelement "Kalaspris"
+    var OSName="Unknown OS";
+    // Specific CSS positioning for Windows browsers
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+ 
+      OSName="Windows";
+      if (navigator.appVersion.includes('Edg')) {
+        
+      }
+      // WIN
+      $('.heroElement').css({
+        right: '37px',
+      });
     }
 
     // Append image to product
@@ -131,12 +147,17 @@ onLemonpiReady(function () {
     // Append lowest price last 30 days
     var priceInfo = local_product_collection[0].productLatestPrice.value;
     $('#priceInfo').html(priceInfo);
-
+  
+  // The animation should be somewhat like the product slides in from right side and out on the left,
+  // and the product information fades in and out.
   // //Animation
+  var widthOnBanner = 250;
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 1, { y: -240 }, { y: 0 }, 0.1)
-  .to('#productBox', 0.3, { y: 240 }, "+=1.5")
-  .set('#productBox', { y: -240 }); // Reset to start position for seamless looping
+  main_timeline.fromTo('#productBox', 0.3, { x: widthOnBanner}, { x: 0 }, 0.1)
+  .from('#productInfo',0.6,{autoAlpha:0},0.2)
+  .to('#productBox', 0.3, { x: -widthOnBanner }, "+=2.5")
+  .to('#productInfo',0.25,{autoAlpha:0},3.2)
+  .set('#productBox', { x: widthOnBanner }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {

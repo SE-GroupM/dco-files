@@ -113,11 +113,26 @@ onLemonpiReady(function () {
       $('#priceElement').addClass('saleElement');
     }
 
-    //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('tokbilligt')) {
+    //Check if price type is 'Tokbilligt' or kalasproduct (update since week 11 on site) and append heroElement class and salePrice class
+    if (productPriceType.toLowerCase().includes('kalasprodukt')) {
       $('#regularPrice').addClass('salePrice')
-      $('#priceElement').html('Tokbilligt!');
+      $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
+    }
+
+    // Browser specific CSS for heroelement "Kalaspris"
+    var OSName="Unknown OS";
+    // Specific CSS positioning for Windows browsers
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+ 
+      OSName="Windows";
+      if (navigator.appVersion.includes('Edg')) {
+        
+      }
+      // WIN
+      $('.heroElement').css({
+        right: '37px',
+      });
     }
 
     // Append image to product
@@ -136,12 +151,13 @@ onLemonpiReady(function () {
   // The animation should be somewhat like the product slides in from right side and out on the left,
   // and the product information fades in and out.
   // //Animation
+  var widthOnBanner = 250;
   var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 0.3, { x: 250 }, { x: 0 }, 0.1)
+  main_timeline.fromTo('#productBox', 0.3, { x: widthOnBanner}, { x: 0 }, 0.1)
   .from('#productInfo',0.6,{autoAlpha:0},0.2)
-  .to('#productBox', 0.3, { x: -250 }, "+=2.5")
+  .to('#productBox', 0.3, { x: -widthOnBanner }, "+=2.5")
   .to('#productInfo',0.25,{autoAlpha:0},3.2)
-  .set('#productBox', { x: 250 }); // Reset to start position for seamless looping
+  .set('#productBox', { x: widthOnBanner }); // Reset to start position for seamless looping
 
   // Append click to product box
   function onClick (event) {
