@@ -1,0 +1,229 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  }
+ #creative_container {
+  width: 980px;
+  height: 300px;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  position: fixed;
+  box-sizing: border-box;
+  border-width: 0.5px;
+  border-radius: 0;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #c6c6c6;
+  z-index: 10;
+ }
+
+ /* Product box */
+ .cube {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+  position: absolute;}
+
+.face {
+  position: absolute;
+  width: 500px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.side{
+position: absolute;
+box-sizing: border-box;
+border-width: 1px;
+border-style: solid;
+border-radius: 10px;
+width: 500px;
+height: 220px;
+background-color: #ffffff;
+border-color: rgb(255, 107, 0);
+left: 63px;
+top: 0px;
+/* Add shadow below */
+box-shadow: 0 22px 16px -6px lightgrey;
+perspective: 500;
+}
+
+.cube {
+  width: 500px;
+  height: 220px;
+  left: 93px;
+  top: 40px;
+}
+
+.front  { transform: rotateY(  0deg) translateZ(250px); }
+.back   { transform: rotateY(180deg) translateZ(250px); }
+.right  { transform: rotateY( 90deg) translateZ(250px); }
+.left   { transform: rotateY(-90deg) translateZ(250px); }
+
+/* Copy container to flex copy */
+.copy_container {
+  position: absolute;
+  width: 371.632px;
+  height: 300px;
+  left: 627px;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Main copy */
+.main_copy {
+  position: absolute;
+  width: 320px;
+  height: 158px;
+  font-family: 'Roboto - Black';
+  font-weight: 900;
+  text-align: center;
+  font-size: 31px;
+  line-height: 34px;
+  top: 90px;
+  left:16px;
+  color: #000000;
+  z-index: 15;
+}
+/* Logo placeholder */
+.logo {
+  position: absolute;
+  width: 322px;
+  height: 63px;
+  left: 18px;
+  top: 275px;
+  z-index: 10;
+}
+/* Panel for products */
+.product_panel {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: 550px;
+}
+.right_box {
+  display: block;
+  position: absolute;
+  background-color: #f50;
+  top: 0px;
+  width: 371.632px;
+  height: 300px;
+  left: 628px;
+  z-index: 10;
+}
+/* Product image */
+.product_image {
+  position: absolute;
+  display: block;
+  height: 169px;
+  left: -160px;
+  top: 27px;
+  width: 169px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Product info container */
+.product_info {
+  position: absolute;
+  left: 200px;
+  height: 220px;
+  width: 210px;
+  padding: 35px 10px 10px 10px;
+}
+/* Name for products */
+.product_name {
+  position: absolute;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  height: 75px;
+  left: 50px;
+  top: 35px;
+  width: 234px;
+  color: #000000;
+}
+/* Price element */
+.product_price {
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  color: #f50;
+  font-family: Arial;
+  font-weight: 700;
+  height: 46px;
+  left: 30%;
+  top: 110px;
+  width: 234px;
+  }
+/* Cta */
+.cta_text {
+  background-color: #FF5500;
+  color: white;
+  display: inline-block; /* Allows the element to grow with content while maintaining padding */
+  font-family: Oswald;
+  position: absolute;
+  text-align: center;
+  top: 159px;
+  padding: 2px 30px 5px 30px; /* Ensure adequate padding */
+  font-size: 17px;
+  left: 54%;
+  min-width: 40px; /* Ensures a minimum width but allows expansion */
+  max-width: 100%; /* Ensures it does not exceed the parent container's width */
+  white-space: nowrap; /* Keeps the text on a single line */
+  border-radius: 5px;
+}
+#next {
+  position: absolute;
+  z-index:1;
+  width: 49px;
+  height: 49px;
+  top: 41%;
+  left: 578px;
+  z-index: 100;
+  pointer-events: auto; /* Ensure buttons receive pointer events */
+
+}
+#prev {
+  z-index: 1;
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0px;
+  top: 41%;
+  z-index: 100;
+  pointer-events: auto; /* Ensure buttons receive pointer events */
+}
+.worldClick {
+  position: absolute;
+  width: 371.632px;
+  height: 300px;
+  left: 627px;
+  top: 0px;
+  z-index: 15; 
+}
+
+#rightSliderArrow, #leftSliderArrow {
+  pointer-events: auto; /* Ensure SVGs inside the buttons can capture pointer events */
+}
