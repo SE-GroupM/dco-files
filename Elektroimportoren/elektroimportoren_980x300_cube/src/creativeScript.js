@@ -15,156 +15,179 @@ function onLemonpiReady(cb) {
   }
 }
 
-window.addEventListener('lemonpi.content/ready', event => {
-  const content = event.detail.content // get content placeholders from Choreograph Adsets
-  const source = event.detail.source
-  
-});
-
 // Callback to retrieve the adset data
 onLemonpiReady(function () {
   lemonpi.subscribe(function callback(content) {
+    // code here
+    
+  });
+});
 
-    //importing product collection from Elon//Choreograph
-  var products = content.products.value;
+// Fetch data from adset
+window.addEventListener('lemonpi.content/ready', event => {
+  // object holding all data from adset
+const content = event.detail.content;
+const source = event.detail.source;
 
 //Local varaible for content
 var local_content = content;
 
 const logo = content.logo.value;
 const main_copy = content.main_copy.value;
-var cta_text = content.cta_text.value;
+const products = local_content.products.value;
+const main_copy_size = content.main_copy_size.value;
 
+let rotation = 0;
+let currentProduct = 0;
+
+// Apply logo and main copy
 $('#logo').css({
   'background-image': `url(${logo})`,
   'background-repeat': 'no-repeat',
   'background-size': 'contain'
 });
 
-  //Product click funtion - set to "creative_contatiner" to make it work
-$('#click').click(onClick);
-
 $('#main_copy').html(main_copy);
+
+$('#main_copy').css({
+  'font-size': main_copy_size + 'px',
+  'line-height': main_copy_size + 'px'});
 
 $('#worldClick').click(onClick);
 
-  // Append product_name to cube
-  var product_price =  products[0].product_price.value;
-  $('#product_price').html(product_price+",-");
+$("#next").click(function(){
+  rotate("left")
+});
 
-    // Append product_name to cube
-  var product_name =  products[0].product_name.value;
-  $('#product_name').html(product_name);
+$('#product_click').click(onProductClick);
 
-   // Append product_name to cube
-   var product_image =  products[0].product_image.value;
-   $('#product_image').css({
-    'background-image': `url(${product_image})`,
-    'background-repeat': 'no-repeat',
-    'background-size': 'contain'
-  });
+$("#prev").click(function(){
+  rotate("right")
+});
 
-  // Assuming products is an array of product objects
-for (var i = 0; i < products.length; i++) {
-  var product_name = products[i].product_name.value;
-  var product_price = products[i].product_price.value;
-  var product_image = products[i].product_image.value;
-  var cta_text = local_content.cta_text.value;
-  var click = products[i].click.value;
-
-  // Do something with product_name, for example, logging it to the console
-  console.log("Product " + (i + 1) + ": " + product_name);
-}
-
-  ////////////////
- ///FUNCTIONS////
-////////////////
-
-// JavaScript Code for Rotating the Cube
-
-(function() {
-  let currentFaceIndex = 0; // Initialize the current face index
-  const rotationStep = 90; // Each face rotation in degrees
-  const cube = document.querySelector('.cube'); // Get the cube
-
-  // Function to update cube rotation
-  function updateCubeRotation() {
-      const angle = currentFaceIndex * -rotationStep;
-      cube.style.transform = `rotateY(${angle}deg)`;
+  for (i = 0; i < 4; i++) {
+    //Find product image div and append image
+    $("#product-image-" + i).css("content","url("+products[i].product_image.value+")");
+    //Find product name div and append name
+    $("#product-name-" + i).html(products[i].product_name.value);
+    //Find price div and append price
+    $("#product-price-" + i).html(products[i].product_price.value+",-");
+    //Find cta div and append cta copy
+    $("#cta-text-" + i).html(local_content.cta_text.value); 
+    //Find discount div and append discount
+    $("#promotion-price-" + i).html(products[i].promotion_price.value);
   }
-
-  // Function to handle "next" button click
-  document.getElementById('next').addEventListener('click', function(event) {
-      event.stopPropagation(); // Prevent the event from bubbling up
-      currentFaceIndex = (currentFaceIndex + 1) % 4; // Increment index, loop back to 0 after 3
-      updateCubeRotation(); // Update the cube's rotation
-  });
-
-  // Function to handle "prev" button click
-  document.getElementById('prev').addEventListener('click', function(event) {
-      event.stopPropagation(); // Prevent the event from bubbling up
-      currentFaceIndex = (currentFaceIndex - 1 + 4) % 4; // Decrement index, loop back to 3 if at 0
-      updateCubeRotation(); // Update the cube's rotation
-  });
-})();
-
-var currentIndex = 0;
-
-function updateProductInfo() {
-  var sides = document.querySelectorAll('.side');
-  sides.forEach(function(side, index) {
-    var productIndex = (currentIndex + index) % products.length;
-    var product = products[productIndex];
-    side.innerHTML = `
-      <div class="product_info" id="product_info_${index}">
-        <div id="product_image_${index}" class="product_image" style="background-image: url('${product.product_image.value}')"></div>
-        <div id="product_name_${index}" class="product_name">${product.product_name.value}</div>
-        <div id="product_price_${index}" class="product_price">${(product.product_price.value+",-")}</div>
-        <div id="cta_text" class="cta_text">${local_content.cta_text.value}</div>
-        </div>
-    `;
-  });
-
-  currentIndex++;
-  if (currentIndex >= products.length) currentIndex = 0;
+  function updatePricesAndDisplayDiscounts(products) {
+    // Assuming products is an array and already defined in your scope
+    products.forEach((product, i) => {
+        // Find both price elements for each product
+        const productPriceElement = $(`#product-price-${i}`);
+        const promotionPriceElement = $(`#promotion-price-${i}`);
+        
+        // Check if both elements exist and the promotion price is not empty
+        if (productPriceElement.length && promotionPriceElement.length && product.promotion_price.value) {
+            // Parse prices from products to floats
+            const productPrice = parseFloat(product.product_price.value);
+            const promotionPrice = parseFloat(product.promotion_price.value);
+            
+            // Calculate discount percentage and round it to remove decimals
+            const discountPercentage = Math.round((productPrice - promotionPrice) / productPrice * 100);
+            
+            // Check if the discount percentage is negative
+            if (discountPercentage < 0) {
+                // Optionally hide the promotion price element if the discount is negative
+                promotionPriceElement.hide();
+            } else {
+                // If the discount is valid, update the product price and display the discount
+                productPriceElement.html(promotionPrice + ",-");
+                promotionPriceElement.html("Kampanje - " + discountPercentage + "%");            }
+        } else {
+        }
+    });
 }
 
-let angle = 0;
-const cube = document.getElementById('cube');
+// Call the function with your products array
+updatePricesAndDisplayDiscounts(products);
 
-function rotateCube() {
-  angle += 0.5; // Speed of the rotation
-  cube.style.transform = `rotateY(${angle}deg)`;
-  requestAnimationFrame(rotateCube);
-}
 
-rotateCube(); // Start the rotation
+// Call the function with your products array
+updatePricesAndDisplayDiscounts(products);
 
-// Update product info every 6 seconds to match the cube rotation and pause
-setInterval(updateProductInfo, 6000);
+
+  function truncate() {
+    // Select all elements with class 'product-name'
+    const elements = document.querySelectorAll('.product-name');
   
-  // Append click to product box
+    elements.forEach(element => {
+      // Check if text length is more than 25 characters and truncate if necessary
+      if (element.innerText.length > 40) {
+        element.innerText = element.innerText.substring(0, 36) + '...';
+      }
+    });
+  
+    // Additionally, check if there's an element with ID 'product-name'
+    const idElement = document.getElementById('product-name');
+    if (idElement && idElement.innerText.length > 40) {
+      // Apply truncation for the ID element as well
+      idElement.innerText = idElement.innerText.substring(0, 36) + '...';
+    }
+  }
+  
+  // Run the function to apply the text truncation
+  truncate();
+  
+});
+  let rotation = 0; // Assuming you have this variable to track the cube's rotation
+let autoRotateInterval;
+
+function startAutoRotate() {
+  // Start rotating the cube every 1.2 seconds (to account for the transition time)
+  autoRotateInterval = setInterval(() => {
+    rotate('left'); // Rotate the cube to the right
+
+    // Pause for 1 second on each face
+    setTimeout(() => {
+      // This space intentionally left blank to demonstrate the pause effect
+    }, 1000); // This matches the 1 second pause requirement
+  }, 2200); // 1.2 seconds for rotation transition + 1 second pause
+}
+
+function stopAutoRotate() {
+  clearInterval(autoRotateInterval); // Stops the automatic rotation
+}
+
+// Call startAutoRotate to begin the automatic rotation when desired
+startAutoRotate();
+
+// If you ever need to stop the auto-rotation, call stopAutoRotate()
+
+
+  function rotate(direction) {
+    if (direction === 'left') {
+      rotation -= 90;
+    } else if (direction === 'right') {
+      rotation += 90;
+    }
+  
+    document.getElementById('cube').style.transform = `rotateY(${rotation}deg)`;
+  }
+  
   function onClick (event) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
-          placeholder: ['products', 0, 'click'],
+          placeholder: 'worldClick'
         }
     }));
+  }
+  function onProductClick (event) {
+    currentProduct = event.target.id.split("-").pop();
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['products', currentProduct, 'click'],
+        }
+    }));
+  }
 
-// Initial state
-let currentFaceIndex = 0; // 0: front, 1: right, 2: back, 3: left
-const rotationStep = 90; // Each face rotation step in degrees
-
-  } 
-});
-
-// Get the div element by its id
-var worldClickDiv = document.getElementById('worldClick');
-
-// Add a click event listener to the div
-worldClickDiv.addEventListener('click', function() {
- // Opens the specified URL in a new window or tab
- // window.open('');
-});
-});
+  

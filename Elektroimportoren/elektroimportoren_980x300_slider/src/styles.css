@@ -52,8 +52,6 @@ html, body {
   font-family: 'Roboto - Black';
   font-weight: 900;
   text-align: center;
-  font-size: 31px;
-  line-height: 34px;
   top: 71px;
   left: 16px;
   color: #000000;
@@ -237,7 +235,7 @@ html, body {
   position: relative;
   transform-style: preserve-3d;
   transform: rotateY(0deg);
-  transition: transform 0.5s ease;
+  transition: transform 1.2s ease;
 }
 .cube__face {
   position: absolute;
