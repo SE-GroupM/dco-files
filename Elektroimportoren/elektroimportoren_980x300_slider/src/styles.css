@@ -236,3 +236,108 @@ html, body {
   top: 0px;
   z-index: 15; 
 }
+.container {
+  perspective: 1000px;
+  margin-top: 80px;
+  margin-left: 125px;
+  position: absolute;
+}
+
+.cube__face--front {
+  transform: translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+}
+
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+}
+
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+}
+
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+}
+
+.cube {
+  width: 380px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease;
+}
+
+.cube__face {
+  position: absolute;
+  width: 380px;
+  height: 150px;
+  /* line-height: 200px; */
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  /*background-color: #524d84; /* Anpassa bakgrundsfärgen här */
+  background-color: #ffffff;
+  border-color: rgb(255, 107, 0);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+
+.product-info {
+  width: 280px;
+  left:100px;
+  color: #000000;
+}
+.product-image {
+  content:url(//image.lemonpi.io/a/393/decode/aHR0cHM6Ly9waWN0dXJlLmVsZWt0cm9pbXBvcnRvcmVuLm5vL3BpY3R1cmVzLzEyMDExODIuanBn);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px;
+  height: 150px;
+  left: 20px;
+  position: absolute;
+  
+}
+.product-name {
+  position: absolute;
+  text-align: center;
+  font-family: Arial;
+  font-size: 19px;
+  height: 75px;
+  left: 170px;
+  top: 25px;
+  width: 204px;
+  color: #000000;
+}
+.product-price {
+  text-align: center;
+  font-size: 30px;
+  color: #f50;
+  font-family: Arial;
+  font-weight: 700;
+  height: 46px;
+  left: 170px;
+  top: 65px;
+  width: 204px;
+  position: absolute;
+}
+.cta-text {
+  background-color: #FF5500;
+  color: white;
+  display: inline-block;
+  font-family: Oswald;
+  position: absolute;
+  text-align: center;
+  top: 102px;
+  padding: 2px 30px 5px 30px;
+  font-size: 12px;
+  left: 222px;
+  min-width: 40px;
+  max-width: 100%;
+  white-space: nowrap;
+  border-radius: 5px;
+  
+}

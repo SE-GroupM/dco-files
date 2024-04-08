@@ -25,15 +25,18 @@ onLemonpiReady(function () {
 
 // Fetch data from adset
 window.addEventListener('lemonpi.content/ready', event => {
-    // object holding all data from adset
-  const content = event.detail.content
-  const source = event.detail.source
+  // object holding all data from adset
+const content = event.detail.content
+const source = event.detail.source
 
 //Local varaible for content
 var local_content = content;
 
 const logo = content.logo.value;
 const main_copy = content.main_copy.value;
+const products = local_content.products.value;
+
+let rotation = 0;
 
 // Defines how long the slider displays each product before a new one displays
 var timeBetweenSlides = 3;
@@ -47,201 +50,49 @@ var timeBetweenSlides = 3;
 
   $('#main_copy').html(main_copy);
 
- $('#worldClick').click(onClick);
+  $('#worldClick').click(onClick);
 
- const Slider = {
-  currentSlideIndex: 1,
-  create: function(options) {
-      const defaults = {
-          slider: ".slider",
-          slide: ".slide",
-          prevBtn: ".prev",
-          nextBtn: ".next",
-          duration: 0.5,
-          setSlideContent: null,
-          animation: function(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete) {
-              timeline.to(slidesWrapper, {
-                  duration: duration,
-                  ease: "power2.inOut",
-                  x: -target,
-                  onComplete: onComplete
-              });
-          }
-      };
+  $("#next").click(function(){
+      rotate("left")
+    });
 
-      const settings = Object.assign({}, defaults, options);
 
-      const slidesContainer = document.querySelector(settings.slider);
-      const duration = settings.duration;
-      const slideTemplate = slidesContainer.querySelector(settings.slide);
-      const slidesWrapper = document.createElement("div");
-      const prevBtn = document.querySelector(settings.prevBtn);
-      const nextBtn = document.querySelector(settings.nextBtn);
-      const slideWidth = slideTemplate.clientWidth;
-      const slidesData = options.slidesData;
+    $("#prev").click(function(){
+      rotate("right")
+    });
 
-     // Setup for 3D perspective
-     slidesContainer.style.perspective = "1000px"; // Adjust as needed
-     slidesWrapper.style.transformStyle = "preserve-3d";
+    console.log(local_content)
+    console.log(products)
+    for (i = 0; i < 4; i++) {
 
-      let slideIndex = 1;
-      let isAnimating = false;
+      //Find product image div and append image
+      $("#product-image-" + i).css("content","url("+products[i].product_image.value+")");
+      //Find product name div and append name
+      $("#product-name-" + i).html(products[i].product_name.value);
+      //Find price div and append price
+      $("#product-price-" + i).html(products[i].product_price.value+",-");
+      //Find cta div and append cta copy
+      $("#cta-text-" + i).html(local_content.cta_text.value); 
 
-      function createSlide(slideData, index) {
-          const slideDiv = slideTemplate.cloneNode(true);
-          slideTemplate.remove();
-          slideDiv.id = 'slide-' + index;
-          settings.setSlideContent(slideDiv, slideData, index);
-          slidesWrapper.appendChild(slideDiv);
-      }
+    }
 
-      function animateSlider(index, previousIndex, onComplete) {
-        // Correcting indices to loop properly
-        const totalSlides = slidesData.length;
-        index = ((index - 1 + totalSlides) % totalSlides); // Ensure index is 0-based and loops
-        previousIndex = ((previousIndex - 1 + totalSlides) % totalSlides); // Same for previousIndex
-        const nextIndex = (index + 1) % totalSlides; // Calculate nextIndex
-    
-        // Safely getting slide elements
-        const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
-        const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
-        const nextSlide = slidesWrapper.querySelectorAll(settings.slide)[nextIndex];
-        
-        // Ensure slides exist before attempting to animate
-        if (currentSlide && lastSlide && nextSlide) {
-            const target = slideWidth * index;
-            const timeline = gsap.timeline({
-                onComplete: function() {
-                    // Reset animation flag and call user's onComplete
-                    isAnimating = false;
-                    if (onComplete) onComplete();
-                }
-            });
-    
-            // Apply transformations
-            gsap.set(currentSlide, {transform: "rotateY(0deg) translateZ(0px) translateX(0%)"});
-            gsap.set(nextSlide, {transform: "rotateY(90deg) translateZ(-100px) translateX(50%)"});
-            gsap.set(lastSlide, {transform: "rotateY(-102deg) translateZ(-100px) translateX(-50%)"});
-    
-            // Your existing animation logic...
-            settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
-        } else {
-            console.error('One or more slides could not be found for animation.');
-        }
+
+  function rotate(direction) {
+    if (direction === 'left') {
+      rotation -= 90;
+    } else if (direction === 'right') {
+      rotation += 90;
     }
   
-      function nextSlide() {
-        if (isAnimating) return;
-        isAnimating = true;
-        slideIndex++;
-        const totalSlides = slidesData.length;
-
-        // Calculate the next slide index and select the slide
-        let nextSlideIndex = slideIndex % totalSlides; // Adjust if your indexing starts at 1
-        let nextSlide = slidesWrapper.querySelectorAll(settings.slide)[nextSlideIndex];
-        if (slideIndex === totalSlides + 1) {
-            slideIndex = 1;
-            gsap.set(slidesWrapper, {x: 0});
-            // Apply the 3D transformation to the next slide
-            animateSlider(slideIndex, slideIndex - 1, function() {
-                isAnimating = false;
-            });
-        } else {
-            animateSlider(slideIndex, slideIndex - 1, function() {
-                isAnimating = false;
-            });
-        }
-        Slider.currentSlideIndex = slideIndex;
-    }
-        
-        function prevSlide() {
-          if (isAnimating) return;
-          isAnimating = true;
-          slideIndex--;
-          const totalSlides = slidesData.length;
-      
-          // Calculate the previous slide index and select the slide
-          let prevSlideIndex = (slideIndex - 1 + totalSlides) % totalSlides; // Adjust if your indexing starts at 1
-          let prevSlide = slidesWrapper.querySelectorAll(settings.slide)[prevSlideIndex];
-          if (slideIndex < 1) {
-              slideIndex = totalSlides;            
-              gsap.set(slidesWrapper, {x: -slideWidth * (totalSlides + 1)});
-              // Apply the 3D transformation to the previous slide
-              animateSlider(slideIndex, slideIndex + 1, function() {
-                  isAnimating = false;
-              });
-          } else {
-              animateSlider(slideIndex, slideIndex + 1, function() {
-                  isAnimating = false;
-              });
-          }
-          Slider.currentSlideIndex = slideIndex;
-      }
-    
-   
-      slidesData.forEach((slideData, index) => createSlide(slideData, index));
-      // Clone the last slide and append it to the beginning of the slidesWrapper
-      const lastSlide = slidesWrapper.lastChild.cloneNode(true);
-      const firstSlide = slidesWrapper.firstChild.cloneNode(true);
-      lastSlide.id = "slide-2-clone";
-      slidesWrapper.insertBefore(lastSlide, slidesWrapper.firstChild);
-      firstSlide.id = "slide-0-clone";
-      slidesWrapper.appendChild(firstSlide);
-
-      slidesWrapper.id = "slidesWrapper"
-      slidesWrapper.style.width = slideWidth * slidesWrapper.children.length + "px"; // set container width
-      slidesWrapper.style.display = "flex"; // set container display
-      slidesWrapper.style.transform = `translateX(-${slideWidth}px)`;
-      slidesContainer.appendChild(slidesWrapper);
-      nextBtn.addEventListener("click", nextSlide);
-      prevBtn.addEventListener("click", prevSlide);
-      
-      const clickSlider = document.querySelector('#slider');
-      clickSlider.addEventListener("click",onClick);
-
-      function onClick (event) {
-        // Slide 1 clicks
-          return window.dispatchEvent(
-            new CustomEvent('lemonpi.interaction/click', {
-              detail: {
-                placeholder: ['products', slideIndex-1, 'click'],
-              }
-          }));
-      }
+    document.getElementById('cube').style.transform = `rotateY(${rotation}deg)`;
   }
-};
-      
-Slider.create({
-	slidesData: local_content.products.value,
-  width: 500,
-	setSlideContent: function(slideDiv, slideData, slideIndex) {
-
-    //Find product image div and append image
-    $(slideDiv).find("#product_image").css("background-image","url("+slideData.product_image.value+")");
-    //Find product name div and append name
-    $(slideDiv).find("#product_name").html(slideData.product_name.value);
-    //Find price div and append price
-    $(slideDiv).find("#product_price").html(slideData.product_price.value+",-");
-    //Find cta div and append cta copy
-    $(slideDiv).find("#cta_text").html(content.cta_text.value); 
-	}
+  
+  function onClick (event) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: 'worldClick'
+        }
+    }));
+  }
 });
-
-// Auto swipe every three seconds
-var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
- .add(playAutoSwipeAnimation, timeBetweenSlides);
-
- // Function to auto swipe
-function playAutoSwipeAnimation () {
-  $('#next').click();
-}
-})
-
-function onClick (event) {
-  return window.dispatchEvent(
-    new CustomEvent('lemonpi.interaction/click', {
-      detail: {
-        placeholder: 'worldClick'
-      }
-  }));
-}
