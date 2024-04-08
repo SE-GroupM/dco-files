@@ -77,8 +77,11 @@ onLemonpiReady(function () {
     /////           ANIMATIONS             /////
     ////////////////////////////////////////////
 
-
-
+    var mainTl = new TimelineMax({ });
+    TweenMax.set('#copy', {opacity: 0}) // Initially hide all elements that going to animate in
+    
+    mainTl.fromTo('#copy', 0.5, {x: -20, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 1) //Product image 1 fade in
+          .fromTo('#cta', 0.5, {x: 20, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 1) //Product image 1 fade in
 
 
 
@@ -86,6 +89,21 @@ onLemonpiReady(function () {
     ///////////////////////////////////////////
     /////           FUNCTIONS             /////
     ///////////////////////////////////////////
+
+    //Product click funtion
+    $('#creative_container').click(onClick);
+
+     // Append click to product box
+    function onClick (event) {
+      return window.dispatchEvent(
+        new CustomEvent('lemonpi.interaction/click', {
+          detail: {
+            placeholder: ['ad_collection', 0, 'click'],
+          }
+      }));
+    } 
+
+    // end of code
   });
 });
   
