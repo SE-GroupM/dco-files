@@ -338,6 +338,8 @@ html, body {
   min-width: 40px;
   max-width: 100%;
   white-space: nowrap;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
+}
+#product_click {
+  z-index: 10;
 }
