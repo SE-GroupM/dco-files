@@ -73,10 +73,37 @@ var timeBetweenSlides = 3;
       $("#product-price-" + i).html(products[i].product_price.value+",-");
       //Find cta div and append cta copy
       $("#cta-text-" + i).html(local_content.cta_text.value); 
-
     }
 
-
+    function fitText() {
+      // Select all elements with class 'product-name'
+      const elements = document.querySelectorAll('.product-name');
+    
+      elements.forEach(element => {
+        // Check if text length is more than 40 characters
+        if (element.innerText.length > 35) {
+          // Reduce font size
+          element.style.fontSize = '15px'; 
+        } else {
+          // Reset to original size if not more than 40 characters
+          element.style.fontSize = '18px'; 
+        }
+      });
+    
+      // Additionally, check if there's an element with ID 'product-name'
+      const idElement = document.getElementById('product-name');
+      if (idElement && idElement.innerText.length > 35) {
+        // Apply the same font size adjustment for the ID
+        idElement.style.fontSize = '15px'; 
+      } else if (idElement) {
+        // Reset to original size if not more than 40 characters
+        idElement.style.fontSize = '18px'; 
+      }
+    }
+    
+    // Run the function to apply the font size adjustments
+    fitText();
+    
   function rotate(direction) {
     if (direction === 'left') {
       rotation -= 90;

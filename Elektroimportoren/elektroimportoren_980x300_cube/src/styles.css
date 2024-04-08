@@ -36,9 +36,14 @@ html, body {
  /* Product box */
  .cube {
   position: absolute;
-  transform-style: preserve-3d;
   transition: transform 1.5s;
-  position: absolute;}
+  transform-style: preserve-3d;
+  perspective: 10000px;
+  width: 500px;
+  height: 220px;
+  left: 93px;
+  top: 40px;
+ }
 
 .face {
   position: absolute;
@@ -65,14 +70,6 @@ left: 63px;
 top: 0px;
 /* Add shadow below */
 box-shadow: 0 22px 16px -6px lightgrey;
-perspective: 500;
-}
-
-.cube {
-  width: 500px;
-  height: 220px;
-  left: 93px;
-  top: 40px;
 }
 
 .front  { transform: rotateY(  0deg) translateZ(250px); }
