@@ -65,6 +65,15 @@ $("#prev").click(function(){
   rotate("right")
 });
 
+// Mouse enter and leave events for next and prev buttons
+$("#next, #prev").mouseenter(function() {
+  stopAutoRotate(); // Stops the carousel when mouse enters the button area
+});
+
+$("#next, #prev").mouseleave(function() {
+  startAutoRotate(); // Resumes the carousel when mouse leaves the button area
+});
+
   for (i = 0; i < 4; i++) {
     //Find product image div and append image
     $("#product-image-" + i).css("content","url("+products[i].product_image.value+")");
@@ -110,10 +119,6 @@ $("#prev").click(function(){
 updatePricesAndDisplayDiscounts(products);
 
 
-// Call the function with your products array
-updatePricesAndDisplayDiscounts(products);
-
-
   function truncate() {
     // Select all elements with class 'product-name'
     const elements = document.querySelectorAll('.product-name');
@@ -137,6 +142,7 @@ updatePricesAndDisplayDiscounts(products);
   truncate();
   
 });
+
   let rotation = 0; // Assuming you have this variable to track the cube's rotation
 let autoRotateInterval;
 
