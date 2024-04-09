@@ -35,6 +35,10 @@
       "worldClick": {
         "type": "click",
         "source": "create"
+      },
+      "main_copy_size": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -52,6 +56,9 @@
           },
           "worldClick": {
             "value": ""
+          },
+          "main_copy_size": {
+            "value": "main_copy_size"
           }
         }
       ]
@@ -82,8 +89,8 @@
     "id": 393,
     "name": "Elektroimportøren"
   },
-  "port": 60067,
   "folders": {
     "selectedFolderId": 1863
-  }
+  },
+  "port": 60067
 }

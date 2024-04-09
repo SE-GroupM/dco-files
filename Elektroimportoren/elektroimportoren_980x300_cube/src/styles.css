@@ -225,23 +225,18 @@ html, body {
   margin-left: 125px;
   position: absolute;
 }
-
 .cube__face--front {
-  transform: translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+  transform: translateZ(235px); 
 }
-
 .cube__face--back {
-  transform: rotateY(180deg) translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+  transform: rotateY(180deg) translateZ(235px);
 }
-
 .cube__face--left {
-  transform: rotateY(-90deg) translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+  transform: rotateY(-90deg) translateZ(235px); 
 }
-
 .cube__face--right {
-  transform: rotateY(90deg) translateZ(235px); /* Öka avståndet på z-axeln för att skapa mer utrymme */
+  transform: rotateY(90deg) translateZ(235px); 
 }
-
 .cube {
   width: 380px;
   height: 150px;
@@ -254,11 +249,9 @@ html, body {
   position: absolute;
   width: 380px;
   height: 170px;
-  /* line-height: 200px; */
   text-align: center;
   font-size: 24px;
   color: white;
-  /*background-color: #524d84; /* Anpassa bakgrundsfärgen här */
   background-color: #ffffff;
   border-color: rgb(255, 107, 0);
   border-width: 1px;
