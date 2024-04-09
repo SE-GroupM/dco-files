@@ -54,6 +54,7 @@ html, body {
   color: #000000;
   z-index: 15;
   top:25px;
+  padding: 6px;
 }
 /* Logo placeholder */
 .logo {
