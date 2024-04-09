@@ -1,20 +1,20 @@
 {
-  "id": "733fd17b-5712-4e94-8371-f309d8c9a934",
+  "id": "98127a47-ef5f-4709-a362-792dbba95faf",
   "version": "1.3.0",
-  "name": "elektroimportoren_980x300_cube",
+  "name": "elektroimportoren_580x400_cube",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 300,
+        "width": 580,
+        "height": 400,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 300
+        "width": 580,
+        "height": 400
       }
     ]
   },
@@ -69,15 +69,15 @@
     "Choreograph": [
       {
         "advertiserId": 393,
-        "url": "https://assets.lemonpi.io/a/font/393/Roboto+-+Black?v=900",
-        "family": "Roboto - Black",
-        "variant": "900"
-      },
-      {
-        "advertiserId": 393,
         "url": "https://assets.lemonpi.io/a/font/393/Oswald?v=400",
         "family": "Oswald",
         "variant": "400"
+      },
+      {
+        "advertiserId": 393,
+        "url": "https://assets.lemonpi.io/a/font/393/Roboto+-+Black?v=900",
+        "family": "Roboto - Black",
+        "variant": "900"
       }
     ]
   },
@@ -89,7 +89,7 @@
     "id": 393,
     "name": "Elektroimportøren"
   },
-  "port": 60067,
+  "port": 50581,
   "folders": {
     "selectedFolderId": 1863
   }
