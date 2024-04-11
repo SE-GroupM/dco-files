@@ -91,18 +91,17 @@ html, body {
   top: 175px;
   background-color: #ff6052;
   background-repeat: no-repeat;
-  background-size: 171px, 45px;
+  background-size: 171px, 40px;
 }
 .ctaText{
-  position: absolute;
-    width: 174px;
-    height: 28px;
-    left: -2px;
-    top: 9px;
+    position: absolute;
+    width: 171px;
+    height: 40px;
+    top: 11px;
     letter-spacing: -0.001em;
     text-align: center;
     font-size: 19px;
-    line-height: 29px;
+    line-height: 19px;
     color: rgba(255, 255, 255, 1);
     white-space: pre-wrap;
     font-family: 'HelveticaNeueLTStd-Heavy';
@@ -128,16 +127,20 @@ html, body {
   background-repeat: no-repeat;
 }
 
-.companyName {
+.CopyDiv {
   position: absolute;
-  width: 524px;
-  height: 21px;
-  left: 130px;
-  top: 50px;
+  top:30px;
+  left: 135px;
+  width: 480px;
+  height: 170px;
+}
+
+.companyName {
   letter-spacing: -0.001em;
+  margin-bottom: 10px;
   text-align: left;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 12px;
+  line-height: 14px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -146,32 +149,24 @@ html, body {
 }
 
 .mainText {
-  position: absolute;
-  width: 501px;
-  height: 60px;
-  left: 130px;
-  top: 75px;
   letter-spacing: -0.001em;
   text-align: left;
   font-size: 26px;
-  line-height: 30px;
+  line-height: 28px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
-  font-family: 'HelveticaNeue';
+  font-family: 'HelveticaNeueLTStd-Heavy';
   font-weight: normal;
   font-style: normal;
+  margin-bottom: 10px;
 }
 
 .subText {
-  position: absolute;
-  width: 501px;
-  height: 60px;
   left: 0px;
-  margin-top: 50px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgb(0 64 125);
   white-space: pre-wrap;
   font-family: 'Arial';

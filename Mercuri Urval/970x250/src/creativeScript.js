@@ -70,7 +70,9 @@ onLemonpiReady(function () {
     $("#ctaText").html(ctaText);
 
     $("#companyName").html(companyName);
-    $("#CopyDiv").html('<span class="mainText">' + jobTitle + '</div>'+'<span class="subText">' + jobDescription + '</div>');
+    $("#mainText").html(jobTitle);
+    $("#subText").html(jobDescription);
+    // $("#CopyDiv").html('<span class="mainText">' + jobTitle + '</div>'+'<span class="subText">' + jobDescription + '</div>');
     $("#locationText").html(jobLocation);
     
     ////////////////////////////////////////////
