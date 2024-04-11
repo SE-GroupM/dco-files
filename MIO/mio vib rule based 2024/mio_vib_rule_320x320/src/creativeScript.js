@@ -19,7 +19,6 @@ window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content;
   //Variable for local content
   var local_content = content;
-  console.log(local_content)
    //Append font size and line height on copy frames
    $(".copy_frames").css({"font-size": local_content.copy_fontsize.value, "line-height": local_content.copy_fontsize.value});
    //Append color image to copy's and sub-copy
