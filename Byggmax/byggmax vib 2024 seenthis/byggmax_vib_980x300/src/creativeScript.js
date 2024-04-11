@@ -22,17 +22,11 @@ window.addEventListener('lemonpi.content/ready', event => {
    
     // World click event caller
     $('#worldClick').click(onClick);
-  
-    // Defining mute-button's appearence 
-    var mutebutton_on_off = local_content.mutebutton_on_off.value;
      
     // Define the video source and tracker variables
     var videoSrc = content.videoSrc.value;
     var videoTracker = content.videoTracker.value;
-    
-    var currentPrice = local_content.currentPrice.value;
-    var productName = local_content.productName.value;
-    var logoPlaceholder = local_content.logoPlaceholder.value;
+  
     // Defining mute-button's appearence 
     var mutebutton_on_off = local_content.mutebutton_on_off.value;
     
@@ -64,9 +58,9 @@ window.addEventListener('lemonpi.content/ready', event => {
   }
 
 // Determine the state of the mute button based on mutebutton_on_off variable
-if (mutebutton_on_off === 'on') {
+if (mutebutton_on_off == 'on') {
   options.muteButton = true; // Enable mute if 'on'
-} else if (mutebutton_on_off === 'off') {
+} else if (mutebutton_on_off == 'off') {
   options.muteButton = false; // Disable mute if 'off'
 }
 
