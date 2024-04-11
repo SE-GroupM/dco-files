@@ -83,6 +83,14 @@
       "includeSplash": {
         "type": "text",
         "source": "create"
+      },
+      "subCopy_frame_1": {
+        "type": "text",
+        "source": "create"
+      },
+      "subCopy_frame_2": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -136,6 +144,12 @@
           },
           "includeSplash": {
             "value": "includeSplash"
+          },
+          "subCopy_frame_1": {
+            "value": "subCopy_frame_1"
+          },
+          "subCopy_frame_2": {
+            "value": "subCopy_frame_2"
           }
         }
       ]
@@ -166,7 +180,7 @@
     "id": 639,
     "name": "Ford"
   },
-  "port": 49202,
+  "port": 62910,
   "folders": {
     "selectedFolderId": 2929
   }

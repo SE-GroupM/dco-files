@@ -135,6 +135,40 @@ html, body {
   top: 386px;
   font-size: 18px;
 }
+#subCopy1 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  opacity: 1;
+  font-family: FordAntennaCond-Regular;
+  margin-block: 19.92px;
+  margin-bottom: 19.92px;
+  margin-top: 19.92px;
+  line-height: 19px;
+  width: 235px;
+  height: 70.49px;
+  left: 23px;
+  text-align: left;
+  top: 386px;
+  font-size: 18px;
+}
+#subCopy2 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  opacity: 1;
+  font-family: FordAntennaCond-Regular;
+  margin-block: 19.92px;
+  margin-bottom: 19.92px;
+  margin-top: 19.92px;
+  line-height: 19px;
+  width: 235px;
+  height: 70.49px;
+  left: 23px;
+  text-align: left;
+  top: 386px;
+  font-size: 18px;
+}
 #logo_image {
   position: absolute;
   width: 183px;
