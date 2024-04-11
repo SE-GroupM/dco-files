@@ -1,0 +1,97 @@
+{
+  "id": "4a6fc784-a131-4e7f-8286-92d2efc82499",
+  "version": "1.3.0",
+  "name": "byggmax_vib_320x400",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "videoTracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "create"
+      },
+      "currentPrice": {
+        "type": "text",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "mutebutton_on_off": {
+        "type": "text",
+        "source": "create"
+      },
+      "logoPlaceholder": {
+        "type": "image",
+        "source": "create"
+      },
+      "productName": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "videoTracker": {
+            "value": "videoTracker"
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "currentPrice": {
+            "value": "currentPrice"
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "mutebutton_on_off": {
+            "value": "mutebutton_on_off"
+          },
+          "logoPlaceholder": {
+            "value": ""
+          },
+          "productName": {
+            "value": "productName"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 398,
+    "name": "Byggmax"
+  },
+  "port": 65245,
+  "folders": {
+    "selectedFolderId": 2085
+  }
+}
