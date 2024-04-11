@@ -1,0 +1,143 @@
+* { 
+  box-sizing: border-box;
+} 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Style of copy frames */
+.main_copy {
+  position: fixed;
+  top: 90px;
+  left: 1190px;
+  text-align: center;
+  width: 730px;
+  color: #fff;
+  font-family: "Nobel-Regular_NEW";
+}
+/* Style of copy frames */
+.sub_copy {
+  position: fixed;
+  top: 318px;
+  text-align: center;
+  left: 1190px;
+  width: 730px;
+  color: #fff;
+  font-family: "Nobel-Regular_NEW";
+}
+.cta_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 730px;
+}
+/* Style of cta */
+.cta {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  top: 508px;
+  padding: 20px;
+  border: 3px solid #fff;
+  font-family: "Nobel-Bold_NEW";
+  color: #ffffff;
+}  
+/* Styling of "details"*/
+.details {
+  position: absolute;
+  left: 1190px;
+  top: 986px;
+  font-size: 24px;
+  height: 53px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: #fff;
+  font-family: "Nobel-Bold_NEW";
+  width: 730px;
+  text-align: center;
+  opacity: 85%;
+  z-index: 25;
+}
+.details_content {
+  color: #fff;
+  font-family: "Nobel-Regular_NEW";
+  font-size: 35px;
+  width: 863px;
+  height: 154px;
+  left: 69px;
+  top: 629px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#details_bg {
+  position: absolute;
+  width: 1920px;
+  height: 520px;
+  background-color: #212721;
+  top: 560px;
+  left: 0px;
+  z-index: 20;
+}
+/* Background image position */
+.bg_color {
+  position: fixed;
+  box-sizing: border-box;
+  height: 1080px;
+  width: 730px;
+  left: 1190px;
+  top: 0px;
+}  
+.seenthis-player .big-play {
+  width: 150px;
+  height: 150px;
+}
+.player {
+  position: absolute;
+  width: 1190px;
+  height: 1080px;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+}
+
+/* Logo image position */
+.logo_source {
+  position: absolute;
+  width: 438px;
+  height: 76px;
+  left: 1336px;
+  top: 709px;
+  z-index: 15;
+}
+/* World click div */
+.worldClick {
+  width: 1190px;
+  height: 1080px;
+  display: block;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 25;
+}
