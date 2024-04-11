@@ -1,0 +1,176 @@
+{
+  "id": "e55a8d99-e540-4ace-8861-beb0a30a42f8",
+  "version": "1.3.0",
+  "name": "mio_vib_rule_320x320",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 320,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "copy_frame_1": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_frame_2": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_shadow_on_off": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_fontsize": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_top_value": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_top_value": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_copy_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_bg_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_bg_opacity": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_fontsize": {
+        "type": "text",
+        "source": "create"
+      },
+      "image_source": {
+        "type": "image",
+        "source": "create"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoTracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "use_video": {
+        "type": "text",
+        "source": "create"
+      },
+      "mutebutton_on_off": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_source": {
+        "type": "image",
+        "source": "create"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "copy_frame_1": {
+            "value": "copy_frame_1"
+          },
+          "copy_frame_2": {
+            "value": "copy_frame_2"
+          },
+          "copy_color": {
+            "value": "copy_color"
+          },
+          "copy_shadow_on_off": {
+            "value": "copy_shadow_on_off"
+          },
+          "copy_fontsize": {
+            "value": "copy_fontsize"
+          },
+          "copy_top_value": {
+            "value": "copy_top_value"
+          },
+          "cta_top_value": {
+            "value": "cta_top_value"
+          },
+          "cta_copy": {
+            "value": "cta_copy"
+          },
+          "cta_copy_color": {
+            "value": "cta_copy_color"
+          },
+          "cta_bg_color": {
+            "value": "cta_bg_color"
+          },
+          "cta_bg_opacity": {
+            "value": "cta_bg_opacity"
+          },
+          "cta_fontsize": {
+            "value": "cta_fontsize"
+          },
+          "image_source": {
+            "value": ""
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          },
+          "use_video": {
+            "value": "use_video"
+          },
+          "mutebutton_on_off": {
+            "value": "mutebutton_on_off"
+          },
+          "logo_source": {
+            "value": ""
+          },
+          "exit_url": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 198,
+    "name": "Mio"
+  },
+  "folders": {
+    "selectedFolderId": 3567
+  },
+  "port": 62237
+}
