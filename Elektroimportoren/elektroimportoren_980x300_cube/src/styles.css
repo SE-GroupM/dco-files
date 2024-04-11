@@ -1,0 +1,316 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  }
+ #creative_container {
+  width: 980px;
+  height: 300px;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  position: fixed;
+  box-sizing: border-box;
+  border-width: 0.5px;
+  border-radius: 0;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #c6c6c6;
+  z-index: 10;
+ }
+
+/* Copy container to flex copy */
+.copy_container {
+  position: absolute;
+  width: 371.632px;
+  height: 300px;
+  left: 627px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Main copy */
+.main_copy {
+  position: absolute;
+  width: 280px;
+  height: 158px;
+  font-family: 'Roboto - Black';
+  font-weight: 900;
+  text-align: center;
+  top: 71px;
+  left: 36px;
+  color: #000000;
+  z-index: 15;
+}
+/* Logo placeholder */
+.logo {
+  position: absolute;
+  width: 322px;
+  height: 63px;
+  left: 645px;
+  top: 233px;
+  z-index: 10;
+}
+/* Panel for products */
+.product_panel {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: 550px;
+}
+.right_box {
+  display: block;
+  position: absolute;
+  background-color: #f50;
+  width: 371.632px;
+  height: 300px;
+  left: 627px;
+  z-index: 10;
+}
+/* Product image */
+.product_image {
+  position: absolute;
+  display: block;
+  height: 169px;
+  left: -160px;
+  top: 27px;
+  width: 169px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Product info container */
+.product_info {
+  position: absolute;
+  left: 200px;
+  height: 220px;
+  width: 210px;
+  padding: 35px 10px 10px 10px;
+}
+/* Name for products */
+.product_name {
+  position: absolute;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  height: 75px;
+  left: 50px;
+  top: 35px;
+  width: 234px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+/* Price element */
+.product_price {
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  color: #f50;
+  font-family: Arial;
+  font-weight: 700;
+  height: 46px;
+  left: 30%;
+  width: 234px;
+  margin-top: 20px;
+  }
+  .promotion_price {
+    background-color: #FF5500;
+    color: white;
+    line-height: 1.2em;
+    border-radius: 5px;
+    padding: 0.2em 0.7em;
+    display: block;
+    font-family: Oswald;
+    left: -10px;
+    position: absolute;
+    top: 10px;
+    font-size: 13px;
+  }
+/* Cta */
+.cta_text {
+  background-color: #FF5500;
+  color: white;
+  display: inline-block; /* Allows the element to grow with content while maintaining padding */
+  font-family: Oswald;
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  padding: 2px 30px 5px 30px; /* Ensure adequate padding */
+  font-size: 17px;
+  left: 54%;
+  min-width: 40px; /* Ensures a minimum width but allows expansion */
+  max-width: 100%; /* Ensures it does not exceed the parent container's width */
+  white-space: nowrap; /* Keeps the text on a single line */
+  border-radius: 5px;
+}
+.next {
+  position: absolute;
+  z-index:1;
+  width: 49px;
+  height: 49px;
+  top: 41%;
+  left: 578px;
+  z-index: 20;
+}
+.prev {
+  z-index: 1;
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0px;
+  top: 41%;
+  z-index: 20;
+}
+.rightSliderBg{
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+.rightSliderArrow{
+  position: absolute;
+  width: 49px;
+  left: 10px;
+  top: 7px;
+  background-repeat: no-repeat;
+  background-size: 6px 10px;
+}
+.leftSliderBg{
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+.leftSliderArrow{
+  position: absolute;
+  width: 49px;
+  height: 10px;
+  left: 10px;
+  top: 7px;
+  background-repeat: no-repeat;
+  background-size: 6px 10px;
+}
+.worldClick {
+  position: absolute;
+  width: 371.632px;
+  height: 300px;
+  left: 627px;
+  top: 0px;
+  z-index: 15; 
+}
+.container {
+  perspective: 1000px;
+  margin-top: 60px;
+  margin-left: 125px;
+  position: absolute;
+}
+.cube__face--front {
+  transform: translateZ(235px); 
+}
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(235px);
+}
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(235px); 
+}
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(235px); 
+}
+.cube {
+  width: 380px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 1.2s ease;
+}
+.cube__face {
+  position: absolute;
+  width: 380px;
+  height: 170px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  background-color: #ffffff;
+  border-color: rgb(255, 107, 0);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 0px 14px 15px 0px #cecece;
+}
+.product-info {
+  width: 280px;
+  left:100px;
+  color: #000000;
+}
+.product-image {
+  content:url(//image.lemonpi.io/a/393/decode/aHR0cHM6Ly9waWN0dXJlLmVsZWt0cm9pbXBvcnRvcmVuLm5vL3BpY3R1cmVzLzEyMDExODIuanBn);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 10px;
+  padding: 10px;
+  height: 150px;
+  left: 20px;
+  position: absolute;
+}
+.product-name {
+  position: absolute;
+  text-align: center;
+  font-family: Arial;
+  font-size: 18px;
+  height: 75px;
+  left: 180px;
+  top: 25px;
+  width: 180px;
+  color: #000000;
+}
+.product-price {
+  text-align: center;
+  font-size: 34px;
+  color: #f50;
+  font-family: Arial;
+  font-weight: 700;
+  height: 46px;
+  left: 170px;
+  top: 78px;
+  width: 204px;
+  position: absolute;
+}
+.cta-text {
+  background-color: #FF5500;
+  color: white;
+  display: inline-block;
+  font-family: Oswald;
+  position: absolute;
+  text-align: center;
+  top: 122px;
+  padding: 2px 25px 5px 25px;
+  font-size: 14px;
+  left: 222px;
+  min-width: 30px;
+  max-width: 100%;
+  white-space: nowrap;
+  border-radius: 5px;
+}
