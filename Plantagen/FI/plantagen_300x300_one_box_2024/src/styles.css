@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 320px;
-  height: 400px;
+  width: 300px;
+  height: 300;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +28,8 @@ html, body {
 /* Dynamic image */
 .dynamic_image {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   left: 0px;
   top: 0px;
   background-size: cover;
@@ -38,8 +38,8 @@ html, body {
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   left: 0px;
   top: 0px;
   display: flex;
@@ -57,7 +57,7 @@ html, body {
 /* Overlay of dynamic image */
 .overlay {
   position: absolute;
-  width: 320px;
+  width: 300px;
   height: 175px;
   left: 0px;
   top: 0px;
@@ -66,8 +66,8 @@ html, body {
 .badgeElement {
   z-index: 1;
   position: absolute;
-  left: 232px;
-  top: 10px;
+  left: 212px;
+  top: 15px;
   width: 80px;
   height: 93px;
   background-size: contain;
@@ -85,8 +85,8 @@ html, body {
 /* Panel for products */
 .frame_2 {
   position: absolute;
-  width: 478px;
-  height: 240px;
+  width: 300px;
+  height: 300px;
   right: auto;
   left: 0;
 }
@@ -94,19 +94,19 @@ html, body {
 .product_img {
   position: absolute;
   align-content: center;
-  top: 10px;
-  height: 130px;
-  width: 135px;
+  top: 7px;
+  height: 125px;
+  width: 125px;
   left: 78px;
 }
 /* Product info container */
 .product_info {
   position: absolute;
   align-content: center;
-  top: 113px;
+  top: 100px;
   left: 0px;
   height: 150px;
-  width: 320px;
+  width: 300px;
   padding: 30px 10px 10px 10px;
 }
 /* Title for products */
@@ -116,8 +116,8 @@ html, body {
   line-height: 16px;
   margin-bottom: 0px;
   text-align: center;
-  width: 270px;
-  top: 160px;
+  width: 260px;
+  top: 120px;
 }
 /* Description for products */
 .description {
@@ -125,7 +125,7 @@ html, body {
   font-size: 10px;
   line-height: 13px;
   text-align: center;
-  width: 270px;
+  width: 260px;
 }
 /* Price elements */
 .price_elements {
@@ -133,40 +133,36 @@ html, body {
   font-family: "plantagen-bold";
   font-size: 15px;
   text-align: center;
-  width: 270px;
+  width: 260px;
 }
-
 /* Sup class for price elemts */
 .supPlantagen {
   font-size: 50%;
   position: relative;
   top: -0.7em;
 }
-
 /* Price discount color */
 .discountColor {
   color: #d82316;
 }
-
 /* Product box 1 */
 .card_0 {
   position: absolute;
   background-color: white;
-  height: 230px;
-  width: 290px;
-  top: 75px;
+  height: 225px;
+  width: 270px;
+  top: 60px;
   left: 15px;
 }
-
 /* Cta */
 .cta {
   position: absolute;
   color: white;
   font-family: "plantagen-bold";
-  height: 25px;
-  width: 150px;
+  height: 22px;
+  width: 119px;
   border-radius: 6rem;
-  font-size: 12px;
+  font-size: 10px;
   bottom: 10px;
   left: 75px;
   top: auto;
@@ -178,6 +174,6 @@ html, body {
   background-color: #e9ded1; /* Add a background color */
   left: 0px;
   top: 0px;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
 }

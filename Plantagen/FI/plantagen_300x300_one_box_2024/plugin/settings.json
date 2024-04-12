@@ -6,12 +6,17 @@
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 320,
-        "isCustom": false
+        "width": 300,
+        "height": 300,
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 300,
+        "height": 300
+      }
+    ]
   },
   "placeholders": {
     "schema": {
@@ -169,5 +174,8 @@
     "id": 518,
     "name": "Plantagen FI"
   },
-  "port": 0
+  "port": 60239,
+  "folders": {
+    "selectedFolderId": 3729
+  }
 }

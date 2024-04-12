@@ -150,7 +150,7 @@ function onClick (event) {
   // Check coordinates for which product area is clicked on.
   var y = showCoords(event);
   // Slide 1 clicks
-  if (y >= 0 && y <= 320) {
+  if (y >= 0 && y <= 300) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
@@ -159,10 +159,10 @@ function onClick (event) {
     }));
   }
 }
-
-//Animation of product boxes
-var t2 = new TimelineMax({repeat: -1, yoyo: true, repeatDelay: 4});
-t2.fromTo('#frame_2', 0.7, {x: 330}, {x: 0});
+// Animation of product boxes
+var t2 = new TimelineMax({repeat: -1, repeatDelay: 2});
+t2.fromTo('#frame_2', 0.7, {x: 300}, {x: 0})
+  .to('#frame_2', 0.7, {x: -310}, "+=2"); // Slides out to the left after a 1.5-second pause
 
 //Animation of badge elements
 var t1 = new TimelineMax({repeat:-1});
@@ -178,7 +178,7 @@ var worldClickDiv = document.getElementById('creative_container');
 worldClickDiv.href = click;
  // Add a click event listener to the div
 worldClickDiv.addEventListener('click', function() {
-  
+ 
   window.open(click);
    // Opens the specified URL in a new window or tab
    //window.open('');
