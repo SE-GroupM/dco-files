@@ -39,7 +39,11 @@
         "type": "image",
         "source": "create"
       },
-      "productName": {
+      "productName_1": {
+        "type": "text",
+        "source": "create"
+      },
+      "productName_2": {
         "type": "text",
         "source": "create"
       }
@@ -66,8 +70,11 @@
           "logoPlaceholder": {
             "value": ""
           },
-          "productName": {
-            "value": "productName"
+          "productName_1": {
+            "value": "productName_1"
+          },
+          "productName_2": {
+            "value": "productName_2"
           }
         }
       ]
@@ -85,7 +92,7 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 54772,
+  "port": 52176,
   "folders": {
     "selectedFolderId": 2085
   }

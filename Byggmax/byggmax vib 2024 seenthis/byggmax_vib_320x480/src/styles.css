@@ -91,7 +91,7 @@ sup {
   color: #eb001e;
   letter-spacing: -3px;
 }
-.productName {
+.productName_1 {
   display: block;
   position: absolute;
   left: 20px;
@@ -100,7 +100,15 @@ sup {
   font-family: "Mikro-Regular";
   color: #eb001e;
 }
-
+.productName_2 {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 10px;
+  font-family: "Mikro-Regular";
+  color: #eb001e;
+}
 /* World click div */
 .worldClick {
   width: 320px;

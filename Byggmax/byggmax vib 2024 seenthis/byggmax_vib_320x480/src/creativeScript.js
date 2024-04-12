@@ -64,6 +64,23 @@ if (mutebutton_on_off == 'on') {
   options.muteButton = false; // Disable mute if 'off'
 }
 
+// Ensure GSAP is loaded in your project for this script to work
+
+// Create a new timeline that repeats indefinitely (-1)
+var tl = new TimelineMax({repeat: -1});
+
+// Set initial opacity of both frames to 0
+TweenMax.set('#productName_1, #productName_2', { opacity: 0 });
+
+// Animate the first product name
+tl.to('#productName_1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
+  .to('#productName_1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
+
+// Animate the second product name
+  .to('#productName_2', 0.3, {opacity: 1, ease: Linear.easeNone}, 3.6) // Start fading in slightly after the first fades out
+  .to('#productName_2', 0.3, {opacity: 0, ease: Linear.easeNone}, 5.6); // Fade out, completing the 6-second cycle
+
+
 function onClick (event) {
   return window.dispatchEvent(
     new CustomEvent('lemonpi.interaction/click', {
