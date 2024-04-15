@@ -26,7 +26,6 @@ onLemonpiReady(function () {
 // Fetch data from adset
 window.addEventListener('lemonpi.content/ready', event => {
   // object holding all data from adset
-  console.clear();
   const content = event.detail.content
   const source = event.detail.source
 
@@ -35,6 +34,9 @@ var local_content = content;
 
 // Defines how long the slider displays each product before a new one displays
 var timeBetweenSlides = 3;
+
+$('#world_click').click(onClick);
+
 
 var bgColor= local_content.content_creative_background_color.value; // Background color source
 // Append background color to container
@@ -65,6 +67,7 @@ $('#mainCopy').css({
   'color': copyColor,
   'font-size': copyFontSize,
   'text-shadow': mainCopyShadow,
+  'line-height': parseInt(copyFontSize) + 2 + 'px',
 })
 
 var ctaCopyColor = local_content.cta_copy_color.value; //Color of cta copy
@@ -203,7 +206,6 @@ const Slider = {
               }
           }));
       }
-      
   }
 };
 
@@ -211,7 +213,7 @@ const Slider = {
 
 Slider.create({
 	slidesData: local_content.products.value,
-  width: 400,
+  width: 160,
 	setSlideContent: function(slideDiv, slideData, slideIndex) {
     
     //Find product image div and append image
@@ -289,3 +291,23 @@ var t1 = new TimelineMax({repeat:-1});
   .to('#badgeElement1', 0.3, {rotationY: 0}, 7.2)
 
 })
+
+function onClick (event) {
+  return window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+        placeholder: 'world_click'
+      }
+  }));
+}
+function onProductClick (event) {
+  currentProduct = event.target.id.split("-").pop();
+  return window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+        placeholder: ['products', currentProduct, 'click'],
+      }
+  }));
+}
+
+

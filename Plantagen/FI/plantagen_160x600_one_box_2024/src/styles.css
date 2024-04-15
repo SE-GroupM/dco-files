@@ -247,3 +247,11 @@ html, body {
   background-size: 6px 10px;
 }
 
+.worldClick {
+  position: absolute;
+  width: 160px;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
