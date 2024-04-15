@@ -1,0 +1,108 @@
+{
+  "id": "8fdc41fc-f252-4a4b-9f33-f0745e0031b9",
+  "version": "1.3.0",
+  "name": "entur_980x600",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "headline_frame_1": {
+        "type": "text",
+        "source": "feed"
+      },
+      "headline_frame_2": {
+        "type": "text",
+        "source": "feed"
+      },
+      "headline_frame_3": {
+        "type": "text",
+        "source": "feed"
+      },
+      "img_src": {
+        "type": "image",
+        "source": "feed"
+      },
+      "bg_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "logo_src_1": {
+        "type": "image",
+        "source": "feed"
+      },
+      "logo_src_2": {
+        "type": "image",
+        "source": "feed"
+      },
+      "logo_src_3": {
+        "type": "image",
+        "source": "feed"
+      },
+      "click_url": {
+        "type": "click",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "headline_frame_1": {
+            "value": "<span style=\"color: #ffbf9e\" class=\"regular-italic\">lyst til å\u0003</span><br>\n<span style=\"color: #fbfbf8\" class=\"regular\">komme deg</span><br>\n<span style=\"color: #ff5959\" class=\"bold\">litt vekk?</span>"
+          },
+          "headline_frame_2": {
+            "value": "<span style=\"color: #ff5959\" class=\"regular\">kom deg</span>\n<span style=\"color:  #fbfbf8\" class=\"bold-italic\">enkelt til </span><br>\n<span style=\"color:  #ffbf9e\" class=\"bold\">marka </span><br>\n<span style=\"color:  #ff5959\" class=\"regular\">med entur-appen</span>"
+          },
+          "headline_frame_3": {
+            "value": "<span style=\"color:  #ff5959\" class=\"regular-italic\">Hele Norges</span><br>\n<span style=\"color:  #fbfbf8\" class=\"regular\">kollektivtilbud</span><br>\n<span style=\"color:  #ff5959\" class=\"bold\">i en app"
+          },
+          "img_src": {
+            "value": "https://assets.lemonpi.io/a/k/b3684078-06b7-4224-a43f-a54120c8ac68/Assets/Assets/img-1.jpg"
+          },
+          "bg_color": {
+            "value": "#181c56"
+          },
+          "logo_src_1": {
+            "value": "https://assets.lemonpi.io/a/k/051abb4f-f3b1-47e4-bc0c-c71083d229c5/Assets/Assets/Enturlogo_1.png"
+          },
+          "logo_src_2": {
+            "value": "https://assets.lemonpi.io/a/k/d1c561b4-7c10-4267-9bb3-2cc7c0ef067e/Assets/Assets/Logo_DNT__fork_T_u-bakgrunn.png"
+          },
+          "logo_src_3": {
+            "value": "https://assets.lemonpi.io/a/k/fa780eb5-027c-4106-9b43-c5acf81582cd/Assets/Assets/Entur-APP.png"
+          },
+          "click_url": {
+            "value": "https://entur.no/"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 1242,
+    "name": "Entur NO"
+  },
+  "port": 0
+}
