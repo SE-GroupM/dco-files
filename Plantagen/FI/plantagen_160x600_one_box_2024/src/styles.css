@@ -39,21 +39,23 @@ html, body {
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 130px;
-  height: 30px;
-  left: 0px;
-  top: 0px;
-  display: flex;
+  width: 140px;
+  height: 88px;
+  left: 30px;
+  top: 196px;
   align-items: center;
   justify-content: center;
+  z-index: 50;
 }
 /* Main copy */
 .mainCopy {
   font-family: "plantagen-bold";
-  margin: auto;
-  padding: 20px 0px;
+  width: 100px;
+  height: 88px;
+  font-size: 22px;
   text-align: center;
-  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+  color: #ffffff;
+  text-shadow: rgb(0, 0, 0) 1px 1px 15px;*/
 }
 /* Overlay of dynamic image */
 .overlay {
@@ -66,20 +68,20 @@ html, body {
 /* Badge images */
 .badgeElement {
   position: absolute;
-  left: 445px;
-  top: 20px;
-  width: 90px;
-  height: 106px;
+  width: 63px;
+  height: 74px;
+  left: 87px;
+  top: 24px;
   background-size: contain;
   background-position: top center;
 }
 /* Logo placeholder for svg element */
 .logo {
   position: absolute;
-  width: 157px;
-  height: 30px;
-  left: 20px;
-  top: 20px;
+  width: 69px;
+  height: 13px;
+  left: 10px;
+  top: 11px;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
 /* Panel for products */
@@ -107,10 +109,10 @@ html, body {
 /* Product image */
 .product_img {
   position: absolute;
-  top: 9px;
+  top: 5px;
   left: 13px;
-  height: 145px;
-  width: 115px;
+  height: 115px;
+  width: 113px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -118,11 +120,11 @@ html, body {
 /* Product info container */
 .product_info {
   position: absolute;
-  left: 0px;
+  left: -5px;
   height: 220px;
-  width: 145px;
+  width: 138px;
   padding: 32px 0px 5px 10px;
-  top: 128px;
+  top: 116px;
 }
 /* Title for products */
 .title {
@@ -137,13 +139,12 @@ html, body {
   font-size: 11px;
   line-height: 11px;
 }
-
 /* Price elements */
 .price_elements {
   position: absolute;
   font-family: "plantagen-bold";
   font-size: 18px;
-  top: 80px;
+  top: 90px;
 }
 
 /* Sup class for price elemts */
@@ -178,10 +179,10 @@ html, body {
   border-radius: 6rem;
   font-size: 11px;
   bottom: 10px;
-  top: 125px;
+  top: 133px;
   text-align: center;
   padding: 5px;
-  left: 0px;
+  left: 5px;
 }
 
 .next {
@@ -189,7 +190,7 @@ html, body {
   z-index:1;
   height: 24px;
   width: 24px;
-  top: 433px;
+  top: 420px;
   left: 136px;
 }
 
@@ -199,7 +200,7 @@ html, body {
   height: 24px;
   width: 24px;
   left: 0px;
-  top: 433px;
+  top: 420px;
 }
 
 .rightSliderBg{

@@ -39,7 +39,7 @@ var timeBetweenSlides = 3;
 var bgColor= local_content.content_creative_background_color.value; // Background color source
 // Append background color to container
 $('#creative_container').css({
-  'background-color': bgColor
+  'background-color': bgColor,
 })
 
 //Append logo and color
@@ -57,13 +57,14 @@ $('#overlay').css({
   'opacity': overlayOpacity
 })
 
+var mainCopyShadow = local_content.mainCopy_shadow_yes_no.value;
 var copyColor = local_content.mainCopy_color.value; //Color of main copy
 var copyFontSize = local_content.mainCopy_fontsize.value; //Font size of main copy
 // Append main copy
 $('#mainCopy').css({
   'color': copyColor,
   'font-size': copyFontSize,
-  'line-height': copyFontSize + 2,
+  'text-shadow': mainCopyShadow,
 })
 
 var ctaCopyColor = local_content.cta_copy_color.value; //Color of cta copy
@@ -171,7 +172,6 @@ const Slider = {
           Slider.currentSlideIndex = slideIndex;
         }
 
-
       slidesData.forEach((slideData, index) => createSlide(slideData, index));
       // Clone the last slide and append it to the beginning of the slidesWrapper
       const lastSlide = slidesWrapper.lastChild.cloneNode(true);
@@ -193,9 +193,6 @@ const Slider = {
       clickSlider.addEventListener("click",onClick);
 
       function onClick (slideIndex) {
-        console.log(slideIndex)
-        console.log(event)
-        console.log(event.x)
         // Check coordinates for which product area is clicked on.
         var x = showCoords(event);
         // Slide 1 clicks
@@ -292,4 +289,3 @@ var t1 = new TimelineMax({repeat:-1});
   .to('#badgeElement1', 0.3, {rotationY: 0}, 7.2)
 
 })
-  
