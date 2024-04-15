@@ -65,7 +65,7 @@
             "value": "<span style=\"color: #ffbf9e\" class=\"regular-italic\">lyst til å\u0003</span><br>\n<span style=\"color: #fbfbf8\" class=\"regular\">komme deg</span><br>\n<span style=\"color: #ff5959\" class=\"bold\">litt vekk?</span>"
           },
           "headline_frame_2": {
-            "value": "<span style=\"color: #ff5959\" class=\"regular\">kom deg</span>\n<span style=\"color:  #fbfbf8\" class=\"bold-italic\">enkelt til </span><br>\n<span style=\"color:  #ffbf9e\" class=\"bold\" id=\"location_1\">marka </span><br>\n<span style=\"color:  #ffbf9e\" class=\"bold\" id=\"location_2\">stad 2 </span><br>\n<span style=\"color:  #ffbf9e\" class=\"bold\" id=\"location_3\">stad 3 </span><br>\n<span style=\"color:  #ff5959\" class=\"regular\">med entur-appen</span>"
+            "value": "<span style=\"color: #ff5959\" class=\"regular\">kom deg</span>\n<span style=\"color:  #fbfbf8\" class=\"bold-italic\">enkelt til </span><br>\n<span class=\"cities\"><span style=\"color:  #ffbf9e\" class=\"bold\" id=\"location_1\">marka </span>\n<span style=\"color:  #ffbf9e\" class=\"bold\" id=\"location_2\">stad 2 </span>\n<span style=\"color:  #ffbf9e\" class=\"bold\" id=\"location_3\">stad 3 </span></span><br>\n<span style=\"color:  #ff5959\" class=\"regular\">med entur-appen</span>"
           },
           "headline_frame_3": {
             "value": "<span style=\"color:  #ff5959\" class=\"regular-italic\">Hele Norges</span><br>\n<span style=\"color:  #fbfbf8\" class=\"regular\">kollektivtilbud</span><br>\n<span style=\"color:  #ff5959\" class=\"bold\">i en app"

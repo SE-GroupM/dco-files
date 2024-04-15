@@ -29,7 +29,7 @@ html, body {
   font-size: 46px;
   text-align: center;
 }
-
+/* Background image */
 .bgImage {
   position: absolute;
   width: 495px;
@@ -38,14 +38,14 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+/* Background panel */
 .bgPanel {
   position: absolute;
   height: 600px;
   width: 980px;
   left: 495px;
 }
-
+/* Logo right */
 .logo_1 {
   position: absolute;
   width: 130px;
@@ -56,7 +56,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+/* Logo left */
 .logo_2 {
   position: absolute;
   width: 131px;
@@ -67,7 +67,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+/* Logo top middle */
 .logo_3 {
   position: absolute;
   width: 110px;
@@ -78,7 +78,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+/* X-icon between logos */
 .logo_x {
   position: absolute;
   width: 23px;
@@ -89,7 +89,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+/* Flex container for copy frame 1 */
 .copyFlex_1 {
   position: absolute;
   display: flex;
@@ -99,24 +99,35 @@ html, body {
   width: 485px;
   left: 495px;
 }
-
+/* Flex container for copy frame 2 */
 .copyFlex_2 {
   position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
   height: 540px;
   width: 900px;
+  padding: 40px;
+  margin: auto;
 }
-
-#location_1 {
+/* Start positions of cities */
+.cities {
   position: relative;
-  display: block;
+  text-align: center
 }
+/* Location 1 to overlap */
+#location_1 {
+  position: fixed;
+}
+/* Location 2 to overlap */
 #location_2 {
-  display: block;
+  position: fixed;
 }
+/* Location 1 to overlap */
 #location_3 {
-  display: block;
+ position: fixed;
 }
-
+/* Flex container for copy frame 3 */
 .copyFlex_3 {
   position: absolute;
   display: flex;
@@ -126,22 +137,22 @@ html, body {
   width: 655px;
   left: 325px;
 }
-
+/* Font span style for "Nationale" regular  */
 .regular {
   font-weight: 400;
   font-style: normal;
 }
-
+/* Font span style for "Nationale" regular italic  */
 .regular-italic {
   font-weight: 500;
   font-style: italic;
 }
-
+/* Font span style for "Nationale" bold  */
 .bold {
   font-weight: 700;
   font-style: normal;
 }
-
+/* Font span style for "Nationale" bold italic  */
 .bold-italic {
   font-weight: 700;
   font-style: italic;
