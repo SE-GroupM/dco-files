@@ -31,11 +31,17 @@ const source = event.detail.source
 
 //Local varaible for content
 var local_content = content;
-
+console.log(local_content)
 const logo = content.logo.value;
 const main_copy = content.main_copy.value;
 const products = local_content.products.value;
 const main_copy_size = local_content.main_copy_size.value;
+const container_color = local_content.container_color.value;
+const container_copy_color = local_content.container_copy_color.value;
+const cta_bg_color = local_content.cta_bg_color.value;
+const cta_text_color = local_content.cta_text_color.value;
+const product_frame_color = local_content.product_frame_color.value;
+const product_price_text_color = local_content.product_price_text_color.value;
 
 let rotation = 0;
 let currentProduct = 0;
@@ -49,9 +55,28 @@ $('#logo').css({
 
 $('#main_copy').html(main_copy);
 
+
 $('#main_copy').css({
   'font-size': main_copy_size + 'px',
   'line-height': main_copy_size + 'px',
+  'color': container_copy_color,
+});
+
+$('#right_box').css({
+  'background-color': container_color,
+});
+
+$('.cta-text').css({
+  'background-color': cta_bg_color,
+  'color': cta_text_color,
+});
+
+$('.cube__face').css({
+  'border-color': product_frame_color,
+});
+
+$('.product-price').css({
+  'color': product_price_text_color,
 });
 
 $('#worldClick').click(onClick);
@@ -60,11 +85,12 @@ $("#next").click(function(){
   rotate("left")
 });
 
-$('#product_click').click(onProductClick);
-
 $("#prev").click(function(){
   rotate("right")
 });
+
+$('#product_click').click(onProductClick);
+
 
   for (i = 0; i < 4; i++) {
     //Find product image div and append image

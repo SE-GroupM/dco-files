@@ -39,6 +39,38 @@
       "main_copy_size": {
         "type": "text",
         "source": "create"
+      },
+      "container_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "container_copy_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "cta_bg_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "cta_text_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "product_frame_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "product_price_text_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "promotion_bg_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "promotion_text_color": {
+        "type": "text",
+        "source": "manual"
       }
     },
     "data": {
@@ -59,6 +91,30 @@
           },
           "main_copy_size": {
             "value": "main_copy_size"
+          },
+          "container_color": {
+            "value": "container_color"
+          },
+          "container_copy_color": {
+            "value": "container_copy_color"
+          },
+          "cta_bg_color": {
+            "value": "cta_bg_color"
+          },
+          "cta_text_color": {
+            "value": "cta_text_color"
+          },
+          "product_frame_color": {
+            "value": "product_frame_color"
+          },
+          "product_price_text_color": {
+            "value": "product_price_text_color"
+          },
+          "promotion_bg_color": {
+            "value": "promotion_bg_color"
+          },
+          "promotion_text_color": {
+            "value": "promotion_text_color"
           }
         }
       ]
@@ -89,7 +145,7 @@
     "id": 393,
     "name": "Elektroimportøren"
   },
-  "port": 53205,
+  "port": 62263,
   "folders": {
     "selectedFolderId": 1863
   }
