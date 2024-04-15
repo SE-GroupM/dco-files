@@ -14,7 +14,7 @@ html, body {
 #creative_container {
   width: 980px;
   height: 600px;
-  cursor: default;
+  cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -104,16 +104,14 @@ html, body {
   position: absolute;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   height: 540px;
-  width: 900px;
-  padding: 40px;
-  margin: auto;
+  width: 980px;
 }
 /* Start positions of cities */
 .cities {
-  position: relative;
-  text-align: center
+  display: flex;
+  justify-content: center;
 }
 /* Location 1 to overlap */
 #location_1 {
