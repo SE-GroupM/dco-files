@@ -1,22 +1,17 @@
 {
-  "id": "adcd0272-1810-4edd-b086-b86557201063",
+  "id": "7156e1b5-2ff0-473f-a352-26c1d457ee9a",
   "version": "1.3.0",
-  "name": "byggmax_vib_320x480",
+  "name": "byggmax_vib_300x600",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 480,
-        "isCustom": true
+        "width": 300,
+        "height": 600,
+        "isCustom": false
       }
     ],
-    "customSizes": [
-      {
-        "width": 320,
-        "height": 480
-      }
-    ]
+    "customSizes": []
   },
   "placeholders": {
     "schema": {
@@ -97,8 +92,5 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "folders": {
-    "selectedFolderId": 2085
-  },
-  "port": 51823
+  "port": 60011
 }
