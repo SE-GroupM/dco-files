@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 100%;
-  height: 100%;
+  width: 980px;
+  height: 600px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -24,4 +24,125 @@ html, body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  font-family: "Nationale";
+  text-transform: uppercase;
+  font-size: 46px;
+  text-align: center;
+}
+
+.bgImage {
+  position: absolute;
+  width: 495px;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bgPanel {
+  position: absolute;
+  height: 600px;
+  width: 980px;
+  left: 495px;
+}
+
+.logo_1 {
+  position: absolute;
+  width: 130px;
+  height: 74px;
+  left: 526px;
+  top: 515px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo_2 {
+  position: absolute;
+  width: 131px;
+  height: 74px;
+  left: 0px;
+  top: 512px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo_3 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 170px;
+  top: 222px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo_x {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 480px;
+  top: 538px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.copyFlex_1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 540px;
+  width: 485px;
+  left: 495px;
+}
+
+.copyFlex_2 {
+  position: absolute;
+  height: 540px;
+  width: 900px;
+}
+
+#location_1 {
+  position: relative;
+  display: block;
+}
+#location_2 {
+  display: block;
+}
+#location_3 {
+  display: block;
+}
+
+.copyFlex_3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 540px;
+  width: 655px;
+  left: 325px;
+}
+
+.regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.regular-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bold-italic {
+  font-weight: 700;
+  font-style: italic;
 }
