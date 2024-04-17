@@ -65,13 +65,13 @@ var truncateProductTitle = parseInt(local_content.truncateName.value);
 var truncateProductDescription = parseInt(local_content.truncateDescription.value);
 //Set value of truncateProductTitle 
 if (!truncateProductTitle) {
-  truncateProductTitle = 35;
+  truncateProductTitle = 25;
 } else {
   truncateProductTitle = truncateProductTitle;
 }
 //Set value of truncateProductTitle 
 if (!truncateProductDescription) {
-  truncateProductDescription = 30;
+  truncateProductDescription = 25;
 } else {
   truncateProductDescription = truncateProductDescription;
 }
