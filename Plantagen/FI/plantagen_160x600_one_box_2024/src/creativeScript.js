@@ -35,9 +35,6 @@ var local_content = content;
 // Defines how long the slider displays each product before a new one displays
 var timeBetweenSlides = 3;
 
-$('#world_click').click(onClick);
-
-
 var bgColor= local_content.content_creative_background_color.value; // Background color source
 // Append background color to container
 $('#creative_container').css({
@@ -77,6 +74,8 @@ $('.cta').css({
   'color': ctaCopyColor,
   'background-color': ctaBgcolor,
 })
+
+$('#slider').click(onClick)
 
 const Slider = {
   currentSlideIndex: 1,
@@ -292,16 +291,8 @@ var t1 = new TimelineMax({repeat:-1});
 
 })
 
-function onClick (event) {
-  return window.dispatchEvent(
-    new CustomEvent('lemonpi.interaction/click', {
-      detail: {
-        placeholder: 'world_click'
-      }
-  }));
-}
-function onProductClick (event) {
-  currentProduct = event.target.id.split("-").pop();
+
+ function onClick (event) {
   return window.dispatchEvent(
     new CustomEvent('lemonpi.interaction/click', {
       detail: {
@@ -309,5 +300,3 @@ function onProductClick (event) {
       }
   }));
 }
-
-

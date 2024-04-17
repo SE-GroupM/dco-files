@@ -46,18 +46,27 @@ $('#overlay').css({
 
 var copyColor = local_content.mainCopy_color.value; //Color of main copy
 var copyFontSize = local_content.mainCopy_fontsize.value; //Font size of main copy
+var mainCopy_shadow_yes_no = local_content.mainCopy_shadow_yes_no.value;
+
 // Append main copy
 $('#mainCopy').css({
   'color': copyColor,
   'font-size': copyFontSize,
 })
 
+//Append text-shadow to mainCopy if the value is "yes".
+if (mainCopy_shadow_yes_no === 'yes') {
+  $('#mainCopy').css({'text-shadow': 'rgb(0, 0, 0) 1px 1px 15px'});
+} else if (mainCopy_shadow_yes_no === 'no') {
+  $('#mainCopy').css({'text-shadow': 'none'});
+}
+
 //Variables from adset to control truncate from platform if needed
 var truncateProductTitle = parseInt(local_content.truncateName.value);
 var truncateProductDescription = parseInt(local_content.truncateDescription.value);
 //Set value of truncateProductTitle 
 if (!truncateProductTitle) {
-  truncateProductTitle = 40;
+  truncateProductTitle = 30;
 } else {
   truncateProductTitle = truncateProductTitle;
 }
@@ -247,18 +256,14 @@ var t1 = new TimelineMax({repeat:-1});
   .fromTo('#badgeElement2', 0.3, {rotationY: -90} ,{rotationY: 0},4.2)
   .to('#badgeElement2', 0.3, {rotationY: -90}, 7)
   .to('#badgeElement1', 0.3, {rotationY: 0}, 7.2)
+});
 
-// World click source
-var click = content.world_click.value;
-// Get the div element by its id
-var worldClickDiv = document.getElementById('creative_container');
-worldClickDiv.href = click;
- // Add a click event listener to the div
-worldClickDiv.addEventListener('click', function() {
-  
-  window.open(click);
-   // Opens the specified URL in a new window or tab
-   //window.open('');
- });
-})
+  function onClick (event) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['products', currentProduct, 'click'],
+        }
+    }));
+  }
   

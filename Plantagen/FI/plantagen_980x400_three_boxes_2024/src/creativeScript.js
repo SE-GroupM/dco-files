@@ -15,24 +15,15 @@ function onLemonpiReady(cb) {
   }
 }
 
-// Callback to retrieve the adset data
-onLemonpiReady(function () {
-  lemonpi.subscribe(function callback(content) {
-    // code here
-
-  });
-});
-
 // Fetch data from adset
 window.addEventListener('lemonpi.content/ready', event => {
-  // object holding all data from adset
-  const content = event.detail.content
-  const source = event.detail.source
+// object holding all data from adset
+const content = event.detail.content
+const source = event.detail.source
 
-//Local variable content
 var local_content = content;
 
-var bgColor= local_content.content_creative_background_color.value; // Background color source
+var bgColor= content.content_creative_background_color.value; // Background color source
 // Append background color to container
 $('#creative_container').css({
   'background-color': bgColor
@@ -69,10 +60,26 @@ if (mainCopy_shadow_yes_no === 'yes') {
   $('#mainCopy').css({'text-shadow': 'none'});
 }
 
-//Product collection from adset
-var products = local_content.products.value;
+//Variables from adset to control truncate from platform if needed
+var truncateProductTitle = parseInt(local_content.truncateName.value);
+var truncateProductDescription = parseInt(local_content.truncateDescription.value);
+//Set value of truncateProductTitle 
+if (!truncateProductTitle) {
+  truncateProductTitle = 35;
+} else {
+  truncateProductTitle = truncateProductTitle;
+}
+//Set value of truncateProductTitle 
+if (!truncateProductDescription) {
+  truncateProductDescription = 30;
+} else {
+  truncateProductDescription = truncateProductDescription;
+}
 
 $('#slider').click(onClick)
+
+//Product collection from adset
+var products = local_content.products.value;
 
 //For loop to append products to product panel
 for (var i = 0; i < 3; i++){
@@ -89,10 +96,12 @@ for (var i = 0; i < 3; i++){
   // Append title to product
   var title = products[i].title.value;
   $('#title_'+i).html(title);
+  truncateProductText(('#title_'+i), truncateProductTitle)
 
   // Append description to product
   var description = products[i].product_description.value;
   $('#description_'+i).html(description);
+  truncateProductText(('#description_'+i), truncateProductDescription)
 
   // Variables for price
   var priceNormal = products[i].priceNormal.value;
@@ -146,17 +155,18 @@ for (var i = 0; i < 3; i++){
   })
 }
 //End of for loop 
+
 // Get coordinates for product boxes
 function showCoords(event) {
-  var y = event.clientY;
-  var coords = y;
+  var x = event.clientX;
+  var coords = x;
   return coords;
 }
 function onClick (event) {
   // Check coordinates for which product area is clicked on.
-  var y = showCoords(event);
+  var x = showCoords(event);
   // Slide 1 clicks
-  if (y >= 235 && y <= 600) {
+  if (x >= 519 && x <= 664) {
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
@@ -164,12 +174,65 @@ function onClick (event) {
         }
     }));
   }
+  else if (x >= 668 && x <= 813) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['products', 1, 'click'],
+        }
+    }));
+  }
+  else if (x >= 818 && x <= 963) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['products', 2, 'click'],
+        }
+    }));
+  }
 }
 
-// Animation of product boxes
-var t2 = new TimelineMax({repeat: -1, repeatDelay: 2});
-t2.fromTo('#frame_2', 0.7, {x: 300}, {x: 0})
-  .to('#frame_2', 0.7, {x: -310}, "+=2"); // Slides out to the left after a 1.5-second pause
+// Truncate function
+function truncateProductText(selector, truncLength) {
+  var element = $(selector);
+  var truncateLength = truncLength;
+  
+  var sentence = element[0].innerText;
+  var result = sentence;
+  var resultArray = result;
+
+  element.css({
+      height: 'auto',
+  });
+  if (sentence.length >= truncateLength){
+    result = resultArray.split(" ").splice(0, 5).join(" ");
+    
+    splitSentence = result.split(" ")
+
+    secondCheck = splitSentence[0] + ' ' + splitSentence[1];
+    threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
+    fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
+    
+    if (fourWords.length >= truncateLength){
+       result = threeWords;
+    }
+
+    if (threeWords.length >= truncateLength){
+       result = secondCheck;
+    }
+    if (secondCheck.length >= truncateLength){
+       result = splitSentence[0]
+    }
+    element.text(result + '...');
+  } else{
+    element.text(result);
+  }
+  return result;
+}
+
+//Animation of product boxes
+var t2 = new TimelineMax();
+  t2.fromTo('#slider', 0.7, {x: 460} ,{x: 0},0.2)
 
 //Animation of badge elements
 var t1 = new TimelineMax({repeat:-1});
@@ -178,7 +241,7 @@ var t1 = new TimelineMax({repeat:-1});
   .to('#badgeElement2', 0.3, {rotationY: -90}, 7)
   .to('#badgeElement1', 0.3, {rotationY: 0}, 7.2)
 
- });
+ }); 
 
  function onClick (event) {
   return window.dispatchEvent(
@@ -188,4 +251,3 @@ var t1 = new TimelineMax({repeat:-1});
       }
   }));
 }
-

@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 300px;
-  height: 300;
+  width: 468px;
+  height: 400px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -25,155 +25,172 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
 }
+
 /* Dynamic image */
 .dynamic_image {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 468px;
+  height: 189px;
   left: 0px;
   top: 0px;
   background-size: cover;
   background-position: center center;
 }
+
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 468px;
+  height: 240px;
   left: 0px;
-  top: 0px;
+  top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 /* Main copy */
 .mainCopy {
   font-family: "plantagen-bold";
   margin: auto;
-  padding: 10px 10px;
+  padding: 70px 0px;
   text-align: center;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
+
 /* Overlay of dynamic image */
 .overlay {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 502px;
+  height: 240px;
   left: 0px;
   top: 0px;
 }
+
 /* Badge images */
 .badgeElement {
-  z-index: 1;
   position: absolute;
-  left: 212px;
-  top: 15px;
-  width: 80px;
-  height: 93px;
+  left: 360px;
+  top: 20px;
+  width: 90px;
+  height: 106px;
   background-size: contain;
   background-position: top center;
 }
+
 /* Logo placeholder for svg element */
 .logo {
-  position: fixed;
-  width: 123px;
-  height: 21px;
+  position: absolute;
+  width: 157px;
+  height: 30px;
   left: 20px;
   top: 20px;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
+
 /* Panel for products */
-.frame_2 {
+.slider {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  right: auto;
-  left: 0;
+  width: 478px;
+  height: 200px;
+  left: 10px;
+  top: 190px;
 }
+
+.slide {
+  position: absolute;
+  width: 478px;
+  height: 200px;
+}
+
 /* Product image */
 .product_img {
-  position: absolute;
-  align-content: center;
-  top: 7px;
-  height: 125px;
-  width: 125px;
-  left: 78px;
+  height: 90px;
+  width: auto;
+  margin-bottom: 5px;
 }
-/* Product info container */
-.product_info {
-  position: absolute;
-  align-content: center;
-  top: 100px;
-  left: 0px;
-  height: 150px;
-  width: 300px;
-  padding: 30px 10px 10px 10px;
-}
+
 /* Title for products */
 .title {
   font-family: "plantagen-bold";
-  font-size: 11px;
-  line-height: 16px;
-  margin-bottom: 0px;
-  text-align: center;
-  width: 260px;
-  top: 120px;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 4px;
 }
+
 /* Description for products */
 .description {
+  resize: none;
+  overflow: auto;
   font-family: "plantagen-regular";
-  font-size: 10px;
-  line-height: 13px;
-  text-align: center;
-  width: 260px;
+  font-size: 12px;
+  line-height: 14px;
 }
+
 /* Price elements */
 .price_elements {
   position: absolute;
   font-family: "plantagen-bold";
   font-size: 15px;
-  text-align: center;
-  width: 260px;
+  top: 140px;
 }
+
 /* Sup class for price elemts */
 .supPlantagen {
   font-size: 50%;
   position: relative;
   top: -0.7em;
 }
+
 /* Price discount color */
 .discountColor {
   color: #d82316;
 }
+
 /* Product box 1 */
 .card_0 {
   position: absolute;
   background-color: white;
-  height: 225px;
-  width: 270px;
-  top: 60px;
-  left: 15px;
+  height: 190px;
+  width: 145px;
+  top: 10px;
+  left: 0px;
+  padding: 10px 15px 10px 15px
 }
+
+/* Product box 2 */
+.card_1 {
+  position: absolute;
+  background-color: white;
+  height: 190px;
+  width: 145px;
+  top: 10px;
+  left: 150px;
+  padding: 10px 15px 10px 15px
+}
+
+/* Product box 3 */
+.card_2 {
+  position: absolute;
+  background-color: white;
+  height: 190px;
+  width: 145px;
+  top: 10px;
+  left: 300px;
+  padding: 10px 15px 10px 15px
+}
+
 /* Cta */
 .cta {
   position: absolute;
   color: white;
   font-family: "plantagen-bold";
-  height: 22px;
-  width: 119px;
-  border-radius: 6rem;
+  height: 21px;
+  width: 118px;
+  left: 12px;
+  border-radius: 5rem;
   font-size: 10px;
-  bottom: 10px;
-  left: 75px;
-  top: auto;
+  top: 160px;
   text-align: center;
   padding: 4px;
-}
-.frame2_bg {
-  position: fixed;
-  background-color: #e9ded1; /* Add a background color */
-  left: 0px;
-  top: 0px;
-  width: 300px;
-  height: 300px;
 }
