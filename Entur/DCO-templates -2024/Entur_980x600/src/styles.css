@@ -155,3 +155,30 @@ html, body {
   font-weight: 700;
   font-style: italic;
 }
+.dot {
+  fill: #ff5959; 
+  stroke: #ff5959; 
+  stroke-dasharray: 2 1;
+  stroke-width: 0.2px;
+  animation: moveLeft 5s linear infinite; 
+}
+.line-dotted-bottom {
+  stroke: #ff5959;
+  stroke-dasharray: 2 1;
+  stroke-width: 0.2px;
+  animation: moveLeft 5s linear infinite; /* Ändra tidsvärdena och timing-funktionen efter behov */
+}
+.svg-top {
+  position: absolute;
+  width: 400px;
+  top: 100px;
+}
+.svg-bottom {
+  position: absolute;
+  width: 400px;
+  bottom: 20px;
+}
+@keyframes moveLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-30px); } /* Ändra detta värde beroende på hur långt du vill att linjen ska röra sig åt vänster */
+}

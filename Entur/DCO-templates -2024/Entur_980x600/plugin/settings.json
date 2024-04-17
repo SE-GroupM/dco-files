@@ -104,5 +104,8 @@
     "id": 1242,
     "name": "Entur NO"
   },
-  "port": 52583
+  "port": 56364,
+  "folders": {
+    "selectedFolderId": 3883
+  }
 }
