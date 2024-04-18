@@ -37,9 +37,36 @@ onLemonpiReady(function () {
      $('#logo').css({
       'background-image': 'url('+local_content.logo.value+ ')'
     });
+    
 
+    //Product collection from adset
+    var products = local_content.product_collection.value;
 
+    for (var i = 0; i < 4; i++){ 
 
+      // Append image to product
+      $('#productImage_' + i).css({
+          backgroundImage: 'url("' + products[i].productImage.value + '")',
+        });
+
+      // Append image to product
+      $('#productName_'+i).html(products[i].productName.value);
+
+      // Append image to product
+      $('#productPrice_'+i).html(products[i].productPriceText.value);
+
+      // Append cta to product
+      $('#cta_'+i).html(local_content.ctaText.value);
+    
+    
+    }
+
+    //Animation of product boxes
+    var t2 = new TimelineMax({repeat: -1});
+    t2.fromTo('#slide_1', 0.7, {x: -460} ,{x: 0},0.1)
+    t2.to('#slide_1', 0.7, {x: 460} ,{x: 0},3)
+    t2.fromTo('#slide_2', 0.7, {x: -460} ,{x: 0},3.7)
+    t2.to('#slide_2', 0.7, {x: 460} ,{x: 0},6)
   });
 });
   
