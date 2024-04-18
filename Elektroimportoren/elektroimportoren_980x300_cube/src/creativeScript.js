@@ -152,6 +152,7 @@ window.addEventListener('lemonpi.content/ready', event => {
         productPriceElement.html(promotionPrice + ",-");
         promotionPriceElement.html(discountPercentage + "% rabatt");            }
     } else {
+      promotionPriceElement.remove();
     }
   }
   function truncateProductName() {

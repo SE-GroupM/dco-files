@@ -145,8 +145,8 @@
     "id": 393,
     "name": "Elektroimportøren"
   },
-  "port": 59330,
   "folders": {
     "selectedFolderId": 1863
-  }
+  },
+  "port": 51277
 }

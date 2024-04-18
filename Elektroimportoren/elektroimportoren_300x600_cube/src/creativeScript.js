@@ -149,8 +149,10 @@ window.addEventListener('lemonpi.content/ready', event => {
         } else {
             // If the discount is valid, update the product price and display the discount
         productPriceElement.html(promotionPrice + ",-");
-        promotionPriceElement.html(discountPercentage + "% rabatt");            }
+        promotionPriceElement.html(discountPercentage + "% rabatt");
+      }
     } else {
+      promotionPriceElement.remove();
     }
   }
   function truncateProductName() {
