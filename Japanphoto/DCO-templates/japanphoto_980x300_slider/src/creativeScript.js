@@ -63,10 +63,10 @@ onLemonpiReady(function () {
 
     //Animation of product boxes
     var t2 = new TimelineMax({repeat: -1});
-    t2.fromTo('#slide_1', 0.7, {x: -460} ,{x: 0},0.1)
-    t2.to('#slide_1', 0.7, {x: 460} ,{x: 0},3)
-    t2.fromTo('#slide_2', 0.7, {x: -460} ,{x: 0},3.7)
-    t2.to('#slide_2', 0.7, {x: 460} ,{x: 0},6)
+      t2.fromTo('#slide_1', 0.7, {x: -510} ,{x: 0},0)
+      .to('#slide_1', 0.7, {x: 510},4)
+      .fromTo('#slide_2', 0.7, {x: -510} ,{x: 0},4)
+      .to('#slide_2', 0.7, {x: 510},8)
   });
 });
   
