@@ -1,0 +1,153 @@
+{
+  "id": "dbfe96da-0f1e-4b6a-bd4a-35304b3cce3f",
+  "version": "1.3.0",
+  "name": "jula_FI_980x400_rt",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 300
+      },
+      {
+        "width": 980,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "regularPrice": {
+        "type": "text",
+        "source": "create"
+      },
+      "productName": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "productImage": {
+        "type": "image",
+        "source": "create"
+      },
+      "productUrl": {
+        "type": "click",
+        "source": "create"
+      },
+      "productBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productNameColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productPriceColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "productPrice": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "logo": {
+            "value": ""
+          },
+          "mainCopy": {
+            "value": "mainCopy"
+          },
+          "regularPrice": {
+            "value": "regularPrice"
+          },
+          "productName": {
+            "value": "productName"
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "productImage": {
+            "value": ""
+          },
+          "productUrl": {
+            "value": ""
+          },
+          "productBgColor": {
+            "value": "productBgColor"
+          },
+          "productNameColor": {
+            "value": "productNameColor"
+          },
+          "productPriceColor": {
+            "value": "productPriceColor"
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "productPrice": {
+            "value": "productPrice"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1220,
+        "url": "https://assets.lemonpi.io/a/font/1220/CreightonPro-Bold?v=700",
+        "family": "CreightonPro-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1220,
+        "url": "https://assets.lemonpi.io/a/font/1220/Taz-Regular?v=400",
+        "family": "Taz-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1220,
+    "name": "Jula FI"
+  },
+  "port": 52706
+}
