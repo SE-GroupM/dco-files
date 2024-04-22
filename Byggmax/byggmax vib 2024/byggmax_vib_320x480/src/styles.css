@@ -57,10 +57,11 @@ html, body {
 }
 .logoPlaceholder {
   position: absolute;
-  width: 155px;
+  width: 140px;
   height: 42px;
-  left: 80px;
-  top: 415px;
+  left: 50%;   /* Center horizontally */
+  top: 415px; 
+  transform: translate( -50%); /* Offset the position by half of the width and height */
   z-index: 10;
 }
 /* Product price currency ex. Kr */
