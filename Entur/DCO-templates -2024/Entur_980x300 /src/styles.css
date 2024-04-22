@@ -13,7 +13,7 @@ html, body {
 
 #creative_container {
   width: 980px;
-  height: 600px;
+  height: 300px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -26,14 +26,15 @@ html, body {
   user-select: none;
   font-family: "Nationale";
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 46px;
   text-align: center;
 }
 /* Background image */
 .bgImage {
   position: absolute;
-  width: 495px;
-  height: 600px;
+  width: 850px;
+  height: 550px;
+  top: -200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -41,17 +42,17 @@ html, body {
 /* Background panel */
 .bgPanel {
   position: absolute;
-  height: 600px;
+  height: 300px;
   width: 980px;
   left: 495px;
 }
 /* Logo right */
 .logo_1 {
   position: absolute;
-  width: 130px;
-  height: 74px;
-  left: 526px;
-  top: 515px;
+  width: 111px;
+  height: 34px;
+  left: 546px;
+  top: 243px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -59,10 +60,10 @@ html, body {
 /* Logo left */
 .logo_2 {
   position: absolute;
-  width: 131px;
-  height: 74px;
+  width: 110px;
+  height: 62px;
   left: 0px;
-  top: 512px;
+  top: 228px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -70,10 +71,10 @@ html, body {
 /* Logo top middle */
 .logo_3 {
   position: absolute;
-  width: 110px;
-  height: 110px;
-  left: 170px;
-  top: 222px;
+  width: 86px;
+  height: 86px;
+  left: 239px;
+  top: 79px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -81,10 +82,10 @@ html, body {
 /* X-icon between logos */
 .logo_x {
   position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 480px;
-  top: 538px;
+  width: 20px;
+  height: 20px;
+  left: 479px;
+  top: 250px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -95,7 +96,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 540px;
+  height: 240px;
   width: 485px;
   left: 495px;
 }
@@ -105,8 +106,9 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 540px;
+  height: 240px;
   width: 980px;
+  font-size: 36px;
 }
 /* Start positions of cities */
 .cities {
@@ -131,9 +133,9 @@ html, body {
   display: flex;
   align-items: center;
   text-align: left;
-  height: 540px;
+  height: 240px;
   width: 655px;
-  left: 325px;
+  left: 345px;
 }
 /* Font span style for "Nationale" regular  */
 .regular {
@@ -171,12 +173,13 @@ html, body {
 .svg-top {
   position: absolute;
   width: 400px;
-  top: 100px;
+  top: 0px;
 }
 .svg-bottom {
   position: absolute;
   width: 400px;
-  bottom: 20px;
+  display: block;
+  top: 160px;
 }
 @-webkit-keyframes moveLeft {
   0% { -webkit-transform: translateX(0); }

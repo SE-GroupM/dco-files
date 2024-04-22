@@ -61,16 +61,16 @@ onLemonpiReady(function () {
     var tl = new TimelineMax({repeat: -1, repeatDelay: 3});
     
     TweenMax.set('#copyFrame_1, #copyFrame_2, #copyFrame_3, #logo_3, #dots, #lines', { x: 980 }) //Position of elements not used from start
-    tl.fromTo('#bgPanel', 0.5, {x:485,ease: Linear.ease},{x:0, ease: Linear.ease}, 0) //Background panel slides in
-      .fromTo('#bgImage', 0.5, {width:980, ease: Linear.ease},{width:800, ease: Linear.ease}, 0) //Background image changes width
+    tl.fromTo('#bgPanel', 0.5, {x:485,ease: Linear.ease},{x:0, ease: Linear.ease}, 0.1) //Background panel slides in
+      .fromTo('#bgImage', 0.5, {x:0, ease: Linear.ease},{x:-20, ease: Linear.ease}, 0.1) //Background image changes width
       .fromTo('#copyFrame_1', 0.3, {x:980, ease: Linear.ease},{x:0, ease: Linear.ease}, ) //Copy frame 1 in
       .to('#copyFrame_1', 0.3, {x:-980, ease: Linear.ease}, 2.5) //Copy frame 1 out
 
       .to('#bgPanel', 0.3, {x: -495, ease: Linear.ease}, 2.5) //Background panel covers creative
       .fromTo('#copyFrame_2', 0.3, {x:980, ease: Linear.ease},{x:0, ease: Linear.ease}, 2.5) //Copy frame 2 in
       .fromTo('#dots, #lines', 0.3, {x:980, ease: Linear.ease},{x:0, ease: Linear.ease}, 2.5)  //Dots and lines move from right to left
-      .fromTo('#logo_1', 0.3, {x:300, ease: Linear.ease},{x:0, ease: Linear.ease}, 2.5) //Logo 1 to center
-      .fromTo('#logo_2', 0.3, {x:30, ease: Linear.ease},{x:325, ease: Linear.ease}, 2.5) //Logo 2 to center
+      .fromTo('#logo_1', 0.3, {x:300, ease: Linear.ease},{x:-30, ease: Linear.ease}, 2.5) //Logo 1 to center
+      .fromTo('#logo_2', 0.3, {x:20, ease: Linear.ease},{x:350, ease: Linear.ease}, 2.5) //Logo 2 to center
       .fromTo('#logo_x', 0.3, {opacity:0},{opacity: 1, rotation: "+=360", repeat:1, ease: Linear.ease, transformOrigin:"50% 50%" }, 2.5) //Logo x in
 
       .fromTo('#location_1', 0.2, {opacity:1, y: 0, ease: Linear.ease},{opacity:0, y: 20, ease: Linear.ease}, 3.7) //Location 1 out
