@@ -51,6 +51,10 @@
       "productName_2": {
         "type": "text",
         "source": "create"
+      },
+      "price_currency_content": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -80,6 +84,9 @@
           },
           "productName_2": {
             "value": "productName_2"
+          },
+          "price_currency_content": {
+            "value": "price_currency_content"
           }
         }
       ]
@@ -97,5 +104,8 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 60334
+  "port": 50865,
+  "folders": {
+    "selectedFolderId": 2085
+  }
 }

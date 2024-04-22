@@ -51,7 +51,9 @@ html, body {
   top: 0px;
   left: 0px;
   background-color: #000;
-  z-index: 1;
+}
+.seenthis-control-bar {
+  z-index: 25;
 }
 .logoPlaceholder {
   position: absolute;
@@ -59,7 +61,7 @@ html, body {
   height: 42px;
   left: 80px;
   top: 415px;
-  z-index: 25;
+  z-index: 10;
 }
 /* Product price currency ex. Kr */
 .priceCurrency {

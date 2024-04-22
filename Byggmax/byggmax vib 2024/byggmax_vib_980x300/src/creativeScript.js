@@ -29,7 +29,9 @@ window.addEventListener('lemonpi.content/ready', event => {
   
     // Defining mute-button's appearence 
     var mutebutton_on_off = local_content.mutebutton_on_off.value;
-    
+    //import content of price currenly from placeholder
+    let price_currency_content = local_content.price_currency_content.value;
+
     //Video player 
     var e = document.createElement('script');
     e.src = 'https://video.seenthis.se/v2/player/74/player.js';
@@ -68,12 +70,12 @@ tl.to('#productName_1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
     /// FUNCTIONS ///
   //////////////////
 
-    //Check if price has sup element and append correct CSS class
-  if (local_content.currentPrice.value.includes('<sup>')){
-    $("#currentPrice").html(local_content.currentPrice.value + "<span class='priceCurrencySup'>kr/m</span>");
-  } else {
-    $("#currentPrice").html(local_content.currentPrice.value + "<span class='priceCurrency'>kr/m</span>");
-  }
+ // Check if price has sup element and append correct CSS class
+if (local_content.currentPrice.value.includes('<sup>')){
+  $("#currentPrice").html(local_content.currentPrice.value + "<span class='priceCurrencySup'>" + price_currency_content + "</span>");
+} else {
+  $("#currentPrice").html(local_content.currentPrice.value + "<span class='priceCurrency'>" + price_currency_content + "</span>");
+}
 
 // Determine the state of the mute button based on mutebutton_on_off variable
 if (mutebutton_on_off == 'on') {

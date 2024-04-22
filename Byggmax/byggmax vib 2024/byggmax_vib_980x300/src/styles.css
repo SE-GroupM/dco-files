@@ -50,7 +50,9 @@ html, body {
   top: 0px;
   left: 0px;
   background-color: #000;
-  z-index: 1;
+}
+.seenthis-control-bar {
+  z-index: 25;
 }
 .logoPlaceholder {
   position: absolute;
@@ -69,7 +71,7 @@ html, body {
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
-  margin-left: -45px;
+  margin-left: -48px;
   font-size: 20px;
   font-family: "Mikro-Bold";
   letter-spacing: 0px;
