@@ -24,7 +24,6 @@ html, body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  border: 1px solid #f0f0f0;
   background-color: #f0f0f0;
 }
 /* Main copy on side panel */
@@ -110,19 +109,19 @@ html, body {
 }
 /* Product name in product slider */
 .productName {
-  top: 160px;
+  top: 150px;
   position: absolute;
   font-family: "CEWEHead-Regular";
   font-size: 14px;
   line-height: 16px;
   color: #4c4c4c;
-  margin-bottom: 5px;
+  margin: 5px 10px;
   text-align: center;
 }
 
-/* Product name in product slider */
+/* Product price in product slider */
 .productPrice {
-  top: 200px;
+  top: 205px;
   position: absolute;
   font-family: "CEWEHead-Bold";
   font-size: 16px;
@@ -131,17 +130,18 @@ html, body {
   margin-bottom: 5px;
   text-align: center;
 }
-
-/* Product name in product slider */
-.productPriceDiscount {
-  top: 200px;
-  position: absolute;
+/* Product sale price in product slider */
+.salePrice {
   font-family: "CEWEHead-Bold";
-  font-size: 16px;
-  line-height: 16px;
   color: #c30c15;
-  margin-bottom: 5px;
-  text-align: center;
+}
+/* Product old price in product slider */
+.oldPrice {
+  font-family: "CEWEHead-Regular";
+  text-decoration: line-through;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 /* CTAs in product slider */
