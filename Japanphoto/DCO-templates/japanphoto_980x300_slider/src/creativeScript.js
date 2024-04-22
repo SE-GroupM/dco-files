@@ -38,11 +38,13 @@ onLemonpiReady(function () {
       'background-image': 'url('+local_content.logo.value+ ')'
     });
     
+    //Click function on slider
     $('#slider').click(onClick)
 
     //Product collection from adset
     var products = local_content.product_collection.value;
 
+    //For loop appending products
     for (var i = 0; i < 4; i++){ 
 
       // Append image to product
@@ -50,8 +52,10 @@ onLemonpiReady(function () {
           backgroundImage: 'url("' + products[i].productImage.value + '")',
         });
 
-      // Append image to product
+      // Append name to product
       $('#productName_'+i).html(products[i].productName.value);
+      //Truncate product name
+      truncateProductText('#productName_'+i, 75)
 
       //Formatting prices
       var productPrice = products[i].productPriceNumber.value;
@@ -65,16 +69,16 @@ onLemonpiReady(function () {
       }
 
       // Append cta to product
-      $('#cta_'+i).html(local_content.ctaText.value);
-      
-    
-    }
-      
-    function showCoords(event) {
-      var x = event.clientX;
-      var coords = x;
-      return coords;
-    }
+      $('#cta_'+i).html(local_content.ctaText.value); 
+
+    }  // End of loop
+
+  // Get coordinates for click    
+  function showCoords(event) {
+    var x = event.clientX;
+    var coords = x;
+    return coords;
+  }
 
   function onClick (event) {
     // Check coordinates for which product area is clicked on.
@@ -114,6 +118,7 @@ onLemonpiReady(function () {
       }
     } 
 
+    // Get current slide index
     var currentSlide = 1; // Initialize current slide to slide 1
     // Animation of product boxes
     var t2 = new TimelineMax({
@@ -141,18 +146,53 @@ onLemonpiReady(function () {
       .fromTo('#slide_2', 0.7, {x: -510, ease: Linear.ease} ,{x: 0, ease: Linear.ease},4)
       .to('#slide_2', 0.7, {x: 510, ease: Linear.ease},8)
 
-      // World click source
-      var click = local_content.worldClick.value;
-      // Get the div element by its id
-      var worldClickDiv = document.getElementById('creative_container');
-      worldClickDiv.href = click;
-      // Add a click event listener to the div
-      worldClickDiv.addEventListener('click', function() {
-        
-        window.open(click);
-        // Opens the specified URL in a new window or tab
-        //window.open('');
+    // Truncate function
+    function truncateProductText(selector, truncLength) {
+      var element = $(selector);
+      var truncateLength = truncLength;
+      
+      var sentence = element[0].innerText;
+      var result = sentence;
+      var resultArray = result;
+      element.css({
+          height: 'auto',
       });
+      if (sentence.length >= truncateLength){
+        result = resultArray.split(" ").splice(0, 5).join(" ");
+        
+        splitSentence = result.split(" ")
+        secondCheck = splitSentence[0] + ' ' + splitSentence[1];
+        threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
+        fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
+        
+        if (fourWords.length >= truncateLength){
+          result = threeWords;
+        }
+        if (threeWords.length >= truncateLength){
+          result = secondCheck;
+        }
+        if (secondCheck.length >= truncateLength){
+          result = splitSentence[0]
+        }
+        element.text(result + '...');
+      } else{
+        element.text(result);
+      }
+      return result;
+    }
+
+    // World click source
+    var click = local_content.worldClick.value;
+    // Get the div element by its id
+    var worldClickDiv = document.getElementById('creative_container');
+    worldClickDiv.href = click;
+    // Add a click event listener to the div
+    worldClickDiv.addEventListener('click', function() {
+      
+      window.open(click);
+      // Opens the specified URL in a new window or tab
+      //window.open('');
+    });
 
   });
 });
