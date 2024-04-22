@@ -14,6 +14,10 @@ function onLemonpiReady(cb) {
     }, 0);
   }
 }
+window.addEventListener('lemonpi.content/ready', event => {
+  const content = event.detail.content // get content placeholders from Choreograph Adsets
+  const source = event.detail.source
+});
 
 // Callback to retrieve the adset data
 onLemonpiReady(function () {
@@ -89,10 +93,10 @@ onLemonpiReady(function () {
       //If product price type is Jula club
       if (tempNormal[1] > 0o0) {
         //Ex. 88.88
-        $('#regularPrice').html('JulaClub<br><span style="font-size: 40px; line-height: 30px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('JulaClub<br><span style="font-size: 40px; line-height: 35px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
     }
@@ -125,7 +129,7 @@ onLemonpiReady(function () {
       }
       // WIN
       $('.heroElement').css({
-        right: '-10px',
+        right: '44px',
       });
     }
 
@@ -142,13 +146,13 @@ onLemonpiReady(function () {
     var priceInfo = local_product_collection[0].productLatestPrice.value;
     $('#priceInfo').html(priceInfo);
 
-  //Animation
-  var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
-  main_timeline.fromTo('#productBox', 0.5, { x: 300 }, { x: 0,ease: Power1.easeInOut }, 0.1)
-  .from('#productInfo',0.6,{autoAlpha:0},0.2)
-  .to('#productBox', 0.3, { x: -300 }, "+=2.5")
-  .to('#productInfo',0.25,{autoAlpha:0},3.2)
-  .set('#productBox', { x: 300 }); // Reset to start position for seamless looping
+    var widthOnBanner = 300;
+    var main_timeline = new TimelineMax({ repeat: -1, delay: 0.2 });
+    main_timeline.fromTo('#productBox', 0.3, { x: widthOnBanner}, { x: 0 }, 0.1)
+    .from('#productInfo',0.6,{autoAlpha:0},0.2)
+    .to('#productBox', 0.3, { x: -widthOnBanner }, "+=2.5")
+    .to('#productInfo',0.25,{autoAlpha:0},3.2)
+    .set('#productBox', { x: widthOnBanner }); // Reset to start position for seamless
 
   // Append click to product box
   function onClick (event) {

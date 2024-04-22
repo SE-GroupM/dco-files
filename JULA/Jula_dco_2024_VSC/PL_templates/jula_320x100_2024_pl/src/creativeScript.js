@@ -87,7 +87,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -3px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -3px; padding-right: 3px;">.-</span>');
       }
       $('#regularPrice').addClass('salePrice');
     } else if (productPriceType === 'julaclub') {
@@ -97,7 +97,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html('JulaClub<br><span style="font-size: 40px; line-height: 30px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('JulaClub<br><span style="font-size: 28px; line-height: 25px;">' + tempNormal[0] + '<span style="letter-spacing: 1px; padding-right: 2px;">.-</span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 28px; line-height: 25px;">' + tempNormal[0] + '<span style="letter-spacing: 0px; padding-right: 2px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
     }

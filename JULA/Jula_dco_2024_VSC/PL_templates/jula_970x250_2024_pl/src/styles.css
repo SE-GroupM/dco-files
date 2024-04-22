@@ -12,7 +12,7 @@ html, body {
 }
 
 #creative_container {
-  width: 300px;
+  width: 970px;
   height: 250px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
@@ -29,49 +29,46 @@ html, body {
 /* Position of logo */
 .logo {
 position: absolute;
-width: 112px;
-height: 45px;
+width: 196px;
+height: 81px;
 left: 15px;
 top: 15px;
-z-index: 1;
 }
 /* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
-  height: 220px;
-  width: 270px;
-  left: 15px;
-  top: 15px;
+  height: 210px;
+  width: 700px;
+  left: 265px;
+  top: 14px;
   border-radius: 5px;
 }
 /* Container for product info */
 .productInfo {
   position: fixed;
-  width: 270px;
-  height: 220px;
-  left: 10px;
-  top: 15px;
+  width: 280px;
+  height: 250px;
+  left: 690px;
+  top: 10px;
 }
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 120px;
-  width: 270px;
-  top: 70px;
-  left: 0px;
+  height: 200px;
+  width: 320px;
+  top: 10px;
+  left: 80px;
 }
 /* Price element  */
 .regularPrice {
   position: absolute;
-  font-size: 60px;
+  font-size: 70px;
   font-family: "CreightonPro-Bold";
   color: #333;
-  text-align: right;
-  right: 10px;
-  left: auto;
-  top: 15px;
-  min-width: 75px;
+  text-align: center;
+  top: 30px;
+  min-width: 280px;
 }
 
 /* Price sup element */
@@ -84,15 +81,15 @@ z-index: 1;
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px 6px 6px 9px;
-  border-radius: 8px;
-  font-size: 40px;
-  top: 5px;
+  padding: 8px 8px 6px 12px;
+  border-radius: 12px;
+  font-size: 60px;
+  top: 25px;
   left: auto;
-  right: 10px;
+  right: 86px;
   text-align: right;
   color: #B32013;
-  min-width: 65px;
+  min-width: 111px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -103,12 +100,12 @@ z-index: 1;
   position: absolute;
   padding: 8px 8px 12px 6px;
   border-radius: 12px;
-  font-size: 13px;
-  line-height: 9px;
-  top: 5px;
+  font-size: 21px;
+  line-height: 21px;
+  top: 15px;
   left: auto;
-  right: 10px;
-  min-width: 75px;
+  right: 86px;
+  min-width: 111px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
@@ -117,15 +114,16 @@ z-index: 1;
 
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
-  font-family: "CreightonPro-Bold";
+  font-family: "Arial";
+  font-weight: bold;
   position: absolute;
-  padding: 2px 4px 2px 4px;
-  border-radius: 2px;
-  font-size: 13px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 57px;
+  top: 98px;
   left: auto;
-  right: 0px;
+  right: 68px;
   text-align: right;
   background-color: #DA3A35;
   transform: rotate(-4deg);
@@ -135,13 +133,13 @@ z-index: 1;
   font-family: "Arial";
   font-weight: bold;
   position: absolute;
-  padding: 2px 4px 2px 4px;
-  border-radius: 2px;
-  font-size: 11px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
   color: white;
-  top: 57px;
+  top: 98px;
   left: auto;
-  right: -10px;
+  right: 64px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);
@@ -150,24 +148,40 @@ z-index: 1;
 .productName {
   font-family: "Taz-Regular";
   position: absolute;
-  font-size: 16px;
+  font-size: 19px;
   color: #333;
-  left: 10px;
-  top: 190px;
-  width: 260px;
+  left: 0px;
+  top: 155px;
+  width: 280px;
   text-align: center;
 }
 /* Product price info text */
 .priceInfo {
   position: absolute;
   font-family: "Taz-Regular";
-  font-size: 11px;
+  font-size: 12px;
   color: #fff;
-  left: 6px;
-  top: 215px;
-  width: 270px;
+  left: 0px;
+  top: 205px;
+  width: 280px;
   text-align: center;
   text-decoration: line-through;
   text-decoration-line: line-through;
   -webkit-text-decoration-line: line-through;
+}
+
+/* Adjust right value for Chrome on Windows */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+  @supports (-ms-ime-align:auto) {
+    /* Adjust right value for Chrome on Windows */
+    
+  }
+}
+
+/* Adjust right value for Microsoft Edge */
+@supports (-ms-ime-align:auto) {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Adjust right value for Microsoft Edge */
+    
+  }
 }
