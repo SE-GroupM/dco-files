@@ -108,7 +108,7 @@ onLemonpiReady(function () {
     productSaving = productSaving.replace(".-","");
     //Check if product saving is > 0 and append saleElement class
     if (productSaving !== "0") {
-      $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
+      $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: -8px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }
 

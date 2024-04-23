@@ -165,9 +165,9 @@ top: 15px;
   top: 205px;
   width: 280px;
   text-align: center;
-  text-decoration: line-through;
+  /*text-decoration: line-through;
   text-decoration-line: line-through;
-  -webkit-text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;*/
 }
 
 /* Adjust right value for Chrome on Windows */

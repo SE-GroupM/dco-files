@@ -167,7 +167,7 @@ z-index: 1;
   top: 80px;
   width: 280px;
   text-align: center;
-  text-decoration: line-through;
+  /*text-decoration: line-through;
   text-decoration-line: line-through;
-  -webkit-text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;*/
 }
