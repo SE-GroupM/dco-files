@@ -109,7 +109,7 @@ onLemonpiReady(function () {
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('Jubiläumsprodukt')) {
+    if (productPriceType.toLowerCase().includes('jubiläumsprodukt')) {
       $('#regularPrice').addClass('salePrice')
       $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');

@@ -104,18 +104,17 @@ onLemonpiReady(function () {
     productSaving = productSaving.replace(".-","");
     //Check if product saving is > 0 and append saleElement class
     if (productSaving !== "0") {
-      $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
+      $('#priceElement').html('Spare ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
-    if (productPriceType.toLowerCase().includes('Jubiläumsprodukt!')) {
+    if (productPriceType.toLowerCase().includes('jubiläumsprodukt!')) {
       $('#regularPrice').addClass('salePrice')
       $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
-      console.log(productPriceType.content)
     }
-
+    console.log(productPriceType)
     var OSName="Unknown OS";
     // Specific CSS positioning for Windows browsers
     if (navigator.appVersion.indexOf("Win")!=-1) {
