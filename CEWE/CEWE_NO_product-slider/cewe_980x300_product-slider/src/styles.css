@@ -1,0 +1,159 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #f0f0f0;
+}
+/* Main copy on side panel */
+.mainCopy {
+  position: absolute;
+  font-family: "CEWEHead-Bold";
+  bottom: 20px;
+  top: auto;
+  left: 20px;
+  font-size: 40px;
+  line-height: 42px;
+  max-width: 340px;
+}
+/* Background image on side panel */
+.bgImage {
+  height: 300px;
+  width: 565px;
+  clip-path: polygon(0 0, 88% 0, 80% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* Logo image on side panel */
+.logo {
+  position: absolute;
+  height: 100px;
+  width: 180px;
+  left: 20px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider{
+  top: 15px;
+  position: absolute;
+  left: 500px;
+  width: 482px;
+  height: 300px;
+}
+
+.slide {
+  position: absolute;
+  width: 482px;
+  height: 300px;
+}
+
+.productBox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 270px;
+  width: 220px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+#product_0 {
+  left: 15px;
+}
+
+#product_1 {
+  left: 245px;
+}
+
+#product_2 {
+  left: 15px;
+}
+
+#product_3 {
+  left: 245px;
+}
+
+/* Product imafe in product slider */
+.productImage {
+  position: absolute;
+  height: 160px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+/* Product name in product slider */
+.productName {
+  top: 160px;
+  position: absolute;
+  font-family: "CEWEHead-Regular";
+  font-size: 14px;
+  line-height: 16px;
+  color: #4c4c4c;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+/* Product price in product slider */
+.productPrice {
+  top: 205px;
+  position: absolute;
+  font-family: "CEWEHead-Bold";
+  font-size: 16px;
+  line-height: 16px;
+  color: #4c4c4c;
+  margin-bottom: 5px;
+  text-align: center;
+}
+/* Product sale price in product slider */
+.salePrice {
+  font-family: "CEWEHead-Bold";
+  color: #c30c15;
+}
+/* Product old price in product slider */
+.oldPrice {
+  font-family: "CEWEHead-Regular";
+  text-decoration: line-through;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* CTAs in product slider */
+.cta {
+  position: absolute;
+  top: 230px;
+  font-family: "CEWEHead-Regular";
+  font-size: 12px;
+  color: #fff;
+  background-color: #c30c15;
+  padding: 6px 20px;
+  text-align: center;
+  max-width: 130px;
+  border-radius: 3px;
+}
