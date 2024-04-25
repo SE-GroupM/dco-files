@@ -82,7 +82,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -4px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -14px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('salePrice');
     } else if (productPriceType === 'julaclub') {

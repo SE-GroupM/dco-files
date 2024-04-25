@@ -114,7 +114,6 @@ onLemonpiReady(function () {
       $('#priceElement').html(productPriceType);
       $('#priceElement').addClass('heroElement');
     }
-    console.log(productPriceType)
     var OSName="Unknown OS";
     // Specific CSS positioning for Windows browsers
     if (navigator.appVersion.indexOf("Win")!=-1) {
