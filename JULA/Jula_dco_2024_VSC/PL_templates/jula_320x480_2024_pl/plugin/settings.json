@@ -1,7 +1,7 @@
 {
   "id": "dc271644-8c35-4a1e-921a-bc55863a3379",
   "version": "1.3.0",
-  "name": "jula_300x480_pl_rt_2024",
+  "name": "jula_320x480_pl_rt_2024",
   "description": "",
   "size": {
     "sizes": [
@@ -138,8 +138,8 @@
     "id": 1222,
     "name": "Jula PL"
   },
-  "port": 61333,
   "folders": {
     "selectedFolderId": 3826
-  }
+  },
+  "port": 62100
 }

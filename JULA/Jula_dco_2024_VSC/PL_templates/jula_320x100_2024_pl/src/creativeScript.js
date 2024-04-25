@@ -70,7 +70,7 @@ onLemonpiReady(function () {
       $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
     } else {
       //Ex. 88,-
-      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -3px; padding-right: 8px;">.-</span>');
+      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -3px; padding-right: 2px;">.-</span>');
     }
 
     //Check product price type and append css

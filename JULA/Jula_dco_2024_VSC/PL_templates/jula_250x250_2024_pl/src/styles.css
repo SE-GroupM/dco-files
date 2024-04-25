@@ -73,7 +73,6 @@ z-index: 1;
   top: 15px;
   min-width: 70px;
 }
-
 /* Price sup element */
 .priceSup {
   font-size: 50%;
@@ -84,15 +83,15 @@ z-index: 1;
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px 6px 6px 6px;
+  padding: 4px 4px 4px 5px;
   border-radius: 8px;
   font-size: 35px;
-  top: 5px;
+  top: 8px;
   left: 132px;
   right: auto;
   text-align: right;
   color: #B32013;
-  min-width: 60px;
+  min-width: 50px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -139,7 +138,7 @@ z-index: 1;
   border-radius: 2px;
   font-size: 9px;
   color: white;
-  top: 50px;
+  top: 53px;
   left: auto;
   right: 2px;
   text-align: right;

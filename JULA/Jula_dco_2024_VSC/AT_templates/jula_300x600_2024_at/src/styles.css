@@ -70,7 +70,6 @@ top: 15px;
   top: 30px;
   min-width: 260px;
 }
-
 /* Price sup element */
 .priceSup {
   font-size: 50%;
@@ -81,7 +80,7 @@ top: 15px;
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 8px 8px 6px 12px;
+  padding: 8px 8px 6px 8px;
   border-radius: 12px;
   font-size: 60px;
   top: 30px;
@@ -89,7 +88,7 @@ top: 15px;
   right: 86px;
   text-align: right;
   color: #B32013;
-  min-width: 102px;
+  min-width: 85px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -111,7 +110,6 @@ top: 15px;
   background-color: #B32013;
   transform: rotate(-4deg);
 }
-
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
   font-family: "CreightonPro-Bold";
@@ -139,7 +137,7 @@ top: 15px;
   color: white;
   top: 100px;
   left: auto;
-  right: 45px;
+  right: 42px;
   text-align: right;
   background-color: #333;
   transform: rotate(-4deg);

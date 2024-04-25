@@ -84,7 +84,7 @@ z-index: 1;
 .salePrice {
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 6px 6px 6px 9px;
+  padding: 6px 9px 6px 6px;
   border-radius: 8px;
   font-size: 40px;
   top: 5px;
@@ -92,7 +92,7 @@ z-index: 1;
   right: auto;
   text-align: right;
   color: #B32013;
-  min-width: 65px;
+  min-width: 58px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -101,7 +101,7 @@ z-index: 1;
   display: inline-block;
   font-family: "CreightonPro-Bold";
   position: absolute;
-  padding: 8px 8px 12px 6px;
+  padding: 8px 13px 9px 6px;
   border-radius: 12px;
   font-size: 13px;
   line-height: 9px;
