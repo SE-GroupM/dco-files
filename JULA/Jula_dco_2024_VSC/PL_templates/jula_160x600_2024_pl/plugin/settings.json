@@ -1,0 +1,100 @@
+{
+  "id": "a40f189c-6b9c-4cc2-b9a6-e749d3aed357",
+  "version": "1.3.0",
+  "name": "jula_160x600_pl_rt_2024",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 160,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 160,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productNameColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productPriceColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "productBgColor": {
+            "value": "productBgColor"
+          },
+          "productNameColor": {
+            "value": "productNameColor"
+          },
+          "productPriceColor": {
+            "value": "productPriceColor"
+          },
+          "logo": {
+            "value": ""
+          },
+          "worldClick": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1222,
+        "url": "https://assets.lemonpi.io/a/font/1222/CreightonPro-Bold?v=700",
+        "family": "CreightonPro-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1222,
+        "url": "https://assets.lemonpi.io/a/font/1222/Taz-Regular?v=400",
+        "family": "Taz-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1222,
+    "name": "Jula PL"
+  },
+  "port": 57560
+}
