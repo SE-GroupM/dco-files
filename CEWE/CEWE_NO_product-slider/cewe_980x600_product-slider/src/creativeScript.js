@@ -41,6 +41,10 @@ onLemonpiReady(function () {
      $('#logo').css({
       'background-image': 'url('+local_content.logo.value+ ')'
     });
+
+    $('#bg_color').css({
+      'background-color': local_content.bgColor.value,
+    });
     
     //Click function on slider
     $('#slider').click(onClick)
@@ -50,6 +54,7 @@ onLemonpiReady(function () {
 
     var display_product_price = local_content.display_product_price.value;
     var display_product_description = local_content.display_product_description.value;
+
     //Product collection from adset
     var products = local_content.product_collection.value;
 
@@ -63,7 +68,6 @@ onLemonpiReady(function () {
 
       $('#productDescription_'+i).html(products[i].productDescription.value);
       truncateProductText('#productDescription_'+i, 100)
-
       // Append name to product
       $('#productName_'+i).html(products[i].productName.value);
       //Truncate product name
@@ -79,7 +83,7 @@ onLemonpiReady(function () {
       if (discountPriceNumber > 0) {
         $('#productPrice_'+i).html('<span class="salePrice">' + productPrice + ',-</span> <span class="oldPrice">'+ products[i].productAveragePrice.value + '</span>');
       }
-         // display description text, yes or no
+      // display description text, yes or no
       if (display_product_description === "yes") {
         document.querySelector('#productDescription_'+i).style.display = 'block';    
       } else if (display_product_price === "no") {
@@ -87,10 +91,11 @@ onLemonpiReady(function () {
       }
       // display price elements, yes or no
       if (display_product_price === "yes") {
-      document.querySelector('#productPrice_'+i).style.display = 'block';    
+        document.querySelector('#productPrice_'+i).style.display = 'block';    
       } else if (display_product_price === "no") {
-      document.querySelector('#productPrice_'+i).style.display = 'none';     
-      }
+        document.querySelector('#productPrice_'+i).style.display = 'none';     
+    }
+  
       // Append cta to product
       $('#cta_'+i).html(local_content.ctaText.value); 
 
@@ -101,73 +106,80 @@ onLemonpiReady(function () {
     var x = event.clientX;
     var coords = x;
     return coords;
+    
   }
 
-  function onClick (event) {
-    // Check coordinates for which product area is clicked on.
+  function onClick(event) {
     var x = showCoords(event);
-    
-      if (x >= 515 && x <= 735 && currentSlide === 1) {
-        return window.dispatchEvent(
-          new CustomEvent('lemonpi.interaction/click', {
-            detail: {
-              placeholder: ['product_collection', 0, 'click'],
-            }
-        }));
-      }
-      else if (x >= 750 && x <= 970 && currentSlide === 1) {
-        return window.dispatchEvent(
-          new CustomEvent('lemonpi.interaction/click', {
-            detail: {
-                placeholder: ['product_collection', 1, 'click'],
-            }
-        }));
-      }
-      else if (x >= 515 && x <= 735 && currentSlide === 2) {
-        return window.dispatchEvent(
-          new CustomEvent('lemonpi.interaction/click', {
-            detail: {
-                placeholder: ['product_collection', 2, 'click'],
-            }
-        }));
-      }
-      else if (x >= 750 && x <= 970 && currentSlide === 2) {
-        return window.dispatchEvent(
-          new CustomEvent('lemonpi.interaction/click', {
-            detail: {
-                placeholder: ['product_collection', 3, 'click'],
-            }
-        }));
-      }
-    } 
+  
+    if (x >= 515 && x <= 745 && currentSlide === 1) {
+      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['product_collection', 0, 'click'],
+        }
+      }));
+    }
+    else if (x >= 515 && x <= 735 && currentSlide === 2) {
+      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['product_collection', 1, 'click'],
+        }
+      }));
+    }
+    else if (x >= 515 && x <= 735 && currentSlide === 3) {
+      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['product_collection', 2, 'click'],
+        }
+      }));
+    }
+    else if (x >= 515 && x <= 735 && currentSlide === 4) {
+      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['product_collection', 3, 'click'],
+        }
+      }));
+    }
+  }
+  
 
     // Get current slide index
     var currentSlide = 1; // Initialize current slide to slide 1
     // Animation of product boxes
     var t2 = new TimelineMax({
-        repeat: -1,
-        onUpdate: function() {
-            // Check if the animation is currently in the first slide
-            if (t2.time() < 4) { // Assuming each slide animation lasts for 4 seconds
-                if (currentSlide !== 1) {
-                    currentSlide = 1;
-                }
-            }
-            // Check if the animation is currently in the second slide
-            else if (t2.time() >= 4 && t2.time() < 8) {
-                if (currentSlide !== 2) {
-                    currentSlide = 2;
-                }
-            }
-        }
-    });
-
-    //Animation of product boxes
-    var t2 = new TimelineMax({repeat: -1});
-      t2.fromTo('#slide_1', 0.7, {x: -510, ease: Linear.ease} ,{x: 0, ease: Linear.ease},0)
-      .to('#slide_1', 0.7, {x: 510, ease: Linear.ease},4)
-      .fromTo('#slide_2', 0.7, {x: -510, ease: Linear.ease} ,{x: 0, ease: Linear.ease},4)
-      .to('#slide_2', 0.7, {x: 510, ease: Linear.ease},8)
+      repeat: -1,
+      onUpdate: function() {
+          var currentTime = t2.time();
+          if (currentTime < 3) {
+              if (currentSlide !== 1) {
+                  currentSlide = 1;
+              }
+          } else if (currentTime >= 4 && currentTime < 7) {
+              if (currentSlide !== 2) {
+                  currentSlide = 2;
+              }
+          } else if (currentTime >= 8 && currentTime < 11) {
+              if (currentSlide !== 3) {
+                  currentSlide = 3;
+              }
+          } else if (currentTime >= 12 && currentTime < 15) { // Adjust this to match the desired duration
+              if (currentSlide !== 4) {
+                  currentSlide = 4;
+              }
+          }
+      }
+  });
+  
+  // Define slide animations with correct timing
+  t2.fromTo('#slide_1', 0.7, {x: -510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 0)
+    .to('#slide_1', 0.7, {x: 500, ease: Linear.ease}, 4)
+    .fromTo('#slide_2', 0.7, {x: -510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 4)
+    .to('#slide_2', 0.7, {x: 1200, ease: Linear.ease}, 8)
+    .fromTo('#slide_3', 0.7, {x: -510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 8)
+    .to('#slide_3', 0.7, {x: 1200, ease: Linear.ease}, 12)
+    .fromTo('#slide_4', 0.7, {x: -510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 12)
+    .to('#slide_4', 0.7, {x: 1200, ease: Linear.ease}, 16); // Adjust end time to 16 to keep consistent intervals
+  
 
     // Truncate function
     function truncateProductText(selector, truncLength) {

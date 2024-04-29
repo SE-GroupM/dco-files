@@ -31,55 +31,70 @@ html, body {
   position: absolute;
   font-family: "CEWEHead-Bold";
   bottom: 20px;
-  top: auto;
-  left: 20px;
-  font-size: 40px;
-  line-height: 42px;
-  max-width: 340px;
+  top: 55px;
+  left: 25px;
+  right: 25px;
+  font-size: 30px;
+  line-height: 30px;
 }
 /* Background image on side panel */
 .bgImage {
   height: 300px;
-  width: 565px;
-  clip-path: polygon(0 0, 88% 0, 80% 100%, 0% 100%);
+  width: 300px;
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  z-index: 0;
+}
+.bg_color {
+  position: absolute; 
+  width: 300px; 
+  height: 600px;
 }
 /* Logo image on side panel */
 .logo {
   position: absolute;
-  height: 100px;
-  width: 180px;
-  left: 20px;
-  top: 20px;
+  height: 80px;
+  width: 160px;
+  left: 70px;
+  top: 540px;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 10;
 }
-
-.slider{
-  top: 15px;
+.logoBg {
   position: absolute;
-  left: 500px;
-  width: 482px;
-  height: 300px;
+  height: 110px;
+  width: 300px; 
+  top: 500px;
+  clip-path: polygon(0 29%, 100% 0, 100% 100%, 0 100%);
+  z-index: 5;
 }
-
+.slider{
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  width: 280px;
+  height: 280px;
+  z-index: 1;
+}
 .slide {
   position: absolute;
-  width: 482px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
+  z-index: 1;
 }
 
 .productBox {
   position: absolute;
   display: flex;
   justify-content: center;
-  height: 270px;
-  width: 220px;
+  height: 280px;
+  width: 250px;
   background-color: #fff;
   border-radius: 3px;
-  padding: 10px;
+  padding: 3px;
 }
 
 #product_0 {
@@ -87,7 +102,7 @@ html, body {
 }
 
 #product_1 {
-  left: 245px;
+  left: 15px;
 }
 
 #product_2 {
@@ -95,14 +110,14 @@ html, body {
 }
 
 #product_3 {
-  left: 245px;
+  left: 15px;
 }
 
 /* Product imafe in product slider */
 .productImage {
   position: absolute;
   height: 160px;
-  width: 200px;
+  width: 220px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -112,18 +127,18 @@ html, body {
   top: 160px;
   position: absolute;
   font-family: "CEWEHead-Bold";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   color: #4c4c4c;
   margin: 5px 10px;
   text-align: center;
 }
-/* Product description in product slider */
+/* Product name in product slider */
 .productDescription {
-  top: 180px;
+  top: 185px;
   position: absolute;
   font-family: "CEWEHead-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   color: #4c4c4c;
   margin: 5px 10px;
@@ -131,10 +146,10 @@ html, body {
 }
 /* Product price in product slider */
 .productPrice {
-  top: 205px;
+  top: 210px;
   position: absolute;
   font-family: "CEWEHead-Bold";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 16px;
   color: #4c4c4c;
   margin-bottom: 5px;
@@ -150,16 +165,15 @@ html, body {
   font-family: "CEWEHead-Regular";
   text-decoration: line-through;
   color: #4d4d4d;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 14px;
 }
-
 /* CTAs in product slider */
 .cta {
   position: absolute;
-  top: 230px;
+  top: 235px;
   font-family: "CEWEHead-Regular";
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   background-color: #c30c15;
   padding: 6px 20px;

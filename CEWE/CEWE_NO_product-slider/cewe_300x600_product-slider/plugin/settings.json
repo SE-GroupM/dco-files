@@ -1,22 +1,17 @@
 {
-  "id": "80796861-449b-4ce2-8ffc-2b04cb33b3d5",
+  "id": "4091f51d-0328-47e1-9484-1c2a079af1b2",
   "version": "1.3.0",
-  "name": "cewe_no_slider_980x300",
+  "name": "cewe_no_slider_300x600",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 300,
-        "isCustom": true
+        "width": 300,
+        "height": 600,
+        "isCustom": false
       }
     ],
-    "customSizes": [
-      {
-        "width": 980,
-        "height": 300
-      }
-    ]
+    "customSizes": []
   },
   "placeholders": {
     "schema": {
@@ -103,7 +98,7 @@
     "id": 988,
     "name": "Cewe"
   },
-  "port": 61946,
+  "port": 49546,
   "folders": {
     "selectedFolderId": 3973
   }
