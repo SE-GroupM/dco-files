@@ -1,0 +1,195 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+#creative_container {
+  width: 300px;
+  height: 600px;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: "Nationale";
+  text-transform: uppercase;
+  font-size: 30px; /* adjusted font size for smaller space */
+  text-align: center;
+}
+/* Background image */
+.bgImage {
+  top: 190px;
+  position: absolute;
+  width: 607px;
+  height: 460px;
+  left: -40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Background panel */
+.bgPanel {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  
+}
+/* Logo right */
+.logo_1 {
+  position: absolute;
+  width: 76px;
+  height: 23px;
+  left: 222px;
+  top: 550px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Logo left */
+.logo_2 {
+  position: absolute;
+  width: 77px;
+  height: 43px;
+  left: 16px;
+  top: 537px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Logo top middle */
+.logo_3 {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 120px;
+  top: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* X-icon between logos */
+.logo_x {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 152px;
+  top: 555px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Flex container for copy frame 1 */
+.copyFlex_1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  left: 0px;
+}
+/* Flex container for copy frame 2 */
+.copyFlex_2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 300px;
+}
+/* Start positions of cities */
+.cities {
+  display: flex;
+  justify-content: center;
+}
+/* Location 1 to overlap */
+#location_1 {
+  position: fixed;
+}
+/* Location 2 to overlap */
+#location_2 {
+  position: fixed;
+}
+/* Location 1 to overlap */
+#location_3 {
+ position: fixed;
+}
+/* Flex container for copy frame 3 */
+.copyFlex_3 {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+  width: 300px;
+  top: 230px;
+}
+/* Font span style for "Nationale" regular  */
+.regular {
+  font-weight: 400;
+  font-style: normal;
+}
+/* Font span style for "Nationale" regular italic  */
+.regular-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+/* Font span style for "Nationale" bold  */
+.bold {
+  font-weight: 700;
+  font-style: normal;
+}
+/* Font span style for "Nationale" bold italic  */
+.bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+.dot {
+  fill: #ff5959; 
+  stroke: #ff5959; 
+  stroke-dasharray: 2 1;
+  stroke-width: 0.2px;
+  animation: moveLeft 5s linear infinite; 
+}
+.line-dotted-bottom {
+  stroke: #ff5959;
+  stroke-dasharray: 2 1;
+  stroke-width: 0.2px;
+  animation: moveLeft 5s linear infinite; /* Ändra tidsvärdena och timing-funktionen efter behov */
+}
+.svg-top {
+  position: absolute;
+  width: 280px;
+  top: 180px;
+}
+.svg-bottom {
+  position: absolute;
+  width: 280px;
+  display: block;
+  top: 360px;
+}
+@-webkit-keyframes moveLeft {
+  0% { -webkit-transform: translateX(0); }
+  100% { -webkit-transform: translateX(-30px); } /* Ändra detta värde beroende på hur långt du vill att linjen ska röra sig åt vänster */
+}
+
+@keyframes moveLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-30px); } /* Ändra detta värde beroende på hur långt du vill att linjen ska röra sig åt vänster */
+}
+
+.element {
+  -webkit-animation: moveLeft 1s infinite alternate; /* Safari 4.0 - 8.0 */
+  animation: moveLeft 1s infinite alternate;
+}
