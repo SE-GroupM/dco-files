@@ -110,7 +110,7 @@ top: 15px;
   background-color: #B32013;
   transform: rotate(-4deg);
 }
-/* Sale price element ex. "Spara 199,-" */
+/* Standard CSS on Sale price element ex. "Spara 199,-" */
 .saleElement {
   font-family: "CreightonPro-Bold";
   font-weight: bold;
@@ -126,6 +126,24 @@ top: 15px;
   background-color: #DA3A35;
   transform: rotate(-4deg);
 }
+/* CSS on shorter sale prices */
+.julaCluSaleElementShort{
+  right: 89px;
+}
+/* CSS on longer sale prices */
+.julaClubSaleElementLong{
+  right: 70px;
+}
+.saleElementSmall{
+  right: 100px;
+}
+.saleElementTwoDIgits{
+  right: 80px;
+}
+.saleElementLong{
+  right: 57px;
+}
+
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
   font-family: "Arial";

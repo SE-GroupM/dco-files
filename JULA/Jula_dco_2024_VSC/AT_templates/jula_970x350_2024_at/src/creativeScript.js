@@ -106,6 +106,15 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Spare ' + productSaving + '<span style="letter-spacing: -3px; padding-right: -2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+
+        // If we have a longer price, append other css on priceElement (sale-element)
+        if (tempNormal[0].length == 3){
+          $('#priceElement').addClass('saleElementLong');
+        }
+        if (tempNormal[0].length > 3){
+          $('#priceElement').addClass('saleElementExtraLong');
+        }
+
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class

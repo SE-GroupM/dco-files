@@ -91,5 +91,8 @@
     "id": 1220,
     "name": "Jula FI"
   },
-  "port": 49930
+  "folders": {
+    "selectedFolderId": 3899
+  },
+  "port": 55778
 }

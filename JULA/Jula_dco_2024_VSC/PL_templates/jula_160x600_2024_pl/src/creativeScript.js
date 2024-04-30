@@ -99,6 +99,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html('JulaClub<br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
+      
     }
     
 
@@ -110,6 +111,13 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: -8px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+
+
+      if (tempNormal[0].length > 2 && productPriceType == 'julaclub'){
+        $('#priceElement').addClass('clubBadgeCSS');
+      }else if(tempNormal[0].length < 3 && productPriceType == 'julaclub') {
+        $('#priceElement').addClass('julaClubSaleElementShort');
+      }
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class

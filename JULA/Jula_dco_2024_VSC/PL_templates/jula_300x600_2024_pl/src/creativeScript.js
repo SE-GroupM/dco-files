@@ -99,6 +99,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html('JulaClub<br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
+
     }
     
 
@@ -110,7 +111,27 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+
+     // If we have a longer price, append other css on priceElement (sale-element)
+     if (tempNormal[0].length > 2 && productPriceType == 'julaclub'){
+      $('#priceElement').addClass('julaClubSaleElementLong');
     }
+    if (tempNormal[0].length <= 2 && productPriceType == 'julaclub'){
+      // Append css for short price element
+      $('#priceElement').addClass('julaCluSaleElementShort');
+
+    }
+    if (tempNormal[0].length == 1 && productPriceType == 'sale'){
+      $('#priceElement').addClass('saleElementSmall');
+    }
+    if (tempNormal[0].length == 2 && productPriceType == 'sale'){
+      $('#priceElement').addClass('saleElementTwoDIgits');
+    }
+    // If ordinary sale and price larger than 3, ex 1 000.-
+    if (tempNormal[0].length > 3 && productPriceType == 'sale'){
+      $('#priceElement').addClass('saleElementLong');
+    }
+  }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
     if (productPriceType.toLowerCase().includes('oferta urodzinowa')) {
@@ -141,7 +162,7 @@ onLemonpiReady(function () {
     'background-repeat': 'no-repeat',
     'background-position': 'center'
     });
-
+    
     // Append lowest price last 30 days
     var priceInfo = local_product_collection[0].productLatestPrice.value;
     $('#priceInfo').html(priceInfo);

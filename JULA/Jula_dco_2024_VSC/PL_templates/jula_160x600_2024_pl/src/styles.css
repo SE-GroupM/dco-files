@@ -103,7 +103,7 @@ top: 15px;
   font-size: 18px;
   line-height: 16px;
   top: 47px;
-  left: 20px;
+  left: 10px;
   right: auto;
   min-width: 90px;
   text-align: right;
@@ -127,6 +127,13 @@ top: 15px;
   text-align: right;
   background-color: #DA3A35;
   transform: rotate(-4deg);
+}
+.clubBadgeCSS{
+  right: 2px;
+}
+/* CSS on shorter sale prices */
+.julaClubSaleElementShort{
+  right: 22px;
 }
 /* Hero element ex. "Tokbilligt" */
 .heroElement {

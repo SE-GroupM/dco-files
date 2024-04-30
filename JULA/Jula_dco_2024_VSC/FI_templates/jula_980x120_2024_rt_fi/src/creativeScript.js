@@ -96,7 +96,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html('JulaClub <br><span style="font-size: 50px; line-height: 30px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 50px; line-height: 30px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 50px; line-height: 45px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
     }

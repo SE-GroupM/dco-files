@@ -106,6 +106,12 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+
+      // If ordinary sale and price larger than 3, ex 1 000.-
+      if (tempNormal[0].length <= 3 && productPriceType == 'sale'){
+        $('#priceElement').addClass('saleElementShort');
+      }
+
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class

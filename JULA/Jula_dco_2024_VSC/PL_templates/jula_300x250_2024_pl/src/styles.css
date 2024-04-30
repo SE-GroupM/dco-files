@@ -130,6 +130,9 @@ z-index: 1;
   background-color: #DA3A35;
   transform: rotate(-4deg);
 }
+.saleElementShort{
+  right: 35px;
+}
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
   font-family: "Arial";

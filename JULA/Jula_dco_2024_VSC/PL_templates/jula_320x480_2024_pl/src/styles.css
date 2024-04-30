@@ -127,6 +127,22 @@ top: 15px;
   background-color: #DA3A35;
   transform: rotate(-4deg);
 }
+
+/* CSS on shorter sale prices */
+.julaCluSaleElementShort{
+  right: 91px;
+}
+/* CSS on longer sale prices */
+.julaClubSaleElementLong{
+  right: 70px;
+}
+.saleElementTwoDIgits{
+  right: 70px;
+}
+.saleElementLong{
+  right: 44px;
+}
+
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
   font-family: "Arial";

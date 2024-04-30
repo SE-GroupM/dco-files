@@ -110,6 +110,20 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+
+       // If we have a longer price, append other css on priceElement (sale-element)
+     if (tempNormal[0].length > 2 && productPriceType == 'julaclub'){
+      $('#priceElement').addClass('julaClubSaleElementLong');
+      }
+      if (tempNormal[0].length <= 2 && productPriceType == 'julaclub'){
+        // Append css for short price element
+        $('#priceElement').addClass('julaCluSaleElementShort');
+
+      }
+      // If ordinary sale and price larger than 3, ex 1 000.-
+      if (tempNormal[0].length > 3 && productPriceType == 'sale'){
+        $('#priceElement').addClass('saleElementLong');
+      }
     }
     
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class

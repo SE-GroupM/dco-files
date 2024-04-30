@@ -126,6 +126,19 @@ top: 15px;
   background-color: #DA3A35;
   transform: rotate(-4deg);
 }
+
+/* CSS on shorter sale prices */
+.saleElementShort{
+  right: 89px;
+}
+/* CSS on longer sale prices */
+.saleElementLong{
+  right: 28px;
+}
+.saleElementExtraLong{
+  right: 8px;
+}
+
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
   font-family: "Arial";

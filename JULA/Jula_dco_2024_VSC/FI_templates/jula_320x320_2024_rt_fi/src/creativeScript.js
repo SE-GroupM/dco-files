@@ -92,7 +92,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html('JulaClub<br><span style="font-size: 50px; line-height: 32px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('JulaClub<br><span style="font-size: 50px; line-height: 40px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 50px; line-height: 45px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
       }
       $('#regularPrice').addClass('clubPrice');
     }
@@ -106,13 +106,26 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Säästä ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+      console.log(tempNormal)
+      // If we have a sale element with decimals. Change the CSS
+      if (tempNormal[1] === '00' && productPriceType === 'sale') {
+        $('#priceElement').addClass('productSaleDecimals');
+      }
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
     if (productPriceType.toLowerCase().includes('juhlatuote')) {
       $('#regularPrice').addClass('salePrice')
       $('#priceElement').html(productPriceType);
-      $('#priceElement').addClass('heroElement');
+      
+      if (tempNormal[1] > 0o0) {
+        //Ex. 88.88
+       // Append "ordinary" heroelement
+       $('#priceElement').addClass('heroElement');
+      } else {
+        //Ex. 88,-
+        $('#priceElement').addClass('heroElementHigherUp');
+      }
     }
 
     var OSName="Unknown OS";

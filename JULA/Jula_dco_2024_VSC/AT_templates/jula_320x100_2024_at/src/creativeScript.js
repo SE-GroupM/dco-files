@@ -65,7 +65,7 @@ onLemonpiReady(function () {
       $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
     } else {
       //Ex. 88,-
-      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+      $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -2px; padding-right: 0px;">.-</span>');
     }
 
     //Check product price type and append css
@@ -82,7 +82,7 @@ onLemonpiReady(function () {
         $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + ' </span>');
       } else {
         //Ex. 88,-
-        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -14px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -2px; padding-right: 0px;">.-</span>');
       }
       $('#regularPrice').addClass('salePrice');
     } else if (productPriceType === 'julaclub') {
@@ -106,6 +106,14 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Spare ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+
+      // If we have a longer price, append other css on priceElement (sale-element)
+      if (tempNormal[0].length > 2){
+        $('#priceElement').addClass('saleElementLong');
+      }else{
+        $('#priceElement').addClass('saleElementExtraLong');
+      }
+
     }
 
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
