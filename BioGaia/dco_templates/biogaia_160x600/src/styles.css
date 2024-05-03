@@ -38,12 +38,12 @@ html, body {
   font-family: 'okta-neue-ultralight';
   font-weight: 900;
   position: absolute;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 14px;
   color: black;
-  left: 471px;
-  top: 210px;
-  max-width: 500px;
+  left: 15px;
+  top: 510px;
+  max-width: 145px;
 }
 
 .seenthis-control-bar {
