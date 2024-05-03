@@ -214,7 +214,20 @@
   },
   "fonts": {
     "Google": [],
-    "Choreograph": []
+    "Choreograph": [
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-ultralight?v=200",
+        "family": "okta-neue-ultralight",
+        "variant": "200"
+      },
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-blackitalic?v=900-italic",
+        "family": "okta-neue-blackitalic",
+        "variant": "900-italic"
+      }
+    ]
   },
   "agency": {
     "id": 7,
@@ -224,5 +237,5 @@
     "id": 1233,
     "name": "Biogaia"
   },
-  "port": 56539
+  "port": 50877
 }

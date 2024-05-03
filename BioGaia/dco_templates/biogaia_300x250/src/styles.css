@@ -35,6 +35,8 @@ html, body {
 }
 
 #copy {
+  font-family: 'okta-neue-ultralight';
+  font-weight: 900;
   position: absolute;
   font-size: 14px;
   line-height: 16px;
