@@ -24,4 +24,26 @@ html, body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  cursor: pointer;
+}
+
+#player {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  border: 1px solid black;
+}
+
+#copy {
+  position: absolute;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  left: 15px;
+  top: 165px;
+  max-width: 300px;
+}
+
+.seenthis-control-bar {
+  display: none;
 }
