@@ -1,0 +1,241 @@
+{
+  "id": "eab40cdf-467a-4aca-9ec6-34cd3842803e",
+  "version": "1.3.0",
+  "name": "biogaia_970x250",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 970,
+        "height": 250,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "department_store": {
+        "type": "text",
+        "source": "feed"
+      },
+      "copy_frame_1": {
+        "type": "text",
+        "source": "feed"
+      },
+      "video_id": {
+        "type": "text",
+        "source": "feed"
+      },
+      "video_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "department_store": {
+            "value": "Visit Boots.com"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_1"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Aberdeen Garthdee Rd Rp"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_2"
+          }
+        },
+        {
+          "department_store": {
+            "value": "St Albans St Peters St"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_3"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Birm St Andrews Rp"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_4"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Bath Southgate Centre"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_5"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Bradford Broadway SC"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_6"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Belfast Donegal Place"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_7"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Brighton North St"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_8"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Bromley The Glades Sc"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_9"
+          }
+        },
+        {
+          "department_store": {
+            "value": "Croydon Whitgift Sc"
+          },
+          "copy_frame_1": {
+            "value": "Now Available at Boots"
+          },
+          "video_id": {
+            "value": "v3:XC-3zCMqIVXOgpdrf6ABV"
+          },
+          "video_tracker": {
+            "value": "11ok1ehjs2s1uqbcvj3dbt0nwm141e91gdo351ozjs8b663jdbp7x4jcpr"
+          },
+          "exit_url": {
+            "value": "https://www.boots.com/biogaia-protectis-baby-drops-5ml-10338430?utm_source=vod&utm_medium=referral&utm_campaign=biogaia_10"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-ultralight?v=200",
+        "family": "okta-neue-ultralight",
+        "variant": "200"
+      },
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-blackitalic?v=900-italic",
+        "family": "okta-neue-blackitalic",
+        "variant": "900-italic"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1233,
+    "name": "Biogaia"
+  },
+  "port": 54552
+}
