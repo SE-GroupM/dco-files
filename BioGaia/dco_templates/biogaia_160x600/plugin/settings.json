@@ -237,5 +237,8 @@
     "id": 1233,
     "name": "Biogaia"
   },
-  "port": 57303
+  "folders": {
+    "selectedFolderId": 4064
+  },
+  "port": 61765
 }
