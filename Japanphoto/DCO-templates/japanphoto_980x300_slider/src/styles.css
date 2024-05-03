@@ -157,3 +157,13 @@ html, body {
   max-width: 130px;
   border-radius: 3px;
 }
+
+#reverseButton{
+  z-index: 10;
+  left: 700px;
+}
+
+#forwardButton{
+  z-index: 10;
+  left: 700px;
+}

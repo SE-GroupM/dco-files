@@ -55,7 +55,7 @@ onLemonpiReady(function () {
       // Append name to product
       $('#productName_'+i).html(products[i].productName.value);
       //Truncate product name
-      truncateProductText('#productName_'+i, 75)
+      truncateProductText('#productName_'+i, 55)
 
       //Formatting prices
       var productPrice = products[i].productPriceNumber.value;
@@ -72,6 +72,8 @@ onLemonpiReady(function () {
       $('#cta_'+i).html(local_content.ctaText.value); 
 
     }  // End of loop
+  
+ 
 
   // Get coordinates for click    
   function showCoords(event) {
@@ -141,10 +143,20 @@ onLemonpiReady(function () {
 
     //Animation of product boxes
     var t2 = new TimelineMax({repeat: -1});
-      t2.fromTo('#slide_1', 0.7, {x: -510, ease: Linear.ease} ,{x: 0, ease: Linear.ease},0)
-      .to('#slide_1', 0.7, {x: 510, ease: Linear.ease},4)
-      .fromTo('#slide_2', 0.7, {x: -510, ease: Linear.ease} ,{x: 0, ease: Linear.ease},4)
-      .to('#slide_2', 0.7, {x: 510, ease: Linear.ease},8)
+      t2.fromTo('#slide_1', 0.7, {x: 510, ease: Linear.ease} ,{x: 0, ease: Linear.ease},0)
+      .to('#slide_1', 0.7, {x: -510, ease: Linear.ease},4)
+      .fromTo('#slide_2', 0.7, {x: 510, ease: Linear.ease} ,{x: 0, ease: Linear.ease},4)
+      .to('#slide_2', 0.7, {x: -510, ease: Linear.ease},8)
+
+       // Add event listener for the reverse button
+  document.getElementById("reverseButton").addEventListener("click", function() {
+    t2.reverse(); // Reverse the animation timeline
+  });
+
+  // Add event listener for the forward button
+  document.getElementById("forwardButton").addEventListener("click", function() {
+    t2.play(); // Play the animation timeline forward
+  });
 
     // Truncate function
     function truncateProductText(selector, truncLength) {
