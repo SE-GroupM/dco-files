@@ -1,0 +1,77 @@
+{
+  "id": "eab40cdf-467a-4aca-9ec6-34cd3842803e",
+  "version": "1.3.0",
+  "name": "biogaia_320x50",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 50,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "video_id": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_tracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "video_id": {
+            "value": "video_id"
+          },
+          "video_tracker": {
+            "value": "video_tracker"
+          },
+          "exit_url": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-ultralight?v=200",
+        "family": "okta-neue-ultralight",
+        "variant": "200"
+      },
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-blackitalic?v=900-italic",
+        "family": "okta-neue-blackitalic",
+        "variant": "900-italic"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1233,
+    "name": "Biogaia"
+  },
+  "port": 49345,
+  "folders": {
+    "selectedFolderId": 4064
+  }
+}

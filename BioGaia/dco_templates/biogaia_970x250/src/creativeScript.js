@@ -25,7 +25,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   var store = local_content.department_store.value;
     
   //Append copy to div
-  $("#copy").html(preCopy + ' ' + store + '<br><small>Subject for availability</small>');
+  $("#copy").html(preCopy + ' ' + store + '<br><small>Subject to availability</small>');
 
   //Variables for video
   var videoSrc = local_content.video_id.value;
