@@ -160,8 +160,8 @@ window.addEventListener('lemonpi.content/ready', event => {
     const elements = document.querySelectorAll('.product-name');
     elements.forEach(element => {
       // Check if text length is more than 25 characters and truncate if necessary
-      if (element.innerText.length > 40) {
-        element.innerText = element.innerText.substring(0, 36) + '...';
+      if (element.innerText.length > 34) {
+        element.innerText = element.innerText.substring(0, 32) + '...';
       }
     });
   }
