@@ -86,7 +86,7 @@ html, body {
   height: 30.64px;
   top: 500px;
   left: 55px;
-  width: 130px;
+  width: 155px;
 }
 #cta_button {
   position: absolute;
@@ -99,7 +99,7 @@ html, body {
   left: 40px;
   height: 45px;
   top: 505px;
-  width: 160px;
+  width: 185px;
 }
 #subtitle_top {
   position: absolute;
@@ -193,7 +193,7 @@ html, body {
   color: #fff;
   font-size: 15px;
   top: 520px;
-  left: 215px;
+  left: 235px;
   opacity: 75%;
 }
 
