@@ -38,11 +38,11 @@ html, body {
   font-family: 'okta-neue-ultralight';
   font-weight: 900;
   position: absolute;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: 10px;
+  line-height: 13px;
   color: black;
   left: 530px;
-  top: 10px;
+  top: 8px;
   max-width: 200px;
 }
 
