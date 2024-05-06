@@ -162,7 +162,7 @@ html, body {
   height: 65.9px;
   width: 254px;
   left: 18px;
-  font-size: 15.5px;
+  font-size: 18px;
   line-height: 19px;
   top: 267px;
 }
@@ -209,7 +209,7 @@ html, body {
 
 #legal_bg {
   width: 320px;
-  height: 400px;
+  height: 480px;
   background-color: rgba(128, 128, 128, 0.8);
   position: absolute;
   top: 0px;
