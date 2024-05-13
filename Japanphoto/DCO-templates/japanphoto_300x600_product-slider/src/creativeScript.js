@@ -18,244 +18,285 @@ function onLemonpiReady(cb) {
 // Callback to retrieve the adset data
 onLemonpiReady(function () {
   lemonpi.subscribe(function callback(content) {
-   
-    var local_content= content;
-
-    //Append main copy text
-    $('#mainCopy').html(local_content.mainCopy.value);
-    //Append main copy color
-    $('#mainCopy').css({
-      'color': local_content.copyColor.value,
-    });
-
-    //Append background image
-    $('#bgImage').css({
-      'background-image': 'url('+local_content.bgImage.value+ ')'
-    });
-
-     //Append logo
-     $('#logo').css({
-      'background-image': 'url('+local_content.logo.value+ ')'
-    });
-
-    $('#logoBg').css({
-      'background-color': local_content.logo_bg_color.value,
-    });
-
-    $('#bg_color').css({
-      'background-color': local_content.bgColor.value,
-    });
-
-    //Append right arrow
-    $('#right_arrow').css({
-    'background-image': 'url('+local_content.right_arrow.value+ ')'
-    });
-    //Append left arrow
-    $('#left_arrow').css({
-    'background-image': 'url('+local_content.left_arrow.value+ ')'
-    });
+    // code here
     
-    //Click function on slider
-    $('#slider').click(onClick)
+  });
+});
 
-    $(".left_arrow").click(function(){
-      rotate("left");
-    });
-    
-    $(".right_arrow").click(function(){
-      rotate("right");
-    });
-  
-    // World click source
-    var click = local_content.worldClick.value;
+// Fetch data from adset
+window.addEventListener('lemonpi.content/ready', event => {
+  // object holding all data from adset
+  const content = event.detail.content
+  const source = event.detail.source
 
-    var display_product_price = local_content.display_product_price.value;
+//Local varaible for content
+var local_content = content;
 
-    //Product collection from adset
-    var products = local_content.product_collection.value;
+// Defines how long the slider displays each product before a new one displays
+var timeBetweenSlides = 3;
 
-    var currentSlide = 1;
-    var totalSlides = 4; // total number of slides
-    var slideDuration = 4.7; // Total time for each slide animation (0.7s to come in, 4s stay, 0.7s to leave)
-   
+var bgColor= local_content.content_creative_background_color.value; // Background color source
+// Append background color to container
+$('#creative_container').css({
+  'background-color': bgColor,
+})
 
-    //For loop appending products
-    for (var i = 0; i < 4; i++){ 
+//Append logo and color
+var logoColor= local_content.logoColor_D82316_FFF_ebe2d6_474542.value; // Logo color source
+var svgLogo = '<svg id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.17 89.41"><defs><style>.cls-1{fill:'+logoColor+';}</style></defs><path class="cls-1" d="M197.21,247.85h-20.9v86.94h16.93V302.6h4.09c9.27,0,15.79-3.14,19.92-9.59,3.26-5,3.9-10.33,3.9-17.78,0-10.81-1.64-16.28-6.26-20.93C210.44,249.84,205,247.85,197.21,247.85ZM197,287h-3.72V263.47h4.21c7.21,0,7.5,3.42,7.5,11.87C205,284.19,204.59,287,197,287Z" transform="translate(-176.31 -246.72)"/><polygon class="cls-1" points="67.29 1.13 50.36 1.13 50.36 88.07 88.54 88.07 88.54 71.14 67.29 71.14 67.29 1.13"/><polygon class="cls-1" points="251.8 1.13 203.85 1.13 203.85 17.12 219.36 17.12 219.36 88.07 236.29 88.07 236.29 17.12 251.8 17.12 251.8 1.13"/><polygon class="cls-1" points="354.65 88.07 396.2 88.07 396.2 71.14 371.58 71.14 371.58 52.06 392.83 52.06 392.83 36.45 371.58 36.45 371.58 17.12 396.2 17.12 396.2 1.13 354.65 1.13 354.65 88.07"/><path class="cls-1" d="M287,247.85l-20.44,86.94H283.3l3.53-17.34h17.52L308,334.79h16.73l-20.44-86.94Zm2.73,55.28,5.69-27.9h.36l5.7,27.9Z" transform="translate(-176.31 -246.72)"/><polygon class="cls-1" points="181.91 44.08 181.57 44.08 165.81 1.13 150.96 1.13 150.96 88.07 167.89 88.07 167.89 45.05 168.23 45.05 184.07 88.07 198.85 88.07 198.85 1.13 181.92 1.13 181.91 44.08"/><path class="cls-1" d="M441.08,247.85l-20.43,86.94h16.73l3.52-17.34h17.52l3.67,17.34h16.73l-20.44-86.94Zm2.73,55.28,5.69-27.9h.36l5.7,27.9Z" transform="translate(-176.31 -246.72)"/><path class="cls-1" d="M524.21,276.2v-6.7c0-15-11.29-22.78-22.43-22.78s-22.44,7.82-22.44,22.78v43.84c0,15,11.28,22.79,22.44,22.79s22.43-7.83,22.43-22.79V285.73h-21.9V300h6.08v13.32c0,5.55-4.11,5.9-6.08,5.9s-6.08-.58-6.08-5.9V269.5c0-5.31,3.88-5.89,5.55-5.89s5.54.58,5.54,5.89v6.7Z" transform="translate(-176.31 -246.72)"/><path class="cls-1" d="M642.81,336.13a9.67,9.67,0,1,1,9.67-9.67A9.68,9.68,0,0,1,642.81,336.13Zm0-17.69a8,8,0,1,0,8,8A8,8,0,0,0,642.81,318.44Z" transform="translate(-176.31 -246.72)"/><path class="cls-1" d="M639.36,331.2v-9.92h4c2.25,0,3.16,1.3,3.17,2.94a2.46,2.46,0,0,1-1.81,2.56l2.19,4.42h-2.11l-1.87-4h-1.63v4Zm1.9-5.58h1.4c1.48,0,1.94-.47,1.94-1.4s-.56-1.4-1.61-1.4h-1.73Z" transform="translate(-176.31 -246.72)"/><polygon class="cls-1" points="433.59 44.08 433.25 44.08 417.49 1.13 402.64 1.13 402.64 88.07 419.57 88.07 419.57 45.05 419.91 45.05 435.75 88.07 450.53 88.07 450.53 1.13 433.6 1.13 433.59 44.08"/></svg>'
+$("#logo").css({
+'background': 'rgba(0,0,0,0)'
+}).append(svgLogo);
 
-      // Append image to product
-      $('#productImage_' + i).css({
-          backgroundImage: 'url("' + products[i].productImage.value + '")',
-        });
+var overlayColor= local_content.overlay_color.value; // Image color overlay source
+var overlayOpacity= local_content.overlay_opacity.value; // Image color overlay source
+// Append overlay color to container
+$('#overlay').css({
+  'background-color': overlayColor,
+  'opacity': overlayOpacity
+})
 
-      $('#productDescription_'+i).html(products[i].productDescription.value);
-      truncateProductText('#productDescription_'+i, 90)
-      
-      //Formatting prices
-      var productPrice = products[i].productPriceNumber.value;
-      var discountPriceNumber = products[i].productDiscountPriceNumber.value;
+var mainCopyShadow = local_content.mainCopy_shadow_yes_no.value;
+var copyColor = local_content.mainCopy_color.value; //Color of main copy
+var copyFontSize = local_content.mainCopy_fontsize.value; //Font size of main copy
+// Append main copy
+$('#mainCopy').css({
+  'color': copyColor,
+  'font-size': copyFontSize,
+  'text-shadow': mainCopyShadow,
+  'line-height': parseInt(copyFontSize) + 2 + 'px',
+})
 
-      // Append image to product
-      $('#productPrice_'+i).html(productPrice + ',-');
+var ctaCopyColor = local_content.cta_copy_color.value; //Color of cta copy
+var ctaBgcolor = local_content.cta_color.value; //Color of cta background
+// Append cta color
+$('.cta').css({
+  'color': ctaCopyColor,
+  'background-color': ctaBgcolor,
+})
 
-       /////////////////
-      /// FUNCTIONS ///
-     /////////////////
+$('#slider').click(onClick)
 
-     function rotate(direction) {
-      if (direction === 'left') {
-        currentSlide--; // Decrement to go to the previous slide
-        if (currentSlide < 1) {
-          currentSlide = totalSlides; // Loop back to last if we go below the first
-        }
-      } else if (direction === 'right') {
-        currentSlide++; // Increment to go to the next slide
-        if (currentSlide > totalSlides) {
-          currentSlide = 1; // Loop back to first if we go above the last
-        }
-      }
-      
-      // Calculate the new time position in the timeline to seek to
-      var timeToSeek = (currentSlide - 1) * slideDuration;
-      t2.seek(timeToSeek);
-    }
-
-      if (discountPriceNumber > 0) {
-        $('#productPrice_'+i).html('<span class="salePrice">' + productPrice + ',-</span> <span class="oldPrice">'+ products[i].productAveragePrice.value + '</span>');
-      }
-      if (display_product_price === "yes") {
-        document.querySelector('#productPrice_'+i).style.display = 'block';    
-      } else if (display_product_price === "no") {
-        document.querySelector('#productPrice_'+i).style.display = 'none';     
-    }
-
-      if (discountPriceNumber > 0) {
-        $('#productPrice_'+i).html('<span class="salePrice">' + productPrice + ',-</span> <span class="oldPrice">'+ products[i].productAveragePrice.value + '</span>');
-      }
-
-      // Append cta to product
-      $('#cta_'+i).html(local_content.ctaText.value); 
-
-    }  // End of loop
-
-  // Get coordinates for click    
-  function showCoords(event) {
-    var x = event.clientX;
-    var coords = x;
-    return coords;
-    
-  }
-
-  function onClick(event) {
-    var x = showCoords(event);
-  
-    if (x >= 10 && x <= 280 && currentSlide === 1) {
-      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-          placeholder: ['product_collection', 0, 'click'],
-        }
-      }));
-    }
-    else if (x >= 10 && x <= 280 && currentSlide === 2) {
-      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-          placeholder: ['product_collection', 1, 'click'],
-        }
-      }));
-    }
-    else if (x >= 10 && x <= 280 && currentSlide === 3) {
-      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-          placeholder: ['product_collection', 2, 'click'],
-        }
-      }));
-    }
-    else if (x >= 10 && x <= 280 && currentSlide === 4) {
-      window.dispatchEvent(new CustomEvent('lemonpi.interaction/click', {
-        detail: {
-          placeholder: ['product_collection', 3, 'click'],
-        }
-      }));
-    }
-  }
-
-  
-  //////////////////
- /// ANIMATIONS ///
-//////////////////
-
-    // Get current slide index
-    var currentSlide = 1; // Initialize current slide to slide 1
-    // Animation of product boxes
-    var t2 = new TimelineMax({
-      repeat: -1,
-      onUpdate: function() {
-          var currentTime = t2.time();
-          if (currentTime < 4) {
-              if (currentSlide !== 1) {
-                  currentSlide = 1;
-              }
-          } else if (currentTime >= 4 && currentTime < 8) {
-              if (currentSlide !== 2) {
-                  currentSlide = 2;
-              }
-          } else if (currentTime >= 8 && currentTime < 12) {
-              if (currentSlide !== 3) {
-                  currentSlide = 3;
-              }
-          } else if (currentTime >= 12 && currentTime < 16) { // Adjust this to match the desired duration
-              if (currentSlide !== 4) {
-                  currentSlide = 4;
-              }
+const Slider = {
+  currentSlideIndex: 1,
+  create: function(options) {
+      const defaults = {
+          slider: ".slider",
+          slide: ".slide",
+          prevBtn: ".prev",
+          nextBtn: ".next",
+          duration: 0.5,
+          setSlideContent: null,
+          animation: function(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete) {
+              timeline.to(slidesWrapper, {
+                  duration: duration,
+                  ease: "power2.inOut",
+                  x: -target,
+                  onComplete: onComplete
+              });
           }
-      }
-  });
-  
-  // Define slide animations with correct timing
-  t2.fromTo('#slide_1', 0.7, {x: 510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 0)
-    .to('#slide_1', 0.7, {x: -510, ease: Linear.ease}, 4)
-    .fromTo('#slide_2', 0.7, {x: 510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 4)
-    .to('#slide_2', 0.7, {x: -510, ease: Linear.ease}, 8)
-    .fromTo('#slide_3', 0.7, {x: 510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 8)
-    .to('#slide_3', 0.7, {x: -510, ease: Linear.ease}, 12)
-    .fromTo('#slide_4', 0.7, {x: 510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 12)
-    .to('#slide_4', 0.7, {x: -510, ease: Linear.ease}, 16); // Adjust end time to 16 to keep consistent intervals
-  
+      };
 
-    // Truncate function
-    function truncateProductText(selector, truncLength) {
-      var element = $(selector);
-      var truncateLength = truncLength;
-      
-      var sentence = element[0].innerText;
-      var result = sentence;
-      var resultArray = result;
-      element.css({
-          height: 'auto',
-      });
-      if (sentence.length >= truncateLength){
-        result = resultArray.split(" ").splice(0, 5).join(" ");
-        
-        splitSentence = result.split(" ")
-        secondCheck = splitSentence[0] + ' ' + splitSentence[1];
-        threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
-        fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
-        
-        if (fourWords.length >= truncateLength){
-          result = threeWords;
-        }
-        if (threeWords.length >= truncateLength){
-          result = secondCheck;
-        }
-        if (secondCheck.length >= truncateLength){
-          result = splitSentence[0]
-        }
-        element.text(result + '...');
-      } else{
-        element.text(result);
+      const settings = Object.assign({}, defaults, options);
+
+      const slidesContainer = document.querySelector(settings.slider);
+      const duration = settings.duration;
+      const slideTemplate = slidesContainer.querySelector(settings.slide);
+      const slidesWrapper = document.createElement("div");
+      const prevBtn = document.querySelector(settings.prevBtn);
+      const nextBtn = document.querySelector(settings.nextBtn);
+      const slideWidth = slideTemplate.clientWidth;
+      const slidesData = options.slidesData;
+
+      let slideIndex = 1;
+      let isAnimating = false;
+
+      if (!slidesData) {
+          console.warn('Slider.create has failed. No slidesData was found.')
+          return
+      } else if (!settings.setSlideContent) {
+          console.warn('Slider.create has failed. createSlide is empty');
+          return
       }
-      return result;
+
+      function createSlide(slideData, index) {
+          const slideDiv = slideTemplate.cloneNode(true);
+          slideTemplate.remove();
+          slideDiv.id = 'slide-' + index;
+          settings.setSlideContent(slideDiv, slideData, index);
+          slidesWrapper.appendChild(slideDiv);
+      }
+
+      function animateSlider(index, previousIndex, onComplete) {
+          const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
+          const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
+          const target = slideWidth * index;
+          const timeline = gsap.timeline({onComplete: onComplete})
+          settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
+      }
+
+      function nextSlide() {
+          if (isAnimating) return;
+          isAnimating = true;
+          slideIndex++;
+          const totalSlides = slidesData.length;
+          if (slideIndex === totalSlides+1) {
+              slideIndex = 1;
+              gsap.set(slidesWrapper, {x: 0})
+              animateSlider(slideIndex, slideIndex-1, function() {
+                  isAnimating = false;
+                });;
+          } else {
+              animateSlider(slideIndex, slideIndex-1, function() {
+                  isAnimating = false;
+                });
+          }
+          Slider.currentSlideIndex = slideIndex;
+        }
+        
+        function prevSlide() {
+          if (isAnimating) return;
+          isAnimating = true;
+          slideIndex--;
+          
+          const totalSlides = slidesData.length;
+          if (slideIndex < 1) {
+              slideIndex = totalSlides;
+              gsap.set(slidesWrapper, {x: -slideWidth*(totalSlides+1)});
+              animateSlider(slideIndex, slideIndex+1, function() {
+                  isAnimating = false;
+                });
+          } else {
+              animateSlider(slideIndex, slideIndex+1, function() {
+                  isAnimating = false;
+                });
+          }
+          Slider.currentSlideIndex = slideIndex;
+        }
+
+      slidesData.forEach((slideData, index) => createSlide(slideData, index));
+      // Clone the last slide and append it to the beginning of the slidesWrapper
+      const lastSlide = slidesWrapper.lastChild.cloneNode(true);
+      const firstSlide = slidesWrapper.firstChild.cloneNode(true);
+      lastSlide.id = "slide-2-clone";
+      slidesWrapper.insertBefore(lastSlide, slidesWrapper.firstChild);
+      firstSlide.id = "slide-0-clone";
+      slidesWrapper.appendChild(firstSlide);
+
+      slidesWrapper.id = "slidesWrapper"
+      slidesWrapper.style.width = slideWidth * slidesWrapper.children.length + "px"; // set container width
+      slidesWrapper.style.display = "flex"; // set container display
+      slidesWrapper.style.transform = `translateX(-${slideWidth}px)`;
+      slidesContainer.appendChild(slidesWrapper);
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
+
+      const clickSlider = document.querySelector('#slider');
+      clickSlider.addEventListener("click",onClick);
+
+      function onClick (slideIndex) {
+        // Check coordinates for which product area is clicked on.
+        var x = showCoords(event);
+        // Slide 1 clicks
+          return window.dispatchEvent(
+            new CustomEvent('lemonpi.interaction/click', {
+              detail: {
+                placeholder: ['products', slideIndex, 'click'],
+              }
+          }));
+      }
+  }
+};
+
+// var slider = plugins.slider.create({})
+
+Slider.create({
+	slidesData: local_content.products.value,
+  width: 160,
+	setSlideContent: function(slideDiv, slideData, slideIndex) {
+    
+    //Find product image div and append image
+		$(slideDiv).find("#product_img").css("background-image","url("+slideData.product_image.value+")");
+    //Find title div and append title
+		$(slideDiv).find("#title").html(slideData.title.value);
+    //Find description div and append description
+    $(slideDiv).find("#description").html(slideData.product_description.value);
+    //Find cta div and append cta copy
+    $(slideDiv).find("#cta").html(local_content.ctaText.value);
+    
+    // Variables for price
+    var priceNormal = slideData.priceNormal.value;
+    var priceDiscount = slideData.priceDiscount.value;
+    
+    var normalPrice = parseFloat(priceNormal);
+    normalPrice = normalPrice.toFixed(2);
+    var tempNormal = normalPrice.split(".")
+    
+    var discountPrice = parseFloat(priceDiscount);
+    discountPrice = discountPrice.toFixed(2);
+    var tempDiscount = discountPrice.split(".")
+
+    if (isNaN(discountPrice)) {
+      if (tempNormal[1] > 0o0) {
+        //Find price div and append price: Ex. 88.88
+        $(slideDiv).find('#price_elements').html(tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1]  + ' </span>');
+      } else {
+        //Find price div and append price: Ex. 88:-
+        $(slideDiv).find('#price_elements').html(tempNormal[0] + ':-');
+      }
+    } else {
+      if (tempDiscount[1] > 0o0) {
+        if (tempNormal[1] > 0o0) {
+          //Find price div and append price: Ex. 88.88 (88.88)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+        } else {
+          //Find price div and append price: Ex. 88.88 (88:-)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + '<span class="supPlantagen">' + tempDiscount[1] + '</span></span> (' + tempNormal[0] + ":-)");
+        }
+      } else {
+        if (tempNormal[1] > 0o0) {
+          //Find price div and append price: Ex. 88:- (88.88)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + '</span> (' + tempNormal[0] + '<span class="supPlantagen">' + tempNormal[1] + ' </span>)');
+        } else {
+          //Find price div and append price: Ex. 88.88 (88.88)
+          $(slideDiv).find('#price_elements').html('<span class="discountColor">' + tempDiscount[0] + ':-</span> (' + tempNormal[0] + ":-)");
+        }
+      }
     }
-  
-    });
-  });
+	}
+});
 
+// Auto swipe every three seconds
+var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
+ .add(playAutoSwipeAnimation, timeBetweenSlides);
+
+ // Function to auto swipe
+function playAutoSwipeAnimation () {
+  $('#prev').click();
+}
+
+// Get coordinates for product boxes
+function showCoords(event) {
+  var x = event.clientX;
+  var coords = x;
+  return coords;
+}
+
+//Animation of badge elements
+var t1 = new TimelineMax({repeat:-1});
+  t1.fromTo('#badgeElement1', 0.3, {rotationY: 0} ,{rotationY: -90},4)
+  .fromTo('#badgeElement2', 0.3, {rotationY: -90} ,{rotationY: 0},4.2)
+  .to('#badgeElement2', 0.3, {rotationY: -90}, 7)
+  .to('#badgeElement1', 0.3, {rotationY: 0}, 7.2)
+
+})
+
+
+ function onClick (event) {
+  return window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+        placeholder: ['products', currentProduct, 'click'],
+      }
+  }));
+}

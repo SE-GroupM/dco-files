@@ -59,11 +59,11 @@ onLemonpiReady(function () {
     $('#slider').click(onClick)
 
     $(".left_arrow").click(function(){
-      rotate("left");
+      rotate("right");
     });
     
     $(".right_arrow").click(function(){
-      rotate("right");
+      rotate("left");
     });
   
     // World click source
@@ -100,24 +100,40 @@ onLemonpiReady(function () {
        /////////////////
       /// FUNCTIONS ///
      /////////////////
-
      function rotate(direction) {
+      let oldSlide = currentSlide;
+  
       if (direction === 'left') {
-        currentSlide--; // Decrement to go to the previous slide
-        if (currentSlide < 1) {
-          currentSlide = totalSlides; // Loop back to last if we go below the first
-        }
+          currentSlide--;
+          if (currentSlide < 1) {
+              currentSlide = totalSlides;
+          }
       } else if (direction === 'right') {
-        currentSlide++; // Increment to go to the next slide
-        if (currentSlide > totalSlides) {
-          currentSlide = 1; // Loop back to first if we go above the last
-        }
+          currentSlide++;
+          if (currentSlide > totalSlides) {
+              currentSlide = 1;
+          }
       }
-      
-      // Calculate the new time position in the timeline to seek to
-      var timeToSeek = (currentSlide - 1) * slideDuration;
-      t2.seek(timeToSeek);
-    }
+  
+      var oldSlideElement = document.querySelector('#slide_' + oldSlide);
+      var newSlideElement = document.querySelector('#slide_' + currentSlide);
+  
+      if (oldSlideElement && newSlideElement) {
+          if (direction === 'left') {
+              // Move old slide to the right and bring new slide from the left
+              TweenMax.to(oldSlideElement, 1, { x: 510, ease: "linear" });
+              TweenMax.set(newSlideElement, { x: -510 });
+              TweenMax.to(newSlideElement, 1, { x: 0, ease: "linear" });
+          } else {
+              // Move old slide to the left and bring new slide from the right
+              TweenMax.to(oldSlideElement, 1, { x: -510, ease: "linear" });
+              TweenMax.set(newSlideElement, { x: 510 });
+              TweenMax.to(newSlideElement, 1, { x: 0, ease: "linear" });
+          }
+      } else {
+          console.log('Error: Slide elements not found!');
+      }
+  }
 
       if (discountPriceNumber > 0) {
         $('#productPrice_'+i).html('<span class="salePrice">' + productPrice + ',-</span> <span class="oldPrice">'+ products[i].productAveragePrice.value + '</span>');
@@ -210,6 +226,11 @@ onLemonpiReady(function () {
       }
   });
   
+
+  // Assuming t2 is your GSAP timeline for the slides
+var slideContainer = document.getElementById('slide_container');
+
+
   // Define slide animations with correct timing
   t2.fromTo('#slide_1', 0.7, {x: 510, ease: Linear.ease}, {x: 0, ease: Linear.ease}, 0)
     .to('#slide_1', 0.7, {x: -510, ease: Linear.ease}, 4)

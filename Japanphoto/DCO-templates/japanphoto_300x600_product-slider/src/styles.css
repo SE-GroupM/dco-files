@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 100%;
-  height: 100%;
+  width: 160px;
+  height: 600px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -24,169 +24,233 @@ html, body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  background-color: #f0f0f0;
 }
-/* Main copy on side panel */
-.mainCopy {
+/* Dynamic image */
+.dynamic_image {
+  /* z-index: 1; */
   position: absolute;
-  font-family: "CEWEHead-Bold";
-  bottom: 20px;
-  top: 120px;
-  left: 25px;
-  right: 25px;
-  font-size: 35px;
-  line-height: 35px;
-}
-/* Background image on side panel */
-.bgImage {
+  width: 160px;
   height: 300px;
-  width: 300px;
-  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
-  background-repeat: no-repeat;
-  background-position: center center;
+  left: 0px;
+  top: 0px;
   background-size: cover;
-  z-index: 0;
+  background-position: center center;
 }
-.bg_color {
-  position: absolute; 
-  width: 300px; 
+/* Copy container to flex copy */
+.copy_container {
+  position: absolute;
+  width: 140px;
+  height: 88px;
+  left: 30px;
+  top: 196px;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+/* Main copy */
+.mainCopy {
+  font-family: "plantagen-bold";
+  width: 100px;
+  height: 88px;
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: rgb(0, 0, 0) 1px 1px 15px;*/
+}
+/* Overlay of dynamic image */
+.overlay {
+  position: absolute;
+  width: 160px;
   height: 600px;
+  left: 0px;
+  top: 0px;
 }
-/* Logo image on side panel */
+/* Badge images */
+.badgeElement {
+  position: absolute;
+  width: 63px;
+  height: 74px;
+  left: 87px;
+  top: 24px;
+  background-size: contain;
+  background-position: top center;
+}
+/* Logo placeholder for svg element */
 .logo {
   position: absolute;
-  height: 80px;
-  width: 160px;
-  left: 25px;
-  top: 0px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 10;
-}
-.logoBg {
-  position: absolute;
-  height: 110px;
-  width: 300px; 
-  top: 500px;
-  clip-path: polygon(0 29%, 100% 0, 100% 100%, 0 100%);
-  z-index: 5;
-}
-.slider{
-  position: absolute;
-  top: 260px;
+  width: 69px;
+  height: 13px;
   left: 10px;
-  width: 280px;
+  top: 11px;
+  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+}
+/* Panel for products */
+.product_panel {
+  position: absolute;
+  width: 160px;
+  height: 600px;
+  left: 5px;
+}
+
+.slider {
+  position: absolute;
   height: 280px;
-  z-index: 1;
+  width: 160px;
+  top: 10px;
+  left: 5px;
 }
 .slide {
-  position: absolute;
-  width: 280px;
+  position: relative;
   height: 280px;
-  z-index: 1;
+  width: 160px;
+  top: 300px;
+  left: 5px;
 }
-.productBox {
+/* Product image */
+.product_img {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 280px;
-  width: 270px;
-  background-color: #fff;
-  border-radius: 3px;
-  padding: 3px;
-}
-
-#product_0 {
-  left: 5px;
-}
-
-#product_1 {
-  left: 5px;
-}
-
-#product_2 {
-  left: 5px;
-}
-
-#product_3 {
-  left: 5px;
-}
-
-/* Product imafe in product slider */
-.productImage {
-  position: absolute;
-  height: 160px;
-  width: 220px;
+  top: 5px;
+  left: 13px;
+  height: 115px;
+  width: 113px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
 }
-/* Product name in product slider */
-.productDescription {
-  top: 165px;
+/* Product info container */
+.product_info {
   position: absolute;
-  font-family: "CEWEHead-Regular";
-  font-size: 16px;
-  line-height: 17px;
-  color: #4c4c4c;
-  margin: 5px 10px;
-  text-align: center;
+  left: -5px;
+  height: 220px;
+  width: 138px;
+  padding: 32px 0px 5px 10px;
+  top: 116px;
 }
-/* Product price in product slider */
-.productPrice {
-  top: 210px;
+/* Title for products */
+.title {
+  font-family: "plantagen-bold";
+  font-size: 11px;
+  line-height: 12px;
+  margin-bottom: 8px;
+}
+/* Description for products */
+.description {
+  font-family: "plantagen-regular";
+  font-size: 11px;
+  line-height: 11px;
+}
+/* Price elements */
+.price_elements {
   position: absolute;
-  font-family: "CEWEHead-Bold";
+  font-family: "plantagen-bold";
   font-size: 18px;
-  line-height: 16px;
-  color: #4c4c4c;
-  margin-bottom: 5px;
-  text-align: center;
+  top: 90px;
 }
-/* Product sale price in product slider */
-.salePrice {
-  font-family: "CEWEHead-Bold";
-  color: #c30c15;
+
+/* Sup class for price elemts */
+.supPlantagen {
+  font-size: 50%;
+  position: relative;
+  top: -0.7em;
 }
-/* Product old price in product slider */
-.oldPrice {
-  font-family: "CEWEHead-Regular";
-  text-decoration: line-through;
-  color: #4d4d4d;
-  font-size: 16px;
-  line-height: 14px;
+
+/* Price discount color */
+.discountColor {
+  color: #d82316;
 }
-/* CTAs in product slider */
+
+/* Product box */
+.card {
+  position: absolute;
+  background-color: white;
+  height: 235px;
+  width: 140px;
+  top: 0px;
+  left: 0px;
+}
+
+/* Cta */
 .cta {
   position: absolute;
-  top: 235px;
-  font-family: "CEWEHead-Regular";
-  font-size: 14px;
-  color: #fff;
-  background-color: #c30c15;
-  padding: 6px 20px;
+  color: white;
+  font-family: "plantagen-bold";
+  height: 25px;
+  width: 137px;
+  border-radius: 6rem;
+  font-size: 11px;
+  bottom: 10px;
+  top: 133px;
   text-align: center;
-  max-width: 130px;
-  border-radius: 3px;
+  padding: 5px;
+  left: 5px;
 }
-.right_arrow {
+
+.next {
   position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotate(180deg);
-  width: 45px;
-  height: 85px;
-  top: 340px;
-  left: 241px;
-  z-index: 15;
+  z-index:1;
+  height: 24px;
+  width: 24px;
+  top: 420px;
+  left: 136px;
 }
-.left_arrow {
+
+.prev {
+  z-index: 1;
   position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 0px;
+  top: 420px;
+}
+
+.rightSliderBg{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+  background: url('https://lemonpi-prod-templates.s3.amazonaws.com/a497/17419/10/5cac8b6e01214691b1f58aebdcdaa5b4/220.svg');
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 45px;
-  height: 85px;
-  top: 380px;
-  left: 13px;
-  z-index: 15;
+  background-size: 25px 25px;
+}
+
+.rightSliderArrow{
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  left: 10px;
+  top: 7px;
+  background: url('https://lemonpi-prod-templates.s3.amazonaws.com/a497/17419/10/5cac8b6e01214691b1f58aebdcdaa5b4/221.svg');
+  background-repeat: no-repeat;
+  background-size: 6px 10px;
+}
+
+.leftSliderBg{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+  background: url('https://lemonpi-prod-templates.s3.amazonaws.com/a497/17419/10/5cac8b6e01214691b1f58aebdcdaa5b4/220.svg');
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.leftSliderArrow{
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  left: 10px;
+  top: 7px;
+  background: url('https://lemonpi-prod-templates.s3.amazonaws.com/a497/17419/10/5cac8b6e01214691b1f58aebdcdaa5b4/221.svg');
+  background-repeat: no-repeat;
+  background-size: 6px 10px;
+}
+
+.world_click {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 300px;
+  width: 160px;
 }
