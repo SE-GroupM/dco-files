@@ -58,23 +58,14 @@ onLemonpiReady(function () {
     //Click function on slider
     $('#slider').click(onClick)
 
-    $("#left_arrow").click(function(){
-      rotate("left")
+    $(".left_arrow").click(function(){
+      rotate("left");
+    });
+    
+    $(".right_arrow").click(function(){
+      rotate("right");
     });
   
-    $("#right_arrow").click(function(){
-      rotate("right")
-    });
-  
-    // Mouse enter and leave events for next and prev buttons
-    $("#creative_container").mouseenter(function() {
-      stopAutoRotate(); // Stops the carousel when mouse enters the button area
-    });
-  
-    $("#creative_container").mouseleave(function() {
-      startAutoRotate(); // Resumes the carousel when mouse leaves the button area
-    });
-
     // World click source
     var click = local_content.worldClick.value;
 
@@ -82,6 +73,11 @@ onLemonpiReady(function () {
 
     //Product collection from adset
     var products = local_content.product_collection.value;
+
+    var currentSlide = 1;
+    var totalSlides = 4; // total number of slides
+    var slideDuration = 4.7; // Total time for each slide animation (0.7s to come in, 4s stay, 0.7s to leave)
+   
 
     //For loop appending products
     for (var i = 0; i < 4; i++){ 
@@ -100,10 +96,28 @@ onLemonpiReady(function () {
 
       // Append image to product
       $('#productPrice_'+i).html(productPrice + ',-');
-      
+
        /////////////////
       /// FUNCTIONS ///
      /////////////////
+
+     function rotate(direction) {
+      if (direction === 'left') {
+        currentSlide--; // Decrement to go to the previous slide
+        if (currentSlide < 1) {
+          currentSlide = totalSlides; // Loop back to last if we go below the first
+        }
+      } else if (direction === 'right') {
+        currentSlide++; // Increment to go to the next slide
+        if (currentSlide > totalSlides) {
+          currentSlide = 1; // Loop back to first if we go above the last
+        }
+      }
+      
+      // Calculate the new time position in the timeline to seek to
+      var timeToSeek = (currentSlide - 1) * slideDuration;
+      t2.seek(timeToSeek);
+    }
 
       if (discountPriceNumber > 0) {
         $('#productPrice_'+i).html('<span class="salePrice">' + productPrice + ',-</span> <span class="oldPrice">'+ products[i].productAveragePrice.value + '</span>');
@@ -122,8 +136,6 @@ onLemonpiReady(function () {
       $('#cta_'+i).html(local_content.ctaText.value); 
 
     }  // End of loop
-
-
 
   // Get coordinates for click    
   function showCoords(event) {
