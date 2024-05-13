@@ -50,6 +50,18 @@
       "price_currency_content": {
         "type": "text",
         "source": "create"
+      },
+      "copyFrame1": {
+        "type": "text",
+        "source": "create"
+      },
+      "copyFrame2": {
+        "type": "text",
+        "source": "create"
+      },
+      "asteriskText": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -82,6 +94,15 @@
           },
           "price_currency_content": {
             "value": "price_currency_content"
+          },
+          "copyFrame1": {
+            "value": "copyFrame1"
+          },
+          "copyFrame2": {
+            "value": "copyFrame2"
+          },
+          "asteriskText": {
+            "value": "asteriskText"
           }
         }
       ]

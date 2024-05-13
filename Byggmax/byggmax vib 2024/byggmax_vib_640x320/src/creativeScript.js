@@ -22,6 +22,9 @@ window.addEventListener('lemonpi.content/ready', event => {
    
     // World click event caller
     $('#worldClick').click(onClick);
+    $('#copyFrame1').html(content.copyFrame1.value);
+    $('#copyFrame2').html(content.copyFrame2.value);
+    $('#asteriskText').html(content.asteriskText.value);
      
     // Define the video source and tracker variables
     var videoSrc = content.videoSrc.value;
@@ -56,15 +59,15 @@ window.addEventListener('lemonpi.content/ready', event => {
 var tl = new TimelineMax({repeat: -1});
 
 // Set initial opacity of both frames to 0
-TweenMax.set('#productName_1, #productName_2', { opacity: 0 });
+TweenMax.set('#productName_1, #productName_2, #copyFrame1, #copyFrame2',{ opacity: 0 });
 
 // Animate the first product name
-tl.to('#productName_1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
-  .to('#productName_1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
+tl.to('#productName_1, #copyFrame1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
+  .to('#productName_1, #copyFrame1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
 
 // Animate the second product name
-  .to('#productName_2', 0.3, {opacity: 1, ease: Linear.easeNone}, 3.6) // Start fading in slightly after the first fades out
-  .to('#productName_2', 0.3, {opacity: 0, ease: Linear.easeNone}, 5.7); // Fade out, completing the 6-second cycle
+  .to('#productName_2, #copyFrame2', 0.3, {opacity: 1, ease: Linear.easeNone}, 3.6) // Start fading in slightly after the first fades out
+  .to('#productName_2, #copyFrame2', 0.3, {opacity: 0, ease: Linear.easeNone}, 5.7); // Fade out, completing the 6-second cycle
 
       ////////////////
     /// FUNCTIONS ///

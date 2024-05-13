@@ -48,7 +48,7 @@ html, body {
   width: 985px;
   height: 240px;
   top: 0px;
-  left: -3px;
+  left: 0px;
   background-color: #000;
 }
 .seenthis-control-bar {
@@ -109,6 +109,29 @@ sup {
   font-size: 13px;
   font-family: "Mikro-Regular";
   color: #eb001e;
+}
+
+.asteriskText {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 215px;
+  width: 940px;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Mikro-Regular";
+  color: grey;
+}
+.copyFrame1, .copyFrame2 {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "Mikro-black-otf";
+  color: #eb001e;
+  letter-spacing: -3px;
 }
 /* World click div */
 .worldClick {
