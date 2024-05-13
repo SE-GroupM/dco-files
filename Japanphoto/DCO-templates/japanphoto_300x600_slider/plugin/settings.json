@@ -1,7 +1,7 @@
 {
-  "id": "4091f51d-0328-47e1-9484-1c2a079af1b2",
+  "id": "678dc124-b39a-482b-b1e0-024702d611a3",
   "version": "1.3.0",
-  "name": "cewe_no_slider_300x600",
+  "name": "japanphoto_300x600",
   "description": "",
   "size": {
     "sizes": [
@@ -77,14 +77,14 @@
     "Google": [],
     "Choreograph": [
       {
-        "advertiserId": 988,
-        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Bold?v=700",
+        "advertiserId": 987,
+        "url": "https://assets.lemonpi.io/a/font/987/CEWEHead-Bold?v=700",
         "family": "CEWEHead-Bold",
         "variant": "700"
       },
       {
-        "advertiserId": 988,
-        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Regular?v=400",
+        "advertiserId": 987,
+        "url": "https://assets.lemonpi.io/a/font/987/CEWEHead-Regular?v=400",
         "family": "CEWEHead-Regular",
         "variant": "400"
       }
@@ -95,11 +95,8 @@
     "name": "Xaxis Norway"
   },
   "advertiser": {
-    "id": 988,
-    "name": "Cewe"
+    "id": 987,
+    "name": "Japanphoto"
   },
-  "folders": {
-    "selectedFolderId": 3973
-  },
-  "port": 51538
+  "port": 51623
 }
