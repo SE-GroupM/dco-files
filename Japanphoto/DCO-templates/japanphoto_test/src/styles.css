@@ -98,6 +98,23 @@ html, body {
   border-radius: 3px;
   padding: 3px;
 }
+
+#product_0 {
+  left: 5px;
+}
+
+#product_1 {
+  left: 5px;
+}
+
+#product_2 {
+  left: 5px;
+}
+
+#product_3 {
+  left: 5px;
+}
+
 /* Product imafe in product slider */
 .productImage {
   position: absolute;
@@ -176,6 +193,7 @@ html, body {
   left: 13px;
   z-index: 15;
 }
+
 .worldClick {
   position: absolute;
   top: 0px;

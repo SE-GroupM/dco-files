@@ -62,15 +62,6 @@ var timeBetweenSlides = 3;
 
     $('#slider').click(onClick)
 
-     //Append right arrow
-     $('#next').css({
-      'background-image': 'url('+local_content.next.value+ ')'
-      });
-      //Append left arrow
-      $('#prev').css({
-      'background-image': 'url('+local_content.prev.value+ ')'
-      });
-
 const Slider = {
   currentSlideIndex: 1,
   create: function(options) {
