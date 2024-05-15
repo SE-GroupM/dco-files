@@ -71,6 +71,9 @@ var timeBetweenSlides = 3;
       'background-image': 'url('+local_content.prev.value+ ')'
       });
 
+      //Append ctaText
+    $('#ctaText').html(local_content.ctaText.value);
+
       $('#slider').click(onClick)
 
       const Slider = {
@@ -225,13 +228,6 @@ Slider.create({
     }
   }
 });
-
-//Append ctaText
-  $('#ctaText').html(local_content.ctaText.value);
-
-  $('#bg_color').css({
-    'background-color': local_content.bgColor.value,
-  });
 
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
