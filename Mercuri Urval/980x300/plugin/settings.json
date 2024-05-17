@@ -1,12 +1,12 @@
 {
-  "id": "a2673ad6-0247-4f36-8c1f-b13816fb85c3",
+  "id": "3c89974a-92f7-4ade-bf61-08ec98dcb255",
   "version": "1.2.0",
-  "name": "300x250_vsc_2024",
+  "name": "980x300_vsc_2024",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 300,
+        "width": 970,
         "height": 250,
         "isCustom": false
       }
@@ -83,8 +83,8 @@
     "id": 216,
     "name": "Mercuri Urval SE"
   },
+  "port": 54882,
   "folders": {
-    "selectedFolderId": 1069
-  },
-  "port": 53104
+    "selectedFolderId": 3798
+  }
 }
