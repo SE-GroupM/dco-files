@@ -63,7 +63,7 @@ html, body {
   width: 100px;
   height: 34px;
   left: 50%;
-  top: 207px;
+  top: 197px;
   transform: translate( -50%);
   z-index: 10;
 }
@@ -115,7 +115,17 @@ sup {
   font-family: "Mikro-Regular";
   color: #eb001e;
 }
-
+.asteriskText {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 235px;
+  width: 300px;
+  font-size: 7px;
+  text-align: center;
+  font-family: "Mikro-Regular";
+  color: grey;
+}
 /* World click div */
 .worldClick {
   width: 320px;

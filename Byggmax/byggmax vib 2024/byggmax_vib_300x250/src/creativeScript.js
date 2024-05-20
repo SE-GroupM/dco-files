@@ -22,6 +22,9 @@ window.addEventListener('lemonpi.content/ready', event => {
 
     // World click event caller
     $('#worldClick').click(onClick);
+    $('#copyFrame1').html(content.copyFrame1.value);
+    $('#copyFrame2').html(content.copyFrame2.value);
+    $('#asteriskText').html(content.asteriskText.value);
      
     // Define the video source and tracker variables
     var videoSrc = content.videoSrc.value;
