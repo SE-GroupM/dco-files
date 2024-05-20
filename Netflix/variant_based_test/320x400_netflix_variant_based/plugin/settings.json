@@ -6537,7 +6537,14 @@
   },
   "fonts": {
     "Google": [],
-    "Choreograph": []
+    "Choreograph": [
+      {
+        "advertiserId": 1152,
+        "url": "https://assets.lemonpi.io/a/font/1152/NetflixSans_UCdBd?v=700",
+        "family": "NetflixSans_UCdBd",
+        "variant": "700"
+      }
+    ]
   },
   "agency": {
     "id": 7,
@@ -6550,5 +6557,5 @@
   "folders": {
     "selectedFolderId": 2975
   },
-  "port": 62333
+  "port": 55346
 }
