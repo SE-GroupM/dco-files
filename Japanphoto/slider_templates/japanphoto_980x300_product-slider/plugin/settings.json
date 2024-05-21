@@ -1,20 +1,20 @@
 {
-  "id": "ce8fcecd-81ac-4e61-afd4-1b40253a2df5",
+  "id": "dcaecbac-2057-4631-a3f5-1e7c05cf19ec",
   "version": "1.3.0",
-  "name": "japanphoto_980x600_slider",
+  "name": "japanphoto_980x300_slider",
   "description": "",
   "size": {
     "sizes": [
       {
         "width": 980,
-        "height": 600,
+        "height": 300,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
         "width": 980,
-        "height": 600
+        "height": 300
       }
     ]
   },
@@ -138,8 +138,8 @@
     "id": 987,
     "name": "Japanphoto"
   },
+  "port": 63961,
   "folders": {
     "selectedFolderId": 4146
-  },
-  "port": 62309
+  }
 }

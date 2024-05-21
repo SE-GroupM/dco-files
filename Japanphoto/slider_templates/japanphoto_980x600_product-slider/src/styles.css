@@ -88,16 +88,16 @@ html, body {
 }
 .slide {
   position: relative;
-  height: 290px;
+  height: 470px;
   width: 280px;
-  top: 100px;
+  top: 65px;
   z-index: 15;
 }
 .card {
   position: absolute;
   display: flex;
   justify-content: center;
-  height: 400px;
+  height: 470px;
   width: 270px;
   background-color: #fff;
   border-radius: 3px;
@@ -114,7 +114,7 @@ html, body {
 }
 /* Product name in product slider */
 .productName {
-  top: 230px;
+  top: 270px;
   position: absolute;
   font-family: "CEWEHead-Regular";
   font-size: 21px;
@@ -123,11 +123,11 @@ html, body {
   margin: 5px 10px;
   text-align: center;
   z-index: 60;
-  width: 210px;
+  width: 230px;
 }
 /* Product price in product slider */
 .productPrice {
-  top: 340px;
+  top: 370px;
   position: absolute;
   font-family: "CEWEHead-Bold";
   font-size: 27px;
@@ -152,17 +152,16 @@ html, body {
 /* CTAs in product slider */
 .ctaText {
   position: fixed;
-  top: 400px;
+  top: 480px;
   font-family: "CEWEHead-Regular";
   text-align: center; /* Ensures text is centered within the button */
   border: none; 
-  font-size: 25px;
+  font-size: 22px;
   color: #fff;
   background-color: #c30c15;
   padding: 6px 20px;
   max-width: 170px;
   border-radius: 3px;
-  left: 40px;
   z-index: 10;
 }
 .next {
