@@ -71,13 +71,16 @@ var timeBetweenSlides = 3;
       'background-image': 'url('+local_content.prev.value+ ')'
       });
 
-      //Append ctaText
-    $('#ctaText').html(local_content.ctaText.value);
+      $('#bg_color, #bg_color2').css({
+        'background-color': local_content.bgColor.value,
+      });
+    
+      var copy_shadow = local_content.copy_shadow.value;
 
       $('#slider').click(onClick)
 
       const Slider = {
-        currentSlideIndex: 1,
+        currentSlideIndex: 1 & 2,
         create: function(options) {
             const defaults = {
                 slider: ".slider",
@@ -90,14 +93,14 @@ var timeBetweenSlides = 3;
                     timeline.to(slidesWrapper, {
                         duration: duration,
                         ease: "power2.inOut",
-                        x: -target,
+                        x: target,
                         onComplete: onComplete
                     });
                 }
             };
-      
+    
             const settings = Object.assign({}, defaults, options);
-      
+    
             const slidesContainer = document.querySelector(settings.slider);
             const duration = settings.duration;
             const slideTemplate = slidesContainer.querySelector(settings.slide);
@@ -106,10 +109,10 @@ var timeBetweenSlides = 3;
             const nextBtn = document.querySelector(settings.nextBtn);
             const slideWidth = slideTemplate.clientWidth;
             const slidesData = options.slidesData;
-      
+    
             let slideIndex = 1;
             let isAnimating = false;
-      
+    
             if (!slidesData) {
                 console.warn('Slider.create has failed. No slidesData was found.')
                 return
@@ -117,7 +120,7 @@ var timeBetweenSlides = 3;
                 console.warn('Slider.create has failed. createSlide is empty');
                 return
             }
-      
+    
             function createSlide(slideData, index) {
                 const slideDiv = slideTemplate.cloneNode(true);
                 slideTemplate.remove();
@@ -125,54 +128,53 @@ var timeBetweenSlides = 3;
                 settings.setSlideContent(slideDiv, slideData, index);
                 slidesWrapper.appendChild(slideDiv);
             }
-      
+    
             function animateSlider(index, previousIndex, onComplete) {
                 const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
                 const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
-                const target = slideWidth * index;
+                const target = -slideWidth * index;
                 const timeline = gsap.timeline({onComplete: onComplete})
                 settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
             }
-      
+    
             function nextSlide() {
+                if (isAnimating) return;
+                isAnimating = true;
+                slideIndex--;
+                const totalSlides = slidesData.length;
+                if (slideIndex < 1) {
+                    slideIndex = totalSlides;
+                    gsap.set(slidesWrapper, {x: slideWidth * totalSlides})
+                    animateSlider(slideIndex, 1, function() {
+                        isAnimating = false;
+                    });
+                } else {
+                    animateSlider(slideIndex, slideIndex + 1, function() {
+                        isAnimating = false;
+                    });
+                }
+                Slider.currentSlideIndex = slideIndex;
+            }
+    
+            function prevSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
                 slideIndex++;
                 const totalSlides = slidesData.length;
-                if (slideIndex === totalSlides+1) {
+                if (slideIndex === totalSlides + 1) {
                     slideIndex = 1;
-                    gsap.set(slidesWrapper, {x: 0})
-                    animateSlider(slideIndex, slideIndex-1, function() {
+                    gsap.set(slidesWrapper, {x: 0});
+                    animateSlider(slideIndex, totalSlides, function() {
                         isAnimating = false;
-                      });
+                    });
                 } else {
-                    animateSlider(slideIndex, slideIndex-1, function() {
+                    animateSlider(slideIndex, slideIndex - 1, function() {
                         isAnimating = false;
-                      });
+                    });
                 }
                 Slider.currentSlideIndex = slideIndex;
-              }
-              
-              function prevSlide() {
-                if (isAnimating) return;
-                isAnimating = true;
-                slideIndex--;
-                
-                const totalSlides = slidesData.length;
-                if (slideIndex < 1) {
-                    slideIndex = totalSlides;
-                    gsap.set(slidesWrapper, {x: -slideWidth*(totalSlides+1)});
-                    animateSlider(slideIndex, slideIndex+1, function() {
-                        isAnimating = false;
-                      });
-                } else {
-                    animateSlider(slideIndex, slideIndex+1, function() {
-                        isAnimating = false;
-                      });
-                }
-                Slider.currentSlideIndex = slideIndex;
-              }
-      
+            }
+    
             slidesData.forEach((slideData, index) => createSlide(slideData, index));
             // Clone the last slide and append it to the beginning of the slidesWrapper
             const lastSlide = slidesWrapper.lastChild.cloneNode(true);
@@ -181,7 +183,7 @@ var timeBetweenSlides = 3;
             slidesWrapper.insertBefore(lastSlide, slidesWrapper.firstChild);
             firstSlide.id = "slide-0-clone";
             slidesWrapper.appendChild(firstSlide);
-      
+    
             slidesWrapper.id = "slidesWrapper"
             slidesWrapper.style.width = slideWidth * slidesWrapper.children.length + "px"; // set container width
             slidesWrapper.style.display = "flex"; // set container display
@@ -189,26 +191,24 @@ var timeBetweenSlides = 3;
             slidesContainer.appendChild(slidesWrapper);
             nextBtn.addEventListener("click", nextSlide);
             prevBtn.addEventListener("click", prevSlide);
-      
-
+    
             const clickSlider = document.querySelector('#slider');
-            clickSlider.addEventListener("click",onClick);
-      
-            function onClick (slideIndex) {
-              // Check coordinates for which product area is clicked on.
-              var x = showCoords(event);
-              // Slide 1 clicks
+            clickSlider.addEventListener("click", onClick);
+    
+            function onClick(slideIndex) {
+                // Check coordinates for which product area is clicked on.
+                var x = showCoords(event);
+                // Slide 1 clicks
                 return window.dispatchEvent(
-                  new CustomEvent('lemonpi.interaction/click', {
-                    detail: {
-                      placeholder: ['product_collection', slideIndex, 'click'],
-                    }
-                }));
+                    new CustomEvent('lemonpi.interaction/click', {
+                        detail: {
+                            placeholder: ['product_collection', slideIndex, 'click'],
+                        }
+                    }));
             }
         }
-      };
+    };
       
-
 Slider.create({
   slidesData: local_content.product_collection.value,
   width: 300,
@@ -220,6 +220,8 @@ Slider.create({
     $(slideDiv).find("#productName").html(slideData.productName.value);
     //Find description div and append description
     $(slideDiv).find("#productPrice").html(slideData.productPriceNumber.value + ',-');
+    //Append ctaText
+    $(slideDiv).find("#ctaText").html(slideData.ctaText.value);
     //Find description div and append description
     $(slideDiv).find("#discountPriceNumber").html(slideData.productDiscountPriceNumber.value);
     $(slideDiv).find("#productAveragePrice").html(slideData.productAveragePrice.value);
@@ -228,6 +230,17 @@ Slider.create({
     }
   }
 });
+
+
+if (copy_shadow === 'yes') {
+  $('#mainCopy').css({
+    'text-shadow': '0px 1px 12px rgba(0, 0, 0, 0.3)'
+  });
+} else {
+  $('#mainCopy').css({
+    'text-shadow': 'none'
+  });
+}
 
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })

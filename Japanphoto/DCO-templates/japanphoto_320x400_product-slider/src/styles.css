@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 980px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -25,89 +25,80 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
   background-color: #f0f0f0;
-  position: fixed;
-  box-sizing: border-box;
-  z-index: 10;
-  border: solid #cccccc 1px;
 }
 /* Main copy on side panel */
 .mainCopy {
-  position: fixed;
+  position: absolute;
   font-family: "CEWEHead-Bold";
   bottom: 20px;
-  top: 145px;
-  left: 40px;
-  font-size: 40px;
-  line-height: 40px;
-  max-width: 300px;
-  text-align: left;
-  z-index: 10;
+  text-align: center;
+  top: 15px;
+  left: 42px;
+  right: 25px;
+  font-size: 23px;
+  line-height: 25px;
+  max-width: 240px;
 }
 /* Background image on side panel */
 .bgImage {
-  position: fixed;
-  height: 300px;
-  width: 480px;
-  clip-path: polygon(0 0, 100% 0%, 71% 100%, 0% 100%);
+  height: 355px;
+  width: 320px;
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  z-index:5;
-  left: 0px;
-}
-.bg_color {
-  position: absolute; 
-  width: 980px; 
-  height: 300px;
-  z-index:-1;
-}
-.bg_color2 {
-  position: absolute; 
-  width: 420px; 
-  height: 300px;
-  z-index: 5;
 }
 /* Logo image on side panel */
 .logo {
-  position: fixed;
-  height: 180px;
-  width: 210px;
-  left: 40px;
-  top: 0px;
-  background-repeat: no-repeat;
+  position: absolute;
+  repeat: no-repeat;
+  height: 70px;
+  width: 100px;
+  top: 345px;
+  left: 105px;
   background-size: contain;
   z-index: 10;
 }
+.logoBg {
+  position: absolute;
+  height: 60px;
+  width: 300px; 
+  top: 200px;
+  clip-path: polygon(0 29%, 100% 0, 100% 100%, 0 100%);
+  z-index: 50;
+}
 .slider{
   position: absolute;
-  top: 0px;
-  height: 290px;
-  width: 378px;
-  left: 420px;
-  /*z-index: 20;*/
+  top: 75px;
+  height: 200px;
+  width: 320px;
+  left: 0px;
+  z-index: 20;
 }
 .slide {
   position: relative;
-  height: 290px;
-  width: 280px;
-  top: 25px;
+  height: 200px;
+  width: 320px;
+  top: 0px;
   z-index: 15;
 }
 .card {
-  position: absolute;
+  position: absolute; 
   display: flex;
   justify-content: center;
-  height: 250px;
-  width: 270px;
+  height: 190px;
+  width: 300px;
+  top: 5px;
+  left: 10px;
   background-color: #fff;
-  border-radius: 3px;
-  padding: 10px;
+  padding: 3px;
+  
 }
 /* Product imafe in product slider */
 .productImage {
   position: absolute;
-  height: 140px;
-  width: 200px;
+  height: 110px;
+  width: 150px;
   top: 0px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -115,11 +106,11 @@ html, body {
 }
 /* Product name in product slider */
 .productName {
-  top: 130px;
+  top: 105px;
   position: absolute;
   font-family: "CEWEHead-Regular";
   font-size: 15px;
-  line-height: 19px;
+  line-height: 17px;
   color: #4c4c4c;
   margin: 5px 10px;
   text-align: center;
@@ -128,11 +119,11 @@ html, body {
 }
 /* Product price in product slider */
 .productPrice {
-  top: 185px;
+  top: 160px;
   position: absolute;
   font-family: "CEWEHead-Bold";
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 16px;
   color: #4c4c4c;
   margin-bottom: 5px;
   text-align: center;
@@ -147,49 +138,56 @@ html, body {
   font-family: "CEWEHead-Regular";
   text-decoration: line-through;
   color: #4d4d4d;
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 14px;
 }
 /* CTAs in product slider */
 .ctaText {
   position: fixed;
-  top: 235px;
+  top: 290px;
   font-family: "CEWEHead-Regular";
   text-align: center; /* Ensures text is centered within the button */
   border: none; 
-  font-size: 15px;
+  font-size: 12px;
   color: #fff;
   background-color: #c30c15;
   padding: 6px 20px;
-  max-width: 130px;
+  max-width: 160px;
   border-radius: 3px;
-  z-index: 10;
+  left: 110px;
+  z-index: 40;
 }
 .next {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(180deg);
-  width: 50px;
+  width: 45px;
   height: 85px;
-  top: 88px;
-  left: 921px;
+  top: 119px;
+  left: 260px;
   z-index: 25;
 }
 .prev {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 50px;
+  width: 45px;
   height: 85px;
-  top: 125px;
-  left: 417px;
+  top: 160px;
+  left: 13px;
   z-index: 25;
 }
 .worldClick {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 300;
-  width: 600px;
+  height: 400px;
+  width: 320px;
+}
+.bg_color {
+  position: absolute; 
+  width: 320px; 
+  height: 400px;
+  z-index: 0;
 }

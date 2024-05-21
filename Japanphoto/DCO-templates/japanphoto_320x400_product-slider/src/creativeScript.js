@@ -71,12 +71,6 @@ var timeBetweenSlides = 3;
       'background-image': 'url('+local_content.prev.value+ ')'
       });
 
-      $('#bg_color').css({
-        'background-color': local_content.bgColor.value,
-      });
-    
-      var copy_shadow = local_content.copy_shadow.value;
-
       $('#slider').click(onClick)
 
       const Slider = {
@@ -220,8 +214,6 @@ Slider.create({
     $(slideDiv).find("#productName").html(slideData.productName.value);
     //Find description div and append description
     $(slideDiv).find("#productPrice").html(slideData.productPriceNumber.value + ',-');
-    //Append ctaText
-    $(slideDiv).find("#ctaText").html(slideData.ctaText.value);
     //Find description div and append description
     $(slideDiv).find("#discountPriceNumber").html(slideData.productDiscountPriceNumber.value);
     $(slideDiv).find("#productAveragePrice").html(slideData.productAveragePrice.value);
@@ -231,15 +223,12 @@ Slider.create({
   }
 });
 
-if (copy_shadow === 'yes') {
-  $('#mainCopy').css({
-    'text-shadow': '0px 1px 12px rgba(0, 0, 0, 0.3)'
+//Append ctaText
+  $('#ctaText').html(local_content.ctaText.value);
+
+  $('#bg_color').css({
+    'background-color': local_content.bgColor.value,
   });
-} else {
-  $('#mainCopy').css({
-    'text-shadow': 'none'
-  });
-}
 
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
