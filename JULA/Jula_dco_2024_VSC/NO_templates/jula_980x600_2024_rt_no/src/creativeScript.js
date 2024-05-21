@@ -93,14 +93,14 @@ onLemonpiReady(function () {
       //If product price type is Jula club
       if (tempNormal[1] > 0o0) {
         //Ex. 88.88
-        $('#regularPrice').html('<span>JulaClub</span> <br><span style="font-size: 102px; line-height: 72px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+        $('#regularPrice').html('<span>JulaClub</span> <br><span style="font-size: 102px; line-height: 42px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
         $('.saleElement').css({
           'top': '134px',
           'right': '110px'
           });
       } else {
         //Ex. 88,-
-        $('#regularPrice').html('<span>JulaClub</span> <br><span style="font-size: 102px; line-height: 72px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+        $('#regularPrice').html('<span>JulaClub</span> <br><span style="font-size: 102px; line-height: 75px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
         $('.saleElement').css({
           'top': '134px',
           'right': '110px'

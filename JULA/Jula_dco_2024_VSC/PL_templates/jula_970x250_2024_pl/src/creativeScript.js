@@ -93,7 +93,7 @@ onLemonpiReady(function () {
       //If product price type is Jula club
       if (tempNormal[1] > 0o0) {
         //Ex. 88.88
-        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+        $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 30px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
         $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 50px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 4px;">.-</span>');
@@ -111,7 +111,7 @@ onLemonpiReady(function () {
       $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
 
-       // If we have a longer price, append other css on priceElement (sale-element)
+      // If we have a longer price, append other css on priceElement (sale-element)
      if (tempNormal[0].length > 2 && productPriceType == 'julaclub'){
       $('#priceElement').addClass('julaClubSaleElementLong');
       }

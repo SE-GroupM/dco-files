@@ -128,6 +128,9 @@ z-index: 1;
   background-color: #DA3A35;
   transform: rotate(-4deg);
 }
+.clubSaleElement{
+  top: 48px;
+}
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
   font-family: "Arial";

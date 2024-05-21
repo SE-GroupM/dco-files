@@ -94,7 +94,7 @@ onLemonpiReady(function () {
       //If product price type is Jula club
       if (tempNormal[1] > 0o0) {
         //Ex. 88.88
-        $('#regularPrice').html('JulaClub<br><span style="font-size: 40px; line-height: 30px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
+        $('#regularPrice').html('JulaClub<br><span style="font-size: 40px; line-height: 20px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1]  + '</span></span>');
       } else {
         //Ex. 88,-
         $('#regularPrice').html('JulaClub<br><span style="font-size: 28px; line-height: 25px;">' + tempNormal[0] + '<span style="letter-spacing: 0px; padding-right: 2px;">.-</span>');
@@ -111,6 +111,9 @@ onLemonpiReady(function () {
     if (productSaving !== "0") {
       $('#priceElement').html('Taniej o ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
       $('#priceElement').addClass('saleElement');
+      if (tempNormal[1] > 0o0){
+        $('#priceElement').addClass('clubSaleElement');
+      }
     }
     //Check if price type is 'tokbilligt' and append heroElement class and salePrice class
     if (productPriceType.toLowerCase().includes('oferta urodzinowa')) {
