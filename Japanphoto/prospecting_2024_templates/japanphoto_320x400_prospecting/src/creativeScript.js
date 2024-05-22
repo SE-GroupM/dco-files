@@ -1,240 +1,125 @@
 /**
   * Template Name
-  * @Owner Name Developer
-  * @Date
+  * @Östling Developer Name 
+  * 2024/03/06 - Initial template for Cewe/Japanphoto
 */
+
 function onLemonpiReady(cb) {
   if (cb) {
-      var loadLemonpiTimerId = setInterval(function() {
-          if (window.lemonpi) {
-              clearInterval(loadLemonpiTimerId);
-              cb();
-          }
-      }, 0);
-  }
-}
-
-
-window.addEventListener('lemonpi.content/ready', event => {
-console.clear();
-  const content = event.detail.content
-  const source = event.detail.source
-
-  
-  let product_container = document.getElementById("product_carousel");
-  let creative = document.getElementById("creative_container");
-
-  let image_1 = content.product_image_1.value;
-  let image_2 = content.product_image_2.value;
-  let image_3 = content.product_image_3.value;
-
-  const images = [ image_1, image_2, image_3 ]
-  let currentImageIndex = 1;
-
-  let url_1 = content.url_destination.value;
-  let url_2 = content.url_destination_2.value;
-  let url_3 = content.url_destination_3.value;
-
-  //use_slide_3_text: declairing if slide_3_text is used or not
-  let use_slide_3_text = JSON.parse(content.use_slide_3_text.value);
-  // holding bg image src
-  const bg_img = content.bg_img.value;
-  let use_bg_img = false;
-  
-  if (bg_img.includes('https:')) {
-    use_bg_img = true;
-  }else{
-    use_bg_img = false;
-  }
-  // if we are gonna use a asset image as bg
-  if (use_bg_img) {
-    $('#bg_div').css({
-      content: 'url('+ bg_img + ')',
-      'background-position': 'center center',
-      'position' : 'absolute',
-      'background-size': 'contain',
-    });
-  }else {
-    $('#bg_div').css({
-      'background-color': bg_img,
-      'width': '100%',
-    });
-  }
-
-  const urls = [url_1, url_2, url_3]
-
-  var leftDirectionVar = 300; // Controlls the slider value, on how much it should move the images.
-
-  $('#copy_1_text').html(content.copy_1_text.value)  
-  $('#copy_2_text').html(content.copy_2_text.value) 
-  $('#copy_3_text').html(content.copy_3_text.value)  
-
-  $('#logo_image').css({
-      content: 'url('+ content.logo_image.value + ')',
-  });
-
-  
-  $('#arrow_left, #arrow_right').click(onArrowClick)
-
-  for (let i = 1; i < 4; i++) {
-    if (i == 3) {
-      if(use_slide_3_text) {
-        // Create a div with text content when use_slide_3_text is true
-        $("<div>", {
-          'html': content.slide_3_text.value,
-          'class': "product_" + i + ' product_image',
-          css: {
-        'font-family': 'CEWE',
-        'font-size':'19px',
-        'color':'white',
-        'text-align':'center',
-        'top':'58px',
-        'left': 50 + (i-1)* (leftDirectionVar) + 'px',
-        'width': '220px',
-      },
-    }).appendTo(product_container);
-  }else {
-    $("<div>", {
-      'class': "product_" + i + ' product_image' ,
-      css: {
-        content: 'url('+ images[i-1] + ')',
-        'background-repeat': 'no-repeat',
-        'background-position': 'center center',
-        'position' : 'absolute',
-        'left': 80 + (i-1)* (leftDirectionVar) + 'px',
-        'width': 'auto',
-        'height': '210px',
-        'top':'25px'
-      },
-    }).appendTo(product_container);
-  }
-  } else if (i == 1) {
-    $("<div>", {
-      'class': "product_" + i + ' product_image' ,
-      css: {
-          content: 'url('+ images[i-1] + ')',
-          'background-repeat': 'no-repeat',
-          'background-position': 'center center',
-          'position' : 'absolute',
-          'left': 80 + (i-1)* (leftDirectionVar) + 'px',
-          'width': 'auto',
-          'height': '210px',
-          'top':'25px'
-      },
-    }).appendTo(product_container);
-  } else {
-    $("<div>", {
-      'class': "product_" + i + ' product_image' ,
-      css: {
-          content: 'url('+ images[i-1] + ')',
-          'background-repeat': 'no-repeat',
-          'background-position': 'center center',
-          'position' : 'absolute',
-          'left': 80 + (i-1)* (leftDirectionVar) + 'px',
-          'width': 'auto',
-          'height': '210px',
-          'top':'25px'
-      },
-    }).appendTo(product_container);
-  }
-}
-
-function onArrowClick(event) {
-  var direction = event.currentTarget.id === 'arrow_left' ? '+=' : '-=';
-  var goAhead = false;
-  
-  if (direction == "+=" && currentImageIndex > 1) {
-    currentImageIndex--;
-    goAhead = true;
-  } else if (direction == "-=" && currentImageIndex < 3) {
-    currentImageIndex++;
-    goAhead = true;
-  }
-  if (goAhead) {
-    
-    function goBackTostart (currentIndex, direction) {
-      if (currentIndex === 3 && direction =='-='){
-        var tl = new TimelineMax();
-        tl.to(".product_image", 0.7, { left: direction + (-leftDirectionVar*2), ease: Power1.easeInOut, delay: 2.2}, 0)
-      }else{
-  
+    var loadLemonpiTimerId = setInterval(function () {
+      if (window.lemonpi) {
+        clearInterval(loadLemonpiTimerId);
+        cb();
       }
-    }
-
-    var tl = new TimelineMax({});
-
-    tl.to(".product_image", 0.7, { left: direction + leftDirectionVar, ease: Power1.easeInOut}, 0)
-    .call(goBackTostart,[currentImageIndex, direction], null,tl.duration())
-    tl.to(".product_image", 0.7, { left: direction + leftDirectionVar, ease: Power1.easeInOut}, 9)
-    .call(goBackTostart,[currentImageIndex, direction], null,tl.duration())
-    tl.to(".product_image", 0.7, { left: direction + leftDirectionVar, ease: Power1.easeInOut}, 18)
-    .call(goBackTostart,[currentImageIndex, direction], null,tl.duration())
-    tl.to(".product_image", 0.7, { left: direction + leftDirectionVar, ease: Power1.easeInOut}, 27)
+    }, 0);
   }
-  
 }
- // Click event handler for the "world_click" div
-//  document.getElementById('world_click').onclick = function (event) {
 
-//   // Retrieve the URL from the data attribute of the currently displayed product image
-//   var currentURL = document.querySelector('div.product_'+currentImageIndex+'.product_image').getAttribute('data-url');
-
-//   var carousel_element = event.srcElement.nextElementSibling;
-//   var slider_element_1_left_value = carousel_element.querySelector(".product_1").style.left;
-
-// // URL 1 - if slider_element_1_left_value is greater than 10 and less than 100
-// if (parseInt(slider_element_1_left_value) > 10 && parseInt(slider_element_1_left_value) < 100) {
-//   currentURL = url_1;
-// }
-// // URL 2 - if slider_element_1_left_value is greater than -300 and less than -200
-//   else if (parseInt(slider_element_1_left_value) > -300 && parseInt(slider_element_1_left_value) < -200) {
-//     currentURL = url_2;
-//   } 
-//  // URL 3 - if slider_element_1_left_value is greater than -650 and less than -500
-//  else if (parseInt(slider_element_1_left_value) > -650 && parseInt(slider_element_1_left_value) < -500) {
-//   currentURL = url_3;
-//   }
-
-//   // Open the URL
-//  //window.open(currentURL, '_blank');
-// };
-
-document.getElementById('world_click').onclick = () =>
-window.dispatchEvent(
-    new CustomEvent('lemonpi.interaction/click', {
-    detail: {
-        placeholder: ['url_destination'],
-    }
-})
-);
-
-    $('#content')
-    .on('mouseenter touchstart', onUserEnter)
-    .on('mouseleave touchend', onUserLeave)
-  
-    function onUserEnter(event) {
-      autoSwipeAnimation.stop();
-    }
-    function onUserLeave(event) {
-      autoSwipeAnimation.restart();
-    }
-      
-    function playAutoSwipeAnimation() {
-      $("#arrow_right").click();
-    }
-  
-    TweenMax.set('#copy_2_text', { autoAlpha:0 });
-    TweenMax.set('#copy_3_text', { autoAlpha:0 });
-  
-    var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
-    .add(playAutoSwipeAnimation, 3)
-  
-    var textAnimation = new TimelineMax({repeat:-1})
-    .fromTo('#copy_1_text', 0.7, { autoAlpha:0 }, { autoAlpha: 1 }) 
-    .to('#copy_1_text', 0.7, { autoAlpha:0, delay: 2}) 
-    .to('#copy_2_text', 0.7, { autoAlpha:1}) 
-    .to('#copy_2_text', 0.7, { autoAlpha:0, delay:1.5})
-    .to('#copy_3_text', 0.7, { autoAlpha:1}) 
-    .to('#copy_3_text', 0.7, { autoAlpha:0, delay:1.5}) 
+// Callback to retrieve the adset data
+onLemonpiReady(function () {
+  lemonpi.subscribe(function callback(content) {
     
-    })
+    const local_content = content;
+
+    ////////////////////////////////////////////////
+   //        VARIABLES & DECLARATIONS            //
+  ////////////////////////////////////////////////
+
+  const mainCopy = local_content.mainText.value;
+  const subCopy = local_content.secondText.value;
+  const ctaCopy = local_content.ctaText.value;
+  const kampanje_logo = local_content.kampanje_logo.value;
+  const panel_bg_color = local_content.panel_bg_color.value;
+  const bg_img = local_content.img.value;
+  const fotobok_logo = local_content.fotobok_logo.value;
+  const cta_text_color = local_content.ctaText_color.value;
+  const kampanje_color = local_content.kampanje_color.value;
+  const cta_bg_color = local_content.ctaBg_color.value;
+  const kampanje_logo_yes_no = local_content.kampanje_logo_yes_no.value;
+  
+  $('#mainCopy').html(mainCopy); // append main copy to html div
+  $('#subCopy').html(subCopy); // append sub copy to html div
+  $('#ctaText').html(ctaCopy); // append cta text to html div
+  $('#kampanje_logo').html(kampanje_logo); // append kampanje_logo text to html div
+  /*
+  $(".mainCopy").css({"font-size": local_content.mainText_fontsize.value, "line-height": local_content.mainText_fontsize.value + 2});
+  $(".subCopy").css({"font-size": local_content.secondText_fontsize.value, "line-height": local_content.secondText_fontsize.value + 2});
+*/
+  $('#ctaText').css({
+    'color': cta_text_color,
+    'background-color': cta_bg_color,
+  })
+  $('#kampanje_logo').css({
+    'background-color': kampanje_color,
+  })
+  // Append panel bg color
+  $('#left_panel').css({
+    'background': panel_bg_color,
+  })
+  // Append img 
+  $('#img_bg').css({
+    content: 'url('+ bg_img + ')',
+    'background-repeat': 'no-repeat',
+   // 'background-position': 'top right',
+    'background-size': 'contain',
+  })
+   // Append second logo 
+   $('#fotobok_logo').css({
+    content: 'url('+ fotobok_logo + ')',
+    'background-repeat': 'no-repeat',
+   // 'background-position': 'top right',
+    'background-size': 'contain',
+  })
+  $('#worldClick').click(onClick);
+
+   /////////////////////
+  //// ANIMATIONS /////
+ ////////////////////
+ 
+//Animations of copy
+var tl = new TimelineMax({repeat:0});
+
+// Set initial opacity for #mainCopy and #subCopy
+tl.set('#mainCopy, #subCopy', { opacity: 0 });
+
+// Fade in animations for mainCopy and subCopy
+tl.to('.mainCopy', 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 0.5})
+  .to('.subCopy', 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 0.2});
+
+//Animations of copy
+var tl2 = new TimelineMax({repeat:-1});
+
+// Animation for ctaText with yoyo effect - Made faster
+tl2.fromTo('.ctaText', 0.2, // Reduced duration to 0.25 seconds for a faster bounce
+  {scale: 1}, 
+  {scale: 1.1, ease: Power1.easeInOut, repeat: 3, // Increased repeat to 4 for more bounces in a similar timeframe
+  yoyo: true}, "+=2.5");
+
+    ////////////////////////////////////////////////
+   //                FUNCTIONS                   //
+  ////////////////////////////////////////////////
+
+  if (kampanje_logo_yes_no === 'yes') {
+    $('#kampanje_logo').css({
+      'opacity': '1'
+    });
+  } else if (kampanje_logo_yes_no === 'no') {
+    $('#kampanje_logo').css({
+      'opacity': '0'
+    });
+  }
+
+  function onClick (event) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: 'click'
+        }
+    }));
+  }
+
+// End of code
+  });
+});
+
+  

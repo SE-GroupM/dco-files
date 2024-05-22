@@ -8,8 +8,9 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff00;
+  background-color: #fff;
 }
+
 #creative_container {
   width: 100%;
   height: 100%;
@@ -24,113 +25,98 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
 }
-.draggable {
-  position: relative;
-  width: 100%;
-  height: 100%;
+/* Panel container flex div */
+.left_panel {
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  top: 200px;
+  left:0px;
+  z-index: 0;
+}
+/* Panel container flex div */
+.img_bg {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.fotobok_logo{
+  position: absolute;
+  display: flex;
+  width: 128px;
+  height: auto;
+  left: 181px;
+  top: 0px;
+}
+
+.kampanje_logo {
+  position: absolute;
+  top: 155px;
+  left: 222px;
+  padding: 7px 12px 5px 12px; /*Padding top, right, bottom, left */
+  text-align: center;
+  color: #000;
+  font-family: "CEWEHead-Bold";
+  font-size: 15px;
+  max-width: fit-content; /* Take width from cta content */
+  margin: auto;
+  border-radius: 2px; /* Making border radius */
+  z-index: 30;
+}
+
+/* Main copy div */
+.mainCopy {
+  position: absolute;
+  width: 280px;
+  left: 30px;
+  top: 20px;
+  color: white;
+  font-family: "CEWEHead-Bold";
+  font-size: 30px;
+  line-height: 33px;
+}
+/* Main copy div */
+.subCopy {
+  position: absolute;
+  width: 258px;
+  left: 30px;
+  top: 93px;
+  color: white;
+  font-family: "CEWEHead-Regular";
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Cta button div */
+.ctaText {
+  position: absolute;
+  top: 152px;
+  left: 30px;;
+  padding: 7px 15px 5px 15px; /*Padding top, right, bottom, left */
+  text-align: center;
+  color: #000;
+  font-family: "CEWEHead-Regular";
+  font-size: 13px;
+  max-width: fit-content; /* Take width from cta content */
+  margin: auto;
+  border-radius: 8px; /* Making border radius */
+}
+
+/* World click div */
+.worldClick {
+  width: 320px;
+  height: 400px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
   left: 0px;
   top: 0px;
-  display: inline;
-}
-.copy_text {
-  position: absolute;
-  width: 160px;
-  height: 26.5786px;
-  font-family: CEWE;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  line-height: 17px;
-  top: 12px;
-  left:140px
-}
-#bg_div {
-  position: absolute;
   box-sizing: border-box;
-  /* background-color: #2e4f43;
-  border-image-source: none;
-  border-image-width: 1;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  border-color: transparent;
-  transform-origin: 50% 50% 0px;
-  -webkit-transform-origin: 50% 50% 0px;
-  -moz-transform-origin: 50% 50% 0px; */
-  z-index: -1;
-  height: 100%;
-}
-#logo_image {
-  position: absolute;
-  transform-origin: 50% 50% 0px;
-  -webkit-transform-origin: 50% 50% 0px;
-  -moz-transform-origin: 50% 50% 0px;
-  width: 120px;
-  height: 46px;
-  left: 9px;
-  top: 7px;
-}
-
-#cta_text {
-  font-family: CEWE;
-  background-color: #c30c15;
-  position: absolute;
-  left: 105px;
-  bottom: 20px;
-  height: 32px;
-  text-align: center;
-  width: 110px;
-  color: white;
-  border-radius: 3px;
-  font-size: 14px;
-  padding:6px;
-}
-#arrow_right {
-  left: 258px;
-  transform: rotate(180deg);
-  position: relative;
-}
-#arrow_left {
-  left: 20px;
-  position: relative;
-}
-.arrow {
-  top: 125px;
-  width: 18px;
-  height: 23px;
-  z-index: 1;
-
-}
-.product_carousel {
-  position: absolute;
-  width: 300px;
-  height: 150px;
-  left: 0px;
-  top: 80px;
-}
-.product_image {
-  position: relative;
-  width: 180px;
-  left: 34px;
-  height: 100px;
-  top: 15px;
-}
-#product_image_3 {
-  position: relative;
-  width: 240px;
-  height: 130px;
-  top: 10px;
-}
-#product_image_1 {
-  position: relative;
-  width: 200px;
-  height: 230px;
-  top: 15px;
-}
-#world_click {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  cursor: pointer;
   z-index: 1;
 }
