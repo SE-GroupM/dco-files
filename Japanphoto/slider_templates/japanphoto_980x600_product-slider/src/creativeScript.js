@@ -76,153 +76,151 @@ var timeBetweenSlides = 3;
       });
     
       var copy_shadow = local_content.copy_shadow.value;
-
-      $('#slider').click(onClick)
-
       const Slider = {
-          currentSlideIndex: 1,
-          create: function(options) {
-              const defaults = {
-                  slider: ".slider",
-                  slide: ".slide",
-                  prevBtn: ".next",
-                  nextBtn: ".prev",
-                  duration: 0.5,
-                  setSlideContent: null,
-                  animation: function(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete) {
-                      timeline.to(slidesWrapper, {
-                          duration: duration,
-                          ease: "power2.inOut",
-                          x: target,
-                          onComplete: onComplete
-                      });
-                  }
-              };
-      
-              const settings = Object.assign({}, defaults, options);
-      
-              const slidesContainer = document.querySelector(settings.slider);
-              const duration = settings.duration;
-              const slideTemplate = slidesContainer.querySelector(settings.slide);
-              const slidesWrapper = document.createElement("div");
-              const prevBtn = document.querySelector(settings.prevBtn);
-              const nextBtn = document.querySelector(settings.nextBtn);
-              const slideWidth = slideTemplate.clientWidth;
-              const slidesData = options.slidesData;
-      
-              let slideIndex = 1;
-              let isAnimating = false;
-      
-              if (!slidesData) {
-                  console.warn('Slider.create has failed. No slidesData was found.')
-                  return
-              } else if (!settings.setSlideContent) {
-                  console.warn('Slider.create has failed. createSlide is empty');
-                  return
-              }
-      
-              function createSlide(slideData, index) {
-                  const slideDiv = slideTemplate.cloneNode(true);
-                  slideTemplate.remove();
-                  slideDiv.id = 'slide-' + index;
-                  settings.setSlideContent(slideDiv, slideData, index);
-                  slidesWrapper.appendChild(slideDiv);
-              }
-      
-              function animateSlider(index, previousIndex, onComplete) {
-                  const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
-                  const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
-                  const target = -slideWidth * index;
-                  const timeline = gsap.timeline({onComplete: onComplete});
-                  settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
-              }
-      
-              function nextSlide() {
-                  if (isAnimating) return;
-                  isAnimating = true;
-                  slideIndex++;
-                  const totalSlides = slidesData.length;
-                  animateSlider(slideIndex, slideIndex - 1, function() {
-                      isAnimating = false;
-                      if (slideIndex === totalSlides + 1) {
-                          slideIndex = 1;
-                          gsap.set(slidesWrapper, {x: -slideWidth});
-                      }
-                      Slider.currentSlideIndex = slideIndex;
-                  });
-              }
-      
-              function prevSlide() {
-                  if (isAnimating) return;
-                  isAnimating = true;
-                  slideIndex--;
-                  const totalSlides = slidesData.length;
-                  animateSlider(slideIndex, slideIndex + 1, function() {
-                      isAnimating = false;
-                      if (slideIndex === 0) {
-                          slideIndex = totalSlides;
-                          gsap.set(slidesWrapper, {x: -slideWidth * totalSlides});
-                      }
-                      Slider.currentSlideIndex = slideIndex;
-                  });
-              }
-      
-              slidesData.forEach((slideData, index) => createSlide(slideData, index));
-              // Clone the last slide and append it to the beginning of the slidesWrapper
-              const lastSlide = slidesWrapper.lastChild.cloneNode(true);
-              const firstSlide = slidesWrapper.firstChild.cloneNode(true);
-              lastSlide.id = "slide-2-clone";
-              slidesWrapper.insertBefore(lastSlide, slidesWrapper.firstChild);
-              firstSlide.id = "slide-0-clone";
-              slidesWrapper.appendChild(firstSlide);
-      
-              slidesWrapper.id = "slidesWrapper";
-              slidesWrapper.style.width = slideWidth * slidesWrapper.children.length + "px"; // set container width
-              slidesWrapper.style.display = "flex"; // set container display
-              slidesWrapper.style.transform = `translateX(-${slideWidth}px)`;
-              slidesContainer.appendChild(slidesWrapper);
-              nextBtn.addEventListener("click", nextSlide);
-              prevBtn.addEventListener("click", prevSlide);
-      
-              const clickSlider = document.querySelector('#slider');
-              clickSlider.addEventListener("click", onClick);
-      
-              function onClick(slideIndex) {
-                  // Check coordinates for which product area is clicked on.
-                  var x = showCoords(event);
-                  // Slide 1 clicks
-                  return window.dispatchEvent(
-                      new CustomEvent('lemonpi.interaction/click', {
-                          detail: {
-                              placeholder: ['product_collection', slideIndex, 'click'],
-                          }
-                      }));
-              }
-          }
-      };
-      
-      Slider.create({
-        slidesData: local_content.product_collection.value,
-        width: 300,
-        setSlideContent: function(slideDiv, slideData, slideIndex) {
-          
-          //Find product image div and append image
-          $(slideDiv).find("#productImage").css("background-image","url("+slideData.productImage.value+")");
-          //Find title div and append title
-          $(slideDiv).find("#productName").html(slideData.productName.value);
-          //Find description div and append description
-          $(slideDiv).find("#productPrice").html(slideData.productPriceNumber.value + ',-');
-          //Append ctaText
-          $(slideDiv).find("#ctaText").html(slideData.ctaText.value);
-          //Find description div and append description
-          $(slideDiv).find("#discountPriceNumber").html(slideData.productDiscountPriceNumber.value);
-          $(slideDiv).find("#productAveragePrice").html(slideData.productAveragePrice.value);
-          if (slideData.productDiscountPriceNumber.value > 0) {
-            $(slideDiv).find("#productPrice").html('<span class="salePrice">' + slideData.productPriceNumber.value + ',-</span> <span class="oldPrice">'+ slideData.productAveragePrice.value + '</span>');
-          }
+        currentSlideIndex: 1,
+        create: function(options) {
+            const defaults = {
+                slider: ".slider",
+                slide: ".slide",
+                prevBtn: ".prev",
+                nextBtn: ".next",
+                duration: 0.5,
+                setSlideContent: null,
+                animation: function(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete) {
+                    timeline.to(slidesWrapper, {
+                        duration: duration,
+                        ease: "power2.inOut",
+                        x: target,
+                        onComplete: onComplete
+                    });
+                }
+            };
+    
+            const settings = Object.assign({}, defaults, options);
+    
+            const slidesContainer = document.querySelector(settings.slider);
+            const duration = settings.duration;
+            const slideTemplate = slidesContainer.querySelector(settings.slide);
+            const slidesWrapper = document.createElement("div");
+            const prevBtn = document.querySelector(settings.prevBtn);
+            const nextBtn = document.querySelector(settings.nextBtn);
+            const slideWidth = slideTemplate.clientWidth;
+            const slidesData = options.slidesData;
+    
+            let slideIndex = 1;
+            let isAnimating = false;
+    
+            if (!slidesData) {
+                console.warn('Slider.create has failed. No slidesData was found.')
+                return
+            } else if (!settings.setSlideContent) {
+                console.warn('Slider.create has failed. createSlide is empty');
+                return
+            }
+    
+            function createSlide(slideData, index) {
+                const slideDiv = slideTemplate.cloneNode(true);
+                slideTemplate.remove();
+                slideDiv.id = 'slide-' + index;
+                settings.setSlideContent(slideDiv, slideData, index);
+                slidesWrapper.appendChild(slideDiv);
+    
+                // Add click event listener for each slide
+                slideDiv.addEventListener('click', function(event) {
+                    onClick(event, index);
+                });
+            }
+    
+            function animateSlider(index, previousIndex, onComplete) {
+                const currentSlide = slidesWrapper.querySelectorAll(settings.slide)[index];
+                const lastSlide = slidesWrapper.querySelectorAll(settings.slide)[previousIndex];
+                const target = -slideWidth * index;
+                const timeline = gsap.timeline({onComplete: onComplete});
+                settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
+            }
+    
+            function nextSlide() {
+                if (isAnimating) return;
+                isAnimating = true;
+                slideIndex++;
+                const totalSlides = slidesData.length;
+                animateSlider(slideIndex, slideIndex - 1, function() {
+                    isAnimating = false;
+                    if (slideIndex === totalSlides + 1) {
+                        slideIndex = 1;
+                        gsap.set(slidesWrapper, {x: -slideWidth});
+                    }
+                    Slider.currentSlideIndex = slideIndex;
+                });
+            }
+    
+            function prevSlide() {
+                if (isAnimating) return;
+                isAnimating = true;
+                slideIndex--;
+                const totalSlides = slidesData.length;
+                animateSlider(slideIndex, slideIndex + 1, function() {
+                    isAnimating = false;
+                    if (slideIndex === 0) {
+                        slideIndex = totalSlides;
+                        gsap.set(slidesWrapper, {x: -slideWidth * totalSlides});
+                    }
+                    Slider.currentSlideIndex = slideIndex;
+                });
+            }
+    
+            slidesData.forEach((slideData, index) => createSlide(slideData, index));
+            // Clone the last slide and append it to the beginning of the slidesWrapper
+            const lastSlide = slidesWrapper.lastChild.cloneNode(true);
+            const firstSlide = slidesWrapper.firstChild.cloneNode(true);
+            lastSlide.id = "slide-2-clone";
+            slidesWrapper.insertBefore(lastSlide, slidesWrapper.firstChild);
+            firstSlide.id = "slide-0-clone";
+            slidesWrapper.appendChild(firstSlide);
+    
+            slidesWrapper.id = "slidesWrapper";
+            slidesWrapper.style.width = slideWidth * slidesWrapper.children.length + "px"; // set container width
+            slidesWrapper.style.display = "flex"; // set container display
+            slidesWrapper.style.transform = `translateX(-${slideWidth}px)`;
+            slidesContainer.appendChild(slidesWrapper);
+            nextBtn.addEventListener("click", nextSlide);
+            prevBtn.addEventListener("click", prevSlide);
+    
+            function onClick(event, slideIndex) {
+                // Handle the product click event
+                event.preventDefault();
+                window.dispatchEvent(
+                    new CustomEvent('lemonpi.interaction/click', {
+                        detail: {
+                            placeholder: ['product_collection', slideIndex, 'click'],
+                        }
+                    })
+                );
+            }
         }
-      });
-      
+    };
+    
+    Slider.create({
+      slidesData: local_content.product_collection.value,
+      width: 300,
+      setSlideContent: function(slideDiv, slideData, slideIndex) {
+        
+        // Find product image div and append image
+        $(slideDiv).find("#productImage").css("background-image","url("+slideData.productImage.value+")");
+        // Find title div and append title
+        $(slideDiv).find("#productName").html(slideData.productName.value);
+        // Find description div and append description
+        $(slideDiv).find("#productPrice").html(slideData.productPriceNumber.value + ',-');
+        // Append ctaText
+        $(slideDiv).find("#ctaText").html(slideData.ctaText.value);
+        // Find description div and append description
+        $(slideDiv).find("#discountPriceNumber").html(slideData.productDiscountPriceNumber.value);
+        $(slideDiv).find("#productAveragePrice").html(slideData.productAveragePrice.value);
+        if (slideData.productDiscountPriceNumber.value > 0) {
+          $(slideDiv).find("#productPrice").html('<span class="salePrice">' + slideData.productPriceNumber.value + ',-</span> <span class="oldPrice">'+ slideData.productAveragePrice.value + '</span>');
+        }
+      }
+    });
 
 function truncate() {
   // Select all elements with class 'product-name'
