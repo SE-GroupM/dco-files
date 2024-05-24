@@ -8,29 +8,59 @@
     <!-- Creative Generator -->
     <meta
       name="generator"
-      content="Visual Studio Code for Create v1.3.0"
+      content="Visual Studio Code for Create v1.2.0"
     />
 
     <!-- Creative Stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
-
+    <link ref="stylesheet" type="text/css" media="all" href="https://assets.lemonpi.io/a/font/198/SourceSansPro-Bold?v=700">
+    <link ref="stylesheet" type="text/css" media="all" href="https://assets.lemonpi.io/a/font/198/SourceSansPro-Regular?v=400">
     <title>Creative</title>
   </head>
-  <body>
+  <body data-engagement-metrics="true">
     <!-- Creative Content -->
     <div id="content">
-      <div id="creative_container">
-        <!-- Start creating template here -->
-        <!--         
-          Basic mapping of dynamic content
-          Add data-placeholder attributes to the elements that should contain dynamic content.
-          Example <div id="logo" class="logo" data-placeholder="logo"></div>
-        -->
+      <div id="creative_container" class="creative_container">
+
+        <div id="worldClick" class="worldClick">
+         
+        <div id="next" class="next"></div>
+        <div id="prev" class="prev"></div>
+
+        <!-- Product panel -->
+        <div id="slider" class="slider">
+          <div id="slide" class="slide">
+            <!-- Product box content -->
+
+            <div id="card" class="card">
+                <div id="product_name" class="product_name"></div>
+                <div id="product_regular_price" class="product_regular_price"></div>
+                <div id="product_image" class="product_image"></div>
+                <div id="cta_text" class="cta_text"></div>
+                <div id="product_promotion_type" class="product_promotion_type"></div>
+                <div id="cta_text" class="cta_text"></div>
+                <div id="promotion_text" class="promotion_text"></div>
+                <div id="product_old_price" class="product_old_price"></div>
+                <div id="product_new" class="product_new"></div>
+                <div id="description_text" class="description_text"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="headline" class="headline"></div>
+        <div id="subline" class="subline"></div>
+        <div id="logoImg" class="logoImg" data-placeholder="worldClick"></div>
+        </div>
+        </div>
+        <div id="bgColor" class="bgColor" data-placeholder="worldClick"></div>
+        <div id="campaignImg" class="campaignImg" data-placeholder="worldClick"></div>
       </div>
     </div>
 
+
     <!-- Creative Dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Visual Studio Code for Create related file (don't delete)" -->
@@ -39,3 +69,4 @@
     <!-- Creative Other Scripts -->
   </body>
 </html>
+
