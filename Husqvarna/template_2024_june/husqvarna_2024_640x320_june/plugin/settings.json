@@ -1,17 +1,22 @@
 {
-  "id": "9334e8ab-16f1-4662-aca7-7de02101477d",
+  "id": "ae2250a4-dad1-4b2c-ad6f-958f57642fe4",
   "version": "1.2.0",
-  "name": "husqvarna_2024_320x320_june",
+  "name": "husqvarna_2024_640x320_june",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
+        "width": 640,
         "height": 320,
-        "isCustom": false
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 640,
+        "height": 320
+      }
+    ]
   },
   "placeholders": {
     "schema": {
@@ -118,13 +123,13 @@
             "value": "Välj <span class='italic'>det <br>enkla livet</span>"
           },
           "frame_1_copy_fontsize": {
-            "value": "40px"
+            "value": "48px"
           },
           "frame_2_copy": {
             "value": "Välj Husqvarna robotgräsklippare"
           },
           "frame_2_copy_fontsize": {
-            "value": "30px"
+            "value": "25px"
           },
           "cta_copy": {
             "value": "TEKNIK DU KAN LITA PÅ"
@@ -167,7 +172,7 @@
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
           },
-          "exit_url": {
+          "exit_url\r": {
             "value": "https://www.husqvarna.com/se/utforska-och-upptack/basta-robotgrasklipparna/?utm_source=dv360-display&utm_medium=cpm&utm_campaign=se-residential-robotics-central-dv360-display-prog-display-prospecting-awareness-&utm_term=dv360-display-pge-suburbans-landowners-range-&utm_content=\r"
           }
         },
@@ -215,5 +220,5 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 61892
+  "port": 62076
 }
