@@ -39,32 +39,11 @@ window.addEventListener('lemonpi.content/ready', event => {
   //// ANIMATIONS /////
  ////////////////////
 
- var textArea = $(".copy_frame_1");
-
-var split = new SplitText(textArea);
-
-function random(min, max) {
-    return (Math.random() * (max - min)) + min;
-}
-
-$(split.chars).each(function(i) {
-    TweenMax.from($(this), 1.5, {
-        opacity: 1,
-        x: random(-500, 500),
-        y: random(-500, 500),
-        z: random(-500, 500),
-        scale: .1,
-        delay: i * .01,
-        yoyo: true,
-        repeat: -1,
-        repeatDelay: 0.5
-    });
-
 //Animations of copy
-//var tl = new TimelineMax({repeat:0});
-//TweenMax.set('#copy_frame_1', { opacity: 0 }) //Opacity on copy elements
- //tl.fromTo('#copy_frame_1 .span', 0.3, {x: 50, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
-   //.fromTo('#copy_frame_1 .span', 0.3, {x: 50, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0); //Copy frame 1 fade out
+  //var tl = new TimelineMax({repeat:0});
+  //TweenMax.set('#copy_frame_1', { opacity: 0 }) //Opacity on copy elements
+  //tl.fromTo('#copy_frame_1', 0.3, {x: 0, opacity:0, ease: Linear.ease},{x: 20, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
+    // .fromTo('#copy_frame_1', 0.3, {x: 50, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0); //Copy frame 1 fade out
 
 
   //Append exit url to creative container
@@ -77,5 +56,4 @@ $(split.chars).each(function(i) {
     })
   );
 })
-
 
