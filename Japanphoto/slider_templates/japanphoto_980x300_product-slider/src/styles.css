@@ -47,8 +47,8 @@ html, body {
 .bgImage {
   position: fixed;
   height: 300px;
-  width: 480px;
-  clip-path: polygon(0 0, 100% 0%, 71% 100%, 0% 100%);
+  width: 412px;
+  /*clip-path: polygon(0 0, 100% 0%, 71% 100%, 0% 100%);*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
