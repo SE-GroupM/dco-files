@@ -31,71 +31,79 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Bold";
   text-align: center;
-  top: 10px;
+  top: 30px;
   left: 10px;
-  font-size: 23px;
+  font-size: 22px;
   line-height: 25px;
-  width: 300px;
+  width: 240px;
   opacity: 0;
-  z-index: 1;
+  z-index: 60;
 }
 .subline {
   position: absolute;
   font-family: "SourceSansPro-Regular";
   text-align: center;
-  top: 35px;
+  top: 65px;
   left: 10px;
   font-size: 15px;
   line-height: 17px;
-  width: 300px;
+  width: 240px;
   opacity: 0;
-  z-index: 1;
+  z-index: 60;
 }
 .promotion_text {
   position: absolute;
   font-family: "SourceSansPro-Bold";
   text-align: center;
-  top: 5px;
+  top: 105px;
   color: #fff;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 9px;
+  line-height: 9px;
   z-index: 1;
   background-color: #d74621;
   border-radius: 10px;
-  padding: 2px 10px; /* Adds 10px padding top and bottom, 20px left and right */
+  padding: 3px 10px; /* Adds 10px padding top and bottom, 20px left and right */
 }
-
 /* Background image on side panel */
 .campaignImg {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 320px;
+  width: 250px;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 50;
+}
+/* bgColor on side panel */
+#bgColor {
+  position: absolute;
+  height: 320px;
+  width: 640px;
+  left: 220px;
+  z-index: 1;
 }
 /* Logo image on side panel */
 .logoImg {
   position: absolute;
   background-repeat: no-repeat;
-  height: 40px;
-  width: 70px;
-  top: 208px;
-  left: 120px;
+  height: 45px;
+  width: 90px;
+  top: 260px;
+  left: 80px;
   background-size: contain;
-  z-index: 10;
+  z-index: 60;
 }
 .slider {
   position: absolute;
-  top: 58px;
-  height: 200px;
-  width: 320px;
-  left: 40px;
+  top: 30px;
+  height: 260px;
+  width: 120px;
+  left: 290px;
   z-index: 20;
 }
 .slide {
   position: relative;
   height: 200px;
-  width: 320px;
+  width: 160px;
   top: 0px;
   z-index: 15;
 }
@@ -103,8 +111,8 @@ html, body {
   position: absolute; 
   display: flex;
   justify-content: center;
-  height: 140px;
-  width: 240px;
+  height: 260px;
+  width: 150px;
   top: 0px;
   left: 0px;
   background-color: #fff;
@@ -113,52 +121,51 @@ html, body {
 /* Product imafe in product slider */
 .product_image {
   position: absolute;
-  height: 65px;
-  width: 120px;
-  top: 23px;
+  height: 70px;
+  width: 130px;
+  top: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
 /* Product name in product slider */
 .product_name {
-  top: 103px;
+  top: 130px;
   position: absolute;
   font-family: "SourceSansPro-Bold";
   font-size: 15px;
   line-height: 17px;
   color: #000000;
+  margin: 5px 10px;
+  text-align: center;
   z-index: 60;
   width: 180px;
-  left: 10px;
 }
 .description_text {
-  top: 120px;
   position: absolute;
   font-family: "SourceSansPro-Regular";
+  text-align: center;
+  top: 152px;
   font-size: 13px;
   line-height: 17px;
   color: #000000;
-  left: 10px;
   z-index: 60;
-  width: 300px;
+  width: 150px;
 }
 /* Product price in product slider */
 .product_regular_price {
   position: absolute;
   font-family: "SourceSansPro-Bold";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 16px;
   color: #000;
   text-align: center;
-  top: 95px;
-  right: 10px;
+  top: 180px;
 }
 /* Product sale price in product slider */
 .salePrice {
   font-family: "SourceSansPro-Bold";
   color: #c30c15;
-  top: 82px;
 }
 /* Product old price in product slider */
 .product_old_price {
@@ -166,19 +173,17 @@ html, body {
   font-family: "SourceSansPro-Bold";
   text-decoration: line-through;
   color: #000;
-  font-size: 13px;
-  top: 95px;
-  right: 10px;
+  font-size: 14px;
+  top: 197px;
 }
 /* CTAs in product slider */
 .ctaText {
-  position: absolute;
-  top: 115px;
-  right: 10px;
+  position: fixed;
+  top: 220px;
   font-family: "SourceSansPro-Bold";
   text-align: center; /* Ensures text is centered within the button */
   border: none; 
-  font-size: 11px;
+  font-size: 14px;
   color: #fff;
   background-color: #000000;
   padding: 7px 10px;
@@ -193,9 +198,9 @@ html, body {
   background-size: contain;
   width: 17px;
   height: 25px;
-  top: 120px;
-  left: 290px;
-  z-index: 30;
+  top: 150px;
+  left: 613px;
+  z-index: 60;
 }
 .prev {
   position: absolute;
@@ -203,9 +208,9 @@ html, body {
   background-size: contain;
   width: 17px;
   height: 25px;
-  top: 120px;
-  left: 13px;
-  z-index: 30;
+  top: 150px;
+  left: 260px;
+  z-index: 60;
 }
 .worldClick {
   position: absolute;
@@ -219,4 +224,20 @@ html, body {
   width: 320px; 
   height: 400px;
   z-index: 0;
+}
+.bgBox1 {
+  position: absolute; 
+  top: 0px;
+  left: 250px;
+  width: 40px; 
+  height: 320px;
+  z-index: 20;
+}
+.bgBox2 {
+  position: absolute; 
+  top: 0px;
+  left: 600px;
+  width: 40px; 
+  height: 320px;
+  z-index: 20;
 }

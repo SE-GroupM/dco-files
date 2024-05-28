@@ -249,32 +249,23 @@ function truncate() {
   // Select all elements with class 'promotion_text' and truncate if necessary
   $('.promotion_text').each(function() {
     // Check if text length is more than 25 characters and truncate if necessary
-    if ($(this).text().length > 24) {
-      $(this).text($(this).text().substring(0, 22) + '');
+    if ($(this).text().length > 22) {
+      $(this).text($(this).text().substring(0, 20) + '...');
     }
   });
 
   // Additionally, check if there's an element with ID 'promotion_text'
   const promotionElement = $('#promotion_text');
-  if (promotionElement.length && promotionElement.text().length > 24) {
+  if (promotionElement.length && promotionElement.text().length > 21) {
     // Apply truncation for the ID element as well
-    promotionElement.text(promotionElement.text().substring(0, 22) + '');
+    promotionElement.text(promotionElement.text().substring(0, 19) + '...');
   }
 }
 
 // Run the function to apply the text truncation
 truncate();
-/*
-// Apply text shadow based on the value of text_shadow
-if (text_shadow === 'yes') {
-  $('#headline, #subline').css({
-    'text-shadow': '0px 0px 6px rgba(66, 68, 90, 1)'
-  });
-} else {
-  $('#headline, #subline').css({
-    'text-shadow': 'none'
-  });
-}*/
+
+
 var text_shadow = Number(local_content.text_shadow.value);
 
 // Apply text shadow based on the value of text_shadow
@@ -304,6 +295,7 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
     tl.to("#headline", 1, { opacity: 1 })
       .to("#subline", 1, { opacity: 1 }, "-=1"); // Fades in subline at the same time as headline
     
+
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
  .add(playAutoSwipeAnimation, timeBetweenSlides);
