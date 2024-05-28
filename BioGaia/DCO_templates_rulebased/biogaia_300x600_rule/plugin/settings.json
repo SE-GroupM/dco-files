@@ -1,0 +1,91 @@
+{
+  "id": "d08d87fe-fecc-424e-b9fc-33d72e3c42c7",
+  "version": "1.2.0",
+  "name": "biogaia_300x600_rule",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 300,
+        "height": 600,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "department_store": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_id": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_tracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_frame_1": {
+        "type": "text",
+        "source": "create"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "department_store": {
+            "value": "department_store"
+          },
+          "video_id": {
+            "value": "video_id"
+          },
+          "video_tracker": {
+            "value": "video_tracker"
+          },
+          "copy_frame_1": {
+            "value": "copy_frame_1"
+          },
+          "exit_url": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-blackitalic?v=900-italic",
+        "family": "okta-neue-blackitalic",
+        "variant": "900-italic"
+      },
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-ultralight?v=200",
+        "family": "okta-neue-ultralight",
+        "variant": "200"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1233,
+    "name": "Biogaia"
+  },
+  "folders": {
+    "selectedFolderId": 4064
+  },
+  "port": 61021
+}

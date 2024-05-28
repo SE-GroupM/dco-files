@@ -1,0 +1,85 @@
+{
+  "id": "a0434b84-d48c-4bd1-9cf9-1377bd52eeeb",
+  "version": "1.2.0",
+  "name": "biogaia_970x250_rule",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 970,
+        "height": 250,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "department_store": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_id": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_tracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_frame_1": {
+        "type": "text",
+        "source": "create"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "department_store": {
+            "value": "department_store"
+          },
+          "video_id": {
+            "value": "video_id"
+          },
+          "video_tracker": {
+            "value": "video_tracker"
+          },
+          "copy_frame_1": {
+            "value": "copy_frame_1"
+          },
+          "exit_url": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1233,
+        "url": "https://assets.lemonpi.io/a/font/1233/okta-neue-blackitalic?v=900-italic",
+        "family": "okta-neue-blackitalic",
+        "variant": "900-italic"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1233,
+    "name": "Biogaia"
+  },
+  "folders": {
+    "selectedFolderId": 4064
+  },
+  "port": 61275
+}
