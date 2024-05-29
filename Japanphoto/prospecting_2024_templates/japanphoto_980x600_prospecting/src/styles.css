@@ -26,7 +26,7 @@ html, body {
 /* Panel container flex div */
 .left_panel {
   position: absolute;
-  width: 334px;
+  width: 270px;
   height: 600px;
   top: 0px;
   left:0px;
@@ -36,7 +36,6 @@ html, body {
 .img_bg {
   position: absolute;
   height: 600px;
-  
   right: 0px;
   display: flex;
   align-items: center;
@@ -47,7 +46,7 @@ html, body {
   position: absolute;
   width: 208px;
   height: 52px;
-  left: 48px;
+  left: 20px;
   top: 59px;
 }
 .kampanje_logo {
@@ -69,7 +68,7 @@ html, body {
   display: flex;
   width: 240px;
   height: auto;
-  left: 48px;
+  left: 15px;
   top: 0px;
   z-index:30;
 }
@@ -77,7 +76,7 @@ html, body {
 .mainCopy {
   position: absolute;
   width: 208px;
-  left: 48px;
+  left: 30px;
   top: 167px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
@@ -90,7 +89,7 @@ html, body {
 .subCopy {
   position: absolute;
   width: 199px;
-  left: 48px;
+  left: 30px;
   top: 341px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
@@ -103,7 +102,7 @@ html, body {
 .ctaText {
   position: absolute;
   top: 492px;
-  left: 48px;;
+  left: 30px;
   padding: 7px 17px 5px 17px; /*Padding top, right, bottom, left */
   text-align: center;
   color: #000;

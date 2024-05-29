@@ -26,7 +26,7 @@ html, body {
 /* Panel container flex div */
 .left_panel {
   position: absolute;
-  width: 334px;
+  width: 290px;
   height: 300px;
   top: 0px;
   left:0px;
@@ -45,7 +45,7 @@ html, body {
   position: absolute;
   width: 176px;
   height: 44px;
-  left: 40px;
+  left: 30px;
   top: 26px;
 }
 .kampanje_logo {
@@ -67,7 +67,7 @@ html, body {
   display: flex;
   width: 170px;
   height: auto;
-  left: 41px;
+  left: 30px;
   top: 0px;
   z-index: 20;
 }
@@ -75,20 +75,20 @@ html, body {
 .mainCopy {
   position: absolute;
   width: 270px;
-  left: 41px;
-  top: 103px;
+  left: 30px;
+  top: 92px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
   font-family: "CEWEHead-Bold";
-  font-size: 30px;
+  font-size: 28px;
   line-height: 32px;
 }
 /* Main copy div */
 .subCopy {
   position: absolute;
   width: 268px;
-  left: 41px;
+  left: 30px;
   top: 176px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
@@ -101,7 +101,7 @@ html, body {
 .ctaText {
   position: absolute;
   top: 240px;
-  left: 41px;;
+  left: 30px;
   padding: 5px 15px 5px 15px; /*Padding top, right, bottom, left */
   text-align: center;
   color: #000;

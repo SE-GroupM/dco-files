@@ -40,9 +40,10 @@ html, body {
 }
 /* Background image on side panel */
 .bgImage {
-  height: 530px;
+  position: absolute;
+  height: 600px;
   width: 300px;
-  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+  /*clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -51,10 +52,10 @@ html, body {
 .logo {
   position: absolute;
   repeat: no-repeat;
-  height: 80px;
-  width: 140px;
-  top: 520px;
-  left: 75px;
+  height: 110px;
+  width: 160px;
+  top: 510px;
+  left: 70px;
   background-size: contain;
   z-index: 10;
 }
@@ -155,7 +156,7 @@ html, body {
   border-radius: 3px;
   z-index: 60;
 }
-.next {
+.prev {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
@@ -166,7 +167,7 @@ html, body {
   left: 241px;
   z-index: 25;
 }
-.prev {
+.next {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;

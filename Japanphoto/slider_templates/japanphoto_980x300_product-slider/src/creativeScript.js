@@ -111,14 +111,6 @@ var timeBetweenSlides = 3;
             let slideIndex = 1;
             let isAnimating = false;
     
-            if (!slidesData) {
-                console.warn('Slider.create has failed. No slidesData was found.')
-                return
-            } else if (!settings.setSlideContent) {
-                console.warn('Slider.create has failed. createSlide is empty');
-                return
-            }
-    
             function createSlide(slideData, index) {
                 const slideDiv = slideTemplate.cloneNode(true);
                 slideTemplate.remove();
@@ -143,13 +135,13 @@ var timeBetweenSlides = 3;
             function nextSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
-                slideIndex++;
+                slideIndex--;
                 const totalSlides = slidesData.length;
-                animateSlider(slideIndex, slideIndex - 1, function() {
+                animateSlider(slideIndex, slideIndex + 1, function() {
                     isAnimating = false;
-                    if (slideIndex === totalSlides + 1) {
-                        slideIndex = 1;
-                        gsap.set(slidesWrapper, {x: -slideWidth});
+                    if (slideIndex < 0) {
+                        slideIndex = totalSlides - 1;
+                        gsap.set(slidesWrapper, {x: -slideWidth * slideIndex});
                     }
                     Slider.currentSlideIndex = slideIndex;
                 });
@@ -158,13 +150,13 @@ var timeBetweenSlides = 3;
             function prevSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
-                slideIndex--;
+                slideIndex++;
                 const totalSlides = slidesData.length;
-                animateSlider(slideIndex, slideIndex + 1, function() {
+                animateSlider(slideIndex, slideIndex - 1, function() {
                     isAnimating = false;
-                    if (slideIndex === 0) {
-                        slideIndex = totalSlides;
-                        gsap.set(slidesWrapper, {x: -slideWidth * totalSlides});
+                    if (slideIndex >= totalSlides) {
+                        slideIndex = 0;
+                        gsap.set(slidesWrapper, {x: 0});
                     }
                     Slider.currentSlideIndex = slideIndex;
                 });
@@ -194,12 +186,13 @@ var timeBetweenSlides = 3;
                     new CustomEvent('lemonpi.interaction/click', {
                         detail: {
                             placeholder: ['product_collection', slideIndex, 'click'],
-                        }
-                    })
-                );
+                          }
+                        })
+                    );
+                }
             }
-        }
-    };
+        };
+        
     
     Slider.create({
       slidesData: local_content.product_collection.value,

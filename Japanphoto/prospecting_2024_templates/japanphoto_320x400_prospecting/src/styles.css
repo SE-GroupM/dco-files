@@ -72,11 +72,11 @@ html, body {
   position: absolute;
   width: 280px;
   left: 30px;
-  top: 20px;
+  top: 18px;
   color: white;
   font-family: "CEWEHead-Bold";
-  font-size: 30px;
-  line-height: 33px;
+  font-size: 29px;
+  line-height: 30px;
 }
 /* Main copy div */
 .subCopy {

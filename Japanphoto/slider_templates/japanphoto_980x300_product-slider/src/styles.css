@@ -165,7 +165,7 @@ html, body {
   border-radius: 3px;
   z-index: 10;
 }
-.next {
+.prev {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
@@ -176,7 +176,7 @@ html, body {
   left: 921px;
   z-index: 25;
 }
-.prev {
+.next {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
