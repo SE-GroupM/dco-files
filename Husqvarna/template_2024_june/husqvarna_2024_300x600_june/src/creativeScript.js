@@ -40,10 +40,10 @@ window.addEventListener('lemonpi.content/ready', event => {
  ////////////////////
 
 //Animations of copy
-  var tl = new TimelineMax({repeat:0});
-  TweenMax.set('#copy_frame_1', { opacity: 0 }) //Opacity on copy elements
-  tl.fromTo('#copy_frame_1', 0.3, {x: 0, opacity:0, ease: Linear.ease},{x: 20, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
-     .fromTo('#copy_frame_1', 0.3, {x: 50, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0); //Copy frame 1 fade out
+var tl = new TimelineMax({repeat:-1});
+TweenMax.set('#copy_frame_1', { opacity: 0 }) //Opacity on copy elements
+ tl.fromTo('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.frame_1_copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
+   .to('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 4); //Copy frame 1 fade out
 
 
   //Append exit url to creative container
@@ -56,4 +56,5 @@ window.addEventListener('lemonpi.content/ready', event => {
     })
   );
 })
+
 

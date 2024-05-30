@@ -1,13 +1,13 @@
 {
-  "id": "9334e8ab-16f1-4662-aca7-7de02101477d",
+  "id": "c17a3f62-12d3-4755-af0f-2c63a0c8054a",
   "version": "1.2.0",
-  "name": "husqvarna_2024_320x320_june",
+  "name": "husqvarna_2024_300x600_june",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 320,
+        "width": 300,
+        "height": 600,
         "isCustom": false
       }
     ],
@@ -118,13 +118,13 @@
             "value": "Välj <span class='italic'>det <br>enkla livet</span>"
           },
           "frame_1_copy_fontsize": {
-            "value": "40px"
+            "value": "48px"
           },
           "frame_2_copy": {
             "value": "Välj Husqvarna robotgräsklippare"
           },
           "frame_2_copy_fontsize": {
-            "value": "30px"
+            "value": "25px"
           },
           "cta_copy": {
             "value": "TEKNIK DU KAN LITA PÅ"
@@ -147,13 +147,13 @@
             "value": "Välj <span class='italic'>det <br>enkla livet</span>"
           },
           "frame_1_copy_fontsize": {
-            "value": "35px"
+            "value": "30px"
           },
           "frame_2_copy": {
             "value": "Välj Husqvarna robotgräsklippare"
           },
           "frame_2_copy_fontsize": {
-            "value": "25px"
+            "value": "19px"
           },
           "cta_copy": {
             "value": "TEKNIK DU KAN LITA PÅ"
@@ -162,7 +162,7 @@
             "value": "15px"
           },
           "image_source": {
-            "value": "https://assets.lemonpi.io/a/k/769c27d5-7e8c-45b7-b674-6fda3866b6d0/Assets/May-2024/250x600_hsq.jpg"
+            "value": "https://assets.lemonpi.io/a/k/e2048555-0a4f-4ebf-8197-a89cc3bc3179/Assets/May-2024/250x600_hsq_new.jpg"
           },
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
@@ -176,13 +176,13 @@
             "value": "Välj <span class='italic'>det <br>enkla livet</span>"
           },
           "frame_1_copy_fontsize": {
-            "value": "40px"
+            "value": "35px"
           },
           "frame_2_copy": {
             "value": "Välj Husqvarna robotgräsklippare"
           },
           "frame_2_copy_fontsize": {
-            "value": "30px"
+            "value": "22px"
           },
           "cta_copy": {
             "value": "TEKNIK DU KAN LITA PÅ"
@@ -191,7 +191,7 @@
             "value": "15px"
           },
           "image_source": {
-            "value": "https://assets.lemonpi.io/a/k/bc9893e6-5e7e-4232-a08c-2ef845dd5c5c/Assets/May-2024/300x600_hsq_new.jpg"
+            "value": "https://assets.lemonpi.io/a/k/7f25d97b-0ae9-4f45-bb0e-34940a246c1c/Assets/May-2024/300x600_hsq_new_v1.jpg"
           },
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
@@ -215,5 +215,8 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 49306
+  "folders": {
+    "selectedFolderId": 3415
+  },
+  "port": 61548
 }
