@@ -176,7 +176,7 @@
             "value": "Välj <span class='italic'>det <br>enkla livet</span>"
           },
           "frame_1_copy_fontsize": {
-            "value": "35px"
+            "value": "45px"
           },
           "frame_2_copy": {
             "value": "Välj Husqvarna robotgräsklippare"
@@ -191,7 +191,7 @@
             "value": "15px"
           },
           "image_source": {
-            "value": "https://assets.lemonpi.io/a/k/7f25d97b-0ae9-4f45-bb0e-34940a246c1c/Assets/May-2024/300x600_hsq_new_v1.jpg"
+            "value": "https://assets.lemonpi.io/a/k/60d07eae-2919-408f-83c8-f14564c4d1fb/Assets/May-2024/300x600_hsq_new_v3.jpg"
           },
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
@@ -215,8 +215,8 @@
     "id": 504,
     "name": "Husqvarna"
   },
+  "port": 54758,
   "folders": {
     "selectedFolderId": 3415
-  },
-  "port": 61548
+  }
 }

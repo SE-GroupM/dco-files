@@ -26,7 +26,7 @@ html, body {
 /* Style of copy frames */
 .copy_frame_1 {
   position: absolute;
-  top: 118px;
+  top: 124px;
   width: 320px;
   padding: 0px 10px;
   text-align: center;
@@ -38,7 +38,7 @@ html, body {
 /* Style of copy frame 2 */
 .copy_frame_2 {
   position: absolute;
-  top: 154px;
+  top: 234px;
   width: 320px;
   padding: 0px 10px;
   text-align: center;
@@ -86,6 +86,6 @@ html, body {
   background-size: contain;
   width: 69px;
   height: 69px;
-  left: 26px;
+  left: 236px;
   top: 0px;
 }

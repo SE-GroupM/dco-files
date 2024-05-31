@@ -152,7 +152,7 @@
             "value": "Välj <span class='italic'>det <br>enkla livet</span>"
           },
           "frame_1_copy_fontsize": {
-            "value": "30px"
+            "value": "45px"
           },
           "frame_2_copy": {
             "value": "Välj Husqvarna robotgräsklippare"
@@ -220,8 +220,8 @@
     "id": 504,
     "name": "Husqvarna"
   },
+  "port": 53592,
   "folders": {
     "selectedFolderId": 3415
-  },
-  "port": 63502
+  }
 }

@@ -29,7 +29,7 @@ html, body {
 #copy_frame_1 {
   opacity: 0;
   position: absolute;
-  top: 370px;
+  top: 130px;
   width: 300px;
   padding: 0px 10px;
   text-align: center;
@@ -41,7 +41,7 @@ html, body {
 /* Style of copy frame 2 */
 #copy_frame_2 {
   position: absolute;
-  top: 455px;
+  top: 465px;
   width: 300px;
   padding: 0px 10px;
   text-align: center;
@@ -64,7 +64,7 @@ html, body {
 /* Style of cta */
 .cta {
   position: absolute;
-  top: 520px;
+  top: 510px;
   padding: 12px 18px;
   font-size: 15px;
   line-height: 15px;
@@ -90,6 +90,6 @@ html, body {
   background-size: contain;
   width: 98px;
   height: 98px;
-  left: 34px;
+  left: 174px;
   top: 0px;
 }

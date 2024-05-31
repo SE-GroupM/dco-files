@@ -39,23 +39,11 @@ window.addEventListener('lemonpi.content/ready', event => {
   //// ANIMATIONS /////
  ////////////////////
 
- var tl = new TimelineMax({repeat:0});
-TweenMax.set('#copy_frame_1', { opacity: 0 }) // Set initial opacity
-
-// Animate from center to outwards
-tl.fromTo('#copy_frame_1', 0.3, 
-  { x: 0, y: 0, opacity: 0, ease: Linear.ease },  // Start from center with opacity 0
-  { x: 20, y: 20, opacity: 1, ease: Linear.ease }, 0  // Move to right and down with opacity 1
-)
-  .to('#copy_frame_1', 0.3, 
-  { x: 50, y: 50, opacity: 0, ease: Linear.ease }, 0.3  // Continue moving outwards and fade out
-);
-
-// //Animations of copy
-//   var tl = new TimelineMax({repeat:0});
-//   TweenMax.set('#copy_frame_1', { opacity: 0 }) //Opacity on copy elements
-//   tl.fromTo('#copy_frame_1', 0.3, {x: 0, opacity:0, ease: Linear.ease},{x: 20, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
-//      .fromTo('#copy_frame_1', 0.3, {x: 50, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0); //Copy frame 1 fade out
+//Animations of copy
+var tl = new TimelineMax({repeat:-1});
+TweenMax.set('#copy_frame_1', { opacity: 0 }) //Opacity on copy elements
+ tl.fromTo('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease},{lineHeight: local_content.frame_1_copy_fontsize.value, y: 0, opacity:1, ease: Linear.ease}, 0) //Copy frame 1 fade in
+   .to('#copy_frame_1', 0.3, {lineHeight: '0px', y: 50, opacity:0, ease: Linear.ease}, 4); //Copy frame 1 fade out     .fromTo('#copy_frame_1', 0.3, {x: 50, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0); //Copy frame 1 fade out
 
 
   //Append exit url to creative container

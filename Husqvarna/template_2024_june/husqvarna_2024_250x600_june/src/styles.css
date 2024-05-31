@@ -41,7 +41,7 @@ html, body {
 /* Style of copy frame 2 */
 #copy_frame_2 {
   position: absolute;
-  top: 420px;
+  top: 460px;
   width: 250px;
   padding: 0px 10px;
   text-align: center;
@@ -90,6 +90,6 @@ html, body {
   background-size: contain;
   width: 98px;
   height: 98px;
-  left: 34px;
+  left: 134px;
   top: 0px;
 }

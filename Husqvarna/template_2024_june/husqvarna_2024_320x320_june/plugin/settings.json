@@ -86,10 +86,10 @@
         },
         {
           "frame_1_copy": {
-            "value": "Välj <span class='italic'>det enkla livet</span>"
+            "value": "Välj <span class='italic'>det <br>enkla livet</span>"
           },
           "frame_1_copy_fontsize": {
-            "value": "30px"
+            "value": "33px"
           },
           "frame_2_copy": {
             "value": "Välj Husqvarna robotgräsklippare"
@@ -104,7 +104,7 @@
             "value": "10px"
           },
           "image_source": {
-            "value": "https://assets.lemonpi.io/a/k/1eb7f9c7-ba2a-44bc-8f38-bc189a647c16/Assets/May-2024/320x320_hsq_new.jpg"
+            "value": "https://assets.lemonpi.io/a/k/b3d2c2cf-c63a-4dd0-ab39-6c8d4b2365eb/Assets/May-2024/320x320_hsq_new_v1.jpg"
           },
           "logo_source": {
             "value": "https://assets.lemonpi.io/a/k/44ccccee-dc2b-4826-bfcd-89e6a35720e4/Assets/H880-0400-small-2.png"
@@ -215,5 +215,8 @@
     "id": 504,
     "name": "Husqvarna"
   },
-  "port": 49306
+  "folders": {
+    "selectedFolderId": 3415
+  },
+  "port": 58480
 }
