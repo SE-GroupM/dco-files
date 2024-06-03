@@ -135,13 +135,13 @@ var timeBetweenSlides = 3;
             function nextSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
-                slideIndex--;
+                slideIndex++;
                 const totalSlides = slidesData.length;
-                animateSlider(slideIndex, slideIndex + 1, function() {
+                animateSlider(slideIndex, slideIndex - 1, function() {
                     isAnimating = false;
-                    if (slideIndex < 0) {
-                        slideIndex = totalSlides - 1;
-                        gsap.set(slidesWrapper, {x: -slideWidth * slideIndex});
+                    if (slideIndex >= totalSlides) {
+                        slideIndex = 0;
+                        gsap.set(slidesWrapper, {x: 0});
                     }
                     Slider.currentSlideIndex = slideIndex;
                 });
@@ -150,13 +150,13 @@ var timeBetweenSlides = 3;
             function prevSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
-                slideIndex++;
+                slideIndex--;
                 const totalSlides = slidesData.length;
-                animateSlider(slideIndex, slideIndex - 1, function() {
+                animateSlider(slideIndex, slideIndex + 1, function() {
                     isAnimating = false;
-                    if (slideIndex >= totalSlides) {
-                        slideIndex = 0;
-                        gsap.set(slidesWrapper, {x: 0});
+                    if (slideIndex < 0) {
+                        slideIndex = totalSlides - 1;
+                        gsap.set(slidesWrapper, {x: -slideWidth * slideIndex});
                     }
                     Slider.currentSlideIndex = slideIndex;
                 });
@@ -186,13 +186,12 @@ var timeBetweenSlides = 3;
                     new CustomEvent('lemonpi.interaction/click', {
                         detail: {
                             placeholder: ['product_collection', slideIndex, 'click'],
-                          }
-                        })
-                    );
-                }
+                        }
+                    })
+                );
             }
-        };
-        
+        }
+    };
     
     Slider.create({
       slidesData: local_content.product_collection.value,
@@ -205,21 +204,16 @@ var timeBetweenSlides = 3;
         $(slideDiv).find("#productName").html(slideData.productName.value);
         // Append ctaText
         $(slideDiv).find("#ctaText").html(slideData.ctaText.value);
-       $(slideDiv).find("#productPrice").html(formatPrice(slideData.productPriceNumber.value + ',-'));
-       $(slideDiv).find("#discountPriceNumber").html(formatPrice(slideData.productDiscountPriceNumber.value));
-       $(slideDiv).find("#productAveragePrice").html(formatPrice(slideData.productAveragePrice.value));
+       $(slideDiv).find("#productPrice").html((slideData.productPriceNumber.value + ',-'));
+       $(slideDiv).find("#discountPriceNumber").html((slideData.productDiscountPriceNumber.value));
+       $(slideDiv).find("#productAveragePrice").html((slideData.productAveragePrice.value));
        if (slideData.productDiscountPriceNumber.value > 0) {
-       $(slideDiv).find("#productPrice").html('<span class="salePrice">' + formatPrice(slideData.productPriceNumber.value) + ',-</span> <span class="oldPrice">' + formatPrice(slideData.productAveragePrice.value) + '</span>');
+       $(slideDiv).find("#productPrice").html('<span class="salePrice">' + (slideData.productPriceNumber.value) + ',-</span> <span class="oldPrice">' + (slideData.productAveragePrice.value) + '</span>');
     }
 
     }
   });
      
-        // Function to format price with a space for thousands separator
-  function formatPrice(price) {
-  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  }    
-
   function truncate() {
   // Select all elements with class 'product-name'
   const elements = document.querySelectorAll('.productName');
