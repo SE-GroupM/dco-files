@@ -52,6 +52,7 @@ var timeBetweenSlides = 3;
     'line-height': local_content.subline_fontSize.value + 'px',
     'top': local_content.subline_top.value + 'px',
   });
+ 
   //Append background image
   $('#campaignImg').css({
   'background-image': 'url('+local_content.campaignImg.value+ ')'
@@ -216,6 +217,10 @@ Slider.create({
     $(slideDiv).find("#product_new").html(slideData.product_new.value);
     // Append ctaText
     $(slideDiv).find('#ctaText').html(local_content.ctaText.value);
+    $(slideDiv).find('#ctaText').css({
+    'color': local_content.ctaCopyColor.value,
+    'background-color': local_content.ctaButtonBg.value,
+    });
     // Find description div and append description
     $(slideDiv).find("#promotion_text").html(slideData.promotion_text.value);
     $(slideDiv).find("#description_text").html(slideData.description_text.value);
@@ -236,7 +241,7 @@ Slider.create({
     }
   }
 );
-
+ 
 function truncate() {
   // Select all elements with class 'description_text' and truncate if necessary
   $('.description_text').each(function() {
@@ -249,22 +254,21 @@ function truncate() {
   // Select all elements with class 'promotion_text' and truncate if necessary
   $('.promotion_text').each(function() {
     // Check if text length is more than 25 characters and truncate if necessary
-    if ($(this).text().length > 22) {
-      $(this).text($(this).text().substring(0, 20) + '...');
+    if ($(this).text().length > 24) {
+      $(this).text($(this).text().substring(0, 22) + '');
     }
   });
 
   // Additionally, check if there's an element with ID 'promotion_text'
   const promotionElement = $('#promotion_text');
-  if (promotionElement.length && promotionElement.text().length > 21) {
+  if (promotionElement.length && promotionElement.text().length > 24) {
     // Apply truncation for the ID element as well
-    promotionElement.text(promotionElement.text().substring(0, 19) + '...');
+    promotionElement.text(promotionElement.text().substring(0, 22) + '');
   }
 }
 
 // Run the function to apply the text truncation
 truncate();
-
 
 var text_shadow = Number(local_content.text_shadow.value);
 
@@ -295,7 +299,6 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
     tl.to("#headline", 1, { opacity: 1 })
       .to("#subline", 1, { opacity: 1 }, "-=1"); // Fades in subline at the same time as headline
     
-
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
  .add(playAutoSwipeAnimation, timeBetweenSlides);

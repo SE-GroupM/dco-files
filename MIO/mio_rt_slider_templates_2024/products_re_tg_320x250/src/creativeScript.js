@@ -52,6 +52,7 @@ var timeBetweenSlides = 3;
     'line-height': local_content.subline_fontSize.value + 'px',
     'top': local_content.subline_top.value + 'px',
   });
+ 
   //Append background image
   $('#campaignImg').css({
   'background-image': 'url('+local_content.campaignImg.value+ ')'
@@ -216,6 +217,10 @@ Slider.create({
     $(slideDiv).find("#product_new").html(slideData.product_new.value);
     // Append ctaText
     $(slideDiv).find('#ctaText').html(local_content.ctaText.value);
+    $(slideDiv).find('#ctaText').css({
+    'color': local_content.ctaCopyColor.value,
+    'background-color': local_content.ctaButtonBg.value,
+    });
     // Find description div and append description
     $(slideDiv).find("#promotion_text").html(slideData.promotion_text.value);
     $(slideDiv).find("#description_text").html(slideData.description_text.value);
@@ -236,7 +241,7 @@ Slider.create({
     }
   }
 );
-
+ 
 function truncate() {
   // Select all elements with class 'description_text' and truncate if necessary
   $('.description_text').each(function() {
@@ -264,17 +269,7 @@ function truncate() {
 
 // Run the function to apply the text truncation
 truncate();
-/*
-// Apply text shadow based on the value of text_shadow
-if (text_shadow === 'yes') {
-  $('#headline, #subline').css({
-    'text-shadow': '0px 0px 6px rgba(66, 68, 90, 1)'
-  });
-} else {
-  $('#headline, #subline').css({
-    'text-shadow': 'none'
-  });
-}*/
+
 var text_shadow = Number(local_content.text_shadow.value);
 
 // Apply text shadow based on the value of text_shadow

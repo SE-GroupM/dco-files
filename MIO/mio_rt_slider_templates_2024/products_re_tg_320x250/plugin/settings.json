@@ -68,10 +68,6 @@
         "type": "text",
         "source": "create"
       },
-      "imgLayer": {
-        "type": "text",
-        "source": "create"
-      },
       "headline_fontSize": {
         "type": "text",
         "source": "create"
@@ -88,16 +84,24 @@
         "type": "text",
         "source": "create"
       },
-      "campaignText": {
-        "type": "text",
-        "source": "create"
-      },
-      "mainCopy": {
-        "type": "text",
-        "source": "create"
-      },
       "bgLeft": {
         "type": "image",
+        "source": "create"
+      },
+      "next": {
+        "type": "image",
+        "source": "create"
+      },
+      "prev": {
+        "type": "image",
+        "source": "create"
+      },
+      "headline_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "subline_top": {
+        "type": "text",
         "source": "create"
       }
     },
@@ -141,9 +145,6 @@
           "subline_color": {
             "value": "subline_color"
           },
-          "imgLayer": {
-            "value": "imgLayer"
-          },
           "headline_fontSize": {
             "value": "headline_fontSize"
           },
@@ -156,14 +157,20 @@
           "ctaCopy": {
             "value": "ctaCopy"
           },
-          "campaignText": {
-            "value": "campaignText"
-          },
-          "mainCopy": {
-            "value": "mainCopy"
-          },
           "bgLeft": {
             "value": ""
+          },
+          "next": {
+            "value": ""
+          },
+          "prev": {
+            "value": ""
+          },
+          "headline_top": {
+            "value": "headline_top"
+          },
+          "subline_top": {
+            "value": "subline_top"
           }
         }
       ]
@@ -194,8 +201,8 @@
     "id": 198,
     "name": "Mio"
   },
-  "port": 50229,
   "folders": {
     "selectedFolderId": 4390
-  }
+  },
+  "port": 55303
 }

@@ -179,8 +179,6 @@ html, body {
   text-align: center; /* Ensures text is centered within the button */
   border: none; 
   font-size: 11px;
-  color: #fff;
-  background-color: #000000;
   padding: 7px 10px;
   max-width: 160px;
   z-index: 40;

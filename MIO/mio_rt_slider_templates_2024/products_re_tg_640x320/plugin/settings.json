@@ -68,10 +68,6 @@
         "type": "text",
         "source": "create"
       },
-      "imgLayer": {
-        "type": "text",
-        "source": "create"
-      },
       "headline_fontSize": {
         "type": "text",
         "source": "create"
@@ -85,14 +81,6 @@
         "source": "create"
       },
       "ctaCopy": {
-        "type": "text",
-        "source": "create"
-      },
-      "campaignText": {
-        "type": "text",
-        "source": "create"
-      },
-      "mainCopy": {
         "type": "text",
         "source": "create"
       },
@@ -157,9 +145,6 @@
           "subline_color": {
             "value": "subline_color"
           },
-          "imgLayer": {
-            "value": "imgLayer"
-          },
           "headline_fontSize": {
             "value": "headline_fontSize"
           },
@@ -171,12 +156,6 @@
           },
           "ctaCopy": {
             "value": "ctaCopy"
-          },
-          "campaignText": {
-            "value": "campaignText"
-          },
-          "mainCopy": {
-            "value": "mainCopy"
           },
           "bgLeft": {
             "value": ""
@@ -225,5 +204,5 @@
   "folders": {
     "selectedFolderId": 4390
   },
-  "port": 61586
+  "port": 64373
 }
