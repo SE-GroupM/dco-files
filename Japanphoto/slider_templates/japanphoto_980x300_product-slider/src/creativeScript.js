@@ -132,7 +132,7 @@ var timeBetweenSlides = 3;
                 settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
             }
     
-            function nextSlide() {
+            function prevSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
                 slideIndex++;
@@ -147,7 +147,7 @@ var timeBetweenSlides = 3;
                 });
             }
     
-            function prevSlide() {
+            function nextSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
                 slideIndex--;

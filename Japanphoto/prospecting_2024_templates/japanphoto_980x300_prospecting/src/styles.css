@@ -67,7 +67,7 @@ html, body {
   display: flex;
   width: 170px;
   height: auto;
-  left: 30px;
+  left: 13px;
   top: 0px;
   z-index: 20;
 }
@@ -76,13 +76,13 @@ html, body {
   position: absolute;
   width: 270px;
   left: 30px;
-  top: 92px;
+  top: 105px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
   font-family: "CEWEHead-Bold";
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 26px;
+  line-height: 28px;
 }
 /* Main copy div */
 .subCopy {

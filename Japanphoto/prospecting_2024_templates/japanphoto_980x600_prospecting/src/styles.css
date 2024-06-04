@@ -68,7 +68,7 @@ html, body {
   display: flex;
   width: 240px;
   height: auto;
-  left: 15px;
+  left: 5px;
   top: 0px;
   z-index:30;
 }

@@ -114,7 +114,7 @@ var timeBetweenSlides = 3;
             function createSlide(slideData, index) {
                 const slideDiv = slideTemplate.cloneNode(true);
                 slideTemplate.remove();
-                slideDiv.id = 'slide-' + index;
+                slideDiv.id = 'slide' + index;
                 settings.setSlideContent(slideDiv, slideData, index);
                 slidesWrapper.appendChild(slideDiv);
     
@@ -132,7 +132,7 @@ var timeBetweenSlides = 3;
                 settings.animation(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete);
             }
     
-            function nextSlide() {
+            function prevSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
                 slideIndex++;
@@ -147,7 +147,7 @@ var timeBetweenSlides = 3;
                 });
             }
     
-            function prevSlide() {
+            function nextSlide() {
                 if (isAnimating) return;
                 isAnimating = true;
                 slideIndex--;
@@ -193,12 +193,10 @@ var timeBetweenSlides = 3;
         }
     };
     
-    
     Slider.create({
       slidesData: local_content.product_collection.value,
       width: 300,
       setSlideContent: function(slideDiv, slideData, slideIndex) {
-        
         // Find product image div and append image
         $(slideDiv).find("#productImage").css("background-image","url("+slideData.productImage.value+")");
         // Find title div and append title
@@ -207,11 +205,13 @@ var timeBetweenSlides = 3;
         $(slideDiv).find("#ctaText").html(slideData.ctaText.value);
        $(slideDiv).find("#productPrice").html((slideData.productPriceNumber.value + ',-'));
        $(slideDiv).find("#discountPriceNumber").html((slideData.productDiscountPriceNumber.value));
+       console.log(slideDiv)
+       console.log(slideData.productPriceNumber.value)
        $(slideDiv).find("#productAveragePrice").html((slideData.productAveragePrice.value));
        if (slideData.productDiscountPriceNumber.value > 0) {
+
        $(slideDiv).find("#productPrice").html('<span class="salePrice">' + (slideData.productPriceNumber.value) + ',-</span> <span class="oldPrice">' + (slideData.productAveragePrice.value) + '</span>');
     }
-
     }
   });
 

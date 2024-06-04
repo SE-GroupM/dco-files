@@ -106,9 +106,9 @@ html, body {
 /* Product imafe in product slider */
 .productImage {
   position: absolute;
-  height: 600px;
-  width: 250px;
-  top: 20px;
+  height: 250px;
+  width: 230px;
+  top: 25px;
   background-repeat: no-repeat;
   background-size: contain;
 }
