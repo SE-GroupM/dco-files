@@ -114,7 +114,48 @@ sup {
   font-family: "Mikro-Bold";
   color: #000;
 }
-
+/* Product mainCopy1 */
+.product_1_mainCopy {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  font-size: 47px;
+  line-height: 47px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  letter-spacing: -3px;
+}
+/* Product mainCopy1 */
+.product_2_mainCopy {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  font-size: 47px;
+  line-height: 47px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  letter-spacing: -3px;
+}
+/* Product copy1 */
+.product_1_subCopy {
+  position: absolute;
+  left: 20px;
+  top: 175px;
+  font-size: 15px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+/* Product copy2 */
+.product_2_subCopy {
+  position: absolute;
+  left: 20px;
+  top: 175px;
+  font-size: 15px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
 /* Product container ex 4 för */
 .productContainer {
   position: absolute;
