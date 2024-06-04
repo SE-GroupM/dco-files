@@ -120,11 +120,11 @@ sup {
   position: absolute;
   left: 20px;
   top: 30px;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 38px;
+  line-height: 38px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
 }
 /* Product mainCopy1 */
 .product_2_mainCopy {
@@ -132,11 +132,11 @@ sup {
   position: absolute;
   left: 20px;
   top: 30px;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 38px;
+  line-height: 38px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
 }
 /* Product subcopy */
 .product_1_subCopy {

@@ -138,11 +138,11 @@ sup {
   position: absolute;
   left: 10px;
   top: 30px;
-  font-size: 40px;
-  line-height: 41px;
+  font-size: 37px;
+  line-height: 39px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
 }
 /* Product price */
 .product_2_mainCopy {
@@ -150,11 +150,11 @@ sup {
   position: absolute;
   left: 10px;
   top: 30px;
-  font-size: 40px;
-  line-height: 41px;
+  font-size: 37px;
+  line-height: 39px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
 }
 /* Product container ex 4 för */
 .productContainer {
