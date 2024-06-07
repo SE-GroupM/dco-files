@@ -70,8 +70,8 @@ html, body {
 /* Logo image on side panel */
 .logo {
   position: fixed;
-  height: 210px;
-  width: 250px;
+  height: 160px;
+  width: 190px;
   left: 40px;
   top: 0px;
   background-repeat: no-repeat;
