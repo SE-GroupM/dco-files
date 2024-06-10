@@ -1,0 +1,258 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #f0f0f0;
+}
+/* Main copy on side panel */
+.headline {
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  text-align: center;
+  top: 30px;
+  left: 20px;
+  line-height: 25px;
+  width: 380px;
+  font-size: 22px;
+  opacity: 0;
+  z-index: 60;
+}
+.subline {
+  position: absolute;
+  font-family: "SourceSansPro-Regular";
+  text-align: center;
+  top: 65px;
+  line-height: 25px;
+  width: 380px;
+  left: 20px;
+  font-size: 15px;
+  line-height: 17px;
+  opacity: 0;
+  z-index: 60;
+}
+.promotion_text {
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  text-align: center;
+  top: 115px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 9px;
+  z-index: 1;
+  background-color: #d74621;
+  border-radius: 10px;
+  padding: 5px 10px; /* Adds 10px padding top and bottom, 20px left and right */
+}
+/* Background image on side panel */
+.campaignImg {
+  position: absolute;
+  height: 300px;
+  width: 420px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 50;
+}
+/* bgColor on side panel */
+#bgColor {
+  position: absolute;
+  height: 320px;
+  width: 560px;
+  left: 420px;
+  z-index: 1;
+}
+/* Logo image on side panel */
+.logoImg {
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 85px;
+  top: 240px;
+  left: 167px;
+  background-size: contain;
+  z-index: 60;
+}
+.slider {
+  position: absolute;
+  top: 15px;
+  height: 230px;
+  width: 290px;
+  left: 460px;
+  z-index: 20;
+}
+.slide {
+  position: relative;
+  height: 200px;
+  width: 250px;
+  top: 0px;
+  z-index: 15;
+}
+/* Product imafe in product slider */
+.product_image {
+  position: absolute;
+  height: 80px;
+  width: 170px;
+  top: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+/* Card container */
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center child elements horizontally */
+  height: 270px;
+  width: 230px;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+/* Container for product info */
+.product_info_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 150px; /* Adjust this value to position the container from the top */
+}
+
+/* Product name in product slider */
+.product_name {
+  font-family: "SourceSansPro-Bold";
+  font-size: 19px;
+  line-height: 17px;
+  color: #000000;
+  text-align: right;
+  margin-right: 5px; /* Adjust space between product_name and description_text */
+  margin-bottom: 0; /* Ensure no extra bottom margin */
+}
+
+/* Product description text */
+.description_text {
+  font-family: "SourceSansPro-Regular";
+  text-align: left;
+  font-size: 19px;
+  line-height: 17px;
+  color: #000000;
+  margin-left: 0; /* Ensure no extra left margin */
+  margin-right: 0; /* Ensure no extra right margin */
+  margin-top: 0; /* Ensure no extra top margin */
+}
+
+/* Container for prices */
+.price_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 5px; /* Space between prices */
+  margin-top: 15px; /* Adjust this value to position the container from the top */
+}
+
+/* Regular price */
+.product_regular_price, .salePrice {
+  font-family: "SourceSansPro-Bold";
+  font-size: 22px;
+  line-height: 16px;
+  color: #000;
+  text-align: center;
+}
+
+/* Sale price */
+.salePrice {
+  color: #c30c15;
+}
+
+/* Old price */
+.product_old_price {
+  font-family: "SourceSansPro-Bold";
+  text-decoration: line-through;
+  font-size: 19px;
+  line-height: 16px;
+  color: #000;
+  text-align: center;
+}
+
+/* CTAs in product slider */
+.ctaText {
+  position: fixed;
+  top: 225px;
+  font-family: "SourceSansPro-Bold";
+  text-align: center; /* Ensures text is centered within the button */
+  border: none; 
+  font-size: 16px;
+  color: #fff;
+  background-color: #000000;
+  max-width: 160px;
+  z-index: 40;
+  border-radius: 10px;
+  padding: 4px 16px;
+}
+.next {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 25px;
+  top: 140px;
+  left: 952px;
+  z-index: 60;
+}
+.prev {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 25px;
+  top: 140px;
+  left: 430px;
+  z-index: 60;
+}
+.worldClick {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 300px;
+  width: 980px;
+}
+
+.bgBox1 {
+  position: absolute; 
+  top: 0px;
+  left: 420px;
+  width: 40px; 
+  height: 320px;
+  z-index: 20;
+}
+.bgBox2 {
+  position: absolute; 
+  top: 0px;
+  left: 940px;
+  width: 40px; 
+  height: 320px;
+  z-index: 20;
+}
