@@ -34,8 +34,8 @@ html, body {
   top: 30px;
   left: 20px;
   line-height: 25px;
-  width: 380px;
-  font-size: 22px;
+  width: 520px;
+  font-size: 42px;
   opacity: 0;
   z-index: 60;
 }
@@ -45,9 +45,9 @@ html, body {
   text-align: center;
   top: 65px;
   line-height: 25px;
-  width: 380px;
+  width: 520px;
   left: 20px;
-  font-size: 15px;
+  font-size: 30px;
   line-height: 17px;
   opacity: 0;
   z-index: 60;
@@ -56,10 +56,10 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Bold";
   text-align: center;
-  top: 95px;
+  top: 125px;
   color: #fff;
-  font-size: 11px;
-  line-height: 10px;
+  font-size: 13px;
+  line-height: 12px;
   z-index: 1;
   background-color: #d74621;
   border-radius: 10px;
@@ -68,8 +68,8 @@ html, body {
 /* Background image on side panel */
 .campaignImg {
   position: absolute;
-  height: 240px;
-  width: 420px;
+  height: 360px;
+  width: 560px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 50;
@@ -77,43 +77,43 @@ html, body {
 /* bgColor on side panel */
 #bgColor {
   position: absolute;
-  height: 320px;
-  width: 560px;
-  left: 420px;
+  height: 360px;
+  width: 660px;
+  left: 550px;
   z-index: 1;
 }
 /* Logo image on side panel */
 .logoImg {
   position: absolute;
   background-repeat: no-repeat;
-  height: 45px;
-  width: 85px;
-  top: 190px;
-  left: 167px;
+  height: 55px;
+  width: 105px;
+  top: 280px;
+  left: 227px;
   background-size: contain;
   z-index: 60;
 }
 .slider {
   position: absolute;
-  top: 15px;
+  top: 20px;
   height: 230px;
-  width: 290px;
-  left: 460px;
+  width: 308px;
+  left: 602px;
   z-index: 20;
 }
 .slide {
   position: relative;
   height: 200px;
-  width: 250px;
+  width: 320px;
   top: 0px;
   z-index: 15;
 }
 /* Product imafe in product slider */
 .product_image {
   position: absolute;
-  height: 80px;
-  width: 170px;
-  top: 10px;
+  height: 88px;
+  width: 270px;
+  top: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -125,58 +125,51 @@ html, body {
   flex-direction: column; /* Stack child elements vertically */
   justify-content: flex-start; /* Align items to the top */
   align-items: center; /* Center child elements horizontally */
-  height: 210px;
-  width: 230px;
+  height: 320px;
+  width: 300px;
   top: 0px;
   left: 0px;
   background-color: #fff;
   padding: 3px;
 }
 
-/* Container for product info */
-.product_info_container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  margin-top: 120px; /* Adjust this value to position the container from the top */
-}
-
 /* Product name in product slider */
 .product_name {
+  position: absolute;
   font-family: "SourceSansPro-Bold";
-  font-size: 15px;
+  font-size: 20px;
   line-height: 17px;
   color: #000000;
-  text-align: right;
-  margin-right: 5px; /* Adjust space between product_name and description_text */
-  margin-bottom: 0; /* Ensure no extra bottom margin */
+  top: 160px;
+  text-align: center;
 }
 
 /* Product description text */
 .description_text {
+  position: absolute;
   font-family: "SourceSansPro-Regular";
   text-align: left;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 17px;
   color: #000000;
-  margin-left: 0; /* Ensure no extra left margin */
-  margin-right: 0; /* Ensure no extra right margin */
-  margin-top: 0; /* Ensure no extra top margin */
+  text-align: center;
+  top: 190px;
 }
 
 /* Container for prices */
 .price_container {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Align items to the top */
   gap: 5px; /* Space between prices */
-  margin-top: 10px; /* Adjust this value to position the container from the top */
+  top: 225px; /* Adjust this value to position the container from the top */
 }
 
 /* Regular price */
 .product_regular_price, .salePrice {
   font-family: "SourceSansPro-Bold";
-  font-size: 17px;
+  font-size: 23px;
   line-height: 16px;
   color: #000;
   text-align: center;
@@ -191,7 +184,7 @@ html, body {
 .product_old_price {
   font-family: "SourceSansPro-Bold";
   text-decoration: line-through;
-  font-size: 17px;
+  font-size: 23px;
   line-height: 16px;
   color: #000;
   text-align: center;
@@ -200,60 +193,60 @@ html, body {
 /* CTAs in product slider */
 .ctaText {
   position: fixed;
-  top: 180px;
+  top: 270px;
   font-family: "SourceSansPro-Bold";
   text-align: center; /* Ensures text is centered within the button */
   border: none; 
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
   background-color: #000000;
   padding: 7px 10px;
   max-width: 160px;
   z-index: 40;
-  border-radius: 10px;
-  padding: 3px 15px;
+  border-radius: 12px;
+  padding: 4px 15px;
 }
 .next {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 17px;
-  height: 25px;
-  top: 110px;
-  left: 950px;
+  width: 20px;
+  height: 32px;
+  top: 160px;
+  left: 1222px;
   z-index: 60;
 }
 .prev {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 17px;
-  height: 25px;
-  top: 110px;
-  left: 430px;
+  width: 20px;
+  height: 32px;
+  top: 160px;
+  left: 570px;
   z-index: 60;
 }
 .worldClick {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 240px;
+  height: 360px;
   width: 980px;
 }
 
 .bgBox1 {
   position: absolute; 
   top: 0px;
-  left: 420px;
-  width: 40px; 
-  height: 320px;
+  left: 552px;
+  width: 50px;
+  height: 360px;
   z-index: 20;
 }
 .bgBox2 {
   position: absolute; 
   top: 0px;
-  left: 940px;
-  width: 40px; 
-  height: 320px;
+  left: 1208px;
+  width: 50px; 
+  height: 360px;
   z-index: 20;
 }

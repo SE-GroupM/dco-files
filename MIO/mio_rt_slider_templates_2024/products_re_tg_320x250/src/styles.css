@@ -87,14 +87,14 @@ html, body {
 .slider {
   position: absolute;
   top: 58px;
-  height: 200px;
+  height: 140px;
   width: 320px;
   left: 40px;
   z-index: 20;
 }
 .slide {
   position: relative;
-  height: 200px;
+  height: 140px;
   width: 320px;
   top: 0px;
   z-index: 15;
@@ -209,7 +209,7 @@ html, body {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 400px;
+  height: 250px;
   width: 320px;
 }
 .bgColor {

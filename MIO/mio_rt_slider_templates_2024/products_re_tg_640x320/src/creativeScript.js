@@ -246,11 +246,18 @@ function truncate() {
   // Select all elements with class 'description_text' and truncate if necessary
   $('.description_text').each(function() {
     // Check if text length is more than 30 characters and truncate if necessary
-    if ($(this).text().length > 21) {
-      $(this).text($(this).text().substring(0, 20) + '');
+    if ($(this).text().length > 15) {
+      $(this).text($(this).text().substring(0, 13) + '');
     }
   });
-
+    // Select all elements with class 'promotion_text' and truncate if necessary
+    $('.product_name').each(function() {
+    // Check if text length is more than 30 characters and truncate if necessary
+    if ($(this).text().length > 18) {
+      $(this).text($(this).text().substring(0, 16) + '');
+    }
+  });
+  
   // Select all elements with class 'promotion_text' and truncate if necessary
   $('.promotion_text').each(function() {
     // Check if text length is more than 25 characters and truncate if necessary
@@ -280,8 +287,9 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
   let intensity = 6 + (text_shadow / 100) * 24; // This will give a range from 6px to 30px blur radius
 
   $('#headline, #subline').css({
-    'text-shadow': `0px 0px ${intensity}px rgba(0, 0, 0, ${alpha})`
+    'text-shadow': `0px 0px ${intensity * 0.5}px rgba(0, 0, 0, ${alpha * 0.8})`
   });
+  
 } else {
   $('#headline, #subline').css({
     'text-shadow': 'none'

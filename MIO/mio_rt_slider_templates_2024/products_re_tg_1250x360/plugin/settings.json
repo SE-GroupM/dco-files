@@ -1,20 +1,20 @@
 {
-  "id": "f5cd113a-ae73-4228-9851-fab053024a92",
-  "version": "1.3.0",
-  "name": "products_re_tg_320x250",
+  "id": "59011acd-d701-4b19-91f4-0bb4397d9951",
+  "version": "1.3.1",
+  "name": "products_re_tg_1250x360",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 250,
+        "width": 1250,
+        "height": 360,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 320,
-        "height": 250
+        "width": 1250,
+        "height": 360
       }
     ]
   },
@@ -204,5 +204,5 @@
   "folders": {
     "selectedFolderId": 4390
   },
-  "port": 65194
+  "port": 63150
 }

@@ -246,15 +246,15 @@ function truncate() {
   // Select all elements with class 'description_text' and truncate if necessary
   $('.description_text').each(function() {
     // Check if text length is more than 30 characters and truncate if necessary
-    if ($(this).text().length > 13) {
-      $(this).text($(this).text().substring(0, 12) + '');
+    if ($(this).text().length > 25) {
+      $(this).text($(this).text().substring(0, 23) + '');
     }
   });
     // Select all elements with class 'promotion_text' and truncate if necessary
     $('.product_name').each(function() {
     // Check if text length is more than 30 characters and truncate if necessary
-    if ($(this).text().length > 14) {
-      $(this).text($(this).text().substring(0, 13) + '');
+    if ($(this).text().length > 25) {
+      $(this).text($(this).text().substring(0, 23) + '');
     }
   });
   
