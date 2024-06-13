@@ -299,7 +299,7 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
 const headlineHeight = document.querySelector('#headline').offsetHeight;
 
 if (headlineHeight > 55) {
-  document.querySelector('#subline').style.marginTop = '125px';
+  document.querySelector('#subline').style.marginTop = '140px';
 
 } else {
   document.querySelector('#subline').style.marginTop = '100px'; // default margin for exactly 25px, adjust as needed

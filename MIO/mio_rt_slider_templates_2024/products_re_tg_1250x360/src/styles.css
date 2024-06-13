@@ -29,7 +29,7 @@ html, body {
 /* Main copy on side panel */
 .headline {
   position: absolute;
-  font-family: "SourceSansPro-Bold";
+  font-family: "bulldog - Bold";
   text-align: center;
   top: 50px;
   left: 20px;
@@ -43,10 +43,8 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Regular";
   text-align: center;
-  top: 106px;
   width: 520px;
   left: 20px;
-  margin-top: 40px;
   font-size: 30px;
   line-height: 32px;
   opacity: 0;
