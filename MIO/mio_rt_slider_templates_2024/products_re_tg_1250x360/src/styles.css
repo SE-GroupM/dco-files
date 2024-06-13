@@ -31,11 +31,11 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Bold";
   text-align: center;
-  top: 30px;
+  top: 50px;
   left: 20px;
-  line-height: 25px;
+  line-height: 60px;
   width: 520px;
-  font-size: 42px;
+  font-size: 60px;
   opacity: 0;
   z-index: 60;
 }
@@ -43,12 +43,12 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Regular";
   text-align: center;
-  top: 65px;
-  line-height: 25px;
+  top: 106px;
   width: 520px;
   left: 20px;
+  margin-top: 40px;
   font-size: 30px;
-  line-height: 17px;
+  line-height: 32px;
   opacity: 0;
   z-index: 60;
 }

@@ -31,10 +31,10 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Bold";
   text-align: center;
-  top: 70px;
+  top: 60px;
   left: 10px;
-  font-size: 23px;
-  line-height: 25px;
+  font-size: 35px;
+  line-height: 35px;
   width: 230px;
   opacity: 0;
   z-index: 1;
@@ -43,13 +43,14 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Regular";
   text-align: center;
-  top: 35px;
+  top: 75px;
   left: 10px;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 18px;
   width: 230px;
   opacity: 0;
   z-index: 1;
+  margin-top: 40px;
 }
 .promotion_text {
   position: absolute;

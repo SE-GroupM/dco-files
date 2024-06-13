@@ -29,13 +29,13 @@ html, body {
 /* Main copy on side panel */
 .headline {
   position: absolute;
-  font-family: "SourceSansPro-Bold";
+  font-family: "bulldog - Bold";
   text-align: center;
-  top: 30px;
+  top: 35px;
   left: 20px;
-  line-height: 25px;
+  line-height: 48px;
   width: 520px;
-  font-size: 22px;
+  font-size: 46px;
   opacity: 0;
   z-index: 60;
 }
@@ -43,12 +43,10 @@ html, body {
   position: absolute;
   font-family: "SourceSansPro-Regular";
   text-align: center;
-  top: 65px;
-  line-height: 25px;
+  line-height: 24px;
   width: 520px;
   left: 20px;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 22px;
   opacity: 0;
   z-index: 60;
 }
