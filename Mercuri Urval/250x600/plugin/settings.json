@@ -1,0 +1,95 @@
+{
+  "id": "4212241e-18d7-4fb1-bdaa-1ef35c3978e1",
+  "version": "1.2.0",
+  "name": "250x600_vsc",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 250,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 250,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "click": {
+        "type": "click",
+        "source": "create"
+      },
+      "mercuri_logo_large_formats": {
+        "type": "image",
+        "source": "create"
+      },
+      "mercuri_logo_small": {
+        "type": "image",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "cta_text": {
+            "value": "cta_text"
+          },
+          "click": {
+            "value": ""
+          },
+          "mercuri_logo_large_formats": {
+            "value": ""
+          },
+          "mercuri_logo_small": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 216,
+        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeue?v=700",
+        "family": "HelveticaNeue",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 216,
+        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeueLTStd-Heavy?v=900",
+        "family": "HelveticaNeueLTStd-Heavy",
+        "variant": "900"
+      },
+      {
+        "advertiserId": 216,
+        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeueLTStd-Lt?v=300",
+        "family": "HelveticaNeueLTStd-Lt",
+        "variant": "300"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 216,
+    "name": "Mercuri Urval SE"
+  },
+  "folders": {
+    "selectedFolderId": 3798
+  },
+  "port": 59479
+}
