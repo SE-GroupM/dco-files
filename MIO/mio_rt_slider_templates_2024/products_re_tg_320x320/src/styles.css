@@ -1,0 +1,220 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #f0f0f0;
+}
+/* Main copy on side panel */
+.headline {
+  position: absolute;
+  font-family: "bulldog - Bold";
+  text-align: center;
+  top: 17px;
+  left: 10px;
+  font-size: 25px;
+  line-height: 25px;
+  width: 300px;
+  opacity: 0;
+  z-index: 1;
+}
+.subline {
+  position: absolute;
+  font-family: "SourceSansPro-Regular";
+  text-align: center;
+  top: 48px;
+  left: 10px;
+  font-size: 17px;
+  line-height: 17px;
+  width: 300px;
+  opacity: 0;
+  z-index: 1;
+}
+.promotion_text {
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  text-align: center;
+  top: 10px;
+  color: #fff;
+  font-size: 11px;
+  line-height: 10px;
+  z-index: 1;
+  background-color: #d74621;
+  border-radius: 10px;
+  padding: 2px 10px; /* Adds 10px padding top and bottom, 20px left and right */
+}
+
+/* Background image on side panel */
+.campaignImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Logo image on side panel */
+.logoImg {
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 70px;
+  top: 270px;
+  left: 120px;
+  background-size: contain;
+  z-index: 10;
+}
+.slider {
+  position: absolute;
+  top: 80px;
+  height: 140px;
+  width: 320px;
+  left: 40px;
+  z-index: 20;
+}
+.slide {
+  position: relative;
+  height: 140px;
+  width: 320px;
+  top: 0px;
+  z-index: 15;
+}
+.card {
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+  height: 170px;
+  width: 240px;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  padding: 3px;
+}
+/* Product imafe in product slider */
+.product_image {
+  position: absolute;
+  height: 75px;
+  width: 133px;
+  top: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+/* Product name in product slider */
+.product_name {
+  top: 122px;
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+  z-index: 60;
+  width: 180px;
+  left: 15px;
+}
+.description_text {
+  top: 141px;
+  position: absolute;
+  font-family: "SourceSansPro-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  left: 15px;
+  z-index: 60;
+  width: 300px;
+}
+/* Product price in product slider */
+.product_regular_price {
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  text-align: center;
+  top: 110px;
+  right: 15px;
+}
+/* Product sale price in product slider */
+.salePrice {
+  font-family: "SourceSansPro-Bold";
+  color: #c30c15;
+  top: 95px;
+}
+/* Product old price in product slider */
+.product_old_price {
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  text-decoration: line-through;
+  color: #000;
+  font-size: 15px;
+  top: 110px;
+  right: 15px;
+}
+/* CTAs in product slider */
+.ctaText {
+  position: absolute;
+  top: 135px;
+  right: 15px;
+  font-family: "SourceSansPro-Bold";
+  text-align: center; /* Ensures text is centered within the button */
+  border: none; 
+  font-size: 12px;
+  padding: 7px 10px;
+  max-width: 160px;
+  z-index: 40;
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+.next {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 28px;
+  top: 145px;
+  left: 290px;
+  z-index: 30;
+}
+.prev {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 28px;
+  top: 145px;
+  left: 13px;
+  z-index: 30;
+}
+.worldClick {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 320px;
+  width: 320px;
+}
+.bgColor {
+  position: absolute; 
+  width: 320px; 
+  height: 400px;
+  z-index: 0;
+}
