@@ -78,6 +78,8 @@ var timeBetweenSlides = 3;
 
   var text_shadow = local_content.text_shadow.value;
 
+  var mainCopyStyle = local_content.mainCopyStyle.value;
+
   const Slider = {
     currentSlideIndex: 1,
     create: function(options) {
@@ -295,6 +297,12 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
     'text-shadow': 'none'
   });
 }
+
+// Check if mainCopyStyle is italic
+if (mainCopyStyle === 'italic') {
+  $('#headline').css('font-style', 'italic');
+} 
+
 
 const headlineHeight = document.querySelector('#headline').offsetHeight;
 

@@ -77,6 +77,7 @@ var timeBetweenSlides = 3;
   $('#slider').click(onClick)
 
   var text_shadow = local_content.text_shadow.value;
+  var mainCopyStyle = local_content.mainCopyStyle.value;
 
   const Slider = {
     currentSlideIndex: 1,
@@ -295,6 +296,36 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
     'text-shadow': 'none'
   });
 }
+
+function fitText() {
+  var headline = $('#headline');
+  var subline = $('#subline');
+  var headlineText = local_content.headline.value;
+  var sublineText = local_content.subline.value;
+
+  headline.html(headlineText);
+  subline.html(sublineText);
+
+  if (headlineText.length > 21) {
+      headline.css('font-size', '20px');
+  } else {
+      headline.css('font-size', ''); // Reset to default font size
+  }
+
+  if (sublineText.length > 34) {
+      subline.css('font-size', '14px');
+  } else {
+      subline.css('font-size', ''); // Reset to default font size
+  }
+}
+// Check if mainCopyStyle is italic
+if (mainCopyStyle === 'italic') {
+  $('#headline').css('font-style', 'italic');
+} 
+
+
+// Call the function to apply the font size adjustment
+fitText();
 
 
        /////////////////////

@@ -77,6 +77,7 @@ var timeBetweenSlides = 3;
   $('#slider').click(onClick)
 
   var text_shadow = local_content.text_shadow.value;
+  var mainCopyStyle = local_content.mainCopyStyle.value;
 
   const Slider = {
     currentSlideIndex: 1,
@@ -298,12 +299,21 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
 
 const headlineHeight = document.querySelector('#headline').offsetHeight;
 
-if (headlineHeight > 40) {
-  document.querySelector('#subline').style.marginTop = '145px';
+if (headlineHeight > 80) { // Assuming 70px corresponds to 3 rows
+  document.querySelector('#subline').style.marginTop = '175px'; // Increase margin for 3 rows
+
+} else if (headlineHeight > 45) { // Assuming 35px corresponds to 2 rows
+  document.querySelector('#subline').style.marginTop = '145px'; // Margin for 2 rows
 
 } else {
-  document.querySelector('#subline').style.marginTop = '120px'; // default margin for exactly 25px, adjust as needed
+  document.querySelector('#subline').style.marginTop = '130px'; // Default margin for 1 row
 }
+
+
+// Check if mainCopyStyle is italic
+if (mainCopyStyle === 'italic') {
+  $('#headline').css('font-style', 'italic');
+} 
 
        /////////////////////
      //// ANIMATIONS /////

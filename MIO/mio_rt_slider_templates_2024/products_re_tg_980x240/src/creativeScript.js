@@ -77,6 +77,7 @@ var timeBetweenSlides = 3;
   $('#slider').click(onClick)
 
   var text_shadow = local_content.text_shadow.value;
+  var mainCopyStyle = local_content.mainCopyStyle.value;
 
   const Slider = {
     currentSlideIndex: 1,
@@ -304,6 +305,11 @@ if (headlineHeight > 45) {
 } else {
   document.querySelector('#subline').style.marginTop = '100px'; // default margin for exactly 25px, adjust as needed
 }
+
+// Check if mainCopyStyle is italic
+if (mainCopyStyle === 'italic') {
+  $('#headline').css('font-style', 'italic');
+} 
 
 
        /////////////////////
