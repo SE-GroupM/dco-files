@@ -64,6 +64,17 @@ html, body {
   width: 580px;
   height: 400px;
 }
+/* Product oldPrice */
+.oldPrice {
+  display: block;
+  position: absolute;
+  left: 35px;
+  top: 65px;
+  font-size: 20px;
+  font-family: "Mikro-Bold";
+  color: #000;
+  text-decoration: line-through;
+}
 /* Product price */
 .productPrice {
   display: block;
@@ -98,9 +109,10 @@ sup {
 .productImage {
   position: absolute;
   top: 80px;
-  left: 250px;
-  width: 400px;
-  height: 280px;
+  left: 230px;
+  right: 10px;
+  width: 380px;
+  height: 290px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -128,5 +140,43 @@ sup {
 }
 
 
+.product_1_subCopy {
+  position: absolute;
+  left: 35px;
+  top: 130px;
+  font-size: 18px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+.product_1_mainCopy {
+  display: block;
+  position: absolute;
+  left: 35px;
+  top: 70px;
+  font-size: 45px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  line-height: 42px;
+  letter-spacing: -2;
+}
+.product_2_subCopy {
+  position: absolute;
+  left: 35px;
+  top: 130px;
+  font-size: 18px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+.product_2_mainCopy {
+  display: block;
+  position: absolute;
+  left: 35px;
+  top: 70px;
+  font-size: 45px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  line-height: 42px;
+  letter-spacing: -2;
+}
 
 

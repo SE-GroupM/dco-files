@@ -310,5 +310,8 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 52713
+  "port": 52336,
+  "folders": {
+    "selectedFolderId": 2085
+  }
 }

@@ -34,9 +34,13 @@ onLemonpiReady(function () {
   //Check if price has sup element and append correct CSS class
   if (local_content.product_1_price.value.includes('<sup>')){
     $("#productPrice_1").html(local_content.product_1_price.value + "<span class='priceCurrencySup'>kr</span>");
-  } else {
+} else {
     $("#productPrice_1").html(local_content.product_1_price.value + "<span class='priceCurrency'>kr</span>");
-  }
+}
+if (local_content.product_1_price.value === ''){
+    $("#productPrice_1").html(local_content.product_1_price.value);
+}
+
   //Append product name
   $("#productName_1").html(local_content.product_1_copy.value);
   //Append product image
@@ -46,11 +50,30 @@ onLemonpiReady(function () {
 
   //Product box 2
  //Check if price has sup element and append correct CSS class
- if (local_content.product_2_price.value.includes('<sup>')){
+//Check if price has sup element and append correct CSS class
+if (local_content.product_2_price.value.includes('<sup>')){
   $("#productPrice_2").html(local_content.product_2_price.value + "<span class='priceCurrencySup'>kr</span>");
-  } else {
-    $("#productPrice_2").html(local_content.product_2_price.value + "<span class='priceCurrency'>kr</span>");
+} else {
+  $("#productPrice_2").html(local_content.product_2_price.value + "<span class='priceCurrency'>kr</span>");
+}
+if (local_content.product_2_price.value === ''){
+  $("#productPrice_2").html(local_content.product_2_price.value);
+}
+
+  //Append oldPrice 1
+  $("#product_1_oldPrice").html(local_content.product_1_oldPrice.value + " kr");
+  if (local_content.product_1_oldPrice.value === ''){
+    $("#product_1_oldPrice").html(local_content.product_1_oldPrice.value);
   }
+  //Append oldPrice 2
+  $("#product_2_oldPrice").html(local_content.product_2_oldPrice.value + " kr");
+  if (local_content.product_2_oldPrice.value === ''){
+    $("#product_2_oldPrice").html(local_content.product_2_oldPrice.value);
+  }
+  //Append mainCopy
+  $("#product_2_mainCopy").html(local_content.product_2_mainCopy.value);
+  //Append subCopy
+  $("#product_2_subCopy").html(local_content.product_2_subCopy.value);
   //Append product name
   $("#productName_2").html(local_content.product_2_copy.value);
   //Append product image
@@ -58,28 +81,56 @@ onLemonpiReady(function () {
   //Append product container
   $("#productContainer_2").css("background-image","url("+local_content.product_2_container.value+")");
 
-  //Animation of content
-  var tl = new TimelineMax({repeat:-1});
-  TweenMax.set('#productPrice_2, #productName_2, #productImage_2, #productContainer_2', { opacity: 0 }) //Opacity on product 2
-  tl.fromTo('#productPrice_1, #productName_1, #productContainer_1', 0.3, {opacity:0, ease: Linear.ease},{opacity:1, ease: Linear.ease}, 0) //Product price and product name 1 fade in
-    .fromTo('#productImage_1', 0.3, {x: 100, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 0) //Product image 1 fade in
-    .to('#productPrice_1, #productName_1, #productContainer_1', 0.3, {opacity:0, ease: Linear.ease}, 3) //Product price and product name 1 fade out
-    .to('#productImage_1', 0.3, {x: 100, opacity:0, ease: Linear.ease}, 3) //Product image 1 fade out
-    .fromTo('#productPrice_2, #productName_2, #productContainer_2', 0.3, {opacity:0, ease: Linear.ease},{opacity:1, ease: Linear.ease}, 3.3) //Product price and product name 2 fade in
-    .fromTo('#productImage_2', 0.3, {x: 100, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 3.3) //Product image 2 fade in
-    .to('#productPrice_2, #productName_2, #productContainer_2', 0.3, {opacity:0, ease: Linear.ease}, 6) //Product price and product name 2 fade out
-    .to('#productImage_2', 0.3, {x: 100, opacity:0, ease: Linear.ease}, 6) //Product image 2 fade ou
-  });
-
-  //Append exit url to creative container
   document.getElementById('creative_container').onclick = () =>
-  window.dispatchEvent(
+    window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
-      detail: {
+        detail: {
           placeholder: ['exit_url'],
-      }
-    })
-  );
+        }
+      })
+    );
 
-});
-  
+ // Animation of content
+var tl = new TimelineMax({ repeat: -1 });
+TweenMax.set('#productPrice_2, #product_2_subCopy, #productName_2, #product_2_mainCopy, #productImage_2, #productContainer_2', { opacity: 0 }) //Opacity on product 2
+
+tl.fromTo('#productPrice_1, #product_1_oldPrice, #productName_1, #productContainer_1', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) //Product price and product name 1 fade in
+  .fromTo('#productImage_1', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, { x: 0, opacity: 1, ease: Linear.ease }, 0) //Product image 1 fade in
+  .to('#productPrice_1, #product_1_oldPrice, #productName_1, #productContainer_1', 0.3, { opacity: 0, ease: Linear.ease }, 3) //Product price and product name 1 fade out
+  .to('#productImage_1', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, 3) //Product image 1 fade out
+  .fromTo('#productPrice_2, #product_2_oldPrice, #product_2_subCopy, #productName_2, #product_2_mainCopy, #productContainer_2', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 3.3) //Product price and product name 2 fade in
+  .fromTo('#productImage_2', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, { x: 0, opacity: 1, ease: Linear.ease }, 3.3) //Product image 2 fade in
+  .to('#productPrice_2, #product_2_oldPrice, #productName_2, #product_2_mainCopy, #product_2_subCopy, #productContainer_2', 0.3, { opacity: 0, ease: Linear.ease }, 6) //Product price and product name 2 fade out
+  .to('#productImage_2', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, 6) //Product image 2 fade out
+  .add(function () {
+    showExitUrl2(); // Call function to show exit_url_2
+  }, 3.3) // Add function call when _2 placeholders are displayed
+  .add(function () {
+    hideExitUrl2(); // Call function to hide exit_url_2 when _2 placeholders fade out
+  }, 6.3); // Hide function call slightly after _2 placeholders fade out
+
+// Function to show exit_url_2
+function showExitUrl2() {
+  document.getElementById('creative_container').onclick = () =>
+    window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['exit_url_2'],
+        }
+      })
+    );
+}
+
+// Function to hide exit_url_2 and revert to default
+function hideExitUrl2() {
+  document.getElementById('creative_container').onclick = () =>
+    window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: ['exit_url'],
+          }
+        })
+      );
+    }
+    });
+    });

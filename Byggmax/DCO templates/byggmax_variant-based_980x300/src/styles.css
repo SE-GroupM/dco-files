@@ -64,6 +64,17 @@ html, body {
   width: 980px;
   height: 300px;
 }
+/* Product oldPrice */
+.oldPrice {
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 60px;
+  font-size: 20px;
+  font-family: "Mikro-Bold";
+  color: #000;
+  text-decoration: line-through;
+}
 /* Product price */
 .productPrice {
   display: block;
@@ -129,5 +140,43 @@ sup {
 }
 
 
+.product_1_subCopy {
+  position: absolute;
+  left: -180px;
+  top: 110px;
+  font-size: 18px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+.product_1_mainCopy {
+  display: block;
+  position: absolute;
+  left: -180px;
+  top: 15px;
+  font-size: 40px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  line-height: 42px;
+  letter-spacing: -1px;
+}
+.product_2_subCopy {
+  position: absolute;
+  left: -180px;
+  top: 110px;
+  font-size: 18px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+.product_2_mainCopy {
+  display: block;
+  position: absolute;
+  left: -180px;
+  top: 15px;
+  font-size: 40px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  line-height: 42px;
+  letter-spacing: -1px;
+}
 
 
