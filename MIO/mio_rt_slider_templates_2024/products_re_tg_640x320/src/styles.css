@@ -41,12 +41,12 @@ html, body {
 }
 .subline {
   position: absolute;
-  font-family: "SourceSansPro-Regular";
+  font-family: "bulldog - Regular";  
   text-align: center;
   left: 15px;
   font-size: 18px;
   line-height: 20px;
-  width: 230px;
+  width: 225px;
   opacity: 0;
   z-index: 60;
 }

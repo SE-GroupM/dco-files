@@ -323,7 +323,6 @@ if (mainCopyStyle === 'italic') {
   $('#headline').css('font-style', 'italic');
 } 
 
-
 // Call the function to apply the font size adjustment
 fitText();
 
