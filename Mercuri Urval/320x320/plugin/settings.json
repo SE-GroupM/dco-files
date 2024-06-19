@@ -1,22 +1,17 @@
 {
-  "id": "6c30cc4a-8d83-4e08-b7d1-b8dbb5ecc6aa",
+  "id": "a2673ad6-0247-4f36-8c1f-b13816fb85c3",
   "version": "1.2.0",
-  "name": "160x600_vsc_2024",
+  "name": "320x320_vsc_2024",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 160,
-        "height": 600,
+        "width": 320,
+        "height": 320,
         "isCustom": false
       }
     ],
-    "customSizes": [
-      {
-        "width": 100,
-        "height": 600
-      }
-    ]
+    "customSizes": []
   },
   "placeholders": {
     "schema": {
@@ -91,5 +86,5 @@
   "folders": {
     "selectedFolderId": 3798
   },
-  "port": 49561
+  "port": 51798
 }
