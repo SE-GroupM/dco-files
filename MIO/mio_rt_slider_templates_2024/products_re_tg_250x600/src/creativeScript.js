@@ -214,8 +214,6 @@ Slider.create({
     $(slideDiv).find("#product_image").css("background-image","url("+slideData.product_image.value+")");
     // Find title div and append title
     $(slideDiv).find("#product_name").html(slideData.product_name.value);
-    // Find title div and append title
-    $(slideDiv).find("#product_new").html(slideData.product_new.value);
     // Append ctaText
     $(slideDiv).find('#ctaText').html(local_content.ctaText.value);
     $(slideDiv).find('#ctaText').css({
@@ -266,13 +264,6 @@ function truncate() {
       $(this).text($(this).text().substring(0, 22) + '');
     }
   });
-
-  // Additionally, check if there's an element with ID 'promotion_text'
-  const promotionElement = $('#promotion_text');
-  if (promotionElement.length && promotionElement.text().length > 24) {
-    // Apply truncation for the ID element as well
-    promotionElement.text(promotionElement.text().substring(0, 22) + '');
-  }
 }
 
 // Run the function to apply the text truncation

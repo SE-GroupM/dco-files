@@ -35,16 +35,23 @@ var local_content = content;
 // Defines how long the slider displays each product before a new one displays
 var timeBetweenSlides = 3;
 
-  //Append headline text
-  $('#headline').html(local_content.headline.value);
+function fitText() {
+  // Set the content of the headline and subline, and get their text content
+  var headlineText = $('#headline').html(local_content.headline.value).text();
+  var sublineText = $('#subline').html(local_content.subline.value).text();
+
+  // Adjust font size based on text length
+  $('#headline').css('font-size', headlineText.length > 21 ? '20px' : '');
+  $('#subline').css('font-size', sublineText.length > 34 ? '14px' : '');
+}
+
   $('#headline').css({
   'color': local_content.headline_color.value,
   'font-size': local_content.headline_fontSize.value + 'px',
   'line-height': local_content.headline_fontSize.value + 'px',
   'top': local_content.headline_top.value + 'px',
   });
-  //Append subline text
-  $('#subline').html(local_content.subline.value);
+
   //Append subline color
   $('#subline').css({
     'color': local_content.subline_color.value,
@@ -266,17 +273,13 @@ function truncate() {
       $(this).text($(this).text().substring(0, 22) + '');
     }
   });
-
-  // Additionally, check if there's an element with ID 'promotion_text'
-  const promotionElement = $('#promotion_text');
-  if (promotionElement.length && promotionElement.text().length > 24) {
-    // Apply truncation for the ID element as well
-    promotionElement.text(promotionElement.text().substring(0, 22) + '');
-  }
 }
 
 // Run the function to apply the text truncation
 truncate();
+
+// Call the function to adjust the font sizes
+fitText();
 
 var text_shadow = Number(local_content.text_shadow.value);
 
@@ -303,34 +306,6 @@ if (mainCopyStyle === 'italic') {
 } else if (mainCopyStyle === 'clarice') {
   $('#headline').css('font-family', 'clarice regular');
 }
-
-function fitText() {
-  var headline = $('#headline');
-  var subline = $('#subline');
-  var headlineText = local_content.headline.value;
-  var sublineText = local_content.subline.value;
-
-  headline.html(headlineText);
-  subline.html(sublineText);
-
-  if (headlineText.length > 21) {
-      headline.css('font-size', '20px');
-  } else {
-      headline.css('font-size', ''); // Reset to default font size
-  }
-
-  if (sublineText.length > 34) {
-      subline.css('font-size', '14px');
-  } else {
-      subline.css('font-size', ''); // Reset to default font size
-  }
-}
-
-// Call the function to apply the font size adjustment
-fitText();
-
-
-
 
        /////////////////////
      //// ANIMATIONS /////

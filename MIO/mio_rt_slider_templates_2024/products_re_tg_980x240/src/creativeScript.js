@@ -205,6 +205,7 @@ var timeBetweenSlides = 3;
 };
 
 
+
 Slider.create({
   slidesData: local_content.product_collection.value,
   width: 300,
@@ -214,8 +215,6 @@ Slider.create({
     $(slideDiv).find("#product_image").css("background-image","url("+slideData.product_image.value+")");
     // Find title div and append title
     $(slideDiv).find("#product_name").html(slideData.product_name.value);
-    // Find title div and append title
-    $(slideDiv).find("#product_new").html(slideData.product_new.value);
     // Append ctaText
     $(slideDiv).find('#ctaText').html(local_content.ctaText.value);
     $(slideDiv).find('#ctaText').css({
@@ -233,11 +232,12 @@ Slider.create({
       $(slideDiv).find("#product_regular_price").addClass('salePrice').removeClass('#product_regular_price');
     } else {
       $(slideDiv).find("#product_regular_price").removeClass('salePrice').addClass('#product_regular_price');
-    if (slideData.promotion_text.value) {
-      $(slideDiv).find("#promotion_text").addClass('promotion_text');
-    } else {
-      $(slideDiv).find("#promotion_text").removeClass('promotion_text');
-    }
+      }
+      // promotion check
+      if (slideData.promotion_text.value) {
+        $(slideDiv).find("#promotion_text").addClass('promotion_text');
+      } else {
+        $(slideDiv).find("#promotion_text").removeClass('promotion_text');
       }
     }
   }
@@ -266,13 +266,6 @@ function truncate() {
       $(this).text($(this).text().substring(0, 22) + '');
     }
   });
-
-  // Additionally, check if there's an element with ID 'promotion_text'
-  const promotionElement = $('#promotion_text');
-  if (promotionElement.length && promotionElement.text().length > 24) {
-    // Apply truncation for the ID element as well
-    promotionElement.text(promotionElement.text().substring(0, 22) + '');
-  }
 }
 
 // Run the function to apply the text truncation
