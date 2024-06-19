@@ -127,6 +127,45 @@ sup {
   background-repeat: no-repeat;
 }
 
+.product_1_subCopy {
+  position: absolute;
+  left: -180px;
+  top: 110px;
+  font-size: 18px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+.product_1_mainCopy {
+  display: block;
+  position: absolute;
+  left: 90px;
+  top: 125px;
+  font-size: 65px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  line-height: 65px;
+  letter-spacing: -1px;
+}
+.product_2_subCopy {
+  position: absolute;
+  left: -180px;
+  top: 110px;
+  font-size: 18px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+.product_2_mainCopy {
+  display: block;
+  position: absolute;
+  left: 90px;
+  top: 125px;
+  font-size: 65px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  line-height: 65px;
+  letter-spacing: -1px;
+}
+
 
 
 

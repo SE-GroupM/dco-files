@@ -108,7 +108,7 @@ sup {
 /* Product image asset */
 .productImage {
   position: absolute;
-  top: 110px;
+  top: 105px;
   left: 60px;
   width: 280px;
   height: 240px;
@@ -130,9 +130,9 @@ sup {
   display: block;
   position: absolute;
   left: 20px;
-  top: 30px;
-  font-size: 38px;
-  line-height: 38px;
+  top: 20px;
+  font-size: 35px;
+  line-height: 35px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
   letter-spacing: -1px;
@@ -142,9 +142,9 @@ sup {
   display: block;
   position: absolute;
   left: 20px;
-  top: 30px;
-  font-size: 38px;
-  line-height: 38px;
+  top: 20px;
+  font-size: 35px;
+  line-height: 35px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
   letter-spacing: -1px;

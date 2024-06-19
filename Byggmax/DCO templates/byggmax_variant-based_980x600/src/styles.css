@@ -111,7 +111,7 @@ sup {
   top: 60px;
   left: 420px;
   width: 480px;
-  height: 530px;
+  height: 525px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -149,12 +149,12 @@ sup {
 .product_1_mainCopy {
   display: block;
   position: absolute;
-  left: -180px;
-  top: 15px;
-  font-size: 40px;
+  left: 90px;
+  top: 133px;
+  font-size: 63px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
-  line-height: 42px;
+  line-height: 63px;
   letter-spacing: -1px;
 }
 .product_2_subCopy {
@@ -168,12 +168,12 @@ sup {
 .product_2_mainCopy {
   display: block;
   position: absolute;
-  left: -180px;
-  top: 15px;
-  font-size: 40px;
+  left: 90px;
+  top: 133px;
+  font-size: 63px;
   font-family: "Trim-Bold_otf";
   color: #eb001e;
-  line-height: 42px;
+  line-height: 63px;
   letter-spacing: -1px;
 }
 
