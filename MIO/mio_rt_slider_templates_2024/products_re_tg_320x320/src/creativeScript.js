@@ -300,7 +300,9 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
 // Check if mainCopyStyle is italic
 if (mainCopyStyle === 'italic') {
   $('#headline').css('font-style', 'italic');
-} 
+} else if (mainCopyStyle === 'clarice') {
+  $('#headline').css('font-family', 'clarice regular');
+}
 
 function fitText() {
   var headline = $('#headline');

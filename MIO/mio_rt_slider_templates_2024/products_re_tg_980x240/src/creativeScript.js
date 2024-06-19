@@ -309,8 +309,9 @@ if (headlineHeight > 45) {
 // Check if mainCopyStyle is italic
 if (mainCopyStyle === 'italic') {
   $('#headline').css('font-style', 'italic');
-} 
-
+} else if (mainCopyStyle === 'clarice') {
+  $('#headline').css('font-family', 'clarice regular');
+}
 
        /////////////////////
      //// ANIMATIONS /////

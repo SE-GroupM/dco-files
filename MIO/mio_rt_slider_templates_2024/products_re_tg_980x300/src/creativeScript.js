@@ -312,7 +312,9 @@ if (headlineHeight > 100) { // Assuming 70px corresponds to 3 rows
 // Check if mainCopyStyle is italic
 if (mainCopyStyle === 'italic') {
   $('#headline').css('font-style', 'italic');
-} 
+} else if (mainCopyStyle === 'clarice') {
+  $('#headline').css('font-family', 'clarice regular');
+}
 
        /////////////////////
      //// ANIMATIONS /////

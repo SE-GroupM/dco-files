@@ -309,11 +309,13 @@ if (headlineHeight > 80) { // Assuming 70px corresponds to 3 rows
   document.querySelector('#subline').style.marginTop = '130px'; // Default margin for 1 row
 }
 
-
 // Check if mainCopyStyle is italic
 if (mainCopyStyle === 'italic') {
   $('#headline').css('font-style', 'italic');
-} 
+} else if (mainCopyStyle === 'clarice') {
+  $('#headline').css('font-family', 'clarice regular');
+}
+
 
        /////////////////////
      //// ANIMATIONS /////
