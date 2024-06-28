@@ -88,6 +88,9 @@ onLemonpiReady(function () {
     // Product collection from adset
     var local_product_collection = local_content.product_collection.value;
 
+
+
+
     // Function to update the product display
     function updateProductDisplay(index) {
       var product = local_product_collection[index];
@@ -104,6 +107,7 @@ onLemonpiReady(function () {
       normalPrice = normalPrice.toFixed(2);
       var tempNormal = normalPrice.split(".");
 
+      
       // Append sup class on decimals
       if (tempNormal[1] > 0) {
         // Ex. 88.88
@@ -182,6 +186,27 @@ onLemonpiReady(function () {
           })
         );
       });
+    }
+
+    function addCharacterSpacing(price) {
+      // Convert the price to a string if it is not already
+      var priceStr = price.toString();
+      
+      // Check if the length of the string is greater than 3
+      if (priceStr.length > 3) {
+        // Reverse the string to easily add spaces every three digits
+        var reversedStr = priceStr.split('').reverse().join('');
+        
+        // Add a space every three digits
+        var spacedStr = reversedStr.replace(/(\d{3})(?=\d)/g, '$1 ');
+    
+        // Reverse the string back to its original order
+        var finalStr = spacedStr.split('').reverse().join('');
+        return finalStr;
+      }
+      
+      // Return the original price if it is less than or equal to 3 digits
+      return priceStr;
     }
 
     // Animation to loop through products
