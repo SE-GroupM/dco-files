@@ -1,20 +1,36 @@
 {
-  "id": "dbfe96da-0f1e-4b6a-bd4a-35304b3cce3f",
+  "id": "d261d01e-9972-47ec-832f-6f332adea456",
   "version": "1.3.0",
-  "name": "jula_980x300_vib_withProducts",
+  "name": "jula_vib_320x480",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 300,
+        "width": 320,
+        "height": 480,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
+        "width": 580,
+        "height": 400
+      },
+      {
         "width": 980,
         "height": 300
+      },
+      {
+        "width": 250,
+        "height": 600
+      },
+      {
+        "width": 300,
+        "height": 600
+      },
+      {
+        "width": 320,
+        "height": 480
       }
     ]
   },
@@ -28,20 +44,12 @@
         "type": "image",
         "source": "create"
       },
-      "productBgColor": {
+      "videoSrc": {
         "type": "text",
         "source": "create"
       },
-      "productNameColor": {
+      "videoTracker": {
         "type": "text",
-        "source": "create"
-      },
-      "productPriceColor": {
-        "type": "text",
-        "source": "create"
-      },
-      "worldClick": {
-        "type": "click",
         "source": "create"
       }
     },
@@ -55,17 +63,53 @@
           "logo": {
             "value": ""
           },
-          "productBgColor": {
-            "value": "productBgColor"
+          "videoSrc": {
+            "value": "videoSrc"
           },
-          "productNameColor": {
-            "value": "productNameColor"
+          "videoTracker": {
+            "value": "videoTracker"
+          }
+        },
+        {
+          "bgColor": {
+            "value": "bgColor"
           },
-          "productPriceColor": {
-            "value": "productPriceColor"
-          },
-          "worldClick": {
+          "logo": {
             "value": ""
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          }
+        },
+        {
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "logo": {
+            "value": ""
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          }
+        },
+        {
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "logo": {
+            "value": ""
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
           }
         }
       ]
@@ -85,12 +129,6 @@
         "url": "https://assets.lemonpi.io/a/font/884/Taz-Regular?v=400",
         "family": "Taz-Regular",
         "variant": "400"
-      },
-      {
-        "advertiserId": 884,
-        "url": "https://assets.lemonpi.io/a/font/884/CreightonProExtraBold?v=800",
-        "family": "CreightonProExtraBold",
-        "variant": "800"
       }
     ]
   },
@@ -105,5 +143,5 @@
   "folders": {
     "selectedFolderId": 3553
   },
-  "port": 65512
+  "port": 53755
 }
