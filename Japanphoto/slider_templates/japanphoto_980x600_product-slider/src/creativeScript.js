@@ -194,12 +194,10 @@ var timeBetweenSlides = 3;
     };
     
         
-    
     Slider.create({
       slidesData: local_content.product_collection.value,
       width: 300,
       setSlideContent: function(slideDiv, slideData, slideIndex) {
-        
         // Find product image div and append image
         $(slideDiv).find("#productImage").css("background-image","url("+slideData.productImage.value+")");
         // Find title div and append title
@@ -208,11 +206,29 @@ var timeBetweenSlides = 3;
         $(slideDiv).find("#ctaText").html(slideData.ctaText.value);
        $(slideDiv).find("#productPrice").html((slideData.productPriceNumber.value + ',-'));
        $(slideDiv).find("#discountPriceNumber").html((slideData.productDiscountPriceNumber.value));
+  
        $(slideDiv).find("#productAveragePrice").html((slideData.productAveragePrice.value));
        if (slideData.productDiscountPriceNumber.value > 0) {
+
        $(slideDiv).find("#productPrice").html('<span class="salePrice">' + (slideData.productPriceNumber.value) + ',-</span> <span class="oldPrice">' + (slideData.productAveragePrice.value) + '</span>');
     }
 
+    function formatNumberWithSpaces(number) {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  }
+  
+  $(slideDiv).find("#productPrice").html(formatNumberWithSpaces(slideData.productPriceNumber.value) + ',-');
+  $(slideDiv).find("#discountPriceNumber").html(formatNumberWithSpaces(slideData.productDiscountPriceNumber.value));
+  $(slideDiv).find("#productAveragePrice").html(formatNumberWithSpaces(slideData.productAveragePrice.value));
+  
+  if (slideData.productDiscountPriceNumber.value > 0) {
+      $(slideDiv).find("#productPrice").html(
+          '<span class="salePrice">' + formatNumberWithSpaces(slideData.productPriceNumber.value) + ',-</span> ' +
+          '<span class="oldPrice">' + formatNumberWithSpaces(slideData.productAveragePrice.value) + '</span>'
+      );
+  } else {
+      $(slideDiv).find("#productPrice").html(formatNumberWithSpaces(slideData.productPriceNumber.value) + ',-');
+  }
     }
   });
 
