@@ -81,10 +81,10 @@ top: 15px;
 .salePrice {
   font-family: "CreightonProExtraBold";
   position: absolute;
-  padding: 8px 8px 6px 12px;
+  padding: 11px 8px 3px 12px;
   border-radius: 16px;
-  font-size: 70px;
-  top: 50px;
+  font-size: 55px;
+  top: 46px;
   left: auto;
   right: 77px;
   text-align: right;
@@ -98,52 +98,60 @@ top: 15px;
   display: inline-block;
   font-family: "CreightonProExtraBold";
   position: absolute;
-  padding: 8px 8px 12px 8px;
+  padding: 8px 10px 6px 8px;
   border-radius: 18px;
-  font-size: 24px;
-  line-height: 24px;
-  top: 27px;
+  font-size: 18px;
+  top: 32px;
   left: auto;
-  right: 77px;
-  min-width: 130px;
+  right: 78px;
+  min-width: 110px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
   transform: rotate(-4deg);
 }
-
+/* Parent container */
+.saleContainer {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust based on your needs */
+}
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
-  font-family: "Arial";
+  display: inline-block;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 4px 8px 4px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 1; /* Ensures line height is consistent with font size */
   color: white;
-  top: 121px;
-  left: auto;
-  right: 65px;
+  top: calc(50px + 56px); /* Positioned relative to .salePrice */
+  right: 65px; /* Adjusted for consistency */
   text-align: left;
   background-color: #DA3A35;
   transform: rotate(-4deg);
+  z-index: 10; /* Ensure it is below .salePrice */
 }
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "Arial";
+  display: inline-block;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 4px 8px 4px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 12px;
   color: white;
-  top: 121px;
-  left: auto;
-  right: 65px;
+  top: calc(50px + 57px); /* Positioned relative to .salePrice, adjust as needed */
+  right: 65px; /* Adjusted for consistency */
   text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
+  z-index: 10; /* Ensure it is below .saleElement */
 }
+
 /* Product name text */
 .productName {
   font-family: "Taz-Regular";
@@ -181,7 +189,7 @@ top: 15px;
 #campaignText {
   font-family: "CreightonPro-Bold";
   text-align: center;
-  font-size: 20px;
+  font-size: 23.5px;
   position: absolute;
   width: 360px;
   height: 50px;

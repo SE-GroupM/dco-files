@@ -95,23 +95,38 @@ onLemonpiReady(function () {
       // Append name to product
       //$('#productName').html(product.productName.value);
 
-      // Append price to product
-      var regularPrice = product.regularPrice.value;
-      var productPriceType = product.productPriceType.value;
+       // Function to format numbers with spaces
+     function numberWithSpaces(x) {
+     var parts = parseFloat(x).toFixed(2).split(".");
+     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+     return parts.join(".");
+    }
 
-      // Split regular price to find decimals 
-      var normalPrice = parseFloat(regularPrice);
-      normalPrice = normalPrice.toFixed(2);
-      var tempNormal = normalPrice.split(".");
+// Append price to product
+var regularPrice = product.regularPrice.value;
+var productPriceType = product.productPriceType.value;
 
-      // Append sup class on decimals
-      if (tempNormal[1] > 0) {
-        // Ex. 88.88
-        $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1] + ' </span>');
-      } else {
-        // Ex. 88,-
-        $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
-      }
+// Format the regular price with spaces
+var formattedRegularPrice = numberWithSpaces(regularPrice);
+
+// Split formatted price to find decimals
+var tempNormal = formattedRegularPrice.split(".");
+
+     
+// Append sup class on decimals
+if (parseInt(tempNormal[1]) > 0) {
+  // Ex. 88.88
+  $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1] + ' </span>');
+} else {
+  // Ex. 88,-
+  $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+}
+
+// Format the product price type with spaces 
+var formattedProductPriceType = numberWithSpaces(productPriceType);
+
+//formating productPriceType
+$('#productPriceType').html(formattedProductPriceType);
 
       // Check product price type and append css
       if (productPriceType === 'regular') {
@@ -127,17 +142,17 @@ onLemonpiReady(function () {
           $('#regularPrice').html(tempNormal[0] + '<span class="priceSup">' + tempNormal[1] + ' </span>');
         } else {
           // Ex. 88,-
-          $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+          $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -7px; padding-right: 8px;">.-</span>');
         }
         $('#regularPrice').addClass('salePrice');
       } else if (productPriceType === 'julaclub') {
         // If product price type is Jula club
         if (tempNormal[1] > 0) {
           // Ex. 88.88
-          $('#regularPrice').html('JulaClub <br><span style="font-size: 72px; line-height: 62px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1] + '</span></span>');
+          $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 60px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1] + '</span></span>');
         } else {
           // Ex. 88,-
-          $('#regularPrice').html('JulaClub <br><span style="font-size: 72px; line-height: 62px;">' + tempNormal[0] + '<span style="letter-spacing: -8px; padding-right: 8px;">.-</span>');
+          $('#regularPrice').html('JulaClub <br><span style="font-size: 60px; line-height: 60px;">' + tempNormal[0] + '<span style="letter-spacing: -7px; padding-right: 8px;">.-</span>');
         }
         $('#regularPrice').addClass('clubPrice');
       }
@@ -148,7 +163,7 @@ onLemonpiReady(function () {
       productSaving = productSaving.replace(".-", "");
       // Check if product saving is > 0 and append saleElement class
       if (productSaving !== "0") {
-        $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
+        $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -2px; padding-right: 2px;">.-</span>');
         $('#priceElement').addClass('saleElement');
       }
 
@@ -171,6 +186,7 @@ onLemonpiReady(function () {
       // Append lowest price last 30 days
       var priceInfo = product.productLatestPrice.value;
       $('#priceInfo').html(priceInfo);
+
 
       // Update click URL
       $('#worldClick').off('click').on('click', function () {

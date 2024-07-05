@@ -70,7 +70,12 @@ top: 15px;
   top: 30px;
   min-width: 280px;
 }
-
+/* Parent container */
+.saleContainer {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust based on your needs */
+}
 /* Price sup element */
 .priceSup {
   font-size: 50%;
@@ -81,10 +86,10 @@ top: 15px;
 .salePrice {
   font-family: "CreightonProExtraBold";
   position: absolute;
-  padding: 8px 8px 6px 12px;
+  padding: 10px 8px 6px 12px;
   border-radius: 16px;
   font-size: 50px;
-  top: 67px;
+  top: 75px;
   left: auto;
   right: 77px;
   text-align: right;
@@ -98,14 +103,15 @@ top: 15px;
   display: inline-block;
   font-family: "CreightonProExtraBold";
   position: absolute;
-  padding: 8px 8px 12px 8px;
+  padding: 15px 8px 12px 8px;
   border-radius: 18px;
-  font-size: 24px;
-  line-height: 24px;
-  top: 27px;
+  font-size: 19px;
+  line-height: 10px;
+  top: 48px;
   left: auto;
   right: 77px;
-  min-width: 130px;
+  min-width: 120px;
+  max-height: 93px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
@@ -114,14 +120,15 @@ top: 15px;
 
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
+  display: inline-block;
   font-family: "Arial";
   font-weight: bold;
   position: absolute;
-  padding: 4px 8px 4px 8px;
+  padding: 3px 8px 4px 8px;
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: 121px;
+  top: calc(50px + 80px); /* Positioned relative to .salePrice */
   left: auto;
   right: 65px;
   text-align: left;
@@ -133,11 +140,11 @@ top: 15px;
   font-family: "Arial";
   font-weight: bold;
   position: absolute;
-  padding: 4px 8px 4px 8px;
+  padding: 2px 8px 4px 8px;
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: 121px;
+  top: calc(50px + 82px); /* Positioned relative to .salePrice, adjust as needed */
   left: auto;
   right: 65px;
   text-align: left;
@@ -162,7 +169,7 @@ top: 15px;
   font-size: 11px;
   color: #fff;
   left: 0px;
-  top: 250px;
+  top: 210px;
   width: 300px;
   text-align: center;
   text-decoration: line-through;
@@ -181,7 +188,7 @@ top: 15px;
 #campaignText {
   font-family: "CreightonPro-Bold";
   text-align: center;
-  font-size: 20px;
+  font-size: 23px;
   position: absolute;
   width: 360px;
   height: 50px;
