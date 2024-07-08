@@ -1,6 +1,6 @@
 * { 
   box-sizing: border-box;
-} 
+}
 
 html, body {
   width: 100%;
@@ -16,6 +16,9 @@ html, body {
   height: 240px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -28,12 +31,13 @@ html, body {
 
 /* Position of logo */
 .logo {
-position: absolute;
-width: 130px;
-height: 81px;
-left: 15px;
-top: 15px;
+  position: absolute;
+  width: 130px;
+  height: 81px;
+  left: 15px;
+  top: 15px;
 }
+
 /* Product box background */
 .productBox {
   position: absolute;
@@ -44,6 +48,7 @@ top: 15px;
   top: 14px;
   border-radius: 5px;
 }
+
 /* Container for product info */
 .productInfo {
   position: fixed;
@@ -52,6 +57,7 @@ top: 15px;
   left: 720px;
   top: 0px;
 }
+
 /* Product image size and position */
 .productImage {
   position: absolute;
@@ -60,31 +66,37 @@ top: 15px;
   top: 55px;
   left: 380px;
 }
-/* Price element  */
+
+/* Price element */
 .regularPrice {
   position: absolute;
-  font-size: 70px;
-  font-family: "CreightonProExtraBold";
+  font-family: "CreightonProExtraBold", Arial, sans-serif;
   color: #333;
   text-align: center;
-  top: 30px;
   min-width: 280px;
+  font-size: 50px;
+  top: 75px;
+  left: auto;
+  right: 77px;
 }
+
 /* Parent container */
 .saleContainer {
   position: relative;
   width: 100%;
-  height: auto; /* Adjust based on your needs */
+  height: auto;
 }
+
 /* Price sup element */
 .priceSup {
   font-size: 50%;
   vertical-align: super;
   top: 0;
 }
+
 /* Discounted price element with yellow background and red text, ex. "99,-" */
 .salePrice {
-  font-family: "CreightonProExtraBold";
+  font-family: "CreightonProExtraBold", Arial, sans-serif;
   position: absolute;
   padding: 10px 8px 6px 12px;
   border-radius: 16px;
@@ -98,10 +110,11 @@ top: 15px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
+
 /* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
 .clubPrice {
   display: inline-block;
-  font-family: "CreightonProExtraBold";
+  font-family: "CreightonProExtraBold", Arial, sans-serif;
   position: absolute;
   padding: 15px 8px 12px 8px;
   border-radius: 18px;
@@ -121,36 +134,38 @@ top: 15px;
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
   display: inline-block;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: bold;
   position: absolute;
   padding: 3px 8px 4px 8px;
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: calc(50px + 80px); /* Positioned relative to .salePrice */
+  top: 132px;
   left: auto;
   right: 65px;
   text-align: left;
   background-color: #DA3A35;
   transform: rotate(-4deg);
 }
+
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: bold;
   position: absolute;
   padding: 2px 8px 4px 8px;
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: calc(50px + 82px); /* Positioned relative to .salePrice, adjust as needed */
+  top: 132px;
   left: auto;
   right: 65px;
   text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
 }
+
 /* Product name text */
 .productName {
   font-family: "Taz-Regular";
@@ -162,6 +177,7 @@ top: 15px;
   width: 300px;
   text-align: center;
 }
+
 /* Product price info text */
 .priceInfo {
   position: absolute;
@@ -177,6 +193,7 @@ top: 15px;
   -webkit-text-decoration-line: line-through;
 }
 
+/* Player element */
 .player {
   position: absolute;
   width: 600px;
@@ -185,8 +202,10 @@ top: 15px;
   left: 0px;
   background-color: #000;
 }
+
+/* Campaign text */
 #campaignText {
-  font-family: "CreightonPro-Bold";
+  font-family: "CreightonPro-Bold", Arial, sans-serif;
   text-align: center;
   font-size: 23px;
   position: absolute;
@@ -195,15 +214,18 @@ top: 15px;
   top: 20px;
   left: 610px;
 }
-#ctaText{
-  padding: 8px 10px 8px 10px; /* top, right, bottom, left */
+
+/* Call to action text */
+#ctaText {
+  padding: 8px 10px 8px 10px;
   bottom: 15px;
   right: 20px;
-  font-family: "CreightonPro-Bold";
+  font-family: "CreightonPro-Bold", Arial, sans-serif;
   color: white;
   background-color: black;
   position: fixed;
 }
+
 /* World click div */
 .worldClick {
   width: 980px;
@@ -218,4 +240,3 @@ top: 15px;
   cursor: pointer;
   z-index: 1;
 }
-

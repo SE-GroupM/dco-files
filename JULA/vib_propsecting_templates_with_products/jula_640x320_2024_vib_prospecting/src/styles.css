@@ -1,6 +1,6 @@
-* { 
+* {
   box-sizing: border-box;
-} 
+}
 
 html, body {
   width: 100%;
@@ -16,6 +16,9 @@ html, body {
   height: 320px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -26,7 +29,6 @@ html, body {
   user-select: none;
 }
 
-/* Position of logo */
 .logo {
   position: absolute;
   width: 110px;
@@ -35,7 +37,6 @@ html, body {
   top: 15px;
 }
 
-/* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
@@ -46,7 +47,6 @@ html, body {
   border-radius: 5px;
 }
 
-/* Container for product info */
 .productInfo {
   position: fixed;
   width: 300px;
@@ -55,7 +55,6 @@ html, body {
   top: 20px;
 }
 
-/* Product image size and position */
 .productImage {
   position: absolute;
   height: 140px;
@@ -64,58 +63,53 @@ html, body {
   left: 410px;
 }
 
-/* Universal box-sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Price element */
 .regularPrice {
   position: absolute;
-  font-size: 70px;
+  font-size: 40px;
   font-family: "CreightonProExtraBold", Arial, sans-serif;
   color: #333;
   text-align: center;
-  top: 30px;
-  min-width: 100px;
-  width: 100%;
+  top: 70px;
+  left: auto;
+  right: -130px;
 }
 
-/* Parent container */
 .saleContainer {
   position: relative;
   width: 30%;
-  height: auto; /* Adjust based on your needs */
+  height: auto;
 }
 
-/* Price sup element */
 .priceSup {
   font-size: 50%;
   vertical-align: super;
   top: 0;
 }
 
-/* Discounted price element with yellow background and red text, ex. "99,-" */
 .salePrice {
   display: inline-block;
   font-family: "CreightonProExtraBold", Arial, sans-serif;
   position: absolute;
-  padding: 10px 12px 6px 12px;
+  padding: 8px 6px 6px 5px;
   border-radius: 10px;
-  font-size: 35px;
+  font-size: 39px;
   top: 83px;
   left: auto;
   right: -130px;
+  min-width: 90px;
   text-align: right;
   color: #B32013;
   background-color: #FFE500;
   transform: rotate(-4deg);
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
 }
 
-/* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
 .clubPrice {
   display: inline-block;
   font-family: "CreightonProExtraBold", Arial, sans-serif;
@@ -123,61 +117,58 @@ html, body {
   padding: 10px 8px 6px 12px;
   border-radius: 18px;
   font-size: 17px;
-  line-height: 1; /* Adjust line-height */
-  top: 49px;
+  line-height: 1;
+  top: 53px;
   left: auto;
   right: -127px;
-  min-width: 90px;
+  min-width: 99px;
   max-height: 83px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
   transform: rotate(-4deg);
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
 }
 
-/* Sale price element ex. "Spara 199,-" */
 .saleElement {
   display: inline-block;
   font-family: "Arial", sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 0.5em;
+  padding: 3px 8px 3px 8px;
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: calc(50px + 76px); /* Positioned relative to .salePrice */
+  top: 128px;
   left: auto;
   right: -147px;
   min-width: 80px;
   text-align: left;
   background-color: #DA3A35;
   transform: rotate(-4deg);
-  width: auto; /* Adjust width based on content */
-  white-space: nowrap; /* Prevent text from wrapping */
+  width: auto;
+  white-space: nowrap;
 }
 
-/* Hero element ex. "Tokbilligt" */
 .heroElement {
   display: inline-block;
   font-family: "Arial", sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 2px 8px 4px 8px;
+  padding: 3px 8px 3px 8px;
   border-radius: 4px;
   font-size: 10px;
   color: white;
-  top: calc(50px + 78px); /* Positioned relative to .salePrice */
+  top: 128px;
   left: auto;
   right: -135px;
   text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
-  width: auto; /* Adjust width based on content */
-  white-space: nowrap; /* Prevent text from wrapping */
+  width: auto;
+  white-space: nowrap;
 }
 
-/* Product name text */
 .productName {
   font-family: "Taz-Regular";
   position: absolute;
@@ -189,7 +180,6 @@ html, body {
   text-align: center;
 }
 
-/* Product price info text */
 .priceInfo {
   position: absolute;
   font-family: "Taz-Regular";
@@ -202,6 +192,7 @@ html, body {
   text-decoration: line-through;
   text-decoration-line: line-through;
   -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 
 .player {
@@ -225,7 +216,7 @@ html, body {
 }
 
 #ctaText {
-  padding: 8px 10px; /* top, right, bottom, left */
+  padding: 8px 10px;
   bottom: 15px;
   right: 20px;
   font-family: "CreightonPro-Bold";
@@ -234,7 +225,6 @@ html, body {
   position: fixed;
 }
 
-/* World click div */
 .worldClick {
   width: 640px;
   height: 320px;
