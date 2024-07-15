@@ -88,22 +88,23 @@ html, body {
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
 
-/* Panel for products */
 .slider {
   position: absolute;
-  width: 478px;
-  height: 240px;
-  left: 519px;
+  top: 15px;
+  height: 230px;
+  width: 170px;
+  left: 460px;
+  z-index: 20;
 }
-
 .slide {
-  position: absolute;
-  width: 478px;
-  height: 240px;
+  position: relative;
+  height: 200px;
+  width: 250px;
+  top: 0px;
+  z-index: 15;
 }
-
 /* Product image */
-.product_img {
+.product_image {
   height: 90px;
   width: auto;
   margin-bottom: 10px;
@@ -118,7 +119,7 @@ html, body {
 }
 
 /* Description for products */
-.description {
+.product_description {
   resize: none;
   overflow: auto;
   font-family: "plantagen-regular";
@@ -145,6 +146,7 @@ html, body {
 .salePrice {
   color: #d82316;
 }
+
 .slider {
   position: absolute;
   top: 15px;

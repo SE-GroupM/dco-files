@@ -32,6 +32,9 @@ window.addEventListener('lemonpi.content/ready', event => {
 //Local varaible for content
 var local_content = content;
 
+// Defines how long the slider displays each product before a new one displays
+var timeBetweenSlides = 3;
+
 var bgColor= content.content_creative_background_color.value; // Background color source
 // Append background color to container
 $('#creative_container').css({
@@ -72,9 +75,6 @@ var timeBetweenSlides = 3;
   $('#prev').css({
   'background-image': 'url('+local_content.prev.value+ ')'
   });
-
-  var text_shadow = local_content.text_shadow.value;
-  var mainCopyStyle = local_content.mainCopyStyle.value;
 
   $('#slider').click(onClick)
 
@@ -186,26 +186,17 @@ var timeBetweenSlides = 3;
             window.dispatchEvent(
                 new CustomEvent('lemonpi.interaction/click', {
                     detail: {
-                        placeholder: ['product_collection', slideIndex, 'click'],
+                        placeholder: ['products', slideIndex, 'click'],
                     }
                 })
             );
         }
-
-        // Add hover event listeners to pause and resume animation
-        slidesContainer.addEventListener("mouseenter", function() {
-            gsap.globalTimeline.pause();
-        });
-
-        slidesContainer.addEventListener("mouseleave", function() {
-            gsap.globalTimeline.resume();
-        });
     }
 };
 
 
 Slider.create({
-  slidesData: local_content.product_collection.value,
+  slidesData: local_content.products.value,
   width: 300,
   setSlideContent: function(slideDiv, slideData, slideIndex) {
     
@@ -214,12 +205,12 @@ Slider.create({
     // Find title div and append title
     $(slideDiv).find("#title").html(slideData.title.value);
     // Find title div and append title
-    $(slideDiv).find("#description").html(slideData.description.value);
+    $(slideDiv).find("#product_description").html(slideData.product_description.value);
     // Append ctaText
     $(slideDiv).find('#priceNormal').html(slideData.priceNormal.value + ':-');
     // Find description div and append description
     $(slideDiv).find("#priceDiscount").html(slideData.priceDiscount.value + ':-');
-    $(slideDiv).find("#ctaCopy").html(slideData.ctaCopy.value);
+    var ctaCopy = local_content.ctaText.value;
     if (slideData.priceDiscount.value) {
       $(slideDiv).find("#priceNormal").addClass('salePrice').removeClass('#product_regular_price');
     } else {
@@ -228,7 +219,7 @@ Slider.create({
     }
   }
 );
- 
+
 function truncate() {
   // Select all elements with class 'description_text' and truncate if necessary
   $('.title').each(function() {
@@ -238,7 +229,7 @@ function truncate() {
     }
   });
     // Select all elements with class 'promotion_text' and truncate if necessary
-    $('.description').each(function() {
+    $('.product_description').each(function() {
     // Check if text length is more than 30 characters and truncate if necessary
     if ($(this).text().length > 18) {
       $(this).text($(this).text().substring(0, 16) + '');
@@ -246,30 +237,12 @@ function truncate() {
   });
 
   // Additionally, check if there's an element with ID 'promotion_text'
-  const promotionElement = $('#description');
+  const promotionElement = $('#product_description');
   if (promotionElement.length && promotionElement.text().length > 24) {
     // Apply truncation for the ID element as well
     promotionElement.text(promotionElement.text().substring(0, 22) + '');
   }
 }
-
-// Run the function to apply the text truncation
-truncate();
-
-var text_shadow = Number(local_content.text_shadow.value);
-
-// Apply text shadow based on the value of text_shadow
-if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
-  // Calculate the alpha value from the percentage
-  let alpha = text_shadow / 100;
-  // Calculate the intensity factor for a more intense shadow
-  let intensity = 6 + (text_shadow / 100) * 24; // This will give a range from 6px to 30px blur radius
-}
-
-var ctaCopyColor = local_content.cta_copy_color.value; //Color of cta copy
-var ctaBgcolor = local_content.cta_color.value; //Color of cta background
-
-const headlineHeight = document.querySelector('#headline').offsetHeight;
 
        /////////////////////
      //// ANIMATIONS /////
@@ -286,8 +259,7 @@ var t2 = new TimelineMax({repeat:-1});
   .fromTo('#badgeElement2', 0.3, {rotationY: -90} ,{rotationY: 0},4.2)
   .to('#badgeElement2', 0.3, {rotationY: -90}, 7)
   .to('#badgeElement1', 0.3, {rotationY: 0}, 7.2)
-
-
+/*
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
  .add(playAutoSwipeAnimation, timeBetweenSlides);
@@ -296,7 +268,7 @@ var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
 function playAutoSwipeAnimation () {
   $('#prev').click();
 }
-
+*/
 // Get coordinates for product boxes
 function showCoords(event) {
   var x = event.clientX;
@@ -309,7 +281,7 @@ function onClick (event) {
   return window.dispatchEvent(
     new CustomEvent('lemonpi.interaction/click', {
       detail: {
-        placeholder: ['product_collection', currentProduct, 'click'],
+        placeholder: ['products', currentProduct, 'click'],
       }
   }));
 }

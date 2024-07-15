@@ -85,7 +85,7 @@ html, body {
   height: 30px;
   left: 20px;
   top: 20px;
-  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4));
 }
 
 /* Panel for products */
