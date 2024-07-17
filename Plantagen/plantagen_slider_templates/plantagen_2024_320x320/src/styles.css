@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 980px;
-  height: 240px;
+  width: 320px;
+  height: 320px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -29,19 +29,27 @@ html, body {
 /* Dynamic image */
 .dynamic_image {
   position: absolute;
-  width: 502px;
-  height: 240px;
+  width: 320px;
+  height: 130px;
   left: 0px;
   top: 0px;
   background-size: cover;
   background-position: center center;
 }
 
+.world_click {
+  position: absolute;
+  width: 320px;
+  height: 130px;
+  left: 0px;
+  top: 0px;
+}
+
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 502px;
-  height: 240px;
+  width: 300px;
+  height: 130px;
   left: 0px;
   top: 0px;
   display: flex;
@@ -56,13 +64,14 @@ html, body {
   padding: 70px 0px;
   text-align: center;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+  z-index: 1;
 }
 
 /* Overlay of dynamic image */
 .overlay {
   position: absolute;
-  width: 502px;
-  height: 240px;
+  width: 320px;
+  height: 130px;
   left: 0px;
   top: 0px;
 }
@@ -70,51 +79,65 @@ html, body {
 /* Badge images */
 .badgeElement {
   position: absolute;
-  left: 398px;
-  top: 20px;
-  width: 90px;
-  height: 106px;
+  left: 230px;
+  top: 10px;
+  width: 65px;
+  height: 65px;
   background-size: contain;
   background-position: top center;
+  z-index: 1;
 }
 
 /* Logo placeholder for svg element */
 .logo {
   position: absolute;
-  width: 157px;
-  height: 30px;
+  width: 130px;
+  height: 15px;
   left: 20px;
-  top: 20px;
+  top: 15px;
+  background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
 }
-
+/* Product box 1 */
+.card {
+  position: absolute;
+  background-color: white;
+  height: 170px;
+  width: 145px;
+  top: 0px;
+  padding: 10px 15px 10px 15px
+}
 .slider {
   position: absolute;
-  top: 15px;
-  height: 230px;
-  width: 170px;
-  left: 460px;
-  z-index: 20;
+  top: 0px;
+  height: 290px;
+  width: 320px;
+  left: 10px;
 }
+
 .slide {
   position: relative;
-  height: 200px;
-  width: 250px;
-  top: 0px;
+  height: 290px;
+  width: 155px;
+  top: 140px;
   z-index: 15;
 }
+
 /* Product image */
 .product_image {
-  height: 90px;
+  height: 60px;
   width: auto;
   margin-bottom: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* Title for products */
 .title {
   font-family: "plantagen-bold";
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 12px;
   margin-bottom: 4px;
 }
 
@@ -123,16 +146,16 @@ html, body {
   resize: none;
   overflow: auto;
   font-family: "plantagen-regular";
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 /* Price elements */
 .price_elements {
   position: absolute;
   font-family: "plantagen-bold";
-  font-size: 15px;
-  top: 168px;
+  font-size: 14px;
+  top: 122px;
 }
 
 /* Sup class for price elemts */
@@ -141,37 +164,9 @@ html, body {
   position: relative;
   top: -0.7em;
 }
-
 /* Price discount color */
-.salePrice {
+.discountColor {
   color: #d82316;
-}
-
-.slider {
-  position: absolute;
-  top: 15px;
-  height: 230px;
-  width: 290px;
-  left: 460px;
-  z-index: 20;
-}
-.slide {
-  position: relative;
-  height: 200px;
-  width: 250px;
-  top: 0px;
-  z-index: 15;
-}
-
-/* Product box 1 */
-.card {
-  position: absolute;
-  background-color: white;
-  height: 219px;
-  width: 145px;
-  top: 10px;
-  left: 0px;
-  padding: 10px 15px 10px 15px
 }
 /* Cta */
 .cta {
@@ -181,9 +176,31 @@ html, body {
   height: 21px;
   width: 118px;
   left: 10px;
-  border-radius: 6rem;
+  border-radius: 3rem;
   font-size: 9px;
-  top: 190px;
+  top: 142px;
   text-align: center;
   padding: 4px;
+  background: #474543;
+}
+.next {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 85px;
+  top: 210px;
+  left: 290px;
+  z-index: 25;
+}
+
+.prev {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 85px;
+  top: 210px;
+  left: 0px;
+  z-index: 25;
 }

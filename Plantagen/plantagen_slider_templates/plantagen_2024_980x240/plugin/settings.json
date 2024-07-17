@@ -1,20 +1,20 @@
 {
-  "id": "4162bc5c-c8ed-4275-b55b-ef6d326f1c4f",
-  "version": "1.2.0",
-  "name": "plantagen_980x300_2024",
+  "id": "030fdcac-b651-4bfd-9356-d7ec22ac7e30",
+  "version": "1.3.1",
+  "name": "plantagen_2024_980x240",
   "description": "",
   "size": {
     "sizes": [
       {
         "width": 980,
-        "height": 300,
+        "height": 240,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
         "width": 980,
-        "height": 300
+        "height": 240
       }
     ]
   },
@@ -202,5 +202,8 @@
     "id": 497,
     "name": "Plantagen"
   },
-  "port": 59145
+  "folders": {
+    "selectedFolderId": 2933
+  },
+  "port": 51004
 }
