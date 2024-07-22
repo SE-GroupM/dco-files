@@ -60,14 +60,6 @@
         "type": "text",
         "source": "create"
       },
-      "logoColor_D82316_FFF_ebe2d6_474542": {
-        "type": "text",
-        "source": "create"
-      },
-      "logoColorSlider": {
-        "type": "text",
-        "source": "create"
-      },
       "cta_color": {
         "type": "text",
         "source": "create"
@@ -85,14 +77,6 @@
         "source": "create"
       },
       "mainCopy_color": {
-        "type": "text",
-        "source": "create"
-      },
-      "truncateName": {
-        "type": "text",
-        "source": "create"
-      },
-      "truncateDescription": {
         "type": "text",
         "source": "create"
       },
@@ -155,12 +139,6 @@
           "content_creative_background_color": {
             "value": "content_creative_background_color"
           },
-          "logoColor_D82316_FFF_ebe2d6_474542": {
-            "value": "logoColor_D82316_FFF_ebe2d6_474542"
-          },
-          "logoColorSlider": {
-            "value": "logoColorSlider"
-          },
           "cta_color": {
             "value": "cta_color"
           },
@@ -175,12 +153,6 @@
           },
           "mainCopy_color": {
             "value": "mainCopy_color"
-          },
-          "truncateName": {
-            "value": "truncateName"
-          },
-          "truncateDescription": {
-            "value": "truncateDescription"
           },
           "overlay_yes_no": {
             "value": "overlay_yes_no"
@@ -219,5 +191,5 @@
   "folders": {
     "selectedFolderId": 2933
   },
-  "port": 50607
+  "port": 51411
 }

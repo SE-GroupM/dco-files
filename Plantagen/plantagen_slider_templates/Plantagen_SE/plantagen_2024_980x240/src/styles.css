@@ -48,9 +48,9 @@ html, body {
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 502px;
+  width: 482px;
   height: 240px;
-  left: 0px;
+  left: 10px;
   top: 0px;
   display: flex;
   align-items: center;
@@ -63,8 +63,10 @@ html, body {
   margin: auto;
   padding: 70px 0px;
   text-align: center;
-  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+  color: #ffffff;
+  text-shadow: rgb(0, 0, 0) 1px 1px 15px;
   z-index: 1;
+  font-size: 35px;
 }
 
 /* Overlay of dynamic image */

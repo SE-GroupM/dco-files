@@ -49,8 +49,8 @@ html, body {
 .copy_container {
   position: absolute;
   width: 300px;
-  height: 130px;
-  left: 0px;
+  height: 80px;
+  left: 10px;
   top: 0px;
   display: flex;
   align-items: center;
@@ -63,8 +63,10 @@ html, body {
   margin: auto;
   padding: 70px 0px;
   text-align: center;
-  filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
+  color: #ffffff;
+  text-shadow: rgb(0, 0, 0) 1px 1px 15px;
   z-index: 1;
+  font-size: 27px;
 }
 
 /* Overlay of dynamic image */

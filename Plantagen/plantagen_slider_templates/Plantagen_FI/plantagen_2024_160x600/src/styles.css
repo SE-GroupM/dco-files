@@ -41,8 +41,8 @@ html, body {
   position: absolute;
   width: 140px;
   height: 88px;
-  left: 30px;
-  top: 196px;
+  left: 25px;
+  top: 156px;
   align-items: center;
   justify-content: center;
   z-index: 50;
@@ -55,7 +55,8 @@ html, body {
   font-size: 22px;
   text-align: center;
   color: #ffffff;
-  text-shadow: rgb(0, 0, 0) 1px 1px 15px;*/
+  text-shadow: rgb(0, 0, 0) 1px 1px 15px;
+  z-index: 1;
 }
 /* Overlay of dynamic image */
 .overlay {
@@ -78,8 +79,8 @@ html, body {
 /* Logo placeholder for svg element */
 .logo {
   position: absolute;
-  width: 69px;
-  height: 13px;
+  width: 80px;
+  height: 26px;
   left: 10px;
   top: 11px;
   filter: drop-shadow(1px 1px 1px rgb(83, 83, 83, 0.4)); 
