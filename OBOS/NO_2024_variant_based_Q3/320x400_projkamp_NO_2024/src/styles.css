@@ -1,0 +1,221 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.bgImage {
+  height: 320px;
+  background: #D9D9D9;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: -108px;
+  top: -20px;
+  box-sizing: border-box;
+}
+
+.rectangle_darkblue {
+  width: 320px;
+  height: 151px;
+  background: #072d29;
+  border-radius: 0px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 300px;
+  box-sizing: border-box;
+}
+
+.rectangle_lightblue {
+  width: 320px;
+  height: 177px;
+  background: #21514c;
+  /* Specify each corner's border-radius */
+  border-radius: 0 15px 15px 15px; /* top-left, top-right, bottom-right, bottom-left */
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 235px;
+  box-sizing: border-box;
+}
+
+.copy{
+  top: 170px;
+}
+
+#ctaTxt  {
+  position: absolute;
+  min-width: 105px;
+  min-height: 24px;
+  background: #FFF; /* White background */
+  font-family: ObosText-Medium, sans-serif;
+  font-size: 13px;
+  color: #000;
+  border-radius: 8px;
+  text-align: center;
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  box-sizing: border-box;
+  padding: 8px 8px;
+  top: 351px;
+  left: 25px;
+}
+
+
+.headline {
+  width: 280px;
+  height: 35px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: ObosDisplay-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  position: fixed;
+  left: 25px;
+  top: 192px;
+}
+
+.subline {
+  width: 280px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: ObosText-Medium, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  position: fixed;
+  left: 25px;
+  top: 208px;
+}
+
+.brf {
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  display: flex; /* Changed to flex for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally, adjust if you want the text/icon aligned differently */
+  position: fixed;
+  overflow: hidden;
+  padding: 0 10px; /* Add padding on the sides */
+  margin: 0;
+  left: 13px;
+  top: 188px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.brfName {
+  color: #fff;
+  font-family: ObosDisplay-Bold;
+  font-size: 11.5px;
+  margin-left: 6px;
+  /* Additional adjustments for spacing might be needed, depending on your design */
+}
+
+.icon{
+  width: 8px; /* Adjust width as necessary */
+  margin-left: -3px; /* Add some space between the icon and the text */
+  /* Removed position absolute and left property */
+}
+
+.villkor {
+  color: #FFF;
+  font-family: ObosText-Medium, sans-serif;
+  /* 16px*/
+  font-size: 8px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  position: fixed;
+  top: 530px;
+  left: 19px
+}
+
+#worldClick {
+  width: 320px;
+  height: 400px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo{
+  position: absolute;
+  width: 120px;
+  left: 175px;
+  top: 352px;
+}
+
+.button_left {
+  position: absolute;
+  border: 2px solid #FFF; /* Add border */
+  background-color: transparent; /* Transparent background */
+  font-family: ObosText-Medium, sans-serif;
+  font-size: 17px;
+  right: 100px; 
+  border-radius: 8px; 
+  text-align: center;
+  color: #fff; 
+  min-width: 74px;
+  min-height: 30px; 
+  top: 22px;
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.button_right {
+  position: absolute;
+  border: 2px solid #FFF; /* Add border */
+  background-color: transparent; /* Transparent background */
+  font-family: ObosText-Medium, sans-serif;
+  font-size: 17px;
+  right: 15px; 
+  border-radius: 8px; 
+  text-align: center;
+  color: #fff; 
+  min-width: 74px;
+  min-height: 30px;
+  top: 22px;
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}

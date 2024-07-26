@@ -1,0 +1,803 @@
+{
+  "id": "3556e237-4824-43c5-9eed-d4c42f0760da",
+  "version": "1.3.1",
+  "name": "320x400_variant_NO",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "projekt": {
+        "type": "text",
+        "source": "feed"
+      },
+      "creative_dimension": {
+        "type": "text",
+        "source": "feed"
+      },
+      "ort": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bgImageCssTopAdjust": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bgImageCssLeftAdjust": {
+        "type": "text",
+        "source": "feed"
+      },
+      "useHouseIcon": {
+        "type": "text",
+        "source": "feed"
+      },
+      "rubrik": {
+        "type": "text",
+        "source": "feed"
+      },
+      "rubrik_copy_from_excel": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bild": {
+        "type": "image",
+        "source": "feed"
+      },
+      "rubrik_mindre_format": {
+        "type": "text",
+        "source": "feed"
+      },
+      "brodtext": {
+        "type": "text",
+        "source": "feed"
+      },
+      "brodtext_mindre_format": {
+        "type": "text",
+        "source": "feed"
+      },
+      "CTA": {
+        "type": "text",
+        "source": "feed"
+      },
+      "use_buttons_yes_no": {
+        "type": "text",
+        "source": "feed"
+      },
+      "button_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "feed"
+      },
+      "logo_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bg_image_source": {
+        "type": "text",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "320x400"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken. "
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "300x600"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken. "
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "980x600"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "980x300"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "320x400"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "300x600"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "980x600"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "980x300"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#fff"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=eskilstuna"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "320x400"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": "5"
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#000"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=goteborg"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "300x600"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#000"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=goteborg"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "980x600"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": ""
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#000"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=goteborg"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          }
+        },
+        {
+          "projekt": {
+            "value": "Brf Test"
+          },
+          "creative_dimension": {
+            "value": "980x300"
+          },
+          "ort": {
+            "value": "Norge"
+          },
+          "bgImageCssTopAdjust": {
+            "value": "-65"
+          },
+          "bgImageCssLeftAdjust": {
+            "value": ""
+          },
+          "useHouseIcon": {
+            "value": "0"
+          },
+          "rubrik": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "rubrik_copy_from_excel": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "bild": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          },
+          "rubrik_mindre_format": {
+            "value": "Nå er det salgsstart på prosjekt x"
+          },
+          "brodtext": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "brodtext_mindre_format": {
+            "value": "Vi bygger bolig for alle livets faser, tett på Tøyenparken"
+          },
+          "CTA": {
+            "value": "Meld deg på her"
+          },
+          "use_buttons_yes_no": {
+            "value": "yes"
+          },
+          "button_color": {
+            "value": "#000"
+          },
+          "exit_url": {
+            "value": "https://www.obos.no/&utm_source=xaxis&utm_medium=banner&utm_campaign=projektkampanj&utm_content=goteborg"
+          },
+          "logo_src": {
+            "value": "https://assets.lemonpi.io/a/1024/d1a521cdaf1848c786bcc797fed95da8.png"
+          },
+          "bg_image_source": {
+            "value": "https://assets.lemonpi.io/a/k/6fec53c9-26a2-46ff-81f6-63b31aae0a10/Assets/Projektkampanj_Q1_2024/Gteborg/Wendelstrand.jpg"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1153,
+        "url": "https://assets.lemonpi.io/a/font/1153/OBOSDisplay-Bold?v=700",
+        "family": "OBOSDisplay-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1153,
+        "url": "https://assets.lemonpi.io/a/font/1153/ObosText-Medium?v=500",
+        "family": "ObosText-Medium",
+        "variant": "500"
+      }
+    ]
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 1153,
+    "name": "OBOS Real estate"
+  },
+  "folders": {
+    "selectedFolderId": 4904
+  },
+  "port": 58874
+}
