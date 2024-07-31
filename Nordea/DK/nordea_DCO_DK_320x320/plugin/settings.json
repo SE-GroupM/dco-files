@@ -1,0 +1,301 @@
+{
+  "id": "627eac21-6081-4b8f-9350-567f80d86e79",
+  "version": "1.3.1",
+  "name": "nordea_DCO_320x320",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 320,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "Frame_1_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_2_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_3_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Use_frame_4": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_4_Text_Disclaimer": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Tagline_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Cta_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "BG_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_1_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_2_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_3_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Cta_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Cta_BG": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Disclaimer_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_300x600": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_320x320": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_930x180": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_930x360": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_930x600": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Image_pulse": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Use_pulse": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Logo": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Logo_2": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Landingpage": {
+        "type": "click",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "Frame_1_Text": {
+            "value": "Gør som en rigtig <br>koldingenser. "
+          },
+          "Frame_2_Text": {
+            "value": "Investér i at gøre i morgen lidt bedre end i dag"
+          },
+          "Frame_3_Text": {
+            "value": "Besøg os på <br>Kolding Åpark 2"
+          },
+          "Use_frame_4": {
+            "value": "TRUE"
+          },
+          "Frame_4_Text_Disclaimer": {
+            "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb."
+          },
+          "Tagline_Text": {
+            "value": "Idéen om noget bedre"
+          },
+          "Cta_Text": {
+            "value": "\nLæs mere"
+          },
+          "BG_Color": {
+            "value": "#0000A0"
+          },
+          "Frame_1_Text_Color": {
+            "value": "#ffffff"
+          },
+          "Frame_2_Text_Color": {
+            "value": "#FBD9CA"
+          },
+          "Frame_3_Text_Color": {
+            "value": "#FBD9CA"
+          },
+          "Cta_Text_Color": {
+            "value": "#0000A0"
+          },
+          "Cta_BG": {
+            "value": "#FBD9CA"
+          },
+          "Disclaimer_Color": {
+            "value": "#ffffff"
+          },
+          "Video_300x600": {
+            "value": "https://assets.lemonpi.io/a/k/6497ba26-6a1e-40e1-9d69-6fb8252bed8a/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-300x600.mp4"
+          },
+          "Video_320x320": {
+            "value": "v3:w_Ug6tQ5bXBqSiajZgWgh"
+          },
+          "Video_930x180": {
+            "value": "https://assets.lemonpi.io/a/k/717e579f-6ae6-4918-b834-5d5d1d68b3a7/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-930x180.mp4"
+          },
+          "Video_930x360": {
+            "value": "https://assets.lemonpi.io/a/k/eba7dd9f-022c-4835-9976-500f561dcc6b/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-930x360.mp4"
+          },
+          "Video_930x600": {
+            "value": "https://assets.lemonpi.io/a/k/a19ad84a-1b27-4c0f-bdcc-246eb473c24b/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-930x600.mp4"
+          },
+          "Image_pulse": {
+            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
+          },
+          "Use_pulse": {
+            "value": "TRUE"
+          },
+          "Logo": {
+            "value": "https://assets.lemonpi.io/a/k/c0eda327-9099-488d-897f-b416bede8c4c/Assets/Nordea-DCO-2024/Images/nordea-logo-blue.png"
+          },
+          "Logo_2": {
+            "value": "https://assets.lemonpi.io/a/k/a172abd5-2497-4393-94ca-d9b71d8274b0/Assets/Nordea-DCO-2024/Images/nordea-logo-white.png"
+          },
+          "Landingpage": {
+            "value": "https://www.matas.dk/loreal-paris-revitalift-laser-pure-retinol-night-serum-30-ml?utm_source=leverandoer&utm_medium=loreal&utm_campaign=FB-umsQ3-alwayson-uge35-2022"
+          }
+        },
+        {
+          "Frame_1_Text": {
+            "value": "Gør som en rigtig <br>koldingenser. "
+          },
+          "Frame_2_Text": {
+            "value": "Investér i at gøre i morgen lidt bedre end i dag"
+          },
+          "Frame_3_Text": {
+            "value": "Besøg os på <br>Kolding Åpark 2"
+          },
+          "Use_frame_4": {
+            "value": "TRUE"
+          },
+          "Frame_4_Text_Disclaimer": {
+            "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb."
+          },
+          "Tagline_Text": {
+            "value": "Idéen om noget bedre"
+          },
+          "Cta_Text": {
+            "value": "\nLæs mere"
+          },
+          "BG_Color": {
+            "value": "#0000A0"
+          },
+          "Frame_1_Text_Color": {
+            "value": "#ffffff"
+          },
+          "Frame_2_Text_Color": {
+            "value": "#FBD9CA"
+          },
+          "Frame_3_Text_Color": {
+            "value": "#FBD9CA"
+          },
+          "Cta_Text_Color": {
+            "value": "#0000A0"
+          },
+          "Cta_BG": {
+            "value": "#FBD9CA"
+          },
+          "Disclaimer_Color": {
+            "value": "#ffffff"
+          },
+          "Video_300x600": {
+            "value": "https://assets.lemonpi.io/a/k/09f0f477-f5fd-4398-a6f7-8edb85dc9b3e/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-300x600.mp4"
+          },
+          "Video_320x320": {
+            "value": "v3:w_Ug6tQ5bXBqSiajZgWgh"
+          },
+          "Video_930x180": {
+            "value": "https://assets.lemonpi.io/a/k/cbe232c4-c9e8-47be-8bd3-5a8b2ef34bd8/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x180.mp4"
+          },
+          "Video_930x360": {
+            "value": "https://assets.lemonpi.io/a/k/f22f27b1-01c1-4770-9840-4937aa9f1320/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x360.mp4"
+          },
+          "Video_930x600": {
+            "value": "https://assets.lemonpi.io/a/k/8a187fa8-1233-4ed8-aa3b-657d553a1054/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x600.mp4"
+          },
+          "Image_pulse": {
+            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
+          },
+          "Use_pulse": {
+            "value": "TRUE"
+          },
+          "Logo": {
+            "value": "https://assets.lemonpi.io/a/k/a172abd5-2497-4393-94ca-d9b71d8274b0/Assets/Nordea-DCO-2024/Images/nordea-logo-white.png"
+          },
+          "Logo_2": {
+            "value": "https://assets.lemonpi.io/a/k/a172abd5-2497-4393-94ca-d9b71d8274b0/Assets/Nordea-DCO-2024/Images/nordea-logo-white.png"
+          },
+          "Landingpage": {
+            "value": "https://www.matas.dk/loreal-paris-revitalift-laser-pure-retinol-night-serum-30-ml?utm_source=leverandoer&utm_medium=loreal&utm_campaign=FB-umsQ3-alwayson-uge35-2023"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1260,
+        "url": "https://assets.lemonpi.io/a/font/1260/Nordea+Sans+Large?v=700",
+        "family": "Nordea Sans Large",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1260,
+        "url": "https://assets.lemonpi.io/a/font/1260/Nordea+Sans+Small?v=400",
+        "family": "Nordea Sans Small",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 1260,
+        "url": "https://assets.lemonpi.io/a/font/1260/Nordea+Sans+Small?v=700",
+        "family": "Nordea Sans Small",
+        "variant": "700"
+      }
+    ]
+  },
+  "agency": {
+    "id": 13,
+    "name": "Xaxis Denmark"
+  },
+  "advertiser": {
+    "id": 1260,
+    "name": "Nordea"
+  },
+  "port": 59319
+}
