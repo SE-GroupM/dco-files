@@ -126,7 +126,7 @@
             "value": "Besøg os på <br>Kolding Åpark 2"
           },
           "Use_frame_4": {
-            "value": "TRUE"
+            "value": "FALSE"
           },
           "Frame_4_Text_Disclaimer": {
             "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb."
@@ -297,5 +297,5 @@
     "id": 1260,
     "name": "Nordea"
   },
-  "port": 59319
+  "port": 55093
 }

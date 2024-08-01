@@ -25,12 +25,11 @@ html, body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  font-family: "Nordea Sans Large";
 }
 /* Copy text of frame 1 */
 .frame_1 {
-  font-family: "Nordea Sans Large";
   position: absolute;
-  color: #FFF;
   top: 178px;
   left: 20px;
   width: 279px;
@@ -39,9 +38,7 @@ html, body {
 }
 /* Copy text of frame 2 */
 .frame_2 {
-  font-family: "Nordea Sans Large";
   position: absolute;
-  color: #FBD9CA;
   top: 83px;
   left: 40px;
   width: 240px;
@@ -50,9 +47,7 @@ html, body {
 }
 /* Copy text of frame 3 */
 .frame_3 {
-  font-family: "Nordea Sans Large";
   position: absolute;
-  color: #FBD9CA;
   top: 83px;
   left: 40px;
   width: 240px;
@@ -73,7 +68,6 @@ html, body {
 }
 /* Tagline text in bottom */
 .tagline {
-  font-family: "Nordea Sans Large";
   position: absolute;
   color: #FFF;
   top: 268px;
