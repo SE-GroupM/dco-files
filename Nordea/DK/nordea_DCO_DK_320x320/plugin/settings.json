@@ -162,7 +162,7 @@
             "value": "https://assets.lemonpi.io/a/k/6497ba26-6a1e-40e1-9d69-6fb8252bed8a/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-300x600.mp4"
           },
           "Video_320x320": {
-            "value": "v3:w_Ug6tQ5bXBqSiajZgWgh"
+            "value": "https://assets.lemonpi.io/a/k/cdd77f4d-e6ea-46fd-83e1-4d90d505db74/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-320x320_1.mp4"
           },
           "Video_930x180": {
             "value": "https://assets.lemonpi.io/a/k/717e579f-6ae6-4918-b834-5d5d1d68b3a7/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-930x180.mp4"
@@ -236,7 +236,7 @@
             "value": "https://assets.lemonpi.io/a/k/09f0f477-f5fd-4398-a6f7-8edb85dc9b3e/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-300x600.mp4"
           },
           "Video_320x320": {
-            "value": "v3:w_Ug6tQ5bXBqSiajZgWgh"
+            "value": "https://assets.lemonpi.io/a/k/cdd77f4d-e6ea-46fd-83e1-4d90d505db74/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-320x320_1.mp4"
           },
           "Video_930x180": {
             "value": "https://assets.lemonpi.io/a/k/cbe232c4-c9e8-47be-8bd3-5a8b2ef34bd8/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x180.mp4"
@@ -297,5 +297,5 @@
     "id": 1260,
     "name": "Nordea"
   },
-  "port": 55093
+  "port": 60274
 }

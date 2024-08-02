@@ -103,6 +103,7 @@ html, body {
   width: 135px;
   height: 59px;
   left: 92px;
+  top: 0px;
 }
 /* Gradient on first frame */
 .gradient {
@@ -139,17 +140,8 @@ top: 32px;
 }
 
 /* Video player */
-.player {
+.video {
   position: absolute;
-  width: 320px;
-  height: 320px;
   left: 0px;
   top: 0px;
-  background-repeat: no-repeat;
-  background-size: 320px, 320px;
-}
-
-/* Seenthis player control */
-.seenthis-control-bar {
-  opacity: 0;
 }
