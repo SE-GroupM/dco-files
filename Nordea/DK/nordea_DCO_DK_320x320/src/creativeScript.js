@@ -28,12 +28,6 @@ onLemonpiReady(function () {
   $("#logo_1").css("background-image","url("+local_content.Logo.value+")");
   $("#logo_2").css("background-image","url("+local_content.Logo_2.value+")");
 
-  //Append pulse if Use pulse is true
-  if (local_content.Use_pulse.value = true) {
-    $("#left_pulse").css("background-image","url("+local_content.Image_pulse.value+")");
-    $("#right_pulse").css("background-image","url("+local_content.Image_pulse.value+")");
-  } 
-
   //Append copy frame 1 and color
   $("#frame_1").html(local_content.Frame_1_Text.value);
   $("#frame_1").css("color", (local_content.Frame_1_Text_Color.value));
@@ -61,16 +55,37 @@ onLemonpiReady(function () {
   $("#tagline").html(local_content.Tagline_Text.value);
   $("#tagline").css("color", (local_content.Frame_1_Text_Color.value));
 
-  // Set the BG video source
-  var BGvideoSource = '<video id="BG_video" autoplay width="320" height="320"><source src="' + local_content.Video_320x320.value + '" type="video/mp4"></video>';
+  // Set the BG video source from feed
+  var BGvideoSource = '<video id="BG_video" autoplay muted playsinline loop width="320" height="320"><source src="' + local_content.Video_320x320.value + '" type="video/mp4"></video>';
   $("#bg_video").html(BGvideoSource);
 
-  // Function to restart the BG video
-  function restartBGVideo() {
-    var video = document.getElementById('BG_video');
-    video.currentTime = 0;
-    video.play();
+  // Left pulse videos
+  var leftPulseVideo = '<video id="pulse_left" autoplay muted playsinline lopp width="320" height="320">' + 
+  '<source src="https://assets.lemonpi.io/a/k/493e7bad-9286-4b8a-aaaa-1bcd0cad156b/Assets/Nordea-DCO-2024/Videos/320x320_Pulse_left.mov" type="video/mov">' + 
+  '<source src="https://assets.lemonpi.io/a/k/c54295a0-4264-4e2e-a7ee-aec31db07ba1/Assets/Nordea-DCO-2024/Videos/320x320_Pulse_left.webm" type="video/webm">' + 
+  '</video>';
+  // Right pulse videos
+  var rightPulseVideo = '<video id="pulse_right" autoplay muted playsinline loop width="320" height="320">' + 
+  '<source src="https://assets.lemonpi.io/a/k/31ad56a2-cf03-4ac4-8cf5-3e23bbe8d995/Assets/Nordea-DCO-2024/Videos/320x320_Pulse_right.mov" type="video/mov">' + 
+  '<source src="https://assets.lemonpi.io/a/k/524985c9-d52b-4cac-bae5-db131c281c23/Assets/Nordea-DCO-2024/Videos/320x320_Pulse_right.webm" type="video/webm">' + 
+  '</video>';
+  
+  //If use pulse left, apply pulse to div
+  if (local_content.Use_pulse_left.value = true) {
+    $("#pulse_video_left").html(leftPulseVideo);
   }
+
+  //If use pulse right, apply pulse to div
+  if (local_content.Use_pulse_right.value = true) {
+    $("#pulse_video_right").html(rightPulseVideo); 
+  }
+
+  // Function to restart videos
+  function restartVideo(videoId) {
+    var videoElement = document.getElementById(videoId);
+    videoElement.currentTime = 0;
+    videoElement.play();
+}
 
   // Function for animation of content using frame 1
   function firstFrame() {
@@ -81,9 +96,11 @@ onLemonpiReady(function () {
     .to('#gradient', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 gradient out
     .to('#bg_video', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 video out
     .to('#logo_1', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 logo out
-    .to('#left_pulse', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 left pulse out
-    .to('#right_pulse', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 right pulse out
-    .add(restartBGVideo, 0); // Reset BG video to start at 0
+    .to('#pulse_video_left', 0.6, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 left pulse out
+    .to('#pulse_video_right', 0.6, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 right pulse out
+    .add(function() { restartVideo('BG_video'); }, 0) // Reset BG video to start at 0
+    .add(function() { restartVideo('pulse_left'); }, 0) // Reset left pulse video to start at 0
+    .add(function() { restartVideo('pulse_right'); }, 0) // Reset right pulse video to start at 0
     return tl;
   }
 
@@ -118,16 +135,16 @@ onLemonpiReady(function () {
   if (local_content.Use_frame_4 = true) {
     var maintl = new TimelineMax({repeat:-1});
     maintl
-      .add(firstFrame(3))
-      .add(secondFrame(6))
-      .add(thirdFrame(9))
-      .add(lastFrame(12));
+      .add(firstFrame(0))
+      .add(secondFrame(3))
+      .add(thirdFrame(6))
+      .add(lastFrame(9));
   } else {
     var maintl = new TimelineMax({repeat:-1});
     maintl
-    .add(firstFrame(3))
-    .add(secondFrame(6))
-    .add(thirdFrame(9))
+    .add(firstFrame(0))
+    .add(secondFrame(3))
+    .add(thirdFrame(6))
     }
   });
 

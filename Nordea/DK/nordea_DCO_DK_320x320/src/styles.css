@@ -109,37 +109,13 @@ html, body {
 .gradient {
 position: absolute;
 width: 320px;
-height: 111px;
+height: 150px;
 left: 0px;
-top: 209px;
+top: 170px;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 2%, rgba(102, 102, 102, 0) 95.95%);
 }
 
-/* Pulse on left side */
-.left_pulse{
-position: absolute;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-width: 197px;
-height: 194px;
-left: -80px;
-top: 10px;
-}
-
-/* Pulse on right side */
-.right_pulse{
-position: absolute;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-width: 197px;
-height: 194px;
-left: 203px;
-top: 32px;
-}
-
-/* Video player */
+/* Video layers */
 .video {
   position: absolute;
   left: 0px;

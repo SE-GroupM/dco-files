@@ -43,6 +43,10 @@
         "type": "text",
         "source": "feed"
       },
+      "Color": {
+        "type": "text",
+        "source": "feed"
+      },
       "BG_Color": {
         "type": "text",
         "source": "feed"
@@ -72,23 +76,43 @@
         "source": "feed"
       },
       "Video_300x600": {
-        "type": "text",
+        "type": "video",
         "source": "feed"
       },
       "Video_320x320": {
-        "type": "text",
+        "type": "video",
         "source": "feed"
       },
       "Video_930x180": {
-        "type": "text",
+        "type": "video",
         "source": "feed"
       },
       "Video_930x360": {
-        "type": "text",
+        "type": "video",
         "source": "feed"
       },
       "Video_930x600": {
+        "type": "video",
+        "source": "feed"
+      },
+      "Use_pulse_right": {
         "type": "text",
+        "source": "feed"
+      },
+      "Use_pulse_left": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Logo": {
+        "type": "image",
+        "source": "feed"
+      },
+      "Logo_2": {
+        "type": "image",
+        "source": "feed"
+      },
+      "Landingpage": {
+        "type": "click",
         "source": "feed"
       },
       "Image_pulse": {
@@ -97,18 +121,6 @@
       },
       "Use_pulse": {
         "type": "text",
-        "source": "feed"
-      },
-      "Logo": {
-        "type": "text",
-        "source": "feed"
-      },
-      "Logo_2": {
-        "type": "text",
-        "source": "feed"
-      },
-      "Landingpage": {
-        "type": "click",
         "source": "feed"
       }
     },
@@ -126,16 +138,19 @@
             "value": "Besøg os på <br>Kolding Åpark 2"
           },
           "Use_frame_4": {
-            "value": "FALSE"
+            "value": "TRUE"
           },
           "Frame_4_Text_Disclaimer": {
-            "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb."
+            "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb. "
           },
           "Tagline_Text": {
             "value": "Idéen om noget bedre"
           },
           "Cta_Text": {
             "value": "\nLæs mere"
+          },
+          "Color": {
+            "value": "Nordea Blue Pink"
           },
           "BG_Color": {
             "value": "#0000A0"
@@ -173,10 +188,10 @@
           "Video_930x600": {
             "value": "https://assets.lemonpi.io/a/k/a19ad84a-1b27-4c0f-bdcc-246eb473c24b/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-930x600.mp4"
           },
-          "Image_pulse": {
-            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
+          "Use_pulse_right": {
+            "value": "TRUE"
           },
-          "Use_pulse": {
+          "Use_pulse_left": {
             "value": "TRUE"
           },
           "Logo": {
@@ -186,7 +201,13 @@
             "value": "https://assets.lemonpi.io/a/k/a172abd5-2497-4393-94ca-d9b71d8274b0/Assets/Nordea-DCO-2024/Images/nordea-logo-white.png"
           },
           "Landingpage": {
-            "value": "https://www.matas.dk/loreal-paris-revitalift-laser-pure-retinol-night-serum-30-ml?utm_source=leverandoer&utm_medium=loreal&utm_campaign=FB-umsQ3-alwayson-uge35-2022"
+            "value": "https://www.nordea.dk/"
+          },
+          "Image_pulse": {
+            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
+          },
+          "Use_pulse": {
+            "value": "TRUE"
           }
         },
         {
@@ -203,13 +224,16 @@
             "value": "TRUE"
           },
           "Frame_4_Text_Disclaimer": {
-            "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb."
+            "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb. "
           },
           "Tagline_Text": {
             "value": "Idéen om noget bedre"
           },
           "Cta_Text": {
             "value": "\nLæs mere"
+          },
+          "Color": {
+            "value": "Nordea Blue Pink"
           },
           "BG_Color": {
             "value": "#0000A0"
@@ -236,7 +260,7 @@
             "value": "https://assets.lemonpi.io/a/k/09f0f477-f5fd-4398-a6f7-8edb85dc9b3e/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-300x600.mp4"
           },
           "Video_320x320": {
-            "value": "https://assets.lemonpi.io/a/k/cdd77f4d-e6ea-46fd-83e1-4d90d505db74/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-320x320_1.mp4"
+            "value": "https://assets.lemonpi.io/a/k/9e1958fc-4339-4bf2-aac3-a66f5bc4febf/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-320x320_1.mp4"
           },
           "Video_930x180": {
             "value": "https://assets.lemonpi.io/a/k/cbe232c4-c9e8-47be-8bd3-5a8b2ef34bd8/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x180.mp4"
@@ -247,10 +271,10 @@
           "Video_930x600": {
             "value": "https://assets.lemonpi.io/a/k/8a187fa8-1233-4ed8-aa3b-657d553a1054/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x600.mp4"
           },
-          "Image_pulse": {
-            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
+          "Use_pulse_right": {
+            "value": "TRUE"
           },
-          "Use_pulse": {
+          "Use_pulse_left": {
             "value": "TRUE"
           },
           "Logo": {
@@ -260,7 +284,13 @@
             "value": "https://assets.lemonpi.io/a/k/a172abd5-2497-4393-94ca-d9b71d8274b0/Assets/Nordea-DCO-2024/Images/nordea-logo-white.png"
           },
           "Landingpage": {
-            "value": "https://www.matas.dk/loreal-paris-revitalift-laser-pure-retinol-night-serum-30-ml?utm_source=leverandoer&utm_medium=loreal&utm_campaign=FB-umsQ3-alwayson-uge35-2023"
+            "value": "https://www.nordea.dk/"
+          },
+          "Image_pulse": {
+            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
+          },
+          "Use_pulse": {
+            "value": "TRUE"
           }
         }
       ]
@@ -297,5 +327,5 @@
     "id": 1260,
     "name": "Nordea"
   },
-  "port": 60274
+  "port": 50720
 }
