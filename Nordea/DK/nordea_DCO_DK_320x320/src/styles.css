@@ -32,7 +32,7 @@ html, body {
   position: absolute;
   top: 178px;
   left: 20px;
-  width: 279px;
+  width: 280px;
   font-size: 25px;
   line-height: 29px;
 }
@@ -74,7 +74,7 @@ html, body {
   left: 20px;
   width: 280px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 17px;
 }
 .cta_container {
   position: absolute;
@@ -89,7 +89,7 @@ html, body {
   font-family: "Nordea Sans Small";
   font-weight: 700;
   position: absolute;
-  padding:  8px 10px;
+  padding:  6px 10px;
   font-size: 12px;
   line-height: 12px;
   border-radius: 20px;
@@ -115,9 +115,39 @@ top: 170px;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 2%, rgba(102, 102, 102, 0) 95.95%);
 }
 
-/* Video layers */
+/* Video layer */
 .video {
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+/* Position of background image */
+.bg_image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 320px;
+  left: 0px;
+  top: 0px;
+}
+
+/* Position of pulse */
+.pulse {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 320px;
+  left: 0px;
+  top: 0px;
+}
+
+/* Remove padding and margin from p elements */
+p {
+  padding: 0;
+  margin: 0;
 }

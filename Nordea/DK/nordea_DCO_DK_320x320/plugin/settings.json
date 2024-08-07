@@ -75,6 +75,10 @@
         "type": "text",
         "source": "feed"
       },
+      "Use_video": {
+        "type": "text",
+        "source": "feed"
+      },
       "Video_300x600": {
         "type": "video",
         "source": "feed"
@@ -93,6 +97,30 @@
       },
       "Video_930x600": {
         "type": "video",
+        "source": "feed"
+      },
+      "Use_image": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Image_300x600": {
+        "type": "image",
+        "source": "feed"
+      },
+      "Image_320x320": {
+        "type": "image",
+        "source": "feed"
+      },
+      "Image_930x180": {
+        "type": "image",
+        "source": "feed"
+      },
+      "Image_930x360": {
+        "type": "image",
+        "source": "feed"
+      },
+      "Image_930x600": {
+        "type": "image",
         "source": "feed"
       },
       "Use_pulse_right": {
@@ -173,6 +201,9 @@
           "Disclaimer_Color": {
             "value": "#ffffff"
           },
+          "Use_video": {
+            "value": "TRUE"
+          },
           "Video_300x600": {
             "value": "https://assets.lemonpi.io/a/k/6497ba26-6a1e-40e1-9d69-6fb8252bed8a/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-300x600.mp4"
           },
@@ -187,6 +218,24 @@
           },
           "Video_930x600": {
             "value": "https://assets.lemonpi.io/a/k/a19ad84a-1b27-4c0f-bdcc-246eb473c24b/Assets/Nordea-DCO-2024/Videos/Active-woman-in-sailboat-DCO-display-image-3sek-930x600.mp4"
+          },
+          "Use_image": {
+            "value": "FALSE"
+          },
+          "Image_300x600": {
+            "value": "https://assets.lemonpi.io/a/k/d9a285e5-3c1b-4760-bd4e-d96f112e31fa/Assets/Nordea-DCO-2024/Images/nordea-300x600.jpg"
+          },
+          "Image_320x320": {
+            "value": "https://assets.lemonpi.io/a/k/1e9a23b0-df98-457c-99c8-e44cc6711938/Assets/Nordea-DCO-2024/Images/nordea-320x320.jpg"
+          },
+          "Image_930x180": {
+            "value": "https://assets.lemonpi.io/a/k/35a553fb-f5bf-47e5-a32b-98c8b944ba3a/Assets/Nordea-DCO-2024/Images/nordea-930x180.jpg"
+          },
+          "Image_930x360": {
+            "value": "https://assets.lemonpi.io/a/k/035f0c46-ebe0-4656-9b50-d40dbcd4141a/Assets/Nordea-DCO-2024/Images/nordea-930x360.jpg"
+          },
+          "Image_930x600": {
+            "value": "https://assets.lemonpi.io/a/k/8bd24484-5df7-4240-a305-c8ad8110122f/Assets/Nordea-DCO-2024/Images/nordea-930x600.jpg"
           },
           "Use_pulse_right": {
             "value": "TRUE"
@@ -221,7 +270,7 @@
             "value": "Besøg os på <br>Kolding Åpark 2"
           },
           "Use_frame_4": {
-            "value": "TRUE"
+            "value": "FALSE"
           },
           "Frame_4_Text_Disclaimer": {
             "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb. "
@@ -256,6 +305,9 @@
           "Disclaimer_Color": {
             "value": "#ffffff"
           },
+          "Use_video": {
+            "value": "FALSE"
+          },
           "Video_300x600": {
             "value": "https://assets.lemonpi.io/a/k/09f0f477-f5fd-4398-a6f7-8edb85dc9b3e/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-300x600.mp4"
           },
@@ -270,6 +322,24 @@
           },
           "Video_930x600": {
             "value": "https://assets.lemonpi.io/a/k/8a187fa8-1233-4ed8-aa3b-657d553a1054/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x600.mp4"
+          },
+          "Use_image": {
+            "value": "TRUE"
+          },
+          "Image_300x600": {
+            "value": "https://assets.lemonpi.io/a/k/d9a285e5-3c1b-4760-bd4e-d96f112e31fa/Assets/Nordea-DCO-2024/Images/nordea-300x600.jpg"
+          },
+          "Image_320x320": {
+            "value": "https://assets.lemonpi.io/a/k/1e9a23b0-df98-457c-99c8-e44cc6711938/Assets/Nordea-DCO-2024/Images/nordea-320x320.jpg"
+          },
+          "Image_930x180": {
+            "value": "https://assets.lemonpi.io/a/k/35a553fb-f5bf-47e5-a32b-98c8b944ba3a/Assets/Nordea-DCO-2024/Images/nordea-930x180.jpg"
+          },
+          "Image_930x360": {
+            "value": "https://assets.lemonpi.io/a/k/035f0c46-ebe0-4656-9b50-d40dbcd4141a/Assets/Nordea-DCO-2024/Images/nordea-930x360.jpg"
+          },
+          "Image_930x600": {
+            "value": "https://assets.lemonpi.io/a/k/8bd24484-5df7-4240-a305-c8ad8110122f/Assets/Nordea-DCO-2024/Images/nordea-930x600.jpg"
           },
           "Use_pulse_right": {
             "value": "TRUE"
@@ -327,5 +397,8 @@
     "id": 1260,
     "name": "Nordea"
   },
-  "port": 50720
+  "folders": {
+    "selectedFolderId": 5054
+  },
+  "port": 50300
 }
