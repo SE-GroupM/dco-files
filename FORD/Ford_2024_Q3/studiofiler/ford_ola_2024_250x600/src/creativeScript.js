@@ -90,26 +90,73 @@ subCopy_frame_2.css({
     TweenMax.fromTo('#legal_bg', 0.2, { autoAlpha: 1}, { autoAlpha: 0});
   }
 
-  var mt = new TimelineMax({repeat: -1});
+  //Hover function on CTA to change colors
+  $('#creative_container')
+    .on('mouseenter touchstart', onUserEnterCta)
+    .on('mouseleave touchend', onUserLeaveCta);
 
-  if (use_one_headline_bool) {
-    mt.to("#frame_1_copy, #subCopy_static", {opacity: 1, duration: 1.1})
-      .to("#frame_1_copy, #subCopy_static", {opacity: 0, duration: 0.5, delay: 1.5})
-      .to("#frame_1_copy, #subCopy_static", {opacity: 1, duration: 0.5});
-  } else {
-    gsap.set("#frame_2_copy", { opacity: 0 });
-    mt.to("#frame_1_copy", {opacity: 1, duration: 1.5})
-      .to("#frame_1_copy", {opacity: 0, duration: 0.5, delay: 1.5})
-      .to("#frame_2_copy", {opacity: 1, duration: 0.5})
-      .to("#frame_2_copy", {opacity: 0, duration: 0.5, delay: 1.5})
-      .to("#frame_1_copy", {opacity: 1, duration: 0.5});
+  function onUserEnterCta() {
+    TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#0471f4', color: '#fff'}, { backgroundColor: '#fff', color: '#0471f4'});
   }
 
-  gsap.set("#subCopy2", { opacity: 0 });
-  gsap.timeline({repeat: -1, repeatDelay: 0}) // Adding repeat: -1 to loop forever, with no delay between repetitions
-    .to("#subCopy1", {opacity: 1, duration: 0.5}) // Fade in subCopy1
-    .to("#subCopy1", {opacity: 0, duration: 0.5, delay: 1.5}) // Fade out subCopy1
-    .to("#subCopy2", {opacity: 1, duration: 0.5}) // Then fade in subCopy2 after subCopy1 fades out
-    .to("#subCopy2", {opacity: 0, duration: 0.5, delay: 1.5}); // Finally, fade out subCopy2
+  function onUserLeaveCta() {
+    TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#fff', color: '#0471f4'}, { backgroundColor: '#0471f4', color: '#fff'});
+  }
+
+  // var mt = new TimelineMax({repeat: -1});
+  // if (use_one_headline_bool) {
+  //   mt.to("#frame_1_copy", {opacity: 1, duration: 1.1})
+  //     .to("#frame_1_copy", {opacity: 0, duration: 0.5, delay: 1.5})
+  //     .to("#frame_1_copy", {opacity: 1, duration: 0.5});
+  // } else {
+  //   gsap.set("#frame_2_copy", { opacity: 0 });
+  //   mt.to("#frame_1_copy", {opacity: 1, duration: 1.5})
+  //     .to("#frame_1_copy", {opacity: 0, duration: 0.5, delay: 1.5})
+  //     .to("#frame_2_copy", {opacity: 1, duration: 0.5})
+  //     .to("#frame_2_copy", {opacity: 0, duration: 0.5, delay: 1.5})
+  //     .to("#frame_1_copy", {opacity: 1, duration: 0.5});
+  // }
+
+  // gsap.set("#subCopy2", { opacity: 0 });
+  // gsap.timeline({repeat: -1, repeatDelay: 0}) // Adding repeat: -1 to loop forever, with no delay between repetitions
+  //   .to("#subCopy1", {opacity: 1, duration: 0.5}) // Fade in subCopy1
+  //   .to("#subCopy1", {opacity: 0, duration: 0.5, delay: 1.5}) // Fade out subCopy1
+  //   .to("#subCopy2", {opacity: 1, duration: 0.5}) // Then fade in subCopy2 after subCopy1 fades out
+  //   .to("#subCopy2", {opacity: 0, duration: 0.5, delay: 1.5}); // Finally, fade out subCopy2
+
+// Function for animation of content 
+function firstFrame() {
+  var tl = new TimelineMax();
+  if (use_one_headline_bool) {
+  TweenMax.set('#subCopy1, #subCopy2', { opacity: 0 });
+  tl.fromTo('#frame_1_copy', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) // Frame 1 headline in
+      .fromTo('#subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 2) // Subcopy 1 in
+      .to('#subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, 4) // Subcopy 1 out
+      .fromTo('#subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 4.3) // Subcopy 2 in
+      .to('#subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, 6) // Subcopy 2 out
+      .fromTo('#bg_image', 5.5, { scale: 1 }, { scale: 1.3, ease: Expo.easeOut }, 0) // Frame 1 bg image scale
+  } else {
+    TweenMax.set('#subCopy1, #subCopy2, #frame_2_copy', { opacity: 0 });
+    tl.fromTo('#frame_1_copy, #subCopy1', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) // Frame 1 headline and subcopy in
+      .to('#frame_1_copy, #subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, 2) // Frame 1 headline and subcopy out
+      .fromTo('#frame_2_copy, #subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 2.3) // Frame 2 headline and subcopy in
+      .to('#frame_2_copy, #subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, 4) // Frame 2 headline and subcopy out
+      .fromTo('#bg_image', 5.5, { scale: 1 }, { scale: 1.3, ease: Expo.easeOut }, 0) // Background image scale
+  }
+  return tl;
+}
+
+  // Create end frame
+  var maintl = new TimelineMax({
+    repeat: 4,
+    onComplete: function() {
+        // On complete, ensure the first frame is visible and the video is stopped at the first frame
+        TweenMax.set('#frame_1_copy, #subCopy1', { opacity: 1 });
+        TweenMax.set('#bg_image', { scale: 1 });
+    }
+  });
+
+  // Add frames to the main timeline
+  maintl.add(firstFrame(), 0)
 
 });

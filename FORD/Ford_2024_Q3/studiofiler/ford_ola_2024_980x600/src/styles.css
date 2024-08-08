@@ -33,7 +33,7 @@ html, body {
 
 #frame_1_copy {
   font-family: Ford-F1;
-  weight: "700 Medium";
+  font-weight: "700 Medium";
   position: absolute;
   top: 30px; 
   height: 86px;
@@ -46,7 +46,7 @@ html, body {
 
 #frame_2_copy {
   font-family: Ford-F1;
-  weight: "700 Medium";
+  font-weight: "700 Medium";
   position: absolute;
   top: 30px; 
   height: 86px;
@@ -62,7 +62,7 @@ html, body {
   color: #fff;
   font-family: Ford-F1;
   background-color: #0471f4;
-  weight: "500 Medium";
+  font-weight: "500 Medium";
   font-weight: 400;
   margin-block: 13.28px;
   font-size: 19px;
@@ -81,7 +81,7 @@ html, body {
   font-weight: 400;
   opacity: 1;
   font-family: Ford-F1;
-  weight: "500 Medium";  
+  font-weight: "500 Medium";  
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 22px;
@@ -91,6 +91,7 @@ html, body {
   width: 400px;
   height: 22px;
   top: 170px;
+  opacity: 0;
 }
 #subCopy1 {
   position: absolute;
@@ -98,14 +99,14 @@ html, body {
   font-weight: 400;
   opacity: 1;
   font-family: Ford-F1;
-  weight: "500 Medium";  
+  font-weight: "500 Medium";  
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 22px;
   font-size: 30px;
   text-align: left;
   left: 30px;
-  width: 400px;
+  width: 450px;
   height: 22px;
   top: 170px;
 }
@@ -115,16 +116,16 @@ html, body {
   font-weight: 400;
   opacity: 1;
   font-family: Ford-F1;
-  weight: "500 Medium";  
+  font-weight: "500 Medium";  
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 22px;
   font-size: 30px;
   text-align: left;
   left: 30px;
-  width: 400px;
+  width: 450px;
   height: 22px;
-  top: 92px;
+  top: 170px;
 }
 
 #logo_image {
@@ -145,7 +146,7 @@ html, body {
 
 #legal_btn {
   font-family: Ford-F1;
-  weight: "500 Medium";
+  font-weight: "500 Medium";
   position: absolute;
   width: 75px;
   height: 24px;
@@ -159,7 +160,7 @@ html, body {
 #legal_txt {
   color: rgb(255, 255, 255);
   font-family: Ford-F1;
-  weight: "500 Medium";
+  font-weight: "500 Medium";
   font-size: 20px;
   font-weight: 400;
   margin-block: 11.62px;
