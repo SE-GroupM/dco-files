@@ -1,13 +1,13 @@
 {
   "id": "627eac21-6081-4b8f-9350-567f80d86e79",
   "version": "1.3.1",
-  "name": "nordea_DCO_320x320",
+  "name": "nordea_DCO_300x600",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 320,
+        "width": 300,
+        "height": 600,
         "isCustom": false
       }
     ],
@@ -400,5 +400,5 @@
   "folders": {
     "selectedFolderId": 5054
   },
-  "port": 55202
+  "port": 58683
 }

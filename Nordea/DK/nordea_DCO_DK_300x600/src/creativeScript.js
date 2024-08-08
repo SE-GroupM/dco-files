@@ -56,21 +56,21 @@ onLemonpiReady(function () {
   $("#tagline").css("color", (local_content.Frame_1_Text_Color.value));
 
   // Set the BG video source
-  var BGvideoSource = '<video id="BG_video" autoplay muted playsinline loop width="320" height="320"><source src="' + local_content.Video_320x320.value + '" type="video/mp4"></video>'; 
+  var BGvideoSource = '<video id="BG_video" autoplay muted playsinline loop width="300" height="600"><source src="' + local_content.Video_300x600.value + '" type="video/mp4"></video>'; 
 
   // Set the BG image source from feed and apply if Use image is true
   if (local_content.Use_image.value.toUpperCase() === "TRUE") {
-    $("#bg_image").css("background-image","url("+local_content.Image_320x320.value+")");
+    $("#bg_image").css("background-image","url("+local_content.Image_300x600.value+")");
   }
  
   //If use pulse left ise true, apply pulse to div
   if (local_content.Use_pulse_left.value.toUpperCase() === "TRUE") {
-     $("#pulse_video_left").css("background-image","url(https://assets.lemonpi.io/a/k/6d780a67-3be4-4a7c-9848-a8e580aeee65/Assets/Nordea-DCO-2024/Images/320x320_pulse_left.gif)");
+     $("#pulse_video_left").css("background-image","url(https://assets.lemonpi.io/a/k/8a5ceef8-731f-4db2-943b-1a18528687b5/Assets/Nordea-DCO-2024/Images/300x600_pulse_left.gif)");
   }
 
   //If use pulse right is true, apply pulse to div
   if (local_content.Use_pulse_right.value.toUpperCase() === "TRUE") {
-      $("#pulse_video_right").css("background-image","url(https://assets.lemonpi.io/a/k/0fd93d08-69e6-4119-aab7-47ea10ef3079/Assets/Nordea-DCO-2024/Images/320x320_pulse_right.gif)");
+      $("#pulse_video_right").css("background-image","url(https://assets.lemonpi.io/a/k/f01282e0-c007-4d52-9806-d131d0c9d963/Assets/Nordea-DCO-2024/Images/300x600_pulse_right.gif)");
   }
 
   var useVideo = local_content.Use_video.value.toUpperCase();
@@ -174,33 +174,33 @@ var maintl = new TimelineMax({
     const elements = [
       {
         id: "frame_1",
-        maxContainerWidth: 280,
+        maxContainerWidth: 260,
         maxContainerHeight: 80,
-        maxFontSize: 25,
+        maxFontSize: 32,
         maxLineHeight: 1.2, 
         textSelector: "p",
       },
       {
         id: "frame_2",
         maxContainerWidth: 240,
-        maxContainerHeight: 100,
-        maxFontSize: 25,
+        maxContainerHeight: 108,
+        maxFontSize: 28,
         maxLineHeight: 1.2, 
         textSelector: "p",
       },
       {
         id: "frame_3",
         maxContainerWidth: 240,
-        maxContainerHeight: 100,
-        maxFontSize: 25,
+        maxContainerHeight: 108,
+        maxFontSize: 28,
         maxLineHeight: 1.2, 
         textSelector: "p",
       },
       {
         id: "frame_4",
         maxContainerWidth: 240,
-        maxContainerHeight: 100,
-        maxFontSize: 15,
+        maxContainerHeight: 125,
+        maxFontSize: 18,
         maxLineHeight: 1.2, 
         textSelector: "p",
       },
