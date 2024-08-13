@@ -56,21 +56,16 @@ onLemonpiReady(function () {
   $("#tagline").css("color", (local_content.Frame_1_Text_Color.value));
 
   // Set the BG video source
-  var BGvideoSource = '<video id="BG_video" autoplay muted playsinline loop width="300" height="600"><source src="' + local_content.Video_300x600.value + '" type="video/mp4"></video>'; 
+  var BGvideoSource = '<video id="BG_video" autoplay muted playsinline loop width="930" height="180"><source src="' + local_content.Video_930x180.value + '" type="video/mp4"></video>'; 
 
   // Set the BG image source from feed and apply if Use image is true
   if (local_content.Use_image.value.toUpperCase() === "TRUE") {
-    $("#bg_image").css("background-image","url("+local_content.Image_300x600.value+")");
-  }
- 
-  //If use pulse left ise true, apply pulse to div
-  if (local_content.Use_pulse_left.value.toUpperCase() === "TRUE") {
-     $("#pulse_video_left").css("background-image","url(https://assets.lemonpi.io/a/k/8a5ceef8-731f-4db2-943b-1a18528687b5/Assets/Nordea-DCO-2024/Images/300x600_pulse_left.gif)");
+    $("#bg_image").css("background-image","url("+local_content.Image_930x180.value+")");
   }
 
   //If use pulse right is true, apply pulse to div
   if (local_content.Use_pulse_right.value.toUpperCase() === "TRUE") {
-      $("#pulse_video_right").css("background-image","url(https://assets.lemonpi.io/a/k/f01282e0-c007-4d52-9806-d131d0c9d963/Assets/Nordea-DCO-2024/Images/300x600_pulse_right.gif)");
+      $("#pulse_video_right").css("background-image","url(https://assets.lemonpi.io/a/k/c589214a-0522-4f44-9dca-067f6baabf58/Assets/Nordea-DCO-2024/Images/930x180_pulse_right.gif)");
   }
 
   var useVideo = local_content.Use_video.value.toUpperCase();
@@ -118,7 +113,7 @@ function secondFrame() {
   var tl = new TimelineMax();
   tl.fromTo('#frame_2', 0.4, {opacity:0, ease: Linear.ease},{opacity:1, ease: Linear.ease}, 0) // Frame 2 in
     .fromTo('#cta', 0.4, {scale: 0}, {scale: 1, ease: Power1.easeOut}, 0) // CTA in
-    .to('#tagline', 0.4, {color: local_content.Frame_2_Text_Color.value, ease: Linear.ease}, 0) // Frame 2 text color change
+    .to('#tagline', 0.4, {x:-132, color: local_content.Frame_2_Text_Color.value, ease: Linear.ease}, 0) // Frame 2 text color change and center tagline
     .to('#frame_2', 0.4, {opacity:0, ease: Linear.ease}, 3.3) // Frame 2 out
   return tl;
 }
@@ -145,7 +140,7 @@ var maintl = new TimelineMax({
   onComplete: function() {
       // On complete, ensure the first frame is visible and the video is stopped at the first frame
       TweenMax.set('#frame_1, #bg_video, #bg_image, #gradient, #logo_1', {opacity: 1});
-      TweenMax.set('#tagline', {color: local_content.Frame_1_Text_Color.value});
+      TweenMax.set('#tagline', {x: 0,color: local_content.Frame_1_Text_Color.value});
       TweenMax.set('#cta, #logo_2', {opacity: 0});
       
       if (useVideo === "TRUE") {
@@ -174,32 +169,32 @@ var maintl = new TimelineMax({
     const elements = [
       {
         id: "frame_1",
-        maxContainerWidth: 260,
-        maxContainerHeight: 80,
-        maxFontSize: 32,
+        maxContainerWidth: 550,
+        maxContainerHeight: 93,
+        maxFontSize: 35,
         maxLineHeight: 1.2, 
         textSelector: "p",
       },
       {
         id: "frame_2",
-        maxContainerWidth: 240,
-        maxContainerHeight: 108,
-        maxFontSize: 28,
+        maxContainerWidth: 550,
+        maxContainerHeight: 93,
+        maxFontSize: 35,
         maxLineHeight: 1.2, 
         textSelector: "p",
       },
       {
         id: "frame_3",
-        maxContainerWidth: 240,
-        maxContainerHeight: 108,
-        maxFontSize: 28,
+        maxContainerWidth: 550,
+        maxContainerHeight: 93,
+        maxFontSize: 35,
         maxLineHeight: 1.2, 
         textSelector: "p",
       },
       {
         id: "frame_4",
-        maxContainerWidth: 260,
-        maxContainerHeight: 125,
+        maxContainerWidth: 470,
+        maxContainerHeight: 67,
         maxFontSize: 18,
         maxLineHeight: 1.2, 
         textSelector: "p",

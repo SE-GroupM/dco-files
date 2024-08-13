@@ -1,17 +1,22 @@
 {
-  "id": "627eac21-6081-4b8f-9350-567f80d86e79",
+  "id": "29cc7f5d-4b75-4ac3-85cf-cafb816e55ac",
   "version": "1.3.1",
-  "name": "nordea_DCO_300x600",
+  "name": "nordea_DCO_930x180",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 300,
-        "height": 600,
-        "isCustom": false
+        "width": 930,
+        "height": 180,
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 930,
+        "height": 180
+      }
+    ]
   },
   "placeholders": {
     "schema": {
@@ -142,14 +147,6 @@
       "Landingpage": {
         "type": "click",
         "source": "feed"
-      },
-      "Image_pulse": {
-        "type": "text",
-        "source": "feed"
-      },
-      "Use_pulse": {
-        "type": "text",
-        "source": "feed"
       }
     },
     "data": {
@@ -251,12 +248,6 @@
           },
           "Landingpage": {
             "value": "https://www.nordea.dk/"
-          },
-          "Image_pulse": {
-            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
-          },
-          "Use_pulse": {
-            "value": "TRUE"
           }
         },
         {
@@ -270,7 +261,7 @@
             "value": "Besøg os på <br>Kolding Åpark 2"
           },
           "Use_frame_4": {
-            "value": "FALSE"
+            "value": "TRUE"
           },
           "Frame_4_Text_Disclaimer": {
             "value": "Disclaimer: Investering er aldrig uden risiko. Der er risiko for at tabe hele eller dele af det investerede beløb. "
@@ -306,7 +297,7 @@
             "value": "#ffffff"
           },
           "Use_video": {
-            "value": "FALSE"
+            "value": "TRUE"
           },
           "Video_300x600": {
             "value": "https://assets.lemonpi.io/a/k/09f0f477-f5fd-4398-a6f7-8edb85dc9b3e/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-300x600.mp4"
@@ -324,7 +315,7 @@
             "value": "https://assets.lemonpi.io/a/k/8a187fa8-1233-4ed8-aa3b-657d553a1054/Assets/Nordea-DCO-2024/Videos/Dad-and-todler-in-livingroom-DCO-display-image-3sek-930x600.mp4"
           },
           "Use_image": {
-            "value": "TRUE"
+            "value": "FALSE"
           },
           "Image_300x600": {
             "value": "https://assets.lemonpi.io/a/k/d9a285e5-3c1b-4760-bd4e-d96f112e31fa/Assets/Nordea-DCO-2024/Images/nordea-300x600.jpg"
@@ -355,12 +346,6 @@
           },
           "Landingpage": {
             "value": "https://www.nordea.dk/"
-          },
-          "Image_pulse": {
-            "value": "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png"
-          },
-          "Use_pulse": {
-            "value": "TRUE"
           }
         }
       ]
@@ -400,5 +385,5 @@
   "folders": {
     "selectedFolderId": 5054
   },
-  "port": 54239
+  "port": 58430
 }

@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 300px;
-  height: 600px;
+  width: 930px;
+  height: 180px;
   text-align: center;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
@@ -30,29 +30,29 @@ html, body {
 /* Copy text of frame 1 */
 .frame_1 {
   position: absolute;
-  top: 430px;
-  left: 20px;
-  width: 260px;
-  font-size: 32px;
-  line-height: 36px;
+  top: 33px;
+  left: 330px;
+  width: 550px;
+  font-size: 35px;
+  line-height: 39px;
 }
 /* Copy text of frame 2 */
 .frame_2 {
   position: absolute;
-  top: 223px;
-  left: 30px;
-  width: 240px;
-  font-size: 28px;
-  line-height: 32px;
+  top: 33px;
+  left: 202px;
+  width: 550px;
+  font-size: 35px;
+  line-height: 39px;
 }
 /* Copy text of frame 3 */
 .frame_3 {
   position: absolute;
-  top: 223px;
-  left: 30px;
-  width: 240px;
-  font-size: 28px;
-  line-height: 32px;
+  top: 33px;
+  left: 202px;
+  width: 550px;
+  font-size: 35px;
+  line-height: 39px;
 }
 /* Disclaimer text of frame 4 */
 .disclaimer {
@@ -60,9 +60,9 @@ html, body {
   font-weight: 400;
   position: absolute;
   color: #FFF;
-  top: 232px;
-  left: 20px;
-  width: 260px;
+  top: 51px;
+  left: 230px;
+  width: 470px;
   font-size: 18px;
   line-height: 22px;
 }
@@ -70,16 +70,17 @@ html, body {
 .tagline {
   position: absolute;
   color: #FFF;
-  top: 529px;
-  left: 20px;
-  width: 260px;
-  font-size: 17px;
+  top: 130px;
+  left: 466px;
+  width: 280px;
+  font-size: 20px;
   line-height: 22px;
 }
 .cta_container {
   position: absolute;
-  top: 363px;
-  width: 300px;
+  top: 90px;
+  left: 712px;
+  width: 208px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,19 +101,19 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 147px;
-  height: 59px;
-  left: 76px;
-  top: 0px;
+  width: 205px;
+  height: 90px;
+  left: 21px;
+  top:45px;
 }
 /* Gradient on first frame */
 .gradient {
   position: absolute;
-  width: 300px;
-  height: 243px;
+  width: 930px;
+  height: 180px;
   left: 0px;
-  top: 357px;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(102, 102, 102, 0) 100%);
+  top: 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 2%, rgba(102, 102, 102, 0) 84.74%);
 }
 
 /* Video layer */
@@ -128,8 +129,8 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 600px;
+  width: 930px;
+  height: 180px;
   left: 0px;
   top: 0px;
 }
@@ -140,8 +141,8 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 600px;
+  width: 930px;
+  height: 180px;
   left: 0px;
   top: 0px;
 }
