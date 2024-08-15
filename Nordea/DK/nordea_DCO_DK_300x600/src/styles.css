@@ -151,3 +151,27 @@ p {
   padding: 0;
   margin: 0;
 }
+
+/* Position of pulse image */
+.pulse_left {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 232px;
+  height: 228px;
+  left: -94px;
+  top: 61px;
+}
+
+/* Position of pulse image */
+.pulse_right {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width:232px;
+  height: 228px;
+  left: 163px;
+  top: 195px;
+}

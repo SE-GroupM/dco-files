@@ -65,12 +65,12 @@ onLemonpiReady(function () {
  
   //If use pulse left ise true, apply pulse to div
   if (local_content.Use_pulse_left.value.toUpperCase() === "TRUE") {
-     $("#pulse_video_left").css("background-image","url(https://assets.lemonpi.io/a/k/8a5ceef8-731f-4db2-943b-1a18528687b5/Assets/Nordea-DCO-2024/Images/300x600_pulse_left.gif)");
+     $("#pulse_video_left").css("background-image","url(https://assets.lemonpi.io/a/k/3d37a9ee-afbd-4fab-899f-ffce7f7121fa/Assets/Nordea-DCO-2024/Images/300x600_pulse_left_new_large.gif)");
   }
 
   //If use pulse right is true, apply pulse to div
   if (local_content.Use_pulse_right.value.toUpperCase() === "TRUE") {
-      $("#pulse_video_right").css("background-image","url(https://assets.lemonpi.io/a/k/f01282e0-c007-4d52-9806-d131d0c9d963/Assets/Nordea-DCO-2024/Images/300x600_pulse_right.gif)");
+      $("#pulse_video_right").css("background-image","url(https://assets.lemonpi.io/a/k/e6df5e36-2033-4126-b32c-4bc55ac78569/Assets/Nordea-DCO-2024/Images/300x600_pulse_right_large_new.gif)");
   }
 
   var useVideo = local_content.Use_video.value.toUpperCase();
@@ -96,20 +96,45 @@ onLemonpiReady(function () {
 // Function for animation of content using frame 1
 function firstFrame() {
   var tl = new TimelineMax();
-  TweenMax.set('#frame_2, #frame_3, #frame_4, #logo_2', { opacity: 0 });
-  tl.fromTo('#frame_1', 0.4, {opacity: 0, ease: Linear.ease}, {opacity: 1, ease: Linear.ease}, 0) // Frame 1 in
+  
+  // Initial setup for opacity and display properties
+  TweenMax.set('#frame_2, #frame_3, #frame_4, #logo_2,  #pulse_img_right, #pulse_img_left', { opacity: 0 });
+  TweenMax.set('#pulse_video_left, #pulse_video_right', { opacity: 1, display: 'block' });
+
+  // Timeline animations
+  tl.fromTo('#frame_1', 0, {opacity: 0, ease: Linear.ease}, {opacity: 1, ease: Linear.ease}, 0) // Frame 1 in
     .to('#frame_1', 0.4, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 out
     .to('#gradient', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 gradient out
-    .to('#bg_video', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 video out
+    .to('#bg_video', 0.2, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 video out
     .to('#bg_image', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 image out
-    .to('#logo_1', 0.3, {opacity: 0, ease: Linear.ease}, 2.8) // Frame 1 logo out
-    .to('#logo_2', 0, {opacity:1, ease: Linear.ease}, 2.8) //Logo 2 in
-    .to('#pulse_video_left', 0.6, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 left pulse out
-    .to('#pulse_video_right', 0.6, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 right pulse out
+    .to('#logo_1', 0.3, {opacity: 0, ease: Power2.easeInOut}, 3) // Frame 1 logo out
+    .to('#logo_2', 0.1, {opacity: 1, ease: Power2.easeInOut}, 2.7) // Logo 2 in
 
+  // Reset GIFs by re-triggering the src attribute
+  .add(function() {
+    var pulseLeft = document.getElementById('pulse_video_left');
+    var pulseRight = document.getElementById('pulse_video_right');
+
+    // Temporarily remove src and reassign it to force a reload
+    var tempSrcLeft = pulseLeft.src;
+    var tempSrcRight = pulseRight.src;
+
+    pulseLeft.src = '';
+    pulseRight.src = '';
+
+    pulseLeft.src = tempSrcLeft;
+    pulseRight.src = tempSrcRight;
+  }, "resetGIFs") // Add label "resetGIFs" where you want to reset the GIFs in the timeline
+
+  .to('#pulse_video_left, #pulse_video_right', 0.3, { opacity: 0 }, 3) // Example fade out of GIFs
+  .set('#pulse_video_left, #pulse_video_right', { display: 'none' }, 3.3); // Example remove from display
+
+
+    // Restart the background video if needed
     if (useVideo === "TRUE") {
       tl.add(function() { restartVideo('BG_video'); }, 0); // Reset BG video to start at 0
     }
+
   return tl;
 }
 
@@ -144,14 +169,26 @@ var maintl = new TimelineMax({
   repeat: 3,
   onComplete: function() {
       // On complete, ensure the first frame is visible and the video is stopped at the first frame
-      TweenMax.set('#frame_1, #bg_video, #bg_image, #gradient, #logo_1', {opacity: 1});
+      TweenMax.set('#frame_1, #bg_video, #bg_image, #gradient, #logo_1, #pulse_img_right, #pulse_img_left', {opacity: 1});
       TweenMax.set('#tagline', {color: local_content.Frame_1_Text_Color.value});
       TweenMax.set('#cta, #logo_2', {opacity: 0});
       
       if (useVideo === "TRUE") {
         stopVideoAtFirstFrame('BG_video');
       }
-  }
+      if (local_content.Use_pulse_right.value.toUpperCase() === "TRUE") {
+        $("#pulse_img_right").attr("src", "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png");
+      } else {
+        $("#pulse_img_right").css("opacity", 0);
+      }
+    
+      //If use pulse right is true, apply pulse to div
+      if (local_content.Use_pulse_left.value.toUpperCase() === "TRUE") {
+        $("#pulse_img_left").attr("src", "https://assets.lemonpi.io/a/k/fd22da7a-8227-48a7-a4b4-c60e9887135b/Assets/Nordea-DCO-2024/Images/nordea-pulse.png");
+      } else {
+        $("#pulse_img_left").css("opacity", 0);
+      }
+    }
 });
 
   if (local_content.Use_frame_4.value.toUpperCase() === "TRUE") {

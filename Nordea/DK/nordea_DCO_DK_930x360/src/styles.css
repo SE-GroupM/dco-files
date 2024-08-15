@@ -137,7 +137,6 @@ html, body {
 
 /* Position of pulse */
 .pulse {
-  display: none;
   position: absolute;
   background-size: cover;
   background-position: center center;
