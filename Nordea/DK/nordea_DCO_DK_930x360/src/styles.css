@@ -137,6 +137,7 @@ html, body {
 
 /* Position of pulse */
 .pulse {
+  display: none;
   position: absolute;
   background-size: cover;
   background-position: center center;
@@ -151,4 +152,28 @@ html, body {
 p {
   padding: 0;
   margin: 0;
+}
+
+/* Position of pulse image */
+.pulse_left {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 349px;
+  height: 343px;
+  left: -142px;
+  top: 8px;
+}
+
+/* Position of pulse image */
+.pulse_right {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 349px;
+  height: 343px;
+  left: 724px;
+  top: 8px;
 }
