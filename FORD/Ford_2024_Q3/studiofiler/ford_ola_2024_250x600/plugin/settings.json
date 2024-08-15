@@ -87,6 +87,10 @@
       "subtitle_top": {
         "type": "text",
         "source": "create"
+      },
+      "font_color": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -143,6 +147,9 @@
           },
           "subtitle_top": {
             "value": "subtitle_top"
+          },
+          "font_color": {
+            "value": "font_color"
           }
         }
       ]
@@ -170,5 +177,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 54676
+  "port": 56318
 }
