@@ -106,8 +106,8 @@ function firstFrame() {
   tl.fromTo('#frame_1', 0, {opacity: 0, ease: Linear.ease}, {opacity: 1, ease: Linear.ease}, 0) // Frame 1 in
     .to('#frame_1', 0.4, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 out
     .to('#gradient', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 gradient out
-    .to('#bg_video', 0.2, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 video out
-    .to('#bg_image', 0.3, {opacity: 0, ease: Linear.ease}, 3) // Frame 1 image out
+    .to('#bg_video', 0.2, {opacity: 0, ease: Linear.ease}, 2.8) // Frame 1 video out
+    .to('#bg_image', 0.3, {opacity: 0, ease: Linear.ease}, 2.8) // Frame 1 image out
     .to('#logo_1', 0.3, {opacity: 0, ease: Power2.easeInOut}, 3) // Frame 1 logo out
     .to('#logo_2', 0.1, {opacity: 1, ease: Power2.easeInOut}, 2.7) // Logo 2 in
 
