@@ -211,7 +211,7 @@ var maintl = new TimelineMax({
     const elements = [
       {
         id: "frame_1",
-        maxContainerWidth: 280,
+        maxContainerWidth: 230,
         maxContainerHeight: 80,
         maxFontSize: 25,
         maxLineHeight: 1.2, 

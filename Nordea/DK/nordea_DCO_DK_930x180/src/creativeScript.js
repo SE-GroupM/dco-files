@@ -200,7 +200,7 @@ var maintl = new TimelineMax({
     const elements = [
       {
         id: "frame_1",
-        maxContainerWidth: 550,
+        maxContainerWidth: 430,
         maxContainerHeight: 93,
         maxFontSize: 35,
         maxLineHeight: 1.2, 
@@ -208,7 +208,7 @@ var maintl = new TimelineMax({
       },
       {
         id: "frame_2",
-        maxContainerWidth: 550,
+        maxContainerWidth: 530,
         maxContainerHeight: 93,
         maxFontSize: 35,
         maxLineHeight: 1.2, 
@@ -216,7 +216,7 @@ var maintl = new TimelineMax({
       },
       {
         id: "frame_3",
-        maxContainerWidth: 550,
+        maxContainerWidth: 530,
         maxContainerHeight: 93,
         maxFontSize: 35,
         maxLineHeight: 1.2, 

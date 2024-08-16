@@ -31,28 +31,52 @@ html, body {
 .frame_1 {
   position: absolute;
   top: 352px;
-  left: 107px;
-  width: 715px;
+  left: 117px;
+  width: 695px;
+  height: 130px;
   font-size: 65px;
   line-height: 69px;
+}
+/* Copy text of frame 1 flex center*/
+.frame_1 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Copy text of frame 2 */
 .frame_2 {
   position: absolute;
   top: 180px;
-  left: 70px;
-  width: 790px;
+  left: 80px;
+  width: 770px;
+  height: 130px;
   font-size: 61px;
   line-height: 65px;
+}
+/* Copy text of frame 2 flex center*/
+.frame_2 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Copy text of frame 3 */
 .frame_3 {
   position: absolute;
   top: 180px;
-  left: 70px;
-  width: 790px;
+  left: 80px;
+  width: 770px;
+  height: 130px;
   font-size: 61px;
   line-height: 65px;
+}
+/* Copy text of frame 3 flex center*/
+.frame_3 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Disclaimer text of frame 4 */
 .disclaimer {
@@ -63,8 +87,16 @@ html, body {
   top: 217px;
   left: 105px;
   width: 720px;
+  height: 98px;
   font-size: 28px;
   line-height: 32px;
+}
+/* Copy text of disclaimer flex center*/
+.disclaimer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Tagline text in bottom */
 .tagline {

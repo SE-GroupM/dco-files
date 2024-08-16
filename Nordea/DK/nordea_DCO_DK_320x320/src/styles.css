@@ -31,10 +31,18 @@ html, body {
 .frame_1 {
   position: absolute;
   top: 178px;
-  left: 20px;
-  width: 280px;
+  left: 45px;
+  width: 230px;
+  height: 80px;
   font-size: 25px;
   line-height: 29px;
+}
+/* Copy text of frame 1 flex center*/
+.frame_1 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Copy text of frame 2 */
 .frame_2 {
@@ -42,8 +50,16 @@ html, body {
   top: 83px;
   left: 40px;
   width: 240px;
+  height: 100px;
   font-size: 25px;
   line-height: 29px;
+}
+/* Copy text of frame 2 flex center*/
+.frame_2 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Copy text of frame 3 */
 .frame_3 {
@@ -51,8 +67,16 @@ html, body {
   top: 83px;
   left: 40px;
   width: 240px;
+  height: 100px;
   font-size: 25px;
   line-height: 29px;
+}
+/* Copy text of frame 3 flex center*/
+.frame_3 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Disclaimer text of frame 4 */
 .disclaimer {
@@ -63,8 +87,16 @@ html, body {
   top: 90px;
   left: 40px;
   width: 240px;
+  height: 100px;
   font-size: 15px;
   line-height: 19px;
+}
+/* Copy text of disclaimer flex center*/
+.disclaimer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Tagline text in bottom */
 .tagline {

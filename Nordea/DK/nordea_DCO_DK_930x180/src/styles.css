@@ -30,29 +30,55 @@ html, body {
 /* Copy text of frame 1 */
 .frame_1 {
   position: absolute;
-  top: 33px;
-  left: 330px;
-  width: 550px;
+  top: 30px;
+  left: 390px;
+  width: 430px;
+  height: 93px;
   font-size: 35px;
   line-height: 39px;
+}
+/* Copy text of frame 1 flex center*/
+.frame_1 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Copy text of frame 2 */
 .frame_2 {
   position: absolute;
-  top: 33px;
-  left: 202px;
-  width: 550px;
+  top: 30px;
+  left: 212px;
+  width: 530px;
+  height: 93px;
   font-size: 35px;
   line-height: 39px;
 }
+
+/* Copy text of frame 2 flex center*/
+.frame_2 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 /* Copy text of frame 3 */
 .frame_3 {
   position: absolute;
-  top: 33px;
-  left: 202px;
-  width: 550px;
+  top: 30px;
+  left: 212px;
+  height: 93px;
+  width: 530px;
   font-size: 35px;
   line-height: 39px;
+}
+/* Copy text of frame 3 flex center*/
+.frame_3 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Disclaimer text of frame 4 */
 .disclaimer {
@@ -61,10 +87,18 @@ html, body {
   position: absolute;
   color: #FFF;
   top: 51px;
-  left: 230px;
+  left: 242px;
   width: 470px;
+  height: 67px;
   font-size: 18px;
   line-height: 22px;
+}
+/* Copy text of disclaimer  flex center*/
+.disclaimer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* Tagline text in bottom */
 .tagline {

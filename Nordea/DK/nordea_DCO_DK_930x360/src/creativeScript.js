@@ -220,7 +220,7 @@ var maintl = new TimelineMax({
       },
       {
         id: "frame_2",
-        maxContainerWidth: 640,
+        maxContainerWidth: 620,
         maxContainerHeight: 100,
         maxFontSize: 48,
         maxLineHeight: 1.1, 
@@ -228,7 +228,7 @@ var maintl = new TimelineMax({
       },
       {
         id: "frame_3",
-        maxContainerWidth: 640,
+        maxContainerWidth: 620,
         maxContainerHeight: 100,
         maxFontSize: 48,
         maxLineHeight: 1.1, 

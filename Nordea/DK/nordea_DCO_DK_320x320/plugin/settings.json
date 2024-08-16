@@ -157,13 +157,13 @@
       "list": [
         {
           "Frame_1_Text": {
-            "value": "Gør som en rigtig <br>koldingenser. "
+            "value": "Gør som en rigtig koldingenser. "
           },
           "Frame_2_Text": {
             "value": "Investér i at gøre i morgen lidt bedre end i dag"
           },
           "Frame_3_Text": {
-            "value": "Besøg os på <br>Kolding Åpark 2"
+            "value": "Besøg os på Kolding Åpark 2"
           },
           "Use_frame_4": {
             "value": "TRUE"
@@ -400,5 +400,5 @@
   "folders": {
     "selectedFolderId": 5054
   },
-  "port": 52009
+  "port": 49940
 }
