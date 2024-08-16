@@ -129,13 +129,16 @@ subCopy_frame_2.css({
    function firstFrame() {
     var tl = new TimelineMax();
     if (use_one_headline_bool) {
-    TweenMax.set('#subCopy1, #subCopy2', { opacity: 0 });
-    tl.fromTo('#frame_1_copy', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) // Frame 1 headline in
-        .fromTo('#subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 2) // Subcopy 1 in
-        .to('#subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, 4) // Subcopy 1 out
-        .fromTo('#subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 4.3) // Subcopy 2 in
-        .to('#subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, 6) // Subcopy 2 out
-        .to('#bg_image', 8, { scale: 1.3, ease: Power2.easeIn }, 0) // Frame 1 bg image scale
+      TweenMax.set('#subCopy1, #subCopy2', { opacity: 0 });
+      tl.fromTo('#subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 1) // Subcopy 1 in
+          .to('#subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, 3) // Subcopy 1 out
+          .to('#subCopy2', 0.3,{ opacity: 1, ease: Linear.ease }, 3.3) // Subcopy 2 in
+          .to('#subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, 5.8) // Subcopy 2 out
+          .to('#subCopy1', 0.3,  { opacity: 1, ease: Linear.ease }, 6.1) // Subcopy 1 in
+          .to('#subCopy1', 0.3,  { opacity: 0, ease: Linear.ease }, 8.6) // Subcopy 1 out
+          .to('#subCopy2', 0.3,  { opacity: 1, ease: Linear.ease }, 8.9) // Subcopy 2 in
+          .to('#subCopy2', 0.3,  { opacity: 0, ease: Linear.ease }, 10.9) // Subcopy 2 out
+          .to('#bg_image', 11, { scale: 1.3, ease: Power2.easeIn }, 0) // Frame 1 bg image scale
     } else {
       TweenMax.set('#subCopy1, #subCopy2, #frame_2_copy', { opacity: 0 });
       tl.fromTo('#frame_1_copy, #subCopy1', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) // Frame 1 headline and subcopy in
