@@ -36,14 +36,13 @@ html, body {
   height: 80px;
   font-size: 32px;
   line-height: 36px;
-}
-/* Copy text of frame 1 flex center*/
-.frame_1 p {
-  display: flex;
-  align-items: center;
+
+  display: flex;           
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  text-align: center;
 }
+
 /* Copy text of frame 2 */
 .frame_2 {
   position: absolute;
@@ -53,14 +52,13 @@ html, body {
   height: 108px;
   font-size: 28px;
   line-height: 32px;
-}
-/* Copy text of frame 2 flex center*/
-.frame_2 p {
-  display: flex;
-  align-items: center;
+  
+  display: flex;           
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  text-align: center;
 }
+
 /* Copy text of frame 3 */
 .frame_3 {
   position: absolute;
@@ -70,14 +68,13 @@ html, body {
   height: 108px;
   font-size: 28px;
   line-height: 32px;
-}
-/* Copy text of frame 3 flex center*/
-.frame_3 p {
-  display: flex;
-  align-items: center;
+
+  display: flex;           
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  text-align: center;
 }
+
 /* Disclaimer text of frame 4 */
 .disclaimer {
   font-family: "Nordea Sans Small";
@@ -90,14 +87,13 @@ html, body {
   height: 125px;
   font-size: 18px;
   line-height: 22px;
-}
-/* Copy text of disclaimer flex center*/
-.disclaimer p {
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  text-align: center;
 }
+
 /* Tagline text in bottom */
 .tagline {
   position: absolute;
@@ -206,4 +202,8 @@ p {
   height: 228px;
   left: 163px;
   top: 195px;
+}
+/* Prevents wrapping */
+.no-wrap {
+  white-space: nowrap; 
 }
