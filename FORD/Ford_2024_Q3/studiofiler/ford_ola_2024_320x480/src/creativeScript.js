@@ -28,10 +28,10 @@ window.addEventListener('lemonpi.content/ready', event => {
   }
 
 // SubCopy static
-var subCopy = $('#subCopy_static');
-subCopy.append(content.subCopy_static.value);
-setFontSizeAndLineHeight(subCopy, subtitle_fontSize);
-subCopy.css({
+var subCopy_static = $('#subCopy_static');
+subCopy_static.append(content.subCopy_static.value);
+setFontSizeAndLineHeight(subCopy_static, subtitle_fontSize);
+subCopy_static.css({
     'top': subTitle_topValue,
     'color': font_color
 });
