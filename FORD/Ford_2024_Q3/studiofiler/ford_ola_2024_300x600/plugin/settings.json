@@ -43,7 +43,7 @@
         "type": "image",
         "source": "create"
       },
-      "logo_image": {
+      "logo_squared": {
         "type": "image",
         "source": "create"
       },
@@ -65,6 +65,34 @@
       },
       "subCopy_frame_2": {
         "type": "text",
+        "source": "create"
+      },
+      "subtitle_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "mainCopy_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "subTitle_topValue": {
+        "type": "text",
+        "source": "create"
+      },
+      "subtitle_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "font_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_right_or_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide": {
+        "type": "image",
         "source": "create"
       }
     },
@@ -93,7 +121,7 @@
           "bg_image": {
             "value": ""
           },
-          "logo_image": {
+          "logo_squared": {
             "value": ""
           },
           "af_image": {
@@ -110,6 +138,27 @@
           },
           "subCopy_frame_2": {
             "value": "subCopy_frame_2"
+          },
+          "subtitle_fontSize": {
+            "value": "subtitle_fontSize"
+          },
+          "mainCopy_fontSize": {
+            "value": "mainCopy_fontSize"
+          },
+          "subTitle_topValue": {
+            "value": "subTitle_topValue"
+          },
+          "subtitle_top": {
+            "value": "subtitle_top"
+          },
+          "font_color": {
+            "value": "font_color"
+          },
+          "cta_right_or_left": {
+            "value": "cta_right_or_left"
+          },
+          "logo_wide": {
+            "value": ""
           }
         }
       ]
@@ -137,5 +186,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 55055
+  "port": 63525
 }

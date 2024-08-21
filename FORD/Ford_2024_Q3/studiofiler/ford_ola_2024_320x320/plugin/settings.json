@@ -43,7 +43,7 @@
         "type": "image",
         "source": "create"
       },
-      "logo_image": {
+      "logo_squared": {
         "type": "image",
         "source": "create"
       },
@@ -83,6 +83,18 @@
         "type": "text",
         "source": "create"
       },
+      "font_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_right_or_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide": {
+        "type": "image",
+        "source": "create"
+      },
       "priceCopy": {
         "type": "text",
         "source": "create"
@@ -113,7 +125,7 @@
           "bg_image": {
             "value": ""
           },
-          "logo_image": {
+          "logo_squared": {
             "value": ""
           },
           "af_image": {
@@ -142,6 +154,15 @@
           },
           "subtitle_top": {
             "value": "subtitle_top"
+          },
+          "font_color": {
+            "value": "font_color"
+          },
+          "cta_right_or_left": {
+            "value": "cta_right_or_left"
+          },
+          "logo_wide": {
+            "value": ""
           },
           "priceCopy": {
             "value": "priceCopy"
@@ -172,5 +193,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 54504
+  "port": 50228
 }

@@ -130,12 +130,20 @@ html, body {
   font-size: 16px;
 }
 
-#logo_image {
+#logo_wide {
   position: absolute;
   width: 156px;
   height: 38px;
   right: 20px;
   top: 338px;
+}
+
+#logo_squared {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 20px;
+  top: 327px;
 }
 
 #af_image {

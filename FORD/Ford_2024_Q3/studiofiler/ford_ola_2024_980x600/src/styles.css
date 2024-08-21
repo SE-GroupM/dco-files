@@ -127,12 +127,20 @@ html, body {
   top: 170px;
 }
 
-#logo_image {
+#logo_wide {
   position: absolute;
   width: 250px;
   height: 60px;
   right: 45px;
   bottom: 17px;
+}
+
+#logo_squared {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  right: 30px;
+  top: 495px;
 }
 
 #af_image {

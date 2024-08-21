@@ -27,13 +27,15 @@ window.addEventListener('lemonpi.content/ready', event => {
     });
   }
 
+
 // SubCopy static
-var subCopy_static = $('#subCopy_static');
-subCopy_static.append(content.subCopy_static.value);
-setFontSizeAndLineHeight(subCopy_static, subtitle_fontSize);
-subCopy_static.css({
+var subCopy = $('#subCopy_static');
+subCopy.append(content.subCopy_static.value);
+setFontSizeAndLineHeight(subCopy, subtitle_fontSize);
+subCopy.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
 // SubCopy frame 1
@@ -42,7 +44,8 @@ subCopy_frame_1.append(content.subCopy_frame_1.value);
 setFontSizeAndLineHeight(subCopy_frame_1, subtitle_fontSize);
 subCopy_frame_1.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
 // SubCopy frame 2
@@ -51,7 +54,8 @@ subCopy_frame_2.append(content.subCopy_frame_2.value);
 setFontSizeAndLineHeight(subCopy_frame_2, subtitle_fontSize);
 subCopy_frame_2.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
   // Frame 1
@@ -60,6 +64,7 @@ subCopy_frame_2.css({
   setFontSizeAndLineHeight(frame_1, mainCopy_fontSize);
   frame_1.css({
     'color': font_color,
+    'font-size': mainCopy_fontSize
 });
 
   // Frame 2
@@ -68,6 +73,7 @@ subCopy_frame_2.css({
   setFontSizeAndLineHeight(frame_2, mainCopy_fontSize);
   frame_2.css({
     'color': font_color,
+    'font-size': mainCopy_fontSize
 });
 
   var use_one_headline = content.use_one_headline.value;
