@@ -1,0 +1,4641 @@
+{
+  "id": "413f637c-1ba0-4272-9d52-7a77046976e7",
+  "version": "1.3.1",
+  "name": "godfisk_display_580x400",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 580,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 580,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "Creative_Dimension": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Background_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Headline_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Body_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "CTA_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "CTA_Background": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Hero_Image": {
+        "type": "image",
+        "source": "feed"
+      },
+      "logo": {
+        "type": "image",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rask og smakfull torskemiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Les mer"
+          },
+          "CTA_Background": {
+            "value": "#000000"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rask og smakfull torskemiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Les mer"
+          },
+          "CTA_Background": {
+            "value": "#000000"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rask og smakfull torskemiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Les mer"
+          },
+          "CTA_Background": {
+            "value": "#000000"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rask og smakfull torskemiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Les mer"
+          },
+          "CTA_Background": {
+            "value": "#000000"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rask og smakfull torskemiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Les mer"
+          },
+          "CTA_Background": {
+            "value": "#000000"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ring jula inn med tradisjonell lutefisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_tradisjonell-lutefisk.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ring jula inn med tradisjonell lutefisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_tradisjonell-lutefisk.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ring jula inn med tradisjonell lutefisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_tradisjonell-lutefisk.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ring jula inn med tradisjonell lutefisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_tradisjonell-lutefisk.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ring jula inn med tradisjonell lutefisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_tradisjonell-lutefisk.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og gode juletorsken må oppleves"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_juletorsk-m-ertepure.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og gode juletorsken må oppleves"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_juletorsk-m-ertepure.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og gode juletorsken må oppleves"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_juletorsk-m-ertepure.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og gode juletorsken må oppleves"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_juletorsk-m-ertepure.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og gode juletorsken må oppleves"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_juletorsk-m-ertepure.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og sunne<br>vintersalaten er en vinner"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_vintersalat-m-laks-eller-orret.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og sunne vintersalaten er en vinner"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_vintersalat-m-laks-eller-orret.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og sunne vintersalaten er en vinner"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_vintersalat-m-laks-eller-orret.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og sunne vintersalaten er en vinner"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_vintersalat-m-laks-eller-orret.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Denne enkle og sunne vintersalaten er en vinner"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_vintersalat-m-laks-eller-orret.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Laks til middag? \nPrøv pasta og laks med pesto!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/lakspesto.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Laks til middag? \nPrøv pasta og laks med pesto!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/lakspesto.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Laks til middag? \nPrøv pasta og laks med pesto!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/lakspesto.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Laks til middag? \nPrøv pasta og laks med pesto!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/lakspesto.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Laks til middag? \nPrøv pasta og laks med pesto!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/lakspesto.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Nyt en sunn og enkel middag - ovnsbakt torsk med grønnsaker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Nyt en sunn og enkel middag - ovnsbakt torsk med grønnsaker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Nyt en sunn og enkel middag - ovnsbakt torsk med grønnsaker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Nyt en sunn og enkel middag - ovnsbakt torsk med grønnsaker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Nyt en sunn og enkel middag - ovnsbakt torsk med grønnsaker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/ovnsbakt2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Rask, enkel og full av smak - poke bowl med laks og reker"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/pokebowl1.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Rask, enkel og full av smak - poke bowl med laks og reker"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/pokebowl1.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Rask, enkel og full av smak - poke bowl med laks og reker"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/pokebowl1.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Rask, enkel og full av smak - poke bowl med laks og reker"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/pokebowl1.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Rask, enkel og full av smak - poke bowl med laks og reker"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/pokebowl1.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Gjenoppdag en klassiker med vår hjemmelagde fiskegrateng!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskegrateng_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Gjenoppdag en klassiker med vår hjemmelagde fiskegrateng!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskegrateng_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Gjenoppdag en klassiker med vår hjemmelagde fiskegrateng!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskegrateng_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Gjenoppdag en klassiker med vår hjemmelagde fiskegrateng!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskegrateng_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Gjenoppdag en klassiker med vår hjemmelagde fiskegrateng!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskegrateng_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Imponer gjestene med denne deilige fiskesuppen!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskesuppe_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Imponer gjestene med denne deilige fiskesuppen!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskesuppe_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Imponer gjestene med denne deilige fiskesuppen!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskesuppe_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Imponer gjestene med denne deilige fiskesuppen!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskesuppe_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Imponer gjestene med denne deilige fiskesuppen!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_fiskesuppe_2.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Få litt hverdagsluksus med denne gode skrei oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_ovnsbakt_skrei.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Få litt hverdagsluksus med denne gode skrei oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_ovnsbakt_skrei.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Få litt hverdagsluksus med denne gode skrei oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_ovnsbakt_skrei.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Få litt hverdagsluksus med denne gode skrei oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_ovnsbakt_skrei.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Få litt hverdagsluksus med denne gode skrei oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_ovnsbakt_skrei.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Kremet tagliatelle med laks - sunt, enkelt og utrolig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_salmon_tagliatelle.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Kremet tagliatelle med laks - sunt, enkelt og utrolig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_salmon_tagliatelle.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Kremet tagliatelle med laks - sunt, enkelt og utrolig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_salmon_tagliatelle.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Kremet tagliatelle med laks - sunt, enkelt og utrolig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_salmon_tagliatelle.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Kremet tagliatelle med laks - sunt, enkelt og utrolig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_salmon_tagliatelle.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på blåskjell med hvitvin. \nDenne bør du prøve!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Godfisk-Mussels_with_white_wine_and_garlic.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på blåskjell med hvitvin. \nDenne bør du prøve!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Godfisk-Mussels_with_white_wine_and_garlic.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på blåskjell med hvitvin. \nDenne bør du prøve!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Godfisk-Mussels_with_white_wine_and_garlic.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på blåskjell med hvitvin. \nDenne bør du prøve!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Godfisk-Mussels_with_white_wine_and_garlic.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på blåskjell med hvitvin. \nDenne bør du prøve!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Godfisk-Mussels_with_white_wine_and_garlic.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Samle gjengen rundt bordet med ovnsbakt ørret."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Samle gjengen rundt bordet med ovnsbakt ørret."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Samle gjengen rundt bordet med ovnsbakt ørret."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Samle gjengen rundt bordet med ovnsbakt ørret."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Samle gjengen rundt bordet med ovnsbakt ørret."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Lyst på noe sunt og enkelt? Laks i folie er veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Lyst på noe sunt og enkelt? Laks i folie er veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Lyst på noe sunt og enkelt? Laks i folie er veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Lyst på noe sunt og enkelt? Laks i folie er veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Lyst på noe sunt og enkelt? Laks i folie er veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rød curry med torsk - en smaksbombe!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rød curry med torsk - en smaksbombe!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rød curry med torsk - en smaksbombe!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rød curry med torsk - en smaksbombe!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Rød curry med torsk - en smaksbombe!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Fristende poke bowl med spicy laks!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4937667/motiv_lakswrap2_bg.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Fristende poke bowl med spicy laks!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4937667/motiv_lakswrap2_bg.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Fristende poke bowl med spicy laks!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4937667/motiv_lakswrap2_bg.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Fristende poke bowl med spicy laks!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4937667/motiv_lakswrap2_bg.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Fristende poke bowl med spicy laks!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4937667/motiv_lakswrap2_bg.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Hverdagsfavoritt! Laks og grønnsaker i ovn."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_gronnsaker_i_ovn.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Hverdagsfavoritt! Laks og grønnsaker i ovn."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_gronnsaker_i_ovn.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Hverdagsfavoritt! Laks og grønnsaker i ovn."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_gronnsaker_i_ovn.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Hverdagsfavoritt! Laks og grønnsaker i ovn."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_gronnsaker_i_ovn.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Hverdagsfavoritt! Laks og grønnsaker i ovn."
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_laks_gronnsaker_i_ovn.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Torsk med rød curry er kjapp å lage og smaker kjempegodt"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Torsk med rød curry er kjapp å lage og smaker kjempegodt"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Torsk med rød curry er kjapp å lage og smaker kjempegodt"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Torsk med rød curry er kjapp å lage og smaker kjempegodt"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Torsk med rød curry er kjapp å lage og smaker kjempegodt"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/4689974/857x600_torsk_red_curry.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Liten tid?\nPrøv en superrask lakse-curry!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/superrask-rod-curry-med-laks.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Liten tid?\nPrøv en superrask lakse-curry!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/superrask-rod-curry-med-laks.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Liten tid?\nPrøv en superrask lakse-curry!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/superrask-rod-curry-med-laks.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Liten tid?\nPrøv en superrask lakse-curry!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/superrask-rod-curry-med-laks.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Liten tid?\nPrøv en superrask lakse-curry!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/superrask-rod-curry-med-laks.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt kveite med pinjekjerner \n- raskt og veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-kveite-med-pinjekjerner.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt kveite med pinjekjerner \n- raskt og veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-kveite-med-pinjekjerner.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt kveite med pinjekjerner \n- raskt og veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-kveite-med-pinjekjerner.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt kveite med pinjekjerner \n- raskt og veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-kveite-med-pinjekjerner.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt kveite med pinjekjerner \n- raskt og veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-kveite-med-pinjekjerner.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Panert torsk - enkelt å lage og alltid veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/panert-torsk-med-ovnsstekte-poteter.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Panert torsk - enkelt å lage og alltid veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/panert-torsk-med-ovnsstekte-poteter.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Panert torsk - enkelt å lage og alltid veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/panert-torsk-med-ovnsstekte-poteter.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Panert torsk - enkelt å lage og alltid veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/panert-torsk-med-ovnsstekte-poteter.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Panert torsk - enkelt å lage og alltid veldig godt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/panert-torsk-med-ovnsstekte-poteter.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt laks med sitron - en klassiker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-laks-med-sitron.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt laks med sitron - en klassiker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-laks-med-sitron.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt laks med sitron - en klassiker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-laks-med-sitron.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt laks med sitron - en klassiker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-laks-med-sitron.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FFC4BB"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt laks med sitron - en klassiker!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-laks-med-sitron.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt breiflabb - en godbit for smaksløkene!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-breiflabb.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt breiflabb - en godbit for smaksløkene!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-breiflabb.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt breiflabb - en godbit for smaksløkene!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-breiflabb.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt breiflabb - en godbit for smaksløkene!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-breiflabb.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt breiflabb - en godbit for smaksløkene!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-breiflabb.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt torskefilet i frisk tomatsaus - lett å lage, lett å like!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt torskefilet i frisk tomatsaus - lett å lage, lett å like!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt torskefilet i frisk tomatsaus - lett å lage, lett å like!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt torskefilet i frisk tomatsaus - lett å lage, lett å like!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#E2FAFF"
+          },
+          "Headline_Text": {
+            "value": "Ovnsbakt torskefilet i frisk tomatsaus - lett å lage, lett å like!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Klippfisk med bacon og hvit saus er en sikker vinner!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Klippfisk med bacon og hvit saus er en sikker vinner!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Klippfisk med bacon og hvit saus er en sikker vinner!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Klippfisk med bacon og hvit saus er en sikker vinner!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#FCD4AB"
+          },
+          "Headline_Text": {
+            "value": "Klippfisk med bacon og hvit saus er en sikker vinner!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5107139/ovnsbakt-torsk-i-tomatsaus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Helbakt ørret med frisk agurksalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Helbakt ørret med frisk agurksalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Helbakt ørret med frisk agurksalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Helbakt ørret med frisk agurksalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Helbakt ørret med frisk agurksalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_Helbakt_orret_m_stykke.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Denne rekesalaten vil du ikke gå glipp av!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/rekesalat_ny.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Denne rekesalaten vil du ikke gå glipp av!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/rekesalat_ny.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Denne rekesalaten vil du ikke gå glipp av!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/rekesalat_ny.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Denne rekesalaten vil du ikke gå glipp av!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/rekesalat_ny.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Denne rekesalaten vil du ikke gå glipp av!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/rekesalat_ny.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Skal du ha rekefest? Sjekk denne oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_reker_m_fire_dipper.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Skal du ha rekefest? Sjekk denne oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_reker_m_fire_dipper.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Skal du ha rekefest? Sjekk denne oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_reker_m_fire_dipper.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Skal du ha rekefest? Sjekk denne oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_reker_m_fire_dipper.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Skal du ha rekefest? Sjekk denne oppskriften!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_reker_m_fire_dipper.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Laks i folie med grønnsaker - enkelt og sunt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Laks i folie med grønnsaker - enkelt og sunt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Laks i folie med grønnsaker - enkelt og sunt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Laks i folie med grønnsaker - enkelt og sunt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Laks i folie med grønnsaker - enkelt og sunt!"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laks_i_folie.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Saftige laksespyd med frisk mangosalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laksespyd_m_mangosalat.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Saftige laksespyd med frisk mangosalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laksespyd_m_mangosalat.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Saftige laksespyd med frisk mangosalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laksespyd_m_mangosalat.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Saftige laksespyd med frisk mangosalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laksespyd_m_mangosalat.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Saftige laksespyd med frisk mangosalat"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_laksespyd_m_mangosalat.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Grillet teriyaki-makrell - en nydelig sommermiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_grillet_teryaki-makrell.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Grillet teriyaki-makrell - en nydelig sommermiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_grillet_teryaki-makrell.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Grillet teriyaki-makrell - en nydelig sommermiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_grillet_teryaki-makrell.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Grillet teriyaki-makrell - en nydelig sommermiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_grillet_teryaki-makrell.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Grillet teriyaki-makrell - en nydelig sommermiddag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_grillet_teryaki-makrell.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Frisk sommersalat med røkt laks"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/job_ny.jpg\n\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Frisk sommersalat med røkt laks"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/job_ny.jpg\n\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Frisk sommersalat med røkt laks"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/job_ny.jpg\n\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Frisk sommersalat med røkt laks"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/job_ny.jpg\n\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Frisk sommersalat med røkt laks"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/Job_10931.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på saftig lakseburger med avokadokrem "
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_lakseburger_m_avokadokrem.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på saftig lakseburger med avokadokrem "
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_lakseburger_m_avokadokrem.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på saftig lakseburger med avokadokrem "
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_lakseburger_m_avokadokrem.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på saftig lakseburger med avokadokrem "
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_lakseburger_m_avokadokrem.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Oppskrift på saftig lakseburger med avokadokrem "
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/857x600_lakseburger_m_avokadokrem.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Makrell med ertehummus - en deilig og sunn middag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/makrell_ertehummus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Makrell med ertehummus - en deilig og sunn middag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/makrell_ertehummus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Makrell med ertehummus - en deilig og sunn middag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/makrell_ertehummus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Makrell med ertehummus - en deilig og sunn middag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/makrell_ertehummus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D3"
+          },
+          "Headline_Text": {
+            "value": "Makrell med ertehummus - en deilig og sunn middag"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/makrell_ertehummus.jpg\n"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x250"
+          },
+          "Background_Color": {
+            "value": "#D7F4D4"
+          },
+          "Headline_Text": {
+            "value": "Enkel og digg oppskrift på grillet fisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/Norsk_Sjomatrad_grillet_sei_i_folie_02.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "320x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D5"
+          },
+          "Headline_Text": {
+            "value": "Enkel og digg oppskrift på grillet fisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/Norsk_Sjomatrad_grillet_sei_i_folie_02.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "580x400"
+          },
+          "Background_Color": {
+            "value": "#D7F4D6"
+          },
+          "Headline_Text": {
+            "value": "Enkel og digg oppskrift på grillet fisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/Norsk_Sjomatrad_grillet_sei_i_folie_02.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x300"
+          },
+          "Background_Color": {
+            "value": "#D7F4D7"
+          },
+          "Headline_Text": {
+            "value": "Enkel og digg oppskrift på grillet fisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/Norsk_Sjomatrad_grillet_sei_i_folie_02.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        },
+        {
+          "Creative_Dimension": {
+            "value": "980x600"
+          },
+          "Background_Color": {
+            "value": "#D7F4D8"
+          },
+          "Headline_Text": {
+            "value": "Enkel og digg oppskrift på grillet fisk"
+          },
+          "Body_Text": {
+            "value": "DO NOT USE"
+          },
+          "CTA_Text": {
+            "value": "Se oppskrift"
+          },
+          "CTA_Background": {
+            "value": "#03123f"
+          },
+          "Hero_Image": {
+            "value": "https://s0.2mdn.net/creatives/assets/5228331/Norsk_Sjomatrad_grillet_sei_i_folie_02.jpg"
+          },
+          "logo": {
+            "value": "https://assets.lemonpi.io/a/1178/cfc586922ca4973b68159948bb48a965.svg"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1178,
+        "url": "https://assets.lemonpi.io/a/font/1178/BananaGrotesk-Bold?v=700",
+        "family": "BananaGrotesk-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1178,
+        "url": "https://assets.lemonpi.io/a/font/1178/Roslindale-DisplayCondensedRegular?v=400",
+        "family": "Roslindale-DisplayCondensedRegular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 1178,
+    "name": "Godfisk"
+  },
+  "folders": {
+    "selectedFolderId": 5224
+  },
+  "port": 59082
+}
