@@ -42,9 +42,6 @@ onLemonpiReady(function () {
       'background-image': 'url('+local_content.logo.value+ ')'
     });
 
-    $('#bg_color').css({
-      'background-color': local_content.bgColor.value,
-    });
     
     //Click function on slider
     $('#slider').click(onClick)
