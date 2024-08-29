@@ -232,12 +232,15 @@
     "Choreograph": []
   },
   "agency": {
-    "id": -1,
-    "name": ""
+    "id": 7,
+    "name": "Xaxis Sweden"
   },
   "advertiser": {
-    "id": -1,
-    "name": ""
+    "id": 398,
+    "name": "Byggmax"
   },
-  "port": 60991
+  "folders": {
+    "selectedFolderId": 2085
+  },
+  "port": 52441
 }
