@@ -15,7 +15,13 @@ window.addEventListener('lemonpi.content/ready', event => {
    //subtitle_top defined
    var subtitle_top = $('#subtitle_top');
    subtitle_top.append(content.subtitle_top.value)
-   
+
+  var subCopy_frame_1 = $('#subCopy1');
+  subCopy_frame_1.append(content.subCopy_frame_1.value)
+  
+  var subCopy_frame_2 = $('#subCopy2');
+  subCopy_frame_2.append(content.subCopy_frame_2.value)
+  
   var frame_1 = $('#frame_1_copy');
   frame_1.append(content.frame_1_copy.value)
   
@@ -96,5 +102,11 @@ if (use_one_headline_bool){
     .to("#frame_2_copy", {opacity: 0, duration: 0.5, delay: 1.5})
     .to("#frame_1_copy", {opacity: 1, duration: 0.5});
 }
+gsap.set("#subCopy2", { opacity: 0 });
+gsap.timeline({repeat: -1, repeatDelay: 0}) // Adding repeat: -1 to loop forever, with no delay between repetitions
+  .to("#subCopy1", {opacity: 1, duration: 0.5}) // Fade in subCopy1
+  .to("#subCopy1", {opacity: 0, duration: 0.5, delay: 1.5}) // Fade out subCopy1
+  .to("#subCopy2", {opacity: 1, duration: 0.5}) // Then fade in subCopy2 after subCopy1 fades out
+  .to("#subCopy2", {opacity: 0, duration: 0.5, delay: 1.5}); // Finally, fade out subCopy2
 
-})
+});

@@ -1,0 +1,202 @@
+{
+  "id": "4a1e7ecf-38ee-42ad-8aee-fdb0649657d0",
+  "version": "1.3.1",
+  "name": "FORD_DISPLAY_980x240",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "frame_1_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame_2_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "legal_txt": {
+        "type": "text",
+        "source": "create"
+      },
+      "message": {
+        "type": "text",
+        "source": "create"
+      },
+      "subCopy_static": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "bg_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo_squared": {
+        "type": "image",
+        "source": "create"
+      },
+      "af_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "use_one_headline": {
+        "type": "text",
+        "source": "create"
+      },
+      "subCopy_frame_1": {
+        "type": "text",
+        "source": "create"
+      },
+      "subCopy_frame_2": {
+        "type": "text",
+        "source": "create"
+      },
+      "subtitle_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "mainCopy_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "subTitle_topValue": {
+        "type": "text",
+        "source": "create"
+      },
+      "subtitle_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "font_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_right_or_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide": {
+        "type": "image",
+        "source": "create"
+      },
+      "priceCopy": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "frame_1_copy": {
+            "value": "frame_1_copy"
+          },
+          "frame_2_copy": {
+            "value": "frame_2_copy"
+          },
+          "legal_txt": {
+            "value": "legal_txt"
+          },
+          "message": {
+            "value": "message"
+          },
+          "subCopy_static": {
+            "value": "subCopy_static"
+          },
+          "cta_text": {
+            "value": "cta_text"
+          },
+          "bg_image": {
+            "value": ""
+          },
+          "logo_squared": {
+            "value": ""
+          },
+          "af_image": {
+            "value": ""
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "use_one_headline": {
+            "value": "use_one_headline"
+          },
+          "subCopy_frame_1": {
+            "value": "subCopy_frame_1"
+          },
+          "subCopy_frame_2": {
+            "value": "subCopy_frame_2"
+          },
+          "subtitle_fontSize": {
+            "value": "subtitle_fontSize"
+          },
+          "mainCopy_fontSize": {
+            "value": "mainCopy_fontSize"
+          },
+          "subTitle_topValue": {
+            "value": "subTitle_topValue"
+          },
+          "subtitle_top": {
+            "value": "subtitle_top"
+          },
+          "font_color": {
+            "value": "font_color"
+          },
+          "cta_right_or_left": {
+            "value": "cta_right_or_left"
+          },
+          "logo_wide": {
+            "value": ""
+          },
+          "priceCopy": {
+            "value": "priceCopy"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 639,
+        "url": "https://assets.lemonpi.io/a/font/639/Ford-F1?v=500",
+        "family": "Ford-F1",
+        "variant": "500"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 639,
+    "name": "Ford"
+  },
+  "folders": {
+    "selectedFolderId": 4882
+  },
+  "port": 50342
+}

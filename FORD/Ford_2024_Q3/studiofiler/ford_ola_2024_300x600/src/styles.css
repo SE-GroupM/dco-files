@@ -1,0 +1,199 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#bg_image {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+}
+#frame_1_copy {
+  font-family: Ford-F1;
+  font-weight: "700 Medium";
+  position: absolute;
+  top: 30px; 
+  height: 86px;
+  color: #fff;
+  left: 20px;
+  font-size: 27px;
+  text-align: left;
+  width: 280px;
+}
+#frame_2_copy {
+  font-family: Ford-F1;
+  font-weight: "700 Medium";
+  position: absolute;
+  top: 30px; 
+  height: 86px;
+  color: #fff;
+  left: 20px;
+  font-size: 27px;
+  text-align: left;
+  width: 280px;
+}
+
+#cta_text {
+  position: absolute;
+  color: #fff;
+  font-family: Ford-F1;
+  background-color: #056eef;
+  font-weight: "500 Medium";
+  font-weight: 400;
+  margin-block: 13.28px;
+  font-size: 14px;
+  top: 460px;
+  border-radius: 15px;
+  left: 20px;
+  min-width: 110px;
+  border-width: 0px;
+  text-align: center;
+  padding: 5px 14px 5px 14px;
+}
+
+#subCopy_static {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  opacity: 0;
+  font-family: Ford-F1;
+  font-weight: "500 Medium";  
+  margin-block: 19.92px;
+  margin-bottom: 19.92px;
+  margin-top: 22px;
+  font-size: 18px;
+  text-align: left;
+  left: 20px;
+  width: 270px;
+  height: 22px;
+  top: 92px;
+}
+
+#subCopy1 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  opacity: 1;
+  font-family: "Ford-F1";
+  font-weight: "500 Medium";
+  margin-block: 19.92px;
+  margin-bottom: 19.92px;
+  margin-top: 19.92px;
+  width: 270px;
+  height: 70.49px;
+  left: 20px;
+  text-align: left;
+  top: 92px;
+  font-size: 18px;
+}
+#subCopy2 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  font-family: "Ford-F1";
+  font-weight: "500 Medium";
+  margin-block: 19.92px;
+  margin-bottom: 19.92px;
+  margin-top: 19.92px;
+  line-height: 18px;
+  width: 270px;
+  height: 70.49px;
+  left: 20px;
+  text-align: left;
+  top: 92px;
+  font-size: 18px;
+}
+
+#logo_wide {
+  position: absolute;
+  width: 195px;
+  height: 38px;
+  left: 20px;
+  top: 523px;
+}
+
+#logo_squared {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 20px;
+  top: 523px;
+}
+
+#af_image {
+  position: absolute;
+  width: 50%;
+  height: 28.35px;
+  left: 50%;
+  top: 515px;
+  transform: translate(-50%, -50%);
+}
+#legal_btn {
+  opacity: 0.6;
+  font-family: "Ford-F1";
+  font-weight: "500 Medium";
+  position: absolute;
+  width: 75px;
+  height: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  left: 24px;
+  top: 575px;
+}
+#legal_txt {
+  color: rgb(255, 255, 255);
+  font-family: "Ford-F1";
+  font-weight: "500 Medium";
+  font-size: 14px;
+  font-weight: 400;
+  height: 240px;
+  margin-block: 11.62px;
+  margin-bottom: 11.62px;
+  margin-top: 11.62px;
+  position: absolute;
+  width: 260px;
+  left: 20px;
+  top: 20px;
+}
+#legal_bg {
+  width: 300px;
+  height: 600px;
+  background-color: rgba(128, 128, 128, 0.8);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#worldClick {
+  width: 300px;
+  height: 600px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
