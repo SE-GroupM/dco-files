@@ -1,0 +1,208 @@
+{
+  "id": "5b5b36f2-72f2-4687-96ed-7f15be430210",
+  "version": "1.3.1",
+  "name": "products_re_tg_980x300",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 300,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 300
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "campaignImg": {
+        "type": "image",
+        "source": "create"
+      },
+      "headline": {
+        "type": "text",
+        "source": "create"
+      },
+      "subline": {
+        "type": "text",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "logoImg": {
+        "type": "image",
+        "source": "create"
+      },
+      "mainCopyStyle": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaText": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaButtonBg": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaCopyColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "headline_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "subline_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "headline_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "subline_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "text_shadow": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "bgLeft": {
+        "type": "image",
+        "source": "create"
+      },
+      "next": {
+        "type": "image",
+        "source": "create"
+      },
+      "prev": {
+        "type": "image",
+        "source": "create"
+      },
+      "headline_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "subline_top": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "campaignImg": {
+            "value": ""
+          },
+          "headline": {
+            "value": "headline"
+          },
+          "subline": {
+            "value": "subline"
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "logoImg": {
+            "value": ""
+          },
+          "mainCopyStyle": {
+            "value": "mainCopyStyle"
+          },
+          "ctaText": {
+            "value": "ctaText"
+          },
+          "ctaButtonBg": {
+            "value": "ctaButtonBg"
+          },
+          "ctaCopyColor": {
+            "value": "ctaCopyColor"
+          },
+          "headline_color": {
+            "value": "headline_color"
+          },
+          "subline_color": {
+            "value": "subline_color"
+          },
+          "headline_fontSize": {
+            "value": "headline_fontSize"
+          },
+          "subline_fontSize": {
+            "value": "subline_fontSize"
+          },
+          "text_shadow": {
+            "value": "text_shadow"
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "bgLeft": {
+            "value": ""
+          },
+          "next": {
+            "value": ""
+          },
+          "prev": {
+            "value": ""
+          },
+          "headline_top": {
+            "value": "headline_top"
+          },
+          "subline_top": {
+            "value": "subline_top"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 198,
+        "url": "https://assets.lemonpi.io/a/font/198/SourceSansPro-Bold?v=700",
+        "family": "SourceSansPro-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 198,
+        "url": "https://assets.lemonpi.io/a/font/198/SourceSansPro-Regular?v=400",
+        "family": "SourceSansPro-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 198,
+    "name": "Mio"
+  },
+  "folders": {
+    "selectedFolderId": 4390
+  },
+  "port": 53858
+}
