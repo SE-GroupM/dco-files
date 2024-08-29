@@ -58,9 +58,15 @@ body {
 .panel_container {
   position: absolute;
   width: 320px;
+<<<<<<< HEAD:Netflix/variant_based_test/640x320_netflix_variant_based/src/styles.css
   height: 320px;
   left: auto;
   right: 0px;
+=======
+  height: auto;
+  bottom: 0px;
+  top: 160px;
+>>>>>>> Netflix-multi:Netflix/single-template/320x400_netflix_single/src/styles.css
   background: #000;
   display: flex;
   align-items: center;
