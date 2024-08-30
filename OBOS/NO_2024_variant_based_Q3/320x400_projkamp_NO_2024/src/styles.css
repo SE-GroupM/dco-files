@@ -76,8 +76,8 @@ html, body {
 
 #ctaTxt  {
   position: absolute;
-  min-width: 105px;
-  min-height: 24px;
+  min-width: 108px;
+  min-height: 20px;
   background: #FFF; /* White background */
   font-family: ObosText-Medium, sans-serif;
   font-size: 13px;
@@ -88,14 +88,14 @@ html, body {
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   box-sizing: border-box;
-  padding: 8px 8px;
-  top: 351px;
+  padding: 6px 6px;
+  top: 355px;
   left: 25px;
 }
 
 
 .headline {
-  width: 280px;
+  width: 284px;
   height: 35px;
   flex-shrink: 0;
   color: #FFF;
@@ -181,7 +181,7 @@ html, body {
   position: absolute;
   width: 120px;
   left: 175px;
-  top: 352px;
+  top: 355px;
 }
 
 .button_left {
@@ -195,8 +195,8 @@ html, body {
   text-align: center;
   color: #fff; 
   min-width: 74px;
-  min-height: 30px; 
-  top: 22px;
+  min-height: 29px; 
+  top: 18px;
   display: flex; /* Use flexbox for centering */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
@@ -213,9 +213,18 @@ html, body {
   text-align: center;
   color: #fff; 
   min-width: 74px;
-  min-height: 30px;
-  top: 22px;
+  min-height: 29px;
+  top: 18px;
   display: flex; /* Use flexbox for centering */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
+}
+
+.logo_other_src {
+  position: absolute;
+  display: flex; /* Use flexbox for centering */
+  width: auto;
+  height: 40px;
+  left: 25px;
+  top: 242px;
 }

@@ -106,10 +106,10 @@ html, body {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosDisplay-Bold;
-  font-size: 36px;
+  font-size: 34px;
   font-style: normal;
   font-weight: normal;
-  line-height: 36px;
+  line-height: 35px;
   position: fixed;
   left: 25px;
   top: 182px;
@@ -219,4 +219,13 @@ html, body {
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   padding: 4px 10px;
+}
+
+.logo_other_src {
+  position: absolute;
+  display: flex; /* Use flexbox for centering */
+  width: 230px;
+  height: auto;
+  left: 25px;
+  top: 20px;
 }

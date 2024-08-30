@@ -218,3 +218,11 @@ html, body {
   justify-content: center; /* Center horizontally */
   padding: 4px 10px;
 }
+.logo_other_src {
+  position: absolute;
+  display: flex; /* Use flexbox for centering */
+  width: auto;
+  height: 93px;
+  left: 25px;
+  top: 50px;
+}

@@ -1,30 +1,3 @@
-/**
-  * Template Name
-  * @Owner Developer Name 
-  * @Date
-*/
-
-function onLemonpiReady(cb) {
-  if (cb) {
-    var loadLemonpiTimerId = setInterval(function () {
-      if (window.lemonpi) {
-        clearInterval(loadLemonpiTimerId);
-        cb();
-      }
-    }, 0);
-  }
-}
-
-// Callback to retrieve the adset data
-onLemonpiReady(function () {
-  lemonpi.subscribe(function callback(content) {
-    // code here
-    // Advanced mapping of dynamic content
-    // You can call the content directly once it's collected by lemonpi.subscribe method
-    // Example content.[placeholder_name].value
-  });
-});
-
 window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content
 
@@ -32,40 +5,23 @@ window.addEventListener('lemonpi.content/ready', event => {
   // VARIABLES //
   ///////////////////
 
-  // Local variable for hodling all daa from adset/feed
+  // Local variable for holding all data from adset/feed
   var local_content = content;
-  // Variable declaration for mainCopy
-  var mainCopy = "";
-  // Variable declaration for subText / Brödtext
-  var subText = "";
-  // If statement to check if creative dimension is small or big. So we lookup the width which is the first
-  // integer and then parse it to an integer and then check if the value is below
-  if (parseInt(local_content.creative_dimension.value.substring(0,3)) > 641) {
-    mainCopy = local_content.rubrik.value;
-    subText = local_content.brodtext.value;
-  } else if (parseInt(local_content.creative_dimension.value.substring(0,3))  > 639) {
-    mainCopy = local_content.rubrik.value;
-    subText = local_content.brodtext_mindre_format.value;
-  } else {
-    mainCopy = local_content.rubrik_mindre_format.value;
-    subText = local_content.brodtext_mindre_format.value;
-  }
+
   //Append Property title 
   var project_brfName = local_content.projekt.value;
   //Append Cta copy
   var ctaTxt = content.CTA.value;
   //Append images
-  var bgImage = local_content.bg_image_source.value;
+  var logo_other_src = local_content.logo_other_src.value;
+  var bgImage = local_content.bg_image_src.value;
   var logoImg = local_content.logo_src.value;
+  // Now proceed with your conditional logic based on the width
+  var mainCopy = local_content.rubrik.value;
+  var subText = local_content.brodtext.value;
   var houseIcon = "https://assets.lemonpi.io/a/1024/ded0820142b233c423b01bc2620aabef.png";
   //Append Click url
   var clickUrl = local_content.exit_url.value;
-
-  var appendCss = 100;
-  var brfNameTop = 154;
-  var sublineTop = 186;
-  var headlineTop =137;
-  var iconTop = 151;
 
   var appendCss = 0;
   var brfNameTop = 341;
@@ -90,6 +46,9 @@ window.addEventListener('lemonpi.content/ready', event => {
    // dynamic controls of bg image position
    var dynamic_img_left = local_content.bgImageCssLeftAdjust.value;
    var dynamic_img_top = local_content.bgImageCssTopAdjust.value;
+
+   // Assuming content.useHouseIcon.value is correctly assigned to includeBrf
+   var includeBrf = local_content.useHouseIcon.value;
  
    //Color of buttons on the right
    var button_color = local_content.button_color.value;
@@ -109,11 +68,18 @@ window.addEventListener('lemonpi.content/ready', event => {
     'border': '2px solid' + button_color
    })
 
+  $('#logo_other_src').css({
+    content: 'url('+ logo_other_src + ')',
+    'background-repeat': 'no-repeat',
+    'background-size': 'contain',
+  })
+
   $('#logo').css({
     content: 'url('+ logoImg + ')',
     'background-repeat': 'no-repeat',
     'background-size': 'contain',
   })
+
   $('#icon').css({
     content: 'url('+ houseIcon + ')',
     'background-repeat': 'no-repeat',
@@ -121,12 +87,23 @@ window.addEventListener('lemonpi.content/ready', event => {
     'top': iconTop + appendCss + 'px',
   })
 
-  $('#headline').css({
-    top: headlineTop + appendCss + 'px',
-  })
-  $('#subline').css({
-    top: sublineTop + appendCss + 'px',
-  })
+    // Check if logo_other_src exists
+    if (logo_other_src) {
+      $('#subline').css({
+        top: '482px',
+      });
+      $('#headline').css({
+        top: '426px', 'font-size': '17px', 'line-height': '17px',
+      });
+    } else {
+      $('#headline').css({
+        top: headlineTop + appendCss + 'px',
+      });
+      $('#subline').css({
+        top: sublineTop + appendCss + 'px',
+      });
+    }
+
   $('#brfName').css({
     top: brfNameTop +  appendCss + 'px',
   })
@@ -134,9 +111,6 @@ window.addEventListener('lemonpi.content/ready', event => {
   ////////////////////
   // ANIMATIONS //
   ///////////////////
-
-// Assuming content.useHouseIcon.value is correctly assigned to includeBrf
-var includeBrf = local_content.useHouseIcon.value;
 
 // Adjust initial CSS based on includeBrf
 if (includeBrf === '0') {
@@ -178,7 +152,7 @@ if (use_buttons_yes_no === "yes") {
 }
 
 // Added fitText function instead of the plugin
-// call with examaple: fitText($('#selector'),10)
+// call with example: fitText($('#selector'),10)
 function fitText(selector, maxHeight) {
   var $element = $(selector);
   var fontSize = parseInt($element.css('font-size'));
@@ -218,4 +192,3 @@ function onClick (event) {
   }));
 }
 })
-  

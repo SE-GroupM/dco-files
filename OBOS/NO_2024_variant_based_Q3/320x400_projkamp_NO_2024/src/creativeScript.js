@@ -35,27 +35,15 @@ window.addEventListener('lemonpi.content/ready', event => {
   // Local variable for hodling all daa from adset/feed
   var local_content = content;
   // Variable declaration for mainCopy
-  var mainCopy = "";
-  // Variable declaration for subText / Brödtext
-  var subText = "";
-  // If statement to check if creative dimension is small or big. So we lookup the width which is the first
-  // integer and then parse it to an integer and then check if the value is below
-  if (parseInt(local_content.creative_dimension.value.substring(0,3)) > 641) {
-    mainCopy = local_content.rubrik.value;
-    subText = local_content.brodtext.value;
-  } else if (parseInt(local_content.creative_dimension.value.substring(0,3))  > 639) {
-    mainCopy = local_content.rubrik.value;
-    subText = local_content.brodtext_mindre_format.value;
-  } else {
-    mainCopy = local_content.rubrik_mindre_format.value;
-    subText = local_content.brodtext_mindre_format.value;
-  }
+  var mainCopy = local_content.rubrik.value;
+  var subText = local_content.brodtext.value;
   //Append Property title 
   var project_brfName = local_content.projekt.value;
   //Append Cta copy
   var ctaTxt = content.CTA.value;
   //Append images
-  var bgImage = local_content.bg_image_source.value;
+  var logo_other_src = local_content.logo_other_src.value;
+  var bgImage = local_content.bg_image_src.value;
   var logoImg = local_content.logo_src.value;
   var houseIcon = "https://assets.lemonpi.io/a/1024/ded0820142b233c423b01bc2620aabef.png";
   //Append Click url
@@ -69,7 +57,6 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   var headCopyPlaceholder = $('#headline');
   headCopyPlaceholder.html(mainCopy);
-  fitText(headCopyPlaceholder, 65);
   
   var subCopyPlaceholder = $('#subline');
   subCopyPlaceholder.html(subText);
@@ -103,6 +90,12 @@ window.addEventListener('lemonpi.content/ready', event => {
     'border': '2px solid' + button_color
    })
 
+   $('#logo_other_src').css({
+    content: 'url('+ logo_other_src + ')',
+    'background-repeat': 'no-repeat',
+    'background-size': 'contain',
+  })
+
   $('#logo').css({
     content: 'url('+ logoImg + ')',
     'background-repeat': 'no-repeat',
@@ -114,13 +107,23 @@ window.addEventListener('lemonpi.content/ready', event => {
     'background-size': 'contain',
     'top': iconTop + appendCss + 'px',
   })
+    // Check if logo_other_src exists
+    if (logo_other_src) {
+      $('#subline').css({
+        top: '310px',
+      });
+      $('#headline').css({
+        top: '290px', 'font-size': '15px', 'line-height': '16px',
+      });
+    } else {
+      $('#headline').css({
+        top: headlineTop + appendCss + 'px',
+      });
+      $('#subline').css({
+        top: sublineTop + appendCss + 'px',
+      });
+    }
 
-  $('#headline').css({
-    top: headlineTop + appendCss + 'px',
-  })
-  $('#subline').css({
-    top: sublineTop + appendCss + 'px',
-  })
   $('#brfName').css({
     top: brfNameTop +  appendCss + 'px',
   })

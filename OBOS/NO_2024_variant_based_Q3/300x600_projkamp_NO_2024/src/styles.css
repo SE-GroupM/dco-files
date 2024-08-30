@@ -224,3 +224,12 @@ html, body {
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
 }
+
+.logo_other_src {
+  position: absolute;
+  display: flex; /* Use flexbox for centering */
+  width: auto;
+  height: 45px;
+  left: 25px;
+  top: 370px;
+}
