@@ -26,13 +26,6 @@ html, body {
   user-select: none;
 }
 
-.logo {
-  position: absolute;
-  left: 745px;
-  top: 525px;
-  width: 200px;
-}
-
 .bgImage {
   width: auto;
   background: #D9D9D9;
@@ -43,7 +36,7 @@ html, body {
   margin: 0;
   left: 333px;
   top: 0px;
-  min-height: 600px;
+  max-height: 600px;
   box-sizing: border-box;
 }
 
@@ -97,10 +90,15 @@ html, body {
   top: 512px;
 }
 
-.headline {
+.copyDiv {
   position: absolute;
   width: 360px;
-  height: 35px;
+  height: 100px;
+  left: 30px;
+  top: 45px;
+}
+
+.headline {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosDisplay-Bold;
@@ -108,14 +106,10 @@ html, body {
   font-style: normal;
   font-weight: normal;
   line-height: 52px;
-  position: fixed;
-  left: 30px;
-  top: 182px;
+  margin-bottom: 20px;
 }
 
 .subline {
-  width: 360px;
-  height: 35px;
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosText-Medium, sans-serif;
@@ -123,40 +117,6 @@ html, body {
   font-weight: normal;
   font-style: normal;
   line-height: 30px;
-  position: fixed;
-  left: 30px;
-  top: 30px;
-}
-
-.brf {
-  height: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-  display: flex; /* Changed to flex for horizontal alignment */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally, adjust if you want the text/icon aligned differently */
-  position: fixed;
-  overflow: hidden;
-  padding: 0 10px; /* Add padding on the sides */
-  margin: 0;
-  left: 372px;
-  top: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.brfName {
-  color: #002169;
-  font-family: "ObosDisplay-Bold";
-  font-size: 14px;
-  margin-left: 6px;
-  /* Additional adjustments for spacing might be needed, depending on your design */
-}
-
-.icon{
-  width: 9px; /* Adjust width as necessary */
-  margin-left: -3px; /* Add some space between the icon and the text */
-  /* Removed position absolute and left property */
 }
 
 .villkor {
@@ -218,11 +178,38 @@ html, body {
   justify-content: center; /* Center horizontally */
   padding: 4px 10px;
 }
+
 .logo_other_src {
-  position: absolute;
-  display: flex; /* Use flexbox for centering */
   width: auto;
   height: 93px;
   left: 25px;
-  top: 50px;
+  top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  position: absolute;
+  top: 520px; /* Align this to the logo’s top */
+  right: 30px; /* Adjusted left to accommodate the width */
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.partnership_logo {
+  height: auto;
+  height: 65px;
+  margin-right: 20px; /* Space between partnership logo and vertical line */
+}
+
+.vertical-line {
+  width: 2px;
+  height: 60px;
+  background-color: #fff;
+  margin-right: 20px; /* Space between vertical line and logo */
+  display: block; /* Ensure the line is visible */
+}
+
+.logo {
+  width: auto;
+  height: 40px;
 }

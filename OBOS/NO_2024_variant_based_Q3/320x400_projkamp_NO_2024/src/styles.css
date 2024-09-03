@@ -89,29 +89,36 @@ html, body {
   justify-content: center; /* Center horizontally */
   box-sizing: border-box;
   padding: 6px 6px;
-  top: 355px;
-  left: 25px;
+  top: 358px;
+  left: 15px;
 }
 
+.copyDiv {
+  position: absolute;
+  width: 284px;
+  height: 80px;
+  left: 15px;
+  top: 247px;
+}
+
+.logo_other_src {
+  width: auto;
+  height: 32px;
+  margin-bottom: 7px;
+}
 
 .headline {
-  width: 284px;
-  height: 35px;
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosDisplay-Bold;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
   font-weight: normal;
-  line-height: 20px;
-  position: fixed;
-  left: 25px;
-  top: 192px;
+  line-height: 18px;
+  margin-bottom: 6px;
 }
 
 .subline {
-  width: 280px;
-  height: 60px;
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosText-Medium, sans-serif;
@@ -119,40 +126,6 @@ html, body {
   font-weight: normal;
   font-style: normal;
   line-height: normal;
-  position: fixed;
-  left: 25px;
-  top: 208px;
-}
-
-.brf {
-  height: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-  display: flex; /* Changed to flex for horizontal alignment */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally, adjust if you want the text/icon aligned differently */
-  position: fixed;
-  overflow: hidden;
-  padding: 0 10px; /* Add padding on the sides */
-  margin: 0;
-  left: 13px;
-  top: 188px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.brfName {
-  color: #fff;
-  font-family: ObosDisplay-Bold;
-  font-size: 11.5px;
-  margin-left: 6px;
-  /* Additional adjustments for spacing might be needed, depending on your design */
-}
-
-.icon{
-  width: 8px; /* Adjust width as necessary */
-  margin-left: -3px; /* Add some space between the icon and the text */
-  /* Removed position absolute and left property */
 }
 
 .villkor {
@@ -177,13 +150,6 @@ html, body {
   left: 0;
 }
 
-.logo{
-  position: absolute;
-  width: 120px;
-  left: 175px;
-  top: 355px;
-}
-
 .button_left {
   position: absolute;
   border: 2px solid #FFF; /* Add border */
@@ -200,6 +166,7 @@ html, body {
   display: flex; /* Use flexbox for centering */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
+  padding: 4px 6px;
 }
 
 .button_right {
@@ -218,13 +185,32 @@ html, body {
   display: flex; /* Use flexbox for centering */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
+  padding: 4px 6px;
 }
 
-.logo_other_src {
+.container {
   position: absolute;
-  display: flex; /* Use flexbox for centering */
-  width: auto;
+  top: 352px; /* Align this to the logo’s top */
+  right: 15px; /* Adjusted left to accommodate the width */
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.partnership_logo {
+  height: auto;
+  margin-right: 10px; /* Space between partnership logo and vertical line */
+  max-width: 95px;
+}
+
+.vertical-line {
+  width: 1.5px;
   height: 40px;
-  left: 25px;
-  top: 242px;
+  background-color: #fff;
+  margin-right: 10px; /* Space between vertical line and logo */
+  display: block; /* Ensure the line is visible */
+}
+
+.logo {
+  width: auto;
+  height: 32px;
 }
