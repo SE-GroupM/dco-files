@@ -169,11 +169,10 @@ function fitText(selector, maxHeight) {
   ///////////////////
 
 // Create the GSAP timelines
-var introAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});
-introAnimation.from('#rectangle_lightblue', 0.5, {x: -300, autoAlpha: 1}, 0.2, 0.8);
+var introAnimation = gsap.timeline({repeat: -1, repeatDelay: 0.3});
 
-introAnimation.from('#copyDiv', 0.5, {autoAlpha: 0}, 0.7, 1);
-introAnimation.to('#rectangle_lightblue, #copyDiv', 0.2, {autoAlpha: 0}, 6, 0.5);
+introAnimation.from('#copyDiv', 0.5, {autoAlpha: 0}, 0.2, 1);
+introAnimation.to('#copyDiv', 0.2, {autoAlpha: 0}, 6, 0.5);
 
 // Animation for CTA button remains unchanged
 var ctaAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});

@@ -59,7 +59,7 @@ html, body {
   height: 300px;
   background: #21514c;
   /* Specify each corner's border-radius */
-  border-radius: 0 15px 15px 15px; /* top-left, top-right, bottom-right, bottom-left */
+  border-radius: 15px 15px 15px 15px; /* top-left, top-right, bottom-right, bottom-left */
   display: block;
   position: fixed;
   overflow: hidden;
@@ -225,8 +225,8 @@ html, body {
 }
 
 .vertical-line {
-  width: 2px;
-  height: 60px;
+  width: 1.5px;
+  height: 56px;
   background-color: #fff;
   margin-right: 20px; /* Space between vertical line and logo */
   display: block; /* Ensure the line is visible */
