@@ -168,11 +168,17 @@ function fitText(selector, maxHeight) {
   // ANIMATIONS //
   ///////////////////
 
+// Animation for bgImage zooming in slowly with smoother central zoom
+var bgImageAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});
+bgImageAnimation.fromTo('#bgImage', 
+    {scale: 1, transformOrigin: "50% 50%"}, 
+    {scale: 1.2, duration: 5, ease: "power1.inOut"}
+);
+
 // Create the GSAP timelines
-var introAnimation = gsap.timeline({repeat: -1, repeatDelay: 0.3});
+var introAnimation = gsap.timeline({repeat: 0, repeatDelay: 0.3});
 
 introAnimation.from('#copyDiv', 0.5, {autoAlpha: 0}, 0.2, 1);
-introAnimation.to('#copyDiv', 0.2, {autoAlpha: 0}, 6, 0.5);
 
 // Animation for CTA button remains unchanged
 var ctaAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});
