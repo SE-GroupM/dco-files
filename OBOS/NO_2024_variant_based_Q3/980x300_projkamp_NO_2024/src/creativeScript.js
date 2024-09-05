@@ -168,12 +168,16 @@ function fitText(selector, maxHeight) {
   // ANIMATIONS //
   ///////////////////
 
-// Animation for bgImage zooming in slowly with smoother central zoom
-var bgImageAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});
-bgImageAnimation.fromTo('#bgImage', 
-    {scale: 1, transformOrigin: "50% 50%"}, 
-    {scale: 1.2, duration: 5, ease: "power1.inOut"}
-);
+// Defer animation to idle time to prevent blocking
+requestIdleCallback(() => {
+  TweenMax.to('#bgImage', 5, {
+    scale: 1.1,
+    transformOrigin: "center",
+    repeat: -1,
+    repeatDelay: 1,  // Add delay before restarting
+    ease: Power1.easeInOut
+  });
+});
 
 // Create the GSAP timelines
 var introAnimation = gsap.timeline({repeat: 0, repeatDelay: 0.3});

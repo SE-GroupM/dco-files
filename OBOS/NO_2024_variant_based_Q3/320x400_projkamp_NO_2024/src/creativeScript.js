@@ -178,14 +178,25 @@ function fitText(selector, maxHeight) {
   // ANIMATIONS //
   ///////////////////
 
-var introAnimation = gsap.timeline({repeat: -1, repeatDelay: 0.3});
+// Defer animation to idle time to prevent blocking
+requestIdleCallback(() => {
+  TweenMax.to('#bgImage', 5, {
+    scale: 1.1,
+    transformOrigin: "center",
+    repeat: -1,
+    repeatDelay: 1,  // Add delay before restarting
+    ease: Power1.easeInOut
+  });
+});
+
+// Create the GSAP timelines
+var introAnimation = gsap.timeline({repeat: 0, repeatDelay: 0.3});
 
 introAnimation.from('#copyDiv', 0.5, {autoAlpha: 0}, 0.2, 1);
-introAnimation.to('#copyDiv', 0.2, {autoAlpha: 0}, 6, 0.5);
 
 // Animation for CTA button remains unchanged
 var ctaAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});
-ctaAnimation.fromTo('#ctaBg, #ctaTxt', {scale: 1}, {scale: 0.95, duration: 0.25, yoyo: true, repeat: 1}, 2);
+ctaAnimation.fromTo('#ctaTxt', {scale: 1}, {scale: 0.95, duration: 0.25, yoyo: true, repeat: 1}, 2);
 
 // Stop repeating animations after 15 seconds, if AppNexus tells us to, and the user hasn't interacted
 window.onLoopStop = function () {

@@ -168,11 +168,21 @@ function fitText(selector, maxHeight) {
   // ANIMATIONS //
   ///////////////////
 
+// Defer animation to idle time to prevent blocking
+requestIdleCallback(() => {
+  TweenMax.to('#bgImage', 5, {
+    scale: 1.1,
+    transformOrigin: "center",
+    repeat: -1,
+    repeatDelay: 1,  // Add delay before restarting
+    ease: Power1.easeInOut
+  });
+});
+
 // Create the GSAP timelines
-var introAnimation = gsap.timeline({repeat: -1, repeatDelay: 0.3});
+var introAnimation = gsap.timeline({repeat: 0, repeatDelay: 0.3});
 
 introAnimation.from('#copyDiv', 0.5, {autoAlpha: 0}, 0.2, 1);
-introAnimation.to('#copyDiv', 0.2, {autoAlpha: 0}, 6, 0.5);
 
 // Animation for CTA button remains unchanged
 var ctaAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});
