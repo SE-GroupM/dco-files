@@ -53,6 +53,7 @@ html, body {
   right: 17px;
   font-size: 35px;
   line-height: 37px;
+  z-index: 1;
 }
 /* Sub copy on side panel */
 .subCopy {
@@ -65,6 +66,7 @@ html, body {
   right: 25px;
   font-size: 16px;
   line-height: 19px;
+  z-index: 1;
 }
 /* Background image on side panel */
 .bgImage {
@@ -92,6 +94,7 @@ html, body {
   height: 175px;
   width: 300px; 
   top: 0px;
+  z-index: 1;
 }
 
 .slider{
@@ -215,5 +218,5 @@ html, body {
   position: absolute; 
   width: 300px; 
   height: 600px;
-  z-index: 0;
+  z-index: 1;
 }

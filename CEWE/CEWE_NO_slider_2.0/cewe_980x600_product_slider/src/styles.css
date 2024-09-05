@@ -129,7 +129,7 @@ html, body {
 /* Product imafe in product slider */
 .productImage {
   position: absolute;
-  height: 250px;
+  height: 180px;
   width: 250px;
   top: 20px;
   background-repeat: no-repeat;
