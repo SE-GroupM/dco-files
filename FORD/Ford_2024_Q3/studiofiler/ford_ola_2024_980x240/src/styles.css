@@ -32,8 +32,8 @@ html, body {
 }
 
 #frame_1_copy {
-  font-family: Ford-F1;
-  font-weight: "700 Medium";
+  font-family: FordCond-Medium;
+  font-weight: "500 Medium";
   position: absolute;
   top: 20px; 
   height: 86px;
@@ -45,8 +45,8 @@ html, body {
 }
 
 #frame_2_copy {
-  font-family: Ford-F1;
-  font-weight: "700 Medium";
+  font-family: FordCond-Medium;
+  font-weight: "500 Medium";
   position: absolute;
   top: 20px; 
   height: 86px;
@@ -60,9 +60,9 @@ html, body {
 #cta_text {
   position: absolute;
   color: #fff;
-  font-family: Ford-F1;
-  background-color: #056eef;
+  font-family: FordCond-Medium;
   font-weight: "500 Medium";
+  background-color: #056eef;
   font-weight: 400;
   margin-block: 13.28px;
   font-size: 15px;
@@ -79,8 +79,8 @@ html, body {
   position: absolute;
   color: rgb(255, 255, 255);
   font-weight: 400;
-  font-family: Ford-F1;
-  font-weight: "500 Medium";  
+  font-family: FordCond-Medium;
+  font-weight: "500 Medium";
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 22px;
@@ -97,8 +97,8 @@ html, body {
   color: rgb(255, 255, 255);
   font-weight: 400;
   opacity: 1;
-  font-family: Ford-F1;
-  font-weight: "500 Medium";  
+  font-family: FordCond-Medium;
+  font-weight: "500 Medium";
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 22px;
@@ -114,8 +114,8 @@ html, body {
   color: rgb(255, 255, 255);
   font-weight: 400;
   opacity: 1;
-  font-family: Ford-F1;
-  font-weight: "500 Medium";  
+  font-family: FordCond-Medium;
+  font-weight: "500 Medium";
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 22px;
@@ -152,7 +152,7 @@ html, body {
 }
 
 #legal_btn {
-  font-family: Ford-F1;
+  font-family: FordCond-Medium;
   font-weight: "500 Medium";
   position: absolute;
   width: 75px;
@@ -166,7 +166,7 @@ html, body {
 
 #legal_txt {
   color: rgb(255, 255, 255);
-  font-family: Ford-F1;
+  font-family: FordCond-Medium;
   font-weight: "500 Medium";
   font-size: 14px;
   font-weight: 400;
