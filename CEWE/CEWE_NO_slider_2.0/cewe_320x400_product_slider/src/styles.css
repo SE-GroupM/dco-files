@@ -126,7 +126,7 @@ html, body {
 /* Product imafe in product slider */
 .productImage {
   position: absolute;
-  height: 135px;
+  height: 150px;
   width: 200px;
   top: -3px;
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@ html, body {
 }
 /* Product name in product slider */
 .productName {
-  top: 130px;
+  top: 135px;
   position: absolute;
   font-family: "CEWEHead-Bold";
   font-size: 15px;

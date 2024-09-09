@@ -61,11 +61,11 @@ html, body {
   font-family: "CEWEHead-Regular";
   bottom: 20px;
   text-align: center;
-  top: 120px;
+  top: 125px;
   left: 25px;
   right: 25px;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 22px;
   z-index: 1;
 }
 /* Background image on side panel */
@@ -91,7 +91,7 @@ html, body {
 }
 .copyBg {
   position: absolute;
-  height: 175px;
+  height: 195px;
   width: 300px; 
   top: 0px;
   z-index: 1;
@@ -99,7 +99,7 @@ html, body {
 
 .slider{
   position: absolute;
-  top: 170px;
+  top: 200px;
   height: 290px;
   width: 300px;
   left: 0px;
@@ -126,8 +126,8 @@ html, body {
 /* Product imafe in product slider */
 .productImage {
   position: absolute;
-  height: 145px;
-  width: 200px;
+  height: 155px;
+  width: 270px;
   top: 10px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -135,7 +135,7 @@ html, body {
 }
 /* Product name in product slider */
 .productName {
-  top: 173px;
+  top: 175px;
   position: absolute;
   font-family: "CEWEHead-Bold";
   font-size: 19px;
@@ -146,31 +146,7 @@ html, body {
   z-index: 60;
   width: 180px;
 }
-/*
-.productPrice {
-  top: 200px;
-  position: absolute;
-  font-family: "CEWEHead-Bold";
-  font-size: 18px;
-  line-height: 16px;
-  color: #4c4c4c;
-  margin-bottom: 5px;
-  text-align: center;
-}
 
-.salePrice {
-  font-family: "CEWEHead-Bold";
-  color: #c30c15;
-}
-
-.oldPrice {
-  font-family: "CEWEHead-Regular";
-  text-decoration: line-through;
-  color: #4d4d4d;
-  font-size: 16px;
-  line-height: 14px;
-}
-  */
 /* CTAs in product slider */
 .ctaText {
   position: fixed;
@@ -193,7 +169,7 @@ html, body {
   transform: rotate(180deg);
   width: 45px;
   height: 85px;
-  top: 265px;
+  top: 385px;
   right: 5px;
   z-index: 25;
 }
@@ -203,7 +179,7 @@ html, body {
   background-size: contain;
   width: 45px;
   height: 85px;
-  top: 310px;
+  top: 425px;
   left: 5px;
   z-index: 25;
 }

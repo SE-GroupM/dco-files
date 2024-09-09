@@ -198,7 +198,7 @@ var timeBetweenSlides = 3;
     
     Slider.create({
       slidesData: local_content.product_collection.value,
-      width: 315,
+      width: 310,
       setSlideContent: function(slideDiv, slideData, slideIndex) {
         // Find product image div and append image
         $(slideDiv).find("#productImage").css("background-image","url("+slideData.productImage.value+")");

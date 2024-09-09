@@ -130,14 +130,15 @@ html, body {
 .productImage {
   position: absolute;
   height: 100px;
-  width: 170px;
-  top: 5px;
+  width: 200px;
+  left: 55px;
+  top: 8px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 /* Product name in product slider */
 .productName {
-  top: 110px;
+  top: 113px;
   position: absolute;
   font-family: "CEWEHead-Bold";
   font-size: 18px;
