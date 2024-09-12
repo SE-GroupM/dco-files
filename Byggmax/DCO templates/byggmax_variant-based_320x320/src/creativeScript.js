@@ -30,15 +30,24 @@ onLemonpiReady(function () {
   //Append overlay image
   $("#productOverlay").css("background-image","url("+local_content.layover_asset.value+")");
 
-  //Product box 1
-  //Check if price has sup element and append correct CSS class
-  if (local_content.product_1_price.value.includes('<sup>')){
-    $("#productPrice_1").html(local_content.product_1_price.value + "<span class='priceCurrencySup'>kr</span>");
+// Check if <sup> is included in the product price currency
+if (local_content.product_1_price_currency.value.includes('<sup>')) {
+  // Wrap the currency in a span and apply the .priceCurrencySup class
+  $("#productPrice_1").html(
+      local_content.product_1_price.value + 
+      '<span class="priceCurrencySup">' + local_content.product_1_price_currency.value + '</span>'
+  );
 } else {
-    $("#productPrice_1").html(local_content.product_1_price.value + "<span class='priceCurrency'>kr</span>");
+  // Wrap the currency in a span and apply the .priceCurrency class
+  $("#productPrice_1").html(
+      local_content.product_1_price.value + 
+      '<span class="priceCurrency">' + local_content.product_1_price_currency.value + '</span>'
+  );
 }
-if (local_content.product_1_price.value === ''){
-    $("#productPrice_1").html(local_content.product_1_price.value);
+
+// If product_1_price is empty, only show the price (without currency)
+if (local_content.product_1_price.value === '') {
+  $("#productPrice_1").html(local_content.product_1_price.value);
 }
 
   //Append product name
@@ -47,16 +56,32 @@ if (local_content.product_1_price.value === ''){
   $("#productImage_1").css("background-image","url("+local_content.product_1_image.value+")");
   //Append product container
   $("#productContainer_1").css("background-image","url("+local_content.product_1_container.value+")");
+  //Append price currency
+  $("#priceCurrencySup").html(local_content.product_1_price_currency.value);
+  //Append price currency
+  $("#priceCurrencySup").html(local_content.product_2_price_currency.value);
+  //Append product price headline
+  $("#priceHeadline1").html(local_content.product_1_price_headline.value);
+  //Append product price headline
+  $("#priceHeadline2").html(local_content.product_2_price_headline.value);
 
-  //Product box 2
- //Check if price has sup element and append correct CSS class
-//Check if price has sup element and append correct CSS class
-if (local_content.product_2_price.value.includes('<sup>')){
-  $("#productPrice_2").html(local_content.product_2_price.value + "<span class='priceCurrencySup'>kr</span>");
+// Check if <sup> is included in the product price currency
+if (local_content.product_2_price_currency.value.includes('<sup>')) {
+  // Wrap the currency in a span and apply the .priceCurrencySup class
+  $("#productPrice_2").html(
+      local_content.product_2_price.value + 
+      '<span class="priceCurrencySup">' + local_content.product_2_price_currency.value + '</span>'
+  );
 } else {
-  $("#productPrice_2").html(local_content.product_2_price.value + "<span class='priceCurrency'>kr</span>");
+  // Wrap the currency in a span and apply the .priceCurrency class
+  $("#productPrice_2").html(
+      local_content.product_2_price.value + 
+      '<span class="priceCurrency">' + local_content.product_2_price_currency.value + '</span>'
+  );
 }
-if (local_content.product_2_price.value === ''){
+
+// If product_1_price is empty, only show the price (without currency)
+if (local_content.product_2_price.value === '') {
   $("#productPrice_2").html(local_content.product_2_price.value);
 }
 
@@ -94,13 +119,13 @@ if (local_content.product_2_price.value === ''){
 var tl = new TimelineMax({ repeat: -1 });
 TweenMax.set('#productPrice_2, #product_2_subCopy, #productName_2, #product_2_mainCopy, #productImage_2, #productContainer_2', { opacity: 0 }) //Opacity on product 2
 
-tl.fromTo('#productPrice_1, #product_1_oldPrice, #productName_1, #productContainer_1', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) //Product price and product name 1 fade in
+tl.fromTo('#productPrice_1, #priceHeadline1, #product_1_oldPrice, #productName_1, #productContainer_1', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) //Product price and product name 1 fade in
   .fromTo('#productImage_1', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, { x: 0, opacity: 1, ease: Linear.ease }, 0) //Product image 1 fade in
-  .to('#productPrice_1, #product_1_oldPrice, #productName_1, #productContainer_1', 0.3, { opacity: 0, ease: Linear.ease }, 3) //Product price and product name 1 fade out
+  .to('#productPrice_1,  #priceHeadline1, #product_1_oldPrice, #productName_1, #productContainer_1', 0.3, { opacity: 0, ease: Linear.ease }, 3) //Product price and product name 1 fade out
   .to('#productImage_1', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, 3) //Product image 1 fade out
-  .fromTo('#productPrice_2, #product_2_oldPrice, #product_2_subCopy, #productName_2, #product_2_mainCopy, #productContainer_2', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 3.3) //Product price and product name 2 fade in
+  .fromTo('#productPrice_2,  #priceHeadline2, #product_2_oldPrice, #product_2_subCopy, #productName_2, #product_2_mainCopy, #productContainer_2', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 3.3) //Product price and product name 2 fade in
   .fromTo('#productImage_2', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, { x: 0, opacity: 1, ease: Linear.ease }, 3.3) //Product image 2 fade in
-  .to('#productPrice_2, #product_2_oldPrice, #productName_2, #product_2_mainCopy, #product_2_subCopy, #productContainer_2', 0.3, { opacity: 0, ease: Linear.ease }, 6) //Product price and product name 2 fade out
+  .to('#productPrice_2,  #priceHeadline2, #product_2_oldPrice, #productName_2, #product_2_mainCopy, #product_2_subCopy, #productContainer_2', 0.3, { opacity: 0, ease: Linear.ease }, 6) //Product price and product name 2 fade out
   .to('#productImage_2', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, 6) //Product image 2 fade out
   .add(function () {
     showExitUrl2(); // Call function to show exit_url_2
