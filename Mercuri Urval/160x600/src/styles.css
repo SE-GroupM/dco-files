@@ -87,8 +87,8 @@ html, body {
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   position: absolute;
-  width: 120px;
-  height: 25px;
+  width: 124px;
+  height: 29px;
   left: 15px;
   top: 430px;
   background-color: #ff6052;
@@ -97,13 +97,13 @@ html, body {
 }
 .ctaText{
   position: absolute;
-  width: 120px;
-  height: 30px;
-  top: 8px;
+  width: 124px;
+  height: 29px;
+  top: 9px;
   letter-spacing: -0.001em;
   text-align: center;
-  font-size: 12px;
-  line-height: 9px;
+  font-size: 14px;
+  line-height: 14px;
   color: rgba(255, 255, 255, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -125,8 +125,8 @@ html, body {
 
 .geowhiteblue{
   position: absolute;
-  width: 13px;
-  height: 15px;
+  width: 14px;
+  height: 16px;
   left: 15px;
   top: 370px;
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@ html, body {
 
 .CopyDiv {
   position: absolute;
-  top: 150px;
+  top: 112px;
   left: 15px;
   width: 130px;
   height: 250px;
@@ -145,8 +145,8 @@ html, body {
   letter-spacing: -0.001em;
   margin-bottom: 10px;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -157,8 +157,8 @@ html, body {
 .mainText {
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 22px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -171,8 +171,8 @@ html, body {
   left: 0px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgb(0 64 125);
   white-space: pre-wrap;
   font-family: 'Arial';
@@ -183,12 +183,12 @@ html, body {
 .locationText{
   position: absolute;
   width: 65px;
-  left: 35px;
+  left: 38px;
   top: 373px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -198,10 +198,10 @@ html, body {
 
 .companyLogo{
   position: absolute;
-  width: 80px;
+  width: 112px;
   height: 40px;
   left: auto;
-  top: 70px;
+  top: 65px;
   right: 10px;
 }
 
