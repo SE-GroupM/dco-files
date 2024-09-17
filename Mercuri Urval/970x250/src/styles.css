@@ -34,7 +34,7 @@ html, body {
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   background-color: #006bb5;
   position: absolute;
-  width: 162px;
+  width: 177px;
   height: 302px;
   left: 1px;
   top: 0px;
@@ -74,7 +74,7 @@ html, body {
   position: absolute;
   width: 179px;
   height: 303px;
-  left: 162px;
+  left: 178px;
   top: 0px;
   background-color: #006bb5;
   background-repeat: no-repeat;
@@ -85,17 +85,17 @@ html, body {
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   position: absolute;
-  width: 171px;
+  width: 170px;
   height: 40px;
   left: 532px;
-  top: 175px;
+  top: 189px;
   background-color: #ff6052;
   background-repeat: no-repeat;
   background-size: 171px, 40px;
 }
 .ctaText{
     position: absolute;
-    width: 171px;
+    width: 170px;
     height: 40px;
     top: 11px;
     letter-spacing: -0.001em;
@@ -120,11 +120,12 @@ html, body {
 
 .geowhiteblue{
   position: absolute;
-  width: 19px;
-  height: 22px;
+  width: 17px;
+  height: 19px;
   left: 130px;
-  top: 197px;
+  top: 210px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .CopyDiv {
@@ -139,8 +140,8 @@ html, body {
   letter-spacing: -0.001em;
   margin-bottom: 10px;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 20px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -151,8 +152,8 @@ html, body {
 .mainText {
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 26px;
-  line-height: 28px;
+  font-size: 30px;
+  line-height: 32px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -165,8 +166,8 @@ html, body {
   left: 0px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 20px;
   color: rgb(0 64 125);
   white-space: pre-wrap;
   font-family: 'Arial';
@@ -179,11 +180,11 @@ html, body {
   width: 308px;
   height: 42px;
   left: 160px;
-  top: 205px;
+  top: 215px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 18px;
+  line-height: 18px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -195,6 +196,6 @@ html, body {
   position: absolute;
     width: 137px;
     height: 39px;
-    left: 620px;
+    left: 650px;
     top: 20px;
 }

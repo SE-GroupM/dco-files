@@ -62,7 +62,7 @@ onLemonpiReady(function () {
       "background-image":"url("+companyLogo+")",
       'background-size': 'contain',
       'background-repeat': 'no-repeat',
-      'background-position': 'center right',
+      'background-position': 'top right',
     });
 
 

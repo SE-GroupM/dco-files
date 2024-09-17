@@ -34,9 +34,9 @@ html, body {
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   background-color: #006bb5;
   position: absolute;
-  width: 207px;
+  width: 223px;
   height: 400px;
-  left: 255px;
+  left: 240px;
   top: 0px;
   background-repeat: no-repeat;
   background-size: 160px, 302px
@@ -120,11 +120,12 @@ html, body {
 
 .geowhiteblue{
   position: absolute;
-  width: 19px;
-  height: 22px;
+  width: 17px;
+  height: 19px;
   left: 135px;
-  top: 299px;
+  top: 301px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .CopyDiv {
@@ -178,7 +179,7 @@ html, body {
   position: absolute;
   width: 308px;
   height: 42px;
-  left: 175px;
+  left: 165px;
   top: 304px;
   letter-spacing: -0.001em;
   text-align: left;

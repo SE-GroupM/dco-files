@@ -92,7 +92,7 @@ html, body {
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   position: absolute;
   width: 124px;
-  height: 30px;
+  height: 29px;
   left: 130px;
   top: 270px;
   background-color: #ff6052;
@@ -101,13 +101,13 @@ html, body {
 }
 .ctaText{
   position: absolute;
-  width: 120px;
-  height: 30px;
+  width: 124px;
+  height: 29px;
   top: 9px;
   letter-spacing: -0.001em;
   text-align: center;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 14px;
   color: rgba(255, 255, 255, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -128,9 +128,9 @@ html, body {
 
 .geowhiteblue{
   position: absolute;
-  width: 15px;
+  width: 14px;
   height: 17px;
-  left: 35px;
+  left: 30px;
   top: 230px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -148,8 +148,8 @@ html, body {
   letter-spacing: -0.001em;
   margin-bottom: 5px;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -160,8 +160,8 @@ html, body {
 .mainText {
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 24px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -174,8 +174,8 @@ html, body {
   left: 0px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgb(0 64 125);
   white-space: pre-wrap;
   font-family: 'Arial';
@@ -186,12 +186,12 @@ html, body {
 .locationText{
   position: absolute;
   width: 430px;
-  left: 60px;
-  top: 235px;
+  left: 54px;
+  top: 233px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';

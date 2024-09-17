@@ -1,7 +1,7 @@
 {
   "id": "4212241e-18d7-4fb1-bdaa-1ef35c3978e1",
   "version": "1.2.0",
-  "name": "300x600_vsc",
+  "name": "300x600_vsc_2024",
   "description": "",
   "size": {
     "sizes": [
@@ -86,5 +86,5 @@
   "folders": {
     "selectedFolderId": 3798
   },
-  "port": 54128
+  "port": 65312
 }
