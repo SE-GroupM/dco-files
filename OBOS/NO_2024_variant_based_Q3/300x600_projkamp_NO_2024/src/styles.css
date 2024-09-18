@@ -42,7 +42,7 @@ html, body {
 .rectangle_darkblue {
   width: 300px;
   height: 128px;
-  background: #072d29;
+  background: #00524c;
   border-radius: 0px;
   display: block;
   position: fixed;
@@ -57,7 +57,7 @@ html, body {
 .rectangle_lightblue {
   width: 300px;
   height: 271px;
-  background: #21514c;
+  background: #00524c;
   /* Specify each corner's border-radius */
   border-radius: 15px 15px 15px 15px; /* top-left, top-right, bottom-right, bottom-left */
   display: block;
@@ -77,11 +77,11 @@ html, body {
 #ctaTxt  {
   position: absolute;
   min-width: 110px;
-  height: 24px;
+  height: 26px;
   min-height: 35px;
   background: #FFF; /* White background */
   font-family: ObosText-Medium, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   color: #000;
   border-radius: 8px;
   text-align: center;
@@ -99,23 +99,25 @@ html, body {
   width: 260px;
   height: 80px;
   left: 15px;
-  top: 372px;
+  top: 380px;
 }
 
 .logo_other_src {
-  width: auto;
-  height: 45px;
-  margin-bottom: 15px;
+  position: absolute;
+  top: 145px;
+  width: 210px;
+  left: 45px;
+  height: auto;
 }
 
 .headline {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosDisplay-Bold;
-  font-size: 24px;
+  font-size: 26px;
   font-style: normal;
   font-weight: normal;
-  line-height: 25px;
+  line-height: 28px;
   margin-bottom: 10px;
 }
 
@@ -123,7 +125,7 @@ html, body {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosText-Medium, sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 19px;
   font-weight: normal;
   font-style: normal;
@@ -152,10 +154,11 @@ html, body {
   left: 0;
 }
 
-.logo{
-  width: 118px;
+.logo {
+  max-height: 28px;
+  width: auto; /* Automatically adjusts the width to maintain aspect ratio */
   left: 155px;
-  top: 542px;
+  top: 552px;
 }
 
 .button_left {
@@ -188,7 +191,7 @@ html, body {
   text-align: center;
   color: #fff; 
   min-width: 74px;
-  min-height: 32px;
+  min-height: 32px; 
   top: 25px;
   display: flex; /* Use flexbox for centering */
   align-items: center; /* Center vertically */
@@ -198,7 +201,7 @@ html, body {
 
 .container {
   position: absolute;
-  top: 535px; /* Align this to the logo’s top */
+  top: 532px; /* Align this to the logo’s top */
   right: 15px; /* Adjusted left to accommodate the width */
   display: flex;
   align-items: center; /* Vertically center the items */
@@ -216,9 +219,4 @@ html, body {
   background-color: #fff;
   margin-right: 10px; /* Space between vertical line and logo */
   display: block; /* Ensure the line is visible */
-}
-
-.logo {
-  width: auto;
-  height: 32px;
 }

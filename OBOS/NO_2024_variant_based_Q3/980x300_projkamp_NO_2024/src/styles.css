@@ -42,7 +42,7 @@ html, body {
 .rectangle_darkblue {
   width: 248px;
   height: 300px;
-  background: #072d29;
+  background: #012926;
   border-radius: 0px;
   display: block;
   position: fixed;
@@ -57,9 +57,9 @@ html, body {
 .rectangle_lightblue {
   width: 360px;
   height: 300px;
-  background: #21514c;
+  background: #00524c;
   /* Specify each corner's border-radius */
-  border-radius: 15px 15px 15px 15px; /* top-left, top-right, bottom-right, bottom-left */
+  border-radius: 0px 15px 15px 0px; /* top-left, top-right, bottom-right, bottom-left */
   display: block;
   position: fixed;
   overflow: hidden;
@@ -98,34 +98,36 @@ html, body {
   width: 320px;
   height: 100px;
   left: 25px;
-  top: 20px;
+  top: 35px;
 }
 
 .logo_other_src {
-  width: 180px;
+  position: absolute;
+  width: 260px;
   height: auto;
-  margin-bottom: 10px;
+  left: 480px;
+  top: 80px;
 }
 
 .headline {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosDisplay-Bold;
-  font-size: 30px;
+  font-size: 33px;
   font-style: normal;
   font-weight: normal;
-  line-height: 32px;
-  margin-bottom: 10px;
+  line-height: 36px;
+  margin-bottom: 16px;
 }
 
 .subline {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosText-Medium, sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: normal;
   font-style: normal;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .villkor {
@@ -190,29 +192,14 @@ html, body {
 
 .container {
   position: absolute;
-  top: 230px; /* Align this to the logo’s top */
+  top: 220px; /* Align this to the logo’s top */
   right: 25px; /* Adjusted left to accommodate the width */
   display: flex;
   align-items: center; /* Vertically center the items */
 }
 
-.partnership_logo {
-  width: 160px;
-  height: auto;
-  margin-right: 20px; /* Space between partnership logo and vertical line */
-}
-
-.vertical-line {
-  width: 2px;
-  height: 60px;
-  background-color: #fff;
-  margin-right: 20px; /* Space between vertical line and logo */
-  display: block; /* Ensure the line is visible */
-}
-
 .container {
   position: absolute;
-  top: 220px; /* Align this to the logo’s top */
   right: 30px; /* Adjusted left to accommodate the width */
   display: flex;
   align-items: center; /* Vertically center the items */
@@ -225,7 +212,7 @@ html, body {
 }
 
 .vertical-line {
-  width: 1.5px;
+  width: 1px;
   height: 56px;
   background-color: #fff;
   margin-right: 20px; /* Space between vertical line and logo */
@@ -234,5 +221,5 @@ html, body {
 
 .logo {
   width: auto;
-  height: 40px;
+  height: 37px;
 }

@@ -40,8 +40,12 @@ window.addEventListener('lemonpi.content/ready', event => {
   //Append Main and sub-copy
   var mainCopy = local_content.rubrik.value;
   var subText = local_content.brodtext.value;
+
+  //Append Right and Left buttons
+  var buttonRight = local_content.button_right.value;
+  var buttonLeft = local_content.button_left.value;
+
   //Append images
-  
   var partnership_logo = local_content.partnership_logo.value;
   var logo_other_src = local_content.logo_other_src.value;
   var bgImage = local_content.bg_image_src.value;
@@ -60,15 +64,20 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   var subCopyPlaceholder = $('#subline');
   subCopyPlaceholder.html(subText);
-  fitText(subCopyPlaceholder, 47);
+  fitText(subCopyPlaceholder, 64);
 
   var ctaCopyPlaceholder = $('#ctaTxt');
   ctaCopyPlaceholder.html(ctaTxt);
 
+  var rightButtonPlaceholder = $('#button_right');
+  rightButtonPlaceholder.html(buttonRight);
+
+  var leftButtonPlaceholder = $('#button_left');
+  leftButtonPlaceholder.html(buttonLeft);
+
    // dynamic controls of bg image position
    var dynamic_img_left = local_content.bgImageCssLeftAdjust.value;
    var dynamic_img_top = local_content.bgImageCssTopAdjust.value;
-   var use_buttons_yes_no = local_content.use_buttons_yes_no.value;
 
    //Color of buttons on the right
    var button_color = local_content.button_color.value;
@@ -112,15 +121,16 @@ window.addEventListener('lemonpi.content/ready', event => {
           display: 'block',
       });
       $('.logo').css({
-        height: '45px',
+        height: '43px',
     });
   } else {
       $('.vertical-line').css({
           display: 'none',
       });
       $('#logo').css({
-          height: '47px',
+          height: '40px',
           right: '10px',
+          top: '280px',
       });
   }
 
@@ -129,15 +139,24 @@ window.addEventListener('lemonpi.content/ready', event => {
     $('#logo_other_src').remove();
   }
 
-  if (use_buttons_yes_no === 'no') {
-    $('#button_left, #button_right').css({
-      display: 'none',
-    });
-  } else {
-    $('#button_left, #button_right').css({
-      display: 'block',
-    });
-  }
+  /* Add styles to buttons if they contain content */
+if (local_content.button_right.value.trim() == "") {
+  $('#button_right').css({
+    'display': 'none',
+  });
+} else {
+  $('#button_right').css({
+  });
+}
+
+if (local_content.button_left.value.trim() == "") {
+  $('#button_left').css({
+    'display': 'none',
+  });
+} else {
+  $('#button_left').css({
+  });
+}
 
 // Added fitText function instead of the plugin
 // call with examaple: fitText($('#selector'),10)

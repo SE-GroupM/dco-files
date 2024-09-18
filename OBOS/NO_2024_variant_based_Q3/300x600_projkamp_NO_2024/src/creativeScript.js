@@ -10,11 +10,16 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   //Append Cta copy
   var ctaTxt = content.CTA.value;
+
+  //Append Right and Left buttons
+  var buttonRight = local_content.button_right.value;
+  var buttonLeft = local_content.button_left.value;
   //Append images
   var partnership_logo = local_content.partnership_logo.value;
   var logo_other_src = local_content.logo_other_src.value;
   var bgImage = local_content.bg_image_src.value;
   var logoImg = local_content.logo_src.value;
+
   // Now proceed with your conditional logic based on the width
   var mainCopy = local_content.rubrik.value;
   var subText = local_content.brodtext.value;
@@ -27,20 +32,25 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   var headCopyPlaceholder = $('#headline');
   headCopyPlaceholder.html(mainCopy);
-  fitText(headCopyPlaceholder, 65);
+  fitText(headCopyPlaceholder, 85);
   
   var subCopyPlaceholder = $('#subline');
   subCopyPlaceholder.html(subText);
-  fitText(subCopyPlaceholder, 47);
+  fitText(subCopyPlaceholder, 57);
 
   var ctaCopyPlaceholder = $('#ctaTxt');
   ctaCopyPlaceholder.html(ctaTxt);
 
+  var rightButtonPlaceholder = $('#button_right');
+  rightButtonPlaceholder.html(buttonRight);
+
+  var leftButtonPlaceholder = $('#button_left');
+  leftButtonPlaceholder.html(buttonLeft);
+  
    // dynamic controls of bg image position
    var dynamic_img_left = local_content.bgImageCssLeftAdjust.value;
    var dynamic_img_top = local_content.bgImageCssTopAdjust.value;
 
-   var use_buttons_yes_no = local_content.use_buttons_yes_no.value;
    var logo_top_yes_no = local_content.logo_top_yes_no.value;
  
    //Color of buttons on the right
@@ -52,8 +62,7 @@ window.addEventListener('lemonpi.content/ready', event => {
      'background-position': 'center center',
      'background-size': '',
      'left': dynamic_img_left + 'px',
-     'top': dynamic_img_top + 'px',
-     
+     'top': dynamic_img_top + 'px', 
    })
 
    $('#button_left, #button_right').css({
@@ -100,18 +109,7 @@ if (partnership_logo !== '') {
   });
 }
 
-if (use_buttons_yes_no === 'no') {
-  $('#button_left, #button_right').css({
-    display: 'none',
-  });
-} else {
-  $('#button_left, #button_right').css({
-    display: 'block',
-  });
-}
-
 /*logo placements top or bottom*/
-
 if (logo_top_yes_no === "yes") {
   $('.container').css({
     position:'fixed',
@@ -120,8 +118,27 @@ if (logo_top_yes_no === "yes") {
 });
 } else {
   $('.container').css({
-    top: '535px', 
+    top: '538px', 
 });
+}
+
+/* Add styles to buttons if they contain content */
+if (local_content.button_right.value.trim() == "") {
+  $('#button_right').css({
+    'display': 'none',
+  });
+} else {
+  $('#button_right').css({
+  });
+}
+
+if (local_content.button_left.value.trim() == "") {
+  $('#button_left').css({
+    'display': 'none',
+  });
+} else {
+  $('#button_left').css({
+  });
 }
 
 // Added fitText function instead of the plugin

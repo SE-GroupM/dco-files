@@ -39,6 +39,10 @@ window.addEventListener('lemonpi.content/ready', event => {
   var subText = local_content.brodtext.value;
   //Append Cta copy
   var ctaTxt = content.CTA.value;
+
+  //Append Right and Left buttons
+  var buttonRight = local_content.button_right.value;
+  var buttonLeft = local_content.button_left.value;
   //Append images
   var partnership_logo = local_content.partnership_logo.value;
   var logo_other_src = local_content.logo_other_src.value;
@@ -61,6 +65,12 @@ window.addEventListener('lemonpi.content/ready', event => {
   var ctaCopyPlaceholder = $('#ctaTxt');
   ctaCopyPlaceholder.html(ctaTxt);
 
+  var rightButtonPlaceholder = $('#button_right');
+  rightButtonPlaceholder.html(buttonRight);
+
+  var leftButtonPlaceholder = $('#button_left');
+  leftButtonPlaceholder.html(buttonLeft);
+  
    // dynamic controls of bg image position
    var dynamic_img_left = local_content.bgImageCssLeftAdjust.value;
    var dynamic_img_top = local_content.bgImageCssTopAdjust.value;
@@ -125,16 +135,6 @@ if (partnership_logo !== '') {
   });
 }
 
-if (use_buttons_yes_no === 'no') {
-  $('#button_left, #button_right').css({
-    display: 'none',
-  });
-} else {
-  $('#button_left, #button_right').css({
-    display: 'block',
-  });
-}
-
 /*logo placements top or bottom*/
 
 if (logo_top_yes_no === "yes") {
@@ -145,8 +145,26 @@ if (logo_top_yes_no === "yes") {
 });
 } else {
   $('.container').css({
-    top: '351px', 
 });
+}
+
+/* Add styles to buttons if they contain content */
+if (local_content.button_right.value.trim() == "") {
+  $('#button_right').css({
+    'display': 'none',
+  });
+} else {
+  $('#button_right').css({
+  });
+}
+
+if (local_content.button_left.value.trim() == "") {
+  $('#button_left').css({
+    'display': 'none',
+  });
+} else {
+  $('#button_left').css({
+  });
 }
 
 // Added fitText function instead of the plugin

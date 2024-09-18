@@ -40,6 +40,11 @@ window.addEventListener('lemonpi.content/ready', event => {
   //Append sub copy and main copy
   var mainCopy = local_content.rubrik.value;
   var subText = local_content.brodtext.value;
+
+  //Append Right and Left buttons
+  var buttonRight = local_content.button_right.value;
+  var buttonLeft = local_content.button_left.value;
+  
   //Append images
   var partnership_logo = local_content.partnership_logo.value;
   var logo_other_src = local_content.logo_other_src.value;
@@ -47,9 +52,6 @@ window.addEventListener('lemonpi.content/ready', event => {
   var logoImg = local_content.logo_src.value;
   //Append Click url
   var clickUrl = local_content.exit_url.value;
-  var use_buttons_yes_no = local_content.use_buttons_yes_no.value;
-
-  var use_buttons_yes_no = local_content.use_buttons_yes_no.value;
 
   var appendCss = -30;
   var sublineTop = 190;
@@ -62,10 +64,16 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   var subCopyPlaceholder = $('#subline');
   subCopyPlaceholder.html(subText);
-  fitText(subCopyPlaceholder, 77);
+  fitText(subCopyPlaceholder, 79);
 
   var ctaCopyPlaceholder = $('#ctaTxt');
   ctaCopyPlaceholder.html(ctaTxt);
+
+  var rightButtonPlaceholder = $('#button_right');
+  rightButtonPlaceholder.html(buttonRight);
+
+  var leftButtonPlaceholder = $('#button_left');
+  leftButtonPlaceholder.html(buttonLeft);
 
    // dynamic controls of bg image position
    var dynamic_img_left = local_content.bgImageCssLeftAdjust.value;
@@ -89,10 +97,11 @@ window.addEventListener('lemonpi.content/ready', event => {
     'background-size': 'contain',
   })
 
-   $('#button_left, #button_right').css({
+  $('#button_left, #button_right').css({
     'color': button_color,
     'border': '3px solid' + button_color
    })
+
 
   $('#logo').css({
     content: 'url('+ logoImg + ')',
@@ -126,19 +135,28 @@ if (partnership_logo !== '') {
   $('#logo').css({
       height: '52px',
       right: '10px',
-      top: '505px', 
+      top: '507px', 
   });
 }
 
-if (use_buttons_yes_no === 'no') {
-  $('#button_left, #button_right').css({
-    display: 'none',
-  });
-} else {
-  $('#button_left, #button_right').css({
-    display: 'block',
-  });
-}
+  /* Add styles to buttons if they contain content */
+  if (local_content.button_right.value.trim() == "") {
+    $('#button_right').css({
+      'display': 'none',
+    });
+  } else {
+    $('#button_right').css({
+    });
+  }
+  
+  if (local_content.button_left.value.trim() == "") {
+    $('#button_left').css({
+      'display': 'none',
+    });
+  } else {
+    $('#button_left').css({
+    });
+  }
 
 // Added fitText function instead of the plugin
 // call with examaple: fitText($('#selector'),10)
