@@ -125,8 +125,8 @@ html, body {
 
 .geowhiteblue{
   position: absolute;
-  width: 13px;
-  height: 15px;
+  width: 12px;
+  height: 14px;
   left: 5px;
   top: 370px;
   background-repeat: no-repeat;
@@ -145,8 +145,8 @@ html, body {
   letter-spacing: -0.001em;
   margin-bottom: 10px;
   text-align: left;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 14px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -157,8 +157,8 @@ html, body {
 .mainText {
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 11px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
@@ -171,8 +171,8 @@ html, body {
   left: 0px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 14px;
   color: rgb(0 64 125);
   white-space: pre-wrap;
   font-family: 'Arial';
@@ -187,8 +187,8 @@ html, body {
   top: 373px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 14px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';

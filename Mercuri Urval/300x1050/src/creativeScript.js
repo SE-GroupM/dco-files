@@ -93,40 +93,40 @@ onLemonpiReady(function () {
     /////           FUNCTIONS             /////
     ///////////////////////////////////////////
 
-      // Truncate function
-      function truncateProductText(selector, truncLength) {
-        var element = $(selector);
-        var truncateLength = truncLength;
-  
-        var sentence = element[0].innerText;
-        var result = sentence;
-        var resultArray = result;
-        element.css({
-          height: 'auto',
-      });
-      if (sentence.length >= truncateLength){
-        result = resultArray.split(" ").splice(0, 5).join(" ");
-  
-        splitSentence = result.split(" ")
-        secondCheck = splitSentence[0] + ' ' + splitSentence[1];
-        threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
-        fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
-  
-        if (fourWords.length >= truncateLength){
-            result = threeWords;
-        }
-        if (threeWords.length >= truncateLength){
-            result = secondCheck;
-        }
-        if (secondCheck.length >= truncateLength){
-            result = splitSentence[0]
-        }
-        element.text(result + '...');
-        } else{
-        element.text(result);
-        }
-      return result;
+    // Truncate function
+    function truncateProductText(selector, truncLength) {
+      var element = $(selector);
+      var truncateLength = truncLength;
+
+      var sentence = element[0].innerText;
+      var result = sentence;
+      var resultArray = result;
+      element.css({
+        height: 'auto',
+    });
+    if (sentence.length >= truncateLength){
+      result = resultArray.split(" ").splice(0, 5).join(" ");
+
+      splitSentence = result.split(" ")
+      secondCheck = splitSentence[0] + ' ' + splitSentence[1];
+      threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
+      fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
+
+      if (fourWords.length >= truncateLength){
+          result = threeWords;
       }
+      if (threeWords.length >= truncateLength){
+          result = secondCheck;
+      }
+      if (secondCheck.length >= truncateLength){
+          result = splitSentence[0]
+      }
+      element.text(result + '...');
+      } else{
+      element.text(result);
+      }
+    return result;
+    }
 
     //Product click funtion
     $('#creative_container').click(onClick);

@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 980px;
-  height: 120px;
+  width: 300px;
+  height: 1050px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -34,37 +34,39 @@ html, body {
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   background-color: #006bb5;
   position: absolute;
-  width: 182px;
+  width: 178px;
   height: 302px;
-  left: 24px;
+  left: 1px;
   top: 0px;
   background-repeat: no-repeat;
   background-size: 160px, 302px
 }
 #right_panel{
   position: absolute;
-  width: 1105px;
-  height: 303px;
-  left: 663px;
-  top: 0px;
+  width: 140px;
+  height: 244px;
+  left: auto;
+  right: 20px;
+  top: auto;
+  bottom: 0px;
 }
 
 #left_panel{
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
   clip-path: polygon(0 0, 0% 100%, 100% 0);
   position: absolute;
-  width: 130px;
-  height: 270px;
-  left: -40px;
+  width: 87px;
+  height: 144px;
+  left: 0px;
   background-color: #006bb5;
   background-repeat: no-repeat;
 }
 #Blue_Graphic{
   position: absolute;
-  width: 246px;
-  height: 251px;
-  left: 170px;
-  top: -93px;
+  width: 279px;
+  height: 292px;
+  left: 161px;
+  top: -29px;
   background: url(4.png);
   background-repeat: no-repeat;
   background-size: 259px, 282px
@@ -74,7 +76,7 @@ html, body {
   position: absolute;
   width: 179px;
   height: 303px;
-  left: 205px;
+  left: 162px;
   top: 0px;
   background-color: #006bb5;
   background-repeat: no-repeat;
@@ -85,36 +87,38 @@ html, body {
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   position: absolute;
-  width: 124px;
-  height: 29px;
-  left: 682px;
-  top: 81px;
+  width: 170px;
+  height: 40px;
+  left: 120px;
+  top: 430px;
   background-color: #ff6052;
   background-repeat: no-repeat;
-  background-size: 171px, 40px;
+  background-size: 140px, 35px;
 }
 .ctaText{
-    position: absolute;
-    width: 124px;
-    height: 29px;
-    top: 9px;
-    letter-spacing: -0.001em;
-    text-align: center;
-    font-size: 14px;
-    line-height: 14px;
-    color: rgba(255, 255, 255, 1);
-    white-space: pre-wrap;
-    font-family: 'HelveticaNeueLTStd-Heavy';
-    font-weight: normal;
-    font-style: normal;
+  position: absolute;
+  width: 124px;
+  height: 29px;
+  top: 8px;
+  letter-spacing: -0.001em;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-wrap;
+  font-family: 'HelveticaNeueLTStd-Heavy';
+  font-weight: normal;
+  font-style: normal;
 }
 
 .mercurilogo{
   position: absolute;
-  width: 203px;
-  height: 25px;
-  left: 173px;
-  top: 82px;
+  width: 40px;
+  height: 50px;
+  bottom: 0px;
+  right: 0px;
+  left: auto;
+  top: auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -123,23 +127,23 @@ html, body {
   position: absolute;
   width: 14px;
   height: 16px;
-  left: 107px;
-  top: 93px;
+  left: 20px;
+  top: 370px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .CopyDiv {
   position: absolute;
-  top:15px;
-  left: 105px;
-  width: 560px;
-  height:82px;
+  top: 170px;
+  left: 20px;
+  width: 260px;
+  height: 200px;
 }
 
 .companyName {
   letter-spacing: -0.001em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-align: left;
   font-size: 14px;
   line-height: 16px;
@@ -153,14 +157,14 @@ html, body {
 .mainText {
   letter-spacing: -0.001em;
   text-align: left;
-  font-size:22px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 26px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: 'HelveticaNeueLTStd-Heavy';
   font-weight: normal;
   font-style: normal;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .subText {
@@ -178,10 +182,9 @@ html, body {
 
 .locationText{
   position: absolute;
-  width: 308px;
-  height: 42px;
-  left: 133px;
-  top: 97px;
+  width: 220px;
+  left: 45px;
+  top: 373px;
   letter-spacing: -0.001em;
   text-align: left;
   font-size: 14px;
@@ -195,8 +198,10 @@ html, body {
 
 .companyLogo{
   position: absolute;
-    width: 145px;
-    height: 39px;
-    left: 685px;
-    top: 10px;
+  width: 140px;
+  height: 40px;
+  left: auto;
+  top: 84px;
+  right: 20px;
 }
+

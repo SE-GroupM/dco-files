@@ -88,5 +88,8 @@
     "id": 216,
     "name": "Mercuri Urval SE"
   },
-  "port": 54143
+  "folders": {
+    "selectedFolderId": 3798
+  },
+  "port": 56192
 }

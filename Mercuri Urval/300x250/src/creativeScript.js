@@ -25,6 +25,7 @@ onLemonpiReady(function () {
 
     //Local content variable
     var local_content = content;
+    console.log(local_content)
 
     // collection holding values from scraper
     var product_collection = local_content.ad_collection.value[0];
@@ -62,7 +63,7 @@ onLemonpiReady(function () {
       "background-image":"url("+companyLogo+")",
       'background-size': 'contain',
       'background-repeat': 'no-repeat',
-      'background-position': 'center right',
+      'background-position': 'top right',
     });
 
 

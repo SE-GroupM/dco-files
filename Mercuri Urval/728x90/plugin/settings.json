@@ -1,7 +1,7 @@
 {
   "id": "33fbdcfd-1651-4b7d-83ff-29697f2bb616",
   "version": "1.2.0",
-  "name": "728x90_vsc",
+  "name": "728x90_vsc_2024",
   "description": "",
   "size": {
     "sizes": [
@@ -86,5 +86,5 @@
   "folders": {
     "selectedFolderId": 3798
   },
-  "port": 53584
+  "port": 50120
 }
