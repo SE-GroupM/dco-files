@@ -95,17 +95,17 @@ html, body {
   width: 360px;
   height: 100px;
   left: 30px;
-  top: 65px;
+  top: 115px;
 }
 
 .headline {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosDisplay-Bold;
-  font-size: 50px;
+  font-size: 55px;
   font-style: normal;
   font-weight: normal;
-  line-height: 53px;
+  line-height: 63px;
   margin-bottom: 20px;
 }
 
@@ -113,10 +113,10 @@ html, body {
   flex-shrink: 0;
   color: #FFF;
   font-family: ObosText-Medium, sans-serif;
-  font-size: 26px;
+  font-size: 33px;
   font-weight: normal;
   font-style: normal;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .villkor {
