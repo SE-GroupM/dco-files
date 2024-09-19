@@ -1,0 +1,89 @@
+* { 
+  box-sizing: border-box;
+} 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+#creative_container {
+  width: 300px;
+  height: 600px;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid;
+}
+
+.copy_container {
+  position: absolute;
+  top: 355px;
+  height: 165px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_copy {
+  font-size: 29.4118px;
+  line-height: 35px;
+  font-family: "Nobel-Regular_NEW";
+  margin-bottom: 10px;
+}
+
+.sub_copy {
+  font-size: 16.6667px;
+  line-height: 20px;
+  font-family: "Nobel";
+  margin-top: 10px;
+}
+
+.cta_container {
+  position: absolute;
+  top: 523px;
+  width: 300px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta {
+  position: absolute;
+  font-size: 12px;
+  padding: 4px 30px;
+  font-family: "Nobel-Regular_NEW";
+}
+
+.bg_image {
+  position: absolute;
+  height: 344px;
+  width: 300px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: absolute;
+  left: 91px;
+  top: 567px;
+  width: 117px;
+  height: 21px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,238 @@
+{
+  "id": "48dfa645-69fd-487b-a621-8a770996f6bc",
+  "version": "1.3.0",
+  "name": "lexus_NO_300x600",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 300,
+        "height": 600,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "placeholders": {
+    "schema": {
+      "headlineCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "sublineCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "bgImage": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "copyColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaCopyColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoTracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "headlineCopy": {
+            "value": "headlineCopy"
+          },
+          "sublineCopy": {
+            "value": "sublineCopy"
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "bgImage": {
+            "value": ""
+          },
+          "logo": {
+            "value": ""
+          },
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "copyColor": {
+            "value": "copyColor"
+          },
+          "ctaCopyColor": {
+            "value": "ctaCopyColor"
+          },
+          "ctaBgColor": {
+            "value": "ctaBgColor"
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          },
+          "worldClick": {
+            "value": ""
+          }
+        },
+        {
+          "headlineCopy": {
+            "value": "headlineCopy"
+          },
+          "sublineCopy": {
+            "value": "sublineCopy"
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "bgImage": {
+            "value": ""
+          },
+          "logo": {
+            "value": ""
+          },
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "copyColor": {
+            "value": "copyColor"
+          },
+          "ctaCopyColor": {
+            "value": "ctaCopyColor"
+          },
+          "ctaBgColor": {
+            "value": "ctaBgColor"
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          },
+          "worldClick": {
+            "value": ""
+          }
+        },
+        {
+          "headlineCopy": {
+            "value": "headlineCopy"
+          },
+          "sublineCopy": {
+            "value": "sublineCopy"
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "bgImage": {
+            "value": ""
+          },
+          "logo": {
+            "value": ""
+          },
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "copyColor": {
+            "value": "copyColor"
+          },
+          "ctaCopyColor": {
+            "value": "ctaCopyColor"
+          },
+          "ctaBgColor": {
+            "value": "ctaBgColor"
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          },
+          "worldClick": {
+            "value": ""
+          }
+        },
+        {
+          "headlineCopy": {
+            "value": "headlineCopy"
+          },
+          "sublineCopy": {
+            "value": "sublineCopy"
+          },
+          "ctaCopy": {
+            "value": "ctaCopy"
+          },
+          "bgImage": {
+            "value": ""
+          },
+          "logo": {
+            "value": ""
+          },
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "copyColor": {
+            "value": "copyColor"
+          },
+          "ctaCopyColor": {
+            "value": "ctaCopyColor"
+          },
+          "ctaBgColor": {
+            "value": "ctaBgColor"
+          },
+          "videoSrc": {
+            "value": "videoSrc"
+          },
+          "videoTracker": {
+            "value": "videoTracker"
+          },
+          "worldClick": {
+            "value": ""
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 363,
+    "name": "Lexus"
+  },
+  "port": 55626
+}
