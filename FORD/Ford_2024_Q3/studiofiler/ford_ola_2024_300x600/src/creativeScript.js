@@ -20,7 +20,7 @@ window.addEventListener('lemonpi.content/ready', event => {
     if (!fontSize) {
         fontSize = defaultFontSize + 'px';
     }
-    var lineHeight = (parseFloat(fontSize) + 1) + 'px';
+    var lineHeight = (parseFloat(fontSize) + 2) + 'px';
     element.css({
         'line-height': lineHeight,
         'font-size': fontSize
