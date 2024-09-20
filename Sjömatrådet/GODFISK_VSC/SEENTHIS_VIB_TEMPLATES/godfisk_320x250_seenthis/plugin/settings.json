@@ -1,20 +1,20 @@
 {
-  "id": "a9ee54fe-0c0a-4204-9975-a97cef4ed63c",
+  "id": "25ae380e-fa91-4a76-a323-e9e83cf98568",
   "version": "1.3.0",
-  "name": "godfisk_580x400",
+  "name": "godfisk_320x250_seenthis",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 580,
-        "height": 400,
+        "width": 320,
+        "height": 250,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 580,
-        "height": 400
+        "width": 320,
+        "height": 250
       }
     ]
   },
@@ -63,6 +63,10 @@
       "headline_color": {
         "type": "text",
         "source": "create"
+      },
+      "cta_text_color": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -101,6 +105,9 @@
           },
           "headline_color": {
             "value": "headline_color"
+          },
+          "cta_text_color": {
+            "value": "cta_text_color"
           }
         }
       ]
@@ -120,12 +127,6 @@
         "url": "https://assets.lemonpi.io/a/font/1178/Roslindale-DisplayCondensedRegular?v=400",
         "family": "Roslindale-DisplayCondensedRegular",
         "variant": "400"
-      },
-      {
-        "advertiserId": 1178,
-        "url": "https://assets.lemonpi.io/a/font/1178/Roslindale-DisplayCondensedRegular?v=500",
-        "family": "Roslindale-DisplayCondensedRegular",
-        "variant": "500"
       }
     ]
   },
@@ -140,5 +141,5 @@
   "folders": {
     "selectedFolderId": 3229
   },
-  "port": 61904
+  "port": 55308
 }

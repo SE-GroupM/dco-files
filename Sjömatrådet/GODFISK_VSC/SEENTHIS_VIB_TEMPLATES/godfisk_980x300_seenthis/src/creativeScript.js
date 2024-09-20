@@ -82,6 +82,40 @@ var videoTracker = local_content.videoTracker.value;
     /// FUNCTIONS ///
   //////////////////
 
+  function fitTextToContainer() {
+    var container = $('#headline_text');  // The text container
+    var headlineText = local_content.headline_text.value;  // Dynamic text input from your feed
+    var minFontSize = 38;  // Minimum font size
+    var maxFontSize = 50;  // Maximum font size
+    var baseFontSize = 46;  // Base font size for an average-length text
+    var characterLimit = 48;  // The character length at which to start reducing font size
+    
+    // Calculate the dynamic font size based on the length of the headline text
+    var textLength = headlineText.length;
+    var fontSize;
+
+    if (textLength <= characterLimit) {
+        // If the text is shorter than the limit, use the base size or a larger size
+        fontSize = Math.min(maxFontSize, baseFontSize + (characterLimit - textLength) * 0.5);
+    } else {
+        // If the text is longer, scale down the font size based on text length
+        fontSize = Math.max(minFontSize, baseFontSize - (textLength - characterLimit) * 0.5);
+    }
+
+    // Apply the calculated font size and the headline text
+    container.text(headlineText);
+    container.css({
+        'font-size': fontSize + 'px',
+        'color': headline_color,  // Dynamically set the color
+        'text-align': 'left'  // Center-align the text (optional)
+    });
+}
+
+// Call the function after the DOM is ready or after content changes
+$(document).ready(function() {
+    fitTextToContainer();
+});
+
 // Determine the state of the mute button based on mutebutton_on_off variable
 if (mutebutton_on_off === 'on') {
   options.muteButton = true; // Enable mute if 'on'

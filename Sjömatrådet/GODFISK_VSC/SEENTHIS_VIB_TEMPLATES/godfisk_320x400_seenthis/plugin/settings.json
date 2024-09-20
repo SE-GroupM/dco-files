@@ -1,20 +1,20 @@
 {
-  "id": "d52b555a-5d62-41ee-894d-2eec86362f45",
+  "id": "f1f17242-2469-44d9-a5cc-a589941bf666",
   "version": "1.3.0",
-  "name": "godfisk_980x300_seenthis",
+  "name": "godfisk_320x400_seenthis",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 300,
+        "width": 320,
+        "height": 400,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 300
+        "width": 320,
+        "height": 400
       }
     ]
   },
@@ -134,5 +134,5 @@
   "folders": {
     "selectedFolderId": 3229
   },
-  "port": 62137
+  "port": 55204
 }

@@ -28,28 +28,28 @@ html, body {
 
 .headline_text {
   position: fixed;
-  top: 71px;
-  width: 215px;
-  height: 150px;
-  left: 328px;
+  top: 213px;
+  width: 280px;
+  height: 116px;
+  left: 10px;
   text-align: left;
   font-family: 'Roslindale-DisplayCondensedRegular';
-  font-size: 42px;
+  font-size: 40px;
 }
 
 #panel_container {
   position: absolute;
-  top: 0px;
-  width: 290px;
-  height: 400px;
+  top: 200px;
+  width: 320px;
+  height: 200px;
   right: 0px;
   z-index: -1;
 }
 
 .player {
   position: absolute;
-  width: 290px;
-  height: 400px;
+  width: 320px;
+  height: 200px;
   top: 0px;
   left: 0px;
   background-color: #000;
@@ -57,46 +57,46 @@ html, body {
 
 .logo {
   position: absolute;
-  width: 149px;
-  height: 38px;
-  top: 353px;
-  left: 418px;
+  width: 128px;
+  height: 33px;
+  top: 358px;
+  left: 178px;
   z-index: 1;
 }
 
 .cta {
   position: absolute;
-  width: 152px;
-  height: 38px;
-  left: 39px;
-  border-radius: 0.5rem;
+  width: 115px;
+  height: 25px;
+  left: 13px;
+  border-radius: 4px;
   display: block;
   align-items: left;
-  top: 250px;
+  top: 135px;
   box-sizing: border-box;
 }
 
 .cta_text {
   display: flex;
-  width: 120px;
-  height: 35px;
+  width: 115px;
+  height: 30px;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
   color: #FFFFFF;
   text-align: center;
   font-family: BananaGrotesk-Bold;
-  font-size: 19px;
+  font-size: 15px;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   position: fixed;
-  left: 345px;
+  padding-bottom: 4px;
 }
 
 /* World click div */
 .exit_url {
-  width: 580px;
+  width: 320px;
   height: 400px;
   display: block;
   position: fixed;
