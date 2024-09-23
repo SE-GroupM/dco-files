@@ -25,10 +25,42 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   //Append content for main copy
   $('#main_copy').html(local_content.headlineCopy.value);
+  //If no main copy
+  if(!local_content.headlineCopy.value){
+  $('#main_copy').remove();
+  }
 
   //Append content for sub copy
   $('#sub_copy').html(local_content.sublineCopy.value);
+  //If no main copy
+  if(!local_content.sublineCopy.value){
+    $('#sub_copy').remove();
+  }
 
+  //Append content for interest copy
+  $('#interest_copy').html(local_content.interestCopy.value);
+  //If no interest copy
+  if(!local_content.interestCopy.value){
+    $('#interest_copy').remove();
+  }
+
+  //Append content for monthly price copy
+  $('#monthly_price_copy').html(local_content.monthlyPriceCopy.value);
+  //If no monthly price copy
+  if(!local_content.monthlyPriceCopy.value){
+    $('#monthly_price_copy').remove();
+  }
+
+   //Append content for sub copy
+   $('#second_sub_copy').html(local_content.secondSublineCopy.value);
+   //If no main copy
+   if(!local_content.secondSublineCopy.value){
+     $('#second_sub_copy').remove();
+   }
+
+  //Append content for discliamer copy
+  $('#disclaimer_copy').html(local_content.disclaimerCopy.value);
+  
   //Append content for image copy
   $('#deco_text').html(local_content.imageCopy.value);
 

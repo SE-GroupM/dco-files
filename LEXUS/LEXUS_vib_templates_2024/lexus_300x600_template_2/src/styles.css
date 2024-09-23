@@ -27,9 +27,10 @@ html, body {
 /* Copy container to flex */
 .copy_container {
   position: absolute;
-  top: 355px;
+  top: 366px;
   height: 165px;
-  width: 300px;
+  width: 280px;
+  left: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -51,22 +52,47 @@ html, body {
 }
 /* Main copy in copy container */
 .main_copy {
-  font-size: 29.4118px;
-  line-height: 35px;
+  font-size: 26.9485px;
+  line-height: 24px;
   font-family: "Nobel-Regular_NEW";
   margin-bottom: 10px;
 }
 /* Sub copy in copy container */
 .sub_copy {
-  font-size: 16.6667px;
-  line-height: 20px;
+  font-size: 16.7556px;
+  line-height: 18px;
   font-family: "Nobel";
-  margin-top: 10px;
+  margin-bottom: 8px;
+}
+/* Interest copy in copy container */
+.interest_copy {
+  font-size: 57.75px;
+  line-height: 69px;
+  font-family: "Nobel-Regular_NEW";
+}
+/* Monthly price copy in copy container */
+.monthly_price_copy {
+font-size: 43.8608px;
+line-height: 53px;
+font-family: "Nobel-Regular_NEW";
+}
+/* Second sub copy in copy container */
+.second_sub_copy {
+  font-size: 16.7556px;
+  line-height: 18px;
+  font-family: "Nobel";
+  margin-bottom: 8px;
+}
+/* Disclaimer copy in copy container */
+.disclaimer_copy {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: "Nobel";
 }
 /* CTA container to flex */
 .cta_container {
   position: absolute;
-  top: 523px;
+  top: 546px;
   width: 300px;
   height: 20px;
   display: flex;
@@ -103,7 +129,7 @@ html, body {
 .logo {
   position: absolute;
   left: 91px;
-  top: 567px;
+  top: 573px;
   width: 117px;
   height: 21px;
   background-position: center center;
