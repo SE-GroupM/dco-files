@@ -10,8 +10,8 @@ html, body {
   background-color: #fff;
 }
 #creative_container {
-  width: 300px;
-  height: 600px;
+  width: 320px;
+  height: 400px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -27,9 +27,9 @@ html, body {
 /* Copy container to flex */
 .copy_container {
   position: absolute;
-  top: 344px;
-  height: 223px;
-  width: 300px;
+  top: 249px;
+  height: 117px;
+  width: 320px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -39,20 +39,20 @@ html, body {
 /* Decorative text on image */
 .deco_text {
   position: absolute;
-  width: 300px;
-  height: 96px;
+  width: 320px;
+  height: 92px;
   left: 0px;
-  top: 245px;
+  top: 154px;
   font-family: "Nobel-Regular_NEW";
-  font-size: 94px;
-  line-height: 113px;
+  font-size: 87px;
+  line-height: 104px;
   text-align: center;
   color: #fff;
 }
 /* Main copy in copy container */
 .main_copy {
-  font-size: 29.4118px;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 30px;
   font-family: "Nobel-Regular_NEW";
   margin-bottom: 20px;
 }
@@ -65,15 +65,15 @@ html, body {
 }
 /* CTA button */
 .cta {
-  font-size: 12px;
+  font-size: 11.8105px;
   padding: 4px 30px;
   font-family: "Nobel-Regular_NEW";
 }
 /* Background image container */
 .bg_image {
   position: absolute;
-  height: 344px;
-  width: 300px;
+  height: 249px;
+  width: 320px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,17 +84,17 @@ html, body {
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 344px;
+  height: 249px;
   width: 300px;
 }
 
 /* Logo container */
 .logo {
   position: absolute;
-  left: 91px;
-  top: 567px;
-  width: 117px;
-  height: 21px;
+  left: 112px;
+  top: 366px;
+  width: 96px;
+  height: 17px;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
