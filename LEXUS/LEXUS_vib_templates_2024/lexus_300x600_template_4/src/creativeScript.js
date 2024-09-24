@@ -37,13 +37,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     $('#sub_copy').remove();
   }
 
-  //Append content for interest copy
-  $('#interest_copy').html(local_content.interestCopy.value);
-  //If no interest copy
-  if(!local_content.interestCopy.value){
-    $('#interest_copy').remove();
-  }
-
   //Append content for monthly price copy
   $('#monthly_price_copy').html(local_content.monthlyPriceCopy.value);
   //If no monthly price copy
@@ -60,6 +53,10 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   //Append content for discliamer copy
   $('#disclaimer_copy').html(local_content.disclaimerCopy.value);
+  //If no main copy
+  if(!local_content.disclaimerCopy.value){
+    $('#disclaimer_copy').remove();
+  }
   
   //Append content for image copy
   $('#deco_text').html(local_content.imageCopy.value);

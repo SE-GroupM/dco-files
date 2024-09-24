@@ -1,0 +1,134 @@
+* { 
+  box-sizing: border-box;
+} 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+#creative_container {
+  width: 300px;
+  height: 600px;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid;
+}
+/* Copy container to flex */
+.copy_container {
+  position: absolute;
+  top: 366px;
+  height: 190px;
+  width: 280px;
+  left: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Decorative text on image */
+.deco_text {
+  position: absolute;
+  width: 300px;
+  height: 96px;
+  left: 0px;
+  top: 245px;
+  font-family: "Nobel-Regular_NEW";
+  font-size: 94px;
+  line-height: 113px;
+  text-align: center;
+  color: #fff;
+}
+/* Main copy in copy container */
+.main_copy {
+  font-size: 22.7409px;
+  line-height: 21px;
+  font-family: "Nobel-Regular_NEW";
+  margin-bottom: 8px;
+}
+/* Sub copy in copy container */
+.sub_copy {
+  font-size: 14.1394px;
+  line-height: 15px;
+  font-family: "Nobel";
+  margin-bottom: 5px;
+}
+/* Monthly price copy in copy container */
+.monthly_price_copy {
+font-size: 43.8608px;
+line-height: 43px;
+font-family: "Nobel-Regular_NEW";
+margin-bottom: 8px;
+}
+/* Second sub copy in copy container */
+.second_sub_copy {
+  font-size: 11.4401px;
+  line-height: 13px;
+  font-family: "Nobel";
+  margin-bottom: 8px;
+}
+/* Disclaimer copy in copy container */
+.disclaimer_copy {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Nobel";
+  margin-bottom: 10px;
+}
+/* CTA button */
+.cta {
+  font-size: 12px;
+  padding: 4px 30px;
+  font-family: "Nobel-Regular_NEW";
+}
+/* Background image container */
+.bg_image {
+  position: absolute;
+  height: 344px;
+  width: 300px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Video container */
+.player {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 344px;
+  width: 300px;
+}
+
+/* Logo container */
+.logo {
+  position: absolute;
+  left: 91px;
+  top: 573px;
+  width: 117px;
+  height: 21px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Arrow on CTA */
+.arrow {
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 1.5px;
+  margin-bottom: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}

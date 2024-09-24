@@ -28,7 +28,7 @@ html, body {
 .copy_container {
   position: absolute;
   top: 366px;
-  height: 165px;
+  height: 190px;
   width: 280px;
   left: 10px;
   text-align: center;
@@ -52,17 +52,17 @@ html, body {
 }
 /* Main copy in copy container */
 .main_copy {
-  font-size: 26.9485px;
-  line-height: 24px;
+  font-size: 25px;
+  line-height: 25px;
   font-family: "Nobel-Regular_NEW";
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 /* Sub copy in copy container */
 .sub_copy {
   font-size: 16.7556px;
   line-height: 18px;
   font-family: "Nobel";
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 /* Interest copy in copy container */
 .interest_copy {
@@ -88,20 +88,11 @@ font-family: "Nobel-Regular_NEW";
   font-size: 10px;
   line-height: 10px;
   font-family: "Nobel";
+  margin-bottom: 10px;
 }
-/* CTA container to flex */
-.cta_container {
-  position: absolute;
-  top: 546px;
-  width: 300px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 /* CTA button */
 .cta {
-  position: absolute;
   font-size: 12px;
   padding: 4px 30px;
   font-family: "Nobel-Regular_NEW";
