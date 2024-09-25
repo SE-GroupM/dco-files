@@ -11,7 +11,7 @@ html, body {
 }
 #creative_container {
   width: 980px;
-  height: 300px;
+  height: 600px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -27,10 +27,10 @@ html, body {
 /* Copy container to flex */
 .copy_container {
   position: absolute;
-  left: 650px;
-  top: 10px;
-  height: 250px;
-  width: 310px;
+  left: 630px;
+  top: 40px;
+  height: 463px;
+  width: 330px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -40,66 +40,69 @@ html, body {
 /* Decorative text on image */
 .deco_text {
   position: absolute;
-  height: 124px;
-  left: 20px;
-  top: 88px;
+  text-align: center;
+  width: 610px;
+  top: 430px;
   font-family: "Nobel-Regular_NEW";
-  font-size: 121.417px;
-  line-height: 146px;
+  font-size: 153.729px;
+  line-height: 184px;
   color: #fff;
 }
 /* Main copy in copy container */
 .main_copy {
-  font-size: 26.9485px;
-  line-height: 24px;
+  font-size: 33.7926px;
+  line-height: 31px;
   font-family: "Nobel-Regular_NEW";
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 /* Sub copy in copy container */
 .sub_copy {
-  font-size: 16.7556px;
-  line-height: 18px;
+  font-size: 21.0109px;
+  line-height: 22px;
   font-family: "Nobel";
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 /* Interest copy in copy container */
 .interest_copy {
-  font-size: 57.75px;
-  line-height: 69px;
+  font-size: 73px;
+  line-height: 73px;
   font-family: "Nobel-Regular_NEW";
+  margin-bottom: 20px;
 }
 /* Monthly price copy in copy container */
 .monthly_price_copy {
-font-size: 43.8608px;
-line-height: 53px;
+font-size: 55px;
+line-height: 55px;
 font-family: "Nobel-Regular_NEW";
+margin-bottom: 20px;
 }
 /* Second sub copy in copy container */
 .second_sub_copy {
-  font-size: 16.7556px;
-  line-height: 18px;
+  font-size: 24px;
+  line-height: 29px;
   font-family: "Nobel";
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 /* Disclaimer copy in copy container */
 .disclaimer_copy {
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 17px;
   font-family: "Nobel";
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 /* CTA button */
 .cta {
-  font-size: 11.8105px;
-  padding: 4px 30px;
+  font-size: 17.4346px;
+  line-height: 21px;
+  padding: 5px 40px;
   font-family: "Nobel-Regular_NEW";
 }
 /* Background image container */
 .bg_image {
   position: absolute;
-  height: 300px;
-  width: 630px;
+  height: 600px;
+  width: 610px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -110,17 +113,17 @@ font-family: "Nobel-Regular_NEW";
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 300px;
-  width: 630px;
+  height: 600px;
+  width: 610px;
 }
 
 /* Logo container */
 .logo {
   position: absolute;
-  left: 730px;
-  top:260px;
-  width: 134px;
-  height: 24px;
+  left: 688px;
+  top: 537px;
+  width: 212px;
+  height: 38px;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -129,9 +132,9 @@ font-family: "Nobel-Regular_NEW";
 /* Arrow on CTA */
 .arrow {
   border: solid white;
-  border-width: 0 1.5px 1.5px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 1.5px;
+  padding: 2px;
   margin-bottom: 2px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
