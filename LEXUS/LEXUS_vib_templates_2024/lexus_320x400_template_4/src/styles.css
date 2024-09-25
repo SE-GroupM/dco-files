@@ -1,0 +1,137 @@
+* { 
+  box-sizing: border-box;
+} 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+#creative_container {
+  width: 320px;
+  height: 400px;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid;
+}
+/* Copy container to flex */
+.copy_container {
+  position: absolute;
+  top: 249px;
+  height: 120px;
+  width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Decorative text on image */
+.deco_text {
+  position: absolute;
+  width: 320px;
+  height: 92px;
+  left: 0px;
+  top: 154px;
+  font-family: "Nobel-Regular_NEW";
+  font-size: 87px;
+  line-height: 104px;
+  text-align: center;
+  color: #fff;
+}
+/* Main copy in copy container */
+.main_copy {
+  font-size: 22.7409px;
+  line-height: 21px;
+  font-family: "Nobel-Regular_NEW";
+  margin-bottom: 8px;
+}
+/* Sub copy in copy container */
+.sub_copy {
+  font-size: 14.1394px;
+  line-height: 15px;
+  font-family: "Nobel";
+  margin-bottom: 5px;
+}
+/* Monthly price copy in copy container */
+.monthly_price_copy {
+font-size: 43.8608px;
+line-height: 43px;
+font-family: "Nobel-Regular_NEW";
+margin-bottom: 8px;
+}
+/* Second sub copy in copy container */
+.second_sub_copy {
+  font-size: 11.4401px;
+  line-height: 13px;
+  font-family: "Nobel";
+  margin-bottom: 8px;
+}
+/* Disclaimer copy in copy container */
+.disclaimer_copy {
+  font-size: 13.8562px;
+  line-height: 17px;
+  font-family: "Nobel";
+  margin-bottom: 10px;
+}
+/* CTA button */
+.cta {
+  position: absolute;
+  right: 10px;
+  left: auto;
+  top: 370px;
+  font-size: 11.8105px;
+  padding: 4px 25px;
+  font-family: "Nobel-Regular_NEW";
+}
+/* Background image container */
+.bg_image {
+  position: absolute;
+  height: 235px;
+  width: 320px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Video container */
+.player {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 235px;
+  width: 300px;
+}
+
+/* Logo container */
+.logo {
+  position: absolute;
+  left:7px;
+  top: 376px;
+  width: 100px;
+  height: 17px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Arrow on CTA */
+.arrow {
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 1.5px;
+  margin-bottom: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
