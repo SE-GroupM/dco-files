@@ -40,9 +40,9 @@ html, body {
 .deco_text {
   position: absolute;
   width: 320px;
-  height: 92px;
+  height: 82px;
   left: 0px;
-  top: 154px;
+  top: 144px;
   font-family: "Nobel-Regular_NEW";
   font-size: 87px;
   line-height: 104px;
@@ -81,7 +81,7 @@ margin-bottom: 8px;
 .disclaimer_copy {
   font-size: 13.8562px;
   line-height: 17px;
-  font-family: "Nobel";
+  font-family: "Nobel-Light";
   margin-bottom: 10px;
 }
 /* CTA button */

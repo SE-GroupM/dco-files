@@ -1,6 +1,6 @@
 {
   "id": "48dfa645-69fd-487b-a621-8a770996f6bc",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "name": "lexus_NO_template_1_320x400",
   "description": "",
   "size": {
@@ -19,6 +19,8 @@
     ]
   },
   "placeholders": {
+    "fileName": "migrated from version 1.3.0 of the extension",
+    "format": "CSV",
     "schema": {
       "headlineCopy": {
         "type": "text",
@@ -81,179 +83,191 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "headlineCopy": {
-            "value": "headlineCopy"
-          },
-          "imageCopy": {
-            "value": "imageCopy"
-          },
-          "sublineCopy": {
-            "value": "sublineCopy"
-          },
-          "ctaCopy": {
-            "value": "ctaCopy"
-          },
-          "bgImage": {
-            "value": ""
-          },
-          "logo": {
-            "value": ""
-          },
-          "bgColor": {
-            "value": "bgColor"
-          },
-          "copyColor": {
-            "value": "copyColor"
-          },
-          "ctaCopyColor": {
-            "value": "ctaCopyColor"
-          },
-          "ctaBgColor": {
-            "value": "ctaBgColor"
-          },
-          "useVideo": {
-            "value": "useVideo"
-          },
-          "videoSrc": {
-            "value": "videoSrc"
-          },
-          "videoTracker": {
-            "value": "videoTracker"
-          },
-          "worldClick": {
-            "value": ""
+          "isIncluded": true,
+          "data": {
+            "headlineCopy": {
+              "value": "headlineCopy"
+            },
+            "imageCopy": {
+              "value": "imageCopy"
+            },
+            "sublineCopy": {
+              "value": "sublineCopy"
+            },
+            "ctaCopy": {
+              "value": "ctaCopy"
+            },
+            "bgImage": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "copyColor": {
+              "value": "copyColor"
+            },
+            "ctaCopyColor": {
+              "value": "ctaCopyColor"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
+            },
+            "useVideo": {
+              "value": "useVideo"
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "worldClick": {
+              "value": ""
+            }
           }
         },
         {
-          "headlineCopy": {
-            "value": "headlineCopy"
-          },
-          "imageCopy": {
-            "value": "imageCopy"
-          },
-          "sublineCopy": {
-            "value": "sublineCopy"
-          },
-          "ctaCopy": {
-            "value": "ctaCopy"
-          },
-          "bgImage": {
-            "value": ""
-          },
-          "logo": {
-            "value": ""
-          },
-          "bgColor": {
-            "value": "bgColor"
-          },
-          "copyColor": {
-            "value": "copyColor"
-          },
-          "ctaCopyColor": {
-            "value": "ctaCopyColor"
-          },
-          "ctaBgColor": {
-            "value": "ctaBgColor"
-          },
-          "useVideo": {
-            "value": "useVideo"
-          },
-          "videoSrc": {
-            "value": "videoSrc"
-          },
-          "videoTracker": {
-            "value": "videoTracker"
-          },
-          "worldClick": {
-            "value": ""
+          "isIncluded": true,
+          "data": {
+            "headlineCopy": {
+              "value": "headlineCopy"
+            },
+            "imageCopy": {
+              "value": "imageCopy"
+            },
+            "sublineCopy": {
+              "value": "sublineCopy"
+            },
+            "ctaCopy": {
+              "value": "ctaCopy"
+            },
+            "bgImage": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "copyColor": {
+              "value": "copyColor"
+            },
+            "ctaCopyColor": {
+              "value": "ctaCopyColor"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
+            },
+            "useVideo": {
+              "value": "useVideo"
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "worldClick": {
+              "value": ""
+            }
           }
         },
         {
-          "headlineCopy": {
-            "value": "headlineCopy"
-          },
-          "imageCopy": {
-            "value": "imageCopy"
-          },
-          "sublineCopy": {
-            "value": "sublineCopy"
-          },
-          "ctaCopy": {
-            "value": "ctaCopy"
-          },
-          "bgImage": {
-            "value": ""
-          },
-          "logo": {
-            "value": ""
-          },
-          "bgColor": {
-            "value": "bgColor"
-          },
-          "copyColor": {
-            "value": "copyColor"
-          },
-          "ctaCopyColor": {
-            "value": "ctaCopyColor"
-          },
-          "ctaBgColor": {
-            "value": "ctaBgColor"
-          },
-          "useVideo": {
-            "value": "useVideo"
-          },
-          "videoSrc": {
-            "value": "videoSrc"
-          },
-          "videoTracker": {
-            "value": "videoTracker"
-          },
-          "worldClick": {
-            "value": ""
+          "isIncluded": true,
+          "data": {
+            "headlineCopy": {
+              "value": "headlineCopy"
+            },
+            "imageCopy": {
+              "value": "imageCopy"
+            },
+            "sublineCopy": {
+              "value": "sublineCopy"
+            },
+            "ctaCopy": {
+              "value": "ctaCopy"
+            },
+            "bgImage": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "copyColor": {
+              "value": "copyColor"
+            },
+            "ctaCopyColor": {
+              "value": "ctaCopyColor"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
+            },
+            "useVideo": {
+              "value": "useVideo"
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "worldClick": {
+              "value": ""
+            }
           }
         },
         {
-          "headlineCopy": {
-            "value": "headlineCopy"
-          },
-          "imageCopy": {
-            "value": "imageCopy"
-          },
-          "sublineCopy": {
-            "value": "sublineCopy"
-          },
-          "ctaCopy": {
-            "value": "ctaCopy"
-          },
-          "bgImage": {
-            "value": ""
-          },
-          "logo": {
-            "value": ""
-          },
-          "bgColor": {
-            "value": "bgColor"
-          },
-          "copyColor": {
-            "value": "copyColor"
-          },
-          "ctaCopyColor": {
-            "value": "ctaCopyColor"
-          },
-          "ctaBgColor": {
-            "value": "ctaBgColor"
-          },
-          "useVideo": {
-            "value": "useVideo"
-          },
-          "videoSrc": {
-            "value": "videoSrc"
-          },
-          "videoTracker": {
-            "value": "videoTracker"
-          },
-          "worldClick": {
-            "value": ""
+          "isIncluded": true,
+          "data": {
+            "headlineCopy": {
+              "value": "headlineCopy"
+            },
+            "imageCopy": {
+              "value": "imageCopy"
+            },
+            "sublineCopy": {
+              "value": "sublineCopy"
+            },
+            "ctaCopy": {
+              "value": "ctaCopy"
+            },
+            "bgImage": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "copyColor": {
+              "value": "copyColor"
+            },
+            "ctaCopyColor": {
+              "value": "ctaCopyColor"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
+            },
+            "useVideo": {
+              "value": "useVideo"
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "worldClick": {
+              "value": ""
+            }
           }
         }
       ]
@@ -274,5 +288,5 @@
   "folders": {
     "selectedFolderId": 5492
   },
-  "port": 58330
+  "port": 57879
 }

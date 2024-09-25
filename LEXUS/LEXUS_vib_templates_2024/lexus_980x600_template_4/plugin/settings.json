@@ -1,13 +1,13 @@
 {
   "id": "48dfa645-69fd-487b-a621-8a770996f6bc",
   "version": "1.4.0",
-  "name": "lexus_NO_template_4_980x300",
+  "name": "lexus_NO_template_4_980x600",
   "description": "",
   "size": {
     "sizes": [
       {
         "width": 980,
-        "height": 300,
+        "height": 600,
         "isCustom": true
       }
     ],
@@ -15,6 +15,10 @@
       {
         "width": 980,
         "height": 300
+      },
+      {
+        "width": 980,
+        "height": 600
       }
     ]
   },
@@ -384,5 +388,5 @@
   "folders": {
     "selectedFolderId": 5492
   },
-  "port": 57750
+  "port": 57712
 }

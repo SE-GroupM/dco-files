@@ -101,6 +101,16 @@ window.addEventListener('lemonpi.content/ready', event => {
   } else {
     $('#player').remove();
   }
+  // Create a timeline for the click effect
+  var clickTimeline = new TimelineMax({ repeat: -1, repeatDelay: 3.5 }); // Infinite repeat with 2 seconds delay
+
+  clickTimeline
+    .fromTo(
+      "#cta", 
+      0.1, 
+      { scale: 1 }, // Start at normal size
+      { scale: 0.9, ease: Power1.easeOut, yoyo: true, repeat: 1, repeatDelay: 0.1 } // Click down and up twice
+    );
 
     ////////////////
   /// FUNCTIONS ///
