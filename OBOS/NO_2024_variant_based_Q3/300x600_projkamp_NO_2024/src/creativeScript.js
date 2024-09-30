@@ -51,7 +51,9 @@ window.addEventListener('lemonpi.content/ready', event => {
    var dynamic_img_left = local_content.bgImageCssLeftAdjust.value;
    var dynamic_img_top = local_content.bgImageCssTopAdjust.value;
 
+   // define functions
    var logo_top_yes_no = local_content.logo_top_yes_no.value;
+   var img_animation_zoom_or_slide = local_content.img_animation_zoom_or_slide.value;
  
    //Color of buttons on the right
    var button_color = local_content.button_color.value;
@@ -170,30 +172,43 @@ function fitText(selector, maxHeight) {
   // ANIMATIONS //
   ///////////////////
 
-// Defer animation to idle time to prevent blocking
-requestIdleCallback(() => {
-  TweenMax.to('#bgImage', 5, {
-    scale: 1.1,
-    transformOrigin: "center",
-    repeat: -1,
-    repeatDelay: 1,  // Add delay before restarting
-    ease: Power1.easeInOut
-  });
-});
+  if (img_animation_zoom_or_slide === 'zoom') {
+    // Zoom animation
+    requestIdleCallback(() => {
+      TweenMax.to('#bgImage', 5, {
+        scale: 1.1,
+        transformOrigin: "center",
+        repeat: -1,
+        repeatDelay: 1,  // Add delay before restarting
+        ease: Power1.easeInOut
+      });
+    });
+  } else if (img_animation_zoom_or_slide === 'slide') {
+    // Slide animation
+    requestIdleCallback(() => {
+      TweenMax.to('#bgImage', 5, {
+        x: '15%',  // Slide to the right
+        ease: Power1.easeInOut
+      });
+    });
+  } else {
+    // Default to zoom animation if neither zoom nor slide
+    requestIdleCallback(() => {
+      TweenMax.to('#bgImage', 5, {
+        scale: 1.1,
+        transformOrigin: "center",
+        repeat: -1,
+        repeatDelay: 1,
+        ease: Power1.easeInOut
+      });
+    });
+  }
 
 // Create the GSAP timelines
 var introAnimation = gsap.timeline({repeat: 0, repeatDelay: 0.3});
 
 introAnimation.from('#copyDiv', 0.5, {autoAlpha: 0}, 0.2, 1);
 
-// Animation for CTA button remains unchanged
-var ctaAnimation = gsap.timeline({repeat: -1, repeatDelay: 1});
-ctaAnimation.fromTo('#ctaTxt', {scale: 1}, {scale: 0.95, duration: 0.25, yoyo: true, repeat: 1}, 2);
-
-// Stop repeating animations after 15 seconds, if AppNexus tells us to, and the user hasn't interacted
-window.onLoopStop = function () {
-  ctaAnimation.stop();
-};
 // Click event caller for worldClick
 $('#worldClick').click(onClick);
 // Function for click event
