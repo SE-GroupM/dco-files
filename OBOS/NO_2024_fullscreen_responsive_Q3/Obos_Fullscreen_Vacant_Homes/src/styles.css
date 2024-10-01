@@ -1,0 +1,262 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  color: #fff;
+
+  font-family: "OBOSDisplay-Bold";
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  background-color: #0047ba;;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Container setup */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  justify-content: space-between; /* Spaces children to start and end */
+  position: relative; /* Needed for z-indexing */
+}
+
+/* Styling for the top row containing the two columns */
+.top-row {
+  display: flex; /* Makes the two columns inside this div side by side */
+  flex: 1; /* Takes up the proportionate space leaving enough for the third div */
+  position: relative; /* Ensure this is positioned for z-index context */
+  z-index: 1; /* Higher z-index to keep it above other content if needed */
+}
+
+/* Styling for each column within the top row */
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  padding: 2vw;
+  overflow: hidden; /* Hides any content that overflows the div's boundaries - Change highlighted */
+  height: 75vh;
+}
+
+.column:first-child {
+  justify-content: flex-start; /* Aligns content to the top */
+  flex: 0 0 45%; /* Takes 45% of the top-row's width, does not grow or shrink */
+}
+
+.column:last-child {
+  justify-content: center; /* Keeps the second column's content centered */
+  flex: 0 0 55%; /* Takes 55% of the top-row's width, does not grow or shrink */
+  padding-bottom: 0vh;
+}
+
+/* Styling for the inner div in the second column */
+.inner-div {
+  width: 100%; /* Full width of the parent column */
+  height: 100%; /* Full height of the parent column */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center;
+  
+}
+
+/* Full-width div modification for internal columns */
+.full-width {
+  display: flex;
+  flex-direction: row; /* Ensure divs are next to each other */
+  justify-content: center; /* Align columns center horizontally */
+  align-items: center; /* Align columns center vertically */
+  text-align: center;
+  z-index: 2;
+}
+
+/* New adjustable columns inside full-width div */
+.adjustable-column {
+ /* flex-grow: 1;  Allows each column to grow and fill available space */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center;
+  margin: 1vw;
+}
+
+/* Styling for the content-based div that adjusts based on content */
+.content-based {
+  padding: 1vw;
+}
+
+.thumbs {
+  margin-top: -12vh;
+}
+
+.project-headline {
+  
+  font-size: 3.5vw;
+  text-align: center;
+  
+}
+
+.project-logo {
+  width: 28vw;
+  height: 30vh;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1vw;
+  margin: -4vw;
+  margin-bottom: 2vh;
+
+}
+
+.cta {
+  font-family: "ObosText-Medium";
+  font-size: 2vw;
+	padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+	margin-top: 5vh;
+  color: #ffffff;
+	background-color: #00AA79;
+	cursor: pointer;
+	border-radius: 4vw;
+  text-align: center;
+  border: none;
+}
+
+.slider {
+  width: 80vw;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: left; /* Center content horizontally */
+  align-items: left; /* Center content vertically */
+  text-align: left;
+}
+
+.card{
+  
+  padding: 0.5vw;
+  padding-bottom: 0vh;
+  margin-left: 4.5vw;
+  margin-right: 4.5vw;
+  display: flex;
+  flex-wrap: nowrap; /* Allows items to wrap to the next row if necessary */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box;
+
+  border-radius: 1.5vw;
+}
+
+.project-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  
+}
+
+.vacant-home-image {
+  width: 17vw;
+  height: 10vw;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  border: none;
+  border-radius: 1.5vw;
+}
+
+.vacant-home-info {
+  padding: 1vw;
+  font-size: 2vw;
+
+  padding-bottom: 0vw;
+}
+
+.prev{
+
+  width: 6.5vw;
+  height: 6vw;
+  margin-top: -5vh;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+  background-position: center center;
+
+  cursor: pointer;
+
+  visibility: hidden;
+
+}
+
+.next{
+  
+
+	width: 6.5vw;
+  height: 6vw;
+  margin-top: -5vh;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+  background-position: center center;
+
+  cursor: pointer;
+}
+
+.logo {
+  height: 4vh;
+  background-repeat: no-repeat;
+	background-size: contain;
+  background-position: right center;
+
+}
+
+/* New CSS for right-aligned div inside the content-based div */
+.right-aligned {
+  text-align: right; /* Aligns the text to the right within the div */
+  width: 100%; /* Ensures it takes the full width available in the content-based div */
+}
+
+.worldClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #fff;
+  opacity: 0;
+  
+  cursor: pointer;
+}

@@ -1,0 +1,371 @@
+{
+  "id": "4a3402f9-f038-4ed8-a2ee-60561ce2ff3c",
+  "version": "1.4.0",
+  "name": "obos_fullscreen_vacant_homes",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "placeholders": {
+    "fileName": "Remote file",
+    "format": "CSV",
+    "schema": {
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "left_arrow": {
+        "type": "image",
+        "source": "create"
+      },
+      "right_arrow": {
+        "type": "image",
+        "source": "create"
+      },
+      "id": {
+        "type": "identifier",
+        "source": "feed"
+      },
+      "reporting_label": {
+        "type": null,
+        "source": "feed"
+      },
+      "line_item": {
+        "type": null,
+        "source": "feed"
+      },
+      "ort": {
+        "type": null,
+        "source": "feed"
+      },
+      "projekt": {
+        "type": null,
+        "source": "feed"
+      },
+      "projekt_logo": {
+        "type": null,
+        "source": "feed"
+      },
+      "headline_text": {
+        "type": null,
+        "source": "feed"
+      },
+      "vacant_home_info": {
+        "type": null,
+        "source": "feed"
+      },
+      "vacant_home_image": {
+        "type": null,
+        "source": "feed"
+      },
+      "projekt_url": {
+        "type": null,
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "worldClick": {
+              "value": ""
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "logo": {
+              "value": ""
+            },
+            "left_arrow": {
+              "value": ""
+            },
+            "right_arrow": {
+              "value": ""
+            },
+            "id": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Fornebu_Storøykilen_1"
+            },
+            "line_item": {
+              "value": ""
+            },
+            "ort": {
+              "value": "Fornebu"
+            },
+            "projekt": {
+              "value": "Storøykilen"
+            },
+            "projekt_logo": {
+              "value": "https://assets.lemonpi.io/a/k/a7a0c1c5-ad4e-4f8f-833b-dba707434e1d/Assets/OBOS_Storoykillen_Fornebu_Logo_Vit.png"
+            },
+            "headline_text": {
+              "value": "Flere innflyttingsklare leiligheter på Fornebu"
+            },
+            "vacant_home_info": {
+              "value": "2 roms 41 m²"
+            },
+            "vacant_home_image": {
+              "value": "https://assets.lemonpi.io/a/k/699bb438-58d6-4a24-bab2-ec9b5e8cfc39/Assets/Projektkampanj_Fullscreen_Responsive/G1001_StueKjoekken_V04.jpg"
+            },
+            "projekt_url": {
+              "value": "https://www.obos.no/bolig/prosjekt/storoykilen"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "worldClick": {
+              "value": ""
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "logo": {
+              "value": ""
+            },
+            "left_arrow": {
+              "value": ""
+            },
+            "right_arrow": {
+              "value": ""
+            },
+            "id": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Fornebu_Storøykilen_2"
+            },
+            "line_item": {
+              "value": ""
+            },
+            "ort": {
+              "value": "Fornebu"
+            },
+            "projekt": {
+              "value": "Storøykilen"
+            },
+            "projekt_logo": {
+              "value": "https://assets.lemonpi.io/a/k/a7a0c1c5-ad4e-4f8f-833b-dba707434e1d/Assets/OBOS_Storoykillen_Fornebu_Logo_Vit.png"
+            },
+            "headline_text": {
+              "value": "Flere innflyttingsklare leiligheter på Fornebu"
+            },
+            "vacant_home_info": {
+              "value": "5 roms 141 m²"
+            },
+            "vacant_home_image": {
+              "value": "https://assets.lemonpi.io/a/k/fab8386f-94da-48ac-a515-3ff2119d4071/Assets/Projektkampanj_Fullscreen_Responsive/F4001---Uteplass_V06.jpg"
+            },
+            "projekt_url": {
+              "value": "https://www.obos.no/bolig/prosjekt/storoykilen"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "worldClick": {
+              "value": ""
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "logo": {
+              "value": ""
+            },
+            "left_arrow": {
+              "value": ""
+            },
+            "right_arrow": {
+              "value": ""
+            },
+            "id": {
+              "value": "3"
+            },
+            "reporting_label": {
+              "value": "Fornebu_Storøykilen_3"
+            },
+            "line_item": {
+              "value": ""
+            },
+            "ort": {
+              "value": "Fornebu"
+            },
+            "projekt": {
+              "value": "Storøykilen"
+            },
+            "projekt_logo": {
+              "value": "https://assets.lemonpi.io/a/k/a7a0c1c5-ad4e-4f8f-833b-dba707434e1d/Assets/OBOS_Storoykillen_Fornebu_Logo_Vit.png"
+            },
+            "headline_text": {
+              "value": "Flere innflyttingsklare leiligheter på Fornebu"
+            },
+            "vacant_home_info": {
+              "value": "4 roms 121 m²"
+            },
+            "vacant_home_image": {
+              "value": "https://assets.lemonpi.io/a/k/f47ecdbd-2b45-485f-a00e-e60c0bc4c136/Assets/Projektkampanj_Fullscreen_Responsive/380_OBOS_Storoykilen_KV3_Exterior_Vinkel01_V07_IZ.jpg"
+            },
+            "projekt_url": {
+              "value": "https://www.obos.no/bolig/prosjekt/storoykilen"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "worldClick": {
+              "value": ""
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "logo": {
+              "value": ""
+            },
+            "left_arrow": {
+              "value": ""
+            },
+            "right_arrow": {
+              "value": ""
+            },
+            "id": {
+              "value": "4"
+            },
+            "reporting_label": {
+              "value": "Fornebu_Storøykilen_4"
+            },
+            "line_item": {
+              "value": ""
+            },
+            "ort": {
+              "value": "Fornebu"
+            },
+            "projekt": {
+              "value": "Storøykilen"
+            },
+            "projekt_logo": {
+              "value": "https://assets.lemonpi.io/a/k/a7a0c1c5-ad4e-4f8f-833b-dba707434e1d/Assets/OBOS_Storoykillen_Fornebu_Logo_Vit.png"
+            },
+            "headline_text": {
+              "value": "Flere innflyttingsklare leiligheter på Fornebu"
+            },
+            "vacant_home_info": {
+              "value": "3 roms 60 m²"
+            },
+            "vacant_home_image": {
+              "value": "https://assets.lemonpi.io/a/k/f21776d0-88cb-4279-a902-11b28673853f/Assets/Projektkampanj_Fullscreen_Responsive/380_OBOS_Storoykilen_KV3_Exterior_Vinkel07_V08.jpg"
+            },
+            "projekt_url": {
+              "value": "https://www.obos.no/bolig/prosjekt/storoykilen"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "worldClick": {
+              "value": ""
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "logo": {
+              "value": ""
+            },
+            "left_arrow": {
+              "value": ""
+            },
+            "right_arrow": {
+              "value": ""
+            },
+            "id": {
+              "value": "5"
+            },
+            "reporting_label": {
+              "value": "Fornebu_Storøykilen_5"
+            },
+            "line_item": {
+              "value": ""
+            },
+            "ort": {
+              "value": "Fornebu"
+            },
+            "projekt": {
+              "value": "Storøykilen"
+            },
+            "projekt_logo": {
+              "value": "https://assets.lemonpi.io/a/k/a7a0c1c5-ad4e-4f8f-833b-dba707434e1d/Assets/OBOS_Storoykillen_Fornebu_Logo_Vit.png"
+            },
+            "headline_text": {
+              "value": "Flere innflyttingsklare leiligheter på Fornebu"
+            },
+            "vacant_home_info": {
+              "value": "1 roms 35 m²"
+            },
+            "vacant_home_image": {
+              "value": "https://assets.lemonpi.io/a/k/9708c5a0-c42a-4ef1-8f52-ce8c95e7bbb0/Assets/Projektkampanj_Fullscreen_Responsive/F3001---Uteplass-kveld_V02.jpg"
+            },
+            "projekt_url": {
+              "value": "https://www.obos.no/bolig/prosjekt/storoykilen"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1153,
+        "url": "https://assets.lemonpi.io/a/font/1153/OBOSDisplay-Bold?v=700",
+        "family": "OBOSDisplay-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1153,
+        "url": "https://assets.lemonpi.io/a/font/1153/ObosText-Medium?v=500",
+        "family": "ObosText-Medium",
+        "variant": "500"
+      }
+    ]
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 1153,
+    "name": "OBOS Real estate"
+  },
+  "folders": {
+    "selectedFolderId": 5571
+  },
+  "port": 58959
+}
