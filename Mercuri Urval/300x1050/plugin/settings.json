@@ -1,6 +1,6 @@
 {
-  "id": "4212241e-18d7-4fb1-bdaa-1ef35c3978e1",
-  "version": "1.2.0",
+  "id": "4ada4d64-a6da-42ae-889c-11c4eaeeab55",
+  "version": "1.4.0",
   "name": "300x1050_vsc_2024",
   "description": "",
   "size": {
@@ -19,6 +19,8 @@
     ]
   },
   "placeholders": {
+    "fileName": "",
+    "format": "CSV",
     "schema": {
       "cta_text": {
         "type": "text",
@@ -41,17 +43,20 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "cta_text": {
-            "value": "cta_text"
-          },
-          "click": {
-            "value": ""
-          },
-          "mercuri_logo_large_formats": {
-            "value": ""
-          },
-          "mercuri_logo_small": {
-            "value": ""
+          "isIncluded": true,
+          "data": {
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "click": {
+              "value": ""
+            },
+            "mercuri_logo_large_formats": {
+              "value": ""
+            },
+            "mercuri_logo_small": {
+              "value": ""
+            }
           }
         }
       ]
@@ -91,5 +96,5 @@
   "folders": {
     "selectedFolderId": 3798
   },
-  "port": 57195
+  "port": 57102
 }

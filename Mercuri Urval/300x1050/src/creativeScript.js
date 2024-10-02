@@ -52,7 +52,7 @@ onLemonpiReady(function () {
     //Append background image
     $("#Blue_Graphic").css("background-image","url("+blueGraphicsLeftSide+")");
     //Append Mercuri logo
-    $("#mercurilogo").css("background-image","url("+mercuriLogoSmall+")");
+    $("#mercurilogo").css("background-image","url("+mercuriLogoLarge+")");
 
     //Append background image
     $("#geowhiteblue").css("background-image","url("+geo_img+")");
