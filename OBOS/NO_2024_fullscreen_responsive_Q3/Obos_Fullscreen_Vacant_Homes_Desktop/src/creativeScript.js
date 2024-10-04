@@ -32,10 +32,10 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   var local_content = content;
 
-  console.log(content)
+  //console.log(content)
 
   // World click event caller
-  $('.worldClick').click(onClick);
+  //$('.worldClick').click(onClick);
 
   //Image Setup
   $('#cta').html(local_content.cta_text.value);
@@ -107,6 +107,15 @@ window.addEventListener('lemonpi.content/ready', event => {
             slideDiv.addEventListener('click', function(event) {
                 onClick(event, index);
             });
+            
+            const elements = document.querySelectorAll('.worldClick');
+            // Loop through each element and add the click listener
+            elements.forEach((element, index) => {
+                element.addEventListener('click', function(event) {
+                    onWorldClick(event, index); // Call the onWorldClick function with event and index
+                });
+            });
+            
         }
 
         function animateSlider(index, previousIndex, onComplete) {
@@ -136,7 +145,7 @@ window.addEventListener('lemonpi.content/ready', event => {
               Slider.currentSlideIndex = slideIndex;
           });
       
-          console.log("Next " + Slider.currentSlideIndex + " " + slidesData.length);
+          //console.log("Next " + Slider.currentSlideIndex + " " + slidesData.length);
           $('#project-image').css({
               'background-image': 'url(' + local_content.vacant_homes.value[Slider.currentSlideIndex].vacant_home_image.value + ')'
           });
@@ -188,13 +197,27 @@ window.addEventListener('lemonpi.content/ready', event => {
             // Handle the product click event
             event.preventDefault();
             window.dispatchEvent(
-                new CustomEvent('lemonpi.interaction/click', {
-                    detail: {
-                        placeholder: ['vacant_homes', slideIndex, 'project_url'],
-                    }
-                })
+              new CustomEvent('lemonpi.interaction/click', {
+                  detail: {
+                      placeholder: ['vacant_homes', slideIndex, 'vacant_home_url'],
+                  }
+              })
             );
+            
         }
+
+        function onWorldClick(event, slideIndex) {
+          // Handle the product click event
+          event.preventDefault();
+          window.dispatchEvent(
+            new CustomEvent('lemonpi.interaction/click', {
+                detail: {
+                    placeholder: ['vacant_homes', slideIndex, 'vacant_home_url'],
+                }
+            })
+          );
+          
+      }
 
         // Add hover event listeners to pause and resume animation
         slidesContainer.addEventListener("mouseenter", function() {
@@ -221,6 +244,8 @@ window.addEventListener('lemonpi.content/ready', event => {
 
 
 // Clickthrough for anywhere else
+
+/*
 function onClick (event) {
   return window.dispatchEvent(
     new CustomEvent('lemonpi.interaction/click', {
@@ -229,3 +254,4 @@ function onClick (event) {
       }
   }));
 }
+  */

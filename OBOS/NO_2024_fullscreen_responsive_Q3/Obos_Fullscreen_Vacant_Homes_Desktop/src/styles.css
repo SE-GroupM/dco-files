@@ -115,6 +115,10 @@ html, body {
   margin-top: -12vh;
 }
 
+.mobile-project-image {
+  display: none;
+}
+
 .project-headline {
   
   font-size: 3.5vw;
@@ -259,4 +263,8 @@ html, body {
   opacity: 0;
   
   cursor: pointer;
+}
+
+.mobile-project-image {
+  background-color: #333;
 }

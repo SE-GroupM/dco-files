@@ -1,0 +1,298 @@
+* { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;     
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  color: #fff;
+
+  font-family: "OBOSDisplay-Bold";
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  background-color: #0047ba;;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.main-div {
+
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Ensures vertical stacking of divs within each main div */
+  width: 90%; /* Makes sure each main div takes full container width */
+  justify-content: center;
+
+  flex-grow: 0; /* This disables the growing behavior */
+   height: auto; /* This allows the div to only be as tall as its content */
+  
+}
+
+.content-div, .inner-div, .horizontal-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-div {
+  width: 45%; /* Half of the container width for a 2x2 grid */
+  padding: 2vw;
+
+  flex-wrap: wrap;
+  flex-direction: column; /* Changes layout to stack divs vertically */
+  justify-content: center;
+  align-items: center; /* Center align items within the main div */
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;     
+
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 1.5vw;
+}
+
+.content-div {
+  width: 100%;
+}
+
+.main-div:nth-child(1) {
+  flex-wrap: wrap;
+  flex-direction: row; /* Change direction to row for wrapping */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between to evenly distribute */
+
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.main-div:nth-child(2) {
+  flex-direction: row;
+  justify-content: center /* Space between to evenly distribute */
+}
+
+.main-div:last-child {
+  flex-grow: 0; /* This disables the growing behavior */
+  height: auto; /* Allows the div to size according to its content */
+  margin-top: auto; /* Pushes the div to the bottom */
+  position: absolute; /* Ensures it sticks to the bottom */
+  bottom: 0; /* Align bottom edge to the container's bottom */
+  width: 100%; /* Ensure it spans the entire width of the container */
+}
+
+
+.horizontal-div {
+  flex: 1;
+  height: 100%; /* Full height of their parent div */
+}
+
+.worldClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #fff;
+  opacity: 0;
+  
+  cursor: pointer;
+
+  z-index: 900;
+}
+
+
+/* Adding colors for testing 
+.main-div:nth-child(0) {
+  background-color: black;
+}
+.main-div:nth-child(1) {
+  background-color: rgb(48, 48, 48);
+}
+.main-div:nth-child(2) {
+  background-color: rgb(94, 94, 94);
+}
+.main-div:nth-child(3) {
+  background-color: rgb(147, 147, 147);
+}
+
+.main-div:nth-child(4) {
+  background-color: rgb(189, 189, 189);
+}*/
+
+/* dynamic items */
+
+.project-logo {
+  width: 80%;
+  height: 40vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 2vw;
+  margin-top: -4vh;
+}
+
+.project-headline {
+  width: 100%;
+  padding: 2vw;
+  font-size: 8vw;
+  text-align: center;
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.vacant-home-image {
+  width: 36vw;
+  height: 22vw;
+  background-color: black;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  border: none;
+  border-radius: 1.5vw;
+
+}
+
+.vacant-home-info {
+  padding: 1vw;
+  font-size: 4vw;
+}
+
+.slider {
+
+  flex: 0 0 90%; /* Takes 45% of the top-row's width, does not grow or shrink */
+  
+  display: flex;
+  justify-content: left; /* Center content horizontally */
+  align-items: left; /* Center content vertically */
+  text-align: left;
+
+  overflow: hidden;
+}
+
+.card{
+  width: 90vw;
+  height: 22vh;
+
+  display: flex;
+  flex-wrap: nowrap; /* Allows items to wrap to the next row if necessary */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;     
+}
+
+.vacant-home-image-big {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.prev, 
+.next {
+  width: 15vw;
+  height: 15vw;
+
+  flex: 0 0 13%; /* Takes 45% of the top-row's width, does not grow or shrink */
+
+  z-index: 999;
+}
+
+.prev{
+
+	background-repeat: no-repeat;
+	background-size: contain;
+  background-position: center center;
+
+  cursor: pointer;
+
+  margin-right: -3vw;
+
+  
+
+}
+
+.next{
+  
+
+	background-repeat: no-repeat;
+	background-size: contain;
+  background-position: center center;
+
+  cursor: pointer;
+
+  margin-left: -5vw;
+}
+
+#vacant-home-container1 {
+  border: 1px solid rgba(255, 255, 255, 0.135);
+}
+
+.cta {
+  font-family: "ObosText-Medium";
+  font-size: 6vw;
+	padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+  color: #ffffff;
+	cursor: pointer;
+	border-radius: 8vw;
+  text-align: center;
+  border: none;
+  background-color: #00AA79;
+  margin-top: -2vh;
+
+  z-index: 2;
+}
+
+.logo {
+  width: 35vw;
+  height: 15vw;
+  padding: 5vw;
+  background-repeat: no-repeat;
+	background-size: contain;
+  background-position: right center;
+
+}
