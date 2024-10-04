@@ -1,20 +1,20 @@
 {
-  "id": "fa0aaf6d-9dbe-47a1-a625-666ca70bd215",
+  "id": "5c2fcd33-b4c2-4063-99af-704557487bc2",
   "version": "1.4.0",
-  "name": "byggmax_640x320",
+  "name": "byggmax_320x400",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 640,
-        "height": 320,
+        "width": 320,
+        "height": 400,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 640,
-        "height": 320
+        "width": 320,
+        "height": 400
       }
     ]
   },
@@ -22,43 +22,7 @@
     "fileName": "",
     "format": "CSV",
     "schema": {
-      "product_1_subcopy": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_2_subcopy": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_1_price": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_2_price": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_1_price_currency": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_2_price_currency": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_1_oldPrice": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_2_oldPrice": {
-        "type": "text",
-        "source": "create"
-      },
       "product_1_top_copy": {
-        "type": "text",
-        "source": "create"
-      },
-      "product_2_top_copy": {
         "type": "text",
         "source": "create"
       },
@@ -66,7 +30,35 @@
         "type": "text",
         "source": "create"
       },
+      "product_1_price": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_1_subcopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_1_price_currency": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_top_copy": {
+        "type": "text",
+        "source": "create"
+      },
       "product_2_mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_price": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_subcopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_price_currency": {
         "type": "text",
         "source": "create"
       },
@@ -78,14 +70,6 @@
         "type": "image",
         "source": "create"
       },
-      "bg_image": {
-        "type": "image",
-        "source": "create"
-      },
-      "logo": {
-        "type": "image",
-        "source": "create"
-      },
       "product_1_image": {
         "type": "image",
         "source": "create"
@@ -94,7 +78,19 @@
         "type": "image",
         "source": "create"
       },
+      "bg_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
       "exit_url": {
+        "type": "click",
+        "source": "create"
+      },
+      "exit_url_2": {
         "type": "click",
         "source": "create"
       }
@@ -105,52 +101,40 @@
         {
           "isIncluded": true,
           "data": {
-            "product_1_subcopy": {
-              "value": "product_1_subcopy"
-            },
-            "product_2_subcopy": {
-              "value": "product_2_subcopy"
-            },
-            "product_1_price": {
-              "value": "product_1_price"
-            },
-            "product_2_price": {
-              "value": "product_2_price"
-            },
-            "product_1_price_currency": {
-              "value": "product_1_price_currency"
-            },
-            "product_2_price_currency": {
-              "value": "product_2_price_currency"
-            },
-            "product_1_oldPrice": {
-              "value": "product_1_oldPrice"
-            },
-            "product_2_oldPrice": {
-              "value": "product_2_oldPrice"
-            },
             "product_1_top_copy": {
               "value": "product_1_top_copy"
-            },
-            "product_2_top_copy": {
-              "value": "product_2_top_copy"
             },
             "product_1_mainCopy": {
               "value": "product_1_mainCopy"
             },
+            "product_1_price": {
+              "value": "product_1_price"
+            },
+            "product_1_subcopy": {
+              "value": "product_1_subcopy"
+            },
+            "product_1_price_currency": {
+              "value": "product_1_price_currency"
+            },
+            "product_2_top_copy": {
+              "value": "product_2_top_copy"
+            },
             "product_2_mainCopy": {
               "value": "product_2_mainCopy"
+            },
+            "product_2_price": {
+              "value": "product_2_price"
+            },
+            "product_2_subcopy": {
+              "value": "product_2_subcopy"
+            },
+            "product_2_price_currency": {
+              "value": "product_2_price_currency"
             },
             "product_1_badge": {
               "value": ""
             },
             "product_2_badge": {
-              "value": ""
-            },
-            "bg_image": {
-              "value": ""
-            },
-            "logo": {
               "value": ""
             },
             "product_1_image": {
@@ -159,7 +143,16 @@
             "product_2_image": {
               "value": ""
             },
+            "bg_image": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
             "exit_url": {
+              "value": ""
+            },
+            "exit_url_2": {
               "value": ""
             }
           }
@@ -179,5 +172,8 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 49930
+  "folders": {
+    "selectedFolderId": 5611
+  },
+  "port": 52229
 }

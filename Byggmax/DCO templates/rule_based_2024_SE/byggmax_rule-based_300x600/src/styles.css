@@ -28,8 +28,8 @@ html, body {
 /* Background image asset */
 .bg_image {
   position: absolute;
-  width: 640px;
-  height: 320px;
+  width: 300px;
+  height: 600px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -37,76 +37,83 @@ html, body {
 /* Logo image asset */
 .logo {
   position: absolute;
-  top: 260px;
-  left: 35px;
-  width: 170px;
-  height: 40px;
-  background-position: left center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-/* Product overlay image asset */
-.productOverlay {
-  position: absolute;
-  top: 190px;
-  left: 210px;
-  width: 450px;
-  height: 140px;
-  background-size: contain;
+  top: 510px;
+  left: 0px;
+  width: 300px;
+  height: 50px;
   background-position: center center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 /* Product container */
 .productPanel {
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 0px;
-  width: 640px;
-  height: 320px;
+  width: 300px;
+  height: 600px;
+}
+.copy_container {
+  position: relative; /* Change from absolute to relative */
+  top: 70px;
+  left: 25px;
+  width: 250px;
+  height: auto; /* Change to auto to allow height to adjust based on content */
 }
 /* Product oldPrice */
 .oldPrice {
   display: block;
-  position: absolute;
-  left: 30px;
-  top: 20px;
-  font-size: 20px;
+  margin-bottom: -5px; 
+  font-size: 18px;
   font-family: "Mikro-Bold";
   color: #000;
   text-decoration: line-through;
 }
-/* Product oldPrice */
-.product_1_top_copy, .product_2_top_copy {
+.product_top_copy{
   display: block;
-  position: absolute;
-  left: 30px;
-  top: 20px;
-  font-size: 20px;
+  margin-bottom: -5px;
+  font-size: 18px;
   font-family: "Mikro-Bold";
   color: #eb001e;
 }
 /* Product price */
 .productPrice {
   display: block;
-  position: absolute;
-  left: 35px;
-  top: 30px;
+  margin-bottom: -10px;
   font-size: 70px;
   font-family: "Mikro-black-otf";
   color: #eb001e;
   letter-spacing: -3px;
 }
+/* Product mainCopy */
+.mainCopy {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  letter-spacing: -1px;
+}
+/* Product subcopy */
+.subcopy {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
 /* Product price currency ex. Kr */
 .priceCurrency {
-  margin-left: -34px;
-  font-size: 20px;
+  margin-left: 6px;
+  font-size: 18px;
   font-family: "Mikro-Bold";
   letter-spacing: 0px;
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
-  margin-left: -34px;
-  font-size: 20px;
+  margin-left: -38px;
+  font-size: 18px;
   font-family: "Mikro-Bold";
   letter-spacing: 0px;
 }
@@ -118,52 +125,21 @@ sup {
 /* Product image asset */
 .product_image {
   position: absolute;
-  top: 60px;
-  left: 210px;
-  width: 480px;
-  height: 230px;
+  top: 225px;
+  left: 10px;
+  width: 280px;
+  height: 280px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-.product_1_mainCopy {
-  display: block;
-  position: absolute;
-  left: 35px;
-  top: 30px;
-  font-size: 40px;
-  font-family: "Trim-Bold_otf";
-  color: #eb001e;
-  line-height: 40px;
-  letter-spacing: -2;
-}
-.product_1_subcopy, .product_2_subcopy {
-  position: absolute;
-  left: 35px;
-  top: 125px;
-  font-size: 18px;
-  font-family: "Mikro-Bold";
-  color: #000;
-}
-.product_2_mainCopy {
-  display: block;
-  position: absolute;
-  left: 35px;
-  top: 30px;
-  font-size: 40px;
-  font-family: "Trim-Bold_otf";
-  color: #eb001e;
-  line-height: 40px;
-  letter-spacing: -2;
-}
 /* Product container ex 4 för */
 .product_badge {
   position: absolute;
-  top: 0px;
-  left: 235px;
-  width: 90px;
-  height: 90px;
+  top: 40px;
+  left: 175px;
+  width: 80px;
+  height: 80px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;

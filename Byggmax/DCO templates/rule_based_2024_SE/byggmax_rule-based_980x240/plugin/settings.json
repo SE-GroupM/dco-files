@@ -1,0 +1,179 @@
+{
+  "id": "696c1cd2-d37a-4107-bba1-56f4d8169ad1",
+  "version": "1.4.0",
+  "name": "byggmax_980x240",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "product_1_top_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_1_price": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_1_mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_1_subcopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_1_price_currency": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_top_copy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_price": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_subcopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_2_price_currency": {
+        "type": "text",
+        "source": "create"
+      },
+      "product_1_badge": {
+        "type": "image",
+        "source": "create"
+      },
+      "product_2_badge": {
+        "type": "image",
+        "source": "create"
+      },
+      "product_1_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "product_2_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "bg_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "create"
+      },
+      "exit_url_2": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "product_1_top_copy": {
+              "value": "product_1_top_copy"
+            },
+            "product_1_price": {
+              "value": "product_1_price"
+            },
+            "product_1_mainCopy": {
+              "value": "product_1_mainCopy"
+            },
+            "product_1_subcopy": {
+              "value": "product_1_subcopy"
+            },
+            "product_1_price_currency": {
+              "value": "product_1_price_currency"
+            },
+            "product_2_top_copy": {
+              "value": "product_2_top_copy"
+            },
+            "product_2_price": {
+              "value": "product_2_price"
+            },
+            "product_2_mainCopy": {
+              "value": "product_2_mainCopy"
+            },
+            "product_2_subcopy": {
+              "value": "product_2_subcopy"
+            },
+            "product_2_price_currency": {
+              "value": "product_2_price_currency"
+            },
+            "product_1_badge": {
+              "value": ""
+            },
+            "product_2_badge": {
+              "value": ""
+            },
+            "product_1_image": {
+              "value": ""
+            },
+            "product_2_image": {
+              "value": ""
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": ""
+            },
+            "exit_url_2": {
+              "value": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 398,
+    "name": "Byggmax"
+  },
+  "folders": {
+    "selectedFolderId": 5611
+  },
+  "port": 58536
+}
