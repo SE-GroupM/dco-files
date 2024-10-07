@@ -120,6 +120,14 @@ window.addEventListener('lemonpi.content/ready', event => {
                 onClick(event, index);
             });
             
+            const innerDiv = document.querySelectorAll('.inner-div');
+            // Loop through each element and add the click listener
+            innerDiv.forEach((element, index) => {
+                element.addEventListener('click', function(event) {
+                  onClick(event, index);
+                });
+            });
+
             const elements = document.querySelectorAll('.worldClick');
             // Loop through each element and add the click listener
             elements.forEach((element, index) => {
@@ -127,6 +135,14 @@ window.addEventListener('lemonpi.content/ready', event => {
                     onWorldClick(event, index); // Call the onWorldClick function with event and index
                 });
             });
+
+            document.getElementById("cta-holder").addEventListener('click', function(event) {
+              onWorldClick(event, index); // Call the onWorldClick function with event and index
+          });
+
+          document.getElementById("logo-holder").addEventListener('click', function(event) {
+            onWorldClick(event, index); // Call the onWorldClick function with event and index
+        });
             
         }
 
@@ -216,6 +232,8 @@ window.addEventListener('lemonpi.content/ready', event => {
         function onClick(event, slideIndex) {
             // Handle the product click event
             event.preventDefault();
+
+            console.log(slideIndex)
             window.dispatchEvent(
               new CustomEvent('lemonpi.interaction/click', {
                   detail: {
