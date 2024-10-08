@@ -89,7 +89,7 @@ window.addEventListener('lemonpi.content/ready', event => {
      content: 'url('+ bgImage + ')',
      'background-repeat': 'no-repeat',
      'background-position': 'center center',
-     'background-size': '',
+     'background-size': 'contain',
      'left': dynamic_img_left + 'px',
      'top': dynamic_img_top + 'px',
      
@@ -192,29 +192,29 @@ function fitText(selector, maxHeight) {
 
   if (img_animation_zoom_or_slide === 'zoom') {
     // Zoom animation
-    requestIdleCallback(() => {
+    requestAnimationFrame(() => {
       TweenMax.to('#bgImage', 5, {
         scale: 1.1,
-        transformOrigin: "center",
+        transformOrigin: "center center", // Ensure both X and Y axes are defined
         repeat: -1,
-        repeatDelay: 1,  // Add delay before restarting
+        repeatDelay: 1,
         ease: Power1.easeInOut
       });
     });
   } else if (img_animation_zoom_or_slide === 'slide') {
     // Slide animation
-    requestIdleCallback(() => {
+    requestAnimationFrame(() => {
       TweenMax.to('#bgImage', 5, {
-        x: '12%',  // Slide to the right
+        x: 100, // Use pixel-based translation for Safari
         ease: Power1.easeInOut
       });
     });
   } else {
     // Default to zoom animation if neither zoom nor slide
-    requestIdleCallback(() => {
+    requestAnimationFrame(() => {
       TweenMax.to('#bgImage', 5, {
         scale: 1.1,
-        transformOrigin: "center",
+        transformOrigin: "center center", // Ensure both X and Y axes are defined
         repeat: -1,
         repeatDelay: 1,
         ease: Power1.easeInOut
