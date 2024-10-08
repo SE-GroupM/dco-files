@@ -80,7 +80,7 @@ html, body {
 /* Product price */
 .productPrice {
   display: block;
-  margin-bottom: -5px;
+  margin-bottom: -15px;
   font-size: 80px;
   font-family: "Mikro-black-otf";
   color: #eb001e;

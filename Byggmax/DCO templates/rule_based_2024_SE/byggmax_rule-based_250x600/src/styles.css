@@ -55,7 +55,7 @@ html, body {
 }
 .copy_container {
   position: relative; /* Change from absolute to relative */
-  top: 80px;
+  top: 110px;
   left: 20px;
   width: 230px;
   height: auto; /* Change to auto to allow height to adjust based on content */
@@ -127,10 +127,10 @@ sup {
 /* Product image asset */
 .product_image {
   position: absolute;
-  top: 255px;
+  top: 265px;
   left: 10px;
   width: 230px;
-  height: 220px;
+  height: 210px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ sup {
 .product_badge {
   position: absolute;
   top: 30px;
-  left: 150px;
+  left: 145px;
   width: 70px;
   height: 70px;
   background-size: contain;

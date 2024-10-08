@@ -80,7 +80,7 @@ html, body {
 /* Product price */
 .productPrice {
   display: block;
-  margin-bottom: -5px;
+  margin-bottom: -20px;
   font-size: 60px;
   font-family: "Mikro-black-otf";
   color: #eb001e;
@@ -89,7 +89,7 @@ html, body {
 /* Product price */
 .mainCopy {
   display: block;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 5px;
   font-size: 32px;
   line-height: 33px;
@@ -140,7 +140,7 @@ sup {
 .product_badge {
   position: absolute;
   top: 15px;
-  left: 172px;
+  left: 187px;
   width: 70px;
   height: 70px;
   background-size: contain;
