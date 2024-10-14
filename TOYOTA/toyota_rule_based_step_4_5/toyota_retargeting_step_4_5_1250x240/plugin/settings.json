@@ -1,0 +1,120 @@
+{
+  "id": "34f99acb-a1c7-48fc-9d92-d54f9f9ea0dd",
+  "version": "1.4.0",
+  "name": "toyota_retargeting_step_4_5_1250x240",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 1250,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 1250,
+        "height": 240
+      }
+    ]
+  },
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "title": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "sub_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "sub_title": {
+        "type": "text",
+        "source": "create"
+      },
+      "img_placement_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "legal_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "legal_btn": {
+        "type": "text",
+        "source": "create"
+      },
+      "image_car": {
+        "type": "image",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "click": {
+        "type": "click",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "title": {
+              "value": "title"
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "sub_text": {
+              "value": "sub_text"
+            },
+            "sub_title": {
+              "value": "sub_title"
+            },
+            "img_placement_left": {
+              "value": "img_placement_left"
+            },
+            "legal_text": {
+              "value": "legal_text"
+            },
+            "legal_btn": {
+              "value": "legal_btn"
+            },
+            "image_car": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
+            "click": {
+              "value": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 383,
+    "name": "Toyota"
+  },
+  "port": 61839
+}
