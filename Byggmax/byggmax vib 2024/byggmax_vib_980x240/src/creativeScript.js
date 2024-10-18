@@ -19,13 +19,30 @@ window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content;
   //Variable for local content
   var local_content = content;
-   
+   console.log(local_content)
     // World click event caller
     $('#worldClick').click(onClick);
-    $('#copyFrame1').html(content.copyFrame1.value);
-    $('#copyFrame2').html(content.copyFrame2.value);
-    $('#asteriskText').html(content.asteriskText.value);
-     
+    $('#copyFrame1').html(content.productName_1.value);
+    $('#copyFrame2').html(content.productName_2.value);
+
+    
+     // variable holding textcolor from adset
+     var setTextColors = local_content.textColor.value;
+     // Select multiple elements with differnet classes
+     var allElements = document.querySelectorAll('.currentPrice, .productName_1, .productName_2');
+ 
+     // Loop through the Nodelist and add same css class to each element
+     allElements.forEach(function(element) {
+       element.classList.add('textColor_css');
+     });
+ 
+     if (setTextColors && setTextColors.trim() !== '') {
+       // If setTextColors has a value, apply the CSS color
+       $('.textColor_css').css({
+         'color': setTextColors,
+       });
+     }
+
     // Define the video source and tracker variables
     var videoSrc = content.videoSrc.value;
     var videoTracker = content.videoTracker.value;
@@ -34,22 +51,113 @@ window.addEventListener('lemonpi.content/ready', event => {
     var mutebutton_on_off = local_content.mutebutton_on_off.value;
     //import content of price currenly from placeholder
     let price_currency_content = local_content.price_currency_content.value;
+    
+    var videoPlaceholder = local_content.video_placeholder.value;
 
-    //Video player 
-    var e = document.createElement('script');
-    e.src = 'https://video.seenthis.se/v2/player/74/player.js';
-    e.onload = function(){
-    var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
-    };
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(e, s);
+    if (videoPlaceholder !== ''){
 
-     //Options for video script
-    var options = {
-        loop: true,
-        autoplay: true,
-        muteButton: false,
-    };
+        // Select the player element where the video will be loaded
+        var playerElement = document.querySelector('.player');
+
+        // Check if the playerElement exists
+        if (!playerElement) {
+          console.error('Player element not found!');
+          return;
+        }
+
+        // Create a video element dynamically
+        var videoElement = document.createElement('video');
+        videoElement.setAttribute('playsinline', '');
+        videoElement.setAttribute('autoplay', '');
+        videoElement.setAttribute('muted', '');
+        videoElement.setAttribute('loop', '');
+        videoElement.src = videoPlaceholder; // Set the video source
+
+        var setVideoElement = document.querySelector("#creative_container > div.player > video");
+        if (setVideoElement) {
+          setVideoElement.style.width = "100%";
+        }
+        // Optionally, add controls to the video (if desired)
+        //videoElement.setAttribute('controls', ''); // Uncomment if you want controls
+
+        // Append the video element to the player container
+        playerElement.appendChild(videoElement);
+
+        //console.log('Video element created and appended. Source set to:', videoElement.src);
+
+        // Add error handling for the video
+        videoElement.addEventListener('error', function(event) {
+          console.error('Error occurred while trying to play the video:', event);
+        });
+
+        // Check when the metadata is loaded
+        videoElement.addEventListener('loadedmetadata', function() {
+          
+          videoElement.play(); // Automatically play once metadata is loaded (optional)
+        });
+
+        // Function to make the video fullscreen
+        function openFullscreen() {
+          if (videoElement.requestFullscreen) {
+            videoElement.requestFullscreen();
+          } else if (videoElement.mozRequestFullScreen) { // Firefox
+            videoElement.mozRequestFullScreen();
+          } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+            videoElement.webkitRequestFullscreen();
+          } else if (videoElement.msRequestFullscreen) { // IE/Edge
+            videoElement.msRequestFullscreen();
+          }
+        }
+
+        // Play video and enter fullscreen on user interaction
+        videoElement.addEventListener('play', function() {
+          //openFullscreen();
+        });
+
+        // Add a play button to trigger video play and fullscreen (if needed)
+        var playButton = document.createElement('button');
+        playButton.innerHTML = 'Play Video';
+        playButton.addEventListener('click', function() {
+          if (videoElement.paused) {
+            videoElement.play();
+            openFullscreen();
+          } else {
+            videoElement.pause();
+          }
+        });
+        //playerElement.appendChild(playButton); // Append play button (optional)
+
+        // Log when the video is supposed to start playing
+        videoElement.addEventListener('playing', function() {
+          //console.log('Video is playing...');
+        });
+
+    }else {
+      //Video player 
+      
+      var e = document.createElement('script');
+      e.src = 'https://video.seenthis.se/v2/player/74/player.js';
+      e.onload = function(){
+      var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(e, s);
+
+      //Options for video script
+      var options = {
+          loop: true,
+          autoplay: true,
+          muteButton: false,
+      };
+
+
+          // Determine the state of the mute button based on mutebutton_on_off variable
+      if (mutebutton_on_off == 'on') {
+        options.muteButton = true; // Enable mute if 'on'
+      } else if (mutebutton_on_off == 'off') {
+        options.muteButton = false; // Disable mute if 'off'
+      }
+    } // end of else-statement
 
      //////////////////
     /// ANIMATIONS ///
@@ -80,21 +188,14 @@ if (local_content.currentPrice.value.includes('<sup>')){
   $("#currentPrice").html(local_content.currentPrice.value + "<span class='priceCurrency'>" + price_currency_content + "</span>");
 }
 
-// Determine the state of the mute button based on mutebutton_on_off variable
-if (mutebutton_on_off == 'on') {
-  options.muteButton = true; // Enable mute if 'on'
-} else if (mutebutton_on_off == 'off') {
-  options.muteButton = false; // Disable mute if 'off'
-}
-
-function onClick (event) {
-  return window.dispatchEvent(
-    new CustomEvent('lemonpi.interaction/click', {
-      detail: {
-        placeholder: 'worldClick'
-      }
-  }));
-}
+  function onClick (event) {
+    return window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+          placeholder: 'worldClick'
+        }
+    }));
+  }
 
 });
   

@@ -1,7 +1,7 @@
 {
   "id": "09b03c97-74eb-48b7-ac16-4c14ea4b135a",
-  "version": "1.3.0",
-  "name": "byggmax_vib_980x240",
+  "version": "1.4.0",
+  "name": "byggmax_vib_DEMO_980x240",
   "description": "",
   "size": {
     "sizes": [
@@ -19,6 +19,8 @@
     ]
   },
   "placeholders": {
+    "fileName": "migrated from version 1.3.0 of the extension",
+    "format": "CSV",
     "schema": {
       "videoTracker": {
         "type": "text",
@@ -57,29 +59,32 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "videoTracker": {
-            "value": "videoTracker"
-          },
-          "videoSrc": {
-            "value": "videoSrc"
-          },
-          "currentPrice": {
-            "value": "currentPrice"
-          },
-          "worldClick": {
-            "value": ""
-          },
-          "mutebutton_on_off": {
-            "value": "mutebutton_on_off"
-          },
-          "logoPlaceholder": {
-            "value": ""
-          },
-          "productName_1": {
-            "value": "productName_1"
-          },
-          "productName_2": {
-            "value": "productName_2"
+          "isIncluded": true,
+          "data": {
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "currentPrice": {
+              "value": "currentPrice"
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "mutebutton_on_off": {
+              "value": "mutebutton_on_off"
+            },
+            "logoPlaceholder": {
+              "value": ""
+            },
+            "productName_1": {
+              "value": "productName_1"
+            },
+            "productName_2": {
+              "value": "productName_2"
+            }
           }
         }
       ]
@@ -97,8 +102,8 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 61459,
   "folders": {
-    "selectedFolderId": 2085
-  }
+    "selectedFolderId": 5611
+  },
+  "port": 50642
 }
