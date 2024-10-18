@@ -10,8 +10,8 @@ html, body {
   background-color: #fff;
 }
 #creative_container {
-  width: 1249px;
-  height: 240px;
+  width: 980px;
+  height: 300px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@ html, body {
 #cta {
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Center items vertically */
-  font-size: 17px;
+  font-size: 15px;
   font-family: "ToyotaType-Regular";
   color: #6a6b70;
   text-transform: uppercase;
@@ -41,28 +41,27 @@ html, body {
   padding-right: 5px; /* Adjust as needed */
   opacity: 0;
 }
-
 #cta_text {
   padding-top: 5px;
   font-family: "ToyotaType-Regular";
-  min-width: 145px; /* Ensure it has enough width */
+  min-width: 125px; /* Ensure it has enough width */
 }
 
 #arrow {
   border: solid #e50000;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 5.5px;
+  padding: 4.5px;
   border-radius: 0.2em;
   transform: rotate(-45deg) translateY(3px); /* Move it 3 pixels down */
-  -webkit-transform: rotate(-45deg) translateY(3px); /* For Safari */
+  -webkit-transform: rotate(-45deg) translateY(4px); /* For Safari */
   margin-left: 2px; /* Space between text and arrow */
 }
 
 #title {
   display: block;
   top: 40px;
-  font-size: 26px;
+  font-size: 23px;
   font-family: "ToyotaType-Semibold";
   color: #494950;
   line-height: 1;
@@ -70,13 +69,13 @@ html, body {
   margin: 0;
 }
 #sub_title {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 0.7;
   font-family: "ToyotaType-Regular";
   color: #282830;
 }
 #sub_text {
-  font-size: 17px;
+  font-size: 15px;
   font-family: "ToyotaType-Regular";
   color: #282830;
   line-height: 1.1;
@@ -84,8 +83,8 @@ html, body {
   margin-top: -10px;
 }
 #copy1 {
-  width: 475px;
-  margin-top: 30px;
+  width: 425px;
+  margin-top: 70px;
   margin-left: 54px;
   font-size: 17px;
   line-height: 0.7;
@@ -95,7 +94,7 @@ html, body {
   opacity: 0;
 }
 #copy2 {
-  width: 352px;
+  width: 322px;
   margin-top: 5px;
   margin-left: 54px;
   font-size: 17px;
@@ -112,25 +111,25 @@ html, body {
 }
 #image_car {
   position: absolute;
-  width: 412px;
-  height: 187px;
-  left: 585px;
-  top: 28px;
+  width: 411px;
+  height: 186px;
+  left: 485px;
+  top: 66px;
   opacity: 0;
 }
 #legal_btn {
   position: absolute;
   width: 75px;
   height: 24px;
-  top: 210px;
-  font-size: 14px;
+  top: 270px;
+  font-size: 12px;
   left: 20px;
   color: #7c7c83;
   font-family: "ToyotaType-Regular";
 }
 #legal_bg {
-  width: 1250px;
-  height: 240px;
+  width: 980px;
+  height: 300px;
   background-color: rgba(128, 128, 128, 0.9);
   position: absolute;
   top: 0px;
@@ -145,26 +144,26 @@ html, body {
   height: 191px;
   top: 10px;
   margin-left: 54px;
-  width: 900px;
+  width: 850px;
 }
 #logo{
   position: absolute;
   width: 60px;
   height: 40px;
-  left: 1165px;
+  left: 895px;
   top: 25px;
 }
 .stroke {
   position: absolute;
-  width: 825px;
+  width: 646px;
   left: 0;
-  top: 234px;
+  top: 294px;
   border: 5px #ff001f solid;
 }
 #click {
   position: absolute;
-  width: 1250px;
-  height: 240px;
+  width: 980px;
+  height: 300px;
   top: 0px;
   left: 0px;
 }

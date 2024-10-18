@@ -37,17 +37,13 @@ html, body {
   line-height: 1.2;
   margin-top: 5px;
   margin-right: 2px;
-  border-top: 0.7px solid #494950;
-  padding-right: 5px; /* Adjust as needed */
   opacity: 0;
 }
-
 #cta_text {
   padding-top: 5px;
   font-family: "ToyotaType-Regular";
   min-width: 145px; /* Ensure it has enough width */
 }
-
 #arrow {
   border: solid #e50000;
   border-width: 0 3px 3px 0;
@@ -58,57 +54,28 @@ html, body {
   -webkit-transform: rotate(-45deg) translateY(3px); /* For Safari */
   margin-left: 2px; /* Space between text and arrow */
 }
-
 #title {
   display: block;
   top: 40px;
   font-size: 26px;
   font-family: "ToyotaType-Semibold";
   color: #494950;
-  line-height: 1;
+  line-height: 1.2;
   padding-bottom: 13px;
   margin: 0;
 }
-#sub_title {
-  font-size: 16px;
-  line-height: 0.7;
-  font-family: "ToyotaType-Regular";
-  color: #282830;
+#center_container { /* Assuming this is the banner container */
+  display: flex;
+  justify-content: flex-start; /* Keep the content left-aligned */
+  align-items: center; /* Center the content vertically */
+  height: 95vh; /* Make the banner take full viewport height */
 }
-#sub_text {
-  font-size: 17px;
-  font-family: "ToyotaType-Regular";
-  color: #282830;
-  line-height: 1.1;
-  padding-bottom: 5px;
-  margin-top: -10px;
-}
-#copy1 {
+#copy {
   width: 475px;
-  margin-top: 30px;
-  margin-left: 54px;
-  font-size: 17px;
+  margin-left: 54px; /* Keep the left margin */
   line-height: 0.7;
   color: #494950;
-  padding-bottom: 12px;
-  border-bottom: 0.75px solid #494950;
   opacity: 0;
-}
-#copy2 {
-  width: 352px;
-  margin-top: 5px;
-  margin-left: 54px;
-  font-size: 17px;
-  line-height: 0.7;
-  color: #494950;
-  padding-right: 50px;
-  opacity: 0;
-}
-.price {
-  font-size: 28px;
-  line-height: 1;
-  color: #494950;
-  font-family: "ToyotaType-Semibold";
 }
 #image_car {
   position: absolute;
@@ -117,35 +84,6 @@ html, body {
   left: 585px;
   top: 28px;
   opacity: 0;
-}
-#legal_btn {
-  position: absolute;
-  width: 75px;
-  height: 24px;
-  top: 210px;
-  font-size: 14px;
-  left: 20px;
-  color: #7c7c83;
-  font-family: "ToyotaType-Regular";
-}
-#legal_bg {
-  width: 1250px;
-  height: 240px;
-  background-color: rgba(128, 128, 128, 0.9);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-#legal_text{
-  color: rgb(255, 255, 255);
-  font-family: "ToyotaType-Regular";
-  font-size: 15px;
-  line-height: 17px;
-  margin-top: 20px;
-  height: 191px;
-  top: 10px;
-  margin-left: 54px;
-  width: 900px;
 }
 #logo{
   position: absolute;

@@ -50,9 +50,7 @@ if (version_step == '4') {
     'padding-bottom': '0px' 
   });
 } else {
-
 }
-
 
 TweenMax.set('#legal_bg', {autoAlpha:0});
 

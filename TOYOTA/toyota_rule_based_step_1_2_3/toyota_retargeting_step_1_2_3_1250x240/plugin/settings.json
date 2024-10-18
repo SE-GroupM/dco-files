@@ -1,7 +1,7 @@
 {
-  "id": "34f99acb-a1c7-48fc-9d92-d54f9f9ea0dd",
+  "id": "83a3eb41-e80e-4dce-b97d-d4763381e918",
   "version": "1.4.0",
-  "name": "toyota_retargeting_step_4_5_1250x240",
+  "name": "toyota_retargeting_step_1_2_3_1250x240",
   "description": "",
   "size": {
     "sizes": [
@@ -30,23 +30,11 @@
         "type": "text",
         "source": "create"
       },
-      "sub_text": {
-        "type": "text",
-        "source": "create"
-      },
-      "sub_title": {
-        "type": "text",
-        "source": "create"
-      },
       "img_placement_left": {
         "type": "text",
         "source": "create"
       },
-      "legal_text": {
-        "type": "text",
-        "source": "create"
-      },
-      "legal_btn": {
+      "version_step": {
         "type": "text",
         "source": "create"
       },
@@ -75,20 +63,11 @@
             "cta_text": {
               "value": "cta_text"
             },
-            "sub_text": {
-              "value": "sub_text"
-            },
-            "sub_title": {
-              "value": "sub_title"
-            },
             "img_placement_left": {
               "value": "img_placement_left"
             },
-            "legal_text": {
-              "value": "legal_text"
-            },
-            "legal_btn": {
-              "value": "legal_btn"
+            "version_step": {
+              "value": "version_step"
             },
             "image_car": {
               "value": ""
@@ -132,5 +111,5 @@
   "folders": {
     "selectedFolderId": 5801
   },
-  "port": 62486
+  "port": 62757
 }

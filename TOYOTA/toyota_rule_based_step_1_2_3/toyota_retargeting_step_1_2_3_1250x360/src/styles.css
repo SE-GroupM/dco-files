@@ -11,7 +11,7 @@ html, body {
 }
 #creative_container {
   width: 1249px;
-  height: 240px;
+  height: 360px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -30,20 +30,18 @@ html, body {
 #cta {
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Center items vertically */
-  font-size: 17px;
+  font-size: 21px;
   font-family: "ToyotaType-Regular";
   color: #6a6b70;
   text-transform: uppercase;
   line-height: 1.2;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-right: 2px;
-  border-top: 0.7px solid #494950;
-  padding-right: 5px; /* Adjust as needed */
   opacity: 0;
 }
 
 #cta_text {
-  padding-top: 5px;
+  padding-top: 7px;
   font-family: "ToyotaType-Regular";
   min-width: 145px; /* Ensure it has enough width */
 }
@@ -52,119 +50,69 @@ html, body {
   border: solid #e50000;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 5.5px;
+  padding: 5px;
   border-radius: 0.2em;
   transform: rotate(-45deg) translateY(3px); /* Move it 3 pixels down */
-  -webkit-transform: rotate(-45deg) translateY(3px); /* For Safari */
+  -webkit-transform: rotate(-45deg) translateY(6px); /* For Safari */
   margin-left: 2px; /* Space between text and arrow */
 }
 
 #title {
   display: block;
-  top: 40px;
-  font-size: 26px;
+  font-size: 29px;
   font-family: "ToyotaType-Semibold";
   color: #494950;
-  line-height: 1;
-  padding-bottom: 13px;
-  margin: 0;
+  line-height: 1.2;
+  padding-bottom: 15px;
 }
-#sub_title {
-  font-size: 16px;
-  line-height: 0.7;
-  font-family: "ToyotaType-Regular";
-  color: #282830;
+
+#center_container { /* Assuming this is the banner container */
+  display: flex;
+  justify-content: flex-start; /* Keep the content left-aligned */
+  align-items: center; /* Center the content vertically */
+  height: 95vh; /* Make the banner take full viewport height */
 }
-#sub_text {
-  font-size: 17px;
-  font-family: "ToyotaType-Regular";
-  color: #282830;
-  line-height: 1.1;
-  padding-bottom: 5px;
-  margin-top: -10px;
-}
-#copy1 {
-  width: 475px;
-  margin-top: 30px;
-  margin-left: 54px;
-  font-size: 17px;
-  line-height: 0.7;
-  color: #494950;
-  padding-bottom: 12px;
-  border-bottom: 0.75px solid #494950;
-  opacity: 0;
-}
-#copy2 {
-  width: 352px;
+
+#copy {
+  width: 580px;
   margin-top: 5px;
   margin-left: 54px;
   font-size: 17px;
   line-height: 0.7;
   color: #494950;
-  padding-right: 50px;
   opacity: 0;
 }
-.price {
-  font-size: 28px;
-  line-height: 1;
-  color: #494950;
-  font-family: "ToyotaType-Semibold";
-}
+
 #image_car {
   position: absolute;
-  width: 412px;
-  height: 187px;
-  left: 585px;
-  top: 28px;
+  width: 476px;
+  height: 225px;
+  left: 647px;
+  top: 76.5px;
   opacity: 0;
 }
-#legal_btn {
-  position: absolute;
-  width: 75px;
-  height: 24px;
-  top: 210px;
-  font-size: 14px;
-  left: 20px;
-  color: #7c7c83;
-  font-family: "ToyotaType-Regular";
-}
-#legal_bg {
-  width: 1250px;
-  height: 240px;
-  background-color: rgba(128, 128, 128, 0.9);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-#legal_text{
-  color: rgb(255, 255, 255);
-  font-family: "ToyotaType-Regular";
-  font-size: 15px;
-  line-height: 17px;
-  margin-top: 20px;
-  height: 191px;
-  top: 10px;
-  margin-left: 54px;
-  width: 900px;
-}
+
 #logo{
   position: absolute;
-  width: 60px;
-  height: 40px;
-  left: 1165px;
+  right: 25px;
   top: 25px;
+  width: 77px;
+  height: 52px;
+  background-repeat: no-repeat;
 }
+
 .stroke {
   position: absolute;
   width: 825px;
   left: 0;
-  top: 234px;
+  top: 354px;
   border: 5px #ff001f solid;
 }
+
 #click {
   position: absolute;
   width: 1250px;
-  height: 240px;
+  height: 360px;
   top: 0px;
   left: 0px;
 }

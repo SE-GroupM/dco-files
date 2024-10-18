@@ -35,12 +35,6 @@ title.append(content.title.value);
 var cta_text = $('#cta_text');
 cta_text.append(content.cta_text.value);
 
-// image_car left adjust
-var img_placement_left = parseInt(content.img_placement_left.value, 10); // parse the value as an integer
-$('#image_car').css({
-  'left': (500 + img_placement_left) + 'px', // add 500 to the dynamic value
-});
-
 if (version_step == '4') {
   sub_title.remove(); 
   legal_text.remove(); 
@@ -52,7 +46,6 @@ if (version_step == '4') {
 } else {
 
 }
-
 
 TweenMax.set('#legal_bg', {autoAlpha:0});
 

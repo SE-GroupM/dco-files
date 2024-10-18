@@ -1,13 +1,13 @@
 {
   "id": "34f99acb-a1c7-48fc-9d92-d54f9f9ea0dd",
   "version": "1.4.0",
-  "name": "toyota_retargeting_step_4_5_1250x240",
+  "name": "toyota_retargeting_step_4_5_980x300",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 1250,
-        "height": 240,
+        "width": 980,
+        "height": 300,
         "isCustom": true
       }
     ],
@@ -15,6 +15,14 @@
       {
         "width": 1250,
         "height": 240
+      },
+      {
+        "width": 980,
+        "height": 240
+      },
+      {
+        "width": 980,
+        "height": 300
       }
     ]
   },
@@ -132,5 +140,5 @@
   "folders": {
     "selectedFolderId": 5801
   },
-  "port": 62486
+  "port": 62439
 }
