@@ -1,6 +1,6 @@
 {
   "id": "d6f95d48-6472-4d19-ab69-b47e7dfb958c",
-  "version": "1.3.1",
+  "version": "1.4.1",
   "name": "FORD_DISPLAY_320x400",
   "description": "",
   "size": {
@@ -19,6 +19,8 @@
     ]
   },
   "placeholders": {
+    "fileName": "migrated from version 1.3.1 of the extension",
+    "format": "CSV",
     "schema": {
       "frame_1_copy": {
         "type": "text",
@@ -109,68 +111,71 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "frame_1_copy": {
-            "value": "frame_1_copy"
-          },
-          "frame_2_copy": {
-            "value": "frame_2_copy"
-          },
-          "legal_txt": {
-            "value": "legal_txt"
-          },
-          "message": {
-            "value": "message"
-          },
-          "subCopy_static": {
-            "value": "subCopy_static"
-          },
-          "cta_text": {
-            "value": "cta_text"
-          },
-          "bg_image": {
-            "value": ""
-          },
-          "logo_squared": {
-            "value": ""
-          },
-          "af_image": {
-            "value": ""
-          },
-          "worldClick": {
-            "value": ""
-          },
-          "use_one_headline": {
-            "value": "use_one_headline"
-          },
-          "subCopy_frame_1": {
-            "value": "subCopy_frame_1"
-          },
-          "subCopy_frame_2": {
-            "value": "subCopy_frame_2"
-          },
-          "subtitle_fontSize": {
-            "value": "subtitle_fontSize"
-          },
-          "mainCopy_fontSize": {
-            "value": "mainCopy_fontSize"
-          },
-          "subTitle_topValue": {
-            "value": "subTitle_topValue"
-          },
-          "subtitle_top": {
-            "value": "subtitle_top"
-          },
-          "font_color": {
-            "value": "font_color"
-          },
-          "cta_right_or_left": {
-            "value": "cta_right_or_left"
-          },
-          "logo_wide": {
-            "value": ""
-          },
-          "priceCopy": {
-            "value": "priceCopy"
+          "isIncluded": true,
+          "data": {
+            "frame_1_copy": {
+              "value": "frame_1_copy"
+            },
+            "frame_2_copy": {
+              "value": "frame_2_copy"
+            },
+            "legal_txt": {
+              "value": "legal_txt"
+            },
+            "message": {
+              "value": "message"
+            },
+            "subCopy_static": {
+              "value": "subCopy_static"
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "logo_squared": {
+              "value": ""
+            },
+            "af_image": {
+              "value": ""
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "use_one_headline": {
+              "value": "use_one_headline"
+            },
+            "subCopy_frame_1": {
+              "value": "subCopy_frame_1"
+            },
+            "subCopy_frame_2": {
+              "value": "subCopy_frame_2"
+            },
+            "subtitle_fontSize": {
+              "value": "subtitle_fontSize"
+            },
+            "mainCopy_fontSize": {
+              "value": "mainCopy_fontSize"
+            },
+            "subTitle_topValue": {
+              "value": "subTitle_topValue"
+            },
+            "subtitle_top": {
+              "value": "subtitle_top"
+            },
+            "font_color": {
+              "value": "font_color"
+            },
+            "cta_right_or_left": {
+              "value": "cta_right_or_left"
+            },
+            "logo_wide": {
+              "value": ""
+            },
+            "priceCopy": {
+              "value": "priceCopy"
+            }
           }
         }
       ]
@@ -198,5 +203,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 56348
+  "port": 51016
 }

@@ -170,7 +170,7 @@ html, body {
   color: rgb(255, 255, 255);
   font-family: FordCond-Medium;
   font-weight: "500 Medium";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   height: 240px;
   margin-block: 11.62px;
@@ -179,7 +179,7 @@ html, body {
   position: absolute;
   width: 290px;
   left: 20px;
-  top: 20px;
+  top: 17px;
 }
 #legal_bg {
   width: 320px;
