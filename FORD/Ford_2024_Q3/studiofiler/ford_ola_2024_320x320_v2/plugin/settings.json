@@ -1,20 +1,20 @@
 {
-  "id": "31035cf0-d5a1-4f7c-8c9c-33cefec93f18",
+  "id": "1d14075a-87d1-4275-9a9c-cf58b934ba07",
   "version": "1.4.1",
-  "name": "FORD_DISPLAY_300x600",
+  "name": "FORD_DISPLAY_320x320",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 300,
-        "height": 600,
+        "width": 320,
+        "height": 320,
         "isCustom": false
       }
     ],
     "customSizes": []
   },
   "placeholders": {
-    "fileName": "migrated from version 1.3.1 of the extension",
+    "fileName": "",
     "format": "CSV",
     "schema": {
       "frame_1_copy": {
@@ -45,7 +45,7 @@
         "type": "image",
         "source": "create"
       },
-      "logo_squared": {
+      "logo_wide": {
         "type": "image",
         "source": "create"
       },
@@ -81,10 +81,6 @@
         "type": "text",
         "source": "create"
       },
-      "subtitle_top": {
-        "type": "text",
-        "source": "create"
-      },
       "font_color": {
         "type": "text",
         "source": "create"
@@ -93,8 +89,16 @@
         "type": "text",
         "source": "create"
       },
-      "logo_wide": {
+      "logo_squared": {
         "type": "image",
+        "source": "create"
+      },
+      "subtitle_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "priceCopy": {
+        "type": "text",
         "source": "create"
       }
     },
@@ -125,7 +129,7 @@
             "bg_image": {
               "value": ""
             },
-            "logo_squared": {
+            "logo_wide": {
               "value": ""
             },
             "af_image": {
@@ -152,17 +156,20 @@
             "subTitle_topValue": {
               "value": "subTitle_topValue"
             },
-            "subtitle_top": {
-              "value": "subtitle_top"
-            },
             "font_color": {
               "value": "font_color"
             },
             "cta_right_or_left": {
               "value": "cta_right_or_left"
             },
-            "logo_wide": {
+            "logo_squared": {
               "value": ""
+            },
+            "subtitle_top": {
+              "value": "subtitle_top"
+            },
+            "priceCopy": {
+              "value": "priceCopy"
             }
           }
         }
@@ -171,14 +178,7 @@
   },
   "fonts": {
     "Google": [],
-    "Choreograph": [
-      {
-        "advertiserId": 639,
-        "url": "https://assets.lemonpi.io/a/font/639/FordCond-Medium?v=500",
-        "family": "FordCond-Medium",
-        "variant": "500"
-      }
-    ]
+    "Choreograph": []
   },
   "agency": {
     "id": 7,
@@ -188,5 +188,5 @@
     "id": 639,
     "name": "Ford"
   },
-  "port": 58233
+  "port": 58736
 }
