@@ -1,6 +1,6 @@
 {
   "id": "9114c832-a1e0-4124-a5a0-8a0d58c6c90b",
-  "version": "1.3.1",
+  "version": "1.4.1",
   "name": "products_re_tg_320x320",
   "description": "",
   "size": {
@@ -19,6 +19,8 @@
     ]
   },
   "placeholders": {
+    "fileName": "migrated from version 1.3.1 of the extension",
+    "format": "CSV",
     "schema": {
       "bgColor": {
         "type": "text",
@@ -109,68 +111,71 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "bgColor": {
-            "value": "bgColor"
-          },
-          "mainCopyStyle": {
-            "value": "mainCopyStyle"
-          },
-          "ctaButtonBg": {
-            "value": "ctaButtonBg"
-          },
-          "worldClick": {
-            "value": ""
-          },
-          "subline_fontSize": {
-            "value": "subline_fontSize"
-          },
-          "headline_color": {
-            "value": "headline_color"
-          },
-          "ctaCopy": {
-            "value": "ctaCopy"
-          },
-          "next": {
-            "value": ""
-          },
-          "headline_fontSize": {
-            "value": "headline_fontSize"
-          },
-          "ctaText": {
-            "value": "ctaText"
-          },
-          "subline_top": {
-            "value": "subline_top"
-          },
-          "subline_color": {
-            "value": "subline_color"
-          },
-          "prev": {
-            "value": ""
-          },
-          "headline": {
-            "value": "headline"
-          },
-          "logoImg": {
-            "value": ""
-          },
-          "subline": {
-            "value": "subline"
-          },
-          "campaignImg": {
-            "value": ""
-          },
-          "headline_top": {
-            "value": "headline_top"
-          },
-          "text_shadow": {
-            "value": "text_shadow"
-          },
-          "ctaCopyColor": {
-            "value": "ctaCopyColor"
-          },
-          "bgLeft": {
-            "value": ""
+          "isIncluded": true,
+          "data": {
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "mainCopyStyle": {
+              "value": "mainCopyStyle"
+            },
+            "ctaButtonBg": {
+              "value": "ctaButtonBg"
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "subline_fontSize": {
+              "value": "subline_fontSize"
+            },
+            "headline_color": {
+              "value": "headline_color"
+            },
+            "ctaCopy": {
+              "value": "ctaCopy"
+            },
+            "next": {
+              "value": ""
+            },
+            "headline_fontSize": {
+              "value": "headline_fontSize"
+            },
+            "ctaText": {
+              "value": "ctaText"
+            },
+            "subline_top": {
+              "value": "subline_top"
+            },
+            "subline_color": {
+              "value": "subline_color"
+            },
+            "prev": {
+              "value": ""
+            },
+            "headline": {
+              "value": "headline"
+            },
+            "logoImg": {
+              "value": ""
+            },
+            "subline": {
+              "value": "subline"
+            },
+            "campaignImg": {
+              "value": ""
+            },
+            "headline_top": {
+              "value": "headline_top"
+            },
+            "text_shadow": {
+              "value": "text_shadow"
+            },
+            "ctaCopyColor": {
+              "value": "ctaCopyColor"
+            },
+            "bgLeft": {
+              "value": ""
+            }
           }
         }
       ]
@@ -204,5 +209,5 @@
   "folders": {
     "selectedFolderId": 4390
   },
-  "port": 55145
+  "port": 53249
 }

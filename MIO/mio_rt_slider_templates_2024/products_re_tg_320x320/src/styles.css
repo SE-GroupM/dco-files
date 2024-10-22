@@ -31,26 +31,15 @@ html, body {
   position: absolute;
   font-family: "bulldog - Bold";
   text-align: center;
-  top: 17px;
+  top: 27px;
   left: 10px;
-  font-size: 25px;
+  font-size: 27px;
   line-height: 25px;
   width: 300px;
   opacity: 0;
   z-index: 1;
 }
-.subline {
-  position: absolute;
-  font-family: "bulldog - Regular";  
-  text-align: center;
-  top: 48px;
-  left: 10px;
-  font-size: 15px;
-  line-height: 17px;
-  width: 300px;
-  opacity: 0;
-  z-index: 1;
-}
+
 .promotion_text {
   position: absolute;
   font-family: "SourceSansPro-Bold";

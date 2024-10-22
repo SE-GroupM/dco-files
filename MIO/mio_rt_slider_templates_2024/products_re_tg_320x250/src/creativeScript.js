@@ -36,13 +36,11 @@ var local_content = content;
 var timeBetweenSlides = 3;
 
 function fitText() {
-  // Set the content of the headline and subline, and get their text content
+  // Set the content of the headline, and get their text content
   var headlineText = $('#headline').html(local_content.headline.value).text();
-  var sublineText = $('#subline').html(local_content.subline.value).text();
 
   // Adjust font size based on text length
   $('#headline').css('font-size', headlineText.length > 21 ? '20px' : '');
-  $('#subline').css('font-size', sublineText.length > 34 ? '14px' : '');
 }
 
   $('#headline').css({
@@ -52,13 +50,6 @@ function fitText() {
   'top': local_content.headline_top.value + 'px',
   });
 
-  //Append subline color
-  $('#subline').css({
-    'color': local_content.subline_color.value,
-    'font-size': local_content.subline_fontSize.value + 'px',
-    'line-height': local_content.subline_fontSize.value + 'px',
-    'top': local_content.subline_top.value + 'px',
-  });
  
   //Append background image
   $('#campaignImg').css({
@@ -290,12 +281,12 @@ if (!isNaN(text_shadow) && text_shadow >= 0 && text_shadow <= 100) {
   // Calculate the intensity factor for a more intense shadow
   let intensity = 6 + (text_shadow / 100) * 24; // This will give a range from 6px to 30px blur radius
 
-  $('#headline, #subline').css({
+  $('#headline').css({
     'text-shadow': `0px 0px ${intensity * 0.5}px rgba(0, 0, 0, ${alpha * 0.8})`
   });
   
 } else {
-  $('#headline, #subline').css({
+  $('#headline').css({
     'text-shadow': 'none'
   });
 }
@@ -315,7 +306,6 @@ if (mainCopyStyle === 'italic') {
 
     // Add animations to the timeline
     tl.to("#headline", 1, { opacity: 1 })
-      .to("#subline", 1, { opacity: 1 }, "-=1"); // Fades in subline at the same time as headline
     
 // Auto swipe every three seconds
 var autoSwipeAnimation = new TimelineMax({ repeat: -1 })
