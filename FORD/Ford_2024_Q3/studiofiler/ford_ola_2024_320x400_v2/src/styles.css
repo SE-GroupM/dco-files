@@ -29,7 +29,7 @@ html, body {
 #bg_image {
   position: absolute;
   width: 320px;
-  height: 320px;
+  height: 400px;
   left: 0px;
   top: 0px;
 }
@@ -41,7 +41,7 @@ html, body {
   height: 86px;
   color: #fff;
   left: 20px;
-  font-size: 23px;
+  font-size: 25px;
   text-align: left;
   width: 280px;
 }
@@ -53,7 +53,7 @@ html, body {
   height: 86px;
   color: #fff;
   left: 20px;
-  font-size: 23px;
+  font-size: 25px;
   text-align: left;
   width: 280px;
 }
@@ -64,9 +64,10 @@ html, body {
   font-family: FordCond-Medium;
   font-weight: "500 Medium";
   background-color: #0471f4;
+  font-weight: 400;
   margin-block: 13.28px;
   font-size: 13px;
-  top: 252px;
+  top: 326px;
   border-radius: 15px;
   left: 20px;
   min-width: 95px;
@@ -78,39 +79,42 @@ html, body {
 #subCopy_static {
   position: absolute;
   color: rgb(255, 255, 255);
+  font-weight: 400;
   opacity: 0;
   font-family: FordCond-Medium;
-  font-weight: "500 Medium";
+  font-weight: "500 Medium"; 
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 22px;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
   left: 20px;
-  width: 310px;
+  width: 305px;
   height: 22px;
-  top: 65px;
+  top: 70px;
 }
 
 #subCopy1 {
   position: absolute;
   color: rgb(255, 255, 255);
+  font-weight: 400;
   opacity: 1;
   font-family: FordCond-Medium;
   font-weight: "500 Medium";
   margin-block: 19.92px;
   margin-bottom: 19.92px;
   margin-top: 19.92px;
-  width: 275px;
+  width: 305px;
   height: 70.49px;
   left: 20px;
   text-align: left;
-  top: 65px;
-  font-size: 15px;
+  top: 70px;
+  font-size: 16px;
 }
 #subCopy2 {
   position: absolute;
   color: rgb(255, 255, 255);
+  font-weight: 400;
   opacity: 1;
   font-family: FordCond-Medium;
   font-weight: "500 Medium";
@@ -118,12 +122,12 @@ html, body {
   margin-bottom: 19.92px;
   margin-top: 19.92px;
   line-height: 18px;
-  width: 275px;
+  width: 305px;
   height: 70.49px;
   left: 20px;
   text-align: left;
-  top: 65px;
-  font-size: 15px;
+  top: 70px;
+  font-size: 16px;
 }
 
 #logo_wide {
@@ -131,15 +135,15 @@ html, body {
   width: 156px;
   height: 38px;
   right: 20px;
-  top: 262.5px;
+  top: 338px;
 }
 
 #logo_squared {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   right: 20px;
-  top: 252px;
+  top: 327px;
 }
 
 #af_image {
@@ -160,13 +164,14 @@ html, body {
   color: rgb(255, 255, 255);
   font-size: 11px;
   left: 20px;
-  top: 298px;
+  top: 375px;
 }
 #legal_txt {
   color: rgb(255, 255, 255);
   font-family: FordCond-Medium;
   font-weight: "500 Medium";
   font-size: 11px;
+  font-weight: 400;
   height: 240px;
   margin-block: 11.62px;
   margin-bottom: 11.62px;
@@ -174,11 +179,11 @@ html, body {
   position: absolute;
   width: 290px;
   left: 20px;
-  top: 10px;
+  top: 17px;
 }
 #legal_bg {
   width: 320px;
-  height: 320px;
+  height: 400px;
   background-color: rgba(128, 128, 128, 0.8);
   position: absolute;
   top: 0px;
@@ -187,7 +192,7 @@ html, body {
 
 #worldClick {
   width: 320px;
-  height: 320px;
+  height: 400px;
   cursor: pointer;
   position: absolute;
   top: 0;

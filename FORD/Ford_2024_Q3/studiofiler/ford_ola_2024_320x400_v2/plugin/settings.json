@@ -1,17 +1,22 @@
 {
-  "id": "1d14075a-87d1-4275-9a9c-cf58b934ba07",
+  "id": "8f1e510d-587e-4802-9d95-454fc98efd34",
   "version": "1.4.1",
-  "name": "FORD_DISPLAY_320x320",
+  "name": "FORD_DISPLAY_320x400",
   "description": "",
   "size": {
     "sizes": [
       {
         "width": 320,
-        "height": 320,
-        "isCustom": false
+        "height": 400,
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
   },
   "placeholders": {
     "fileName": "",
@@ -198,5 +203,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 59454
+  "port": 59419
 }
