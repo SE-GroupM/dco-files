@@ -198,7 +198,7 @@ var timeBetweenSlides = 3;
     
     Slider.create({
       slidesData: local_content.product_collection.value,
-      width: 300,
+      width: 280,
       setSlideContent: function(slideDiv, slideData, slideIndex) {
         // Find product image div and append image
         $(slideDiv).find("#productImage").css("background-image","url("+slideData.productImage.value+")");
@@ -212,6 +212,7 @@ var timeBetweenSlides = 3;
   function truncate() {
   // Select all elements with class 'product-name'
   const elements = document.querySelectorAll('.productName');
+
 
   elements.forEach(element => {
     // Check if text length is more than 25 characters and truncate if necessary

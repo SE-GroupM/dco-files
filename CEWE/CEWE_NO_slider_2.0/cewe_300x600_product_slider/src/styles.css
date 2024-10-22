@@ -102,7 +102,7 @@ html, body {
   top: 200px;
   height: 290px;
   width: 300px;
-  left: 0px;
+  left: -300px;
   z-index: 20;
 }
 .slide {
