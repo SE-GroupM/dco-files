@@ -59,22 +59,45 @@ body {
   position: absolute;
   width: 640px;
   height: auto;
-  top: 355px;
-  bottom: 0px;
+  top: auto;
+  bottom: 70px;
   background: #000;
+}
+
+/* Add this pseudo-element for the shadow effect */
+.panel_container::before {
+  content: "";
+  position: absolute;
+  top: -46px; /* Position it above the container */
+  left: 0;
+  right: 0;
+  bottom: 100%; /* Extend the shadow downwards */
+  height: 46px; /* Adjust the height to control the shadow area */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Gradient shadow */
+  pointer-events: none; /* Ensures the pseudo-element doesn't interfere with interactions */
+  z-index: 2; /* Ensure the shadow is above the panel */
+}
+
+/* Copy container flex div */
+.copyContainer {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
 }
 
 /* Logo image div */
 .logo {
-  width: 250px;
-  height: 70px;
+  position: absolute;
+  border-left: solid #e50914 1px;
+  left: 310px;
+  width: 200px;
+  height: 60px;
   z-index: 100;
-  margin: auto;
-  margin-bottom: 25px;
+  padding-left: 35px;
+  bottom: 20px;
+  top: auto;
+  opacity: 0;
 }
 
 /* Main copy div */
@@ -85,22 +108,26 @@ body {
   padding: 0px 25px 10px 25px;
   text-align: center;
   color: white;
-  font-family: "Netflix Sans Regular Comp";
-  font-size: 25px;
+  font-family: "NetflixSans_UCdBd";
+  font-size: 35px;
   opacity: 0;
 }
 
 /* Cta button div */
 .cta_copy {
+  position: absolute;
   background-color: #e50914;
   padding: 6px 13px 8px 13px;
   text-align: center;
   color: #FFF;
   font-family: "Netflix Sans Bold Comp";
-  font-size: 19px;
+  font-size: 18px;
   max-width: fit-content; /* Take width from cta content */
-  margin: auto;
   opacity: 0;
+  right: 365px;
+  bottom: 30px;
+  left: auto;
+  top: auto;
 }
 
 /* World click div */

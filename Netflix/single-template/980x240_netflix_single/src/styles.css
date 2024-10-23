@@ -87,6 +87,7 @@ body {
   color: white;
   font-family: "Netflix Sans Regular Comp";
   font-size: 18px;
+  opacity: 0;
 }
 /* Cta button div */
 .cta_copy {
@@ -98,6 +99,7 @@ body {
   font-size: 14px;
   max-width: fit-content; /* Take width from cta content */
   margin: auto;
+  opacity: 0;
 }
 
 /* World click div */

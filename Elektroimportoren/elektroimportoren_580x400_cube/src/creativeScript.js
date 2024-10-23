@@ -37,6 +37,14 @@ window.addEventListener('lemonpi.content/ready', event => {
   const products = local_content.products.value;
   const main_copy_font_size = local_content.main_copy_size.value;
   const main_copy_line_height = parseInt(main_copy_font_size) + 3 + 'px';
+  const container_color = local_content.container_color.value;
+  const container_copy_color = local_content.container_copy_color.value;
+  const cta_bg_color = local_content.cta_bg_color.value;
+  const cta_text_color = local_content.cta_text_color.value;
+  const product_frame_color = local_content.product_frame_color.value;
+  const product_price_text_color = local_content.product_price_text_color.value;
+  const promotion_text_color = local_content.promotion_text_color.value;
+  const promotion_bg_color = local_content.promotion_bg_color.value;
 
   let rotation = 0;
   let currentProduct = 0;
@@ -54,6 +62,29 @@ window.addEventListener('lemonpi.content/ready', event => {
   $('#main_copy').css({
     'font-size': main_copy_font_size + 'px',
     'line-height': main_copy_line_height,
+    'color': container_copy_color,
+  });
+
+  $('#right_box').css({
+    'background-color': container_color,
+  });
+  
+  $('.cta-text').css({
+    'background-color': cta_bg_color,
+    'color': cta_text_color,
+  });
+  
+  $('.cube__face').css({
+    'border-color': product_frame_color,
+  });
+  
+  $('.product-price').css({
+    'color': product_price_text_color,
+  });
+
+  $('.promotion_price').css({
+    'color': promotion_text_color,
+    'background-color': promotion_bg_color,
   });
 
   $('#worldClick').click(onClick);
@@ -118,8 +149,9 @@ window.addEventListener('lemonpi.content/ready', event => {
         } else {
             // If the discount is valid, update the product price and display the discount
         productPriceElement.html(promotionPrice + ",-");
-        promotionPriceElement.html("Kampanje - " + discountPercentage + "%");            }
+        promotionPriceElement.html(discountPercentage + "% rabatt");            }
     } else {
+      promotionPriceElement.remove();
     }
   }
   function truncateProductName() {

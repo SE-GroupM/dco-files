@@ -1,0 +1,128 @@
+* { 
+  box-sizing: border-box;
+} 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Panel container flex div */
+.left_panel {
+  position: absolute;
+  width: 290px;
+  height: 300px;
+  top: 0px;
+  left:0px;
+  z-index: 0;
+}
+/* Panel container flex div */
+.img_bg {
+  position: absolute;
+  right:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.cewe_logo{
+  position: absolute;
+  width: 176px;
+  height: 44px;
+  left: 30px;
+  top: 26px;
+}
+.kampanje_logo {
+  position: absolute;
+  top: 30px;
+  left: 780px;
+  padding: 7px 15px 5px 15px; /*Padding top, right, bottom, left */
+  text-align: center;
+  color: #000;
+  font-family: "CEWEHead-Bold";
+  font-size: 27px;
+  max-width: fit-content; /* Take width from cta content */
+  margin: auto;
+  border-radius: 2px; /* Making border radius */
+  z-index: 30;
+}
+.fotobok_logo{
+  position: absolute;
+  display: flex;
+  width: 170px;
+  height: auto;
+  left: 13px;
+  top: 0px;
+  z-index: 20;
+}
+/* Main copy div */
+.mainCopy {
+  position: absolute;
+  width: 270px;
+  left: 30px;
+  top: 105px;
+  /* padding: 0px 20px 10px 20px;
+  text-align: center; */
+  color: white;
+  font-family: "CEWEHead-Bold";
+  font-size: 26px;
+  line-height: 28px;
+}
+/* Main copy div */
+.subCopy {
+  position: absolute;
+  width: 268px;
+  left: 30px;
+  top: 176px;
+  /* padding: 0px 20px 10px 20px;
+  text-align: center; */
+  color: white;
+  font-family: "CEWEHead-Regular";
+  font-size: 18px;
+  line-height: 20px;
+}
+/* Cta button div */
+.ctaText {
+  position: absolute;
+  top: 240px;
+  left: 30px;
+  padding: 5px 15px 5px 15px; /*Padding top, right, bottom, left */
+  text-align: center;
+  color: #000;
+  font-family: "CEWEHead-Regular";
+  font-size: 15px;
+  max-width: fit-content; /* Take width from cta content */
+  margin: auto;
+  border-radius: 8px; /* Making border radius */
+}
+/* World click div */
+.worldClick {
+  width: 980px;
+  height: 300px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}

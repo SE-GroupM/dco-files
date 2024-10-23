@@ -1,0 +1,185 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Background image asset */
+.bgImage {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Logo image asset */
+.logo {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+  width: 120px;
+  height: 30px;
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Product overlay image asset */
+.productOverlay {
+  position: absolute;
+  top: 145px;
+  left: 130px;
+  width: 250px;
+  height: 140px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Product container */
+.productPanel {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+}
+/* Product oldPrice */
+.oldPrice {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 35px;
+  font-size: 16px;
+  font-family: "Mikro-Bold";
+  color: #000;
+  text-decoration: line-through;
+}
+/* Product price */
+.productPrice {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 45px;
+  font-size: 50px;
+  font-family: "Mikro-black-otf";
+  color: #eb001e;
+  letter-spacing: -3px;
+}
+/* Product price currency ex. Kr */
+.priceCurrency {
+  margin-left: 0px;
+  font-size: 14px;
+  font-family: "Mikro-Bold";
+  letter-spacing: 0px;
+}
+/* Product price currency ex. Kr */
+.priceCurrencySup {
+  margin-left: -22px;
+  font-size: 14px;
+  font-family: "Mikro-Bold";
+  letter-spacing: 0px;
+}
+/* Sup class on product price */
+sup {
+  font-size: 50%;
+  position: relative;
+}
+/* Product image asset */
+.productImage {
+  position: absolute;
+  top: 60px;
+  left: 140px;
+  width: 160px;
+  height: 180px;
+  right: 10px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Product name */
+.productName {
+  position: absolute;
+  left: 10px;
+  top: 105px;
+  font-size: 12px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+
+/* Product container ex 4 för */
+.productContainer {
+  position: absolute;
+  top: 10px;
+  left: 105px;
+  width: 65px;
+  height: 65px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Product name */
+.product_1_subCopy {
+  position: absolute;
+  left: 10px;
+  top: 115px;
+  font-size: 12px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+/* Product name */
+.product_2_subCopy {
+  position: absolute;
+  left: 10px;
+  top: 115px;
+  font-size: 12px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+/* Product price */
+.product_1_mainCopy {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 37px;
+  font-size: 30px;
+  line-height: 32px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  letter-spacing: -1px;
+}
+/* Product price */
+.product_2_mainCopy {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 37px;
+  font-size: 30px;
+  line-height: 32px;
+  font-family: "Trim-Bold_otf";
+  color: #eb001e;
+  letter-spacing: -1px;
+}
+
+

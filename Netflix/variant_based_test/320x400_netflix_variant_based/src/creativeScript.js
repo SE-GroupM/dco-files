@@ -46,11 +46,16 @@ window.addEventListener('lemonpi.content/ready', event => {
   //// ANIMATIONS /////
   ////////////////////
 
-  new TimelineMax({ repeat: 0, delay: 0.2 }) // starts the entire timeline after a 1.5-second delay
-  .to('#main_copy', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
-  .to('#cta_copy, #logo', 0.3, { autoAlpha: 1 }) // fades in #imgCopy over 1.5 seconds
-  .fromTo('#main_copy', 0.2, { scale: 1 }, { scale: 1.1, repeat: 1, yoyo: true, ease: Power1.easeInOut },2); // "inflates" and "deflates" #subCopy
-  
+// Create a new timeline with initial delay
+var tl = new TimelineMax({ repeat: 0, delay: 0 });
+
+// Animate #leftImage to zoom in and move upwards
+tl.fromTo('#leftImage', 3, { scale: 1, y: 0 }, { scale: 1.1, y: -15, ease: Power2.easeOut }, 0)
+  // Smooth and slow fade and zoom in #main_copy, starts 0.2 seconds after #leftImage
+  .fromTo('#main_copy', 1.6, { autoAlpha: 0, scale: 0.7 }, { autoAlpha: 1, scale: 1, ease: Power2.easeOut }, 0.5)
+  // Fades in #cta_copy and #logo over 0.6 seconds, starts halfway through the #main_copy animation
+  .to('#cta_copy, #logo', 0.6, { autoAlpha: 1 }, "-=1.6");
+
   // Check if we're going to dislay video or images 
   if (useVideo) {
 

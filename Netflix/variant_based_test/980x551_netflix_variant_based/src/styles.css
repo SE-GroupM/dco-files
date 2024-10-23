@@ -59,13 +59,27 @@ body {
   position: absolute;
   width: 435px;
   height: 551px;
-  left:auto;
+  left: auto;
   right: 0px;
   background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 0;
+}
+
+/* Add this pseudo-element for the shadow effect */
+.panel_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -36px; /* Position it to the left of the container */
+  right: 100%; /* Extend the shadow to the left */
+  bottom: 0;
+  width: 36px; /* Adjust the width to control the shadow area */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Gradient shadow */
+  pointer-events: none; /* Ensures the pseudo-element doesn't interfere with interactions */
+  z-index: 25; /* Ensure the shadow is above the panel */
 }
 
 /* Logo image div */
@@ -85,8 +99,8 @@ body {
   padding: 0px 20px 10px 20px;
   text-align: center;
   color: white;
-  font-family: "Netflix Sans Regular Comp";
-  font-size: 23px;
+  font-family: "NetflixSans_UCdBd";
+  font-size: 32px;
   opacity: 0;
 }
 
@@ -121,5 +135,5 @@ body {
 
 /* Seenthis player control */
 .seenthis-control-bar {
-  z-index: 200;
+  z-index: 50;
 }

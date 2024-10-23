@@ -222,7 +222,7 @@ html, body {
 .container {
   perspective: 1000px;
   margin-top: 50px;
-  margin-left: 55px; 
+  margin-left: 50px; 
   position: absolute;
 }
 .cube__face--front {

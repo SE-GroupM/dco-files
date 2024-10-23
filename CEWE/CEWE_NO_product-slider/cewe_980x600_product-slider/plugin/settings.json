@@ -1,0 +1,124 @@
+{
+  "id": "fcbf01ec-2d4e-4523-a883-8d7e326435bb",
+  "version": "1.3.0",
+  "name": "cewe_no_slider_980x600",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaText": {
+        "type": "text",
+        "source": "create"
+      },
+      "copyColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "bgImage": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "logo_bg_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "display_product_price": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "mainCopy": {
+            "value": "mainCopy"
+          },
+          "ctaText": {
+            "value": "ctaText"
+          },
+          "copyColor": {
+            "value": "copyColor"
+          },
+          "bgColor": {
+            "value": "bgColor"
+          },
+          "logo": {
+            "value": ""
+          },
+          "bgImage": {
+            "value": ""
+          },
+          "worldClick": {
+            "value": ""
+          },
+          "logo_bg_color": {
+            "value": "logo_bg_color"
+          },
+          "display_product_price": {
+            "value": "display_product_price"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Bold?v=700",
+        "family": "CEWEHead-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Regular?v=400",
+        "family": "CEWEHead-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 14,
+    "name": "Xaxis Norway"
+  },
+  "advertiser": {
+    "id": 988,
+    "name": "Cewe"
+  },
+  "folders": {
+    "selectedFolderId": 3973
+  },
+  "port": 61310
+}

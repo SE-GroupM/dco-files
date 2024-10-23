@@ -36,24 +36,25 @@ html, body {
 /* Copy container to flex copy */
 .copy_container {
   position: absolute;
-  width: 450px;
-  height: 100px;
-  left: 20px;
+  width: 580px;
+  height: 65px;
+  left: 0px;
   top: 255px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 /* Main copy */
 .main_copy {
   position: absolute;
-  width: 395px;
-  height: 158px;
+  width: 580px;
+  height: 65px;
   font-family: 'Roboto - Black';
   font-weight: 900;
   text-align: center;
   top: 0px;
-  left: 75px;
+  left: 0px;
   color: #000000;
   z-index: 15;
 }

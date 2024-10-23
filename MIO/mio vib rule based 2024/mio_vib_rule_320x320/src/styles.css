@@ -1,0 +1,145 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Style of copy frames */
+.copy_frames {
+  position: absolute;
+  display: flex;
+  top: 48px;
+  font-size: 20px;
+  color: #fff;
+  font-family: "bulldog - Bold";  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  z-index: 10;
+}
+/* Style of copy frame 1 */
+#copy_frame_1 {
+  position: absolute;
+  opacity: 0;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+/* Style of copy frame 2 */
+#copy_frame_2 {
+  position: absolute;
+  opacity: 0;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+/* Style of copy frame 2 */
+#copy_static {
+  opacity: 1;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+/* Style of span in copy */
+.italic {
+  font-family: "Bulldog Bold Italic";
+}
+.sub_copy {
+  position: absolute;
+  font-family: "clarice regular";
+  color: #FFFFFF;
+  top: 15px;
+  width: 320px;
+  text-align: center;
+  font-size: 16px;
+}
+/* Container for your creative */
+.cta-container {
+  width: 320px; /* Fixed width of the creative */
+  display: flex; /* Enables flexbox for this container */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; /* Example height, adjust as needed */
+}
+.cta {
+  position: fixed;
+  background-color: white; /* Background color of the button */
+  color: #000000;
+  padding: 7px 12px; /* Padding inside the button */
+  text-align: center; /* Ensures text is centered within the button */
+  border: none; /* Removes the default border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  text-decoration: none; /* Removes underline from links if applied to <a> tag */
+  font-size: 13px; /* Font size of the button text */
+  border-radius: 10px; /* Optional: adds rounded corners to the button */
+  font-family: "Bulldog - Medium";
+  top: 225px; /* Adjust as necessary */
+}
+.player {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+}
+.bg_image {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 320px;
+  max-width: 320px;
+  left: 0px;
+  top: 0px;
+  background-color: #000000;
+}  
+/* Logo image position */
+.logo {
+  position: fixed;
+  top: 270px; /* Center vertically */
+  left: 130px; /* Center horizontally */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 31px; /* Height of the logo */
+  width: 320px; /* Width of the logo */
+}
+
+/* World click div */
+.worldClick {
+  width: 320px;
+  height: 320px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 10;
+}

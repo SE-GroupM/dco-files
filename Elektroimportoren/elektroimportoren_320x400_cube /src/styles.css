@@ -224,6 +224,7 @@ html, body {
   margin-top: 50px;
   margin-left: 55px; 
   position: absolute;
+  left: 5px;
 }
 .cube__face--front {
   transform: translateZ(150px); /* Adjusted translateZ */

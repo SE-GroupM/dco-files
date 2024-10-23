@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  #creative_container {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  /* Container class from Figma */
+  .Frame_320X480Multi {
+    width: 320px;
+    height: 480px;
+    background: #FFF;
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* CTA copy */
+  #cta_copy {
+    display: flex;
+    width: 105px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Netflix Sans Medium";
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    line-height: normal;
+    position: fixed;
+    left: 185px;
+    top: 419px;
+    z-index: 100;
+    background-color: #e50914;
+    opacity: 0;
+  }
+  /*Added class for player*/
+  .player {
+    position: absolute;
+    width: 320px;
+    height: 180px;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+  }
+  /* Title image */
+  #title_image {
+    position: relative;
+    display: block;
+  }
+  /* Right panel container */
+  #panel_container {
+    width: 320px;
+    height: 300px;
+    background: #000;
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 180px;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+   /* Title covers on right panel */
+  .covers {
+    width: 280px;
+    height: 110px;
+    background: #000;
+    display: block;
+    position: fixed;
+    /* use hidden if covers should remain inside covers-class */
+    /* overflow: hidden; */
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 272px;
+    /* top: 80px; */
+    box-sizing: border-box;
+  }
+  /* Title covers hover state */
+  #covers img:hover {
+    cursor: pointer;
+    border: 1px solid rgb(44, 44, 44);
+    transition: transform 0.5s;
+    transform: scale(1.125);
+    /* Shadow styles */
+    box-shadow: 0 4px 8px rgba(97, 97, 97,97); 
+  }
+  /* Copy on right panel */
+  #main_copy {
+    width: 280px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    z-index: 1;
+    font-size: 15px;
+    /* Change between Regular, Medium or Bold */
+    font-family: "Netflix Sans Regular Comp";
+    line-height: normal;
+    position: fixed;
+    left: 20px;
+    top: 206px;
+  }
+/* Logo on right panel */
+  #logo_big {
+    z-index: 1;
+    height: 28px;
+    left: 24px;
+    top:415px;
+    position: absolute;
+  }
+
+  /* World click area */
+  #worldClick {
+    width: 320px;
+    height: 180px;
+    display: block;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 3;
+  }
+   /* World click area */
+  #clickAreaLEFT {
+    z-index: 1;
+    position: absolute;
+    width: 320px;
+    height: 480px;
+  }
+  /* Click area */
+  /* #clickArea {
+    z-index: 1;
+    clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 4% 43%, 96% 43%, 96% 93%, 4% 92%, 2% 100%, 100% 100%, 100% 0%);
+    position: absolute;
+    width: 100%;
+    height: 480px;
+  } */
+  
+  .clickable {
+    /* Common styles for clickable items */
+    cursor: pointer;
+    /*margin: 10px;*/
+  }
+  

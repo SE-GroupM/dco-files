@@ -1,0 +1,226 @@
+{
+  "id": "ecd5e7a0-0818-403d-860c-94f200dd8b90",
+  "version": "1.3.0",
+  "name": "plantagen_468x400_FI_2024",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 468,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 468,
+        "height": 400
+      }
+    ]
+  },
+  "placeholders": {
+    "schema": {
+      "ctaText": {
+        "type": "text",
+        "source": "create"
+      },
+      "badgeImg_1": {
+        "type": "image",
+        "source": "create"
+      },
+      "content_creative_border": {
+        "type": "text",
+        "source": "create"
+      },
+      "drop": {
+        "type": "image",
+        "source": "create"
+      },
+      "bigCta": {
+        "type": "text",
+        "source": "create"
+      },
+      "mainCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "world_click": {
+        "type": "click",
+        "source": "create"
+      },
+      "badgeImg_2": {
+        "type": "image",
+        "source": "create"
+      },
+      "dynamic_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "content_creative_background_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "logoColor_D82316_FFF_ebe2d6_474542": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "mainCopy_fontsize": {
+        "type": "text",
+        "source": "create"
+      },
+      "mainCopy_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_copy_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "mainCopy_shadow_yes_no": {
+        "type": "text",
+        "source": "create"
+      },
+      "overlay_yes_no": {
+        "type": "text",
+        "source": "create"
+      },
+      "logoColorSlider": {
+        "type": "text",
+        "source": "create"
+      },
+      "logoColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "overlay_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "overlay_opacity": {
+        "type": "text",
+        "source": "create"
+      },
+      "truncateName": {
+        "type": "text",
+        "source": "create"
+      },
+      "truncateDescription": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_shadow": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "ctaText": {
+            "value": "ctaText"
+          },
+          "badgeImg_1": {
+            "value": ""
+          },
+          "content_creative_border": {
+            "value": "content_creative_border"
+          },
+          "drop": {
+            "value": ""
+          },
+          "bigCta": {
+            "value": "bigCta"
+          },
+          "mainCopy": {
+            "value": "mainCopy"
+          },
+          "world_click": {
+            "value": ""
+          },
+          "badgeImg_2": {
+            "value": ""
+          },
+          "dynamic_image": {
+            "value": ""
+          },
+          "content_creative_background_color": {
+            "value": "content_creative_background_color"
+          },
+          "logoColor_D82316_FFF_ebe2d6_474542": {
+            "value": "logoColor_D82316_FFF_ebe2d6_474542"
+          },
+          "cta_color": {
+            "value": "cta_color"
+          },
+          "mainCopy_fontsize": {
+            "value": "mainCopy_fontsize"
+          },
+          "mainCopy_color": {
+            "value": "mainCopy_color"
+          },
+          "cta_copy_color": {
+            "value": "cta_copy_color"
+          },
+          "mainCopy_shadow_yes_no": {
+            "value": "mainCopy_shadow_yes_no"
+          },
+          "overlay_yes_no": {
+            "value": "overlay_yes_no"
+          },
+          "logoColorSlider": {
+            "value": "logoColorSlider"
+          },
+          "logoColor": {
+            "value": "logoColor"
+          },
+          "overlay_color": {
+            "value": "overlay_color"
+          },
+          "overlay_opacity": {
+            "value": "overlay_opacity"
+          },
+          "truncateName": {
+            "value": "truncateName"
+          },
+          "truncateDescription": {
+            "value": "truncateDescription"
+          },
+          "logo_shadow": {
+            "value": "logo_shadow"
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 518,
+        "url": "https://assets.lemonpi.io/a/font/518/plantagen-bold?v=700",
+        "family": "plantagen-bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 518,
+        "url": "https://assets.lemonpi.io/a/font/518/plantagen-regular?v=400",
+        "family": "plantagen-regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 518,
+    "name": "Plantagen FI"
+  },
+  "port": 60688
+}

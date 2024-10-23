@@ -1,0 +1,250 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #f0f0f0;
+}
+/* Main copy on side panel */
+.headline {
+  position: absolute;
+  font-family: "bulldog - Bold";
+  text-align: center;
+  top: 50px;
+  left: 20px;
+  line-height: 60px;
+  width: 520px;
+  font-size: 60px;
+  opacity: 0;
+  z-index: 60;
+}
+.subline {
+  position: absolute;
+  font-family: "bulldog - Regular";
+  text-align: center;
+  width: 520px;
+  left: 20px;
+  font-size: 30px;
+  line-height: 32px;
+  opacity: 0;
+  z-index: 60;
+}
+.promotion_text {
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  text-align: center;
+  top: 125px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 12px;
+  z-index: 1;
+  background-color: #d74621;
+  border-radius: 10px;
+  padding: 4px 10px; /* Adds 10px padding top and bottom, 20px left and right */
+}
+/* Background image on side panel */
+.campaignImg {
+  position: absolute;
+  height: 360px;
+  width: 560px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 50;
+}
+/* bgColor on side panel */
+#bgColor {
+  position: absolute;
+  height: 360px;
+  width: 660px;
+  left: 550px;
+  z-index: 1;
+}
+/* Logo image on side panel */
+.logoImg {
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 105px;
+  top: 280px;
+  left: 227px;
+  background-size: contain;
+  z-index: 60;
+}
+.slider {
+  position: absolute;
+  top: 20px;
+  height: 230px;
+  width: 308px;
+  left: 602px;
+  z-index: 20;
+}
+.slide {
+  position: relative;
+  height: 200px;
+  width: 320px;
+  top: 0px;
+  z-index: 15;
+}
+/* Product imafe in product slider */
+.product_image {
+  position: absolute;
+  height: 88px;
+  width: 270px;
+  top: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+/* Card container */
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center child elements horizontally */
+  height: 320px;
+  width: 300px;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+/* Product name in product slider */
+.product_name {
+  position: absolute;
+  font-family: "SourceSansPro-Bold";
+  font-size: 20px;
+  line-height: 17px;
+  color: #000000;
+  top: 160px;
+  text-align: center;
+}
+
+/* Product description text */
+.description_text {
+  position: absolute;
+  font-family: "SourceSansPro-Regular";
+  text-align: left;
+  font-size: 18px;
+  line-height: 17px;
+  color: #000000;
+  text-align: center;
+  top: 190px;
+}
+
+/* Container for prices */
+.price_container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 5px; /* Space between prices */
+  top: 225px; /* Adjust this value to position the container from the top */
+}
+
+/* Regular price */
+.product_regular_price, .salePrice {
+  font-family: "SourceSansPro-Bold";
+  font-size: 23px;
+  line-height: 16px;
+  color: #000;
+  text-align: center;
+}
+
+/* Sale price */
+.salePrice {
+  color: #c30c15;
+}
+
+/* Old price */
+.product_old_price {
+  font-family: "SourceSansPro-Bold";
+  text-decoration: line-through;
+  font-size: 23px;
+  line-height: 16px;
+  color: #000;
+  text-align: center;
+}
+
+/* CTAs in product slider */
+.ctaText {
+  position: fixed;
+  top: 270px;
+  font-family: "SourceSansPro-Bold";
+  text-align: center; /* Ensures text is centered within the button */
+  border: none; 
+  font-size: 18px;
+  color: #fff;
+  background-color: #000000;
+  padding: 7px 10px;
+  max-width: 160px;
+  z-index: 40;
+  border-radius: 12px;
+  padding: 4px 15px;
+}
+.next {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 32px;
+  top: 160px;
+  left: 1222px;
+  z-index: 60;
+}
+.prev {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 32px;
+  top: 160px;
+  left: 570px;
+  z-index: 60;
+}
+.worldClick {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 360px;
+  width: 980px;
+}
+
+.bgBox1 {
+  position: absolute; 
+  top: 0px;
+  left: 552px;
+  width: 50px;
+  height: 360px;
+  z-index: 20;
+}
+.bgBox2 {
+  position: absolute; 
+  top: 0px;
+  left: 1208px;
+  width: 50px; 
+  height: 360px;
+  z-index: 20;
+}
