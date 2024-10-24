@@ -51,6 +51,10 @@ window.addEventListener('lemonpi.content/ready', event => {
     //import content of price currenly from placeholder
     let price_currency_content = local_content.price_currency_content.value;
 
+
+    /////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////
     var videoPlaceholder = local_content.video_placeholder.value;
 
     if (videoPlaceholder !== ''){
@@ -118,6 +122,7 @@ window.addEventListener('lemonpi.content/ready', event => {
         playButton.innerHTML = 'Play Video';
         playButton.addEventListener('click', function() {
           if (videoElement.paused) {
+            console.log('videon verkar vara pausad...')
             videoElement.play();
             openFullscreen();
           } else {
@@ -157,6 +162,8 @@ window.addEventListener('lemonpi.content/ready', event => {
         options.muteButton = false; // Disable mute if 'off'
       }
     } // end of else-statement
+
+
 
 
      //////////////////
