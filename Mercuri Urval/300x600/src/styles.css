@@ -99,10 +99,10 @@ html, body {
   position: absolute;
   width: 124px;
   height: 29px;
-  top: 8px;
+  top: 10px;
   letter-spacing: -0.001em;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 14px;
   color: rgba(255, 255, 255, 1);
   white-space: pre-wrap;

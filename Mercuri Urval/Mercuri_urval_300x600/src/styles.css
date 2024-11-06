@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 728px;
-  height: 90px;
+  width: 300px;
+  height: 600px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +34,7 @@ html, body {
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   background-color: #006bb5;
   position: absolute;
-  width: 162px;
+  width: 178px;
   height: 302px;
   left: 1px;
   top: 0px;
@@ -43,18 +43,20 @@ html, body {
 }
 #right_panel{
   position: absolute;
-  width: 1105px;
-  height: 303px;
-  left: 530px;
-  top: 0px;
+  width: 140px;
+  height: 244px;
+  left: auto;
+  right: 20px;
+  top: auto;
+  bottom: 0px;
 }
 
 #left_panel{
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-  clip-path: polygon(0 0, 0% 140%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
   position: absolute;
-  width: 70px;
-  height: 90px;
+  width: 87px;
+  height: 144px;
   left: 0px;
   background-color: #006bb5;
   background-repeat: no-repeat;
@@ -63,8 +65,8 @@ html, body {
   position: absolute;
   width: 279px;
   height: 292px;
-  left: 161px;
-  top: -29px;
+  left: 0px;
+  top: 27px;
   background: url(4.png);
   background-repeat: no-repeat;
   background-size: 259px, 282px
@@ -85,90 +87,92 @@ html, body {
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   position: absolute;
-  width: 80px;
-  height: 20px;
-  left: 569px;
-  top: 62px;
+  width: 124px;
+  height: 29px;
+  left: 120px;
+  top: 430px;
   background-color: #ff6052;
   background-repeat: no-repeat;
-  background-size: 80px, 20px;
+  background-size: 140px, 35px;
 }
 .ctaText{
   position: absolute;
-  width: 80px;
-  height: 20px;
-  top: 6px;
+  width: 124px;
+  height: 29px;
+  top: 10px;
   letter-spacing: -0.001em;
   text-align: center;
-  font-size: 9px;
-  line-height: 9px;
+  font-size: 13px;
+  line-height: 14px;
   color: rgba(255, 255, 255, 1);
   white-space: pre-wrap;
-  font-family: 'HelveticaNeueLTStd-Heavy';
+  font-family: "HelveticaNeueLTStd-Heavy";
   font-weight: normal;
   font-style: normal;
 }
 
 .mercurilogo{
   position: absolute;
-  width: 30px;
-  height: 40px;
-  left: 150px;
-  top: 55px;
+  width: 40px;
+  height: 50px;
+  bottom: 0px;
+  right: 0px;
+  left: auto;
+  top: auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .geowhiteblue{
   position: absolute;
-  width: 12px;
-  height: 14px;
-  left: 75px;
-  top: 68px;
+  width: 14px;
+  height: 16px;
+  left: 20px;
+  top: 370px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .CopyDiv {
   position: absolute;
-  top: 10px;
-  left: 75px;
-  width: 480px;
-  height: 60px;
+  top: 170px;
+  left: 20px;
+  width: 260px;
+  height: 200px;
 }
 
 .companyName {
   letter-spacing: -0.001em;
+  margin-bottom: 10px;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
-  font-family: 'HelveticaNeueLTStd-Heavy';
+  font-family: "HelveticaNeueLTStd-Heavy";
   font-weight: normal;
   font-style: normal;
-  margin-bottom: 2px;
 }
 
 .mainText {
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 24px;
+  line-height: 26px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
-  font-family: 'HelveticaNeueLTStd-Heavy';
+  font-family: "HelveticaNeueLTStd-Heavy";
   font-weight: normal;
   font-style: normal;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 
 .subText {
   left: 0px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgb(0 64 125);
   white-space: pre-wrap;
   font-family: 'Arial';
@@ -178,13 +182,13 @@ html, body {
 
 .locationText{
   position: absolute;
-  width: 430px;
-  left: 98px;
-  top: 70px;
+  width: 220px;
+  left: 45px;
+  top: 373px;
   letter-spacing: -0.001em;
   text-align: left;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   color: rgba(0, 64, 125, 1);
   white-space: pre-wrap;
   font-family: "HelveticaNeueLTStd-Heavy";
@@ -194,9 +198,10 @@ html, body {
 
 .companyLogo{
   position: absolute;
-  width: 100px;
-  height: 25px;
-  left: 550px;
-  top: 10px;
+  width: 140px;
+  height: 40px;
+  left: auto;
+  top: 84px;
+  right: 20px;
 }
 

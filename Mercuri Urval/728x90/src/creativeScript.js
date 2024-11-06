@@ -32,8 +32,8 @@ onLemonpiReady(function () {
     // Dynamic variables holding values from CHoreograph Create
     // Static variables from Adset
     const ctaText = local_content.cta_text.value;
-    const mercuriLogoLarge = local_content.mercuri_logo_large_formats.value;
-    const mercuriLogoSmall = local_content.mercuri_logo_small.value;
+    //const mercuriLogoLarge = local_content.mercuri_logo_large_formats.value;
+    const mercuriLogoSmall = local_content.mercuri_logo.value;
 
     const blueGraphicsLeftSide = "https://assets.lemonpi.io/a/k/3534c442-0907-4251-ba18-ecb860adc9e3/Assets/Mercuri_Urval_VSC/mercuri_urval_blue_graphics.png";
     const geo_img = "https://assets.lemonpi.io/a/k/1189d575-e6f6-4d75-9df0-277a4e3e7a90/Assets/Mercuri_Urval_VSC/mercuri_urval_location.png";
@@ -62,7 +62,7 @@ onLemonpiReady(function () {
       "background-image":"url("+companyLogo+")",
       'background-size': 'contain',
       'background-repeat': 'no-repeat',
-      'background-position': 'center right',
+      'background-position': 'top right',
     });
 
 
@@ -71,7 +71,7 @@ onLemonpiReady(function () {
 
     $("#companyName").html(companyName);
     $("#mainText").html(jobTitle);
-    truncateProductText('#mainText', 50);
+    truncateProductText('#mainText', 80);
     $("#subText").html(jobDescription);
     truncateProductText('#subText', 130);
     $("#locationText").html(jobLocation);
@@ -93,40 +93,40 @@ onLemonpiReady(function () {
     /////           FUNCTIONS             /////
     ///////////////////////////////////////////
 
-      // Truncate function
-      function truncateProductText(selector, truncLength) {
-        var element = $(selector);
-        var truncateLength = truncLength;
-  
-        var sentence = element[0].innerText;
-        var result = sentence;
-        var resultArray = result;
-        element.css({
-          height: 'auto',
-      });
-      if (sentence.length >= truncateLength){
-        result = resultArray.split(" ").splice(0, 5).join(" ");
-  
-        splitSentence = result.split(" ")
-        secondCheck = splitSentence[0] + ' ' + splitSentence[1];
-        threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
-        fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
-  
-        if (fourWords.length >= truncateLength){
-            result = threeWords;
-        }
-        if (threeWords.length >= truncateLength){
-            result = secondCheck;
-        }
-        if (secondCheck.length >= truncateLength){
-            result = splitSentence[0]
-        }
-        element.text(result + '...');
-        } else{
-        element.text(result);
-        }
-      return result;
+    // Truncate function
+    function truncateProductText(selector, truncLength) {
+      var element = $(selector);
+      var truncateLength = truncLength;
+
+      var sentence = element[0].innerText;
+      var result = sentence;
+      var resultArray = result;
+      element.css({
+        height: 'auto',
+    });
+    if (sentence.length >= truncateLength){
+      result = resultArray.split(" ").splice(0, 5).join(" ");
+
+      splitSentence = result.split(" ")
+      secondCheck = splitSentence[0] + ' ' + splitSentence[1];
+      threeWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2];
+      fourWords = splitSentence[0] + ' ' + splitSentence[1] + ' ' + splitSentence[2] + ' ' + splitSentence[3];
+
+      if (fourWords.length >= truncateLength){
+          result = threeWords;
       }
+      if (threeWords.length >= truncateLength){
+          result = secondCheck;
+      }
+      if (secondCheck.length >= truncateLength){
+          result = splitSentence[0]
+      }
+      element.text(result + '...');
+      } else{
+      element.text(result);
+      }
+    return result;
+    }
 
     //Product click funtion
     $('#creative_container').click(onClick);
