@@ -19,6 +19,7 @@ window.addEventListener('lemonpi.content/ready', event => {
 console.clear();
   const content = event.detail.content
   const source = event.detail.source
+
   
   let product_container = document.getElementById("product_carousel");
   let creative = document.getElementById("creative_container");
@@ -30,49 +31,50 @@ console.clear();
   const images = [ image_1, image_2, image_3 ]
   let currentImageIndex = 1;
 
+
   let url_1 = content.url_destination.value;
   let url_2 = content.url_destination_2.value;
   let url_3 = content.url_destination_3.value;
 
-    //use_slide_3_text: declairing if slide_3_text is used or not
-    let use_slide_3_text = JSON.parse(content.use_slide_3_text.value);
+  //use_slide_3_text: declairing if slide_3_text is used or not
+  let use_slide_3_text = JSON.parse(content.use_slide_3_text.value);
 
-    // holding bg image src
-    const bg_img = content.bg_img.value;
-    let use_bg_img = false;
-    
-    if (bg_img.includes('https:')) {
-      use_bg_img = true;
-    }else{
-      use_bg_img = false;
-    }
-    // if we are gonna use a asset image as bg
-    if (use_bg_img) {
-      $('#bg_div').css({
-        content: 'url('+ bg_img + ')',
-        'background-position': 'center center',
-        'position' : 'absolute',
-        'background-size': 'contain',
-      });
-    }else {
-      $('#bg_div').css({
-        'background-color': bg_img,
-        'height': '100%',
-      });
-    }
+  // holding bg image src
+  const bg_img = content.bg_img.value;
+  let use_bg_img = false;
+  
+  if (bg_img.includes('https:')) {
+    use_bg_img = true;
+  }else{
+    use_bg_img = false;
+  }
+  // if we are gonna use a asset image as bg
+  if (use_bg_img) {
+    $('#bg_div').css({
+      content: 'url('+ bg_img + ')',
+      'background-position': 'center center',
+      'position' : 'absolute',
+      'background-size': 'contain',
+    });
+  }else {
+    $('#bg_div').css({
+      'background-color': bg_img,
+      'width': '100%',
+    });
+  }
+
   const urls = [url_1, url_2, url_3]
 
-  var leftDirectionVar = 980; // Controlls the slider value, on how much it should move the images.
+  var leftDirectionVar = 300; // Controlls the slider value, on how much it should move the images.
 
   $('#copy_1_text').html(content.copy_1_text.value)  
-  $('#copy_2_text').html(content.copy_2_text.value)
-  $('#copy_3_text').html(content.copy_3_text.value)    
+  $('#copy_2_text').html(content.copy_2_text.value) 
+  $('#copy_3_text').html(content.copy_3_text.value) 
 
   $('#logo_image').css({
       content: 'url('+ content.logo_image.value + ')',
   });
 
-  
   $('#arrow_left, #arrow_right').click(onArrowClick)
 
   for (let i = 1; i < 4; i++) {
@@ -83,64 +85,59 @@ console.clear();
           'html': content.slide_3_text.value,
           'class': "product_" + i + ' product_image',
           css: {
-          'font-family': 'CEWE',
-          'font-size':'50px',
-          'left': 70 + (i-1)* (leftDirectionVar) + 'px',
-          'color':'white',
-          'text-align':'center',
-          'width':'580px',
-          'top': '40px'
-        },
-      }).appendTo(product_container);
-    }else {
-      $("<div>", {
-        'class': "product_" + i + ' product_image' ,
-        css: {
+            'font-family': 'CEWE',
+            'font-size': '19px',
+            'color': 'white',
+            'text-align': 'center',
+            'top': '9px',
+            'left': 31 + (i - 1) * leftDirectionVar + 'px',
+            'width': '240px',
+          },
+        }).appendTo(product_container);
+      }else{
+        $("<div>", {
+          'class': "product_" + i + ' product_image' ,
+          css: {
             content: 'url('+ images[i-1] + ')',
-            'background-repeat': 'no-repeat',
-            'background-position': 'center center',
-            'position' : 'absolute',
-            'left': 85 + (i-1)* (leftDirectionVar) + 'px',
-            'height':'230px',
-            'top':'5px',
-            'width': 'auto',
-            'max-width': '580px',
-        },
-      }).appendTo(product_container);
-    }
+            'font-family': 'CEWE',
+            'font-size':'19px',
+            'color':'white',
+            'text-align':'center',
+            'top':'0px',
+            'left': 62 + (i-1)* (leftDirectionVar) + 'px',
+            'max-width': '175px',
+            'height': 'auto',
+          },
+        }).appendTo(product_container);
+      }
+      
     }else if (i == 2) {
       $("<div>", {
-        
         'class': "product_" + i + ' product_image' ,
-        'data-url': urls[i - 1], // Set the URL as a data attribute
         css: {
             content: 'url('+ images[i-1] + ')',
             'background-repeat': 'no-repeat',
             'background-position': 'center center',
             'position' : 'absolute',
-            'left': 85 + (i-1)* (leftDirectionVar) + 'px',
-            'height':'220px',
-            'top':'5px',
-            'width': 'auto',
-            'max-width': '580px',
+            'background-size': 'contain',
+            'left': 65 + (i-1)* (leftDirectionVar) + 'px',
+            'max-width': '175px',
+            'height': 'auto',
+            'top':'28px',
         },
       }).appendTo(product_container);
-    } else {
-    
+    }  else {
       $("<div>", {
-        
         'class': "product_" + i + ' product_image' ,
-        'data-url': urls[i - 1], // Set the URL as a data attribute
         css: {
             content: 'url('+ images[i-1] + ')',
             'background-repeat': 'no-repeat',
             'background-position': 'center center',
             'position' : 'absolute',
-            'left': 85 + (i-1)* (leftDirectionVar) + 'px',
-            'height':'230px',
-            'top':'5px',
-            'width': 'auto',
-            'max-width': '580px',
+            'max-width': '175px',
+            'height': 'auto',
+            'left': 65 + (i-1)* (leftDirectionVar) + 'px',
+            'top': '28px',
         },
       }).appendTo(product_container);
     }
@@ -156,7 +153,6 @@ $("<div>", {
     'z-index':'0',
   },
 }).appendTo(creative);
-
 
 function onArrowClick(event) {
   var direction = event.currentTarget.id === 'arrow_left' ? '+=' : '-=';
@@ -193,15 +189,39 @@ function onArrowClick(event) {
   
 }
 
+// Click event handler for the "world_click" div
+// document.getElementById('world_click').onclick = function (event) {
 
+//   // Retrieve the URL from the data attribute of the currently displayed product image
+//   var currentURL = document.querySelector('div.product_'+currentImageIndex+'.product_image').getAttribute('data-url');
+
+//   var carousel_element = event.srcElement.nextElementSibling;
+//   var slider_element_1_left_value = carousel_element.querySelector(".product_1").style.left;
+
+// // URL 1 - if slider_element_1_left_value is greater than 10 and less than 100
+// if (parseInt(slider_element_1_left_value) > 10 && parseInt(slider_element_1_left_value) < 100) {
+//   currentURL = url_1;
+// }
+// // URL 2 - if slider_element_1_left_value is greater than -300 and less than -200
+//   else if (parseInt(slider_element_1_left_value) > -300 && parseInt(slider_element_1_left_value) < -200) {
+//     currentURL = url_2;
+//   } 
+//  // URL 3 - if slider_element_1_left_value is greater than -650 and less than -500
+//  else if (parseInt(slider_element_1_left_value) > -650 && parseInt(slider_element_1_left_value) < -500) {
+//   currentURL = url_3;
+//   }
+//     // Open the URL
+//     window.open(currentURL, '_blank');
+//   };
 document.getElementById('world_click').onclick = () =>
-window.dispatchEvent(
-    new CustomEvent('lemonpi.interaction/click', {
-    detail: {
-        placeholder: ['url_destination'],
-    }
-})
+  window.dispatchEvent(
+      new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+          placeholder: ['url_destination'],
+      }
+  })
 );
+
     $('#content')
     .on('mouseenter touchstart', onUserEnter)
     .on('mouseleave touchend', onUserLeave)
@@ -230,5 +250,5 @@ window.dispatchEvent(
     .to('#copy_2_text', 0.7, { autoAlpha:0, delay:1.5})
     .to('#copy_3_text', 0.7, { autoAlpha:1}) 
     .to('#copy_3_text', 0.7, { autoAlpha:0, delay:1.5}) 
-    
-    })
+  
+  })

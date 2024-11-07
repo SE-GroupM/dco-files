@@ -1,25 +1,25 @@
 {
-  "id": "9baa5210-fad9-4720-a43c-571db384e654",
+  "id": "f78bb1b8-18cd-4f49-b0cb-7aad05e61767",
   "version": "1.4.1",
-  "name": "cewe_product_slider_980x300",
+  "name": "cewe_product_slider_930x180",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 300,
+        "width": 930,
+        "height": 180,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 980,
-        "height": 300
+        "width": 930,
+        "height": 180
       }
     ]
   },
   "placeholders": {
-    "fileName": "migrated from version 1.3.1 of the extension",
+    "fileName": "",
     "format": "CSV",
     "schema": {
       "mainCopy": {
@@ -151,7 +151,7 @@
     "name": "Cewe"
   },
   "folders": {
-    "selectedFolderId": 5254
+    "selectedFolderId": 6024
   },
-  "port": 51661
+  "port": 51534
 }
