@@ -37,6 +37,8 @@ function handleContentReady(content) {
   const panelContainerElement = document.getElementById('panel_container');
   const heroImageElement = document.querySelector('.hero_image');
 
+  $('#url_exit').click(onClick);
+
   if (ctaCopyElement) {
     ctaCopyElement.innerHTML = ctaText;
   }
@@ -68,19 +70,14 @@ function handleContentReady(content) {
   const maxRetries = 3; // Maximum number of retry attempts
   const el = document.getElementById(element.id);
   if (!el) {
-    console.error(`Element with ID '${element.id}' not found.`);
     return;
   }
 
   const textElement = el.querySelector(element.textSelector);
   if (!textElement || textElement.innerHTML.trim() === "") {
-    console.warn(`Text element not found or empty in '${element.id}'.`);
     if (retryCount < maxRetries) {
       setTimeout(() => resizeElement(element, retryCount + 1), 100);
-    } else {
-      console.error(`Failed to resize '${element.id}' after ${maxRetries} retries.`);
     }
-    return;
   }
 
   el.style.maxHeight = `${element.maxContainerHeight}px`;
@@ -104,12 +101,8 @@ function handleContentReady(content) {
     (textElement.offsetHeight > element.maxContainerHeight ||
       textElement.offsetWidth > element.maxContainerWidth)
   ) {
-    console.warn(
-      `Text in '${element.id}' cannot fit within the container at min font size.`
-    );
   }
 
-  console.log(`Final font size for '${element.id}': ${fontSize}px`);
 }
 
 // Function to resize all elements remains unchanged
@@ -144,9 +137,11 @@ window.addEventListener('lemonpi.content/ready', event => {
   handleContentReady(content);
 });
 
-onLemonpiReady(() => {
-  lemonpi.subscribe(content => {
-    // Perform any additional operations when lemonpi is ready
-  });
-});
-
+function onClick (event) {
+  return window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+      detail: {
+        placeholder: 'url_exit'
+      }
+  }));
+}
