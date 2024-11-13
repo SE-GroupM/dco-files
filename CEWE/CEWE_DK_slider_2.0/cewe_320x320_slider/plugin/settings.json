@@ -1,27 +1,72 @@
 {
-  "id": "108c8a75-3158-458a-af75-f97206569489",
-  "version": "1.2.0",
-  "name": "cewe_320x320_slider_dk",
+  "id": "4d4c2b25-38ec-4c46-a3f7-622fc1bef711",
+  "version": "1.4.1",
+  "name": "cewe_product_slider_320x320",
   "description": "",
   "size": {
     "sizes": [
       {
         "width": 320,
         "height": 320,
-        "isCustom": true
+        "isCustom": false
       }
     ],
-    "customSizes": [
-      {
-        "width": 320,
-        "height": 320
-      }
-    ]
+    "customSizes": []
   },
   "placeholders": {
+    "fileName": "",
+    "format": "CSV",
     "schema": {
-      "copy_1_text": {
+      "mainCopy": {
         "type": "text",
+        "source": "manual"
+      },
+      "ctaText": {
+        "type": "text",
+        "source": "manual"
+      },
+      "copyColor": {
+        "type": "text",
+        "source": "manual"
+      },
+      "bgColor": {
+        "type": "text",
+        "source": "manual"
+      },
+      "copy_bg_color": {
+        "type": "text",
+        "source": "manual"
+      },
+      "display_product_description": {
+        "type": "text",
+        "source": "manual"
+      },
+      "copy_shadow": {
+        "type": "text",
+        "source": "manual"
+      },
+      "subCopy": {
+        "type": "text",
+        "source": "manual"
+      },
+      "logo": {
+        "type": "image",
+        "source": "manual"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "manual"
+      },
+      "next": {
+        "type": "image",
+        "source": "manual"
+      },
+      "prev": {
+        "type": "image",
+        "source": "manual"
+      },
+      "bgImage": {
+        "type": "image",
         "source": "manual"
       }
     },
@@ -29,8 +74,47 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "copy_1_text": {
-            "value": "copy_1_text"
+          "isIncluded": true,
+          "data": {
+            "mainCopy": {
+              "value": "mainCopy"
+            },
+            "ctaText": {
+              "value": "ctaText"
+            },
+            "copyColor": {
+              "value": "copyColor"
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "copy_bg_color": {
+              "value": "copy_bg_color"
+            },
+            "display_product_description": {
+              "value": "display_product_description"
+            },
+            "copy_shadow": {
+              "value": "copy_shadow"
+            },
+            "subCopy": {
+              "value": "subCopy"
+            },
+            "logo": {
+              "value": ""
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "next": {
+              "value": "next"
+            },
+            "prev": {
+              "value": "prev"
+            },
+            "bgImage": {
+              "value": ""
+            }
           }
         }
       ]
@@ -38,7 +122,20 @@
   },
   "fonts": {
     "Google": [],
-    "Choreograph": []
+    "Choreograph": [
+      {
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Bold?v=700",
+        "family": "CEWEHead-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 988,
+        "url": "https://assets.lemonpi.io/a/font/988/CEWEHead-Regular?v=400",
+        "family": "CEWEHead-Regular",
+        "variant": "400"
+      }
+    ]
   },
   "agency": {
     "id": 14,
@@ -48,5 +145,8 @@
     "id": 988,
     "name": "Cewe"
   },
-  "port": 58308
+  "folders": {
+    "selectedFolderId": 6024
+  },
+  "port": 51237
 }
