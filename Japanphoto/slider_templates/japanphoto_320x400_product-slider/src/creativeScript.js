@@ -41,6 +41,9 @@ var timeBetweenSlides = 3;
     $('#mainCopy').css({
       'color': local_content.copyColor.value,
     });
+    $('#ctaText').css({
+      'background-color': local_content.ctaBgColor.value,
+    });
 
     //Append background image
     $('#bgImage').css({

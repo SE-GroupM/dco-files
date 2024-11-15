@@ -69,6 +69,22 @@
       "prev": {
         "type": "image",
         "source": "create"
+      },
+      "right_arrow": {
+        "type": "image",
+        "source": "create"
+      },
+      "left_arrow": {
+        "type": "image",
+        "source": "create"
+      },
+      "copy_shadow": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaBgColor": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -112,6 +128,18 @@
             },
             "prev": {
               "value": ""
+            },
+            "right_arrow": {
+              "value": ""
+            },
+            "left_arrow": {
+              "value": ""
+            },
+            "copy_shadow": {
+              "value": "copy_shadow"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
             }
           }
         }
@@ -143,5 +171,8 @@
     "id": 987,
     "name": "Japanphoto"
   },
-  "port": 62911
+  "folders": {
+    "selectedFolderId": 4146
+  },
+  "port": 60841
 }

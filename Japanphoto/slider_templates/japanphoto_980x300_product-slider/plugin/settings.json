@@ -1,6 +1,6 @@
 {
   "id": "dcaecbac-2057-4631-a3f5-1e7c05cf19ec",
-  "version": "1.3.0",
+  "version": "1.4.1",
   "name": "japanphoto_980x300_slider",
   "description": "",
   "size": {
@@ -19,6 +19,8 @@
     ]
   },
   "placeholders": {
+    "fileName": "migrated from version 1.3.0 of the extension",
+    "format": "CSV",
     "schema": {
       "mainCopy": {
         "type": "text",
@@ -67,47 +69,78 @@
       "prev": {
         "type": "image",
         "source": "create"
+      },
+      "right_arrow": {
+        "type": "image",
+        "source": "create"
+      },
+      "left_arrow": {
+        "type": "image",
+        "source": "create"
+      },
+      "copy_shadow": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaBgColor": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
       "defaultRowIndex": 0,
       "list": [
         {
-          "mainCopy": {
-            "value": "mainCopy"
-          },
-          "ctaText": {
-            "value": "ctaText"
-          },
-          "copyColor": {
-            "value": "copyColor"
-          },
-          "bgColor": {
-            "value": "bgColor"
-          },
-          "logo": {
-            "value": ""
-          },
-          "bgImage": {
-            "value": ""
-          },
-          "worldClick": {
-            "value": ""
-          },
-          "logo_bg_color": {
-            "value": "logo_bg_color"
-          },
-          "display_product_price": {
-            "value": "display_product_price"
-          },
-          "display_product_description": {
-            "value": "display_product_description"
-          },
-          "next": {
-            "value": ""
-          },
-          "prev": {
-            "value": ""
+          "isIncluded": true,
+          "data": {
+            "mainCopy": {
+              "value": "mainCopy"
+            },
+            "ctaText": {
+              "value": "ctaText"
+            },
+            "copyColor": {
+              "value": "copyColor"
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "logo": {
+              "value": ""
+            },
+            "bgImage": {
+              "value": ""
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "logo_bg_color": {
+              "value": "logo_bg_color"
+            },
+            "display_product_price": {
+              "value": "display_product_price"
+            },
+            "display_product_description": {
+              "value": "display_product_description"
+            },
+            "next": {
+              "value": ""
+            },
+            "prev": {
+              "value": ""
+            },
+            "right_arrow": {
+              "value": ""
+            },
+            "left_arrow": {
+              "value": ""
+            },
+            "copy_shadow": {
+              "value": "copy_shadow"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
+            }
           }
         }
       ]
@@ -141,5 +174,5 @@
   "folders": {
     "selectedFolderId": 4146
   },
-  "port": 58218
+  "port": 60917
 }
