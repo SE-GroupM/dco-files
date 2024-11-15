@@ -95,9 +95,9 @@ onLemonpiReady(function () {
         $('#regularPrice').addClass('salePrice');
       } else if (productPriceType === 'julaclub') {
         if (tempNormal[1] > 0) {
-          $('#regularPrice').html('JulaClub <br><span style="font-size: 52px; line-height: 52px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1] + '</span></span>');
+          $('#regularPrice').html('JulaClub <br><span style="font-size: 62px; line-height: 38px;">' + tempNormal[0] + '<span class="priceSup">' + tempNormal[1] + '</span></span>');
         } else {
-          $('#regularPrice').html('JulaClub <br><span style="font-size: 52px; line-height: 68px;">' + tempNormal[0] + '<span style="letter-spacing: -7px; padding-right: 8px;">.-</span>');
+          $('#regularPrice').html('JulaClub <br><span style="font-size: 62px; line-height: 58px;">' + tempNormal[0] + '<span style="letter-spacing: -7px; padding-right: 8px;">.-</span>');
         }
         $('#regularPrice').addClass('clubPrice');
       }
@@ -105,11 +105,11 @@ onLemonpiReady(function () {
       var productSaving = product.productPriceSaving.value;
       productSaving = productSaving.replace(".-", "");
       if (productSaving !== "0") {
-        $('#priceElement').html('Spare ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
+        $('#priceElement').html('Säästä ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
         $('#priceElement').addClass('saleElement');
       }
 
-      if (productPriceType.toLowerCase().includes('Jubiläumsprodukt!')) {
+      if (productPriceType.toLowerCase().includes('Juhlatuote!')) {
         $('#regularPrice').addClass('salePrice');
         $('#priceElement').html(productPriceType);
         $('#priceElement').addClass('heroElement');

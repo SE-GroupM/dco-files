@@ -1,6 +1,6 @@
 * { 
   box-sizing: border-box;
-}
+} 
 
 html, body {
   width: 100%;
@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 750px;
-  height: 100px;
+  width: 970px;
+  height: 350px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -32,18 +32,18 @@ html, body {
 /* Position of logo */
 .logo {
   position: absolute;
-  width: 100px;
+  width: 150px;
   height: 81px;
-  left: 13px;
-  top: 13px;
+  left: 15px;
+  top: 15px;
 }
 
 /* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
-  height: 80px;
-  width: 350px;
+  height: 270px;
+  width: 700px;
   left: 265px;
   top: 14px;
   border-radius: 5px;
@@ -53,18 +53,18 @@ html, body {
 .productInfo {
   position: fixed;
   width: 300px;
-  height: 100px;
-  left: 450px;
-  top: 0px;
+  height: 350px;
+  left: 720px;
+  top: 20px;
 }
 
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 75px;
-  width: 160px;
-  top: 12px;
-  left: 160px;
+  height: 190px;
+  width: 190px;
+  top: 65px;
+  left: 370px;
 }
 
 /* Price element */
@@ -74,17 +74,10 @@ html, body {
   color: #333;
   text-align: center;
   min-width: 280px;
-  font-size: 50px;
-  top: 30px;
+  font-size: 55px;
+  top: 58px;
   left: auto;
-  right: 17px;
-}
-
-/* Parent container */
-.saleContainer {
-  position: relative;
-  width: 100%;
-  height: auto;
+  right: 10px;
 }
 
 /* Price sup element */
@@ -98,16 +91,15 @@ html, body {
 .salePrice {
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   position: absolute;
-  padding: 2px 5px 4px 8px;
+  padding: 3px 8px 1px 8px;
   border-radius: 16px;
-  font-size: 40px;
-  top: 35px;
+  font-size: 65px;
+  top: 53px;
   left: auto;
-  right: 117px;
+  right: 95px;
   text-align: right;
   color: #B32013;
-  min-width: 65px;
-  max-height: 50px;
+  min-width: 80px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -117,54 +109,61 @@ html, body {
   display: inline-block;
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   position: absolute;
-  padding: 15px 12px 12px 12px;
+  padding: 8px 10px 6px 11px;
   border-radius: 18px;
-  font-size: 19px;
-  line-height: 10px;
-  top: 53px;
+  font-size: 18px;
+  top: 38px;
   left: auto;
-  right: 77px;
-  min-width: 105px;
-  max-height: 93px;
+  right: 78px;
+  min-width: 95px;
+  max-height: 85px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
   transform: rotate(-4deg);
 }
 
+/* Parent container */
+.saleContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
   display: inline-block;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 3px 8px 4px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
-  font-size: 10px;
+  font-size: 13px;
+  line-height: 1;
   color: white;
-  top: 75px;
-  left: auto;
-  right: 85px;
+  top: 121px;
+  right: 68px;
   text-align: left;
   background-color: #DA3A35;
   transform: rotate(-4deg);
+  z-index: 10;
 }
 
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "Arial", sans-serif;
+  display: inline-block;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 2px 8px 4px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: 132px;
-  left: auto;
+  top: 106px;
   right: 65px;
   text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
+  z-index: 10;
 }
 
 /* Product name text */
@@ -186,7 +185,7 @@ html, body {
   font-size: 11px;
   color: #fff;
   left: 0px;
-  top: 210px;
+  top: 298px;
   width: 300px;
   text-align: center;
   text-decoration: line-through;
@@ -197,8 +196,8 @@ html, body {
 /* Player element */
 .player {
   position: absolute;
-  width: 400px;
-  height: 100px;
+  width: 600px;
+  height: 350px;
   top: 0px;
   left: 0px;
   background-color: #000;
@@ -208,20 +207,19 @@ html, body {
 #campaignText {
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   text-align: center;
-  font-size: 17px;
+  font-size: 23.5px;
   position: absolute;
-  width: 390px;
+  width: 355px;
   height: 50px;
-  top: 8px;
-  left: 380px;
+  top: 20px;
+  left: 610px;
 }
 
 /* Call to action text */
 #ctaText {
-  padding: 7px 10px 7px 10px;
-  bottom: 12px;
-  right: 15px;
-  font-size: 15px;
+  padding: 8px 10px 8px 10px;
+  bottom: 15px;
+  right: 20px;
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   color: white;
   background-color: black;
@@ -230,8 +228,8 @@ html, body {
 
 /* World click div */
 .worldClick {
-  width: 750px;
-  height: 100px;
+  width: 970px;
+  height: 350px;
   display: block;
   position: fixed;
   padding: 0;
