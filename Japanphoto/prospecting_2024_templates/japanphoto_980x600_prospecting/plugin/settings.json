@@ -1,6 +1,6 @@
 {
   "id": "9fc7099d-7486-464a-92bc-57a2cc5442ca",
-  "version": "1.3.0",
+  "version": "1.4.1",
   "name": "japanphoto_980x600",
   "description": "",
   "size": {
@@ -19,6 +19,8 @@
     ]
   },
   "placeholders": {
+    "fileName": "migrated from version 1.3.0 of the extension",
+    "format": "CSV",
     "schema": {
       "mainText": {
         "type": "text",
@@ -77,44 +79,47 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "mainText": {
-            "value": "mainText"
-          },
-          "secondText": {
-            "value": "secondText"
-          },
-          "ctaText": {
-            "value": "ctaText"
-          },
-          "img": {
-            "value": ""
-          },
-          "cewe_logo": {
-            "value": ""
-          },
-          "fotobok_logo": {
-            "value": ""
-          },
-          "click": {
-            "value": ""
-          },
-          "panel_bg_color": {
-            "value": "panel_bg_color"
-          },
-          "ctaText_color": {
-            "value": "ctaText_color"
-          },
-          "ctaBg_color": {
-            "value": "ctaBg_color"
-          },
-          "kampanje_logo": {
-            "value": "kampanje_logo"
-          },
-          "kampanje_color": {
-            "value": "kampanje_color"
-          },
-          "kampanje_logo_yes_no": {
-            "value": "kampanje_logo_yes_no"
+          "isIncluded": true,
+          "data": {
+            "mainText": {
+              "value": "mainText"
+            },
+            "secondText": {
+              "value": "secondText"
+            },
+            "ctaText": {
+              "value": "ctaText"
+            },
+            "img": {
+              "value": ""
+            },
+            "cewe_logo": {
+              "value": ""
+            },
+            "fotobok_logo": {
+              "value": ""
+            },
+            "click": {
+              "value": ""
+            },
+            "panel_bg_color": {
+              "value": "panel_bg_color"
+            },
+            "ctaText_color": {
+              "value": "ctaText_color"
+            },
+            "ctaBg_color": {
+              "value": "ctaBg_color"
+            },
+            "kampanje_logo": {
+              "value": "kampanje_logo"
+            },
+            "kampanje_color": {
+              "value": "kampanje_color"
+            },
+            "kampanje_logo_yes_no": {
+              "value": "kampanje_logo_yes_no"
+            }
           }
         }
       ]
@@ -148,5 +153,5 @@
   "folders": {
     "selectedFolderId": 4330
   },
-  "port": 65313
+  "port": 53160
 }

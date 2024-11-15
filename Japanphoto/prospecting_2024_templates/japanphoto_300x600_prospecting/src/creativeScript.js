@@ -99,6 +99,33 @@ tl2.fromTo('.ctaText', 0.2, // Reduced duration to 0.25 seconds for a faster bou
    //                FUNCTIONS                   //
   ////////////////////////////////////////////////
 
+  function fitTextToContainer() {
+    var container = $('#subCopy');  // The text container (assuming this is an input or textarea)
+    var secondText = local_content.secondText.value;  // Dynamic text input from your feed
+    var minFontSize = 14;  // Minimum font size
+    var maxFontSize = 20;  // Maximum font size
+    var baseFontSize = 18;  // Base font size for an average-length text
+    var characterLimit = 30;  // The character length at which to start reducing font size
+    
+    // Calculate the dynamic font size based on the length of the text
+    var textLength = secondText.length;
+    var fontSize;
+  
+    if (textLength <= characterLimit) {
+      // If the text is shorter than the limit, use the base size or a larger size
+      fontSize = Math.min(maxFontSize, baseFontSize + (characterLimit - textLength) * 0.5);
+    } else {
+      // If the text is longer, scale down the font size based on text length
+      fontSize = Math.max(minFontSize, baseFontSize - (textLength - characterLimit) * 0.5);
+    }
+  
+    // Apply the calculated font size to the text container (assuming it's an input/textarea)
+    container.css('font-size', fontSize + 'px');
+  
+    // Optionally, adjust the placeholder text dynamically based on the same logic
+    container.attr('placeholder', secondText);  // This updates the placeholder dynamically
+  }
+
   if (kampanje_logo_yes_no === 'yes') {
     $('#kampanje_logo').css({
       'opacity': '1'
@@ -108,6 +135,11 @@ tl2.fromTo('.ctaText', 0.2, // Reduced duration to 0.25 seconds for a faster bou
       'opacity': '0'
     });
   }
+
+    // Call the function after the DOM is ready or after content changes
+$(document).ready(function() {
+  fitTextToContainer();
+});
 
   function onClick (event) {
     return window.dispatchEvent(

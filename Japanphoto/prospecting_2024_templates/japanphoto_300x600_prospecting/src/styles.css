@@ -70,7 +70,7 @@ html, body {
   position: absolute;
   width: 271px;
   left: 22px;
-  top: 20px;
+  top: 16px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
@@ -81,9 +81,9 @@ html, body {
 /* Main copy div */
 .subCopy {
   position: absolute;
-  width: 241px;
+  width: 260px;
   left: 22px;
-  top: 100px;
+  top: 94px;
   color: white;
   font-family: "CEWEHead-Regular";
   font-size: 18px;

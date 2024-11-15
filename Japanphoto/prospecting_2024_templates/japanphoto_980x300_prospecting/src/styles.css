@@ -77,7 +77,7 @@ html, body {
 /* Main copy div */
 .mainCopy {
   position: absolute;
-  width: 270px;
+  width: 280px;
   left: 30px;
   top: 105px;
   /* padding: 0px 20px 10px 20px;
@@ -90,7 +90,7 @@ html, body {
 /* Main copy div */
 .subCopy {
   position: absolute;
-  width: 268px;
+  width: 280px;
   left: 30px;
   top: 176px;
   /* padding: 0px 20px 10px 20px;
@@ -98,7 +98,7 @@ html, body {
   color: white;
   font-family: "CEWEHead-Regular";
   font-size: 18px;
-  line-height: 20px;
+  line-height: 19px;
 }
 /* Cta button div */
 .ctaText {
