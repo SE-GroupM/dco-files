@@ -38,6 +38,9 @@ html, body {
 .img_bg {
   position: absolute;
   top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 200px;
   display: flex;
   justify-content: center;
   z-index: 0;

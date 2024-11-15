@@ -105,7 +105,7 @@ tl2.fromTo('.ctaText', 0.2, // Reduced duration to 0.25 seconds for a faster bou
     });
   } else if (kampanje_logo_yes_no === 'no') {
     $('#kampanje_logo').css({
-      'opacity': '0'
+      'opacity': '0',
     });
   }
 

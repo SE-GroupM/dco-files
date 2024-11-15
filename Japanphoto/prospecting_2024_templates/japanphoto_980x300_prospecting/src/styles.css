@@ -40,6 +40,9 @@ html, body {
   align-items: center;
   justify-content: center;
   z-index: 0;
+  height: 300px;
+  top:0px;
+  left:290px;
 }
 .cewe_logo{
   position: absolute;
