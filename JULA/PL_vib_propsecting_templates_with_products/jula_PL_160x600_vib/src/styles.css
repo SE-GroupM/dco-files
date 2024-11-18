@@ -12,7 +12,7 @@ html, body {
 }
 
 #creative_container {
-  width: 300px;
+  width: 160px;
   height: 600px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
@@ -30,9 +30,9 @@ html, body {
 .logo {
 opacity: 1;
 position: absolute;
-width: 140px;
-height: 70px;
-left: 80px;
+width: 100px;
+height: 60px;
+left: 30px;
 top: 20px;
 }
 /* Product box background */
@@ -177,16 +177,16 @@ top: 20px;
 
 .player {
   position: absolute;
-  width: 300px;
-  height: 400px;
-  top: 100px;
+  width: 160px;
+  height: 440px;
+  top: 80px;
   left: 0px;
   background-color: #000;
 }
 
 /* World click div */
 .worldClick {
-  width: 300px;
+  width: 160px;
   height: 600px;
   display: block;
   position: fixed;
@@ -200,19 +200,19 @@ top: 20px;
 }
 
 #campaignText {
-  top: 520px;
+  top: 535px;
   font-family: "CreightonPro-Bold";
   text-align: center;
-  font-size: 27px;
+  font-size: 19px;
   position: absolute;
   height: 50px;
-  width: 280px;
-  left: 10px;
+  width: 130px;
+  left: 15px;
 }
 #ctaText{
   padding: 8px 12px 8px 12px; /* top, right, bottom, left */
-  top: 455px;
-  right: 10px;
+  top: 472px;
+  right: 15px;
   font-family: "CreightonPro-Bold";
   color: white;
   background-color: black;

@@ -12,8 +12,8 @@ html, body {
 }
 
 #creative_container {
-  width: 300px;
-  height: 250px;
+  width: 320px;
+  height: 320px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;

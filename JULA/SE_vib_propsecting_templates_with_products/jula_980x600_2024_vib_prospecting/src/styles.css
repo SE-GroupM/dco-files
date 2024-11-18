@@ -12,10 +12,13 @@ html, body {
 }
 
 #creative_container {
-  width: 300px;
+  width: 980px;
   height: 600px;
   cursor: pointer;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -28,49 +31,53 @@ html, body {
 
 /* Position of logo */
 .logo {
-opacity: 1;
-position: absolute;
-width: 140px;
-height: 70px;
-left: 80px;
-top: 20px;
+  position: absolute;
+  width: 190px;
+  height: 101px;
+  left: 15px;
+  top: 15px;
 }
+
 /* Product box background */
 .productBox {
   position: absolute;
   background-color: white;
-  height: 480px;
-  width: 210px;
-  left: 20px;
-  top: 100px;
+  height: 270px;
+  width: 700px;
+  left: 265px;
+  top: 14px;
   border-radius: 5px;
 }
+
 /* Container for product info */
 .productInfo {
   position: fixed;
-  width: 210px;
-  height: 240px;
-  left: 30px;
-  top: 100px;
+  width: 300px;
+  height: 600px;
+  left: 720px;
+  top: 20px;
 }
+
 /* Product image size and position */
 .productImage {
   position: absolute;
-  height: 160px;
-  width: 210px;
-  top: 290px;
-  left: 0px;
+  height: 240px;
+  width: 270px;
+  top: 215px;
+  left: 340px;
 }
-/* Price element  */
+
+/* Price element */
 .regularPrice {
   position: absolute;
-  font-size: 60px;
-  font-family: "CreightonPro-Bold";
+  font-family: "CreightonProExtraBold", Arial, sans-serif;
   color: #333;
   text-align: center;
-  top: 220px;
-  min-width: 210px;
-  left: -10px;
+  min-width: 280px;
+  font-size: 75px;
+  top: 118px;
+  left: auto;
+  right: 15px;
 }
 
 /* Price sup element */
@@ -79,20 +86,21 @@ top: 20px;
   vertical-align: super;
   top: 0;
 }
+
 /* Discounted price element with yellow background and red text, ex. "99,-" */
 .salePrice {
-  opacity: 0;
-  font-family: "CreightonPro-Bold";
+  font-family: "CreightonProExtraBold", Arial, sans-serif;
   position: absolute;
-  padding: 8px 8px 6px 12px;
-  border-radius: 12px;
-  font-size: 60px;
-  top: 20px;
+  padding: 10px 8px 3px 12px;
+  border-radius: 16px;
+  font-size: 75px;
+  top: 111px;
   left: auto;
-  right: 56px;
+  right: 77px;
   text-align: right;
   color: #B32013;
-  min-width: 111px;
+  min-width: 110px;
+  max-height: 90px;
   background-color: #FFE500;
   transform: rotate(-4deg);
 }
@@ -100,93 +108,129 @@ top: 20px;
 /* Club price element with JulaClub message, red background and white text, ex. "JulaClub 199,-" */
 .clubPrice {
   display: inline-block;
-  font-family: "CreightonPro-Bold";
+  font-family: "CreightonProExtraBold", Arial, sans-serif;
   position: absolute;
-  padding: 8px 8px 12px 6px;
-  border-radius: 12px;
-  font-size: 21px;
-  line-height: 16px;
-  top: 5px;
+  padding: 9px 14px 10px 19px;
+  border-radius: 18px;
+  font-size: 18px;
+  top: 98px;
   left: auto;
-  right: 56px;
-  min-width: 111px;
+  right: 78px;
+  min-width: 125px;
+  height: 102px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
   transform: rotate(-4deg);
 }
 
+/* Parent container */
+.saleContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 /* Sale price element ex. "Spara 199,-" */
 .saleElement {
-  opacity: 0;
-  font-family: "Arial";
+  display: inline-block;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 4px 8px 4px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
   font-size: 15px;
+  line-height: 1;
   color: white;
-  top: 90px;
-  left: auto;
-  right: 44px;
-  text-align: right;
+  top: 187px;
+  right: 58px;
+  text-align: left;
   background-color: #DA3A35;
   transform: rotate(-4deg);
+  z-index: 10;
 }
+
 /* Hero element ex. "Tokbilligt" */
 .heroElement {
-  font-family: "Arial";
+  display: inline-block;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   position: absolute;
-  padding: 4px 8px 4px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 12px;
   color: white;
-  top: 90px;
-  left: auto;
-  right: 44px;
-  text-align: right;
+  top: 106px;
+  right: 65px;
+  text-align: left;
   background-color: #333;
   transform: rotate(-4deg);
+  z-index: 10;
 }
+
 /* Product name text */
 .productName {
-  font-family: "CreightonPro-Bold";
+  font-family: "Taz-Regular";
   position: absolute;
-  font-size: 17px;
+  font-size: 22px;
   color: #333;
-  left: -10px;
-  top: 450px;
-  width: 210px;
+  left: 0px;
+  top: 160px;
+  width: 300px;
   text-align: center;
 }
+
 /* Product price info text */
 .priceInfo {
   position: absolute;
-  font-family: "Arial";
-  font-size: 11px;
+  font-family: "Taz-Regular";
+  font-size: 13px;
   color: #fff;
-  left: -10px;
-  top: 465px;
-  width: 210px;
+  left: -27px;
+  top: 548px;
+  width: 300px;
   text-align: center;
-}
-.priceElement{
-  opacity: 0;
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
 }
 
+/* Player element */
 .player {
   position: absolute;
-  width: 300px;
-  height: 400px;
-  top: 100px;
+  width: 600px;
+  height: 600px;
+  top: 0px;
   left: 0px;
   background-color: #000;
 }
 
+/* Campaign text */
+#campaignText {
+  font-family: "CreightonPro-Bold", Arial, sans-serif;
+  text-align: center;
+  font-size: 32px;
+  position: absolute;
+  width: 340px;
+  height: 50px;
+  top: 20px;
+  left: 620px;
+}
+
+/* Call to action text */
+#ctaText {
+  padding: 8px 10px 8px 10px;
+  bottom: 15px;
+  right: 20px;
+  font-size: 22px;
+  font-family: "CreightonPro-Bold", Arial, sans-serif;
+  color: white;
+  background-color: black;
+  position: fixed;
+}
+
 /* World click div */
 .worldClick {
-  width: 300px;
+  width: 980px;
   height: 600px;
   display: block;
   position: fixed;
@@ -197,24 +241,4 @@ top: 20px;
   box-sizing: border-box;
   cursor: pointer;
   z-index: 1;
-}
-
-#campaignText {
-  top: 520px;
-  font-family: "CreightonPro-Bold";
-  text-align: center;
-  font-size: 27px;
-  position: absolute;
-  height: 50px;
-  width: 280px;
-  left: 10px;
-}
-#ctaText{
-  padding: 8px 12px 8px 12px; /* top, right, bottom, left */
-  top: 455px;
-  right: 10px;
-  font-family: "CreightonPro-Bold";
-  color: white;
-  background-color: black;
-  position: fixed;
 }

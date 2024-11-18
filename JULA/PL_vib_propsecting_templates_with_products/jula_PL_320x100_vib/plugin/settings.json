@@ -1,17 +1,22 @@
 {
-  "id": "01cecbdf-11e7-44ae-96cd-c2e27dd92c07",
+  "id": "0eae0988-ab4f-4de9-9920-d9071d5f098b",
   "version": "1.4.1",
-  "name": "jula_FI_300x600_vib",
+  "name": "jula_PL_320x100_vib",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 300,
-        "height": 600,
-        "isCustom": false
+        "width": 320,
+        "height": 100,
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 100
+      }
+    ]
   },
   "placeholders": {
     "fileName": "",
@@ -117,14 +122,14 @@
     "Google": [],
     "Choreograph": [
       {
-        "advertiserId": 1220,
-        "url": "https://assets.lemonpi.io/a/font/1220/CreightonPro-Bold?v=700",
+        "advertiserId": 1222,
+        "url": "https://assets.lemonpi.io/a/font/1222/CreightonPro-Bold?v=700",
         "family": "CreightonPro-Bold",
         "variant": "700"
       },
       {
-        "advertiserId": 1220,
-        "url": "https://assets.lemonpi.io/a/font/1220/Taz-Regular?v=400",
+        "advertiserId": 1222,
+        "url": "https://assets.lemonpi.io/a/font/1222/Taz-Regular?v=400",
         "family": "Taz-Regular",
         "variant": "400"
       }
@@ -135,11 +140,11 @@
     "name": "Xaxis Sweden"
   },
   "advertiser": {
-    "id": 1220,
-    "name": "Jula FI"
+    "id": 1222,
+    "name": "Jula PL"
   },
   "folders": {
-    "selectedFolderId": 6094
+    "selectedFolderId": 6112
   },
-  "port": 61944
+  "port": 63123
 }

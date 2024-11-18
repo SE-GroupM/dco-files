@@ -1,40 +1,37 @@
 {
-  "id": "01cecbdf-11e7-44ae-96cd-c2e27dd92c07",
+  "id": "dbfe96da-0f1e-4b6a-bd4a-35304b3cce3f",
   "version": "1.4.1",
-  "name": "jula_FI_300x600_vib",
+  "name": "jula_980x600_vib_withProducts",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 300,
+        "width": 980,
         "height": 600,
-        "isCustom": false
+        "isCustom": true
       }
     ],
-    "customSizes": []
+    "customSizes": [
+      {
+        "width": 980,
+        "height": 300
+      },
+      {
+        "width": 980,
+        "height": 600
+      }
+    ]
   },
   "placeholders": {
-    "fileName": "",
+    "fileName": "migrated from version 1.3.0 of the extension",
     "format": "CSV",
     "schema": {
-      "campaignText": {
-        "type": "text",
-        "source": "create"
-      },
       "bgColor": {
         "type": "text",
         "source": "create"
       },
-      "ctaText": {
-        "type": "text",
-        "source": "create"
-      },
-      "ctaBgColor": {
-        "type": "text",
-        "source": "create"
-      },
-      "ctaTextColor": {
-        "type": "text",
+      "logo": {
+        "type": "image",
         "source": "create"
       },
       "productBgColor": {
@@ -49,18 +46,6 @@
         "type": "text",
         "source": "create"
       },
-      "videoSrc": {
-        "type": "text",
-        "source": "create"
-      },
-      "videoTracker": {
-        "type": "text",
-        "source": "create"
-      },
-      "logo": {
-        "type": "image",
-        "source": "create"
-      },
       "worldClick": {
         "type": "click",
         "source": "create"
@@ -72,20 +57,11 @@
         {
           "isIncluded": true,
           "data": {
-            "campaignText": {
-              "value": "campaignText"
-            },
             "bgColor": {
               "value": "bgColor"
             },
-            "ctaText": {
-              "value": "ctaText"
-            },
-            "ctaBgColor": {
-              "value": "ctaBgColor"
-            },
-            "ctaTextColor": {
-              "value": "ctaTextColor"
+            "logo": {
+              "value": ""
             },
             "productBgColor": {
               "value": "productBgColor"
@@ -95,15 +71,6 @@
             },
             "productPriceColor": {
               "value": "productPriceColor"
-            },
-            "videoSrc": {
-              "value": "videoSrc"
-            },
-            "videoTracker": {
-              "value": "videoTracker"
-            },
-            "logo": {
-              "value": ""
             },
             "worldClick": {
               "value": ""
@@ -117,14 +84,20 @@
     "Google": [],
     "Choreograph": [
       {
-        "advertiserId": 1220,
-        "url": "https://assets.lemonpi.io/a/font/1220/CreightonPro-Bold?v=700",
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/CreightonPro-Bold?v=700",
         "family": "CreightonPro-Bold",
         "variant": "700"
       },
       {
-        "advertiserId": 1220,
-        "url": "https://assets.lemonpi.io/a/font/1220/Taz-Regular?v=400",
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/CreightonProExtraBold?v=800",
+        "family": "CreightonProExtraBold",
+        "variant": "800"
+      },
+      {
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/Taz-Regular?v=400",
         "family": "Taz-Regular",
         "variant": "400"
       }
@@ -135,11 +108,11 @@
     "name": "Xaxis Sweden"
   },
   "advertiser": {
-    "id": 1220,
-    "name": "Jula FI"
+    "id": 884,
+    "name": "Jula"
   },
   "folders": {
-    "selectedFolderId": 6094
+    "selectedFolderId": 3553
   },
-  "port": 61944
+  "port": 64265
 }
