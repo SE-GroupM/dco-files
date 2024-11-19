@@ -26,7 +26,7 @@ html, body {
 /* Panel container flex div */
 .left_panel {
   position: absolute;
-  width: 270px;
+  width: 370px;
   height: 600px;
   top: 0px;
   left:0px;
@@ -36,6 +36,7 @@ html, body {
 .img_bg {
   position: absolute;
   height: 600px;
+  width: auto;
   right: 0px;
   display: flex;
   align-items: center;
@@ -75,9 +76,9 @@ html, body {
 /* Main copy div */
 .mainCopy {
   position: absolute;
-  width: 208px;
+  width: 328px;
   left: 30px;
-  top: 167px;
+  top: 227px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
@@ -88,15 +89,15 @@ html, body {
 /* Main copy div */
 .subCopy {
   position: absolute;
-  width: 199px;
+  width: 328px;
   left: 30px;
-  top: 341px;
+  top: 361px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
   font-family: "CEWEHead-Regular";
   font-size: 22px;
-  line-height: 27px;
+  line-height: 25px;
 }
 /* Cta button div */
 .ctaText {

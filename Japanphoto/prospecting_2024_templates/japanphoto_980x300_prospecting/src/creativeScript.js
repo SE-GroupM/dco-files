@@ -107,8 +107,8 @@ tl2.fromTo('.ctaText', 0.2, // Reduced duration to 0.25 seconds for a faster bou
     var secondText = local_content.secondText.value;  // Dynamic text input from your feed
     var minFontSize = 16;  // Minimum font size
     var maxFontSize = 22;  // Maximum font size
-    var baseFontSize = 19;  // Base font size for an average-length text
-    var characterLimit = 30;  // The character length at which to start reducing font size
+    var baseFontSize = 20;  // Base font size for an average-length text
+    var characterLimit = 33;  // The character length at which to start reducing font size
     
     // Calculate the dynamic font size based on the length of the text
     var textLength = secondText.length;

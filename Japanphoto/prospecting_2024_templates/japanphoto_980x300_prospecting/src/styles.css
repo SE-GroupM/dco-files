@@ -40,9 +40,11 @@ html, body {
   align-items: center;
   justify-content: center;
   z-index: 0;
-  height: 300px;
+  height: auto;
+  width: 690px;
+  min-height: 300px;
   top:0px;
-  left:290px;
+  right:0px;
 }
 .cewe_logo{
   position: absolute;
@@ -77,9 +79,9 @@ html, body {
 /* Main copy div */
 .mainCopy {
   position: absolute;
-  width: 280px;
+  width: 243px;
   left: 30px;
-  top: 105px;
+  top: 95px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;
@@ -90,9 +92,9 @@ html, body {
 /* Main copy div */
 .subCopy {
   position: absolute;
-  width: 280px;
+  width: 243px;
   left: 30px;
-  top: 176px;
+  top: 166px;
   /* padding: 0px 20px 10px 20px;
   text-align: center; */
   color: white;

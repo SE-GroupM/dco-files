@@ -38,6 +38,7 @@ html, body {
 .img_bg {
   position: absolute;
   top: 0px;
+  max-width:300px;
   display: flex;
   right: 0px;
   justify-content: center;

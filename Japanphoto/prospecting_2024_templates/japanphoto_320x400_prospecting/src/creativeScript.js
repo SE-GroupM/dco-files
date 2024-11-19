@@ -106,7 +106,7 @@ tl2.fromTo('.ctaText', 0.2, // Reduced duration to 0.25 seconds for a faster bou
     var minFontSize = 14;  // Minimum font size
     var maxFontSize = 20;  // Maximum font size
     var baseFontSize = 18;  // Base font size for an average-length text
-    var characterLimit = 30;  // The character length at which to start reducing font size
+    var characterLimit = 37;  // The character length at which to start reducing font size
     
     // Calculate the dynamic font size based on the length of the text
     var textLength = secondText.length;
