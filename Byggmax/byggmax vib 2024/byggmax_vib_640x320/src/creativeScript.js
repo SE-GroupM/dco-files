@@ -45,6 +45,10 @@ window.addEventListener('lemonpi.content/ready', event => {
     });
   }
 
+  /////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////// Videon config //////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////
+
   // SEENTHIS variables
   // Define the video source and tracker variables
   var videoSrc = content.videoSrc.value;
@@ -52,10 +56,13 @@ window.addEventListener('lemonpi.content/ready', event => {
   var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
-  
+ 
+  var bannerWidth = '640';
+  var bannerHeight = '320';
+
   if (ccVideo != '') {
     // Set the BG video source
-    var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="640" height="320"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
+    var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
   
     // Append video locally from CC
     $("#player").html(BGvideoSource);
@@ -69,31 +76,31 @@ window.addEventListener('lemonpi.content/ready', event => {
   }else {
     //Video player 
     var e = document.createElement('script');
-      e.src = 'https://video.seenthis.se/v2/player/74/player.js';
-      e.onload = function(){
-      var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
-      };
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(e, s);
-  
-      //Options for video script
-      var options = {
-          loop: true,
-          autoplay: true,
-          muteButton: false,
-      };
-  
-      // Determine the state of the mute button based on mutebutton_on_off variable
-      if (mutebutton_on_off == 'on') {
-        options.muteButton = true; // Enable mute if 'on'
-      } else if (mutebutton_on_off == 'off') {
-        options.muteButton = false; // Disable mute if 'off'
-      }
-    } // end of if-else
+    e.src = 'https://video.seenthis.se/v2/player/74/player.js';
+    e.onload = function(){
+    var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
 
-     //////////////////
-    /// ANIMATIONS ///
-   //////////////////
+    //Options for video script
+    var options = {
+        loop: true,
+        autoplay: true,
+        muteButton: false,
+    };
+
+    // Determine the state of the mute button based on mutebutton_on_off variable
+    if (mutebutton_on_off == 'on') {
+      options.muteButton = true; // Enable mute if 'on'
+    } else if (mutebutton_on_off == 'off') {
+      options.muteButton = false; // Disable mute if 'off'
+    }
+  } // end of if-else
+
+  //////////////////
+  /// ANIMATIONS ///
+  //////////////////
 
 // Create a new timeline that repeats indefinitely (-1)
 var tl = new TimelineMax({repeat: -1});

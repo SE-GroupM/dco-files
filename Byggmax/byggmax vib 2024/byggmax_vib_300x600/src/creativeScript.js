@@ -46,17 +46,27 @@ window.addEventListener('lemonpi.content/ready', event => {
   let price_currency_content = local_content.price_currency_content.value;
  
  
-  /////////////////////////////////////////////////////////////////////////////////////////////
-  ////////////////////////////// VIDEO PLAYER and FUNCTIONS ///////////////////////////////////
+   /////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////// Videon config //////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////////////////////
 
-  var videoPlaceholder = local_content.video_placeholder.value;
-  // Set the BG video source
-  var BGvideoSource = '<video id="BG_video" autoplay muted playsinline loop width="300" height="600"><source src="' + videoPlaceholder + '" type="video/mp4"></video>'; 
+  // SEENTHIS variables
+  // Define the video source and tracker variables
+  var videoSrc = content.videoSrc.value;
+  var videoTracker = content.videoTracker.value;
+  var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
 
-  if (videoPlaceholder !== "") {
-    //Append video
-    $("#video_container").html(BGvideoSource);
+  var ccVideo = local_content.video_placeholder.value; // get local video src
+ 
+  var bannerWidth = '300';
+  var bannerHeight = '600';
+
+  if (ccVideo != '') {
+    // Set the BG video source
+    var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
+  
+    // Append video locally from CC
+    $("#player").html(BGvideoSource);
     // Function to restart videos
     function restartVideo(videoId) {
       var videoElement = document.getElementById(videoId);
@@ -64,7 +74,30 @@ window.addEventListener('lemonpi.content/ready', event => {
       videoElement.play();
     }
     //restartVideo("video_container"); // use if you need to restart video from somewhere
-  }
+  }else {
+    //Video player 
+    var e = document.createElement('script');
+    e.src = 'https://video.seenthis.se/v2/player/74/player.js';
+    e.onload = function(){
+    var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
+
+    //Options for video script
+    var options = {
+        loop: true,
+        autoplay: true,
+        muteButton: false,
+    };
+
+    // Determine the state of the mute button based on mutebutton_on_off variable
+    if (mutebutton_on_off == 'on') {
+      options.muteButton = true; // Enable mute if 'on'
+    } else if (mutebutton_on_off == 'off') {
+      options.muteButton = false; // Disable mute if 'off'
+    }
+  } // end of if-else
 
      //////////////////
     /// ANIMATIONS ///
