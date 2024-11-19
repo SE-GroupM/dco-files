@@ -1,0 +1,164 @@
+{
+  "id": "3b04fec5-2e5c-480c-b10e-1b6470569c38",
+  "version": "1.4.1",
+  "name": "jula_FI_vib_320x250",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 250,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 250
+      }
+    ]
+  },
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "campaignText": {
+        "type": "text",
+        "source": "create"
+      },
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaText": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaTextColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productNameColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productPriceColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoTracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "mutebutton_on_off": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_placeholder": {
+        "type": "video",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "campaignText": {
+              "value": "campaignText"
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "ctaText": {
+              "value": "ctaText"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
+            },
+            "ctaTextColor": {
+              "value": "ctaTextColor"
+            },
+            "productBgColor": {
+              "value": "productBgColor"
+            },
+            "productNameColor": {
+              "value": "productNameColor"
+            },
+            "productPriceColor": {
+              "value": "productPriceColor"
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "logo": {
+              "value": ""
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "mutebutton_on_off": {
+              "value": "mutebutton_on_off"
+            },
+            "video_placeholder": {
+              "value": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1220,
+        "url": "https://assets.lemonpi.io/a/font/1220/CreightonPro-Bold?v=700",
+        "family": "CreightonPro-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1220,
+        "url": "https://assets.lemonpi.io/a/font/1220/Taz-Regular?v=400",
+        "family": "Taz-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1220,
+    "name": "Jula FI"
+  },
+  "folders": {
+    "selectedFolderId": 6094
+  },
+  "port": 63861
+}

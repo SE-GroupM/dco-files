@@ -1,0 +1,170 @@
+{
+  "id": "3ae44a12-4593-4fc2-9a32-a9976462cee3",
+  "version": "1.4.1",
+  "name": "jula_250x600_vib",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 250,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 250,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "campaignText": {
+        "type": "text",
+        "source": "create"
+      },
+      "bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "ctaText": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "ctaTextColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productBgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productNameColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "productPriceColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "worldClick": {
+        "type": "click",
+        "source": "create"
+      },
+      "videoSrc": {
+        "type": "text",
+        "source": "create"
+      },
+      "videoTracker": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_placeholder": {
+        "type": "video",
+        "source": "create"
+      },
+      "mutebutton_on_off": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "campaignText": {
+              "value": "campaignText"
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "logo": {
+              "value": ""
+            },
+            "ctaText": {
+              "value": "ctaText"
+            },
+            "ctaBgColor": {
+              "value": "ctaBgColor"
+            },
+            "ctaTextColor": {
+              "value": "ctaTextColor"
+            },
+            "productBgColor": {
+              "value": "productBgColor"
+            },
+            "productNameColor": {
+              "value": "productNameColor"
+            },
+            "productPriceColor": {
+              "value": "productPriceColor"
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "video_placeholder": {
+              "value": ""
+            },
+            "mutebutton_on_off": {
+              "value": "mutebutton_on_off"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/CreightonPro-Bold?v=700",
+        "family": "CreightonPro-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/CreightonProExtraBold?v=800",
+        "family": "CreightonProExtraBold",
+        "variant": "800"
+      },
+      {
+        "advertiserId": 884,
+        "url": "https://assets.lemonpi.io/a/font/884/Taz-Regular?v=400",
+        "family": "Taz-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 884,
+    "name": "Jula"
+  },
+  "folders": {
+    "selectedFolderId": 3553
+  },
+  "port": 60918
+}

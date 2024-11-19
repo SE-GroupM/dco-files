@@ -177,11 +177,11 @@ top: 20px;
 
 .player {
   position: absolute;
-  width: 300px;
+  width: auto;
   height: 400px;
   top: 100px;
   left: 0px;
-  background-color: #000;
+  background-color: #DA3A35;
 }
 
 /* World click div */
@@ -209,6 +209,7 @@ top: 20px;
   width: 280px;
   left: 10px;
 }
+
 #ctaText{
   padding: 8px 12px 8px 12px; /* top, right, bottom, left */
   top: 455px;

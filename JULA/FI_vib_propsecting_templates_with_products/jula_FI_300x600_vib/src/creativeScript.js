@@ -53,28 +53,60 @@ onLemonpiReady(function () {
     $('#campaignText').css({
        'color': campaigntTextColor,
     })
-    fitText($('#campaignText'),60)
+    fitText($('#campaignText'),20)
 
-    // Define the video source and tracker variables
-    var videoSrc = local_content.videoSrc.value;
-    var videoTracker = local_content.videoTracker.value;
+     /////////////////////////////////////////////////////////////////////////////////////////////
+   ///////////////////////////////// Videon config //////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////
 
-    //Video player
+  // SEENTHIS variables
+  // Define the video source and tracker variables
+  var videoSrc = content.videoSrc.value;
+  var videoTracker = content.videoTracker.value;
+  var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
+
+  var ccVideo = local_content.video_placeholder.value; // get local video src
+ 
+  var bannerWidth = 'auto';
+  var bannerHeight = '400';
+
+  if (ccVideo != '') {
+    // Set the BG video source
+    var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
+  
+    // Append video locally from CC
+    $("#player").html(BGvideoSource);
+    // Function to restart videos
+    function restartVideo(videoId) {
+      var videoElement = document.getElementById(videoId);
+      videoElement.currentTime = 0;
+      videoElement.play();
+    }
+    //restartVideo("video_container"); // use if you need to restart video from somewhere
+  } else {
+    //Video player 
     var e = document.createElement('script');
     e.src = 'https://video.seenthis.se/v2/player/74/player.js';
     e.onload = function(){
-    var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options);
+    var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
     };
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(e, s);
 
-      //Options for video script
+    //Options for video script
     var options = {
         loop: true,
-        loopCount: 3,
         autoplay: true,
-        muteButton: true,
+        muteButton: false,
     };
+
+    // Determine the state of the mute button based on mutebutton_on_off variable
+    if (mutebutton_on_off == 'on') {
+      options.muteButton = true; // Enable mute if 'on'
+    } else if (mutebutton_on_off == 'off') {
+      options.muteButton = false; // Disable mute if 'off'
+    }
+  } // end of if-else
 
   // Added fitText function instead of the plugin
   // call with examaple: fitText($('#selector'),10)
@@ -88,7 +120,7 @@ onLemonpiReady(function () {
     });
 
     var resizeText = setInterval(function () {
-        if ($element.height() <= maxHeight || fontSize <= 8) {
+        if ($element.height() <= maxHeight || fontSize <= 26) {
             clearInterval(resizeText);
         }
 

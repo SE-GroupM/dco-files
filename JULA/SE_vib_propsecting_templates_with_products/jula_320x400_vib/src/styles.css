@@ -61,15 +61,18 @@ top: 10px;
 }
 
 #campaignText {
-  top: 370px;
+  top: 359px; /* Reduced by 20px to compensate for padding */
   font-family: "CreightonPro-Bold";
   text-align: center;
-  font-size: 17px;
+  font-size: 19px;
   position: absolute;
-  height:25;
-  width: 300px;
-  left: 10px;
+  min-height: 55px;
+  width: 320px;
+  left: 0px;
+  background-color:#DA3A35;
+  padding-top: 10px; /* Adds 20px padding to the top */
 }
+
 #ctaText{
   padding: 8px 12px 8px 12px; /* top, right, bottom, left */
   top: 312px;
