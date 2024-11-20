@@ -47,6 +47,16 @@ html, body {
   border-radius: 5px;
 }
 
+.boxFrame {
+  position: relative; /* Make this relative so absolute positioning works within it */
+  display: inline-block;
+  background-color: #DA3A35;
+  left: 300px;
+  top: 0px;
+  width: 280px;
+  height: 400px;
+}
+
 .productInfo {
   position: fixed;
   width: 300px;
@@ -60,7 +70,7 @@ html, body {
   height: 200px;
   width: 180px;
   top: 145px;
-  left: 330px;
+  left: 30px;
 }
 
 *,
@@ -122,7 +132,7 @@ html, body {
   left: auto;
   right: -127px;
   min-width: 99px;
-  max-height: 83px;
+  max-height: 85px;
   text-align: right;
   color: #fff;
   background-color: #B32013;
@@ -139,7 +149,7 @@ html, body {
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: 130px;
+  top: 129px;
   left: auto;
   right: -147px;
   min-width: 80px;

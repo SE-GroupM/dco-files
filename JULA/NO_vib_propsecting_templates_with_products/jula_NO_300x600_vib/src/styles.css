@@ -28,13 +28,14 @@ html, body {
 
 /* Position of logo */
 .logo {
-opacity: 1;
-position: absolute;
-width: 190px;
-height: 60px;
-left: 70px;
-top: 20px;
-}
+  opacity: 1;
+  position: absolute;
+  width: 140px;
+  height: 70px;
+  left: 80px;
+  top: 20px;
+  }
+  
 /* Product box background */
 .productBox {
   position: absolute;
