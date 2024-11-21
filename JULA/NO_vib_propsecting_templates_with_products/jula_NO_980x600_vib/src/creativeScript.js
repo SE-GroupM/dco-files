@@ -101,6 +101,9 @@ onLemonpiReady(function () {
         return parts.join(".");
       }
 
+      $('#regularPrice').removeClass('salePrice clubPrice').css('color', ''); // Reset color too
+      $('#priceElement').removeClass('saleElement heroElement').empty();
+
       var regularPrice = product.regularPrice.value;
       var productPriceType = product.productPriceType.value;
 
@@ -139,15 +142,46 @@ onLemonpiReady(function () {
 
       var productSaving = product.productPriceSaving.value;
       productSaving = productSaving.replace(".-", "");
-      if (productSaving !== "0") {
+      if (productSaving !== "0" && productSaving !== "") { 
         $('#priceElement').html('Spar ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
         $('#priceElement').addClass('saleElement');
+      } else {
+        $('#priceElement').empty(); // Remove "Spar" if no saving
       }
 
       if (productPriceType.toLowerCase().includes('Festprodukt!')) {
         $('#regularPrice').addClass('salePrice');
         $('#priceElement').html(productPriceType);
         $('#priceElement').addClass('heroElement');
+      }
+
+
+      if (productPriceType === 'regular') {
+        var productPriceColor = local_content.productPriceColor.value;
+        $('#regularPrice').css('color', productPriceColor); // Apply color *after* reset
+      } else if (productPriceType === 'sale') {
+        // ... (your existing code)
+        $('#regularPrice').addClass('salePrice'); // Add class *after* reset
+      } else if (productPriceType === 'julaclub') {
+        // ... (your existing code)
+        $('#regularPrice').addClass('clubPrice'); // Add class *after* reset
+      }
+
+      var productSaving = product.productPriceSaving.value;
+      productSaving = productSaving.replace(".-", "");
+    
+      // **Corrected conditional for "Spar" element:**
+      if (productSaving !== "0" && productSaving !== "") { // Check for both "0" and empty string
+        $('#priceElement').html('Spar ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
+        $('#priceElement').addClass('saleElement');
+      } else {
+        $('#priceElement').empty(); // Remove "Spar" if no saving
+      }
+
+      if (productPriceType.toLowerCase().includes('Festprodukt!')) {
+        $('#regularPrice').addClass('salePrice'); // Add class *after* reset
+        $('#priceElement').html(productPriceType);
+        $('#priceElement').addClass('heroElement'); // Add class *after* reset
       }
 
       var productImage = product.productImage.value;

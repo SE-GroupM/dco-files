@@ -63,8 +63,8 @@ html, body {
   position: absolute;
   height: 240px;
   width: 270px;
-  top: 195px;
-  left: 340px;
+  top: 200px;
+  left: 390px;
 }
 
 /* Price element */
@@ -98,7 +98,7 @@ html, body {
   left: auto;
   right: 77px;
   text-align: right;
-  color: #B32013;
+  color: #000000;
   min-width: 110px;
   max-height: 88px;
   background-color: #FFE500;
@@ -144,7 +144,7 @@ html, body {
   top: 188px;
   right: 58px;
   text-align: left;
-  background-color: #DA3A35;
+  background-color: #AB2530;
   transform: rotate(-4deg);
   z-index: 10;
 }

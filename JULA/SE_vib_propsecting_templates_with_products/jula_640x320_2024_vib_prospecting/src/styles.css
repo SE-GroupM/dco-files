@@ -59,8 +59,8 @@ html, body {
   position: absolute;
   height: 140px;
   width: 140px;
-  top: 125px;
-  left: 410px;
+  top: 115px;
+  left: 430px;
 }
 
 *,
@@ -75,7 +75,7 @@ html, body {
   font-family: "CreightonProExtraBold", Arial, sans-serif;
   color: #333;
   text-align: center;
-  top: 90px;
+  top: 70px;
   left: auto;
   right: -130px;
 }
@@ -99,12 +99,12 @@ html, body {
   padding: 8px 6px 6px 15px;
   border-radius: 12px;
   font-size: 39px;
-  top: 83px;
+  top: 63px;
   left: auto;
   right: -130px;
   min-width: 80px;
   text-align: right;
-  color: #B32013;
+  color: #000000;
   background-color: #FFE500;
   transform: rotate(-4deg);
   white-space: nowrap;
@@ -118,7 +118,7 @@ html, body {
   border-radius: 18px;
   font-size: 17px;
   line-height: 1;
-  top: 54px;
+  top: 34px;
   left: auto;
   right: -127px;
   min-width: 99px;
@@ -139,12 +139,12 @@ html, body {
   border-radius: 4px;
   font-size: 12px;
   color: white;
-  top: 125px;
+  top: 105px;
   left: auto;
   right: -147px;
   min-width: 80px;
   text-align: left;
-  background-color: #DA3A35;
+  background-color: #AB2530;
   transform: rotate(-4deg);
   width: auto;
   white-space: nowrap;
@@ -159,7 +159,7 @@ html, body {
   border-radius: 4px;
   font-size: 10px;
   color: white;
-  top: 128px;
+  top: 108px;
   left: auto;
   right: -135px;
   text-align: left;
@@ -175,7 +175,7 @@ html, body {
   font-size: 22px;
   color: #333;
   left: 0px;
-  top: 160px;
+  top: 140px;
   width: 300px;
   text-align: center;
 }

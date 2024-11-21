@@ -81,7 +81,7 @@ html, body {
 
 .regularPrice {
   position: absolute;
-  font-size: 40px;
+  font-size: 57px;
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   color: #333;
   text-align: center;
@@ -106,15 +106,15 @@ html, body {
   display: inline-block;
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   position: absolute;
-  padding: 8px 6px 6px 5px;
+  padding: 8px 6px 6px 8px;
   border-radius: 12px;
-  font-size: 39px;
-  top: 83px;
+  font-size: 41px;
+  top: 80px;
   left: auto;
   right: -130px;
-  min-width: 90px;
+  min-width: 75px;
   text-align: right;
-  color: #B32013;
+  color: #000000;
   background-color: #FFE500;
   transform: rotate(-4deg);
   white-space: nowrap;
@@ -147,14 +147,15 @@ html, body {
   position: absolute;
   padding: 3px 8px 3px 8px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 11px;
   color: white;
-  top: 129px;
+  top: 130.5px;
+  max-height: 18px;
   left: auto;
   right: -147px;
-  min-width: 80px;
+  min-width: 48px;
   text-align: left;
-  background-color: #DA3A35;
+  background-color: #AB2530;
   transform: rotate(-4deg);
   width: auto;
   white-space: nowrap;
@@ -222,7 +223,7 @@ html, body {
   width: 220px;
   height: 50px;
   top: 20px;
-  left: 330px;
+  left: 30px;
 }
 
 #ctaText {

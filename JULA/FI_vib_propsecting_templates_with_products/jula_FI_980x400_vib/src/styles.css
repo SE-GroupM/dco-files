@@ -74,7 +74,7 @@ html, body {
   color: #333;
   text-align: center;
   min-width: 280px;
-  font-size: 65px;
+  font-size: 70px;
   top: 58px;
   left: auto;
   right: 10px;
@@ -98,7 +98,7 @@ html, body {
   left: auto;
   right: 93px;
   text-align: right;
-  color: #B32013;
+  color: #000000;
   min-width: 85px;
   max-height: 75px;
   background-color: #FFE500;
@@ -144,7 +144,7 @@ html, body {
   top: 123px;
   right: 65px;
   text-align: left;
-  background-color: #DA3A35;
+  background-color: #AB2530;
   transform: rotate(-4deg);
   z-index: 10;
 }

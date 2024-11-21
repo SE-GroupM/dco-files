@@ -33,6 +33,7 @@ onLemonpiReady(function () {
   var bannerWidth = '400';
   var bannerHeight = 'auto';
 
+  
   if (ccVideo != '') {
     // Set the BG video source
     var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
@@ -101,6 +102,9 @@ onLemonpiReady(function () {
         return parts.join(".");
       }
 
+      $('#regularPrice').removeClass('salePrice clubPrice').css('color', ''); // Reset color too
+      $('#priceElement').removeClass('saleElement heroElement').empty();
+
       var regularPrice = product.regularPrice.value;
       var productPriceType = product.productPriceType.value;
 
@@ -118,7 +122,7 @@ onLemonpiReady(function () {
 
       $('#productPriceType').html(formattedProductPriceType);
       
-      if (productPriceType === 'regular') {
+         if (productPriceType === 'regular') {
         var productPriceColor = local_content.productPriceColor.value;
         $('#regularPrice').css('color', productPriceColor);
       } else if (productPriceType === 'sale') {
@@ -127,6 +131,7 @@ onLemonpiReady(function () {
         } else {
           $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -6px; padding-right: 8px;">.-</span>');
         }
+
         $('#regularPrice').addClass('salePrice');
       } else if (productPriceType === 'julaclub') {
         if (tempNormal[1] > 0) {
@@ -137,14 +142,28 @@ onLemonpiReady(function () {
         $('#regularPrice').addClass('clubPrice');
       }
 
-      var productSaving = product.productPriceSaving.value;
-      productSaving = productSaving.replace(".-", "");
-      if (productSaving !== "0") {
-        $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
-        $('#priceElement').addClass('saleElement');
+      if (productPriceType === 'regular') {
+        var productPriceColor = local_content.productPriceColor.value;
+        $('#regularPrice').css('color', productPriceColor); // Apply color *after* reset
+      } else if (productPriceType === 'sale') {
+        // ... (your existing code)
+        $('#regularPrice').addClass('salePrice'); // Add class *after* reset
+      } else if (productPriceType === 'julaclub') {
+        // ... (your existing code)
+        $('#regularPrice').addClass('clubPrice'); // Add class *after* reset
       }
 
-      if (productPriceType.toLowerCase().includes('kalasprodukt')) {
+      var productSaving = product.productPriceSaving.value;
+      productSaving = productSaving.replace(".-", "");
+
+      if (productSaving !== "0" && productSaving !== "") { 
+        $('#priceElement').html('Spara ' + productSaving + '<span style="letter-spacing: -1px; padding-right: 2px;">.-</span>');
+        $('#priceElement').addClass('saleElement');
+      } else {
+        $('#priceElement').empty(); // Remove "Spar" if no saving
+      }
+
+      if (productPriceType.toLowerCase().includes('Kalasprodukt!')) {
         $('#regularPrice').addClass('salePrice');
         $('#priceElement').html(productPriceType);
         $('#priceElement').addClass('heroElement');
@@ -157,6 +176,7 @@ onLemonpiReady(function () {
         'background-repeat': 'no-repeat',
         'background-position': 'center'
       });
+
 
       var priceInfo = product.productLatestPrice.value;
       $('#priceInfo').html(priceInfo);
@@ -191,7 +211,6 @@ onLemonpiReady(function () {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
   // Function to detect if the user is on Windows and using Edge/Chrome/similar
   function isWindowsAndModernBrowser() {
@@ -209,10 +228,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const style = document.createElement('style');
     style.innerHTML = `
       .saleElement {
-        top: 135px !important;
+        top: 114px !important;
       }
       .heroElement {
-        top: 135px !important;
+        top: 114px !important;
       }
     `;
     document.head.appendChild(style);

@@ -100,13 +100,13 @@ html, body {
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   position: absolute;
   padding: 5px 6px 4px 9px;
-  border-radius: 16px;
+  border-radius: 14px;
   font-size: 45px;
   top: 40px;
   left: auto;
   right: 205px;
   text-align: right;
-  color: #B32013;
+  color: #000000;
   min-width: 70px;
   max-height: 55px;
   background-color: #FFE500;
