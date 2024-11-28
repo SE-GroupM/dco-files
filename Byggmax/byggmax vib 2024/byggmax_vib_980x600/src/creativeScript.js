@@ -22,20 +22,59 @@ window.addEventListener('lemonpi.content/ready', event => {
    
   
   $('#worldClick').click(onClick);
-  $('#copyFrame1').html(content.copyFrame1.value);
-  $('#copyFrame2').html(content.copyFrame2.value);
+  $('#copyFrame1').html(content.productName_1.value);
+  $('#copyFrame2').html(content.productName_2.value);
   $('#asteriskText').html(content.asteriskText.value);
      
      
-    // Define the video source and tracker variables
-    var videoSrc = content.videoSrc.value;
-    var videoTracker = content.videoTracker.value;
-  
-    // Defining mute-button's appearence 
-    var mutebutton_on_off = local_content.mutebutton_on_off.value;
-    //import content of price currenly from placeholder
-    let price_currency_content = local_content.price_currency_content.value;
+/////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////// Videon config //////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////
 
+  // SEENTHIS variables
+  // Define the video source and tracker variables
+  var videoSrc = content.videoSrc.value;
+  var videoTracker = content.videoTracker.value;
+  var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
+
+  var ccVideo = local_content.video_placeholder.value; // get local video src
+ // variable holding textcolor from adset
+ var setTextColors = local_content.textColor.value;
+ // Select multiple elements with differnet classes
+ var allElements = document.querySelectorAll('.currentPrice, .productName_1, .productName_2');
+
+ // Loop through the Nodelist and add same css class to each element
+ allElements.forEach(function(element) {
+   element.classList.add('textColor_css');
+ });
+
+ if (setTextColors && setTextColors.trim() !== '') {
+   // If setTextColors has a value, apply the CSS color
+   $('.textColor_css').css({
+     'color': setTextColors,
+   });
+ }
+
+ //import content of price currenly from placeholder
+ let price_currency_content = local_content.price_currency_content.value;
+ 
+  var bannerWidth = '980';
+  var bannerHeight = '600';
+
+  if (ccVideo != '') {
+    // Set the BG video source
+    var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
+  
+    // Append video locally from CC
+    $("#player").html(BGvideoSource);
+    // Function to restart videos
+    function restartVideo(videoId) {
+      var videoElement = document.getElementById(videoId);
+      videoElement.currentTime = 0;
+      videoElement.play();
+    }
+    //restartVideo("video_container"); // use if you need to restart video from somewhere
+  }else {
     //Video player 
     var e = document.createElement('script');
     e.src = 'https://video.seenthis.se/v2/player/74/player.js';
@@ -45,12 +84,20 @@ window.addEventListener('lemonpi.content/ready', event => {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(e, s);
 
-     //Options for video script
+    //Options for video script
     var options = {
         loop: true,
         autoplay: true,
         muteButton: false,
     };
+
+    // Determine the state of the mute button based on mutebutton_on_off variable
+    if (mutebutton_on_off == 'on') {
+      options.muteButton = true; // Enable mute if 'on'
+    } else if (mutebutton_on_off == 'off') {
+      options.muteButton = false; // Disable mute if 'off'
+    }
+  } // end of if-else
 
      //////////////////
     /// ANIMATIONS ///

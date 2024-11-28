@@ -1,6 +1,6 @@
 {
   "id": "09b03c97-74eb-48b7-ac16-4c14ea4b135a",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "name": "byggmax_vib_DEMO_980x240",
   "description": "",
   "size": {
@@ -18,6 +18,16 @@
       }
     ]
   },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
   "placeholders": {
     "fileName": "migrated from version 1.3.0 of the extension",
     "format": "CSV",
@@ -103,7 +113,7 @@
     "name": "Byggmax"
   },
   "folders": {
-    "selectedFolderId": 5611
+    "selectedFolderId": 5902
   },
-  "port": 50642
+  "port": 49881
 }
