@@ -1,6 +1,6 @@
 {
   "id": "0b304d59-7efd-4301-bf8f-8e2baae1e262",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "name": "byggmax_vib_DEMO_320x320",
   "description": "",
   "size": {
@@ -13,6 +13,16 @@
     ],
     "customSizes": []
   },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
   "placeholders": {
     "fileName": "migrated from version 1.3.0 of the extension",
     "format": "CSV",
@@ -100,5 +110,5 @@
   "folders": {
     "selectedFolderId": 5902
   },
-  "port": 58145
+  "port": 49936
 }
