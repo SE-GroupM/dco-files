@@ -67,8 +67,21 @@ onLemonpiReady(function () {
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
  
-  var bannerWidth = 'auto';
-  var bannerHeight = '400';
+
+// Default banner dimensions
+var bannerWidth = 'auto';
+var bannerHeight = '400';
+
+// Check if campaignText is empty and adjust bannerHeight and .logo position
+if (!content.campaignText.value || content.campaignText.value.trim() === "") {
+    bannerHeight = '500'; // Adjust bannerHeight if campaignText is empty
+
+    // Adjust the top value of .logo
+    const ctaElement = document.querySelector('#ctaText');
+    if (ctaElement) {
+      ctaElement.style.top = "550px";
+    }
+}
 
   if (ccVideo != '') {
     // Set the BG video source

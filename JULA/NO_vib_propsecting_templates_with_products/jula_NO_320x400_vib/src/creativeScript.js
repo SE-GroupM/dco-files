@@ -43,6 +43,14 @@ onLemonpiReady(function () {
        'color': local_content.ctaTextColor.value,
      });
     
+     if (!content.campaignText.value || content.campaignText.value.trim() === "") {
+      document.getElementById('campaignText').style.display = 'none';
+       // Adjust the top value of .logo
+       const ctaElement = document.querySelector('#ctaText');
+       if (ctaElement) {
+         ctaElement.style.top = "347px";
+       }
+   }
 
     //Text color of campaignTrext name
     var campaigntTextColor = local_content.productNameColor.value;
@@ -67,8 +75,8 @@ onLemonpiReady(function () {
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
  
-  var bannerWidth = '320';
-  var bannerHeight = 'auto';
+  var bannerWidth = 'auto';
+  var bannerHeight = '370';
 
   if (ccVideo != '') {
     // Set the BG video source

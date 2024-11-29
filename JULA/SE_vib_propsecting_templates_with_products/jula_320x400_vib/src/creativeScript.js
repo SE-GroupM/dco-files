@@ -47,6 +47,15 @@ onLemonpiReady(function () {
     //Text color of campaignTrext name
     var campaigntTextColor = local_content.productNameColor.value;
 
+    if (!content.campaignText.value || content.campaignText.value.trim() === "") {
+      document.getElementById('campaignText').style.display = 'none';
+       // Adjust the top value of .logo
+       const ctaElement = document.querySelector('#ctaText');
+       if (ctaElement) {
+         ctaElement.style.top = "350px";
+       }
+   }
+
     // Controlls styling and content of campaign text/header text
     var campaignText = local_content.campaignText.value;
     $('#campaignText').html(campaignText)
@@ -55,9 +64,10 @@ onLemonpiReady(function () {
     })
     fitText($('#campaignText'),20)
 
-    /////////////////////////////////////////////////////////////////////////////////////////////
-  ///////////////////////////////// Videon config //////////////////////////////////////
-  /////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////
+   ///////////////////////////////// Video config //////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////
+
 
   // SEENTHIS variables
   // Define the video source and tracker variables
@@ -67,7 +77,7 @@ onLemonpiReady(function () {
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
  
-  var bannerWidth = '320';
+  var bannerWidth = '325';
   var bannerHeight = 'auto';
 
   if (ccVideo != '') {

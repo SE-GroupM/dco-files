@@ -30,8 +30,8 @@ html, body {
 .logo {
 opacity: 1;
 position: absolute;
-width: 89px;
-height: 40px;
+width: 100px;
+height: 55px;
 left: 10px;
 top: 10px;
 }
@@ -40,7 +40,7 @@ top: 10px;
   position: absolute;
   width: 320px;
   height: 235px;
-  top: 50px;
+  top: 64px;
   left: 0px;
   background-color: #000;
 }

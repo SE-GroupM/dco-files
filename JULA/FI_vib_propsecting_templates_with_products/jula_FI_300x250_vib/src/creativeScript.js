@@ -43,6 +43,14 @@ onLemonpiReady(function () {
        'color': local_content.ctaTextColor.value,
      });
     
+     if (!content.campaignText.value || content.campaignText.value.trim() === "") {
+      document.getElementById('campaignText').style.display = 'none';
+       // Adjust the top value of .logo
+       const ctaElement = document.querySelector('#ctaText');
+       if (ctaElement) {
+         ctaElement.style.top = "205px";
+       }
+   }
 
     //Text color of campaignTrext name
     var campaigntTextColor = local_content.productNameColor.value;

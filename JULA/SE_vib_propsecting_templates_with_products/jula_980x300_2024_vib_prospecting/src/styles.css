@@ -32,8 +32,8 @@ html, body {
 /* Position of logo */
 .logo {
   position: absolute;
-  width: 150px;
-  height: 81px;
+  width: 170px;
+  height: 91px;
   left: 15px;
   top: 15px;
 }
@@ -63,8 +63,8 @@ html, body {
   position: absolute;
   height: 190px;
   width: 190px;
-  top: 65px;
-  left: 380px;
+  top: 45px;
+  left: 364px;
 }
 
 /* Price element */
@@ -75,9 +75,9 @@ html, body {
   text-align: center;
   min-width: 280px;
   font-size: 60px;
-  top: 58px;
+  top: 70px;
   left: auto;
-  right: 10px;
+  right: -20px;
 }
 
 /* Price sup element */
@@ -85,6 +85,19 @@ html, body {
   font-size: 50%;
   vertical-align: super;
   top: 0;
+}
+
+.productBadge {
+  position: absolute;
+  top: 140px;
+  right: 60px;
+  background-color: #CB333B;
+  color: #ffffff;
+  padding: 5px 8px; /* Fixed padding syntax */
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 20px;
+  font-weight: 700;
 }
 
 /* Discounted price element with yellow background and red text, ex. "99,-" */
@@ -138,7 +151,6 @@ html, body {
   padding: 3px 8px;
   border-radius: 4px;
   font-size: 13px;
-  line-height: 1;
   color: white;
   top: 112px;
   right: 65px;
@@ -184,10 +196,10 @@ html, body {
   font-family: "Taz-Regular";
   font-size: 11px;
   color: #fff;
-  left: -2px;
+  right: 142px;
   top: 250px;
-  width: 300px;
-  text-align: center;
+  width: 90px;
+  text-align: right;
   text-decoration: line-through;
   text-decoration-line: line-through;
   -webkit-text-decoration-line: line-through;

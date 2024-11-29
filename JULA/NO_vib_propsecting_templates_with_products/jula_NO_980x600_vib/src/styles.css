@@ -32,8 +32,8 @@ html, body {
 /* Position of logo */
 .logo {
   position: absolute;
-  width: 190px;
-  height: 101px;
+  width: 200px;
+  height: 110px;
   left: 15px;
   top: 15px;
 }
@@ -63,7 +63,7 @@ html, body {
   position: absolute;
   height: 240px;
   width: 270px;
-  top: 200px;
+  top: 230px;
   left: 390px;
 }
 
@@ -72,12 +72,11 @@ html, body {
   position: absolute;
   font-family: "CreightonPro-Bold", Arial, sans-serif;
   color: #333;
-  text-align: center;
-  min-width: 280px;
   font-size: 75px;
   top: 118px;
   left: auto;
-  right: 15px;
+  right: 60px;
+  text-align: right;
 }
 
 /* Price sup element */
@@ -85,6 +84,18 @@ html, body {
   font-size: 50%;
   vertical-align: super;
   top: 0;
+}
+
+.productBadge {
+  position: absolute;
+  top: 210px;
+  right: 60px;
+  background-color: #CB333B;
+  color: #ffffff;
+  padding: 1px 8px; /* Fixed padding syntax */
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 /* Discounted price element with yellow background and red text, ex. "99,-" */
@@ -143,7 +154,7 @@ html, body {
   color: white;
   top: 188px;
   right: 58px;
-  text-align: left;
+  text-align: right;
   background-color: #AB2530;
   transform: rotate(-4deg);
   z-index: 10;
@@ -185,9 +196,9 @@ html, body {
   font-family: "Taz-Regular";
   font-size: 13px;
   color: #fff;
-  left: -5px;
+  right: 105px;
   top: 548px;
-  width: 300px;
+  width: 160px;
   text-align: center;
   text-decoration: line-through;
   text-decoration-line: line-through;

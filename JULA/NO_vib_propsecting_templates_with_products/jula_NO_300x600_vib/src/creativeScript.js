@@ -70,6 +70,17 @@ onLemonpiReady(function () {
   var bannerWidth = 'auto';
   var bannerHeight = '400';
 
+  // Check if campaignText is empty and adjust bannerHeight and .logo position
+if (!content.campaignText.value || content.campaignText.value.trim() === "") {
+  bannerHeight = '500'; // Adjust bannerHeight if campaignText is empty
+
+  // Adjust the top value of .logo
+  const ctaElement = document.querySelector('#ctaText');
+  if (ctaElement) {
+    ctaElement.style.top = "550px";
+  }
+}
+
   if (ccVideo != '') {
     // Set the BG video source
     var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 

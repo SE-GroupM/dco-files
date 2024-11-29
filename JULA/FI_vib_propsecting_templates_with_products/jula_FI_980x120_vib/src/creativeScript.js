@@ -30,7 +30,7 @@ onLemonpiReady(function () {
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
  
-  var bannerWidth = '600';
+  var bannerWidth = '560';
   var bannerHeight = 'auto';
 
   
@@ -118,6 +118,9 @@ onLemonpiReady(function () {
         $('#regularPrice').html(tempNormal[0] + '<span style="letter-spacing: -6px; padding-right: 8px;">.-</span>');
       }
 
+      var productBadge = product.productBadge.value;
+      $('#productBadge').html(productBadge);
+
       var formattedProductPriceType = numberWithSpaces(productPriceType);
 
       $('#productPriceType').html(formattedProductPriceType);
@@ -177,6 +180,44 @@ onLemonpiReady(function () {
         'background-position': 'center'
       });
 
+      if (productBadge === 'Fiksu valinta') {
+        $('#productBadge')
+          .css({
+            'background-color': '#CB333B', // Default color for "Smart val"
+            'color': '#ffffff',           // Default text color
+            'border': '1.5px solid #ffffff' // Default border for "Smart val"
+          })
+          .show(); // Ensure the badge is visible
+      } else if (productBadge === 'Julan edullisin hinta') {
+        $('#productBadge')
+          .css({
+            'background-color': '#FFE500',
+            'color': '#262626',
+            'border': 'none' // Remove the border for "Julas lägsta pris!"
+          })
+          .show(); // Ensure the badge is visible
+      } else {
+        $('#productBadge').hide(); // Hide the badge completely
+      }
+
+    function adjustElementsBasedOnCampaignText(campaignText) {
+      if (!campaignText || campaignText.trim() === "") {
+          // Select elements
+          const priceInfo = document.querySelector('.priceInfo');
+          const productInfo = document.querySelector('.productInfo');
+  
+          if (productInfo) {
+              productInfo.style.top = "-18px";
+              priceInfo.style.top = "113px";
+          }
+      }
+  }
+  
+  // Example usage:
+  // Assuming `campaignText` is dynamically assigned
+  var campaignText = content.campaignText?.value || ""; // Update this based on your dynamic placeholder logic
+  adjustElementsBasedOnCampaignText(campaignText);
+  
 
       var priceInfo = product.productLatestPrice.value;
       $('#priceInfo').html(priceInfo);
@@ -228,7 +269,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const style = document.createElement('style');
     style.innerHTML = `
       .saleElement {
-        top: 114px !important;
+        top: 88px !important;
       }
       .heroElement {
         top: 114px !important;

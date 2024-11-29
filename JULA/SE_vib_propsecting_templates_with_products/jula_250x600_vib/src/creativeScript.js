@@ -55,40 +55,54 @@ onLemonpiReady(function () {
     })
     fitText($('#campaignText'),60)
 
-    /////////////////////////////////////////////////////////////////////////////////////////////
-  ///////////////////////////////// Videon config //////////////////////////////////////
-  /////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////
+   ///////////////////////////////// Video config //////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////
 
+  
   // SEENTHIS variables
-  // Define the video source and tracker variables
-  var videoSrc = content.videoSrc.value;
-  var videoTracker = content.videoTracker.value;
-  var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
+// Define the video source and tracker variables
+var videoSrc = content.videoSrc.value;
+var videoTracker = content.videoTracker.value;
+var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
 
-  var ccVideo = local_content.video_placeholder.value; // get local video src
- 
-  var bannerWidth = 'auto';
-  var bannerHeight = '400';
+var ccVideo = local_content.video_placeholder.value; // get local video src
 
-  if (ccVideo != '') {
+// Default banner dimensions
+var bannerWidth = 'auto';
+var bannerHeight = '400';
+
+// Check if campaignText is empty and adjust bannerHeight and .logo position
+if (!content.campaignText.value || content.campaignText.value.trim() === "") {
+    bannerHeight = '500'; // Adjust bannerHeight if campaignText is empty
+
+    // Adjust the top value of .logo
+    const ctaElement = document.querySelector('#ctaText');
+    if (ctaElement) {
+      ctaElement.style.top = "550px";
+    }
+}
+
+if (ccVideo != '') {
     // Set the BG video source
     var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
-  
+
     // Append video locally from CC
     $("#player").html(BGvideoSource);
+
     // Function to restart videos
     function restartVideo(videoId) {
-      var videoElement = document.getElementById(videoId);
-      videoElement.currentTime = 0;
-      videoElement.play();
+        var videoElement = document.getElementById(videoId);
+        videoElement.currentTime = 0;
+        videoElement.play();
     }
     //restartVideo("video_container"); // use if you need to restart video from somewhere
-  } else {
-    //Video player 
+} else {
+    // Video player
     var e = document.createElement('script');
     e.src = 'https://video.seenthis.se/v2/player/74/player.js';
-    e.onload = function(){
-    var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
+    e.onload = function() {
+        var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options);
     };
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(e, s);

@@ -31,8 +31,8 @@ html, body {
 
 .logo {
   position: absolute;
-  width: 110px;
-  height: 81px;
+  width: 140px;
+  height: 91px;
   left: 15px;
   top: 15px;
 }
@@ -67,9 +67,9 @@ html, body {
 
 .productImage {
   position: absolute;
-  height: 200px;
+  height: 190px;
   width: 180px;
-  top: 145px;
+  top: 155px;
   left: 30px;
 }
 
@@ -100,6 +100,19 @@ html, body {
   font-size: 50%;
   vertical-align: super;
   top: 0;
+}
+
+.productBadge {
+  position: absolute;
+  top: 160px;
+  right: -140px;
+  background-color: #CB333B;
+  color: #ffffff;
+  padding: 2.5px 8px; /* Fixed padding syntax */
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 15px;
+  font-weight: 700;
 }
 
 .salePrice {

@@ -105,6 +105,9 @@ onLemonpiReady(function () {
       $('#regularPrice').removeClass('salePrice clubPrice').css('color', ''); // Reset color too
       $('#priceElement').removeClass('saleElement heroElement').empty();
 
+      var productBadge = product.productBadge.value;
+      $('#productBadge').html(productBadge);
+
       var regularPrice = product.regularPrice.value;
       var productPriceType = product.productPriceType.value;
 
@@ -177,7 +180,55 @@ onLemonpiReady(function () {
         'background-position': 'center'
       });
 
+      if (productBadge === 'Smart val') {
+        $('#productBadge')
+            .css({
+                'background-color': '#CB333B', // Default color for "Smart val"
+                'color': '#ffffff',           // Default text color
+                'border': '1.5px solid #ffffff' // Default border for "Smart val"
+            })
+            .show(); // Ensure the badge is visible
+    } else if (productBadge === 'Julas lägsta pris!') {
+        $('#productBadge')
+            .css({
+                'background-color': '#FFE500',
+                'color': '#262626',
+                'border': 'none' // Remove the border for "Julas lägsta pris!"
+            })
+            .show(); // Ensure the badge is visible
+    } else {
+        $('#productBadge').hide(); // Hide the badge completely
+    }
 
+    function adjustElementsBasedOnCampaignText(campaignText) {
+      if (!campaignText || campaignText.trim() === "") {
+          // Select elements
+          const priceInfo = document.querySelector('.priceInfo');
+          const productBox = document.querySelector('.productBox');
+          const productInfo = document.querySelector('.productInfo');
+          const productImage = document.querySelector('.productImage');
+  
+          // Update styles
+          if (productBox) {
+              productBox.style.top = "-14px";
+              productImage.style.width = "180px";
+              productImage.style.height = "160px";
+          }
+  
+          if (productInfo) {
+              productInfo.style.top = "-35px";
+              priceInfo.style.top = "325px";
+              priceInfo.style.right = "-10px";
+          }
+      }
+  }
+  
+  // Example usage:
+  // Assuming `campaignText` is dynamically assigned
+  var campaignText = content.campaignText?.value || ""; // Update this based on your dynamic placeholder logic
+  adjustElementsBasedOnCampaignText(campaignText);
+  
+    
       var priceInfo = product.productLatestPrice.value;
       $('#priceInfo').html(priceInfo);
 
