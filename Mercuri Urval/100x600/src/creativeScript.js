@@ -78,7 +78,6 @@ onLemonpiReady(function () {
     });
   }
 
-
     //Append texts
     $("#ctaText").html(ctaText);
     $("#companyName").html(companyName);
