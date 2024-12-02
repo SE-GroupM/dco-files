@@ -153,5 +153,8 @@
     "id": 1219,
     "name": "Jula NO"
   },
-  "port": 49536
+  "folders": {
+    "selectedFolderId": 6106
+  },
+  "port": 64683
 }

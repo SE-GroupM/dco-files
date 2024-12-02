@@ -1,6 +1,6 @@
 {
   "id": "3b04fec5-2e5c-480c-b10e-1b6470569c38",
-  "version": "1.4.1",
+  "version": "1.5.2",
   "name": "jula_FI_vib_320x250",
   "description": "",
   "size": {
@@ -18,6 +18,16 @@
       }
     ]
   },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
   "placeholders": {
     "fileName": "",
     "format": "CSV",
@@ -160,5 +170,5 @@
   "folders": {
     "selectedFolderId": 6094
   },
-  "port": 59516
+  "port": 64974
 }
