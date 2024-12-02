@@ -49,6 +49,8 @@ onLemonpiReady(function () {
 
     const jobClick = product_collection.click.value; // job  exit url from scraper
 
+    const logoHeight = local_content.company_logo_height.value; //Adjust logo height if needed
+
     //Append background image
     $("#Blue_Graphic").css("background-image","url("+blueGraphicsLeftSide+")");
     //Append Mercuri logo
@@ -64,6 +66,14 @@ onLemonpiReady(function () {
       'background-repeat': 'no-repeat',
       'background-position': 'top right',
     });
+
+  if (logoHeight) {
+    //Append job/company logo height
+    $("#companyLogo").css({
+      'height': logoHeight + "px",
+      'width': 'auto'
+    });
+  }
 
 
     //Append texts
