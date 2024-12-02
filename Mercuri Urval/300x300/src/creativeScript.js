@@ -49,6 +49,12 @@ onLemonpiReady(function () {
 
     const jobClick = product_collection.click.value; // job  exit url from scraper
 
+    const logoHeight = local_content.company_logo_height.value; //Adjust logo height if needed
+
+    const jobTitleTrunc = local_content.truncJobtitle.value; //Adjust length of job title if needed
+
+    const jobDesTrunc = local_content.truncJobDescription.value; //Adjust length of job description if needed
+
     //Append background image
     $("#Blue_Graphic").css("background-image","url("+blueGraphicsLeftSide+")");
     //Append Mercuri logo
@@ -65,16 +71,32 @@ onLemonpiReady(function () {
       'background-position': 'top right',
     });
 
+     //Adjust company logo if needed
+     if(logoHeight) {
+      $("#companyLogo").css({
+        'height': logoHeight
+      });
+    }
 
-    //Append texts
-    $("#ctaText").html(ctaText);
 
-    $("#companyName").html(companyName);
-    $("#mainText").html(jobTitle);
-    truncateProductText('#mainText', 50);
-    $("#subText").html(jobDescription);
-    truncateProductText('#subText', 130);
-    $("#locationText").html(jobLocation);
+     //Append texts
+     $("#ctaText").html(ctaText);
+     $("#companyName").html(companyName);
+     $("#mainText").html(jobTitle);
+     //Adjusts job title if needed from adset
+     if (jobTitleTrunc) {
+       truncateProductText('#mainText', jobTitleTrunc);
+     } else {
+       truncateProductText('#mainText', 50);
+     }
+     $("#subText").html(jobDescription);
+      //Adjusts job description if needed from adset
+     if (jobDesTrunc) {
+       truncateProductText('#subText', jobDesTrunc);
+     } else {
+       truncateProductText('#subText', 130);
+     }
+     $("#locationText").html(jobLocation);
     
     ////////////////////////////////////////////
     /////           ANIMATIONS             /////
