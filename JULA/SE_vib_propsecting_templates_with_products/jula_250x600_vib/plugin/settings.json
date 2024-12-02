@@ -173,5 +173,8 @@
     "id": 884,
     "name": "Jula"
   },
-  "port": 61001
+  "folders": {
+    "selectedFolderId": 3553
+  },
+  "port": 49836
 }
