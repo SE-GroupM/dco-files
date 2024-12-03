@@ -22,11 +22,19 @@
     "fileName": "Remote file",
     "format": "CSV",
     "schema": {
-      "worldClick": {
-        "type": "click",
+      "background_color": {
+        "type": "text",
         "source": "create"
       },
-      "cta_text": {
+      "text_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text_color": {
         "type": "text",
         "source": "create"
       },
@@ -89,11 +97,17 @@
         {
           "isIncluded": true,
           "data": {
-            "worldClick": {
-              "value": ""
+            "background_color": {
+              "value": "background_color"
             },
-            "cta_text": {
-              "value": "cta_text"
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -139,11 +153,17 @@
         {
           "isIncluded": true,
           "data": {
-            "worldClick": {
-              "value": ""
+            "background_color": {
+              "value": "background_color"
             },
-            "cta_text": {
-              "value": "cta_text"
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -189,11 +209,17 @@
         {
           "isIncluded": true,
           "data": {
-            "worldClick": {
-              "value": ""
+            "background_color": {
+              "value": "background_color"
             },
-            "cta_text": {
-              "value": "cta_text"
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -239,11 +265,17 @@
         {
           "isIncluded": true,
           "data": {
-            "worldClick": {
-              "value": ""
+            "background_color": {
+              "value": "background_color"
             },
-            "cta_text": {
-              "value": "cta_text"
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -289,11 +321,17 @@
         {
           "isIncluded": true,
           "data": {
-            "worldClick": {
-              "value": ""
+            "background_color": {
+              "value": "background_color"
             },
-            "cta_text": {
-              "value": "cta_text"
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -367,5 +405,5 @@
   "folders": {
     "selectedFolderId": 5571
   },
-  "port": 58619
+  "port": 49788
 }

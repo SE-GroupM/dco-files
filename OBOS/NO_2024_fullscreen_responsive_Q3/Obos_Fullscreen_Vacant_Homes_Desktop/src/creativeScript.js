@@ -38,8 +38,6 @@ window.addEventListener('lemonpi.content/ready', event => {
   //$('.worldClick').click(onClick);
 
   //Image Setup
-  $('#cta').html(local_content.cta_text.value);
-  
   $('#logo').css({
     'background-image': 'url('+local_content.logo.value+ ')'
   });
@@ -51,16 +49,22 @@ window.addEventListener('lemonpi.content/ready', event => {
   $('#next').css({
     'background-image': 'url('+local_content.right_arrow.value+ ')'
   });
-
-  $('#project-image').css({
-    'background-image': 'url('+local_content.vacant_homes.value[2].vacant_home_image.value+ ')'
-  });
-
-  $('#project-logo').css({
-    'background-image': 'url('+local_content.vacant_homes.value[0].project_logo.value+ ')'
-  });
-
+ 
   $('#project-headline').html(local_content.vacant_homes.value[0].project_headline.value);
+
+  //Colors Setup
+  $('#content').css({
+    'background-color': local_content.background_color.value,
+    'color': local_content.text_color.value
+  });
+
+  $('#cta').css({
+    'background-color': local_content.cta_color.value,
+    'color': local_content.cta_text_color.value
+  });
+
+  setVideo();
+
 
   const Slider = {
     currentSlideIndex: 1,
@@ -68,8 +72,8 @@ window.addEventListener('lemonpi.content/ready', event => {
         const defaults = {
             slider: ".slider",
             slide: ".slide",
-            prevBtn: ".prev",
-            nextBtn: ".next",
+            prevBtn: ".next",
+            nextBtn: ".prev",
             duration: 0.5,
             setSlideContent: null,
             animation: function(timeline, slidesWrapper, currentSlide, lastSlide, index, target, onComplete) {
@@ -96,6 +100,20 @@ window.addEventListener('lemonpi.content/ready', event => {
         let slideIndex = 1;
         let isAnimating = false;
 
+        $('#project-image').css({
+          'background-image': 'url('+local_content.vacant_homes.value[0].project_image.value+ ')'
+        });
+      
+        $('#cta').html(local_content.vacant_homes.value[0].cta_text.value);
+
+        const elements = document.querySelectorAll('.worldClick');
+            // Loop through each element and add the click listener
+          elements.forEach((element, index) => {
+              element.addEventListener('click', function(event) {
+                  onWorldClick(event, index); // Call the onWorldClick function with event and index
+              });
+          });
+
         function createSlide(slideData, index) {
             const slideDiv = slideTemplate.cloneNode(true);
             slideTemplate.remove();
@@ -106,14 +124,6 @@ window.addEventListener('lemonpi.content/ready', event => {
             // Add click event listener for each slide
             slideDiv.addEventListener('click', function(event) {
                 onClick(event, index);
-            });
-            
-            const elements = document.querySelectorAll('.worldClick');
-            // Loop through each element and add the click listener
-            elements.forEach((element, index) => {
-                element.addEventListener('click', function(event) {
-                    onWorldClick(event, index); // Call the onWorldClick function with event and index
-                });
             });
             
         }
@@ -128,51 +138,65 @@ window.addEventListener('lemonpi.content/ready', event => {
         }
 
         function nextSlide() {
-          if (isAnimating) return;
-          isAnimating = true;
-          slideIndex--;
-      
-          const totalSlides = slidesData.length;
-      
-          animateSlider(slideIndex, slideIndex + 1, function() {
-              // Check if we've moved past the first slide
-              if (slideIndex < 0) {
-                  slideIndex = totalSlides - 1; // Reset to the last slide
-                  // Reposition to the end without animation glitch
-                  gsap.set(slidesWrapper, {x: -slideWidth * slideIndex});
-              }
-              isAnimating = false;
-              Slider.currentSlideIndex = slideIndex;
-          });
-      
-          //console.log("Next " + Slider.currentSlideIndex + " " + slidesData.length);
-          $('#project-image').css({
-              'background-image': 'url(' + local_content.vacant_homes.value[Slider.currentSlideIndex].vacant_home_image.value + ')'
-          });
-      }
+            if (isAnimating) return;
+            isAnimating = true;
+            slideIndex--;
+        
+            const totalSlides = slidesData.length;
+        
+            animateSlider(slideIndex, slideIndex + 1, function() {
+                // Check if we've moved past the first slide
+                if (slideIndex < 0) {
+                    slideIndex = totalSlides - 1; // Reset to the last slide
+                    // Reposition to the end without animation glitch
+                    gsap.set(slidesWrapper, {x: -slideWidth * slideIndex});
+                }
+                isAnimating = false;
+                Slider.currentSlideIndex = slideIndex;
+            });
+        
+            //console.log("Next " + Slider.currentSlideIndex + " " + slidesData.length);
+
+            /*
+            $('#project-image').css({
+                'background-image': 'url(' + local_content.vacant_homes.value[Slider.currentSlideIndex].vacant_home_image.value + ')'
+            });
+
+            $('#cta').html(local_content.vacant_homes.value[Slider.currentSlideIndex].cta_text.value);
+
+            setVideo();
+            */
+        }
 
 
         function prevSlide() {
           if (isAnimating) return;
-    isAnimating = true;
-    slideIndex++;
-    
-    const totalSlides = slidesData.length;
-    animateSlider(slideIndex, slideIndex - 1, function() {
-        if (slideIndex >= totalSlides) {
-            slideIndex = 0;
-            // Reposition to the start without animation glitch
-            gsap.set(slidesWrapper, {x: 0});
-        }
-        
-        Slider.currentSlideIndex = slideIndex;
-        isAnimating = false;
-        
-        // Update the background image after the animation
-        $('#project-image').css({
-            'background-image': 'url(' + local_content.vacant_homes.value[Slider.currentSlideIndex].vacant_home_image.value + ')'
-        });
-    });
+            isAnimating = true;
+            slideIndex++;
+            
+            const totalSlides = slidesData.length;
+            animateSlider(slideIndex, slideIndex - 1, function() {
+                if (slideIndex >= totalSlides) {
+                    slideIndex = 0;
+                    // Reposition to the start without animation glitch
+                    gsap.set(slidesWrapper, {x: 0});
+                }
+                
+                Slider.currentSlideIndex = slideIndex;
+                isAnimating = false;
+            });
+
+            //console.log (Slider.currentSlideIndex);
+
+            // Update the background image after the animation
+            /*
+            $('#project-image').css({
+                'background-image': 'url(' + local_content.vacant_homes.value[Slider.currentSlideIndex].vacant_home_image.value + ')'
+            });
+            $('#cta').html(local_content.vacant_homes.value[Slider.currentSlideIndex].cta_text.value);
+
+            setVideo();
+            */
         }
 
         slidesData.forEach((slideData, index) => createSlide(slideData, index));
@@ -192,7 +216,7 @@ window.addEventListener('lemonpi.content/ready', event => {
         nextBtn.addEventListener("click", nextSlide);
         prevBtn.addEventListener("click", prevSlide);
 
-
+        
         function onClick(event, slideIndex) {
             // Handle the product click event
             event.preventDefault();
@@ -206,18 +230,7 @@ window.addEventListener('lemonpi.content/ready', event => {
             
         }
 
-        function onWorldClick(event, slideIndex) {
-          // Handle the product click event
-          event.preventDefault();
-          window.dispatchEvent(
-            new CustomEvent('lemonpi.interaction/click', {
-                detail: {
-                    placeholder: ['vacant_homes', slideIndex, 'vacant_home_url'],
-                }
-            })
-          );
-          
-      }
+        
 
         // Add hover event listeners to pause and resume animation
         slidesContainer.addEventListener("mouseenter", function() {
@@ -229,29 +242,124 @@ window.addEventListener('lemonpi.content/ready', event => {
         });
     }
   };
-
+  
   Slider.create({
     slidesData: local_content.vacant_homes.value,
     width: 320,
     setSlideContent: function(slideDiv, slideData, slideIndex) {
       $(slideDiv).find("#vacant-home-image").css("background-image","url("+slideData.vacant_home_image.value+")");
       $(slideDiv).find("#vacant-home-info").html(slideData.vacant_home_info.value); 
+      //console.log($(slideDiv).find("#vacant-home-info")[0]);
+      //$(slideDiv).find("#vacant-home-info").html(adjustFontSize(document.querySelector('#vacant-home-info'), 1, 4, 10)); 
     }
   });
 
+  //Change Image to Video if needed
+  setVideo();
+  function setVideo(){
+    console.log("Feature Type: "+local_content.vacant_homes.value[0].vacant_home_feature_type.value);
+
+    var videoSrc = local_content.vacant_homes.value[0].vacant_home_videoSrc.value
+    var videoTracker = local_content.vacant_homes.value[0].vacant_home_videoTracker.value   
+
+    clearDivElementsByClass('player');
+
+    if(local_content.vacant_homes.value[0].vacant_home_feature_type.value == "video"){
+      gsap.set(".player", {display:"block"});
+      // Define the video source and tracker variables
+      
+      //Video player 
+      var e = document.createElement('script');
+      e.src = 'https://video.seenthis.se/v2/player/74/player.js';
+      e.onload = function(){
+        var player = new SeenthisPlayer('.player', videoSrc, videoTracker, options); 
+      };
+
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(e, s);
+
+      //Options for video script
+      var options = {
+          loop: false,
+          autoplay: false,
+          muteButton: true,
+      };
+    } else {
+      gsap.set(".player", {display:"none"});
+    }
+    
+
+  }
+
+  
+
+  //Adjust Font Size based on a set width
+  const parentDiv = document.getElementById('vacant-home-image');
+  const innerDivs = document.querySelectorAll('.vacant-home-info');
+  
+  autoAdjustFontSize(innerDivs, parentDiv);
+  
+  function autoAdjustFontSize(innerDivs, parentDiv) {
+    const updateFontSize = () => {
+      const parentWidth = parentDiv.offsetWidth;
+  
+      innerDivs.forEach(innerDiv => {
+        let fontSize = parseFloat(window.getComputedStyle(innerDiv).fontSize);
+        innerDiv.style.fontSize = `${fontSize}px`;
+  
+        // Decrease font size until it fits within the parent width
+        while (innerDiv.scrollWidth > parentWidth && fontSize > 1) {
+          fontSize -= 1;
+          innerDiv.style.fontSize = `${fontSize}px`;
+        }
+      });
+    };
+  
+    // Add event listener to adjust font size when the window is resized
+    window.addEventListener('resize', updateFontSize);
+  
+    // Initial call to adjust font size
+    updateFontSize();
+  }
 
 })
 
+//Helpers
+function clearDivElementsByClass(divClass) {
+  const divs = document.getElementsByClassName(divClass);
+  if (divs.length > 0) {
+    Array.from(divs).forEach(div => {
+      while (div.firstChild) {
+        div.removeChild(div.firstChild);
+      }
+    });
+  } else {
+    console.error('Div with the specified class not found');
+  }
+}
 
 // Clickthrough for anywhere else
 
-/*
-function onClick (event) {
+
+function onWorldClick (event) {
   return window.dispatchEvent(
     new CustomEvent('lemonpi.interaction/click', {
       detail: {
-        placeholder: ['worldClick'],
+        placeholder: ['vacant_homes', 0, 'project_url'],
       }
   }));
 }
-  */
+  
+/*
+function onWorldClick(event, slideIndex) {
+  // Handle the product click event
+  event.preventDefault();
+  window.dispatchEvent(
+    new CustomEvent('lemonpi.interaction/click', {
+        detail: {
+            placeholder: ['vacant_homes', slideIndex, 'project_url'],
+        }
+    })
+  );
+  
+}*/

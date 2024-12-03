@@ -1,13 +1,13 @@
 {
   "id": "4a3402f9-f038-4ed8-a2ee-60561ce2ff3c",
   "version": "1.4.0",
-  "name": "obos_fullscreen_vacant_homes_mobile",
+  "name": "obos_fullscreen_vacant_homes_mobile_320x400",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 414,
-        "height": 896,
+        "width": 320,
+        "height": 400,
         "isCustom": true
       }
     ],
@@ -19,6 +19,10 @@
       {
         "width": 414,
         "height": 896
+      },
+      {
+        "width": 320,
+        "height": 400
       }
     ]
   },
@@ -26,7 +30,19 @@
     "fileName": "Remote file",
     "format": "CSV",
     "schema": {
-      "cta_text": {
+      "background_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "text_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text_color": {
         "type": "text",
         "source": "create"
       },
@@ -89,8 +105,17 @@
         {
           "isIncluded": true,
           "data": {
-            "cta_text": {
-              "value": "cta_text"
+            "background_color": {
+              "value": "background_color"
+            },
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -136,8 +161,17 @@
         {
           "isIncluded": true,
           "data": {
-            "cta_text": {
-              "value": "cta_text"
+            "background_color": {
+              "value": "background_color"
+            },
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -183,8 +217,17 @@
         {
           "isIncluded": true,
           "data": {
-            "cta_text": {
-              "value": "cta_text"
+            "background_color": {
+              "value": "background_color"
+            },
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -230,8 +273,17 @@
         {
           "isIncluded": true,
           "data": {
-            "cta_text": {
-              "value": "cta_text"
+            "background_color": {
+              "value": "background_color"
+            },
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -277,8 +329,17 @@
         {
           "isIncluded": true,
           "data": {
-            "cta_text": {
-              "value": "cta_text"
+            "background_color": {
+              "value": "background_color"
+            },
+            "text_color": {
+              "value": "text_color"
+            },
+            "cta_color": {
+              "value": "cta_color"
+            },
+            "cta_text_color": {
+              "value": "cta_text_color"
             },
             "logo": {
               "value": ""
@@ -352,5 +413,5 @@
   "folders": {
     "selectedFolderId": 5571
   },
-  "port": 50178
+  "port": 49784
 }

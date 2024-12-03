@@ -19,7 +19,7 @@ html, body {
 #content {
   width: 100%;
   height: 100%;
-  background-color: #0047ba;;
+  background-color: #0047ba;
 }
 
 #creative_container {
@@ -60,6 +60,12 @@ html, body {
 }
 
 .content-div, .inner-div, .horizontal-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-div{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,24 +159,14 @@ html, body {
 
 /* dynamic items */
 
-.project-logo {
-  width: 80%;
-  height: 40vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 2vw;
-  margin-top: -4vh;
-}
-
 .project-headline {
   width: 100%;
   padding: 2vw;
   font-size: 8vw;
   text-align: center;
 
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
 }
 
 .vacant-home-image {
@@ -188,13 +184,34 @@ html, body {
 }
 
 .vacant-home-info {
-  padding: 1vw;
+  padding: 0.5vw;
   font-size: 4vw;
+  white-space: nowrap;
+}
+
+.slide {
+  display: none;
+}
+
+.project-image {
+  width: 100%;
+  height: 22vh;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;   
+  
+  background-color: #333333;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  border-radius: 1.5vw;
 }
 
 .slider {
 
-  flex: 0 0 90%; /* Takes 45% of the top-row's width, does not grow or shrink */
+  flex: 0 0 95%; /* Takes 45% of the top-row's width, does not grow or shrink */
   
   display: flex;
   justify-content: left; /* Center content horizontally */
@@ -205,23 +222,25 @@ html, body {
 }
 
 .card{
-  width: 90vw;
+  width: 100%;
   height: 22vh;
 
   display: flex;
   flex-wrap: nowrap; /* Allows items to wrap to the next row if necessary */
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: left;
   align-items: center;
   align-content: center;
 
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;     
+  box-sizing: border-box;   
+  
+  background-color: #00AA79;
 }
 
 .vacant-home-image-big {
-  width: 100%;
+  width: 60.9vw;
   height: 100%;
   background-color: black;
 
@@ -230,7 +249,20 @@ html, body {
   background-position: center center;
 
   cursor: pointer;
+}
 
+.player {
+  width: inherit;
+  height: inherit;
+
+  
+}
+
+.seenthis-control-bar {
+  text-align: right;
+  top: 0px;
+  right: 0px;
+  padding:0.5vw;
 }
 
 .prev, 
@@ -241,6 +273,8 @@ html, body {
   flex: 0 0 13%; /* Takes 45% of the top-row's width, does not grow or shrink */
 
   z-index: 999;
+
+  visibility: hidden;
 }
 
 .prev{
@@ -269,9 +303,11 @@ html, body {
   margin-left: -5vw;
 }
 
+/*
 #vacant-home-container1 {
   border: 1px solid rgba(255, 255, 255, 0.135);
 }
+*/
 
 .cta {
   font-family: "ObosText-Medium";
@@ -304,4 +340,91 @@ html, body {
 	background-size: contain;
   background-position: right center;
 
+}
+
+/* For even smaller screens (mobile phones), you can go lower */
+@media (max-width: 320px) {
+  /* CSS rules for small mobile screens */
+  #creative_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 75%;
+    height: 90%;
+  }
+
+  .content-div{
+    display: none;
+  }
+
+  .inner-div {
+    padding: 1vw;
+  }
+
+  .project-headline {
+    padding: 1vw;
+    font-size: 5vw;  
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .vacant-home-image {
+    width: 27vw;
+    height: 15vw;  
+  }
+
+  .vacant-home-info {
+    font-size: 3vw;
+  }
+
+  .cta {
+    font-size: 4.5vw;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+
+  .main-div:nth-child(2) {
+    margin-top: -2vh;
+  }
+
+  .main-div:last-child {
+    flex-grow: 0; /* This disables the growing behavior */
+    height: auto; /* Allows the div to size according to its content */
+    margin-top: auto; /* Pushes the div to the bottom */
+    position: relative; /* Ensures it sticks to the bottom */
+    bottom: 3vh; /* Align bottom edge to the container's bottom */
+    width: 100%; /* Ensure it spans the entire width of the container */
+  }
+
+  .card{
+    height: 22vh;
+  }
+
+  .logo {
+    width: 25vw;
+    height: 8vw;
+    padding: 2vw;
+  }
+
+  .prev, 
+  .next {
+    width: 4vw;
+    height: 10vw;
+  }
+
+  .prev{
+    margin-right: -4vw;
+  }
+
+  .next{
+    margin-left: -4vw;
+  }
 }
