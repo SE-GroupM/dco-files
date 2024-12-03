@@ -32,8 +32,8 @@ onLemonpiReady(function () {
     // Dynamic variables holding values from CHoreograph Create
     // Static variables from Adset
     const ctaText = local_content.cta_text.value;
-    //const mercuriLogoLarge = local_content.mercuri_logo_large_formats.value;
-    const mercuriLogoSmall = local_content.mercuri_logo.value;
+    const mercuriLogoLarge = local_content.mercuri_logo_large_formats.value;
+    const mercuriLogoSmall = local_content.mercuri_logo_small.value;
 
     const blueGraphicsLeftSide = "https://assets.lemonpi.io/a/k/3534c442-0907-4251-ba18-ecb860adc9e3/Assets/Mercuri_Urval_VSC/mercuri_urval_blue_graphics.png";
     const geo_img = "https://assets.lemonpi.io/a/k/1189d575-e6f6-4d75-9df0-277a4e3e7a90/Assets/Mercuri_Urval_VSC/mercuri_urval_location.png";
@@ -48,6 +48,13 @@ onLemonpiReady(function () {
     const jobLocation = product_collection.placement_text.value; // job location. E.g Sverige
 
     const jobClick = product_collection.click.value; // job  exit url from scraper
+
+    const logoHeight = local_content.company_logo_height.value; //Adjust logo height if needed
+
+    const jobTitleTrunc = local_content.truncJobtitle.value; //Adjust length of job title if needed
+
+    const jobDesTrunc = local_content.truncJobDescription.value; //Adjust length of job description if needed
+
 
     //Append background image
     $("#Blue_Graphic").css("background-image","url("+blueGraphicsLeftSide+")");
@@ -65,15 +72,29 @@ onLemonpiReady(function () {
       'background-position': 'top right',
     });
 
-
+  //Adjust company logo if needed
+  if(logoHeight) {
+    $("#companyLogo").css({
+      'height': logoHeight
+    });
+  }
     //Append texts
     $("#ctaText").html(ctaText);
-
     $("#companyName").html(companyName);
     $("#mainText").html(jobTitle);
-    truncateProductText('#mainText', 80);
+    //Adjusts job title if needed from adset
+    if (jobTitleTrunc) {
+      truncateProductText('#mainText', jobTitleTrunc);
+    } else {
+      truncateProductText('#mainText', 80);
+    }
     $("#subText").html(jobDescription);
-    truncateProductText('#subText', 130);
+    //Adjusts job description if needed from adset
+    if (jobDesTrunc) {
+      truncateProductText('#subText', jobDesTrunc);
+    } else {
+      truncateProductText('#subText', 130);
+    }
     $("#locationText").html(jobLocation);
     
     ////////////////////////////////////////////
