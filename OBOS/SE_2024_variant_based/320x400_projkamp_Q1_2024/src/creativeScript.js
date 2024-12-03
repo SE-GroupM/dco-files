@@ -32,24 +32,13 @@ window.addEventListener('lemonpi.content/ready', event => {
   // VARIABLES //
   ///////////////////
 
-  // Local variable for hodling all daa from adset/feed
-  var local_content = content;
-  // Variable declaration for mainCopy
-  var mainCopy = "";
-  // Variable declaration for subText / Brödtext
-  var subText = "";
-  // If statement to check if creative dimension is small or big. So we lookup the width which is the first
-  // integer and then parse it to an integer and then check if the value is below
-  if (parseInt(local_content.creative_dimension.value.substring(0,3)) > 641) {
-    mainCopy = local_content.rubrik.value;
-    subText = local_content.brodtext.value;
-  } else if (parseInt(local_content.creative_dimension.value.substring(0,3))  > 639) {
-    mainCopy = local_content.rubrik.value;
-    subText = local_content.brodtext_mindre_format.value;
-  } else {
-    mainCopy = local_content.rubrik_mindre_format.value;
-    subText = local_content.brodtext_mindre_format.value;
-  }
+    // Local variable for hodling all daa from adset/feed
+    var local_content = content;
+    // Variable declaration for mainCopy
+    var mainCopy = local_content.rubrik_mindre_format.value;;
+    // Variable declaration for subText / Brödtext
+    var subText = local_content.brodtext_mindre_format.value;
+    
   //Append Property title 
   var project_brfName = local_content.projekt.value;
   //Append Cta copy
