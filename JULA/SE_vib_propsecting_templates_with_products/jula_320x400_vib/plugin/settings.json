@@ -1,6 +1,6 @@
 {
   "id": "d261d01e-9972-47ec-832f-6f332adea456",
-  "version": "1.4.1",
+  "version": "1.5.2",
   "name": "jula_vib_320x400",
   "description": "",
   "size": {
@@ -38,6 +38,16 @@
       }
     ]
   },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
   "placeholders": {
     "fileName": "migrated from version 1.3.0 of the extension",
     "format": "CSV",
@@ -161,5 +171,5 @@
   "folders": {
     "selectedFolderId": 3553
   },
-  "port": 59858
+  "port": 60157
 }
