@@ -196,6 +196,7 @@ html, body {
   position: absolute;
     width: 200px;
     height: 70px;
-    left: 643px;
+    right: 135px;
+    left: auto;
     top: 20px;
 }
