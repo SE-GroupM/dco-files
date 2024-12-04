@@ -194,8 +194,9 @@ html, body {
 
 .companyLogo{
   position: absolute;
-    width: 137px;
-    height: 39px;
-    left: 652px;
+    width: 185px;
+    height: 30px;
+    right: 200px;
+    left: auto;
     top: 20px;
 }
