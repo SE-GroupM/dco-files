@@ -27,6 +27,34 @@
     "fileName": "migrated from version 1.3.1 of the extension",
     "format": "CSV",
     "schema": {
+      "job_title": {
+        "type": "text",
+        "source": "create"
+      },
+      "description_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "company_name": {
+        "type": "text",
+        "source": "create"
+      },
+      "placement_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "company_logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "click": {
+        "type": "click",
+        "source": "create"
+      },
       "truncJobtitle": {
         "type": "text",
         "source": "create"
@@ -35,16 +63,8 @@
         "type": "text",
         "source": "create"
       },
-      "cta_text": {
-        "type": "text",
-        "source": "create"
-      },
       "company_logo_height": {
         "type": "text",
-        "source": "create"
-      },
-      "click": {
-        "type": "click",
         "source": "create"
       },
       "mercuri_logo_large_formats": {
@@ -62,20 +82,35 @@
         {
           "isIncluded": true,
           "data": {
+            "job_title": {
+              "value": "job_title"
+            },
+            "description_text": {
+              "value": "description_text"
+            },
+            "company_name": {
+              "value": "company_name"
+            },
+            "placement_text": {
+              "value": "placement_text"
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "company_logo": {
+              "value": ""
+            },
+            "click": {
+              "value": ""
+            },
             "truncJobtitle": {
               "value": "truncJobtitle"
             },
             "truncJobDescription": {
               "value": "truncJobDescription"
             },
-            "cta_text": {
-              "value": "cta_text"
-            },
             "company_logo_height": {
               "value": "company_logo_height"
-            },
-            "click": {
-              "value": ""
             },
             "mercuri_logo_large_formats": {
               "value": ""
@@ -90,37 +125,18 @@
   },
   "fonts": {
     "Google": [],
-    "Choreograph": [
-      {
-        "advertiserId": 216,
-        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeue?v=700",
-        "family": "HelveticaNeue",
-        "variant": "700"
-      },
-      {
-        "advertiserId": 216,
-        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeueLTStd-Heavy?v=900",
-        "family": "HelveticaNeueLTStd-Heavy",
-        "variant": "900"
-      },
-      {
-        "advertiserId": 216,
-        "url": "https://assets.lemonpi.io/a/font/216/HelveticaNeueLTStd-Lt?v=300",
-        "family": "HelveticaNeueLTStd-Lt",
-        "variant": "300"
-      }
-    ]
+    "Choreograph": []
   },
   "agency": {
     "id": 7,
     "name": "Xaxis Sweden"
   },
   "advertiser": {
-    "id": 216,
-    "name": "Mercuri Urval SE"
+    "id": 268,
+    "name": "Mercuri Urval FI"
   },
   "folders": {
-    "selectedFolderId": 3798
+    "selectedFolderId": 6314
   },
-  "port": 51038
+  "port": 61238
 }
