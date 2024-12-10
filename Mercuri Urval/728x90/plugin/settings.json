@@ -35,6 +35,14 @@
         "type": "text",
         "source": "create"
       },
+      "fontSizeJobtitle": {
+        "type": "text",
+        "source": "create"
+      },
+      "fontSizeJobDes": {
+        "type": "text",
+        "source": "create"
+      },
       "cta_text": {
         "type": "text",
         "source": "create"
@@ -67,6 +75,12 @@
             },
             "truncJobDescription": {
               "value": "truncJobDescription"
+            },
+            "fontSizeJobtitle": {
+              "value": "fontSizeJobtitle"
+            },
+            "fontSizeJobDes": {
+              "value": "fontSizeJobDes"
             },
             "cta_text": {
               "value": "cta_text"
@@ -122,5 +136,5 @@
   "folders": {
     "selectedFolderId": 3798
   },
-  "port": 62553
+  "port": 59475
 }

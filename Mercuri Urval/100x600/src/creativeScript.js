@@ -55,10 +55,9 @@ onLemonpiReady(function () {
 
     const jobDesTrunc = local_content.truncJobDescription.value; //Adjust length of job description if needed
 
-    const fontSizeJobtitle = local_content.fontSizeJobtitle.value; //Adjust font size of job title if needed
+    const fontSizeJobtitle = parseInt(local_content.fontSizeJobtitle.value); //Adjust font size of job title if needed
 
-    const fontSizeJobDes = local_content.fontSizeJobDes.value; //Adjust font size of job description if needed
-
+    const fontSizeJobDes = parseInt(local_content.fontSizeJobDes.value); //Adjust font size of job description if needed
 
 
     //Append background image

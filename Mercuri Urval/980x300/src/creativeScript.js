@@ -55,6 +55,10 @@ onLemonpiReady(function () {
 
     const jobDesTrunc = local_content.truncJobDescription.value; //Adjust length of job description if needed
 
+    const fontSizeJobtitle = parseInt(local_content.fontSizeJobtitle.value); //Adjust font size of job title if needed
+
+    const fontSizeJobDes = parseInt(local_content.fontSizeJobDes.value); //Adjust font size of job description if needed
+
     //Append background image
     $("#Blue_Graphic").css("background-image","url("+blueGraphicsLeftSide+")");
     //Append Mercuri logo
@@ -71,13 +75,28 @@ onLemonpiReady(function () {
       'background-position': 'top right',
     });
 
+    //Adjust font size on job title if needed
+    if (fontSizeJobtitle) {
+      $("#mainText").css({
+        'font-size': fontSizeJobtitle + 'px',
+        'line-height': fontSizeJobtitle + 2 + 'px'
+      });
+    }
+      //Adjust font size on job description if needed
+    if (fontSizeJobDes) {
+      $("#subText").css({
+        'font-size': fontSizeJobDes + 'px',
+        'line-height': fontSizeJobDes + 2 + 'px'
+      });
+    }
 
- //Adjust company logo if needed
- if(logoHeight) {
-  $("#companyLogo").css({
-    'height': logoHeight
-  });
-}
+
+    //Adjust company logo if needed
+    if(logoHeight) {
+      $("#companyLogo").css({
+        'height': logoHeight
+      });
+    }
   //Append texts
   $("#ctaText").html(ctaText);
   $("#companyName").html(companyName);

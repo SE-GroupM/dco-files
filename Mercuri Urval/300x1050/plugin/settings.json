@@ -32,7 +32,27 @@
     "fileName": "",
     "format": "CSV",
     "schema": {
+      "truncJobtitle": {
+        "type": "text",
+        "source": "create"
+      },
+      "truncJobDescription": {
+        "type": "text",
+        "source": "create"
+      },
+      "fontSizeJobtitle": {
+        "type": "text",
+        "source": "create"
+      },
+      "fontSizeJobDes": {
+        "type": "text",
+        "source": "create"
+      },
       "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "company_logo_height": {
         "type": "text",
         "source": "create"
       },
@@ -55,8 +75,23 @@
         {
           "isIncluded": true,
           "data": {
+            "truncJobtitle": {
+              "value": "truncJobtitle"
+            },
+            "truncJobDescription": {
+              "value": "truncJobDescription"
+            },
+            "fontSizeJobtitle": {
+              "value": "fontSizeJobtitle"
+            },
+            "fontSizeJobDes": {
+              "value": "fontSizeJobDes"
+            },
             "cta_text": {
               "value": "cta_text"
+            },
+            "company_logo_height": {
+              "value": "company_logo_height"
             },
             "click": {
               "value": ""
@@ -106,5 +141,5 @@
   "folders": {
     "selectedFolderId": 3798
   },
-  "port": 51640
+  "port": 58583
 }
