@@ -27,7 +27,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     });
   }
 
-
 // SubCopy static
 var subCopy = $('#subCopy_static');
 subCopy.append(content.subCopy_static.value);
@@ -109,7 +108,6 @@ subCopy_frame_2.css({
      TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#fff', color: '#0471f4'}, { backgroundColor: '#0471f4', color: '#fff'});
    }
 
-  
 // Function for animation of content 
 function firstFrame() {
   var tl = new TimelineMax();
@@ -141,7 +139,7 @@ function firstFrame() {
 // Function for background image animation
 function bgImageAnimation() {
   var bgTl = new TimelineMax({ repeat: 1 }); // Set repeat to 1 for two cycles in total
-  bgTl.to('#bg_image', 5, { scale: 1.15, ease: Linear.easeNone }, 0); // Frame 1 bg image scale
+  bgTl.to('#bg_image', 5, { scale: 1.3, ease: Linear.easeNone }, 0); // Frame 1 bg image scale
   return bgTl;
 }
 

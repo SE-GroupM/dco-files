@@ -20,20 +20,22 @@ window.addEventListener('lemonpi.content/ready', event => {
     if (!fontSize) {
         fontSize = defaultFontSize + 'px';
     }
-    var lineHeight = (parseFloat(fontSize) + 3) + 'px';
+    var lineHeight = (parseFloat(fontSize) + 2) + 'px';
     element.css({
         'line-height': lineHeight,
         'font-size': fontSize
     });
   }
 
+
 // SubCopy static
-var subCopy_static = $('#subCopy_static');
-subCopy_static.append(content.subCopy_static.value);
-setFontSizeAndLineHeight(subCopy_static, subtitle_fontSize);
-subCopy_static.css({
+var subCopy = $('#subCopy_static');
+subCopy.append(content.subCopy_static.value);
+setFontSizeAndLineHeight(subCopy, subtitle_fontSize);
+subCopy.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
 // SubCopy frame 1
@@ -42,7 +44,8 @@ subCopy_frame_1.append(content.subCopy_frame_1.value);
 setFontSizeAndLineHeight(subCopy_frame_1, subtitle_fontSize);
 subCopy_frame_1.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
 // SubCopy frame 2
@@ -51,7 +54,8 @@ subCopy_frame_2.append(content.subCopy_frame_2.value);
 setFontSizeAndLineHeight(subCopy_frame_2, subtitle_fontSize);
 subCopy_frame_2.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
   // Frame 1
@@ -60,6 +64,7 @@ subCopy_frame_2.css({
   setFontSizeAndLineHeight(frame_1, mainCopy_fontSize);
   frame_1.css({
     'color': font_color,
+    'font-size': mainCopy_fontSize
 });
 
   // Frame 2
@@ -68,7 +73,9 @@ subCopy_frame_2.css({
   setFontSizeAndLineHeight(frame_2, mainCopy_fontSize);
   frame_2.css({
     'color': font_color,
+    'font-size': mainCopy_fontSize
 });
+
 
   var use_one_headline = content.use_one_headline.value;
   var use_one_headline_bool = false;
@@ -92,8 +99,8 @@ subCopy_frame_2.css({
 
   //Hover function on CTA to change colors
   $('#creative_container')
-    .on('mouseenter touchstart', onUserEnterCta)
-    .on('mouseleave touchend', onUserLeaveCta);
+  .on('mouseenter touchstart', onUserEnterCta)
+  .on('mouseleave touchend', onUserLeaveCta);
 
   function onUserEnterCta() {
     TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#0471f4', color: '#fff'}, { backgroundColor: '#fff', color: '#0471f4'});
@@ -103,6 +110,7 @@ subCopy_frame_2.css({
     TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#fff', color: '#0471f4'}, { backgroundColor: '#0471f4', color: '#fff'});
   }
 
+ 
 // Function for animation of content 
 function firstFrame() {
   var tl = new TimelineMax();
@@ -134,7 +142,7 @@ function firstFrame() {
 // Function for background image animation
 function bgImageAnimation() {
   var bgTl = new TimelineMax({ repeat: 1 }); // Set repeat to 1 for two cycles in total
-  bgTl.to('#bg_image', 5, { scale: 1.25, ease: Linear.easeNone }, 0); // Frame 1 bg image scale
+  bgTl.to('#bg_image', 5, { scale: 1.2, ease: Linear.easeNone }, 0); // Frame 1 bg image scale
   return bgTl;
 }
 

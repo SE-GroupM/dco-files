@@ -28,12 +28,13 @@ window.addEventListener('lemonpi.content/ready', event => {
   }
 
 // SubCopy static
-var subCopy_static = $('#subCopy_static');
-subCopy_static.append(content.subCopy_static.value);
-setFontSizeAndLineHeight(subCopy_static, subtitle_fontSize);
-subCopy_static.css({
+var subCopy = $('#subCopy_static');
+subCopy.append(content.subCopy_static.value);
+setFontSizeAndLineHeight(subCopy, subtitle_fontSize);
+subCopy.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
 // SubCopy frame 1
@@ -42,7 +43,8 @@ subCopy_frame_1.append(content.subCopy_frame_1.value);
 setFontSizeAndLineHeight(subCopy_frame_1, subtitle_fontSize);
 subCopy_frame_1.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
 // SubCopy frame 2
@@ -51,7 +53,8 @@ subCopy_frame_2.append(content.subCopy_frame_2.value);
 setFontSizeAndLineHeight(subCopy_frame_2, subtitle_fontSize);
 subCopy_frame_2.css({
     'top': subTitle_topValue,
-    'color': font_color
+    'color': font_color,
+    'font-size': subtitle_fontSize
 });
 
   // Frame 1
@@ -60,6 +63,7 @@ subCopy_frame_2.css({
   setFontSizeAndLineHeight(frame_1, mainCopy_fontSize);
   frame_1.css({
     'color': font_color,
+    'font-size': mainCopy_fontSize
 });
 
   // Frame 2
@@ -68,6 +72,7 @@ subCopy_frame_2.css({
   setFontSizeAndLineHeight(frame_2, mainCopy_fontSize);
   frame_2.css({
     'color': font_color,
+    'font-size': mainCopy_fontSize
 });
 
   var use_one_headline = content.use_one_headline.value;
@@ -90,19 +95,20 @@ subCopy_frame_2.css({
     TweenMax.fromTo('#legal_bg', 0.2, { autoAlpha: 1}, { autoAlpha: 0});
   }
 
-   //Hover function on CTA to change colors
-   $('#creative_container')
-   .on('mouseenter touchstart', onUserEnterCta)
-   .on('mouseleave touchend', onUserLeaveCta);
- 
-   function onUserEnterCta() {
-     TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#0471f4', color: '#fff'}, { backgroundColor: '#fff', color: '#0471f4'});
-   }
- 
-   function onUserLeaveCta() {
-     TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#fff', color: '#0471f4'}, { backgroundColor: '#0471f4', color: '#fff'});
-   }
+  //Hover function on CTA to change colors
+  $('#creative_container')
+  .on('mouseenter touchstart', onUserEnterCta)
+  .on('mouseleave touchend', onUserLeaveCta);
 
+  function onUserEnterCta() {
+    TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#0471f4', color: '#fff'}, { backgroundColor: '#fff', color: '#0471f4'});
+  }
+
+  function onUserLeaveCta() {
+    TweenMax.fromTo('#cta_text', 0.2, { backgroundColor: '#fff', color: '#0471f4'}, { backgroundColor: '#0471f4', color: '#fff'});
+  }
+
+  
 // Function for animation of content 
 function firstFrame() {
   var tl = new TimelineMax();
