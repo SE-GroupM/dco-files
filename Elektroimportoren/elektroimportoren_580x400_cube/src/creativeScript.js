@@ -195,7 +195,29 @@ window.addEventListener('lemonpi.content/ready', event => {
     }));
   }
   function onProductClick (event) {
+    // Attempt to extract product ID from the event target
     currentProduct = event.target.id.split("-").pop();
+    
+    if (!currentProduct){ // Check if currentProduct is empty
+      
+      // Find the nearest .product-info container
+      const eventTarget = event.target;
+      const productInfo = eventTarget.querySelector(".product-info");
+      
+      if (productInfo) {
+        // Check if #product-info-0 .product-name exists
+        const productName = productInfo.querySelector("#product-info-0 .product-name");
+        currentProduct = productName 
+          ? productName.id.split("-").pop() 
+          : productInfo.id.split("-").pop();
+          
+      } else {
+        console.log("No product information found.");
+      }
+    
+    }else{
+      // nothing else happens
+    }
     return window.dispatchEvent(
       new CustomEvent('lemonpi.interaction/click', {
         detail: {
