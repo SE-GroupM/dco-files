@@ -19,19 +19,22 @@ window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content;
   //Variable for local content
   var local_content = content;
-  
+  console.log(local_content);
   // World click event caller
   $('#worldClick').click(onClick);
   $('#copyFrame1').html(content.productName_1.value);
   $('#copyFrame2').html(content.productName_2.value);
   
-  // import content of price currency from placeholder
+   // If the tempalte should not use any price from product. Then append larger CSS on copy
+   if (local_content.use2FramesCopy.value.toLowerCase() === 'yes') {
+     $('#productName_1').addClass('largerCopy');
+     $('#productName_2').addClass('largerCopy');
+   }
+
+  // Defining mute-button's appearence 
+  var mutebutton_on_off = local_content.mutebutton_on_off.value;
+  //import content of price currenly from placeholder
   let price_currency_content = local_content.price_currency_content.value;
-  // If the tempalte should not use any price from product. Then append larger CSS on copy
-  if (local_content.use2FramesCopy.value.toLowerCase() === 'yes') {
-    $('#productName_1').addClass('largerCopy');
-    $('#productName_2').addClass('largerCopy');
-  }
 
   // variable holding textcolor from adset
   var setTextColors = local_content.textColor.value;
@@ -49,23 +52,25 @@ window.addEventListener('lemonpi.content/ready', event => {
       'color': setTextColors,
     });
   }
-  // If we need to adjust video placement in wider formats
-  if (local_content.video_placement_topPosition.value !== ''){
-    var videoAdjustmentTop = local_content.video_placement_topPosition.value;
-    var playerBgColor = '#FFe632'
-    // Using querySelector
-    const videoElement = document.querySelector('player');
-    if (!isNaN(videoAdjustmentTop)) {
-      videoAdjustmentTop += 'px';
+
+    // If we need to adjust video placement in wider formats
+    if (local_content.video_placement_topPosition.value !== ''){
+      console.log('adjust position')
+      var videoAdjustmentTop = local_content.video_placement_topPosition.value;
+      var playerBgColor = '#FFe632'
+      // Using querySelector
+      const videoElement = document.querySelector('player');
+      if (!isNaN(videoAdjustmentTop)) {
+        videoAdjustmentTop += 'px';
+      }
+      
+      $('.player').css({
+        'position': 'absolute',
+        'top': videoAdjustmentTop,
+       'background-color': playerBgColor,
+      })
     }
-    
-    $('.player').css({
-      'position': 'absolute',
-      'top': videoAdjustmentTop,
-     'background-color': playerBgColor,
-    })
-  }
-  
+
   /////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////// Videon config //////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////////////////////
@@ -78,13 +83,13 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
  
-  var bannerWidth = '400';
+  var bannerWidth = '600';
   var bannerHeight = '';
 
   if (ccVideo != '') {
     // Set the BG video source
     var BGvideoSource = '<video id="player" autoplay muted playsinline loop width="'+bannerWidth+'" height="'+bannerHeight+'"><source src="' + ccVideo + '" type="video/mp4"></video>'; 
-    
+  
     // Append video locally from CC
     $("#player").html(BGvideoSource);
     // Function to restart videos
@@ -123,22 +128,22 @@ window.addEventListener('lemonpi.content/ready', event => {
   /// ANIMATIONS ///
   //////////////////
 
-// Create a new timeline that repeats indefinitely (-1)
-var tl = new TimelineMax({repeat: -1});
+  // Create a new timeline that repeats indefinitely (-1)
+  var tl = new TimelineMax({repeat: -1});
 
-// Set initial opacity of both frames to 0
-TweenMax.set('#productName_1, #productName_2, #copyFrame1, #copyFrame2',{ opacity: 0 });
+  // Set initial opacity of both frames to 0
+  TweenMax.set('#productName_1, #productName_2, #copyFrame1, #copyFrame2',{ opacity: 0 });
 
-// Animate the first product name
-tl.to('#productName_1, #copyFrame1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
-  .to('#productName_1, #copyFrame1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
+  // Animate the first product name
+  tl.to('#productName_1, #copyFrame1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
+    .to('#productName_1, #copyFrame1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
 
-// Animate the second product name
+  // Animate the second product name
   .to('#productName_2, #copyFrame2', 0.3, {opacity: 1, ease: Linear.easeNone}, 3.6) // Start fading in slightly after the first fades out
   .to('#productName_2, #copyFrame2', 0.3, {opacity: 0, ease: Linear.easeNone}, 5.7); // Fade out, completing the 6-second cycle
 
-      ////////////////
-    /// FUNCTIONS ///
+  ////////////////
+  /// FUNCTIONS ///
   //////////////////
 
  // Check if price has sup element and append correct CSS class
