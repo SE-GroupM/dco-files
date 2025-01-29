@@ -19,7 +19,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   const content = event.detail.content;
   //Variable for local content
   var local_content = content;
-  console.log(local_content);
+  
   // World click event caller
   $('#worldClick').click(onClick);
   $('#copyFrame1').html(content.productName_1.value);
@@ -55,7 +55,7 @@ window.addEventListener('lemonpi.content/ready', event => {
 
     // If we need to adjust video placement in wider formats
     if (local_content.video_placement_topPosition.value !== ''){
-      console.log('adjust position')
+      
       var videoAdjustmentTop = local_content.video_placement_topPosition.value;
       var playerBgColor = '#FFe632'
       // Using querySelector
