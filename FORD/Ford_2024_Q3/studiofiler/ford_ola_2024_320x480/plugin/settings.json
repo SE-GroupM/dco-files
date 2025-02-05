@@ -60,10 +60,6 @@
         "type": "image",
         "source": "create"
       },
-      "logo_image": {
-        "type": "image",
-        "source": "create"
-      },
       "af_image": {
         "type": "image",
         "source": "create"
@@ -132,9 +128,6 @@
             "bg_image": {
               "value": ""
             },
-            "logo_image": {
-              "value": ""
-            },
             "af_image": {
               "value": ""
             },
@@ -198,5 +191,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 56254
+  "port": 54369
 }
