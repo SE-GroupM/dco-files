@@ -56,14 +56,14 @@ html, body {
 .priceCurrency {
   margin-left: 0px;
   font-size: 16px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
   margin-left: -48px;
   font-size: 20px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
 /* Sup class on product price */
@@ -78,7 +78,7 @@ sup {
   left: 20px;
   top: 25px;
   font-size: 75px;
-  font-family: "Mikro-black-otf";
+  font-family: "Mikro-Black-Compressed";
   color: #eb001e;
   letter-spacing: -3px;
 }
@@ -88,7 +88,7 @@ sup {
   left: 20px;
   top: 20px;
   font-size: 13px;
-  font-family: "Mikro-Regular";
+  font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
 .productName_2 {
@@ -97,7 +97,7 @@ sup {
   left: 20px;
   top: 20px;
   font-size: 13px;
-  font-family: "Mikro-Regular";
+  font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
 .asteriskText {
@@ -108,7 +108,7 @@ sup {
   width: 350px;
   font-size: 11px;
   text-align: center;
-  font-family: "Mikro-Regular";
+  font-family: "Mikro-Regular-Compressed";
   color: grey;
 }
 /* World click div */
