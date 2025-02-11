@@ -1,5 +1,5 @@
 {
-  "id": "7e0d6463-f1e1-45f3-ba28-9e6c9604a256",
+  "id": "68acdb60-612d-4a3f-9ec1-d2b8d86c33d6",
   "version": "1.5.0",
   "name": "byggmax_vib_sideplate_980x300",
   "description": "",
@@ -12,6 +12,14 @@
       }
     ],
     "customSizes": [
+      {
+        "width": 640,
+        "height": 320
+      },
+      {
+        "width": 640,
+        "height": 360
+      },
       {
         "width": 980,
         "height": 300
@@ -63,6 +71,10 @@
       "productName_2": {
         "type": "text",
         "source": "create"
+      },
+      "price_currency_content": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -94,6 +106,9 @@
             },
             "productName_2": {
               "value": "productName_2"
+            },
+            "price_currency_content": {
+              "value": "price_currency_content"
             }
           }
         }
@@ -115,5 +130,5 @@
   "folders": {
     "selectedFolderId": 6638
   },
-  "port": 55078
+  "port": 51249
 }

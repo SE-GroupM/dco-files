@@ -22,16 +22,17 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   // World click event caller
   $('#worldClick').click(onClick);
-  $('#productName_1').html(content.productName_1.value);
-  $('#productName_2').html(content.productName_2.value);
+  $('#productName_1').html('<p>'+local_content.productName_1.value+'</p>');
+  $('#productName_2').html('<p>'+local_content.productName_2.value+'</p>');
   
   // import content of price currency from placeholder
   let price_currency_content = local_content.price_currency_content.value;
+  var use2FramesCopy = local_content.use2FramesCopy.value;
   // If the tempalte should not use any price from product. Then append larger CSS on copy
-  if (local_content.use2FramesCopy.value.toLowerCase() === 'yes') {
-    $('#productName_1').addClass('largerCopy');
-    $('#productName_2').addClass('largerCopy');
-  }
+  
+  $('#productName_1').addClass('largerCopy');
+  $('#productName_2').addClass('largerCopy');
+  
   // assigning the sideplate the yello "tejp" image
   $("#sideplate").css("background-image","url(https://assets.lemonpi.io/a/k/71e6f490-17f1-46fb-acdf-4135d1bc1c2f/Assets/Byggmax-2025/gul_tejp.png)");
   
@@ -67,6 +68,7 @@ window.addEventListener('lemonpi.content/ready', event => {
       $('.player').css({
         'position': 'absolute',
         'top': videoAdjustmentTop,
+        'left': '440px',
         'height': '100%',
       'background-color': playerBgColor,
       'background-repeat': 'no-repeat',
@@ -96,7 +98,7 @@ window.addEventListener('lemonpi.content/ready', event => {
     }
   
   
-    var bannerWidth = '400';
+    var bannerWidth = '980';
     var bannerHeight = '';
 
     if (ccVideo != '') {
@@ -138,52 +140,61 @@ window.addEventListener('lemonpi.content/ready', event => {
     } // end of if-else
   }
 
-
   //////////////////
   /// ANIMATIONS ///
   //////////////////
 
 // Create a new timeline that repeats indefinitely (-1)
 var tl = new TimelineMax({repeat: -1});
-
 // Set initial opacity of both frames to 0
 TweenMax.set('#productName_1, #productName_2',{ opacity: 0 });
 
- // Animate the first product name
- tl.fromTo('#productName_1', 
-  0.3, // Duration
-  {opacity: 0, x: -10}, // From values
-  {opacity: 1, x: 0, ease: Linear.easeNone} // To values
-)
-.to('#productName_1', 0.3, {opacity: 0, x: 0, ease: Linear.easeNone}, 4) // Fade out and reset position
+  if (use2FramesCopy === 'yes'){
+    // Animate the first product name
+    tl.fromTo('#productName_1', 
+      0.3, // Duration
+      {opacity: 0, x: -10}, // From values
+      {opacity: 1, x: 0, ease: Linear.easeNone} // To values
+    )
+    .to('#productName_1', 0.3, {opacity: 0, x: 0, ease: Linear.easeNone}, 3.2) // Fade out and reset position
 
-// Animate the second product name
-.fromTo('#productName_2', 
-  0.3, // Duration
-  {opacity: 0, x: -10}, // From values
-  {opacity: 1, x: 0, ease: Linear.easeNone}, 4.6 // To values
+  // Animate the second product name
+  .fromTo('#productName_2', 
+    0.3, // Duration
+    {opacity: 0, x: -10}, // From values
+    {opacity: 1, x: 0, ease: Linear.easeNone}, 3.6 // To values
   )
-.to('#productName_2', 0.3, {opacity: 0, x: 0, ease: Linear.easeNone}, 8.6) // Fade out and reset position
+  .to('#productName_2', 0.3, {opacity: 0, x: 0, ease: Linear.easeNone}, 5.7) // Fade out and reset position
 
-  if (useVideo.toLowerCase() === 'no') { // use single image animation
+  }else { // one frame copy
+     // Animate the first product name
+    tl.fromTo('#productName_1', 
+      0.3, // Duration
+      {opacity: 0, x: -10}, // From values
+      {opacity: 1, x: 0, ease: Linear.easeNone} // To values
+    )
+    .to('#productName_1', 0.3, {opacity: 0, x: 0, ease: Linear.easeNone}, 5) // Fade out and reset position
 
-    const animatePlayer = () => {
-      const tl = new TimelineMax({ repeat: -1 }); // Infinite loop
-
-      tl.to('#player', 15, { 
-          x: -50, 
-          ease: Linear.easeNone // Move left smoothly
-      })
-      .to('#player', 15, { 
-          x: 0, 
-          ease: Linear.easeNone // Move back to start smoothly
-      });
-  };
-
-  // Start the animation
-  animatePlayer();
   }
 
+  if (useVideo.toLowerCase() === 'no') { // use single image aniamtion
+
+    const animatePlayer = () => {
+          const tl = new TimelineMax({ repeat: -1 }); // Infinite loop
+  
+          tl.to('#player', 15, { 
+              x: -40, 
+              ease: Linear.easeNone // Move left smoothly
+          })
+          .to('#player', 15, { 
+              x: 0, 
+              ease: Linear.easeNone // Move back to start smoothly
+          });
+      };
+  
+      // Start the animation
+      animatePlayer();
+  }
       ////////////////
     /// FUNCTIONS ///
   //////////////////

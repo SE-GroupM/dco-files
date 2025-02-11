@@ -32,40 +32,39 @@ html, body {
   background-color: #FFe632;
 }
 #sideplate {
-  top: -20px;
-  transform: rotate(180deg);
+  top: 450px;
+  transform: rotate(-90deg);
   position: absolute;
-  width: 300px; /* Set a width */
-  height: 380px; /* Set a height */
+  width: 345px; /* Set a width */
+  height: 360px; /* Set a height */
   background-size: cover; /* Ensure it covers the div */
   background-repeat: no-repeat;
 }
 
-#panel_container {
-  position: absolute;
-  width: 300px;
-  height: 85px;
-  bottom: 0px;
-  z-index: -1;
-}
 .player {
   position: absolute;
-  width: 370px;
+  width: 300px;
   top: 0px;
-  left: 270px;
+  left: 0px;
   background-color: #000;
 }
 .seenthis-control-bar {
   z-index: 25;
-  bottom: 250px !important;
-  left: 10px !important;
+}
+/* To adjust the player control bar */
+.seenthis-control-bar{
+  left: 10px;
+  bottom: 70px !important;
+}
+.seenthis-player .big-play {
+  top: 220px;
 }
 .logoPlaceholder {
   position: absolute;
-  width: 185px;
-  height: 52px;
-  left: 30px;
-  top: 255px;
+  width: 205px;
+  height: 70px;
+  left: 50px;
+  top: 20px;
   z-index: 9;
 }
 
@@ -76,6 +75,12 @@ sup {
   position: relative;
 }
 
+#copyContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+} 
 .productName_2, .productName_1 {
   display: block;
   position: absolute;
@@ -87,8 +92,8 @@ sup {
 }
 /* World click div */
 .worldClick {
-  width: 640px;
-  height: 320px;
+  width: 300px;
+  height: 600px;
   display: block;
   position: fixed;
   overflow: hidden;
@@ -102,9 +107,9 @@ sup {
 }
 
 .largerCopy {
-  top: 30px;
+  top: 485px;
   left: 30px;
-  width: 240px;
+  width: 250px;
   line-height: 1;
-  font-size: 36px;
+  font-size: 35px;
 }

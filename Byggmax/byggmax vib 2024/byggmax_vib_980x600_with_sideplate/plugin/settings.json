@@ -1,13 +1,13 @@
 {
   "id": "68acdb60-612d-4a3f-9ec1-d2b8d86c33d6",
   "version": "1.5.0",
-  "name": "byggmax_vib_sideplate_640x320",
+  "name": "byggmax_vib_sideplate_980x600",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 640,
-        "height": 320,
+        "width": 980,
+        "height": 600,
         "isCustom": true
       }
     ],
@@ -19,6 +19,14 @@
       {
         "width": 640,
         "height": 360
+      },
+      {
+        "width": 980,
+        "height": 300
+      },
+      {
+        "width": 980,
+        "height": 600
       }
     ]
   },
@@ -126,5 +134,5 @@
   "folders": {
     "selectedFolderId": 6638
   },
-  "port": 50407
+  "port": 50403
 }

@@ -22,8 +22,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   // World click event caller
   $('#worldClick').click(onClick);
-  $('#productName_1').html(content.productName_1.value);
-  $('#productName_2').html(content.productName_2.value);
+  $('#copyFrame1').html(content.productName_1.value);
+  $('#copyFrame2').html(content.productName_2.value);
   
   // import content of price currency from placeholder
   let price_currency_content = local_content.price_currency_content.value;
@@ -33,7 +33,7 @@ window.addEventListener('lemonpi.content/ready', event => {
     $('#productName_2').addClass('largerCopy');
   }
   // assigning the sideplate the yello "tejp" image
-  $("#sideplate").css("background-image","url(https://assets.lemonpi.io/a/k/71e6f490-17f1-46fb-acdf-4135d1bc1c2f/Assets/Byggmax-2025/gul_tejp.png)");
+  $("#sideplate").css("background-image","url(https://assets.lemonpi.io/a/k/c9bd7eb5-0224-4fae-9e2f-7005ff8114a9/Assets/Byggmax-2025/gul_tejp_980x600.png)");
   
   // variable holding textcolor from adset
   var setTextColors = local_content.textColor.value;
@@ -96,7 +96,7 @@ window.addEventListener('lemonpi.content/ready', event => {
     }
   
   
-    var bannerWidth = '400';
+    var bannerWidth = '980';
     var bannerHeight = '';
 
     if (ccVideo != '') {
@@ -138,7 +138,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     } // end of if-else
   }
 
-
   //////////////////
   /// ANIMATIONS ///
   //////////////////
@@ -149,40 +148,32 @@ var tl = new TimelineMax({repeat: -1});
 // Set initial opacity of both frames to 0
 TweenMax.set('#productName_1, #productName_2',{ opacity: 0 });
 
- // Animate the first product name
- tl.fromTo('#productName_1', 
-  0.3, // Duration
-  {opacity: 0, x: -10}, // From values
-  {opacity: 1, x: 0, ease: Linear.easeNone} // To values
-)
-.to('#productName_1', 0.3, {opacity: 0, x: 0, ease: Linear.easeNone}, 4) // Fade out and reset position
+// Animate the first product name
+tl.to('#productName_1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
+  .to('#productName_1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
 
 // Animate the second product name
-.fromTo('#productName_2', 
-  0.3, // Duration
-  {opacity: 0, x: -10}, // From values
-  {opacity: 1, x: 0, ease: Linear.easeNone}, 4.6 // To values
-  )
-.to('#productName_2', 0.3, {opacity: 0, x: 0, ease: Linear.easeNone}, 8.6) // Fade out and reset position
+  .to('#productName_2', 0.3, {opacity: 1, ease: Linear.easeNone}, 3.6) // Start fading in slightly after the first fades out
+  .to('#productName_2', 0.3, {opacity: 0, ease: Linear.easeNone}, 5.7); // Fade out, completing the 6-second cycle
 
-  if (useVideo.toLowerCase() === 'no') { // use single image animation
+  if (useVideo.toLowerCase() === 'no') { // use single image aniamtion
 
-    const animatePlayer = () => {
-      const tl = new TimelineMax({ repeat: -1 }); // Infinite loop
+  const animatePlayer = () => {
+        const tl = new TimelineMax({ repeat: -1 }); // Infinite loop
 
-      tl.to('#player', 15, { 
-          x: -50, 
-          ease: Linear.easeNone // Move left smoothly
-      })
-      .to('#player', 15, { 
-          x: 0, 
-          ease: Linear.easeNone // Move back to start smoothly
-      });
-  };
+        tl.to('#player', 15, { 
+            x: -50, 
+            ease: Linear.easeNone // Move left smoothly
+        })
+        .to('#player', 15, { 
+            x: 0, 
+            ease: Linear.easeNone // Move back to start smoothly
+        });
+    };
 
-  // Start the animation
-  animatePlayer();
-  }
+    // Start the animation
+    animatePlayer();
+}
 
       ////////////////
     /// FUNCTIONS ///

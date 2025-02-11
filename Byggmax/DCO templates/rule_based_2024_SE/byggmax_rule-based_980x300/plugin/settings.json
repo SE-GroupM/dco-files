@@ -1,13 +1,13 @@
 {
   "id": "696c1cd2-d37a-4107-bba1-56f4d8169ad1",
   "version": "1.5.3",
-  "name": "byggmax_980x240",
+  "name": "byggmax_980x300_goatimg",
   "description": "",
   "size": {
     "sizes": [
       {
         "width": 980,
-        "height": 240,
+        "height": 300,
         "isCustom": true
       }
     ],
@@ -15,6 +15,10 @@
       {
         "width": 980,
         "height": 240
+      },
+      {
+        "width": 980,
+        "height": 300
       }
     ]
   },

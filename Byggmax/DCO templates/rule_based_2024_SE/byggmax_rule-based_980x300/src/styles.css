@@ -29,7 +29,7 @@ html, body {
 .bg_image {
   position: absolute;
   width: 980px;
-  height: 240px;
+  height: 300px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ html, body {
 /* Logo image asset */
 .logo {
   position: absolute;
-  top: 180px;
+  top: 230px;
   left: 20px;
   width: 170px;
   height: 50px;
@@ -87,8 +87,9 @@ html, body {
   letter-spacing: -3px;
 }
 .mainCopy {
+  position: absolute;
   display: block;
-  left: 0px;
+  left: -190px;
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 40px;

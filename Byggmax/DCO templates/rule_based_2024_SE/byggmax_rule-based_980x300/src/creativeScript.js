@@ -128,11 +128,11 @@ updateProductCopy();
 var tl = new TimelineMax({ repeat: -1 });
 TweenMax.set('#productPrice_2, #product_2_mainCopy, product_2_subcopy, #product_2_image, #product_2_badge', { opacity: 0 }) //Opacity on product 2
 
-tl.fromTo('#productPrice_1, #product_1_top_copy, #product_1_mainCopy, #product_1_subcopy, #product_1_badge', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 0) //Product price and product name 1 fade in
+tl.fromTo('#productPrice_1, #product_1_top_copy, #product_1_mainCopy, #product_1_subcopy, #product_1_badge', 0.3, { opacity: 0,x:-20, ease: Linear.ease }, { opacity: 1,x:0, ease: Linear.ease }, 0) //Product price and product name 1 fade in
 .fromTo('#product_1_image', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, { x: 0, opacity: 1, ease: Linear.ease }, 0) //Product image 1 fade in
 .to('#productPrice_1,  #product_1_top_copy, #product_1_subcopy, #product_1_mainCopy, #product_1_badge', 0.3, { opacity: 0, ease: Linear.ease }, 3) //Product price and product name 1 fade out
 .to('#product_1_image', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, 3) //Product image 1 fade out
-.fromTo('#productPrice_2,  #product_2_top_copy, #product_2_subcopy, #product_2_mainCopy, #product_2_badge', 0.3, { opacity: 0, ease: Linear.ease }, { opacity: 1, ease: Linear.ease }, 3.3) //Product price and product name 2 fade in
+.fromTo('#productPrice_2,  #product_2_top_copy, #product_2_subcopy, #product_2_mainCopy, #product_2_badge', 0.3, { opacity: 0, x:-20, ease: Linear.ease }, { opacity: 1,x:0, ease: Linear.ease }, 3.3) //Product price and product name 2 fade in
 .fromTo('#product_2_image', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, { x: 0, opacity: 1, ease: Linear.ease }, 3.3) //Product image 2 fade in
 .to('#productPrice_2,  #product_2_top_copy, #product_2_subcopy, #product_2_mainCopy, #product_2_badge', 0.3, { opacity: 0, ease: Linear.ease }, 6) //Product price and product name 2 fade out
 .to('#product_1_image', 0.3, { x: 100, opacity: 0, ease: Linear.ease }, 6) //Product image 2 fade out

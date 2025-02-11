@@ -35,8 +35,8 @@ html, body {
   top: -20px;
   transform: rotate(180deg);
   position: absolute;
-  width: 300px; /* Set a width */
-  height: 380px; /* Set a height */
+  width: 320px; /* Set a width */
+  height: 440px; /* Set a height */
   background-size: cover; /* Ensure it covers the div */
   background-repeat: no-repeat;
 }
@@ -50,22 +50,24 @@ html, body {
 }
 .player {
   position: absolute;
-  width: 370px;
+  width: 350px;
   top: 0px;
-  left: 270px;
+  left: 290px;
   background-color: #000;
 }
 .seenthis-control-bar {
   z-index: 25;
-  bottom: 250px !important;
-  left: 10px !important;
+}
+/* To adjust the player control bar */
+.seenthis-player .seenthis-control-bar{
+  bottom: 170px !important;
 }
 .logoPlaceholder {
   position: absolute;
   width: 185px;
   height: 52px;
   left: 30px;
-  top: 255px;
+  top: 285px;
   z-index: 9;
 }
 
@@ -88,7 +90,7 @@ sup {
 /* World click div */
 .worldClick {
   width: 640px;
-  height: 320px;
+  height: 360px;
   display: block;
   position: fixed;
   overflow: hidden;
@@ -104,7 +106,7 @@ sup {
 .largerCopy {
   top: 30px;
   left: 30px;
-  width: 240px;
+  width: 250px;
   line-height: 1;
-  font-size: 36px;
+  font-size: 40px;
 }
