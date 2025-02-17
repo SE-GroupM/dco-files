@@ -33,6 +33,21 @@ html, body {
   left: 0px;
   top: 0px;
 }
+
+#bg_image_frame_1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  opacity: 1;
+}
+
+#bg_image_frame_2 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  opacity: 1;
+}
+
 #frame_1_copy {
   font-family: FordCond-Medium;
   font-weight: "500 Medium";
@@ -73,6 +88,7 @@ html, body {
   border-width: 0px;
   text-align: center;
   padding: 4px 13px 4px 13px;
+  z-index: 10;
 }
 
 #subCopy_static {
@@ -161,6 +177,7 @@ html, body {
   font-size: 11px;
   left: 20px;
   top: 298px;
+  z-index: 10;
 }
 #legal_txt {
   color: rgb(255, 255, 255);
@@ -183,6 +200,7 @@ html, body {
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: 10;
 }
 
 #worldClick {

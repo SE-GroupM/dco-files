@@ -33,6 +33,21 @@ html, body {
   left: 0px;
   top: 0px;
 }
+
+#bg_image_frame_1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  opacity: 1;
+}
+
+#bg_image_frame_2 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  opacity: 1;
+}
+
 #frame_1_copy {
   font-family: FordCond-Medium;
   font-weight: "500 Medium";

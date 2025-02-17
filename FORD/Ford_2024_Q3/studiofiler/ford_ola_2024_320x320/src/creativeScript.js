@@ -5,7 +5,7 @@
 */
 
 window.addEventListener('lemonpi.content/ready', event => {
-  console.clear();
+
   const content = event.detail.content;
   const source = event.detail.source;
 

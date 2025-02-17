@@ -91,10 +91,6 @@
         "type": "text",
         "source": "create"
       },
-      "subtitle_top": {
-        "type": "text",
-        "source": "create"
-      },
       "font_color": {
         "type": "text",
         "source": "create"
@@ -107,8 +103,20 @@
         "type": "image",
         "source": "create"
       },
+      "subtitle_top": {
+        "type": "text",
+        "source": "create"
+      },
       "priceCopy": {
         "type": "text",
+        "source": "create"
+      },
+      "bg_image_frame_1": {
+        "type": "image",
+        "source": "create"
+      },
+      "bg_image_frame_2": {
+        "type": "image",
         "source": "create"
       }
     },
@@ -166,9 +174,6 @@
             "subTitle_topValue": {
               "value": "subTitle_topValue"
             },
-            "subtitle_top": {
-              "value": "subtitle_top"
-            },
             "font_color": {
               "value": "font_color"
             },
@@ -178,8 +183,17 @@
             "logo_wide": {
               "value": ""
             },
+            "subtitle_top": {
+              "value": "subtitle_top"
+            },
             "priceCopy": {
               "value": "priceCopy"
+            },
+            "bg_image_frame_1": {
+              "value": ""
+            },
+            "bg_image_frame_2": {
+              "value": ""
             }
           }
         }
@@ -205,5 +219,5 @@
     "id": 639,
     "name": "Ford"
   },
-  "port": 54267
+  "port": 55911
 }

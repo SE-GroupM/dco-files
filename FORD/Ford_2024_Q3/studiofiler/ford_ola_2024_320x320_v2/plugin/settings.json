@@ -1,6 +1,6 @@
 {
   "id": "1d14075a-87d1-4275-9a9c-cf58b934ba07",
-  "version": "1.4.1",
+  "version": "1.5.3",
   "name": "FORD_DISPLAY_320x320",
   "description": "",
   "size": {
@@ -13,6 +13,16 @@
     ],
     "customSizes": []
   },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
   "placeholders": {
     "fileName": "",
     "format": "CSV",
@@ -45,7 +55,7 @@
         "type": "image",
         "source": "create"
       },
-      "logo_wide": {
+      "logo_squared": {
         "type": "image",
         "source": "create"
       },
@@ -89,7 +99,7 @@
         "type": "text",
         "source": "create"
       },
-      "logo_squared": {
+      "logo_wide": {
         "type": "image",
         "source": "create"
       },
@@ -99,6 +109,14 @@
       },
       "priceCopy": {
         "type": "text",
+        "source": "create"
+      },
+      "bg_image_frame_1": {
+        "type": "image",
+        "source": "create"
+      },
+      "bg_image_frame_2": {
+        "type": "image",
         "source": "create"
       }
     },
@@ -129,7 +147,7 @@
             "bg_image": {
               "value": ""
             },
-            "logo_wide": {
+            "logo_squared": {
               "value": ""
             },
             "af_image": {
@@ -162,7 +180,7 @@
             "cta_right_or_left": {
               "value": "cta_right_or_left"
             },
-            "logo_squared": {
+            "logo_wide": {
               "value": ""
             },
             "subtitle_top": {
@@ -170,6 +188,12 @@
             },
             "priceCopy": {
               "value": "priceCopy"
+            },
+            "bg_image_frame_1": {
+              "value": ""
+            },
+            "bg_image_frame_2": {
+              "value": ""
             }
           }
         }
@@ -198,5 +222,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 63858
+  "port": 55994
 }

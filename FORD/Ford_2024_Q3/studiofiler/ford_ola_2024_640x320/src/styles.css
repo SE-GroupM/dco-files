@@ -27,8 +27,23 @@ html, body {
 }
 
 #bg_image {
+  position: absolute;
   width: 640px;
   height: 320px;
+}
+
+#bg_image_frame_1 {
+  position: absolute;
+  width: 640px;
+  height: 320px;
+  opacity: 1;
+}
+
+#bg_image_frame_2 {
+  position: absolute;
+  width: 640px;
+  height: 320px;
+  opacity: 1;
 }
 
 #frame_1_copy {
@@ -73,6 +88,7 @@ html, body {
   border-width: 0px;
   text-align: center;
   padding: 5px 14px 5px 14px;
+  z-index: 10;
 }
 
 #subCopy_static {
@@ -162,6 +178,7 @@ html, body {
   top: 276px;
   left: 160px;
   opacity: 75%;
+  z-index: 10;
 }
 
 #legal_txt {
@@ -186,6 +203,7 @@ html, body {
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: 10;
 }
 
 #worldClick {
