@@ -196,14 +196,8 @@
     "Choreograph": [
       {
         "advertiserId": 639,
-        "url": "https://assets.lemonpi.io/a/font/639/Ford-F1?v=700",
-        "family": "Ford-F1",
-        "variant": "700"
-      },
-      {
-        "advertiserId": 639,
-        "url": "https://assets.lemonpi.io/a/font/639/Ford-F1?v=500",
-        "family": "Ford-F1",
+        "url": "https://assets.lemonpi.io/a/font/639/Ford-F1+Medium?v=500",
+        "family": "Ford-F1 Medium",
         "variant": "500"
       }
     ]
@@ -219,5 +213,5 @@
   "folders": {
     "selectedFolderId": 4882
   },
-  "port": 58244
+  "port": 60992
 }
