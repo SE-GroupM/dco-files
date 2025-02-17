@@ -70,14 +70,14 @@ html, body {
 .priceCurrency {
   margin-left: 0px;
   font-size: 16px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
   margin-left: -39px;
   font-size: 17px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
 /* Sup class on product price */
@@ -92,7 +92,7 @@ sup {
   left: 15px;
   top: 27px;
   font-size: 65px;
-  font-family: "Mikro-black-otf";
+  font-family: "Mikro-Black-Compressed";
   color: #eb001e;
   letter-spacing: -3px;
 }
@@ -102,7 +102,7 @@ sup {
   left: 15px;
   top: 20px;
   font-size: 11px;
-  font-family: "Mikro-Regular";
+  font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
 .productName_2 {
@@ -111,7 +111,7 @@ sup {
   left: 15px;
   top: 20px;
   font-size: 11px;
-  font-family: "Mikro-Regular";
+  font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
 
@@ -122,7 +122,7 @@ sup {
   top: 580px;
   width: 220px;
   font-size: 7.5px;
-  font-family: "Mikro-Regular";
+  font-family: "Mikro-Regular-Compressed";
   color: grey;
   text-align: center;
 }
@@ -133,7 +133,7 @@ sup {
   top: 40px;
   font-size: 35px;
   line-height: 35px;
-  font-family: "Mikro-black-otf";
+  font-family: "Mikro-Black-Compressed";
   color: #eb001e;
   letter-spacing: -3px;
 }
