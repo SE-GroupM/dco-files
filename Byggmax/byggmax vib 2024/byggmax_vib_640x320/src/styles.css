@@ -25,17 +25,6 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
 }
-
-.currentPrice {
-  position: fixed;
-  top: 175px;
-  width: 280px;
-  height: 50px;
-  left: 17px;
-  text-align: left;
-  font-family: 'Roslindale-DisplayCondensedRegular';
-  font-size: 18px;
-}
 #panel_container {
   position: absolute;
   width: 300px;
@@ -86,18 +75,18 @@ sup {
   display: block;
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 22px;
   font-size: 65px;
   font-family: "Mikro-Black-Compressed";
   color: #eb001e;
-  letter-spacing: 1px;
+  letter-spacing: -2px;
 }
 .productName_1 {
   display: block;
   position: absolute;
   left: 20px;
   top: 15px;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
@@ -106,7 +95,7 @@ sup {
   position: absolute;
   left: 20px;
   top: 15px;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }

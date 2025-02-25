@@ -20,7 +20,6 @@ window.addEventListener('lemonpi.content/ready', event => {
   //Variable for local content
   var local_content = content;
    
-   
   // World click event caller
   $('#worldClick').click(onClick);
   $('#productName_1').html(content.productName_1.value);
@@ -28,12 +27,30 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   $('#copyFrame1').html(content.copyFrame1.value);
   $('#copyFrame2').html(content.copyFrame2.value);
-  $('#asteriskText').html(content.asteriskText.value);
-     
-     
-    //////////////////////////////////////////////////////////////////////////////////////
-   ///////////////////////////////// Videon config //////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////////////
+  
+  // import content of price currency from placeholder
+  let price_currency_content = local_content.price_currency_content.value;
+
+  // variable holding textcolor from adset
+  var setTextColors = local_content.textColor.value;
+  // Select multiple elements with differnet classes
+  var allElements = document.querySelectorAll('.currentPrice, .productName_1, .productName_2');
+
+  // Loop through the Nodelist and add same css class to each element
+  allElements.forEach(function(element) {
+    element.classList.add('textColor_css');
+  });
+
+  if (setTextColors && setTextColors.trim() !== '') {
+    // If setTextColors has a value, apply the CSS color
+    $('.textColor_css').css({
+      'color': setTextColors,
+    });
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////// Videon config //////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////
 
   // SEENTHIS variables
   // Define the video source and tracker variables
@@ -42,30 +59,11 @@ window.addEventListener('lemonpi.content/ready', event => {
   var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
+ 
   var copyFontSize = local_content.copy_font_size.value; 
 
- // variable holding textcolor from adset
- var setTextColors = local_content.textColor.value;
- // Select multiple elements with differnet classes
- var allElements = document.querySelectorAll('.currentPrice, .productName_1, .productName_2');
-
- // Loop through the Nodelist and add same css class to each element
- allElements.forEach(function(element) {
-   element.classList.add('textColor_css');
- });
-
- if (setTextColors && setTextColors.trim() !== '') {
-   // If setTextColors has a value, apply the CSS color
-   $('.textColor_css').css({
-     'color': setTextColors,
-   });
- }
-
- //import content of price currenly from placeholder
- let price_currency_content = local_content.price_currency_content.value;
- 
-  var bannerWidth = '980';
-  var bannerHeight = '600';
+  var bannerWidth = '640';
+  var bannerHeight = '360';
 
   if (ccVideo != '') {
     // Set the BG video source
@@ -110,23 +108,23 @@ window.addEventListener('lemonpi.content/ready', event => {
       'font-size': copyFontSize +'px',
    });
 
-     //////////////////
-    /// ANIMATIONS ///
-   //////////////////
+  //////////////////
+  /// ANIMATIONS ///
+  //////////////////
 
-  // Create a new timeline that repeats indefinitely (-1)
-  var tl = new TimelineMax({repeat: -1});
+// Create a new timeline that repeats indefinitely (-1)
+var tl = new TimelineMax({repeat: -1});
 
-  // Set initial opacity of both frames to 0
-  TweenMax.set('#productName_1, #productName_2, #copyFrame1, #copyFrame2',{ opacity: 0 });
+// Set initial opacity of both frames to 0
+TweenMax.set('#productName_1, #productName_2, #copyFrame1, #copyFrame2',{ opacity: 0 });
 
-  // Animate the first product name
-  tl.to('#productName_1, #copyFrame1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
-    .to('#productName_1, #copyFrame1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
+// Animate the first product name
+tl.to('#productName_1, #copyFrame1', 0.3, {opacity: 1, ease: Linear.easeNone}, 0) // Fade in
+  .to('#productName_1, #copyFrame1', 0.3, {opacity: 0, ease: Linear.easeNone}, 3.2) // Fade out after 4 seconds
 
-  // Animate the second product name
-    .to('#productName_2, #copyFrame2', 0.3, {opacity: 1, ease: Linear.easeNone}, 3.6) // Start fading in slightly after the first fades out
-    .to('#productName_2, #copyFrame2', 0.3, {opacity: 0, ease: Linear.easeNone}, 5.7); // Fade out, completing the 6-second cycle
+// Animate the second product name
+  .to('#productName_2, #copyFrame2', 0.3, {opacity: 1, ease: Linear.easeNone}, 3.6) // Start fading in slightly after the first fades out
+  .to('#productName_2, #copyFrame2', 0.3, {opacity: 0, ease: Linear.easeNone}, 5.7); // Fade out, completing the 6-second cycle
 
       ////////////////
     /// FUNCTIONS ///
