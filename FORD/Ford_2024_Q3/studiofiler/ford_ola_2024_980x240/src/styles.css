@@ -177,7 +177,7 @@ html, body {
   top: 205.5px;
   left: 165px;
   opacity: 75%;
-  z-index: 10;
+  z-index: 70;
 }
 
 #legal_txt {
@@ -213,4 +213,5 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 50;
 }
