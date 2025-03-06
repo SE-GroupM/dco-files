@@ -27,6 +27,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   $('#copyFrame1').html(content.copyFrame1.value);
   $('#copyFrame2').html(content.copyFrame2.value);
+  $('#asteriskText').html(content.asteriskText.value);
+
   
   // Defining mute-button's appearence 
   var mutebutton_on_off = local_content.mutebutton_on_off.value;

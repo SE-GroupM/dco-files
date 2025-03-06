@@ -32,14 +32,30 @@ onLemonpiReady(function () {
 
   //Product box 1
   //Check if price has sup element and append correct CSS class
-  if (local_content.product_1_price.value.includes('<sup>')){
-    $("#productPrice_1").html(local_content.product_1_price.value + "<span class='priceCurrencySup'>kr</span>");
-} else {
-    $("#productPrice_1").html(local_content.product_1_price.value + "<span class='priceCurrency'>kr</span>");
-}
-if (local_content.product_1_price.value === ''){
-    $("#productPrice_1").html(local_content.product_1_price.value);
-}
+// Check if product_1_price contains <sup>
+// Check if product_1_price contains <sup>
+if (local_content.product_1_price.value.includes('<sup>')) {
+  // Add the price with sup and currency
+  $("#productPrice_1").html(
+    `<span class="mainPrice">${local_content.product_1_price.value}</span><span class='priceCurrencySup'>kr</span>`
+  );
+  
+  // Increase margin-left of productContainer_1 to account for sup
+  $("#productContainer_1").css("margin-left", "30px"); // Adjust value as needed
+  } else {
+  // Add the price without sup and currency
+  $("#productPrice_1").html(
+    `<span class="mainPrice">${local_content.product_1_price.value}</span><span class='priceCurrency'>kr</span>`
+  );
+  
+  // Reset margin-left of productContainer_1
+  $("#productContainer_1").css("margin-left", "10px");
+  }
+  
+  // Handle empty price case
+  if (local_content.product_1_price.value === '') {
+  $("#productPrice_1").html(local_content.product_1_price.value);
+  }
 
   //Append product name
   $("#productName_1").html(local_content.product_1_copy.value);
@@ -50,15 +66,30 @@ if (local_content.product_1_price.value === ''){
 
   //Product box 2
  //Check if price has sup element and append correct CSS class
-//Check if price has sup element and append correct CSS class
-if (local_content.product_2_price.value.includes('<sup>')){
-  $("#productPrice_2").html(local_content.product_2_price.value + "<span class='priceCurrencySup'>kr</span>");
-} else {
-  $("#productPrice_2").html(local_content.product_2_price.value + "<span class='priceCurrency'>kr</span>");
-}
-if (local_content.product_2_price.value === ''){
+// Check if product_2_price contains <sup>
+// Check if product_2_price contains <sup>
+if (local_content.product_2_price.value.includes('<sup>')) {
+  // Add the price with sup and currency
+  $("#productPrice_2").html(
+    `<span class="mainPrice">${local_content.product_2_price.value}</span><span class='priceCurrencySup'>kr</span>`
+  );
+  
+  // Increase margin-left of productContainer_2 to account for sup
+  $("#productContainer_2").css("margin-left", "30px"); // Adjust value as needed
+  } else {
+  // Add the price without sup and currency
+  $("#productPrice_2").html(
+    `<span class="mainPrice">${local_content.product_2_price.value}</span><span class='priceCurrency'>kr</span>`
+  );
+  
+  // Reset margin-left of productContainer_2
+  $("#productContainer_2").css("margin-left", "10px");
+  }
+  
+  // Handle empty price case
+  if (local_content.product_2_price.value === '') {
   $("#productPrice_2").html(local_content.product_2_price.value);
-}
+  }
 
   //Append oldPrice 1
   $("#product_1_oldPrice").html(local_content.product_1_oldPrice.value + " kr");

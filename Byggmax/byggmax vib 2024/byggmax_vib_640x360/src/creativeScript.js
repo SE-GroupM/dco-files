@@ -27,6 +27,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   $('#copyFrame1').html(content.copyFrame1.value);
   $('#copyFrame2').html(content.copyFrame2.value);
+  $('#asteriskText').html(content.asteriskText.value);
+
   
   // import content of price currency from placeholder
   let price_currency_content = local_content.price_currency_content.value;

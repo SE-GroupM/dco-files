@@ -71,7 +71,7 @@ html, body {
   left: 20px;
   top: 15px;
   font-size: 16px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   color: #000;
   text-decoration: line-through;
 }
@@ -82,34 +82,50 @@ html, body {
   left: 20px;
   top: 15px;
   font-size: 16px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   color: #eb001e;
 }
+/* Parent container for productPrice and productContainer */
+.productGroup {
+  position: absolute;
+  top: 25px; /* Adjust as needed */
+  left: 20px; /* This aligns the group */
+  display: flex;
+  align-items: flex-start; /* Align items to the top of the group */
+  }
+
 /* Product price */
 .productPrice {
-  display: block;
-  position: absolute;
-  left: 20px;
-  top: 25px;
   font-size: 60px;
-  font-family: "Mikro-black-otf";
+  font-family: "Mikro-Black-Compressed";
   color: #eb001e;
   letter-spacing: -3px;
 }
 /* Product price currency ex. Kr */
 .priceCurrency {
-  margin-left: -28px;
+  margin-left: -3px;
   font-size: 16px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
   margin-left: -28px;
   font-size: 16px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
+
+.main {
+  display: inline-block; /* Ensure proper alignment */
+  position: relative; /* Positioning for sup and currency */
+}
+
+/* Main price styling */
+.mainPrice {
+display: inline; /* Keep the main price inline */
+}
+
 /* Sup class on product price */
 sup {
   font-size: 50%;
@@ -126,62 +142,30 @@ sup {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* Product name */
+
+/* Product mainCopy1 */
+.product_mainCopy {
+  margin-top: -20px;
+  font-size: 35px;
+  line-height: 35px;
+  font-family: "Trim-Bold_Compressed";
+  color: #eb001e;
+  letter-spacing: -1px;
+}
+
+/* Product subcopy */
+.product_subCopy,
 .productName {
   position: absolute;
-  left: 20px;
   top: 95px;
+  left: 20px;
   font-size: 12px;
-  font-family: "Mikro-Bold";
-  color: #000;
-}
-/* Product mainCopy1 */
-.product_1_mainCopy {
-  display: block;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  font-size: 35px;
-  line-height: 35px;
-  font-family: "Trim-Bold_otf";
-  color: #eb001e;
-  letter-spacing: -1px;
-}
-/* Product mainCopy1 */
-.product_2_mainCopy {
-  display: block;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  font-size: 35px;
-  line-height: 35px;
-  font-family: "Trim-Bold_otf";
-  color: #eb001e;
-  letter-spacing: -1px;
-}
-/* Product subcopy */
-.product_1_subCopy {
-  position: absolute;
-  left: 20px;
-  top: 117px;
-  font-size: 12px;
-  font-family: "Mikro-Bold";
-  color: #000;
-}
-/* Product subcopy */
-.product_2_subCopy {
-  position: absolute;
-  left: 20px;
-  top: 117px;
-  font-size: 12px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   color: #000;
 }
 /* Product container ex 4 för */
 .productContainer {
-  position: absolute;
-  top: 15px;
-  left: 160px;
+ margin-left: 10px;
   width: 70px;
   height: 70px;
   background-size: contain;
