@@ -105,16 +105,16 @@ html, body {
 /* Product price currency ex. Kr */
 .priceCurrency {
   display: inline-block; /* Inline-block ensures proper placement */
-  margin-left: -40px;
+  margin-left: -4px;
   font-size: 18px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
 /* Product price currency ex. Kr */
 .priceCurrencySup {
   margin-left: -38px;
   font-size: 18px;
-  font-family: "Mikro-Bold";
+  font-family: "Mikro-Bold-Compressed";
   letter-spacing: 0px;
 }
 /* Sup class on product price */

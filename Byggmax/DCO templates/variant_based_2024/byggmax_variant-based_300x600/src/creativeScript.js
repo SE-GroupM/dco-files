@@ -20,6 +20,8 @@ onLemonpiReady(function () {
   lemonpi.subscribe(function callback(content) {
   // Local variable for content
   var local_content = content;
+
+  $('#product_image_top').html(content.product_image_top.value);
   
   //Append background image
   $("#bgImage").css("background-image","url("+local_content.background_asset.value+")");
@@ -29,6 +31,18 @@ onLemonpiReady(function () {
   $("#logo").css("background-image","url("+local_content.logo_source.value+")");
   //Append overlay image
   $("#productOverlay").css("background-image","url("+local_content.layover_asset.value+")");
+
+  let topValue = parseInt(content.product_image_top.value, 10);
+
+  if (topValue) {
+      // If topValue is a valid number, apply it to the .productImage element
+      $('.productImage').css({
+          'top': topValue + 'px',
+      });
+  } else {
+      // If topValue is not valid, the CSS from the stylesheet will be used
+      $('.productImage').css({}); // No inline top value is applied, so it will fallback to the stylesheet value
+  }
 
   //Product box 1
   //Check if price has sup element and append correct CSS class
