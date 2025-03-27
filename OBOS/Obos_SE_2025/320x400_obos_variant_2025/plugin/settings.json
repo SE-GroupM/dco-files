@@ -1,0 +1,1011 @@
+{
+  "id": "0b384f21-00f1-4173-a1d3-0d1213b5bc1d",
+  "version": "1.5.4",
+  "name": "320x400_obos_variant_2025",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 400,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 400
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
+  "placeholders": {
+    "fileName": "Remote file",
+    "format": "CSV",
+    "schema": {
+      "variantID": {
+        "type": null,
+        "source": "feed"
+      },
+      "reporting_label": {
+        "type": "identifier",
+        "source": "feed"
+      },
+      "projekt": {
+        "type": "text",
+        "source": "feed"
+      },
+      "context_targeting": {
+        "type": "text",
+        "source": "feed"
+      },
+      "version": {
+        "type": "text",
+        "source": "feed"
+      },
+      "ort": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bgImageCssTopAdjust": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bgImageCssLeftAdjust": {
+        "type": "text",
+        "source": "feed"
+      },
+      "useHouseIcon": {
+        "type": "text",
+        "source": "feed"
+      },
+      "creative_dimension": {
+        "type": "dimension",
+        "source": "feed"
+      },
+      "rubrik": {
+        "type": "text",
+        "source": "feed"
+      },
+      "rubrik_copy_from_excel": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bild": {
+        "type": "image",
+        "source": "feed"
+      },
+      "image_preview": {
+        "type": null,
+        "source": "feed"
+      },
+      "rubrik_mindre_format": {
+        "type": "text",
+        "source": "feed"
+      },
+      "brodtext": {
+        "type": "text",
+        "source": "feed"
+      },
+      "brodtext_mindre_format": {
+        "type": "text",
+        "source": "feed"
+      },
+      "CTA": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Landningssida": {
+        "type": null,
+        "source": "feed"
+      },
+      "UTM-kod": {
+        "type": null,
+        "source": "feed"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "feed"
+      },
+      "logo_src": {
+        "type": "image",
+        "source": "feed"
+      },
+      "bg_image_source": {
+        "type": "image",
+        "source": "feed"
+      },
+      "preview_link": {
+        "type": null,
+        "source": "feed"
+      },
+      "MK leverans": {
+        "type": null,
+        "source": "feed"
+      },
+      "Klara adsets": {
+        "type": null,
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Bli nybyggeförälskad i Eskilstuna"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/cb11949d-1378-4bac-9466-7393066f68d4/Assets/Projektkampanj_Q1_2024/Eskilstuna/Bronsyxan_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/1024/85c85169bdca7819cdf7d9acbf2285fe.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/d75e4e62-f184-4c09-9a5d-a65acfe6b737/Assets/Projektkampanj_Q1_2024/Eskilstuna/Brf-Bolinder-Gatvy_comp.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-SemiBold?v=600",
+        "family": "OBOSText-SemiBold",
+        "variant": "600"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSDisplay-Bold?v=700",
+        "family": "OBOSDisplay-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-Medium?v=500",
+        "family": "OBOSText-Medium",
+        "variant": "500"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1024,
+    "name": "OBOS"
+  },
+  "folders": {
+    "selectedFolderId": 7474
+  },
+  "port": 63832
+}

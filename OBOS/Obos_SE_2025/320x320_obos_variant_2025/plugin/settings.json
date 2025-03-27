@@ -1,0 +1,2671 @@
+{
+  "id": "61807150-3e70-4354-811e-2eb7c8b62e0f",
+  "version": "1.5.4",
+  "name": "320x320_obos_variant_2025",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 320,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 320
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
+  "placeholders": {
+    "fileName": "Remote file",
+    "format": "CSV",
+    "schema": {
+      "variantID": {
+        "type": null,
+        "source": "feed"
+      },
+      "reporting_label": {
+        "type": "identifier",
+        "source": "feed"
+      },
+      "projekt": {
+        "type": "text",
+        "source": "feed"
+      },
+      "context_targeting": {
+        "type": null,
+        "source": "feed"
+      },
+      "version": {
+        "type": "text",
+        "source": "feed"
+      },
+      "ort": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bgImageCssTopAdjust": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bgImageCssLeftAdjust": {
+        "type": "text",
+        "source": "feed"
+      },
+      "useHouseIcon": {
+        "type": "text",
+        "source": "feed"
+      },
+      "creative_dimension": {
+        "type": "dimension",
+        "source": "feed"
+      },
+      "rubrik": {
+        "type": "text",
+        "source": "feed"
+      },
+      "rubrik_copy_from_excel": {
+        "type": "text",
+        "source": "feed"
+      },
+      "bild": {
+        "type": "image",
+        "source": "feed"
+      },
+      "image_preview": {
+        "type": null,
+        "source": "feed"
+      },
+      "rubrik_mindre_format": {
+        "type": "text",
+        "source": "feed"
+      },
+      "brodtext": {
+        "type": "text",
+        "source": "feed"
+      },
+      "brodtext_mindre_format": {
+        "type": "text",
+        "source": "feed"
+      },
+      "CTA": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Landningssida": {
+        "type": null,
+        "source": "feed"
+      },
+      "UTM-kod": {
+        "type": null,
+        "source": "feed"
+      },
+      "exit_url": {
+        "type": "click",
+        "source": "feed"
+      },
+      "logo_src": {
+        "type": "image",
+        "source": "feed"
+      },
+      "bg_image_source": {
+        "type": "image",
+        "source": "feed"
+      },
+      "preview_link": {
+        "type": null,
+        "source": "feed"
+      },
+      "MK leverans": {
+        "type": null,
+        "source": "feed"
+      },
+      "Klara adsets": {
+        "type": null,
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/dade748f-8f08-405d-970b-5dacff45bb7e/Assets/2025/2025_Q2_assets/gentid_smalll.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/dade748f-8f08-405d-970b-5dacff45bb7e/Assets/2025/2025_Q2_assets/gentid_smalll.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "brodtext": {
+              "value": ""
+            },
+            "brodtext_mindre_format": {
+              "value": ""
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Egentid"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Egentid"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens egentid"
+            },
+            "brodtext": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "brodtext_mindre_format": {
+              "value": "Möjliggör flytten med OBOS Deläga"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/9323cb4e-2cd1-4c8a-a3aa-201adfe88fba/Assets/2025/2025_Q2_assets/gentid.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": ""
+            },
+            "brodtext_mindre_format": {
+              "value": ""
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Morgonhumör"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Morgonhumör"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens morgonhumör"
+            },
+            "brodtext": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "brodtext_mindre_format": {
+              "value": "Livet blir lite enklare med<br>ett tryggt bostadsköp"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/118beb24-a113-424d-abe4-3653b1f0c48f/Assets/2025/2025_Q2_assets/OBOS_Bla-Grnn-Kule_Liggende.png"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/94a8f068-60af-414c-a5c3-951210353f7e/Assets/2025/2025_Q2_assets/Morgonhumor.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "3"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Lugn"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Lugn"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "brodtext": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "brodtext_mindre_format": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "3"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Lugn"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Lugn"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "brodtext": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "brodtext_mindre_format": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "3"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Lugn"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Lugn"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "brodtext": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "brodtext_mindre_format": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "3"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Lugn"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Lugn"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "brodtext": {
+              "value": ""
+            },
+            "brodtext_mindre_format": {
+              "value": ""
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "3"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Lugn"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Lugn"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens lugn"
+            },
+            "brodtext": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "brodtext_mindre_format": {
+              "value": "Välj en bekymmersfri bostad<br>och få mer tid för dig själv"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/2b439f28-58ea-478a-ac50-7136aef847bd/Assets/2025/2025_Q2_assets/Lugn.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "4"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Piruetter"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Piruetter"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/ce22070d-65c0-4577-b9ea-1ce05d8eb225/Assets/2025/2025_Q2_assets/Piruetter_small.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "brodtext": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "brodtext_mindre_format": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/ce22070d-65c0-4577-b9ea-1ce05d8eb225/Assets/2025/2025_Q2_assets/Piruetter_small.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "4"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Piruetter"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Piruetter"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "brodtext": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "brodtext_mindre_format": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "4"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Piruetter"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Piruetter"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "brodtext": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "brodtext_mindre_format": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "4"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Piruetter"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Piruetter"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "brodtext": {
+              "value": ""
+            },
+            "brodtext_mindre_format": {
+              "value": ""
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "4"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Piruetter"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Piruetter"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för<br>framtidens piruetter"
+            },
+            "brodtext": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "brodtext_mindre_format": {
+              "value": "Bli medlem och få förtur till en<br>bostad där yviga intressen får plats"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/970b3614-fe58-420d-a557-6d2c27af01b4/Assets/2025/2025_Q2_assets/Piruetter.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "5"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Överraskningar"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Överraskningar"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/bcdba473-62ce-4585-8bd2-f6e0f8187c6b/Assets/2025/2025_Q2_assets/overraskningar_small.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "brodtext": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "brodtext_mindre_format": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/bcdba473-62ce-4585-8bd2-f6e0f8187c6b/Assets/2025/2025_Q2_assets/overraskningar_small.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "5"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Överraskningar"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Överraskningar"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "brodtext": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "brodtext_mindre_format": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "5"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Överraskningar"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Överraskningar"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "brodtext": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "brodtext_mindre_format": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "5"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Överraskningar"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Överraskningar"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "brodtext": {
+              "value": ""
+            },
+            "brodtext_mindre_format": {
+              "value": ""
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "5"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Överraskningar"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Överraskningar"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens överraskningar"
+            },
+            "brodtext": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "brodtext_mindre_format": {
+              "value": "Hitta en bostad med<br>rum för alla i familjen"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/5cc164b8-8d0d-4be4-a932-9bef63cf1f1d/Assets/2025/2025_Q2_assets/overraskningar.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "6"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Andetag"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Andetag"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x400"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "brodtext": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "brodtext_mindre_format": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "6"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Andetag"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Andetag"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "250x600"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "brodtext": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "brodtext_mindre_format": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "6"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Andetag"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Andetag"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "640x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "brodtext": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "brodtext_mindre_format": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "variantID": {
+              "value": "6"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Andetag"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Andetag"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "980x240"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "brodtext": {
+              "value": ""
+            },
+            "brodtext_mindre_format": {
+              "value": ""
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "6"
+            },
+            "reporting_label": {
+              "value": "Stockholm-Väst_Stockholm_Andetag"
+            },
+            "projekt": {
+              "value": "Stockholm"
+            },
+            "context_targeting": {
+              "value": ""
+            },
+            "version": {
+              "value": "Andetag"
+            },
+            "ort": {
+              "value": "Stockholm-Väst"
+            },
+            "bgImageCssTopAdjust": {
+              "value": ""
+            },
+            "bgImageCssLeftAdjust": {
+              "value": ""
+            },
+            "useHouseIcon": {
+              "value": "1"
+            },
+            "creative_dimension": {
+              "value": "320x320"
+            },
+            "rubrik": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "rubrik_copy_from_excel": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "bild": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "image_preview": {
+              "value": ""
+            },
+            "rubrik_mindre_format": {
+              "value": "Vi bygger för framtidens djupa andetag"
+            },
+            "brodtext": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "brodtext_mindre_format": {
+              "value": "Vardagen är krävande nog -<br>välj en bekymmersfri bostad"
+            },
+            "CTA": {
+              "value": "Se nya bostäder"
+            },
+            "Landningssida": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "UTM-kod": {
+              "value": ""
+            },
+            "exit_url": {
+              "value": "https://obos.se/bostad/projekt?regions=stockholm&view=projects"
+            },
+            "logo_src": {
+              "value": "https://assets.lemonpi.io/a/k/5322fd11-7dc3-45ea-9dc6-14c7db1362d0/Assets/other_assets/OBOS_Hvit_Liggende.svg"
+            },
+            "bg_image_source": {
+              "value": "https://assets.lemonpi.io/a/k/f2f3dc22-2b91-4fe2-9785-e22ef543369e/Assets/2025/2025_Q2_assets/Andetag.jpg"
+            },
+            "preview_link": {
+              "value": ""
+            },
+            "MK leverans": {
+              "value": "FALSE"
+            },
+            "Klara adsets": {
+              "value": "FALSE"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-SemiBold?v=600",
+        "family": "OBOSText-SemiBold",
+        "variant": "600"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSDisplay-Bold?v=700",
+        "family": "OBOSDisplay-Bold",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-Medium?v=500",
+        "family": "OBOSText-Medium",
+        "variant": "500"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1024,
+    "name": "OBOS"
+  },
+  "folders": {
+    "selectedFolderId": 7474
+  },
+  "port": 56863
+}

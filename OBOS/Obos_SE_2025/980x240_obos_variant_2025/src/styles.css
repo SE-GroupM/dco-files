@@ -1,0 +1,227 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0047ba;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.logo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 160px;
+}
+
+/* Gradient layer on top of the background */
+.gradient-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Smooth transparent gradient from bottom */
+  z-index: 0; /* On top of the background but below other content */
+}
+      
+     .bgImage {
+      position: absolute;
+      width: 980px;
+      }
+
+      .container {
+        position: relative;
+        display: inline-block; /* Ensure the container wraps the content */
+        height: 20px;
+        }
+      
+/* Style for the container that holds the animated rectangle */
+.rectangle_white_container {
+  width: 455px; /* Update to your new width */
+  height: 205px; /* Keep the height the same, or adjust if necessary */
+  position: absolute; /* Ensure it's positioned on the page */
+  left: -30px;
+  top: 25px;
+  background-color: transparent; /* Ensure background is transparent */
+  z-index: 10; /* Ensure it is on top of other elements */
+  }
+  
+  /* Style for the SVG to fill the container */
+  .rectangle_white_svg {
+  width: 100%; /* Ensure the SVG fills the container */
+  height: 100%; /* Ensure the SVG fills the container */
+  }
+  
+  /* Rectangle styling (invisible fill, white border, rounded corners) */
+  .rectangle_white {
+  fill: transparent; /* No fill color */
+  stroke: white; /* White stroke (border color) */
+  stroke-width: 1; /* Stroke width for the border */
+  stroke-linejoin: round; /* Rounded corners for joins */
+  stroke-dasharray: 954; /* Perimeter = 2 * (300 + 177) = 954 */
+  stroke-dashoffset: -954; /* Initially hide the entire stroke using a negative offset */
+  transition: stroke-dashoffset 3s ease-out forwards; /* Smooth transition */
+  rx: 15px; /* Rounded corners - this is for the border-radius equivalent on SVG elements */
+  ry: 15px; /* Same as above, for both axes */
+  }
+  
+  /* Animation to reveal the border */
+  @keyframes draw-border {
+  0% {
+    stroke-dashoffset: -954; /* Start with the stroke fully hidden (negative offset) */
+  }
+  100% {
+    stroke-dashoffset: 0; /* Animate to fully visible */
+  }
+  }
+  
+  /* Optional class for triggering the animation */
+  .animate {
+  animation: draw-border 3s forwards;
+  }
+
+.copy{
+  top: 190px;
+}
+
+.cta {
+  width: 92px;
+  height: 20px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  top: 185px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.ctaTxt {
+  display: flex;
+  width: 114px;
+  height: 32px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: OBOSText-SemiBold;  
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  position: fixed;
+  left: 45px;
+  background: #008861;
+  border-radius: 0.3rem;
+}
+
+/* Copy Div - use flexbox for layout */
+.copyDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 70px;
+  left: 45px;
+}
+
+/* Headline style */
+.headline {
+  width: 350px;
+  color: #FFF;
+  font-family: ObosDisplay-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+/* Subline style - let it adapt to the headline */
+.subline {
+  width: 350px;
+  height: 60px;
+  color: #FFF;
+  font-family: OBOSText-Medium;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 12px;  /* Adjust as needed */
+}
+
+.brf {
+  height: 20px;
+  border-radius: 5px;
+  display: flex; /* Changed to flex for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally, adjust if you want the text/icon aligned differently */
+  position: fixed;
+  overflow: hidden;
+  padding: 0 10px; /* Add padding on the sides */
+  margin: 0;
+  left: 35px;
+  top: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.brfName {
+  color: #ffffff;
+  font-family: OBOSText-Medium;
+  font-size: 18px;
+  margin-left: 3px;
+  /* Additional adjustments for spacing might be needed, depending on your design */
+}
+
+.icon{
+  margin-top: 2px;
+  height: 25px; /* Adjust width as necessary */
+  margin-left: -3px; /* Add some space between the icon and the text */
+  /* Removed position absolute and left property */
+}
+
+.villkor {
+  color: #FFF;
+  font-family: OBOSText-Medium;
+  /* 16px*/
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  position: fixed;
+  top: 460px;
+  left: 19px
+}
+
+#exit_url {
+  width: 980px;
+  height: 240px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:100;
+}
+
