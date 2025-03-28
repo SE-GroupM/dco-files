@@ -64,7 +64,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   var headCopyPlaceholder = $('#headline');
   headCopyPlaceholder.html(mainCopy);
-  fitText(headCopyPlaceholder, 90);
+  fitText(headCopyPlaceholder, 88);
   
   var subCopyPlaceholder = $('#subline');
   subCopyPlaceholder.html(subText);
@@ -115,14 +115,15 @@ window.addEventListener('lemonpi.content/ready', event => {
 var includeBrf = local_content.useHouseIcon.value;
 
 // Adjust initial CSS based on includeBrf
-if (includeBrf === '0') {
-$('#brf, #brfName').css('opacity', 0); // Ensure brf is initially hidden if includeBrf is '0'
+if (includeBrf === '0' || includeBrf === '') {
+$('#brf, #brfName').css('opacity', 0); // Ensure brf is initially hidden if includeBrf is '0' or empty
+$('#copyDiv').css('top', '110px');    // Set top value for copyDiv
 }
 
 var introAnimation = gsap.timeline();
 
 // Conditionally add animation for #brf based on includeBrf
-if (includeBrf !== '0') {
+if (includeBrf !== '0' && includeBrf !== '') {
 introAnimation.from('#brf, #brfName, #icon', {
   duration: 0.5, // Duration of the fade-in effect
   autoAlpha: 0,  // Start with opacity 0 (hidden)

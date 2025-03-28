@@ -2650,8 +2650,8 @@
       },
       {
         "advertiserId": 1024,
-        "url": "https://assets.lemonpi.io/a/font/1024/OBOSDisplay-Medium?v=500",
-        "family": "OBOSDisplay-Medium",
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-Medium?v=500",
+        "family": "OBOSText-Medium",
         "variant": "500"
       }
     ]
@@ -2667,5 +2667,5 @@
   "folders": {
     "selectedFolderId": 7474
   },
-  "port": 63892
+  "port": 65007
 }

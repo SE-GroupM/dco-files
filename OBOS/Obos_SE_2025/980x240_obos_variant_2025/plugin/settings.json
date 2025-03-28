@@ -2644,15 +2644,15 @@
       },
       {
         "advertiserId": 1024,
-        "url": "https://assets.lemonpi.io/a/font/1024/OBOSDisplay-Medium?v=500",
-        "family": "OBOSDisplay-Medium",
-        "variant": "500"
-      },
-      {
-        "advertiserId": 1024,
         "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-SemiBold?v=600",
         "family": "OBOSText-SemiBold",
         "variant": "600"
+      },
+      {
+        "advertiserId": 1024,
+        "url": "https://assets.lemonpi.io/a/font/1024/OBOSText-Medium?v=500",
+        "family": "OBOSText-Medium",
+        "variant": "500"
       }
     ]
   },
@@ -2667,5 +2667,5 @@
   "folders": {
     "selectedFolderId": 7474
   },
-  "port": 51904
+  "port": 63574
 }

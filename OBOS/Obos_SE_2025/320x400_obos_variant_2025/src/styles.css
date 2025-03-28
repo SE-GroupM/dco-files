@@ -182,6 +182,29 @@ html, body {
   left: 33px;
 }
 
+/* Headline style */
+.headline {
+  width: 255px;
+  color: #FFF;
+  font-family: ObosDisplay-Bold;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+/* Subline style - let it adapt to the headline */
+.subline {
+  width: 255px;
+  height: 60px;
+  color: #FFF;
+  font-family: OBOSText-Medium;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 12px;  /* Adjust as needed */
+}
+
 .brf {
   height: 20px;
   border-radius: 5px;
