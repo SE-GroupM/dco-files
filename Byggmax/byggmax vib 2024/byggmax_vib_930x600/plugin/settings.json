@@ -1,6 +1,6 @@
 {
   "id": "b99207e3-a6f1-4ebd-9d92-0c09950c3f63",
-  "version": "1.3.0",
+  "version": "1.5.5",
   "name": "byggmax_vib_930x600",
   "description": "",
   "size": {
@@ -22,7 +22,19 @@
       }
     ]
   },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
   "placeholders": {
+    "fileName": "migrated from version 1.3.0 of the extension",
+    "format": "CSV",
     "schema": {
       "videoTracker": {
         "type": "text",
@@ -59,38 +71,83 @@
       "price_currency_content": {
         "type": "text",
         "source": "create"
+      },
+      "copyFrame1": {
+        "type": "text",
+        "source": "create"
+      },
+      "copyFrame2": {
+        "type": "text",
+        "source": "create"
+      },
+      "asteriskText": {
+        "type": "text",
+        "source": "create"
+      },
+      "textColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "copy_font_size": {
+        "type": "text",
+        "source": "create"
+      },
+      "video_placeholder": {
+        "type": "video",
+        "source": "create"
       }
     },
     "data": {
       "defaultRowIndex": 0,
       "list": [
         {
-          "videoTracker": {
-            "value": "videoTracker"
-          },
-          "videoSrc": {
-            "value": "videoSrc"
-          },
-          "currentPrice": {
-            "value": "currentPrice"
-          },
-          "worldClick": {
-            "value": ""
-          },
-          "mutebutton_on_off": {
-            "value": "mutebutton_on_off"
-          },
-          "logoPlaceholder": {
-            "value": ""
-          },
-          "productName_1": {
-            "value": "productName_1"
-          },
-          "productName_2": {
-            "value": "productName_2"
-          },
-          "price_currency_content": {
-            "value": "price_currency_content"
+          "isIncluded": true,
+          "data": {
+            "videoTracker": {
+              "value": "videoTracker"
+            },
+            "videoSrc": {
+              "value": "videoSrc"
+            },
+            "currentPrice": {
+              "value": "currentPrice"
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "mutebutton_on_off": {
+              "value": "mutebutton_on_off"
+            },
+            "logoPlaceholder": {
+              "value": ""
+            },
+            "productName_1": {
+              "value": "productName_1"
+            },
+            "productName_2": {
+              "value": "productName_2"
+            },
+            "price_currency_content": {
+              "value": "price_currency_content"
+            },
+            "copyFrame1": {
+              "value": "copyFrame1"
+            },
+            "copyFrame2": {
+              "value": "copyFrame2"
+            },
+            "asteriskText": {
+              "value": "asteriskText"
+            },
+            "textColor": {
+              "value": "textColor"
+            },
+            "copy_font_size": {
+              "value": "copy_font_size"
+            },
+            "video_placeholder": {
+              "value": ""
+            }
           }
         }
       ]
@@ -108,7 +165,7 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "port": 52036,
+  "port": 54499,
   "folders": {
     "selectedFolderId": 2085
   }
