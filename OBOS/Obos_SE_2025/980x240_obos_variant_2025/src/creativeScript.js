@@ -64,7 +64,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   
   var headCopyPlaceholder = $('#headline');
   headCopyPlaceholder.html(mainCopy);
-  fitText(headCopyPlaceholder, 105);
+  fitText(headCopyPlaceholder, 118);
   
   var subCopyPlaceholder = $('#subline');
   subCopyPlaceholder.html(subText);
