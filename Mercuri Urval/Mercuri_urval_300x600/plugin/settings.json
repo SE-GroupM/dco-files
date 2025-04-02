@@ -1,0 +1,128 @@
+{
+  "id": "5582f64b-a5c3-4131-95ec-afe9232a9f35",
+  "version": "1.4.1",
+  "name": "Mercuri_Urval_DE_300x600_2024",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 300,
+        "height": 600,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 300,
+        "height": 600
+      }
+    ]
+  },
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "click": {
+        "type": "click",
+        "source": "create"
+      },
+      "company_logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "company_name": {
+        "type": "text",
+        "source": "create"
+      },
+      "job_title": {
+        "type": "text",
+        "source": "create"
+      },
+      "description_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "placement_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "mercuri_logo": {
+        "type": "image",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "click": {
+              "value": ""
+            },
+            "company_logo": {
+              "value": ""
+            },
+            "company_name": {
+              "value": "company_name"
+            },
+            "job_title": {
+              "value": "job_title"
+            },
+            "description_text": {
+              "value": "description_text"
+            },
+            "placement_text": {
+              "value": "placement_text"
+            },
+            "mercuri_logo": {
+              "value": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 249,
+        "url": "https://assets.lemonpi.io/a/font/249/HelveticaNeueLTStd-Lt?v=300",
+        "family": "HelveticaNeueLTStd-Lt",
+        "variant": "300"
+      },
+      {
+        "advertiserId": 249,
+        "url": "https://assets.lemonpi.io/a/font/249/HelveticaNeueLTStd-Bd?v=700",
+        "family": "HelveticaNeueLTStd-Bd",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 249,
+        "url": "https://assets.lemonpi.io/a/font/249/HelveticaNeueLTStd-Heavy?v=900",
+        "family": "HelveticaNeueLTStd-Heavy",
+        "variant": "900"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 249,
+    "name": "Mercuri Urval DE"
+  },
+  "folders": {
+    "selectedFolderId": 3287
+  },
+  "port": 63634
+}

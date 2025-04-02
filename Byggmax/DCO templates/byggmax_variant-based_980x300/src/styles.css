@@ -1,0 +1,133 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Background image asset */
+.bgImage {
+  position: absolute;
+  width: 980px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Logo image asset */
+.logo {
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  width: 170px;
+  height: 50px;
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Product overlay image asset */
+.productOverlay {
+  position: absolute;
+  top: 160px;
+  left: 490px;
+  width: 450px;
+  height: 160px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Product container */
+.productPanel {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 980px;
+  height: 300px;
+}
+/* Product price */
+.productPrice {
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 70px;
+  font-size: 80px;
+  font-family: "Mikro-black-otf";
+  color: #eb001e;
+  letter-spacing: -3px;
+}
+/* Product price currency ex. Kr */
+.priceCurrency {
+  margin-left: 0px;
+  font-size: 20px;
+  font-family: "Mikro-Bold";
+  letter-spacing: 0px;
+}
+/* Product price currency ex. Kr */
+.priceCurrencySup {
+  /* position: relative; */
+  margin-left: -40px;
+  font-size: 20px;
+  font-family: "Mikro-Bold";
+  letter-spacing: 0px;
+}
+/* Sup class on product price */
+sup {
+  font-size: 50%;
+  position: relative;
+}
+/* Product image asset */
+.productImage {
+  position: absolute;
+  top: 0px;
+  left: 560px;
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Product name */
+.productName {
+  position: absolute;
+  left: 200px;
+  top: 155px;
+  font-size: 20px;
+  font-family: "Mikro-Bold";
+  color: #000;
+}
+
+/* Product container ex 4 för */
+.productContainer {
+  position: absolute;
+  top: 30px;
+  left: 380px;
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+
+

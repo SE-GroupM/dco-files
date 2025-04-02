@@ -246,7 +246,7 @@ Slider.create({
       }
 
       // Truncate description and append to product description div
-      description = truncateText(description, 25); // Assuming 100 is the max length for description
+      description = truncateText(description, 15); // Assuming 100 is the max length for description
       $(slideDiv).find("#product_description").html(description);
       
       // Process priceNormal
