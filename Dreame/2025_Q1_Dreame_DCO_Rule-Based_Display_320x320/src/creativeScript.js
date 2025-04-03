@@ -43,6 +43,10 @@ window.addEventListener('lemonpi.content/ready', event => {
   $("#subText").html(local_content.Sub_Text.value);
   $("#cta").html(local_content.CTA_Text.value);
 
+  gsap.set("#textHolder", { marginTop:local_content.Copy_Margin_Top.value});
+  gsap.set("#cta", { backgroundColor: local_content.CTA_Text_Active_Background_Color.value, color:local_content.CTA_Text_Active_Color.value, border:local_content.CTA_Text_Active_Border.value, ease: "expo.out", duration: 0.5});
+  addStylesheets(local_content.Extra_Font_URL.value)
+
   $('#creative_container').mouseenter(onMouseEnter);
   $('#creative_container').mouseleave(onMouseLeave);
 
@@ -107,11 +111,30 @@ window.addEventListener('lemonpi.content/ready', event => {
   }
 
   function onMouseEnter(e){
-    gsap.to("#cta", { backgroundColor: "#000000", color:"#ffffff", ease: "expo.out", duration: 0.5});
+    gsap.to("#cta", { backgroundColor: local_content.CTA_Text_Hover_Background_Color.value, color:local_content.CTA_Text_Hover_Color.value, border:local_content.CTA_Text_Hover_Border.value, ease: "expo.out", duration: 0.5});
   }
 
   function onMouseLeave(e){
-    gsap.to("#cta", { backgroundColor: "#ffffff", color:"#000000", ease: "expo.out", duration: 0.5});
+    gsap.to("#cta", { backgroundColor: local_content.CTA_Text_Active_Background_Color.value, color:local_content.CTA_Text_Active_Color.value, border:local_content.CTA_Text_Active_Border.value, ease: "expo.out", duration: 0.5});
+  }
+
+  function addStylesheets(urls, media = "all") {
+    if (!urls || urls.trim() === "") return; // Exit function if no URLs provided
+    
+    urls.split(",").forEach(url => {
+        const trimmedUrl = url.trim();
+        if (trimmedUrl) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = trimmedUrl;
+            link.media = media;
+            link.onload = () => console.log(`Stylesheet loaded: ${trimmedUrl}`);
+            link.onerror = () => console.error(`Failed to load stylesheet: ${trimmedUrl}`);
+            
+            document.head.appendChild(link);
+        }
+    });
   }
 
   //Append exit url to creative container

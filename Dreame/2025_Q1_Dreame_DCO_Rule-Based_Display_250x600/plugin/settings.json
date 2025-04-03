@@ -1,7 +1,7 @@
 {
   "id": "3f50f155-1140-4d25-89f1-957754f8646b",
   "version": "1.5.3",
-  "name": "2025_Q1_Dreame_DCO_Rule-Based_Display_250x600",
+  "name": "2025_Dreame_DCO_Rule-Based_Display_250x600",
   "description": "",
   "size": {
     "sizes": [
@@ -55,6 +55,38 @@
       "URL_Exit": {
         "type": "click",
         "source": "create"
+      },
+      "Copy_Margin_Top": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Active_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Active_Background_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Active_Border": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Hover_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Hover_Background_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Hover_Border": {
+        "type": "text",
+        "source": "create"
+      },
+      "Extra_Font_URL": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -80,6 +112,30 @@
             },
             "URL_Exit": {
               "value": ""
+            },
+            "Copy_Margin_Top": {
+              "value": "Copy_Margin_Top"
+            },
+            "CTA_Text_Active_Color": {
+              "value": "CTA_Text_Active_Color"
+            },
+            "CTA_Text_Active_Background_Color": {
+              "value": "CTA_Text_Active_Background_Color"
+            },
+            "CTA_Text_Active_Border": {
+              "value": "CTA_Text_Active_Border"
+            },
+            "CTA_Text_Hover_Color": {
+              "value": "CTA_Text_Hover_Color"
+            },
+            "CTA_Text_Hover_Background_Color": {
+              "value": "CTA_Text_Hover_Background_Color"
+            },
+            "CTA_Text_Hover_Border": {
+              "value": "CTA_Text_Hover_Border"
+            },
+            "Extra_Font_URL": {
+              "value": "Extra_Font_URL"
             }
           }
         }
@@ -101,5 +157,5 @@
   "folders": {
     "selectedFolderId": 6624
   },
-  "port": 57747
+  "port": 61480
 }
