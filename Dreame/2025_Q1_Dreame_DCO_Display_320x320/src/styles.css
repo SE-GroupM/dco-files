@@ -1,0 +1,110 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#content {
+  background-color: black;
+}
+
+#creative_container {
+  width: 320px;
+  height: 320px;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  background-color: black;
+  color: #fff;
+  font-family: "MiSans Normal v2";
+
+  opacity: 0;
+}
+
+
+.bgImage {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: absolute;
+  width: 73px;
+  height: 10px;
+  left: 124px;
+  top: 25px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.textHolder {
+  position: absolute;
+  width: 255px;
+  height: inherit;
+  left: 34px;
+  bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns text to the left */
+  justify-content: flex-end;
+  column-gap: 1px;
+  
+
+}
+
+.headlineText {
+  font-family: "Rany Bold";
+  font-size: 25px;
+  margin: 0; /* Removes default margins */
+  margin-bottom: 4px; 
+
+  line-height: 1.1;
+}
+
+.subText {
+  font-family: "MiSans Normal v2";
+  font-size: 17px;
+  margin: 0; /* Removes default margins */
+  margin-bottom: 10px; 
+  line-height: 1.2;
+  
+}
+
+.cta {
+  font-family: "MiSans Normal v2";
+  font-size: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin: 0; /* Removes default margins */
+
+  border: 1.5px solid #fff;
+  color: #000;
+  background-color: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
