@@ -43,7 +43,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   $("#subText").html(local_content.Sub_Text.value);
   $("#cta").html(local_content.CTA_Text.value);
 
-  gsap.set("#textHolder", { marginTop:local_content.Copy_Margin_Top.value});
+  gsap.set("#textHolder", { marginBottom:local_content.Copy_Margin_Top.value});
   gsap.set("#cta", { backgroundColor: local_content.CTA_Text_Active_Background_Color.value, color:local_content.CTA_Text_Active_Color.value, border:local_content.CTA_Text_Active_Border.value, ease: "expo.out", duration: 0.5});
   addStylesheets(local_content.Extra_Font_URL.value)
 
