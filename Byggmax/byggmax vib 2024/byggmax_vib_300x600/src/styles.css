@@ -120,7 +120,11 @@ sup {
   font-size: 9px;
   font-family: "Mikro-Regular-Compressed";
   color: grey;
+  width: 260px;
+  color: grey;
+  text-align: center;
 }
+
 .copyFrame1, .copyFrame2 {
   display: block;
   position: absolute;

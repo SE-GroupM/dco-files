@@ -24,6 +24,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   $('#worldClick').click(onClick);
   $('#copyFrame1').html(content.productName_1.value);
   $('#copyFrame2').html(content.productName_2.value);
+  $('#asteriskText').html(content.asteriskText.value);
+
   
   // variable holding textcolor from adset
   var setTextColors = local_content.textColor.value;

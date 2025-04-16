@@ -97,7 +97,7 @@ sup {
   position: absolute;
   left: 20px;
   top: 20px;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
@@ -106,7 +106,7 @@ sup {
   position: absolute;
   left: 20px;
   top: 20px;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
@@ -126,7 +126,7 @@ sup {
   display: block;
   position: absolute;
   left: 20px;
-  top: 43px;
+  top: 37px;
   font-size: 50px;
   line-height: 50px;
   font-family: "Mikro-Black-Compressed";

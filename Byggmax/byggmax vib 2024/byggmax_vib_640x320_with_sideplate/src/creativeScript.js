@@ -25,6 +25,9 @@ window.addEventListener('lemonpi.content/ready', event => {
   $('#productName_1').html(content.productName_1.value);
   $('#productName_2').html(content.productName_2.value);
   
+  var productName1_fontSize = local_content.productName1_fontSize.value;
+  var productName2_fontSize = local_content.productName2_fontSize.value;
+
   // import content of price currency from placeholder
   let price_currency_content = local_content.price_currency_content.value;
   // If the tempalte should not use any price from product. Then append larger CSS on copy
@@ -32,6 +35,22 @@ window.addEventListener('lemonpi.content/ready', event => {
     $('#productName_1').addClass('largerCopy');
     $('#productName_2').addClass('largerCopy');
   }
+
+  // If the text gets too big and needs to be adjusted manually
+  if(productName1_fontSize != ''){
+    $('#productName_1').remove('largerCopy');
+    $('#productName_1').css({
+      'font-size': parseInt(productName1_fontSize)+'px',
+      'line-height': parseInt(productName1_fontSize)+'px',
+    });
+  }
+  if(productName2_fontSize != ''){
+    $('#productName_2').css({
+      'font-size': parseInt(productName2_fontSize)+'px',
+      'line-height': parseInt(productName2_fontSize)+'px',
+    });
+  }
+  
   // assigning the sideplate the yello "tejp" image
   $("#sideplate").css("background-image","url(https://assets.lemonpi.io/a/k/71e6f490-17f1-46fb-acdf-4135d1bc1c2f/Assets/Byggmax-2025/gul_tejp.png)");
   

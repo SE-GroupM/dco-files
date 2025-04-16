@@ -26,16 +26,6 @@ html, body {
   user-select: none;
 }
 
-.currentPrice {
-  position: fixed;
-  top: 175px;
-  width: 280px;
-  height: 50px;
-  left: 17px;
-  text-align: left;
-  font-family: 'Roslindale-DisplayCondensedRegular';
-  font-size: 18px;
-}
 #panel_container {
   position: absolute;
   width: 600px;
@@ -97,7 +87,7 @@ sup {
   position: absolute;
   left: 20px;
   top: 25px;
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
@@ -106,7 +96,7 @@ sup {
   position: absolute;
   left: 20px;
   top: 25px;
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Mikro-Regular-Compressed";
   color: #eb001e;
 }
@@ -120,6 +110,17 @@ sup {
   text-align: center;
   font-family: "Mikro-Regular-Compressed";
   color: grey;
+}
+.copyFrame1, .copyFrame2 {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 56px;
+  font-size: 50px;
+  line-height: 35px;
+  font-family: "Mikro-Black-Compressed";
+  color: #eb001e;
+  letter-spacing: -3px;
 }
 /* World click div */
 .worldClick {

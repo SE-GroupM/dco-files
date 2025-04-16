@@ -22,8 +22,13 @@ window.addEventListener('lemonpi.content/ready', event => {
    
   // World click event caller
   $('#worldClick').click(onClick);
-  $('#copyFrame1').html(content.productName_1.value);
-  $('#copyFrame2').html(content.productName_2.value);
+  $('#productName_1').html(content.productName_1.value);
+  $('#productName_2').html(content.productName_2.value);
+  
+  $('#copyFrame1').html(content.copyFrame1.value);
+  $('#copyFrame2').html(content.copyFrame2.value);
+  $('#asteriskText').html(content.asteriskText.value);
+
   
   // Defining mute-button's appearence 
   var mutebutton_on_off = local_content.mutebutton_on_off.value;
@@ -58,6 +63,8 @@ window.addEventListener('lemonpi.content/ready', event => {
   var mutebutton_on_off = local_content.mutebutton_on_off.value;  // Define if to use mute button
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
+
+  var copyFontSize = local_content.copy_font_size.value; 
  
   var bannerWidth = '980';
   var bannerHeight = '300';
@@ -98,7 +105,13 @@ window.addEventListener('lemonpi.content/ready', event => {
     } else if (mutebutton_on_off == 'off') {
       options.muteButton = false; // Disable mute if 'off'
     }
-  } // end of if-else
+  } 
+  
+  // end of if-else
+       //Append container width based on title image
+       $('#copyFrame1, #copyFrame2').css({
+        'font-size': copyFontSize +'px',
+     });
 
   //////////////////
   /// ANIMATIONS ///
