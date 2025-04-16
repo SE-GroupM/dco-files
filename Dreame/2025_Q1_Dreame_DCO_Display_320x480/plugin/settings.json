@@ -1,0 +1,92 @@
+{
+  "id": "c0f8de73-4b94-44b0-a5b9-0ab3369e4157",
+  "version": "1.5.3",
+  "name": "2025_Q1_Dreame_DCO_Display_320x480",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 320,
+        "height": 480,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 320
+      },
+      {
+        "width": 320,
+        "height": 400
+      },
+      {
+        "width": 320,
+        "height": 480
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    }
+  ],
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "Market": {
+        "type": "text",
+        "source": "create"
+      },
+      "Line_Item_ID": {
+        "type": "text",
+        "source": "create"
+      },
+      "KPI": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "Market": {
+              "value": "Market"
+            },
+            "Line_Item_ID": {
+              "value": "Line_Item_ID"
+            },
+            "KPI": {
+              "value": "KPI"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1414,
+    "name": "Dreame"
+  },
+  "folders": {
+    "selectedFolderId": 6624
+  },
+  "port": 56435
+}

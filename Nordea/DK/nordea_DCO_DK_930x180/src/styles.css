@@ -1,0 +1,200 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 930px;
+  height: 180px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: "Nordea Sans Large";
+}
+/* Copy text of frame 1 */
+.frame_1 {
+  position: absolute;
+  top: 30px;
+  left: 390px;
+  width: 430px;
+  height: 93px;
+  font-size: 35px;
+  line-height: 39px;
+
+  display: flex;           
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Copy text of frame 2 */
+.frame_2 {
+  position: absolute;
+  top: 30px;
+  left: 212px;
+  width: 530px;
+  height: 93px;
+  font-size: 35px;
+  line-height: 39px;
+
+  display: flex;           
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Copy text of frame 3 */
+.frame_3 {
+  position: absolute;
+  top: 30px;
+  left: 212px;
+  height: 93px;
+  width: 530px;
+  font-size: 35px;
+  line-height: 39px;
+
+  display: flex;           
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Disclaimer text of frame 4 */
+.disclaimer {
+  font-family: "Nordea Sans Small";
+  font-weight: 400;
+  position: absolute;
+  color: #FFF;
+  top: 51px;
+  left: 242px;
+  width: 470px;
+  height: 67px;
+  font-size: 18px;
+  line-height: 22px;
+
+  display: flex;           
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Tagline text in bottom */
+.tagline {
+  position: absolute;
+  color: #FFF;
+  top: 130px;
+  left: 466px;
+  width: 280px;
+  font-size: 20px;
+  line-height: 22px;
+}
+.cta_container {
+  position: absolute;
+  top: 90px;
+  left: 712px;
+  width: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* CTA position and styling */
+.cta {
+  font-family: "Nordea Sans Small";
+  font-weight: 700;
+  position: absolute;
+  padding:  8px 12px;
+  font-size: 17px;
+  line-height: 17px;
+  border-radius: 20px;
+}
+/* Position of logo */
+.logo {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 205px;
+  height: 90px;
+  left: 21px;
+  top:45px;
+}
+/* Gradient on first frame */
+.gradient {
+  position: absolute;
+  width: 930px;
+  height: 180px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 2%, rgba(102, 102, 102, 0) 84.74%);
+}
+
+/* Video layer */
+.video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* Position of background image */
+.bg_image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 930px;
+  height: 180px;
+  left: 0px;
+  top: 0px;
+}
+
+/* Position of pulse */
+.pulse {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 930px;
+  height: 180px;
+  left: 0px;
+  top: 0px;
+}
+
+/* Remove padding and margin from p elements */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Position of pulse image */
+.pulse_right {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 231px;
+  height: 227px;
+  left: 793px;
+  top: -47px;
+}
+
+/* Prevents wrapping */
+.no-wrap {
+  white-space: nowrap; 
+}

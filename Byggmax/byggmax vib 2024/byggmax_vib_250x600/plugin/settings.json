@@ -1,6 +1,6 @@
 {
   "id": "ad3c2b14-eef3-4bfa-b3d7-031a4a831513",
-  "version": "1.5.0",
+  "version": "1.5.2",
   "name": "byggmax_vib_DEMO_250x600",
   "description": "",
   "size": {
@@ -106,7 +106,7 @@
     "name": "Byggmax"
   },
   "folders": {
-    "selectedFolderId": 6287
+    "selectedFolderId": 5902
   },
-  "port": 54628
+  "port": 50288
 }

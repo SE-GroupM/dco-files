@@ -1,0 +1,177 @@
+{
+  "id": "c0f8de73-4b94-44b0-a5b9-0ab3369e4157",
+  "version": "1.5.3",
+  "name": "2025_Dreame_DCO_Rule-Based_Display_980x240",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 320,
+        "height": 320
+      },
+      {
+        "width": 320,
+        "height": 400
+      },
+      {
+        "width": 320,
+        "height": 480
+      },
+      {
+        "width": 640,
+        "height": 320
+      },
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    }
+  ],
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "Headline_Text": {
+        "type": "text",
+        "source": "create"
+      },
+      "Sub_Text": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text": {
+        "type": "text",
+        "source": "create"
+      },
+      "Hero_Image": {
+        "type": "image",
+        "source": "create"
+      },
+      "Logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "URL_Exit": {
+        "type": "click",
+        "source": "create"
+      },
+      "Copy_Margin_Top": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Active_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Active_Background_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Active_Border": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Hover_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Hover_Background_Color": {
+        "type": "text",
+        "source": "create"
+      },
+      "CTA_Text_Hover_Border": {
+        "type": "text",
+        "source": "create"
+      },
+      "Extra_Font_URL": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "Headline_Text": {
+              "value": "Headline_Text"
+            },
+            "Sub_Text": {
+              "value": "Sub_Text"
+            },
+            "CTA_Text": {
+              "value": "CTA_Text"
+            },
+            "Hero_Image": {
+              "value": ""
+            },
+            "Logo": {
+              "value": ""
+            },
+            "URL_Exit": {
+              "value": ""
+            },
+            "Copy_Margin_Top": {
+              "value": "Copy_Margin_Top"
+            },
+            "CTA_Text_Active_Color": {
+              "value": "CTA_Text_Active_Color"
+            },
+            "CTA_Text_Active_Background_Color": {
+              "value": "CTA_Text_Active_Background_Color"
+            },
+            "CTA_Text_Active_Border": {
+              "value": "CTA_Text_Active_Border"
+            },
+            "CTA_Text_Hover_Color": {
+              "value": "CTA_Text_Hover_Color"
+            },
+            "CTA_Text_Hover_Background_Color": {
+              "value": "CTA_Text_Hover_Background_Color"
+            },
+            "CTA_Text_Hover_Border": {
+              "value": "CTA_Text_Hover_Border"
+            },
+            "Extra_Font_URL": {
+              "value": "Extra_Font_URL"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": []
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 1414,
+    "name": "Dreame"
+  },
+  "folders": {
+    "selectedFolderId": 6624
+  },
+  "port": 62268
+}
