@@ -99,7 +99,7 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   var ccVideo = local_content.video_placeholder.value; // get local video src
  
-  var bannerWidth = '400';
+  var bannerWidth = '580';
   var bannerHeight = '';
 
   if (ccVideo != '') {

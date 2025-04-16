@@ -255,7 +255,7 @@ if (local_content.currentPrice.value.includes('<sup>')){
         );
       }
     
-      console.log(`Final font size for '${element.id}': ${fontSize}px`);
+      //console.log(`Final font size for '${element.id}': ${fontSize}px`);
     }
     
     // Function to resize all elements remains unchanged
