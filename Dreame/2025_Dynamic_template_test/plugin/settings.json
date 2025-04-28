@@ -1,7 +1,7 @@
 {
   "id": "c0f8de73-4b94-44b0-a5b9-0ab3369e4157",
   "version": "1.5.3",
-  "name": "2025_Dreame_DCO_Rule-Based_Display_320x320",
+  "name": "dco_dreame_boilerplate_320x320",
   "description": "",
   "size": {
     "sizes": [
@@ -157,5 +157,5 @@
   "folders": {
     "selectedFolderId": 6624
   },
-  "port": 50657
+  "port": 53971
 }

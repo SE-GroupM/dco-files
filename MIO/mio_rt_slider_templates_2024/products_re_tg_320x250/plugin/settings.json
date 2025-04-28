@@ -1,6 +1,6 @@
 {
   "id": "f5cd113a-ae73-4228-9851-fab053024a92",
-  "version": "1.3.0",
+  "version": "1.5.5",
   "name": "products_re_tg_320x250",
   "description": "",
   "size": {
@@ -18,7 +18,19 @@
       }
     ]
   },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
   "placeholders": {
+    "fileName": "migrated from version 1.3.0 of the extension",
+    "format": "CSV",
     "schema": {
       "campaignImg": {
         "type": "image",
@@ -109,68 +121,71 @@
       "defaultRowIndex": 0,
       "list": [
         {
-          "campaignImg": {
-            "value": ""
-          },
-          "headline": {
-            "value": "headline"
-          },
-          "subline": {
-            "value": "subline"
-          },
-          "worldClick": {
-            "value": ""
-          },
-          "bgColor": {
-            "value": "bgColor"
-          },
-          "logoImg": {
-            "value": ""
-          },
-          "mainCopyStyle": {
-            "value": "mainCopyStyle"
-          },
-          "ctaText": {
-            "value": "ctaText"
-          },
-          "ctaButtonBg": {
-            "value": "ctaButtonBg"
-          },
-          "ctaCopyColor": {
-            "value": "ctaCopyColor"
-          },
-          "headline_color": {
-            "value": "headline_color"
-          },
-          "subline_color": {
-            "value": "subline_color"
-          },
-          "headline_fontSize": {
-            "value": "headline_fontSize"
-          },
-          "subline_fontSize": {
-            "value": "subline_fontSize"
-          },
-          "text_shadow": {
-            "value": "text_shadow"
-          },
-          "ctaCopy": {
-            "value": "ctaCopy"
-          },
-          "bgLeft": {
-            "value": ""
-          },
-          "next": {
-            "value": ""
-          },
-          "prev": {
-            "value": ""
-          },
-          "headline_top": {
-            "value": "headline_top"
-          },
-          "subline_top": {
-            "value": "subline_top"
+          "isIncluded": true,
+          "data": {
+            "campaignImg": {
+              "value": ""
+            },
+            "headline": {
+              "value": "headline"
+            },
+            "subline": {
+              "value": "subline"
+            },
+            "worldClick": {
+              "value": ""
+            },
+            "bgColor": {
+              "value": "bgColor"
+            },
+            "logoImg": {
+              "value": ""
+            },
+            "mainCopyStyle": {
+              "value": "mainCopyStyle"
+            },
+            "ctaText": {
+              "value": "ctaText"
+            },
+            "ctaButtonBg": {
+              "value": "ctaButtonBg"
+            },
+            "ctaCopyColor": {
+              "value": "ctaCopyColor"
+            },
+            "headline_color": {
+              "value": "headline_color"
+            },
+            "subline_color": {
+              "value": "subline_color"
+            },
+            "headline_fontSize": {
+              "value": "headline_fontSize"
+            },
+            "subline_fontSize": {
+              "value": "subline_fontSize"
+            },
+            "text_shadow": {
+              "value": "text_shadow"
+            },
+            "ctaCopy": {
+              "value": "ctaCopy"
+            },
+            "bgLeft": {
+              "value": ""
+            },
+            "next": {
+              "value": ""
+            },
+            "prev": {
+              "value": ""
+            },
+            "headline_top": {
+              "value": "headline_top"
+            },
+            "subline_top": {
+              "value": "subline_top"
+            }
           }
         }
       ]
@@ -201,8 +216,5 @@
     "id": 198,
     "name": "Mio"
   },
-  "folders": {
-    "selectedFolderId": 4390
-  },
-  "port": 55013
+  "port": 50136
 }

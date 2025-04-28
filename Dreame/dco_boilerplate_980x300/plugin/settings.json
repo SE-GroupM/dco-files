@@ -1,20 +1,20 @@
 {
-  "id": "c0f8de73-4b94-44b0-a5b9-0ab3369e4157",
-  "version": "1.5.3",
-  "name": "2025_Dreame_DCO_Rule-Based_Display_320x320",
+  "id": "211391b0-e2e8-425f-9f32-f628e3b0b96f",
+  "version": "1.5.5",
+  "name": "dco_boilerplate_980x300",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 320,
-        "height": 320,
+        "width": 980,
+        "height": 300,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 320,
-        "height": 320
+        "width": 980,
+        "height": 300
       }
     ]
   },
@@ -25,7 +25,7 @@
     },
     {
       "enabled": true,
-      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
     }
   ],
   "placeholders": {
@@ -154,8 +154,5 @@
     "id": 1414,
     "name": "Dreame"
   },
-  "folders": {
-    "selectedFolderId": 6624
-  },
-  "port": 50657
+  "port": 54475
 }
