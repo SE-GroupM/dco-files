@@ -112,7 +112,7 @@ function onUserLeaveCta() {
 }
 
 function firstFrame() {
- const tl = new TimelineMax({ repeat: -1 });
+ const tl = new TimelineMax({ repeat: 5 });
  const frame1Image = document.getElementById("bg_image_frame_1");
  const frame2Image = document.getElementById("bg_image_frame_2");
 
@@ -124,6 +124,7 @@ function firstFrame() {
  
  // Initial states for text
  TweenMax.set(['#subCopy1', '#subCopy2'], { opacity: 1, display: "block", zIndex: 10 });
+ TweenMax.set('#subCopy2', { opacity: 0});
 
  if (use_one_headline_bool) {
      const fadeDuration = 1.2;
