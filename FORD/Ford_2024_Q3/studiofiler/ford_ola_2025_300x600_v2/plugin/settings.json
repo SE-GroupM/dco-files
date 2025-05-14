@@ -1,20 +1,20 @@
 {
-  "id": "a56350c4-5fc8-4f83-a35b-5ae0822402d0",
+  "id": "8f1e510d-587e-4802-9d95-454fc98efd34",
   "version": "1.6.1",
-  "name": "FORD_DISPLAY_250x600",
+  "name": "FORD_DISPLAY_300x600_STATIC",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 250,
+        "width": 300,
         "height": 600,
-        "isCustom": true
+        "isCustom": false
       }
     ],
     "customSizes": [
       {
-        "width": 250,
-        "height": 600
+        "width": 320,
+        "height": 400
       }
     ]
   },
@@ -29,7 +29,7 @@
     }
   ],
   "placeholders": {
-    "fileName": "migrated from version 1.3.1 of the extension",
+    "fileName": "",
     "format": "CSV",
     "schema": {
       "frame_1_copy": {
@@ -60,6 +60,10 @@
         "type": "image",
         "source": "create"
       },
+      "logo_squared": {
+        "type": "image",
+        "source": "create"
+      },
       "af_image": {
         "type": "image",
         "source": "create"
@@ -69,6 +73,10 @@
         "source": "create"
       },
       "use_one_headline": {
+        "type": "text",
+        "source": "create"
+      },
+      "use_static_bg": {
         "type": "text",
         "source": "create"
       },
@@ -92,11 +100,51 @@
         "type": "text",
         "source": "create"
       },
+      "font_color": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_right_or_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide": {
+        "type": "image",
+        "source": "create"
+      },
       "subtitle_top": {
         "type": "text",
         "source": "create"
       },
-      "font_color": {
+      "priceCopy": {
+        "type": "text",
+        "source": "create"
+      },
+      "bg_image_frame_1": {
+        "type": "image",
+        "source": "create"
+      },
+      "bg_image_frame_2": {
+        "type": "image",
+        "source": "create"
+      },
+      "extra_logo_image": {
+        "type": "image",
+        "source": "create"
+      },
+      "extra_logo_image_width": {
+        "type": "text",
+        "source": "create"
+      },
+      "extra_logo_image_height": {
+        "type": "text",
+        "source": "create"
+      },
+      "extra_logo_image_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "extra_logo_image_top": {
         "type": "text",
         "source": "create"
       }
@@ -128,6 +176,9 @@
             "bg_image": {
               "value": ""
             },
+            "logo_squared": {
+              "value": ""
+            },
             "af_image": {
               "value": ""
             },
@@ -136,6 +187,9 @@
             },
             "use_one_headline": {
               "value": "use_one_headline"
+            },
+            "use_static_bg": {
+              "value": "use_static_bg"
             },
             "subCopy_frame_1": {
               "value": "subCopy_frame_1"
@@ -152,11 +206,41 @@
             "subTitle_topValue": {
               "value": "subTitle_topValue"
             },
+            "font_color": {
+              "value": "font_color"
+            },
+            "cta_right_or_left": {
+              "value": "cta_right_or_left"
+            },
+            "logo_wide": {
+              "value": ""
+            },
             "subtitle_top": {
               "value": "subtitle_top"
             },
-            "font_color": {
-              "value": "font_color"
+            "priceCopy": {
+              "value": "priceCopy"
+            },
+            "bg_image_frame_1": {
+              "value": ""
+            },
+            "bg_image_frame_2": {
+              "value": ""
+            },
+            "extra_logo_image": {
+              "value": ""
+            },
+            "extra_logo_image_width": {
+              "value": "extra_logo_image_width"
+            },
+            "extra_logo_image_height": {
+              "value": "extra_logo_image_height"
+            },
+            "extra_logo_image_left": {
+              "value": "extra_logo_image_left"
+            },
+            "extra_logo_image_top": {
+              "value": "extra_logo_image_top"
             }
           }
         }
@@ -182,5 +266,8 @@
     "id": 639,
     "name": "Ford"
   },
-  "port": 50039
+  "folders": {
+    "selectedFolderId": 8213
+  },
+  "port": 52669
 }
