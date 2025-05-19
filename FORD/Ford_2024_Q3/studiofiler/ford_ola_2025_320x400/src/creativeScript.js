@@ -36,6 +36,9 @@ onLemonpiReady(function () {
     var logoWideLeft = content.logo_wide_left.value;
     var logoWideTop = content.logo_wide_top.value;
 
+    var legalLeft = content.legal_left.value;
+    var legalTop = content.legal_top.value;
+
 
     var ctaFontSize = content.cta_text_fontSize.value;
   
@@ -116,6 +119,13 @@ onLemonpiReady(function () {
       'height': logoWideHeight,
       'left': logoWideLeft,
       'top': logoWideTop
+  });
+
+  // Legal 
+  var legalBtn = $('#legal_btn');
+  legalBtn.css({
+      'left': legalLeft,
+      'top': legalTop
   });
 
   if (ctaFontSize !== "") {

@@ -151,6 +151,30 @@
       "cta_text_fontSize": {
         "type": "text",
         "source": "create"
+      },
+      "logo_wide_width": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide_height": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "legal_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "legal_top": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -248,6 +272,24 @@
             },
             "cta_text_fontSize": {
               "value": "cta_text_fontSize"
+            },
+            "logo_wide_width": {
+              "value": "logo_wide_width"
+            },
+            "logo_wide_height": {
+              "value": "logo_wide_height"
+            },
+            "logo_wide_left": {
+              "value": "logo_wide_left"
+            },
+            "logo_wide_top": {
+              "value": "logo_wide_top"
+            },
+            "legal_left": {
+              "value": "legal_left"
+            },
+            "legal_top": {
+              "value": "legal_top"
             }
           }
         }
@@ -276,5 +318,5 @@
   "folders": {
     "selectedFolderId": 8213
   },
-  "port": 63518
+  "port": 55536
 }

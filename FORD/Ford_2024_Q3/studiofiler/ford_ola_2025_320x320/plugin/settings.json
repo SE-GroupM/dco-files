@@ -162,6 +162,14 @@
       "logo_wide_top": {
         "type": "text",
         "source": "create"
+      },
+      "legal_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "legal_top": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -271,6 +279,12 @@
             },
             "logo_wide_top": {
               "value": "logo_wide_top"
+            },
+            "legal_left": {
+              "value": "legal_left"
+            },
+            "legal_top": {
+              "value": "legal_top"
             }
           }
         }
@@ -299,5 +313,5 @@
   "folders": {
     "selectedFolderId": 8213
   },
-  "port": 62573
+  "port": 55439
 }

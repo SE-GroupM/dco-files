@@ -19,6 +19,14 @@ window.addEventListener('lemonpi.content/ready', event => {
   var extraLogoLeft = content.extra_logo_image_left.value;
   var extraLogoTop = content.extra_logo_image_top.value;
 
+  var logoWideWidth = content.logo_wide_width.value;
+    var logoWideHeight = content.logo_wide_height.value;
+    var logoWideLeft = content.logo_wide_left.value;
+    var logoWideTop = content.logo_wide_top.value;
+
+    var legalLeft = content.legal_left.value;
+    var legalTop = content.legal_top.value;
+
   var ctaFontSize = content.cta_text_fontSize.value;
 
   // Helper function to set font-size and line-height with an additional 2px for line-height
@@ -90,6 +98,24 @@ extraLogoImage.css({
     'height': extraLogoHeight,
     'left': extraLogoLeft,
     'top': extraLogoTop
+});
+
+// SubCopy static
+var logoWide = $('#logo_wide');
+logoWide.css({
+   'width': logoWideWidth,
+    'height': logoWideHeight,
+    'left': logoWideLeft,
+    'top': logoWideTop
+});
+
+
+
+// Legal 
+var legalBtn = $('#legal_btn');
+legalBtn.css({
+    'left': legalLeft,
+    'top': legalTop
 });
 
 

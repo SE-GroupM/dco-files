@@ -171,6 +171,8 @@ html, body {
   font-size: 12px;
   left: 24px;
   top: 575px;
+
+  z-index: 70;
 }
 #legal_txt {
   color: rgb(255, 255, 255);
@@ -194,6 +196,8 @@ html, body {
   position: absolute;
   top: 0px;
   left: 0px;
+
+  z-index: 10;
 }
 
 #worldClick {
@@ -203,4 +207,6 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
+
+  z-index: 50;
 }
