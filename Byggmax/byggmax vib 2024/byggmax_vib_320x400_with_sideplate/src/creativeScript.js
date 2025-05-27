@@ -94,7 +94,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   }
  
  
-  var bannerWidth = '300';
+  var bannerWidth = '320';
   var bannerHeight = '';
 
   if (ccVideo != '') {

@@ -1,6 +1,6 @@
 {
   "id": "68acdb60-612d-4a3f-9ec1-d2b8d86c33d6",
-  "version": "1.5.0",
+  "version": "1.6.1",
   "name": "byggmax_vib_sideplate_980x600",
   "description": "",
   "size": {
@@ -131,8 +131,5 @@
     "id": 398,
     "name": "Byggmax"
   },
-  "folders": {
-    "selectedFolderId": 6638
-  },
-  "port": 56509
+  "port": 64901
 }
