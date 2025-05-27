@@ -16,14 +16,14 @@ function onLemonpiReady(cb) {
 }
 
 // Callback to retrieve the adset data
-window.addEventListener('lemonpi.content/ready', event => {
-    
+onLemonpiReady(function () {
+  lemonpi.subscribe(function callback(content) {
     ///////////////////////////////////////////
     /////    VARIABLES & DECLARATIONS     /////
     ///////////////////////////////////////////
 
     //Local content variable
-    const local_content = event.detail.content;
+    const local_content = content;
 
     // collection holding values from scraper
     var product_collection = local_content.ad_collection.value[0];
@@ -127,8 +127,6 @@ window.addEventListener('lemonpi.content/ready', event => {
           .fromTo('#cta', 0.5, {x: 20, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 1) //Product image 1 fade in
 
 
-
-
     ///////////////////////////////////////////
     /////           FUNCTIONS             /////
     ///////////////////////////////////////////
@@ -184,6 +182,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     }));
   }
 
-    // end of code
+  });
 });
   
