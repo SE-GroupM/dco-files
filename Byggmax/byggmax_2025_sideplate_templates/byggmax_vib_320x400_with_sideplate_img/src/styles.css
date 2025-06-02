@@ -125,5 +125,6 @@ sup {
   top: 340px;
   font-size: 15px;
   font-family: "Mikro-Bold-Compressed";
+  line-height: 1;
   color: #000;
 }
