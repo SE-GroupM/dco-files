@@ -35,8 +35,8 @@ html, body {
   top: -20px;
   transform: rotate(180deg);
   position: absolute;
-  width: 320px; /* Set a width */
-  height: 440px; /* Set a height */
+  width: 330px; /* Set a width */
+  height: 540px; /* Set a height */
   background-size: cover; /* Ensure it covers the div */
   background-repeat: no-repeat;
 }
@@ -61,6 +61,7 @@ html, body {
 /* To adjust the player control bar */
 .seenthis-player .seenthis-control-bar{
   bottom: 170px !important;
+  left: 350px !important;
 }
 .logoPlaceholder {
   position: absolute;
