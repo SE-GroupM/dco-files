@@ -152,6 +152,7 @@ html, body {
 }
 
 .subText {
+  width: 650px;
   left: 0px;
   letter-spacing: -0.001em;
   text-align: left;
@@ -165,7 +166,7 @@ html, body {
 }
 #locationGroup{
   position: absolute;
-  top: 440px;
+  top: 500px;
 }
 
 .locationText{

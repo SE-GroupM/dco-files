@@ -132,7 +132,7 @@ onLemonpiReady(function () {
       if (jobDesTrunc) {
         truncateProductText('#subText', jobDesTrunc);
       } else {
-        truncateProductText('#subText', 130);
+        truncateProductText('#subText', 150);
       }
       $("#locationText").html(jobLocation);
     

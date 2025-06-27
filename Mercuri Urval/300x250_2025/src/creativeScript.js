@@ -124,12 +124,20 @@ onLemonpiReady(function () {
      $("#ctaText").html(ctaText);
      $("#companyName").html(companyName);
      $("#mainText").html(jobTitle);
+
      //Adjusts job title if needed from adset
      if (jobTitleTrunc) {
        truncateProductText('#mainText', jobTitleTrunc);
      } else {
        truncateProductText('#mainText', 50);
      }
+
+    if (jobDescription != ''){
+      // nothing
+    }else{
+      truncateProductText('#mainText', 60);
+    }
+
      $("#subText").html(jobDescription);
       //Adjusts job description if needed from adset
      if (jobDesTrunc) {
@@ -138,6 +146,7 @@ onLemonpiReady(function () {
        truncateProductText('#subText', 150);
      }
      $("#locationText").html(jobLocation);
+     truncateProductText('#locationText', 30);
     
     ////////////////////////////////////////////
     /////           ANIMATIONS             /////
@@ -145,11 +154,26 @@ onLemonpiReady(function () {
 
     var mainTl = new TimelineMax({ });
     TweenMax.set('#copy', {opacity: 0}) // Initially hide all elements that going to animate in
-    
-    mainTl.fromTo('#copy', 0.5, {x: -20, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 1) //Product image 1 fade in
-          .fromTo('#cta', 0.5, {x: 20, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 1) //Product image 1 fade in
 
+    mainTl.fromTo('#copy', 0.5, {x: -20, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 1)
+        .fromTo('#cta', 0.5, {x: 20, opacity:0, ease: Linear.ease},{x: 0, opacity:1, ease: Linear.ease}, 1);
 
+    // Pulse animation function
+    function pulseCTA() {
+    TweenMax.fromTo('#cta', 0.2, 
+      { scale: 1 }, 
+      { scale: 1.05, yoyo: true, repeat: 1, ease: Power1.easeInOut }
+    );
+    }
+
+    // Loop the pulse after main animation is done
+    mainTl.eventCallback("onComplete", function() {
+    function pulseLoop() {
+      pulseCTA();
+      TweenMax.delayedCall(3, pulseLoop);
+    }
+    TweenMax.delayedCall(0.5, pulseLoop); // First pulse after 0.5s
+    });
 
 
     ///////////////////////////////////////////

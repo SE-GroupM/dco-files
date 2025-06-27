@@ -129,6 +129,16 @@ onLemonpiReady(function () {
       truncateProductText('#mainText', 80);
     }
     $("#subText").html(jobDescription);
+
+    if (jobDescription != ''){
+      $(".locationDiv").css({
+        'opacity': '0',
+      });
+    }else{
+      $(".locationDiv").css({
+        'opacity': '1',
+      });
+    }
     //Adjusts job description if needed from adset
     if (jobDesTrunc) {
       truncateProductText('#subText', jobDesTrunc);

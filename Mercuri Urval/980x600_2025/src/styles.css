@@ -1,0 +1,213 @@
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 980px;
+  height: 600px;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid rgb(0, 107, 181);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Blue_Graphic_triangle_bg{
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  background-color: #006bb5;
+  position: absolute;
+  width: 310px;
+  height: 450px;
+  left: 10px;
+  top: -50px;
+  background-repeat: no-repeat;
+  background-size: 300px, 400px;
+}
+#right_panel{
+  position: absolute;
+  width: 1105px;
+  height: 303px;
+  left: 663px;
+  top: 200px;
+}
+
+#left_panel{
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  position: absolute;
+  width: 130px;
+  height: 270px;
+  left: -9px;
+  background-color: #006bb5;
+  background-repeat: no-repeat;
+}
+#Blue_Graphic{
+  position: absolute;
+  width: 279px;
+  height: 292px;
+  left: 101px;
+  top: 44px;
+  background: url(4.png);
+  background-repeat: no-repeat;
+  background-size: 259px, 282px
+}
+
+#right_panel_bg{
+  position: absolute;
+  width: 105px;
+  height: 400px;
+  left: 304px;
+  top: 0px;
+  background-color: #006bb5;
+  background-repeat: no-repeat;
+  background-size: 179px, 303px;
+}
+.mercurilogo{
+  position: absolute;
+  width: 203px;
+  height: 40px;
+  left: 85px;
+  top: 336px;
+  background-repeat: no-repeat;
+}
+
+.cta{
+  -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  left: 530px;
+  top: 490px;
+  background-color: #ff6052;
+  background-repeat: no-repeat;
+  background-size: 171px, 40px;
+}
+.ctaText{
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    top: 11px;
+    letter-spacing: -0.001em;
+    text-align: center;
+    font-size: 19px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+    white-space: pre-wrap;
+    font-family: 'HelveticaNeueLTStd-Heavy';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.CopyDiv {
+  position: absolute;
+  top:  145px;
+  left: 150px;
+  width: 670px;
+  height: 180px;
+}
+
+.companyName {
+  letter-spacing: -0.001em;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 24px;
+  line-height: 26px;
+  color: rgba(0, 64, 125, 1);
+  white-space: pre-wrap;
+  font-family: 'HelveticaNeueLTStd-Heavy';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mainText {
+  letter-spacing: -0.001em;
+  text-align: left;
+  font-size: 55px;
+  line-height: 57px;
+  color: rgba(0, 64, 125, 1);
+  white-space: pre-wrap;
+  font-family: 'HelveticaNeueLTStd-Heavy';
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.subText {
+  width: 650px;
+  left: 0px;
+  letter-spacing: -0.001em;
+  text-align: left;
+  font-size: 34px;
+  line-height: 36px;
+  color: rgb(0 64 125);
+  white-space: pre-wrap;
+  font-family: 'Arial';
+  font-weight: normal;
+  font-style: normal;
+}
+#locationGroup{
+  position: absolute;
+  left: 20px;
+  top: 500px;
+}
+
+.locationText{
+  position: absolute;
+  width: 308px;
+  height: 42px;
+  left: 162px;
+  top: 3px;
+  letter-spacing: -0.001em;
+  text-align: left;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(0, 64, 125, 1);
+  white-space: pre-wrap;
+  font-family: 'HelveticaNeueLTStd-Heavy';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.geowhiteblue{
+  position: absolute;
+  width: 17px;
+  height: 19px;
+  left: 135px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.companyLogo{
+  position: absolute;
+    width: 200px;
+    height: 47px;
+    right: 35px;
+    left: auto;
+    top: 20px;
+}
+#bg_image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}

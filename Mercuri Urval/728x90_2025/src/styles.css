@@ -192,6 +192,9 @@ html, body {
   font-weight: normal;
   font-style: normal;
 }
+.locationDiv{
+  opacity: 1;
+}
 
 .companyLogo{
   position: absolute;
