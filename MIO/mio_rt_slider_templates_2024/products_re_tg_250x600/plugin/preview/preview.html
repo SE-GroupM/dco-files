@@ -50,7 +50,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 15px;
         height: 70%;
       }
 
@@ -85,25 +85,50 @@
     ></iframe>
     <div class="controls">
       <div class="preview-controls">
-        <button
-          id="vsc4create-preview-back-button"
-          class="preview-controls-button"
-        >
-          <
-        </button>
-        <input
-          disabled
-          id="vsc4create-preview-variant-index-input"
-          type="text"
-          class="preview-controls-input"
-          value="-/-"
-        />
-        <button
-          id="vsc4create-preview-next-button"
-          class="preview-controls-button"
-        >
+        <div>
+          <span>Variant: </span>
+          <button
+            id="vsc4create-preview-back-button"
+            class="preview-controls-button"
           >
-        </button>
+            <
+          </button>
+          <input
+            disabled
+            id="vsc4create-preview-variant-index-input"
+            type="text"
+            class="preview-controls-input"
+            value="-/-"
+          />
+          <button
+            id="vsc4create-preview-next-button"
+            class="preview-controls-button"
+          >
+            >
+          </button>
+        </div>
+        <div>
+          <span>Collection: </span>
+          <button
+            id="vsc4create-preview-variant-collection-back-button"
+            class="preview-controls-button"
+          >
+            <
+          </button>
+          <input
+            disabled
+            id="vsc4create-preview-variant-collection-index-input"
+            type="text"
+            class="preview-controls-input"
+            value="-/-"
+          />
+          <button
+            id="vsc4create-preview-variant-collection-next-button"
+            class="preview-controls-button"
+          >
+            >
+          </button>
+        </div>        
       </div>
       <button
         id="vsc4create-copy-preview-url-to-clipboard-button"
@@ -117,6 +142,8 @@
       import {
         previousPreviewVariantIndex,
         nextPreviewVariantIndex,
+        previousPreviewVariantCollectionDataIndex,
+        nextPreviewVariantCollectionDataIndex,
         getPreviewVariantInfo,
         copyPreviewUrlToClipboard,
       } from "./preview.js";
@@ -124,21 +151,34 @@
       const backButtonId = "vsc4create-preview-back-button";
       const nextButtonId = "vsc4create-preview-next-button";
       const variantIndexInputId = "vsc4create-preview-variant-index-input";
+      const collectionVariantBackButtonId = "vsc4create-preview-variant-collection-back-button";
+      const collectionVariantNextButtonId = "vsc4create-preview-variant-collection-next-button";
+      const collectionVariantIndexInputId = "vsc4create-preview-variant-collection-index-input";
       const copyPreviewUrlToClipboardButtonId =
         "vsc4create-copy-preview-url-to-clipboard-button";
       const iframe = document.getElementById("vsc4create-preview");
       const backButton = document.getElementById(backButtonId);
       const nextButton = document.getElementById(nextButtonId);
       const variantIndexInput = document.getElementById(variantIndexInputId);
+      const collectionVariantBackButton = document.getElementById(collectionVariantBackButtonId);
+      const collectionVariantNextButton = document.getElementById(collectionVariantNextButtonId);
+      const collectionVariantIndexInput = document.getElementById(collectionVariantIndexInputId);
+      
       const copyPreviewUrlToClipboardButton = document.getElementById(
         copyPreviewUrlToClipboardButtonId
       );
 
       let variantCount = 0;
       let currentVariantIndex = 0;
+      let collectionVariantCount = 0;
+      let currentCollectionVariantIndex = 0;
 
       function updateVariantInput() {
         variantIndexInput.value = currentVariantIndex + "/" + variantCount;
+      }
+
+      function updateCollectionVariantInput() {
+        collectionVariantIndexInput.value = currentCollectionVariantIndex + "/" + collectionVariantCount;
       }
 
       function reloadIframe() {
@@ -168,12 +208,33 @@
         setVariantIndexInput(await nextPreviewVariantIndex());
       });
 
-      getPreviewVariantInfo().then(({ index, count }) => {
-        variantCount = count;
+      function setCollectionVariantIndexInput(value) {
+        currentCollectionVariantIndex = value + 1;
 
+        collectionVariantBackButton.disabled = collectionVariantCount <= 1;
+        collectionVariantNextButton.disabled = collectionVariantCount <= 1;
+
+        updateCollectionVariantInput();
+
+        reloadIframe();
+      }
+
+      collectionVariantBackButton.addEventListener("click", async (event) => {
+        setCollectionVariantIndexInput(await previousPreviewVariantCollectionDataIndex());
+      });
+
+      collectionVariantNextButton.addEventListener("click", async (event) => {
+        setCollectionVariantIndexInput(await nextPreviewVariantCollectionDataIndex());
+      });
+
+      getPreviewVariantInfo().then(({ index, count, collection }) => {
+        variantCount = count;        
         setVariantIndexInput(index);
-
         updateVariantInput();
+
+        collectionVariantCount = collection.count;
+        setCollectionVariantIndexInput(collection.index);
+        updateCollectionVariantInput();
       });
 
       copyPreviewUrlToClipboardButton.addEventListener("click", async () => {
