@@ -128,15 +128,11 @@ onLemonpiReady(function () {
      //Adjusts job title if needed from adset
      if (jobTitleTrunc) {
        truncateProductText('#mainText', jobTitleTrunc);
-     } else {
+     } else if (jobDescription != ''){
        truncateProductText('#mainText', 50);
+     } else {
+       truncateProductText('#mainText', 60);
      }
-
-    if (jobDescription != ''){
-      // nothing
-    }else{
-      truncateProductText('#mainText', 60);
-    }
 
      $("#subText").html(jobDescription);
       //Adjusts job description if needed from adset
