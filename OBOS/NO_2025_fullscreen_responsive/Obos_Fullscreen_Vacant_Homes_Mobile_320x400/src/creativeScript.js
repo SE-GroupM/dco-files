@@ -47,7 +47,10 @@ window.addEventListener('lemonpi.content/ready', event => {
   });
 
   $('#project-headline').html(local_content.vacant_homes.value[0].project_headline.value);
- gsap.set('#project-headline', {fontSize: local_content.headline_font_size.value});
+  if(local_content.headline_font_size.value != ''){
+    gsap.set('#project-headline', {fontSize: local_content.headline_font_size.value});
+  }
+ 
   
   $('#project-image').css({
     'background-image': 'url('+local_content.vacant_homes.value[3].project_image.value+ ')'
