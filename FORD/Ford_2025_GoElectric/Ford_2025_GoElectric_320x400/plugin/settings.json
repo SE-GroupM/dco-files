@@ -1,13 +1,13 @@
 {
   "id": "1b16cf5d-debc-488e-8a83-82d8b379c495",
   "version": "1.6.1",
-  "name": "Ford_2025_GoElectric_250x600",
+  "name": "Ford_2025_GoElectric_320x400",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 250,
-        "height": 600,
+        "width": 320,
+        "height": 400,
         "isCustom": true
       }
     ],
@@ -15,6 +15,10 @@
       {
         "width": 250,
         "height": 600
+      },
+      {
+        "width": 320,
+        "height": 400
       }
     ]
   },
@@ -552,5 +556,5 @@
   "folders": {
     "selectedFolderId": 9535
   },
-  "port": 60060
+  "port": 60597
 }

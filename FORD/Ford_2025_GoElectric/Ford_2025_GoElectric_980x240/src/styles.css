@@ -23,8 +23,8 @@ html, body {
 
 #creative_container {
   position: absolute;
-  width: 250px;
-  height: 600px;
+  width: 980px;
+  height: 240px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -55,20 +55,20 @@ html, body {
 #frame1 {
   position: absolute;
   background-color: var(--black);
-  font-size: 38px;
+  font-size: 54px;
   color: var(--white);
 }
 
 #frame1_text {
   position: absolute;
-  left: 20px;
-  top: 34px;
+  left: 30px;
+  top: 30px;
 }
 
 #frame2 {
   position: absolute;
   background-color: var(--blue);
-  font-size: 34px;
+  font-size: 70px;
   color: var(--black);
   left: 100%;
 }
@@ -76,66 +76,63 @@ html, body {
 #frame2_text {
   position: absolute;
   text-align: center;
-  left: 3px;
-  top: 190px;
+  width: inherit;
+  left: 0px;
+  top: 45px;
 }
 
 #frame3 {
   position: absolute;
   background-color: var(--blue);
-  font-size: 34px;
+  font-size: 54px;
   color: var(--black);
-  top:-100%;
+  left:-100%;
 }
 
 #frame3_text {
   position: absolute;
-  text-align: center;
-  left: 15px;
-  top: 24px;
-  width: 222px;
-  height: 120px;
+  left: 30px;
+  top: 28px;
 }
 
 #frame4 {
   position: absolute;
-  background: linear-gradient(to bottom, var(--blue) 50%, var(--black) 50%);
+  background: linear-gradient(to right, var(--black) 50%, var(--blue) 50%);
   font-size: 10px;
   font-weight: 700; 
-  color: var(--blue);
-  left: 100%;
+  color: var(--black);
+  top: 100%;
 }
 
 #frame4_logo {
   position: absolute;
-  width: 183px;
-  height: 72px;
-  left: 34px;
-  top: 114px;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7461%) hue-rotate(347deg) brightness(105%) contrast(111%);
+  width: 304px;
+  height: 120px;
+  left: 93px;
+  top: 50px;
 }
 
 #frame4_cta {
   position: absolute;
-  left: 40px;
-  top: 335px;
+  left: 661px;
+  top: 50px;
 }
 
 #frame4_text {
   position: absolute;
-  width: 225px;
-  height: 200px;
-  left: 15px;
-  top: 390px;
+  width: 420px;
+  height: 150px;
+  left: 526px;
+  top: 102px;
   text-align: center;
 }
 
 #logo {
   position: absolute;
-  width: 105px;
-  height: 41px;
-  left: 72px;
-  top: 517px;
+  width: 74px;
+  height: 29px;
+  left: 876px;
+  top: 188px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
  
 }
@@ -148,8 +145,8 @@ html, body {
 
 #cta {
   position: absolute;
-  left: 40px;
-  top: 435px;
+  left: 30px;
+  top: 186px;
 
 }
 
@@ -163,7 +160,7 @@ html, body {
 
   text-align: center;
   font-weight: 700; 
-  font-size: 14px;
+  font-size: 12px;
   color: var(--black);
   background-color: var(--white);
 

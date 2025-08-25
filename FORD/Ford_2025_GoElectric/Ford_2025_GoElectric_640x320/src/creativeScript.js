@@ -68,7 +68,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     ...(local_content.logo2_top.value    && { top:    local_content.logo2_top.value }),
     ...(local_content.logo2_filter.value    && { filter:    local_content.logo2_filter.value }),
   });
-
   $("#frame1").css({
     ...(local_content.frame1_bgColor.value && { background: local_content.frame1_bgColor.value }),
     ...(local_content.frame1_bg.value      && { "background-image": `url(${local_content.frame1_bg.value})` }),
@@ -158,16 +157,16 @@ window.addEventListener('lemonpi.content/ready', event => {
     gsap.to("#frame2", {left:"0%", duration:1, ease:"expo.inOut"})
   ], '+=2');
   timeline.add([
-    gsap.to("#frame2", {top:"100%", duration:1, ease:"expo.inOut"}),
-    gsap.to("#frame3", {top:"0%", duration:1, ease:"expo.inOut"}),
+    gsap.to("#frame2", {left:"100%", duration:1, ease:"expo.inOut"}),
+    gsap.to("#frame3", {left:"0%", duration:1, ease:"expo.inOut"}),
     gsap.to("#frame1", {left:"100%", duration:0.5, ease:"expo.inOut"})
   ], '+=2');
   timeline.add([
     gsap.to("#cta, #logo", {opacity:0, duration:0.5, ease:"expo.inOut"})
   ], '+=2');
   timeline.add([
-    gsap.to("#frame3", {left:"-100%", duration:1, ease:"expo.inOut"}),
-    gsap.to("#frame4", {left:"0%", duration:1, ease:"expo.inOut"}),
+    gsap.to("#frame3", {top:"-100%", duration:1, ease:"expo.inOut"}),
+    gsap.to("#frame4", {top:"0%", duration:1, ease:"expo.inOut"}),
     gsap.to("#cta", {marginLeft:"100%", duration:1, ease:"expo.inOut"})
   ], '-=0.2');
   timeline.add([

@@ -23,7 +23,7 @@ html, body {
 
 #creative_container {
   position: absolute;
-  width: 250px;
+  width: 980px;
   height: 600px;
   cursor: default;
   -webkit-text-size-adjust: 100%;
@@ -55,20 +55,20 @@ html, body {
 #frame1 {
   position: absolute;
   background-color: var(--black);
-  font-size: 38px;
+  font-size: 96px;
   color: var(--white);
 }
 
 #frame1_text {
   position: absolute;
-  left: 20px;
-  top: 34px;
+  left: 50px;
+  top: 236px;
 }
 
 #frame2 {
   position: absolute;
   background-color: var(--blue);
-  font-size: 34px;
+  font-size: 119px;
   color: var(--black);
   left: 100%;
 }
@@ -76,66 +76,63 @@ html, body {
 #frame2_text {
   position: absolute;
   text-align: center;
-  left: 3px;
-  top: 190px;
+  width: inherit;
+  left: 0px;
+  top: 94px;
 }
 
 #frame3 {
   position: absolute;
   background-color: var(--blue);
-  font-size: 34px;
+  font-size: 80px;
   color: var(--black);
-  top:-100%;
+  left:-100%;
 }
 
 #frame3_text {
   position: absolute;
-  text-align: center;
-  left: 15px;
-  top: 24px;
-  width: 222px;
-  height: 120px;
+  left: 40px;
+  top: 145px;
 }
 
 #frame4 {
   position: absolute;
-  background: linear-gradient(to bottom, var(--blue) 50%, var(--black) 50%);
-  font-size: 10px;
+  background: linear-gradient(to bottom, var(--black) 50%, var(--black) 50%);
+  font-size: 18px;
   font-weight: 700; 
   color: var(--blue);
-  left: 100%;
+  top: 100%;
 }
 
 #frame4_logo {
   position: absolute;
-  width: 183px;
-  height: 72px;
-  left: 34px;
-  top: 114px;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7461%) hue-rotate(347deg) brightness(105%) contrast(111%);
+  width: 361px;
+  height: 143px;
+  left: 309px;
+  top: 80px;
 }
 
 #frame4_cta {
   position: absolute;
-  left: 40px;
-  top: 335px;
+  left: 365px;
+  top: 518px;
 }
 
 #frame4_text {
   position: absolute;
-  width: 225px;
+  width: 807px;
   height: 200px;
-  left: 15px;
-  top: 390px;
+  left: 84px;
+  top: 302px;
   text-align: center;
 }
 
 #logo {
   position: absolute;
-  width: 105px;
-  height: 41px;
-  left: 72px;
-  top: 517px;
+  width: 133px;
+  height: 52px;
+  left: 797px;
+  top: 513px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
  
 }
@@ -148,22 +145,22 @@ html, body {
 
 #cta {
   position: absolute;
-  left: 40px;
-  top: 435px;
+  left: 50px;
+  top: 518px;
 
 }
 
 .cta {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
-  border-radius: 16px;
+  border-radius: 26px;
 
   text-align: center;
   font-weight: 700; 
-  font-size: 14px;
+  font-size: 21px;
   color: var(--black);
   background-color: var(--white);
 
