@@ -1,13 +1,13 @@
 {
   "id": "68acdb60-612d-4a3f-9ec1-d2b8d86c33d6",
   "version": "1.6.1",
-  "name": "byggmax_vib_sideplate_980x300_imgtemplate",
+  "name": "byggmax_vib_sideplate_640x360",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 980,
-        "height": 300,
+        "width": 640,
+        "height": 360,
         "isCustom": true
       }
     ],
@@ -19,10 +19,6 @@
       {
         "width": 640,
         "height": 360
-      },
-      {
-        "width": 980,
-        "height": 300
       }
     ]
   },
@@ -128,7 +124,7 @@
     "name": "Byggmax"
   },
   "folders": {
-    "selectedFolderId": 8361
+    "selectedFolderId": 6638
   },
-  "port": 53016
+  "port": 52124
 }
