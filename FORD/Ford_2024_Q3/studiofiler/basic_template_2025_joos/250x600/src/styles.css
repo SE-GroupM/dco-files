@@ -1,0 +1,194 @@
+:root {
+  --black: #0f0f0f;
+  --white: #ffffff;
+  --blue: #066fef;
+}
+
+
+* { 
+  box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--black);
+
+  font-family: "StadiumSansW01";
+  font-weight: 300;
+}
+
+#creative_container {
+  position: absolute;
+  width: 250px;
+  height: 600px;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  background-color: var(--black);
+  overflow: hidden;
+  cursor: pointer;
+
+  opacity: 0;
+}
+
+#border {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #000;
+  border-color: transparent;
+  box-sizing: border-box; /* keeps border inside */
+}
+
+#frame1 {
+  position: absolute;
+  background-color: var(--black);
+  font-size: 38px;
+  color: var(--white);
+}
+
+#frame1_text {
+  position: absolute;
+  left: 20px;
+  top: 34px;
+}
+
+#frame2 {
+  position: absolute;
+  background-color: var(--blue);
+  font-size: 34px;
+  color: var(--black);
+  left: 100%;
+}
+
+#frame2_text {
+  position: absolute;
+  text-align: center;
+  left: 3px;
+  top: 190px;
+}
+
+#frame3 {
+  position: absolute;
+  background-color: var(--blue);
+  font-size: 34px;
+  color: var(--black);
+  top:-100%;
+}
+
+#frame3_text {
+  position: absolute;
+  text-align: center;
+  left: 15px;
+  top: 24px;
+  width: 222px;
+  height: 120px;
+}
+
+#frame4 {
+  position: absolute;
+  background: linear-gradient(to bottom, var(--blue) 50%, var(--black) 50%);
+  font-size: 10px;
+  font-weight: 700; 
+  color: var(--blue);
+  left: 100%;
+}
+
+#frame4_logo {
+  position: absolute;
+  width: 183px;
+  height: 72px;
+  left: 34px;
+  top: 114px;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7461%) hue-rotate(347deg) brightness(105%) contrast(111%);
+}
+
+#frame4_cta {
+  position: absolute;
+  left: 40px;
+  top: 335px;
+}
+
+#frame4_text {
+  position: absolute;
+  width: 225px;
+  height: 200px;
+  left: 15px;
+  top: 390px;
+  text-align: center;
+}
+
+#logo {
+  position: absolute;
+  width: 155px;
+  height: 41px;
+  left: 46px;
+  top: 517px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
+ 
+}
+
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cta {
+  position: absolute;
+  left: 40px;
+  top: 435px;
+
+}
+
+.cta {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  border-radius: 16px;
+
+  text-align: center;
+  font-weight: 700; 
+  font-size: 14px;
+  color: var(--black);
+  background-color: var(--white);
+
+  white-space: nowrap;
+  
+  line-height: 100%;
+}
+
+.frame {
+  width: inherit;
+  height: inherit;
+
+  line-height: 90%;
+}
+
+sup {
+    margin-left: -0.25em;
+    font-size: 50%;
+    vertical-align: top;
+    line-height: 1.1;
+}
+
+sub {
+    margin-left: -0.25em;
+    font-size: 50%;
+    vertical-align: bottom;
+    line-height: 1.1;
+}
