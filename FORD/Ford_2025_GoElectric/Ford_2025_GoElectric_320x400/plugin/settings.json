@@ -279,38 +279,6 @@
       "main_borderColor": {
         "type": "text",
         "source": "create"
-      },
-      "frame1_bgLeft": {
-        "type": "text",
-        "source": "create"
-      },
-      "frame1_bgTop": {
-        "type": "text",
-        "source": "create"
-      },
-      "frame2_bgLeft": {
-        "type": "text",
-        "source": "create"
-      },
-      "frame2_bgTop": {
-        "type": "text",
-        "source": "create"
-      },
-      "frame3_bgLeft": {
-        "type": "text",
-        "source": "create"
-      },
-      "frame3_bgTop": {
-        "type": "text",
-        "source": "create"
-      },
-      "frame4_bgLeft": {
-        "type": "text",
-        "source": "create"
-      },
-      "frame4_bgTop": {
-        "type": "text",
-        "source": "create"
       }
     },
     "data": {
@@ -498,30 +466,6 @@
             },
             "main_borderColor": {
               "value": "main_borderColor"
-            },
-            "frame1_bgLeft": {
-              "value": "frame1_bgLeft"
-            },
-            "frame1_bgTop": {
-              "value": "frame1_bgTop"
-            },
-            "frame2_bgLeft": {
-              "value": "frame2_bgLeft"
-            },
-            "frame2_bgTop": {
-              "value": "frame2_bgTop"
-            },
-            "frame3_bgLeft": {
-              "value": "frame3_bgLeft"
-            },
-            "frame3_bgTop": {
-              "value": "frame3_bgTop"
-            },
-            "frame4_bgLeft": {
-              "value": "frame4_bgLeft"
-            },
-            "frame4_bgTop": {
-              "value": "frame4_bgTop"
             }
           }
         }
@@ -556,5 +500,5 @@
   "folders": {
     "selectedFolderId": 9535
   },
-  "port": 60597
+  "port": 57832
 }
