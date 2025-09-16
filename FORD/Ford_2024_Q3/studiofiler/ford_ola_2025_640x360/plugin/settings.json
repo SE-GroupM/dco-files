@@ -1,20 +1,20 @@
 {
-  "id": "a56350c4-5fc8-4f83-a35b-5ae0822402d0",
-  "version": "1.6.1",
-  "name": "FORD_DISPLAY_250x600",
+  "id": "07aae336-2ccb-46d5-92a1-79eeff4d9840",
+  "version": "1.6.2",
+  "name": "FORD_DISPLAY_640x360",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 250,
-        "height": 600,
+        "width": 640,
+        "height": 360,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 250,
-        "height": 600
+        "width": 640,
+        "height": 360
       }
     ]
   },
@@ -99,6 +99,10 @@
       "font_color": {
         "type": "text",
         "source": "create"
+      },
+      "cta_right_or_left": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -157,6 +161,9 @@
             },
             "font_color": {
               "value": "font_color"
+            },
+            "cta_right_or_left": {
+              "value": "cta_right_or_left"
             }
           }
         }
@@ -182,5 +189,8 @@
     "id": 639,
     "name": "Ford"
   },
-  "port": 51715
+  "folders": {
+    "selectedFolderId": 8213
+  },
+  "port": 56268
 }

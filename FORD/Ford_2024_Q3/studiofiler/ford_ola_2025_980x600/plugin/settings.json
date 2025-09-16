@@ -1,19 +1,19 @@
 {
-  "id": "a56350c4-5fc8-4f83-a35b-5ae0822402d0",
-  "version": "1.6.1",
-  "name": "FORD_DISPLAY_250x600",
+  "id": "9caa4298-e8c0-4278-a2cd-b2bc365e50f3",
+  "version": "1.6.2",
+  "name": "FORD_DISPLAY_980x600",
   "description": "",
   "size": {
     "sizes": [
       {
-        "width": 250,
+        "width": 980,
         "height": 600,
         "isCustom": true
       }
     ],
     "customSizes": [
       {
-        "width": 250,
+        "width": 980,
         "height": 600
       }
     ]
@@ -60,6 +60,10 @@
         "type": "image",
         "source": "create"
       },
+      "logo_squared": {
+        "type": "image",
+        "source": "create"
+      },
       "af_image": {
         "type": "image",
         "source": "create"
@@ -99,6 +103,18 @@
       "font_color": {
         "type": "text",
         "source": "create"
+      },
+      "cta_right_or_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo_wide": {
+        "type": "image",
+        "source": "create"
+      },
+      "priceCopy": {
+        "type": "text",
+        "source": "create"
       }
     },
     "data": {
@@ -126,6 +142,9 @@
               "value": "cta_text"
             },
             "bg_image": {
+              "value": ""
+            },
+            "logo_squared": {
               "value": ""
             },
             "af_image": {
@@ -157,6 +176,15 @@
             },
             "font_color": {
               "value": "font_color"
+            },
+            "cta_right_or_left": {
+              "value": "cta_right_or_left"
+            },
+            "logo_wide": {
+              "value": ""
+            },
+            "priceCopy": {
+              "value": "priceCopy"
             }
           }
         }
@@ -182,5 +210,8 @@
     "id": 639,
     "name": "Ford"
   },
-  "port": 51715
+  "folders": {
+    "selectedFolderId": 8213
+  },
+  "port": 56601
 }
