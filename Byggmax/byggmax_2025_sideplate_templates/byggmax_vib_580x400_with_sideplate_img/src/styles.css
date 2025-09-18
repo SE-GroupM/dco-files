@@ -92,6 +92,7 @@ sup {
 }
 
 .productName_2, .productName_1 {
+  width: 270px;
   display: block;
   position: absolute;
   left: 20px;
@@ -119,7 +120,7 @@ sup {
 .largerCopy {
   top: 30px;
   left: 20px;
-  width: 250px;
+  width: 270px;
   font-size: 40px;
   line-height: 1;
 }
