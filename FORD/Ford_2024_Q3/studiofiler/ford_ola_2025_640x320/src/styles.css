@@ -73,7 +73,7 @@ html, body {
 }
 
 #cta_text {
-  position: absolute;
+  /*position: absolute;*/
   color: #fff;
   background-color: #056eef;
   font-family: "Ford-F1 Medium";
@@ -81,9 +81,9 @@ html, body {
   font-weight: 400;
   margin-block: 13.28px;
   font-size: 15px;
-  top: 255px;
+  /*top: 255px;*/
   border-radius: 15px;
-  left: 24px;
+  /*left: 24px;*/
   min-width: 122px;
   border-width: 0px;
   text-align: center;
@@ -170,15 +170,18 @@ html, body {
 #legal_btn {
   font-family: "Ford-F1 Medium";
   font-weight: "500 Medium";
-  position: absolute;
+  /*position: absolute;*/
   width: 75px;
   height: 24px;
   color: #fff;
   font-size: 12px;
-  top: 276px;
-  left: 160px;
+  /*top: 276px;*/
+  /*left: 160px;*/
   opacity: 75%;
   z-index: 70;
+
+  display: flex;              /* makes button content vertically centered */
+  align-items: center;
 }
 
 #legal_txt {
@@ -204,6 +207,16 @@ html, body {
   top: 0px;
   left: 0px;
   z-index: 10;
+}
+
+#footer {
+  position: absolute;
+  left: 24px;
+  top: 255px;
+  display: flex;
+  justify-content: flex-start; /* align to the left */
+  align-items: center;         /* vertically align if different heights */
+  gap: 15px;
 }
 
 #worldClick {

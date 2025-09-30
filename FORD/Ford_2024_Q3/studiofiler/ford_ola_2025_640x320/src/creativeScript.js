@@ -27,6 +27,10 @@ window.addEventListener('lemonpi.content/ready', event => {
     });
   }
 
+// Cta
+var cta_text = $('#cta_text');
+cta_text.append(content.cta_text.value);
+console.log(cta_text)
 
 // SubCopy static
 var subCopy = $('#subCopy_static');
@@ -90,10 +94,12 @@ $('#legal_btn')
 
 function onUserEnter() {
   TweenMax.fromTo('#legal_bg', 0.2, { autoAlpha: 0}, { autoAlpha: 1});
+  TweenMax.fromTo('#cta_text', 0.2, { autoAlpha: 1}, { autoAlpha: 0.25});
 }
 
 function onUserLeave() {
   TweenMax.fromTo('#legal_bg', 0.2, { autoAlpha: 1}, { autoAlpha: 0});
+  TweenMax.fromTo('#cta_text', 0.2, { autoAlpha: 0.25}, { autoAlpha: 1});
 }
 
    //Hover function on CTA to change colors
