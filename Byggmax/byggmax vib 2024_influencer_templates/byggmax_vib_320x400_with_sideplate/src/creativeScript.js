@@ -133,7 +133,7 @@ window.addEventListener('lemonpi.content/ready', event => {
     };
 
     // Determine the state of the mute button based on mutebutton_on_off variable
-    if (mutebutton_on_off == 'on') {
+    if (  == 'on') {
       options.muteButton = true; // Enable mute if 'on'
     } else if (mutebutton_on_off == 'off') {
       options.muteButton = false; // Disable mute if 'off'
