@@ -58,10 +58,6 @@
       "headline_fontSize": {
         "type": "text",
         "source": "create"
-      },
-      "bg_color_2": {
-        "type": "text",
-        "source": "create"
       }
     },
     "data": {
@@ -93,9 +89,6 @@
             },
             "headline_fontSize": {
               "value": "headline_fontSize"
-            },
-            "bg_color_2": {
-              "value": "bg_color_2"
             }
           }
         }
@@ -130,5 +123,5 @@
   "folders": {
     "selectedFolderId": 10361
   },
-  "port": 53087
+  "port": 64633
 }
