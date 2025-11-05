@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Creative Generator -->
+    <meta
+      name="generator"
+      content="Visual Studio Code for Create v1.6.2"
+    />
+
+    <!-- Creative Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Creative</title>
+  </head>
+  <body data-engagement-metrics="true">
+    <!-- Creative Content -->
+    <div id="content">
+      <div id="creative_container">
+       <div id="banner-container" class="banner-container">
+        <!-- Background Video Placeholder -->
+        <div class="background-video-placeholder">
+            <div id="player" class="player"></div> <!-- video placeholder -->
+        </div>
+         <div id ="bring-logo" class="bring-logo"></div>
+        <!-- Frame 1: Initial Headline & Logo -->
+        <div id="frame1" class="frame frame-1">
+            <div class="main-text-area">
+                <div id="main-headline" class="main-headline"></div>
+            </div>
+            <div class="footer-text-area">
+                <div class="footer-text"></div>
+            </div>
+        </div>
+
+         <!-- Frame 2: Second Text Block -->
+        <div id="frame2" class="frame frame-2">
+          <div id="frame2-headline" class="frame2-headline"></div>
+        </div>
+
+        <!-- Frame 3: End Frame with QR Code -->
+        <div id="frame3" class="frame frame-3">
+            <div id= "frame3-top-logo" class="frame3-top-logo"></div>
+            <div class="frame3-headline-area">
+                <div class="frame3-headline_logo"></div>
+            </div>
+            <div class="qr-code-area">
+                <div id= "qr-code-img" class="qr-code-img"></div>
+                <!-- NEW: Element for the animated arrow -->
+                <div id="animated-qr-arrow"class="animated-qr-arrow"></div>
+                <div class="qr-text-wrapper">
+                    <div id ="qr-text" class="qr-text"></div> 
+                </div>
+            </div>
+        </div>
+        <div id="footer-text" class="footer-text"></div>
+
+        <!-- end of creative banner -->
+      </div> 
+
+      </div>
+    </div>    
+
+    <!-- Creative Dependencies (GSAP for animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- Visual Studio Code for Create related file (don't delete) -->
+    <script src="../plugin/plugin.js" type="module"></script>
+  </body>
+</html>

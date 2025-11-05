@@ -1,0 +1,211 @@
+/* Basic Reset & Body Styling */
+body {
+margin: 0;
+font-family: Arial, sans-serif; /* Placeholder font */
+display: flex;
+justify-content: center;
+align-items: center;
+/* min-height: 100vh; Removed as it's not typically needed for fixed-size banners */
+background-color: #f0f0f0; /* Light background for context */
+}
+
+.banner-container {
+width: 320px; /* NEW: Adjust banner width */
+height: 320px; /* NEW: Adjust banner height */
+background-color: #1a4d2e; /* Dark green background from mockup */
+position: relative; /* For absolute positioning of children */
+overflow: hidden; /* Ensures elements don't spill out */
+color: #fff; /* Default text color */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Video Styling */
+.background-video-placeholder {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0; /* Behind all frames */
+}
+
+.player {
+height: 320px; /* NEW: Adjust player height */
+position: absolute;
+width: 100%;
+top: 0px;
+left: 0px;
+background-color: #000;
+}
+.seenthis-control-bar {
+z-index: 25;
+}
+/* To adjust the player control bar */
+.seenthis-control-bar {
+left: 10px;
+bottom: -20px !important;
+}
+.seenthis-player .big-play {
+visibility: hidden;
+top: 120px; /* NEW: Adjust for smaller height */
+}
+
+/* Base Frame Styling */
+.frame {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0; /* Initially hidden */
+visibility: hidden; /* Initially hidden for accessibility/performance */
+z-index: 1; /* Above the video background */
+display: flex; /* Use flex for centering/layout within frames */
+flex-direction: column; /* Keep column for square format */
+justify-content: center; /* Default to center content vertically */
+align-items: center; /* Default to center content horizontally */
+text-align: center;
+box-sizing: border-box; /* Include padding in width/height */
+}
+
+/* --- Frame 1 Styling (Dynamic Product Showcase) --- */
+.frame-1 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+padding: 0; /* Remove padding as elements will be absolutely positioned */
+}
+
+.bring-logo {
+position: absolute;
+top: 15px; /* NEW: Adjust position */
+left: 15px; /* NEW: Adjust position */
+width: 60px; /* NEW: Adjust logo size */
+height: 30px; /* NEW: Adjust logo size */
+z-index: 2;
+}
+
+.main-text-area {
+position: absolute;
+top: 60px; /* NEW: Adjust position */
+left: 15px; /* NEW: Adjust position */
+width: calc(100% - 30px); /* Full width minus padding */
+text-align: center; /* Center text */
+}
+
+.product_headline {
+font-family: "PostenSans-Medium";
+font-size: 22px; /* NEW: Smaller font size */
+line-height: 1.2;
+margin: 0;
+color: #fff;
+text-align: center;
+display: block;
+width: 100%;
+}
+
+.lower_part_headline_text {
+position: absolute;
+top: 240px; /* NEW: Adjust position */
+left: 15px; /* NEW: Adjust position */
+width: calc(100% - 30px);
+font-family: "PostenSans-Medium";
+font-size: 18px; /* NEW: Smaller font size */
+line-height: 1.2;
+color: #fff;
+text-align: center;
+}
+
+.greenBgText {
+background-color: #7bc144;
+color: black;
+padding: 2px 6px; /* NEW: Smaller padding */
+border-radius: 3px; /* NEW: Smaller border-radius */
+display: inline-block;
+min-width: 60px; /* NEW: Smaller min-width */
+text-align: center;
+box-sizing: border-box;
+transform: rotate(-3deg); /* NEW: Slight rotation adjustment */
+transform-origin: bottom left;
+margin-left: 5px;
+margin-top: 5px;
+}
+
+.product_image_wrapper {
+position: absolute;
+top: 160px; /* NEW: Adjust position */
+left: 50%;
+transform: translateX(-50%);
+width: 200px; /* NEW: Adjust width */
+height: 150px; /* NEW: Adjust height */
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.dynamic-product-image {
+/* Removed specific left/top as wrapper is centered */
+max-width: 200px;
+max-height: 140px;
+object-fit: contain;
+position: relative; /* Relative to wrapper */
+transform: rotate(-15deg);
+}
+
+.footer-text {
+position: absolute;
+bottom: 5px; /* NEW: Adjust position */
+width: 100%;
+font-family: "PostenSans-Regular";
+text-align: center;
+color: #fff;
+font-size: 7px; /* NEW: Smaller font size */
+line-height: 1;
+z-index: 1;
+}
+
+/* --- Frame 3 Styling --- */
+.frame-3 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+padding-top: 20px; /* NEW: Adjust padding from top */
+}
+
+.frame3-top-logo {
+  position: absolute;
+  top: 40px; /* NEW: Adjust position */
+  margin-bottom: 0; /* NEW: Remove margin */
+  width: 130px;
+  height: 110px;
+}
+
+.qr-code-area {
+display: flex;
+flex-direction: column; /* Keep column for square format */
+align-items: center;
+margin-top: 20px; /* NEW: Add margin from logo */
+}
+
+.mobile-cta-section{
+  position: absolute;
+  top: 170px;
+}
+.mobile-cta-button {
+    /* Button Styling */
+    display: inline-block; /* Allows padding and width/height to be applied */
+    padding: 12px 20px; /* Adjust padding for desired button size */
+    background-color: #B5E099; /* Requested background color */
+    color: black; /* Requested text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 8px; /* Rounded borders (adjust value for more/less roundness) */
+    font-family: Arial, sans-serif; /* Choose a suitable font */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    border: none; /* Remove any default button/link border */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.mobile-cta-button:hover {
+    background-color: #7bc144; /* Slightly lighter green on hover for feedback */
+}

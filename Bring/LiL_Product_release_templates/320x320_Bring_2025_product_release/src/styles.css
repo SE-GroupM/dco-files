@@ -1,0 +1,215 @@
+/* Basic Reset & Body Styling */
+body {
+margin: 0;
+font-family: Arial, sans-serif; /* Placeholder font */
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f0f0f0; /* Light background for context */
+}
+
+.banner-container {
+width: 320px;  /* Adjust banner width as needed */
+height: 320px; /* Adjust banner height as needed (e.g., for mobile vertical ad) */
+background-color: #1a4d2e; /* Dark green background from mockup */
+position: relative; /* For absolute positioning of children */
+overflow: hidden; /* Ensures elements don't spill out */
+color: #fff; /* Default text color */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Video Styling */
+.background-video-placeholder {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0; /* Behind all frames */
+}
+
+.player {
+height: 320px;
+position: absolute;
+width: 100%;
+top: 0px;
+left: 0px;
+background-color: #000;
+}
+.seenthis-control-bar {
+z-index: 25;
+}
+/* To adjust the player control bar */
+.seenthis-control-bar{
+left: 10px;
+bottom: -20px !important;
+}
+.seenthis-player .big-play {
+visibility: hidden;
+top: 220px;
+}
+
+/* Base Frame Styling */
+.frame {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0; /* Initially hidden */
+visibility: hidden; /* Initially hidden for accessibility/performance */
+z-index: 1; /* Above the video background */
+display: flex; /* Use flex for centering/layout within frames */
+flex-direction: column;
+justify-content: center; /* Default to center content vertically */
+align-items: center; /* Default to center content horizontally */
+text-align: center;
+box-sizing: border-box;
+}
+
+/* --- Elements visible throughout (Product Image) --- */
+/* Removed #static-visuals-wrapper styles as it's no longer needed */
+
+#product_image_wrapper {
+position: absolute; /* Position within frame1 */
+bottom: 30px; /* Aligned to the bottom of frame1 */
+left: 50%; /* Centered horizontally */
+transform: translateX(-50%); /* Adjust for true centering */
+width: 150px; /* Adjust width for product image area */
+height: 100px; /* Adjust height for product image area */
+display: flex;
+justify-content: center; /* Center content horizontally within wrapper */
+align-items: flex-start;   /* Align content to the bottom vertically within wrapper */
+overflow: hidden;
+z-index: 1; /* Ensure it's above other elements if needed, but below text */
+}
+
+.dynamic-product-image {
+max-width: 110px;
+max-height: 100px;
+object-fit: contain;
+}
+
+/* --- Logo --- */
+.bring-logo {
+position: absolute;
+top: 20px;
+left: 20px;
+width: 80px; /* Adjust logo size */
+height: 40px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: left top;
+z-index: 2; /* Above frames */
+}
+
+/* --- Frame 1 Styling --- */
+.frame-1 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+}
+
+.main-text-area {
+position: relative; /* Relative within frame-1 */
+width: calc(100% - 40px); /* Full width minus padding */
+text-align: center;
+}
+
+.frame1-headline { /* Text for "Just nu kan du tävla om en robotdammsugare" */
+position: absolute;
+top: 100px;
+font-family: "PostenSans-Medium"; /* Assuming this font is loaded */
+font-size: 24px; /* Larger font size to match image */
+line-height: 1.2;
+margin: 0;
+color: #fff;
+text-align: center;
+display: block;
+width: 100%;
+}
+
+/* --- Frame 2 Styling (formerly Frame 3) --- */
+.frame-2 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+}
+
+.frame2-text-area {
+position: relative; /* Relative within frame-2 */
+width: calc(100% - 40px);
+text-align: center;
+}
+
+.frame2-headline { /* Text for "Hitta den och tävla här." */
+position: absolute;
+top: 140px;
+font-family: "PostenSans-Medium";
+font-size: 20px; /* Match frame1 headline size */
+line-height: 1.2;
+margin: 0;
+color: #fff;
+text-align: center;
+display: block;
+width: 100%;
+}
+.textPosition{
+position: absolute;
+/* top: 140px; */
+}
+
+#last-frame-logo{
+position: absolute;
+top: 30px;
+width: 110px;
+height: 110px; /* Adjust size */
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center top;
+z-index: 2; /* Ensure it's above text */
+}
+
+/* --- Footer Text --- */
+.footer-text {
+position: absolute;
+bottom: 10px;
+width: 100%;
+font-family: "PostenSans-Regular";
+text-align: center;
+color: #fff;
+font-size: 8px;
+line-height: 1;
+z-index: 1;
+}
+
+.highlight{
+color: #B5E099;
+}
+
+/* CTA Button Styles */
+.mobile-cta-section{
+position: absolute;
+top: 210px; /* Adjusted position to be below frame2-headline */
+left: 50%;
+transform: translateX(-50%);
+z-index: 2; /* Ensure it's above other elements if needed */
+}
+.mobile-cta-button {
+  /* Button Styling */
+  display: inline-block; /* Allows padding and width/height to be applied */
+  padding: 12px 20px; /* Adjust padding for desired button size */
+  background-color: #B5E099; /* Requested background color */
+  color: black; /* Requested text color */
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 8px; /* Rounded borders (adjust value for more/less roundness) */
+  font-family: Arial, sans-serif; /* Choose a suitable font */
+  font-size: 12px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  border: none; /* Remove any default button/link border */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.mobile-cta-button:hover {
+  background-color: #7bc144; /* Slightly lighter green on hover for feedback */
+}
