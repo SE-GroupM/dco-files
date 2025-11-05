@@ -1,0 +1,822 @@
+{
+  "id": "7f5147bd-9a76-4bdb-85c2-e570f431d9cb",
+  "version": "1.6.2",
+  "name": "640x360_bring_dco_2025_Product_teaser",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 640,
+        "height": 360,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 300,
+        "height": 600
+      },
+      {
+        "width": 980,
+        "height": 300
+      },
+      {
+        "width": 640,
+        "height": 360
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
+  "placeholders": {
+    "fileName": "Remote file",
+    "format": "CSV",
+    "schema": {
+      "variantID": {
+        "type": "identifier",
+        "source": "feed"
+      },
+      "Reporting_Label": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Country": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Variant": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Audience": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Audience_ID": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Creative_Size": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Start_Date": {
+        "type": "text",
+        "source": "feed"
+      },
+      "End_Date": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Status": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Geo_Area": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Day_of_week": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Weather": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_1_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_2_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_3_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "retailer_text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Text_Disclaimer": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Tagline_Text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Cta_Text_mobile": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "BG_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_1_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_2_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Frame_3_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Cta_Text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Cta_BG": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Disclaimer_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Tagline_text_Color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Cta_BG_onHover": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Use_video": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Visual_video": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_300x600_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_300x600_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_320x320_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_320x320_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_320x400_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_320x400_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_640x320_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_640x320_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_640x360_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_640x360_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_980x300_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_980x300_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_980x600_src": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Video_980x600_tracker": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Use_Image": {
+        "type": "text",
+        "source": "feed"
+      },
+      "dynamic_image": {
+        "type": "text",
+        "source": "feed"
+      },
+      "preview_dynamic_image": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Logo_bring_green": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Logo_Preview": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Logo_2": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Logo_2_Preview": {
+        "type": "text",
+        "source": "feed"
+      },
+      "URL": {
+        "type": "text",
+        "source": "feed"
+      },
+      "UTM": {
+        "type": "text",
+        "source": "feed"
+      },
+      "Landingpage": {
+        "type": "text",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "1"
+            },
+            "Reporting_Label": {
+              "value": "1_Stockholm_pre_budskap"
+            },
+            "Country": {
+              "value": "SE"
+            },
+            "Variant": {
+              "value": "Stockholm_pre_budskap"
+            },
+            "Audience": {
+              "value": "Local"
+            },
+            "Audience_ID": {
+              "value": "123456"
+            },
+            "Creative_Size": {
+              "value": "300x600,320x320,980x240,980x300"
+            },
+            "Start_Date": {
+              "value": "10/10/2025"
+            },
+            "End_Date": {
+              "value": "24/10/2025"
+            },
+            "Status": {
+              "value": "TRUE"
+            },
+            "Geo_Area": {
+              "value": "Stockholm"
+            },
+            "Day_of_week": {
+              "value": "Monday,Tuesday, Wednesday,Thursday,Friday,Saturday,Sunday"
+            },
+            "Weather": {
+              "value": ""
+            },
+            "Frame_1_Text": {
+              "value": "Vill du vinna priser från bland annat Boozt, XXL och Elgiganten?"
+            },
+            "Frame_2_Text": {
+              "value": "Runt omkring i Stockholm de kommande veckorna kommer vi lägga gåvor i de gröna paketboxarna, och dessa kan bli dinna."
+            },
+            "Frame_3_Text": {
+              "value": ""
+            },
+            "retailer_text": {
+              "value": ""
+            },
+            "Text_Disclaimer": {
+              "value": "Åldersgräns 18 år. Vinsternas värde xxx kr – x xxx kr"
+            },
+            "Tagline_Text": {
+              "value": "Ladda ner Bring-appen och var med och tävla!"
+            },
+            "Cta_Text_mobile": {
+              "value": "Ladda ner appen"
+            },
+            "Color": {
+              "value": "Bring Green"
+            },
+            "BG_Color": {
+              "value": "#56B529"
+            },
+            "Frame_1_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Frame_2_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Frame_3_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Cta_Text_Color": {
+              "value": "#000000"
+            },
+            "Cta_BG": {
+              "value": "#7BC144"
+            },
+            "Disclaimer_Color": {
+              "value": "#FFFFFF"
+            },
+            "Tagline_text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Cta_BG_onHover": {
+              "value": "#86cc4a"
+            },
+            "Use_video": {
+              "value": "TRUE"
+            },
+            "Visual_video": {
+              "value": "ramlar_ner_paket"
+            },
+            "Video_300x600_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_300x600_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_320x320_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_320x320_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_320x400_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_320x400_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_640x320_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_640x320_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_640x360_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_640x360_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_980x300_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_980x300_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_980x600_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_980x600_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Use_Image": {
+              "value": "FALSE"
+            },
+            "dynamic_image": {
+              "value": "https://assets.lemonpi.io/a/k/6e423516-3837-4c89-b845-e0c55587bfb5/Assets/Lyckan-i-Luckan-Assets/BRING_QRKOD.png"
+            },
+            "preview_dynamic_image": {
+              "value": ""
+            },
+            "Logo_bring_green": {
+              "value": "https://assets.lemonpi.io/a/k/9a165bcf-2f89-4665-ac67-0233cf7a7596/Assets/Lyckan-i-Luckan-Assets/bring_logo_gron.png"
+            },
+            "Logo_Preview": {
+              "value": ""
+            },
+            "Logo_2": {
+              "value": "https://assets.lemonpi.io/a/k/40d3b84b-3a7d-4f95-9c21-bb3a01060940/Assets/Lyckan-i-Luckan-Assets/logo_lyckaniluckan_vit.png"
+            },
+            "Logo_2_Preview": {
+              "value": ""
+            },
+            "URL": {
+              "value": "https://www.bring.se/"
+            },
+            "UTM": {
+              "value": "?tracking"
+            },
+            "Landingpage": {
+              "value": "https://www.bring.se/?tracking"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "2"
+            },
+            "Reporting_Label": {
+              "value": "2_Stockholm_produkt_teaser"
+            },
+            "Country": {
+              "value": "SE"
+            },
+            "Variant": {
+              "value": "Stockholm_produkt_teaser"
+            },
+            "Audience": {
+              "value": "Local"
+            },
+            "Audience_ID": {
+              "value": "123456"
+            },
+            "Creative_Size": {
+              "value": "300x600,320x320,980x240,980x300"
+            },
+            "Start_Date": {
+              "value": "10/10/2025"
+            },
+            "End_Date": {
+              "value": "24/10/2025"
+            },
+            "Status": {
+              "value": "TRUE"
+            },
+            "Geo_Area": {
+              "value": "Stockholm"
+            },
+            "Day_of_week": {
+              "value": "Monday,Tuesday, Wednesday,Thursday,Friday,Saturday,Sunday"
+            },
+            "Weather": {
+              "value": ""
+            },
+            "Frame_1_Text": {
+              "value": "Är du intresserad av den här produkten från [LOGO]"
+            },
+            "Frame_2_Text": {
+              "value": ""
+            },
+            "Frame_3_Text": {
+              "value": ""
+            },
+            "retailer_text": {
+              "value": "XXL"
+            },
+            "Text_Disclaimer": {
+              "value": "Åldersgräns 18 år. Vinsternas värde xxx kr – x xxx kr"
+            },
+            "Tagline_Text": {
+              "value": "Ladda ner Bring-appen och var med och tävla!"
+            },
+            "Cta_Text_mobile": {
+              "value": "Ladda ner appen"
+            },
+            "Color": {
+              "value": "Bring Green"
+            },
+            "BG_Color": {
+              "value": "#56B529"
+            },
+            "Frame_1_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Frame_2_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Frame_3_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Cta_Text_Color": {
+              "value": "#000000"
+            },
+            "Cta_BG": {
+              "value": "#7BC144"
+            },
+            "Disclaimer_Color": {
+              "value": "#FFFFFF"
+            },
+            "Tagline_text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Cta_BG_onHover": {
+              "value": "#86cc4a"
+            },
+            "Use_video": {
+              "value": "TRUE"
+            },
+            "Visual_video": {
+              "value": "ramlar_ner_paket"
+            },
+            "Video_300x600_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_300x600_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_320x320_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_320x320_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_320x400_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_320x400_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_640x320_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_640x320_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_640x360_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_640x360_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_980x300_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_980x300_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_980x600_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_980x600_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Use_Image": {
+              "value": "FALSE"
+            },
+            "dynamic_image": {
+              "value": "https://assets.lemonpi.io/a/k/6e423516-3837-4c89-b845-e0c55587bfb5/Assets/Lyckan-i-Luckan-Assets/BRING_QRKOD.png"
+            },
+            "preview_dynamic_image": {
+              "value": ""
+            },
+            "Logo_bring_green": {
+              "value": "https://assets.lemonpi.io/a/k/9a165bcf-2f89-4665-ac67-0233cf7a7596/Assets/Lyckan-i-Luckan-Assets/bring_logo_gron.png"
+            },
+            "Logo_Preview": {
+              "value": ""
+            },
+            "Logo_2": {
+              "value": "https://assets.lemonpi.io/a/k/40d3b84b-3a7d-4f95-9c21-bb3a01060940/Assets/Lyckan-i-Luckan-Assets/logo_lyckaniluckan_vit.png"
+            },
+            "Logo_2_Preview": {
+              "value": ""
+            },
+            "URL": {
+              "value": "https://www.bring.se/"
+            },
+            "UTM": {
+              "value": "?tracking"
+            },
+            "Landingpage": {
+              "value": "https://www.bring.se/?tracking"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "variantID": {
+              "value": "3"
+            },
+            "Reporting_Label": {
+              "value": "3_Stockholm_product_drop"
+            },
+            "Country": {
+              "value": "SE"
+            },
+            "Variant": {
+              "value": "Stockholm_product_drop"
+            },
+            "Audience": {
+              "value": "Local"
+            },
+            "Audience_ID": {
+              "value": "123456"
+            },
+            "Creative_Size": {
+              "value": "300x600,320x320,980x240,980x300"
+            },
+            "Start_Date": {
+              "value": "10/10/2025"
+            },
+            "End_Date": {
+              "value": "24/10/2025"
+            },
+            "Status": {
+              "value": "TRUE"
+            },
+            "Geo_Area": {
+              "value": "Stockholm"
+            },
+            "Day_of_week": {
+              "value": "Monday,Tuesday, Wednesday,Thursday,Friday,Saturday,Sunday"
+            },
+            "Weather": {
+              "value": ""
+            },
+            "Frame_1_Text": {
+              "value": "Nu ligger den här Smartklockan i Bring paketboxen Isak på Stureplan, och den kan bli din!"
+            },
+            "Frame_2_Text": {
+              "value": "<span class=\"highlight-green\">Det är bara 304 meter från där du står</span> <br>Försten dit!"
+            },
+            "Frame_3_Text": {
+              "value": "Kom ihåg att du måste ha Bring-appen för att öppna luckan!"
+            },
+            "retailer_text": {
+              "value": ""
+            },
+            "Text_Disclaimer": {
+              "value": "Åldersgräns 18 år. Vinsternas värde xxx kr – x xxx kr"
+            },
+            "Tagline_Text": {
+              "value": "Ladda ner Bring-appen och var med och tävla!"
+            },
+            "Cta_Text_mobile": {
+              "value": "Ladda ner appen"
+            },
+            "Color": {
+              "value": "Bring Green"
+            },
+            "BG_Color": {
+              "value": "#56B529"
+            },
+            "Frame_1_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Frame_2_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Frame_3_Text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Cta_Text_Color": {
+              "value": "#000000"
+            },
+            "Cta_BG": {
+              "value": "#7BC144"
+            },
+            "Disclaimer_Color": {
+              "value": "#FFFFFF"
+            },
+            "Tagline_text_Color": {
+              "value": "#FFFFFF"
+            },
+            "Cta_BG_onHover": {
+              "value": "#86cc4a"
+            },
+            "Use_video": {
+              "value": "TRUE"
+            },
+            "Visual_video": {
+              "value": "ramlar_ner_paket"
+            },
+            "Video_300x600_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_300x600_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_320x320_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_320x320_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_320x400_src": {
+              "value": "v3:wJ08L4zCenSvvwqnP-hN0"
+            },
+            "Video_320x400_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i4192yzlzb5etso7n9w63jdbp7x4i668"
+            },
+            "Video_640x320_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_640x320_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_640x360_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_640x360_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_980x300_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_980x300_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Video_980x600_src": {
+              "value": "v3:eOrRQT6Cunlt6RiKHvfbl"
+            },
+            "Video_980x600_tracker": {
+              "value": "11ok1ehjs2s1uqbcvj31h1qpu7i41sx4p2pb51z58yaip63jdbp7x412tk"
+            },
+            "Use_Image": {
+              "value": "FALSE"
+            },
+            "dynamic_image": {
+              "value": "https://assets.lemonpi.io/a/k/6e423516-3837-4c89-b845-e0c55587bfb5/Assets/Lyckan-i-Luckan-Assets/BRING_QRKOD.png"
+            },
+            "preview_dynamic_image": {
+              "value": ""
+            },
+            "Logo_bring_green": {
+              "value": "https://assets.lemonpi.io/a/k/9a165bcf-2f89-4665-ac67-0233cf7a7596/Assets/Lyckan-i-Luckan-Assets/bring_logo_gron.png"
+            },
+            "Logo_Preview": {
+              "value": ""
+            },
+            "Logo_2": {
+              "value": "https://assets.lemonpi.io/a/k/40d3b84b-3a7d-4f95-9c21-bb3a01060940/Assets/Lyckan-i-Luckan-Assets/logo_lyckaniluckan_vit.png"
+            },
+            "Logo_2_Preview": {
+              "value": ""
+            },
+            "URL": {
+              "value": "https://www.bring.se/"
+            },
+            "UTM": {
+              "value": "?tracking"
+            },
+            "Landingpage": {
+              "value": "https://www.bring.se/?tracking"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 788,
+        "url": "https://assets.lemonpi.io/a/font/788/PostenSans-Medium?v=500",
+        "family": "PostenSans-Medium",
+        "variant": "500"
+      },
+      {
+        "advertiserId": 788,
+        "url": "https://assets.lemonpi.io/a/font/788/PostenSans-Regular?v=400",
+        "family": "PostenSans-Regular",
+        "variant": "400"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 788,
+    "name": "Bring"
+  },
+  "folders": {
+    "selectedFolderId": 10519
+  },
+  "port": 63103
+}

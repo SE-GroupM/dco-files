@@ -1,0 +1,227 @@
+/* Basic Reset & Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Placeholder font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Light background for context */
+}
+
+.banner-container {
+  width: 640px;  /* ADJUSTED: New banner width */
+  height: 360px; /* ADJUSTED: New banner height */
+  background-color: #1a4d2e; /* Dark green background from mockup */
+  position: relative; /* For absolute positioning of children */
+  overflow: hidden; /* Ensures elements don't spill out */
+  color: #fff; /* Default text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Video Styling */
+.background-video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind all frames */
+}
+
+.player {
+  height: 360px; /* ADJUSTED: New banner height */
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+}
+.seenthis-control-bar {
+  z-index: 25;
+}
+/* To adjust the player control bar */
+.seenthis-control-bar{
+  left: 10px;
+  bottom: -60px !important; /* ADJUSTED: Position for 300px height */
+}
+.seenthis-player .big-play {
+  visibility: hidden;
+  top: 100px; /* ADJUSTED: Center vertically for 300px height */
+}
+
+/* Base Frame Styling */
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden for accessibility/performance */
+  z-index: 1; /* Above the video background */
+  display: flex; /* Use flex for centering/layout within frames */
+  flex-direction: column;
+  justify-content: center; /* Default to center content vertically */
+  align-items: center; /* Default to center content horizontally */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* --- Elements visible throughout (Product Image & QR Code) --- */
+#static-visuals-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Below text frames, above video */
+}
+
+/* NEW: Container for product image and QR code */
+#product-qr-group {
+  position: absolute;
+  left: 245px;
+  top: 70%;
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  display: flex; /* Use flexbox to arrange children horizontally */
+  align-items: center; /* Vertically align items within this group */
+  gap: 20px; /* Space between product image and QR code */
+  z-index: 1; /* Ensure it's above the video */
+}
+
+#product_image_wrapper {
+ position: absolute;
+ left: 0px;
+  width: 140px; /* ADJUSTED: Requested width */
+  height: 140px; /* Set height to match width for a square container, or use 'auto' */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* border: 1px dashed red; /* Optional: Add a border to see the wrapper's boundaries */
+}
+
+.dynamic-product-image {
+  max-width: 100%; /* Fill its wrapper */
+  max-height: 100%; /* Fill its wrapper */
+  object-fit: contain;
+}
+
+.qr-code-img {
+  position: absolute;
+  left: 160px;
+  width: 130px; /* ADJUSTED: Larger QR code size */
+  height: 130px; /* ADJUSTED: Larger QR code size */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+/* --- Logo --- */
+.bring-logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 100px; /* ADJUSTED: Larger for 980px width */
+  height: 50px; /* ADJUSTED */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  z-index: 2; /* Above frames */
+}
+
+/* --- Frame 1 Styling --- */
+.frame-1 {
+  /* No specific flex properties needed here, content is absolutely positioned */
+}
+
+.main-text-area {
+  position: absolute; /* Absolute positioning within frame */
+  top: 50%; /* Vertically center */
+  left: 50px; /* Position from left edge */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  width: 420px; /* Wider for 980px banner */
+  text-align: left;
+}
+
+.frame1-headline {
+  font-family: "PostenSans-Medium";
+  font-size: 32px; /* Larger font size for 980px width */
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+/* --- Frame 2 Styling (formerly Frame 3) --- */
+.frame-2 {
+  /* No specific flex properties needed here, content is absolutely positioned */
+}
+
+.frame2-text-area {
+  position: absolute; /* Absolute positioning within frame */
+  top: 50%; /* Vertically center */
+  left: 50px; /* Position from left edge */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  width: 420px;
+  text-align: left;
+}
+
+.frame2-headline {
+  font-family: "PostenSans-Medium";
+  font-size: 32px; /* Match frame1 headline size, slightly smaller */
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.textPosition{
+  position: absolute;
+  left: 140px;
+  top: -130px;
+}
+
+#last-frame-logo{
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  width: 150px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top; /* Adjusted to left top for consistency with bring-logo */
+  z-index: 2;
+}
+
+.animated-qr-arrow {
+  position: absolute;
+  top: 40%;
+  left: 525px;
+  transform: translateY(-50%) rotate(145deg) scaleX(-1);
+  width: 60px; /* Larger */
+  height: 40px; /* Larger */
+  z-index: 2;
+}
+
+/* --- Footer Text --- */
+.footer-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0; /* Ensure it spans full width */
+  width: 100%;
+  font-family: "PostenSans-Regular";
+  text-align: center;
+  color: #fff;
+  font-size: 10px; /* Slightly larger for readability */
+  line-height: 1;
+  z-index: 1;
+}
+
+.highlight{
+  color: #B5E099;
+}

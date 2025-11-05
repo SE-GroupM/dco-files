@@ -1,0 +1,227 @@
+/* Basic Reset & Body Styling */
+body {
+margin: 0;
+font-family: Arial, sans-serif; /* Placeholder font */
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f0f0f0; /* Light background for context */
+}
+
+.banner-container {
+width: 300px;  /* Adjust banner width as needed */
+height: 600px; /* Adjust banner height as needed (e.g., for mobile vertical ad) */
+background-color: #1a4d2e; /* Dark green background from mockup */
+position: relative; /* For absolute positioning of children */
+overflow: hidden; /* Ensures elements don't spill out */
+color: #fff; /* Default text color */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Video Styling */
+.background-video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind all frames */
+}
+
+.player {
+  height: 600px;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+}
+.seenthis-control-bar {
+  z-index: 25;
+}
+/* To adjust the player control bar */
+.seenthis-control-bar{
+  left: 10px;
+  bottom: -20px !important;
+}
+.seenthis-player .big-play {
+  visibility: hidden;
+  top: 220px;
+}
+
+/* Base Frame Styling */
+.frame {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0; /* Initially hidden */
+visibility: hidden; /* Initially hidden for accessibility/performance */
+z-index: 1; /* Above the video background */
+display: flex; /* Use flex for centering/layout within frames */
+flex-direction: column;
+justify-content: center; /* Default to center content vertically */
+align-items: center; /* Default to center content horizontally */
+text-align: center;
+box-sizing: border-box;
+}
+
+/* --- Elements visible throughout (Product Image & QR Code) --- */
+#static-visuals-wrapper {
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0; /* Below text frames, above video */
+}
+
+#product_image_wrapper {
+  position: absolute; /* Position within static-visuals-wrapper */
+  top: 280px; /* Adjust to match image */
+  /* left: 50%; */
+  left: 30px;
+  /* transform: translateX(-50%); */
+  width: 150px; /* Adjust width for product image area */
+  height: 150px; /* Adjust height for product image area */
+  display: flex;
+  /* --- CHANGES START HERE --- */
+  justify-content: flex-end; /* Aligns content to the right horizontally */
+  align-items: flex-end;   /* Aligns content to the bottom vertically */
+  /* --- CHANGES END HERE --- */
+  overflow: hidden;
+  /* Optional: Add a border to see the wrapper's boundaries */
+  /* border: 1px dashed red; */
+}
+
+.dynamic-product-image {
+max-width: 130px;
+max-height: 100%;
+object-fit: contain;
+/* position: relative;  This is not needed for flexbox alignment, can be removed */
+/* No rotation in the new images, remove if not desired */
+/* transform: rotate(-15deg); */
+}
+
+.qr-code-img {
+position: absolute; /* Position within static-visuals-wrapper */
+top: 330px; /* Adjust to match image */
+left: 200px;
+/* transform: translateX(-50%); */
+width: 100px; /* Adjust QR code size */
+height: 100px; /* Adjust QR code size */
+/* No margin-bottom as it's not next to text anymore */
+}
+
+/* --- Logo --- */
+.bring-logo {
+position: absolute;
+top: 20px;
+left: 20px;
+width: 80px; /* Adjust logo size */
+height: 40px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: left top;
+z-index: 2; /* Above frames */
+}
+
+/* --- Frame 1 Styling --- */
+.frame-1 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+}
+
+.main-text-area {
+position: relative; /* Relative within frame-1 */
+width: calc(100% - 40px); /* Full width minus padding */
+text-align: center;
+}
+
+.frame1-headline { /* Text for "Just nu kan du tävla om en robotdammsugare" */
+  position: absolute;
+  top: 100px;
+  font-family: "PostenSans-Medium"; /* Assuming this font is loaded */
+  font-size: 26px; /* Larger font size to match image */
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+/* --- Frame 2 Styling (formerly Frame 3) --- */
+.frame-2 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+}
+
+.frame2-text-area {
+  position: relative; /* Relative within frame-2 */
+  width: calc(100% - 40px);
+  text-align: center;
+}
+
+.frame2-headline { /* Text for "Hitta den och tävla här." */
+  position: absolute;
+  top: 100px;
+  font-family: "PostenSans-Medium";
+  font-size: 24px; /* Match frame1 headline size */
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.textPosition{
+  position: absolute;
+  top: 200px;
+}
+
+#last-frame-logo{
+  position: absolute;
+  top: 60px; /* Position above the text */
+  width: 140px; /* Adjust size */
+  height: 110px; /* Adjust size */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  z-index: 2; /* Ensure it's above text */
+}
+
+.animated-qr-arrow {
+    position: absolute;
+    top: 268px;
+    left: 200px;
+    transform: scaleX(-1) rotate(-150deg);
+    /* transform: rotate(45deg); */
+    /* transform: translateX(-50%) rotate(250deg); */
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+/* --- Footer Text --- */
+.footer-text {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-family: "PostenSans-Regular";
+  text-align: center;
+  color: #fff;
+  font-size: 8px;
+  line-height: 1;
+  z-index: 1;
+}
+
+.highlight{
+  color: #B5E099;
+}
