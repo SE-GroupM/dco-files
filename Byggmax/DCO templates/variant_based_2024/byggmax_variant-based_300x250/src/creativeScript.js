@@ -21,6 +21,8 @@ onLemonpiReady(function () {
   // Local variable for content
   var local_content = content;
   
+  $('#product_image_top').html(content.product_image_top.value);
+
   //Append background image
   $("#bgImage").css("background-image","url("+local_content.background_asset.value+")");
   //Append overlay image
@@ -39,6 +41,18 @@ onLemonpiReady(function () {
 }
 if (local_content.product_1_price.value === ''){
     $("#productPrice_1").html(local_content.product_1_price.value);
+}
+
+let topValue = parseInt(content.product_image_top.value, 10);
+
+if (topValue) {
+    // If topValue is a valid number, apply it to the .productImage element
+    $('.productImage').css({
+        'top': topValue + 'px',
+    });
+} else {
+    // If topValue is not valid, the CSS from the stylesheet will be used
+    $('.productImage').css({}); // No inline top value is applied, so it will fallback to the stylesheet value
 }
 
   //Append product name

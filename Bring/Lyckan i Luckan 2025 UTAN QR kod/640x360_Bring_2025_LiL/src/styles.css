@@ -1,0 +1,264 @@
+/* Basic Reset & Body Styling */
+body {
+margin: 0;
+font-family: Arial, sans-serif; /* Placeholder font */
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f0f0f0; /* Light background for context */
+}
+
+.banner-container {
+width: 640px;  /* Adjust banner width as needed */
+height: 360px; /* Adjust banner height as needed (e.g., for mobile vertical ad) */
+background-color: #1a4d2e; /* Dark green background from mockup */
+position: relative; /* For absolute positioning of children */
+overflow: hidden; /* Ensures elements don't spill out */
+color: #fff; /* Default text color */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Video Styling */
+.background-video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind all frames */
+}
+
+.player {
+height: 100%; /* Make the player div take 100% height of its parent */
+width: 100%;  /* Make the player div take 100% width of its parent */
+position: absolute;
+top: 0px;
+left: 0px;
+background-color: #000; /* Fallback background color, will show as pillarbox/letterbox */
+}
+
+/* --- UPDATED CSS FOR THE VIDEO ELEMENT ITSELF --- */
+.player video {
+width: 100%;
+height: 100%;
+object-fit: contain; /* This is the key! It scales the video to fit entirely, no cropping */
+object-position: center; /* Centers the video within the container */
+}
+.seenthis-control-bar {
+  z-index: 25;
+}
+/* To adjust the player control bar */
+.seenthis-control-bar{
+  left: 10px;
+  bottom: -20px !important;
+}
+.seenthis-player .big-play {
+  visibility: hidden;
+  top: 220px;
+}
+
+/* Base Frame Styling */
+.frame {
+  position: absolute;
+  top: 0;
+  left: -240px;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden for accessibility/performance */
+  z-index: 1; /* Above the video background */
+  display: flex; /* Use flex for centering/layout within frames */
+  flex-direction: column;
+  justify-content: center; /* Default to center content vertically */
+  align-items: center; /* Default to center content horizontally */
+  text-align: left;
+}
+
+/* --- Frame 1 Styling --- */
+.frame-1 {
+/* Specific adjustments for frame 1 layout */
+justify-content: space-between; /* Push logo to top, footer to bottom */
+padding: 20px; /* Padding for logo and footer */
+box-sizing: border-box;
+}
+
+.logo-area {
+align-self: flex-start; /* Align logo to top-left */
+margin-bottom: auto; /* Push main text down */
+}
+
+.bring-logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 80px; /* Adjust logo size */
+  height: 40px; /* <--- ADD THIS LINE (or adjust to your logo's actual height) */
+/* height: 80px; if it's a square logo */
+}   
+
+.main-text-area {
+  flex-grow: 1; /* Allow text area to take up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Limit text width */
+}
+
+.main-headline {
+  left: 280px;
+  top: 110px;
+  width: 500px;
+  position: absolute;
+  font-family: "PostenSans-Medium";
+  font-size: 22px; /* Adjust font size */
+  line-height: 1.3;
+  margin: 0;
+  color: #fff;
+}
+
+.footer-text-area {
+  align-self: flex-start; /* Align footer to bottom-left */
+  margin-top: auto; /* Push main text up */
+}
+
+.footer-text {
+  font-family: "PostenSans-Medium";
+  font-size: 14px; /* Adjust font size */
+  color: #d3d3d3; /* Lighter grey for footer */
+  margin: 0;
+}
+
+/* --- Frame 2 Styling --- */
+.frame-2-text-area {
+  width: 80%; /* Limit text width */
+}
+
+.frame2-headline {
+  width: 500px;
+  top: 110px;
+  left: 280px;
+  position: absolute;
+  font-family: "PostenSans-Medium";
+  font-size: 22px; /* Adjust font size */
+  line-height: 1.3;
+  margin: 0;
+  color: #fff;
+}
+
+.textClass {
+  font-family: "PostenSans-Medium";
+  font-size: 30px; /* Adjust font size */
+  line-height: 1.1;
+}
+
+/* --- Frame 3 Styling --- */
+.frame-3 {
+  left: -110px;
+  justify-content: flex-start; /* Align content to top */
+  padding-top: 40px; /* Space from top */
+  box-sizing: border-box;
+}
+
+.frame3-top-logo {
+  position: absolute;
+  left: 230px;
+  top: 96px;
+  margin-bottom: 20px;
+  width: 140px;
+  height: 110px;
+}
+
+.bring-logo-end {
+  width: 100px; /* Adjust size for end logo */
+  height: auto;
+}
+
+.frame3-headline-area {
+  margin-bottom: 30px; /* Space below headline */
+}
+
+.frame3-headline {
+  font-size: 28px; /* Adjust font size */
+  line-height: 1.1;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.qr-code-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Space above bottom boxes */
+}
+
+.qr-code-img {
+  position: absolute;
+  top: 86px;
+  left: 410px;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 15px; /* Space between QR and text */
+}
+
+.qr-text-wrapper {
+  font-family: "PostenSans-Regular";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.qr-text {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  width: 120px;
+  transform: rotateZ(-5deg);
+  margin: 0;
+}
+
+.animated-qr-arrow {
+  position: absolute;
+  top: 35px;
+  left: 112px;
+  transform: translateX(-50%) rotate(-20deg);
+  width: 40px;
+  height: 30px;
+  margin-bottom: 5px; /* Space between arrow and text */
+}
+
+.arrow-and-arrow-text-wrapper{
+  position: absolute;
+  /* top: 30px; */
+  left: 470px;
+}
+
+.frame3-bottom-boxes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* Adjust height to show desired amount of boxes */
+  background-size: cover; /* Ensure it covers the area */
+  background-position: center bottom; /* Align to bottom */
+  z-index: 0; /* Behind other frame 3 content */
+}
+
+.footer-text {
+  left: 40px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-family: "PostenSans-Regular";
+  text-align: left;
+  color: #fff;
+  font-size: 8px;
+  line-height: 1;
+  z-index: 1; /* Behind other frame 3 content */
+}

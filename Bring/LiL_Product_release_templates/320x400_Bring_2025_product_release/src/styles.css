@@ -1,0 +1,226 @@
+/* Basic Reset & Body Styling */
+body {
+margin: 0;
+font-family: Arial, sans-serif; /* Placeholder font */
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f0f0f0; /* Light background for context */
+}
+
+.banner-container {
+width: 320px;
+height: 400px; /* NEW HEIGHT */
+background-color: #1a4d2e; /* Dark green background from mockup */
+position: relative; /* For absolute positioning of children */
+overflow: hidden; /* Ensures elements don't spill out */
+color: #fff; /* Default text color */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Video Styling */
+.background-video-placeholder {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0; /* Behind all frames */
+}
+
+.player {
+height: 400px; /* NEW HEIGHT */
+position: absolute;
+width: 100%;
+top: 0px;
+left: 0px;
+background-color: #000;
+}
+.seenthis-control-bar {
+z-index: 25;
+}
+/* To adjust the player control bar */
+.seenthis-control-bar{
+left: 10px;
+bottom: -20px !important;
+}
+.seenthis-player .big-play {
+visibility: hidden;
+top: 280px; /* Adjusted for 400px height */
+}
+
+/* Base Frame Styling */
+.frame {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; /* Frames will cover the whole banner, but content will be positioned */
+opacity: 0; /* Initially hidden */
+visibility: hidden; /* Initially hidden for accessibility/performance */
+z-index: 1; /* Above the video background, below static elements */
+display: flex; /* Use flex for centering/layout within frames */
+flex-direction: column;
+justify-content: center; /* Default to center content vertically */
+align-items: center; /* Default to center content horizontally */
+text-align: center;
+box-sizing: border-box;
+}
+
+/* --- Static elements visible throughout (Product Image & CTA) --- */
+#static-visuals-wrapper {
+position: absolute;
+bottom: 0; /* Position at the bottom of the banner */
+left: 0;
+width: 100%;
+height: 150px; /* Height for the image and CTA area */
+display: flex;
+justify-content: center;
+align-items: flex-end; /* Align content to the bottom */
+z-index: 2; /* Above frames */
+}
+
+#product-cta-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+padding-bottom: 40px; /* Space from the very bottom of the banner */
+}
+
+#product_image_wrapper {
+position: relative; /* Relative positioning within product-cta-group */
+width: 150px; /* Adjust width for product image area */
+height: 110px; /* Adjust height for product image area */
+display: flex;
+justify-content: center; /* Center content horizontally within wrapper */
+align-items: flex-end;   /* Align content to the TOP vertically within wrapper */
+overflow: hidden;
+margin-bottom: 20px; /* Space between image and CTA */
+}
+
+.dynamic-product-image {
+  max-width: 110px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+/* --- Logo --- */
+.bring-logo {
+position: absolute;
+top: 20px;
+left: 20px;
+width: 80px; /* Adjust logo size */
+height: 40px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: left top;
+z-index: 3; /* Above static-visuals-wrapper */
+}
+
+/* --- Frame 1 Styling --- */
+.frame-1 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+}
+
+.main-text-area {
+position: relative; /* Relative within frame-1 */
+width: calc(100% - 40px); /* Full width minus padding */
+text-align: center;
+}
+
+.frame1-headline { /* Text for "Just nu kan du tävla om en robotdammsugare" */
+position: absolute;
+top: 100px; /* Adjusted for 400px height */
+font-family: "PostenSans-Medium"; /* Assuming this font is loaded */
+font-size: 24px; /* Larger font size to match image */
+line-height: 1.2;
+margin: 0;
+color: #fff;
+text-align: center;
+display: block;
+width: 100%;
+}
+
+/* --- Frame 2 Styling --- */
+.frame-2 {
+justify-content: flex-start; /* Align content to top */
+align-items: center; /* Center content horizontally */
+}
+
+.frame2-text-area {
+position: relative; /* Relative within frame-2 */
+width: calc(100% - 40px);
+text-align: center;
+}
+
+.frame2-headline { /* Text for "Hitta den och tävla här." */
+position: absolute;
+top: 130px; /* Adjusted for 400px height */
+font-family: "PostenSans-Medium";
+font-size: 20px; /* Match frame1 headline size */
+line-height: 1.2;
+margin: 0;
+color: #fff;
+text-align: center;
+display: block;
+width: 100%;
+}
+.textPosition{
+position: absolute; /* Kept for consistency, but `top` is overridden by specific headline styles */
+}
+
+#last-frame-logo{
+position: absolute;
+top: 30px; /* Adjusted for 400px height */
+width: 110px;
+height: 110px; /* Adjust size */
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center top;
+z-index: 2; /* Ensure it's above text */
+}
+
+/* --- Footer Text --- */
+.footer-text {
+position: absolute;
+bottom: 5px; /* Positioned above the static-visuals-wrapper */
+width: 100%;
+font-family: "PostenSans-Regular";
+text-align: center;
+color: #fff;
+font-size: 8px;
+line-height: 1;
+z-index: 4; /* Ensure it's on top of everything */
+}
+
+.highlight{
+color: #B5E099;
+}
+
+/* CTA Button Styles */
+.mobile-cta-section{
+position: relative; /* Relative to product-cta-group */
+z-index: 1; /* Relative to product-cta-group */
+}
+.mobile-cta-button {
+  /* Button Styling */
+  display: inline-block; /* Allows padding and width/height to be applied */
+  padding: 12px 20px; /* Adjust padding for desired button size */
+  background-color: #B5E099; /* Requested background color */
+  color: black; /* Requested text color */
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 8px; /* Rounded borders (adjust value for more/less roundness) */
+  font-family: Arial, sans-serif; /* Choose a suitable font */
+  font-size: 12px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  border: none; /* Remove any default button/link border */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.mobile-cta-button:hover {
+  background-color: #7bc144; /* Slightly lighter green on hover for feedback */
+}

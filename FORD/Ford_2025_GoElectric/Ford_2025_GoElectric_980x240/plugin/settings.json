@@ -1,0 +1,504 @@
+{
+  "id": "1b16cf5d-debc-488e-8a83-82d8b379c495",
+  "version": "1.6.1",
+  "name": "Ford_2025_GoElectric_980x240",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 980,
+        "height": 240,
+        "isCustom": true
+      }
+    ],
+    "customSizes": [
+      {
+        "width": 250,
+        "height": 600
+      },
+      {
+        "width": 980,
+        "height": 240
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/EasePack.min.js"
+    }
+  ],
+  "placeholders": {
+    "fileName": "",
+    "format": "CSV",
+    "schema": {
+      "frame1_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1_bg": {
+        "type": "image",
+        "source": "create"
+      },
+      "frame2_bg": {
+        "type": "image",
+        "source": "create"
+      },
+      "frame3_bg": {
+        "type": "image",
+        "source": "create"
+      },
+      "frame4_bg": {
+        "type": "image",
+        "source": "create"
+      },
+      "clickthrough": {
+        "type": "click",
+        "source": "create"
+      },
+      "logo": {
+        "type": "image",
+        "source": "create"
+      },
+      "frame1_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1_textColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_textColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_textColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_textColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1_textLeft": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_textLeft": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_textLeft": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_textLeft": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1_textTop": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_textTop": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_textTop": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_textTop": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_fontSize": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_textColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_hoverColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "cta_hoverTextColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo1_width": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo1_height": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo1_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo1_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo1_filter": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo2_width": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo2_height": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo2_left": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo2_top": {
+        "type": "text",
+        "source": "create"
+      },
+      "logo2_filter": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1_bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1_textWidth": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_textWidth": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_textWidth": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_textWidth": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame1_textHeight": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame2_textHeight": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame3_textHeight": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_textHeight": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_ctaLeft": {
+        "type": "text",
+        "source": "create"
+      },
+      "frame4_ctaTop": {
+        "type": "text",
+        "source": "create"
+      },
+      "main_bgColor": {
+        "type": "text",
+        "source": "create"
+      },
+      "main_borderColor": {
+        "type": "text",
+        "source": "create"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": true,
+          "data": {
+            "frame1_text": {
+              "value": "frame1_text"
+            },
+            "frame2_text": {
+              "value": "frame2_text"
+            },
+            "frame3_text": {
+              "value": "frame3_text"
+            },
+            "frame4_text": {
+              "value": "frame4_text"
+            },
+            "cta_text": {
+              "value": "cta_text"
+            },
+            "frame1_bg": {
+              "value": ""
+            },
+            "frame2_bg": {
+              "value": ""
+            },
+            "frame3_bg": {
+              "value": ""
+            },
+            "frame4_bg": {
+              "value": ""
+            },
+            "clickthrough": {
+              "value": ""
+            },
+            "logo": {
+              "value": ""
+            },
+            "frame1_fontSize": {
+              "value": "frame1_fontSize"
+            },
+            "frame2_fontSize": {
+              "value": "frame2_fontSize"
+            },
+            "frame3_fontSize": {
+              "value": "frame3_fontSize"
+            },
+            "frame4_fontSize": {
+              "value": "frame4_fontSize"
+            },
+            "frame1_textColor": {
+              "value": "frame1_textColor"
+            },
+            "frame2_textColor": {
+              "value": "frame2_textColor"
+            },
+            "frame3_textColor": {
+              "value": "frame3_textColor"
+            },
+            "frame4_textColor": {
+              "value": "frame4_textColor"
+            },
+            "frame1_textLeft": {
+              "value": "frame1_textLeft"
+            },
+            "frame2_textLeft": {
+              "value": "frame2_textLeft"
+            },
+            "frame3_textLeft": {
+              "value": "frame3_textLeft"
+            },
+            "frame4_textLeft": {
+              "value": "frame4_textLeft"
+            },
+            "frame1_textTop": {
+              "value": "frame1_textTop"
+            },
+            "frame2_textTop": {
+              "value": "frame2_textTop"
+            },
+            "frame3_textTop": {
+              "value": "frame3_textTop"
+            },
+            "frame4_textTop": {
+              "value": "frame4_textTop"
+            },
+            "cta_fontSize": {
+              "value": "cta_fontSize"
+            },
+            "cta_left": {
+              "value": "cta_left"
+            },
+            "cta_top": {
+              "value": "cta_top"
+            },
+            "cta_textColor": {
+              "value": "cta_textColor"
+            },
+            "cta_bgColor": {
+              "value": "cta_bgColor"
+            },
+            "cta_hoverColor": {
+              "value": "cta_hoverColor"
+            },
+            "cta_hoverTextColor": {
+              "value": "cta_hoverTextColor"
+            },
+            "logo1_width": {
+              "value": "logo1_width"
+            },
+            "logo1_height": {
+              "value": "logo1_height"
+            },
+            "logo1_left": {
+              "value": "logo1_left"
+            },
+            "logo1_top": {
+              "value": "logo1_top"
+            },
+            "logo1_filter": {
+              "value": "logo1_filter"
+            },
+            "logo2_width": {
+              "value": "logo2_width"
+            },
+            "logo2_height": {
+              "value": "logo2_height"
+            },
+            "logo2_left": {
+              "value": "logo2_left"
+            },
+            "logo2_top": {
+              "value": "logo2_top"
+            },
+            "logo2_filter": {
+              "value": "logo2_filter"
+            },
+            "frame1_bgColor": {
+              "value": "frame1_bgColor"
+            },
+            "frame2_bgColor": {
+              "value": "frame2_bgColor"
+            },
+            "frame3_bgColor": {
+              "value": "frame3_bgColor"
+            },
+            "frame4_bgColor": {
+              "value": "frame4_bgColor"
+            },
+            "frame1_textWidth": {
+              "value": "frame1_textWidth"
+            },
+            "frame2_textWidth": {
+              "value": "frame2_textWidth"
+            },
+            "frame3_textWidth": {
+              "value": "frame3_textWidth"
+            },
+            "frame4_textWidth": {
+              "value": "frame4_textWidth"
+            },
+            "frame1_textHeight": {
+              "value": "frame1_textHeight"
+            },
+            "frame2_textHeight": {
+              "value": "frame2_textHeight"
+            },
+            "frame3_textHeight": {
+              "value": "frame3_textHeight"
+            },
+            "frame4_textHeight": {
+              "value": "frame4_textHeight"
+            },
+            "frame4_ctaLeft": {
+              "value": "frame4_ctaLeft"
+            },
+            "frame4_ctaTop": {
+              "value": "frame4_ctaTop"
+            },
+            "main_bgColor": {
+              "value": "main_bgColor"
+            },
+            "main_borderColor": {
+              "value": "main_borderColor"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 639,
+        "url": "https://assets.lemonpi.io/a/font/639/ProximaNova?v=400",
+        "family": "ProximaNova",
+        "variant": "400"
+      },
+      {
+        "advertiserId": 639,
+        "url": "https://assets.lemonpi.io/a/font/639/ProximaNova?v=700",
+        "family": "ProximaNova",
+        "variant": "700"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 639,
+    "name": "Ford"
+  },
+  "folders": {
+    "selectedFolderId": 9535
+  },
+  "port": 57959
+}
