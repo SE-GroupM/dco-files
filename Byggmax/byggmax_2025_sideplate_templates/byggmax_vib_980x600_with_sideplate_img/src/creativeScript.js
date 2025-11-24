@@ -26,6 +26,9 @@ window.addEventListener('lemonpi.content/ready', event => {
     $('#productName_2').html(local_content.productName_2.value);
   
     var productName1_fontSize = local_content.productName1_fontSize.value;
+    var productName1_width = local_content.mainCopy_width.value;
+    var productName1_top = local_content.mainCopy_top_position.value;
+
     var productName2_fontSize = local_content.productName2_fontSize.value;
     var useAnimation = local_content.use_animation.value.toLowerCase();
     var videoAdjustmentTop = local_content.video_placement_topPosition.value.value;
@@ -50,13 +53,19 @@ window.addEventListener('lemonpi.content/ready', event => {
         });
       }
     }
-  
+    // append top and width on mainCopy
+    $('#productName_1').css({
+        'width': parseInt(productName1_width)+'px',
+        'top': parseInt(productName1_top)+'px',
+      });
+
     // If the text gets too big and needs to be adjusted manually
     if(productName1_fontSize != ''){
       $('#productName_1').remove('largerCopy');
       $('#productName_1').css({
         'font-size': parseInt(productName1_fontSize)+'px',
         'line-height': parseInt(productName1_fontSize)+'px',
+  
       });
     }
     if(productName2_fontSize != ''){
@@ -66,9 +75,21 @@ window.addEventListener('lemonpi.content/ready', event => {
       });
     }
     
+  const sideplateLeft = parseInt(local_content.sideplate_left_position.value);
+  const sidePlateWidth = parseInt(local_content.sideplate_width.value);
   // assigning the sideplate the yello "tejp" image
-  $("#sideplate").css("background-image","url(https://assets.lemonpi.io/a/k/c9bd7eb5-0224-4fae-9e2f-7005ff8114a9/Assets/Byggmax-2025/gul_tejp_980x600.png)");
-  
+  if (local_content.tejp.value != ''){
+      $("#sideplate").css("background-image", "url(" + local_content.tejp.value + ")");
+  }else{
+     $("#sideplate").css("background-image","url(https://assets.lemonpi.io/a/k/c9bd7eb5-0224-4fae-9e2f-7005ff8114a9/Assets/Byggmax-2025/gul_tejp_980x600.png)");
+  }
+  // Append sidePlate as background
+  $('#sideplate').css({
+    'left': sideplateLeft+'px',
+    'width': sidePlateWidth +'px',
+
+  });
+
   // variable holding textcolor from adset
   var setTextColors = local_content.textColor.value;
   // Select multiple elements with differnet classes
@@ -87,11 +108,12 @@ window.addEventListener('lemonpi.content/ready', event => {
   }
  
   // If we need to adjust video placement in wider formats
+  const video_width = local_content.video_width.value;
   if (local_content.video_placement_topPosition.value !== ''){
     var videoAdjustmentTop = local_content.video_placement_topPosition.value;
     var playerBgColor = '#FFe632'
     // Using querySelector
-    const videoElement = document.querySelector('player');
+
     if (!isNaN(videoAdjustmentTop)) {
       videoAdjustmentTop += 'px';
     }
@@ -99,6 +121,7 @@ window.addEventListener('lemonpi.content/ready', event => {
     $('.player').css({
       'position': 'absolute',
       'top': videoAdjustmentTop,
+      'width': parseInt(video_width)+'px',
      'background-color': playerBgColor,
     })
   }
@@ -200,13 +223,18 @@ window.addEventListener('lemonpi.content/ready', event => {
 
   // Append logoPlaceholder as background
   $("#logoPlaceholder").css("background-image", "url(" + local_content.logoPlaceholder.value + ")");
+  const logoLeft = parseInt(local_content.logo_left.value);
+  const logoBottom = parseInt(local_content.logo_bottom_top.value);
+
   $('#logoPlaceholder').css({
     'display': 'flex',
     'justify-content': 'flex-start', // Align content to the left inside the div
     'align-items': 'flex-end',       // Align content to the bottom inside the div
     'background-repeat': 'no-repeat',
     'background-size': 'contain',   // Ensure the image fits within the div without cropping
-    'background-position': 'left bottom' // Align the image to the bottom-left corner
+    'background-position': 'left bottom', // Align the image to the bottom-left corner
+    'left': logoLeft+'px',
+    'bottom': logoBottom+'px',
   });
       
   if (useFullScreenVideo === 'yes') {
@@ -224,7 +252,6 @@ window.addEventListener('lemonpi.content/ready', event => {
         })
     }
   }
-
   //////////////////
   /// ANIMATIONS ///
   //////////////////

@@ -26,6 +26,9 @@ window.addEventListener('lemonpi.content/ready', event => {
   $('#productName_2').html("<p>"+local_content.productName_2.value+"</p>");
 
   var productName1_fontSize = local_content.productName1_fontSize.value;
+  var productName1_width = local_content.mainCopy_width.value;
+  var productName1_top = local_content.mainCopy_top_position.value;
+  
   var productName2_fontSize = local_content.productName2_fontSize.value;
   var useAnimation = local_content.use_animation.value.toLowerCase();
   var videoAdjustmentTop = local_content.video_placement_topPosition.value.value;
@@ -53,6 +56,11 @@ window.addEventListener('lemonpi.content/ready', event => {
 
       }
     }
+  // append top and width on mainCopy
+    $('#productName_1').css({
+        'width': parseInt(productName1_width)+'px',
+        'top': parseInt(productName1_top)+'px',
+      });
 
  // If the text gets too big and needs to be adjusted manually
  if(productName1_fontSize != ''){
@@ -68,10 +76,20 @@ window.addEventListener('lemonpi.content/ready', event => {
      'line-height': parseInt(productName2_fontSize)+'px',
    });
  }
+
+  const sideplateLeft = parseInt(local_content.sideplate_left_position.value);
+  const sidePlateWidth = parseInt(local_content.sideplate_width.value);
   // assigning the sideplate the yello "tejp" image
-  $("#sideplate").css({
-    "background-image":"url(https://assets.lemonpi.io/a/k/71e6f490-17f1-46fb-acdf-4135d1bc1c2f/Assets/Byggmax-2025/gul_tejp.png)",
-    "left": sideplateLeftPosition+'px',
+  if (local_content.tejp.value != ''){
+      $("#sideplate").css("background-image", "url(" + local_content.tejp.value + ")");
+  }else{
+     $("#sideplate").css("background-image","url(https://assets.lemonpi.io/a/k/71e6f490-17f1-46fb-acdf-4135d1bc1c2f/Assets/Byggmax-2025/gul_tejp.png)");
+  }
+  // Append sidePlate as background
+  $('#sideplate').css({
+    'left': sideplateLeft+'px',
+    'width': sidePlateWidth +'px',
+
   });
   
   // variable holding textcolor from adset
@@ -91,23 +109,6 @@ window.addEventListener('lemonpi.content/ready', event => {
     });
   }
   
-  // If we need to adjust video placement in wider formats
-  if (local_content.video_placement_topPosition.value !== ''){
-    var videoAdjustmentTop = local_content.video_placement_topPosition.value;
-    var playerBgColor = '#FFe632'
-    // Using querySelector
-    const videoElement = document.querySelector('player');
-    if (!isNaN(videoAdjustmentTop)) {
-      videoAdjustmentTop += 'px';
-    }
-    
-    $('.player').css({
-      'position': 'absolute',
-      'top': videoAdjustmentTop,
-     'background-color': playerBgColor,
-    })
-  }
-  
   /////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////// Videon config //////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////////////////////
@@ -124,6 +125,7 @@ window.addEventListener('lemonpi.content/ready', event => {
   var bannerHeight = '';
 
   if (local_content.image_placeholder.value !== ''){
+    console.log('USE IMAGE')
 
     // If the condition is true, add the .imgBg class to the .player div
     $(".player").addClass("imgBg");
@@ -183,6 +185,14 @@ window.addEventListener('lemonpi.content/ready', event => {
       }
     } // end of if-else
   }
+   // If we need to adjust video placement in wider formats
+  const video_width = local_content.video_width.value;
+
+    $('.player').css({
+      'position': 'absolute',
+      'top': parseInt(videoAdjustmentTop)+'px',
+      'width': parseInt(video_width)+'px',
+    })
 
    // position of badge dynamic elements
    var topPercentage = local_content.badge_top_value.value; // top in %
@@ -203,15 +213,21 @@ window.addEventListener('lemonpi.content/ready', event => {
       'background-size': 'contain',
   })
 
+
   // Append logoPlaceholder as background
   $("#logoPlaceholder").css("background-image", "url(" + local_content.logoPlaceholder.value + ")");
+  const logoLeft = parseInt(local_content.logo_left.value);
+  const logoBottom = parseInt(local_content.logo_bottom_top.value);
+
   $('#logoPlaceholder').css({
     'display': 'flex',
     'justify-content': 'flex-start', // Align content to the left inside the div
     'align-items': 'flex-end',       // Align content to the bottom inside the div
     'background-repeat': 'no-repeat',
     'background-size': 'contain',   // Ensure the image fits within the div without cropping
-    'background-position': 'left bottom' // Align the image to the bottom-left corner
+    'background-position': 'left bottom', // Align the image to the bottom-left corner
+    'left': logoLeft+'px',
+    'bottom': logoBottom+'px',
   });
 
   if (useFullScreenVideo === 'yes') {

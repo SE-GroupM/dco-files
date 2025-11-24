@@ -70,7 +70,7 @@ html, body {
 /* To adjust the player control bar */
 .seenthis-player .seenthis-control-bar{
   left: 110px !important;
-  bottom: 10px !important;
+  bottom: -20px !important;
 }
 
 .logoPlaceholder {
