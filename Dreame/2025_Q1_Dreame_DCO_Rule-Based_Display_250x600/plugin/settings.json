@@ -55,38 +55,6 @@
       "URL_Exit": {
         "type": "click",
         "source": "create"
-      },
-      "Copy_Margin_Top": {
-        "type": "text",
-        "source": "create"
-      },
-      "CTA_Text_Active_Color": {
-        "type": "text",
-        "source": "create"
-      },
-      "CTA_Text_Active_Background_Color": {
-        "type": "text",
-        "source": "create"
-      },
-      "CTA_Text_Active_Border": {
-        "type": "text",
-        "source": "create"
-      },
-      "CTA_Text_Hover_Color": {
-        "type": "text",
-        "source": "create"
-      },
-      "CTA_Text_Hover_Background_Color": {
-        "type": "text",
-        "source": "create"
-      },
-      "CTA_Text_Hover_Border": {
-        "type": "text",
-        "source": "create"
-      },
-      "Extra_Font_URL": {
-        "type": "text",
-        "source": "create"
       }
     },
     "data": {
