@@ -1,0 +1,542 @@
+{
+  "id": "33fbdcfd-1651-4b7d-83ff-29697f2bb616",
+  "version": "1.6.1",
+  "name": "728x90_vsc_DT_2026",
+  "description": "",
+  "size": {
+    "sizes": [
+      {
+        "width": 728,
+        "height": 90,
+        "isCustom": false
+      }
+    ],
+    "customSizes": []
+  },
+  "dependencies": [
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    },
+    {
+      "enabled": true,
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    }
+  ],
+  "placeholders": {
+    "fileName": "Remote file",
+    "format": "CSV",
+    "schema": {
+      "Variant_ID": {
+        "type": "identifier",
+        "source": "feed"
+      },
+      "Creative_dimensions": {
+        "type": "dimension",
+        "source": "feed"
+      },
+      "line_id": {
+        "type": null,
+        "source": "feed"
+      },
+      "product_selector": {
+        "type": null,
+        "source": "feed"
+      },
+      "company_name": {
+        "type": "text",
+        "source": "feed"
+      },
+      "job_title": {
+        "type": "text",
+        "source": "feed"
+      },
+      "description_text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "placement_text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "cta_text": {
+        "type": "text",
+        "source": "feed"
+      },
+      "company_logo": {
+        "type": "image",
+        "source": "feed"
+      },
+      "bg_image": {
+        "type": "image",
+        "source": "feed"
+      },
+      "font_color": {
+        "type": "text",
+        "source": "feed"
+      },
+      "click": {
+        "type": "click",
+        "source": "feed"
+      },
+      "truncJobtitle": {
+        "type": "text",
+        "source": "feed"
+      },
+      "truncJobDescription": {
+        "type": "text",
+        "source": "feed"
+      },
+      "fontSizeJobtitle": {
+        "type": "text",
+        "source": "feed"
+      },
+      "fontSizeJobDes": {
+        "type": "text",
+        "source": "feed"
+      },
+      "company_logo_height": {
+        "type": "text",
+        "source": "feed"
+      },
+      "mercuri_logo_large_formats": {
+        "type": "image",
+        "source": "feed"
+      },
+      "mercuri_logo_small": {
+        "type": "image",
+        "source": "feed"
+      }
+    },
+    "data": {
+      "defaultRowIndex": 0,
+      "list": [
+        {
+          "isIncluded": false,
+          "data": {
+            "Variant_ID": {
+              "value": "DE-24880"
+            },
+            "Creative_dimensions": {
+              "value": "300x250"
+            },
+            "line_id": {
+              "value": ""
+            },
+            "product_selector": {
+              "value": ""
+            },
+            "company_name": {
+              "value": "anonym"
+            },
+            "job_title": {
+              "value": "Senior Projektentwickler (m/w/d)"
+            },
+            "description_text": {
+              "value": "Unser Mandant ist ein renommiertes Unternehmen mit Fokus auf großvolumige Immobilienentwicklungen. Finanzstark, antizyklisch und langfristig ausgerichtet bietet das Unternehmen spannende Prestigeprojekte, hohe Stabilität und sichere Perspektiven."
+            },
+            "placement_text": {
+              "value": "Baden-Württemberg"
+            },
+            "cta_text": {
+              "value": "Mehr lesen"
+            },
+            "company_logo": {
+              "value": "https://www.mercuriurval.com/UI/assets/images/logo.png"
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "font_color": {
+              "value": ""
+            },
+            "click": {
+              "value": "https://www.mercuriurval.com/de-de/opportunity/?jobadid=76357&refno=DE-24880&preview=true*"
+            },
+            "truncJobtitle": {
+              "value": ""
+            },
+            "truncJobDescription": {
+              "value": "110"
+            },
+            "fontSizeJobtitle": {
+              "value": ""
+            },
+            "fontSizeJobDes": {
+              "value": ""
+            },
+            "company_logo_height": {
+              "value": "60"
+            },
+            "mercuri_logo_large_formats": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14684/4/a08a72dbf4934c68b57a04792c87eb44/5.png"
+            },
+            "mercuri_logo_small": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14745/1/1a116e3055304c64b910b2195a5749ec/7.png"
+            }
+          }
+        },
+        {
+          "isIncluded": true,
+          "data": {
+            "Variant_ID": {
+              "value": "DE-24880"
+            },
+            "Creative_dimensions": {
+              "value": "728x90"
+            },
+            "line_id": {
+              "value": ""
+            },
+            "product_selector": {
+              "value": ""
+            },
+            "company_name": {
+              "value": "anonym"
+            },
+            "job_title": {
+              "value": "Senior Projektentwickler (m/w/d)"
+            },
+            "description_text": {
+              "value": "Unser Mandant ist ein renommiertes Unternehmen mit Fokus auf großvolumige Immobilienentwicklungen. Finanzstark, antizyklisch und langfristig ausgerichtet bietet das Unternehmen spannende Prestigeprojekte, hohe Stabilität und sichere Perspektiven."
+            },
+            "placement_text": {
+              "value": "Baden-Württemberg"
+            },
+            "cta_text": {
+              "value": "Mehr lesen"
+            },
+            "company_logo": {
+              "value": "https://www.mercuriurval.com/UI/assets/images/logo.png"
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "font_color": {
+              "value": ""
+            },
+            "click": {
+              "value": "https://www.mercuriurval.com/de-de/opportunity/?jobadid=76357&refno=DE-24880&preview=true*"
+            },
+            "truncJobtitle": {
+              "value": ""
+            },
+            "truncJobDescription": {
+              "value": "100"
+            },
+            "fontSizeJobtitle": {
+              "value": ""
+            },
+            "fontSizeJobDes": {
+              "value": ""
+            },
+            "company_logo_height": {
+              "value": "40"
+            },
+            "mercuri_logo_large_formats": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14684/4/a08a72dbf4934c68b57a04792c87eb44/5.png"
+            },
+            "mercuri_logo_small": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14745/1/1a116e3055304c64b910b2195a5749ec/7.png"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "Variant_ID": {
+              "value": "DE-24880"
+            },
+            "Creative_dimensions": {
+              "value": "300x600"
+            },
+            "line_id": {
+              "value": ""
+            },
+            "product_selector": {
+              "value": ""
+            },
+            "company_name": {
+              "value": "anonym"
+            },
+            "job_title": {
+              "value": "Senior Projektentwickler (m/w/d)"
+            },
+            "description_text": {
+              "value": "Unser Mandant ist ein renommiertes Unternehmen mit Fokus auf großvolumige Immobilienentwicklungen. Finanzstark, antizyklisch und langfristig ausgerichtet bietet das Unternehmen spannende Prestigeprojekte, hohe Stabilität und sichere Perspektiven."
+            },
+            "placement_text": {
+              "value": "Baden-Württemberg"
+            },
+            "cta_text": {
+              "value": "Mehr lesen"
+            },
+            "company_logo": {
+              "value": "https://www.mercuriurval.com/UI/assets/images/logo.png"
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "font_color": {
+              "value": ""
+            },
+            "click": {
+              "value": "https://www.mercuriurval.com/de-de/opportunity/?jobadid=76357&refno=DE-24880&preview=true*"
+            },
+            "truncJobtitle": {
+              "value": ""
+            },
+            "truncJobDescription": {
+              "value": "120"
+            },
+            "fontSizeJobtitle": {
+              "value": ""
+            },
+            "fontSizeJobDes": {
+              "value": ""
+            },
+            "company_logo_height": {
+              "value": "70"
+            },
+            "mercuri_logo_large_formats": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14684/4/a08a72dbf4934c68b57a04792c87eb44/5.png"
+            },
+            "mercuri_logo_small": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14745/1/1a116e3055304c64b910b2195a5749ec/7.png"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "Variant_ID": {
+              "value": "DE-24880"
+            },
+            "Creative_dimensions": {
+              "value": "970x250"
+            },
+            "line_id": {
+              "value": ""
+            },
+            "product_selector": {
+              "value": ""
+            },
+            "company_name": {
+              "value": "anonym"
+            },
+            "job_title": {
+              "value": "Senior Projektentwickler (m/w/d)"
+            },
+            "description_text": {
+              "value": "Unser Mandant ist ein renommiertes Unternehmen mit Fokus auf großvolumige Immobilienentwicklungen. Finanzstark, antizyklisch und langfristig ausgerichtet bietet das Unternehmen spannende Prestigeprojekte, hohe Stabilität und sichere Perspektiven."
+            },
+            "placement_text": {
+              "value": "Baden-Württemberg"
+            },
+            "cta_text": {
+              "value": "Mehr lesen"
+            },
+            "company_logo": {
+              "value": "https://www.mercuriurval.com/UI/assets/images/logo.png"
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "font_color": {
+              "value": ""
+            },
+            "click": {
+              "value": "https://www.mercuriurval.com/de-de/opportunity/?jobadid=76357&refno=DE-24880&preview=true*"
+            },
+            "truncJobtitle": {
+              "value": ""
+            },
+            "truncJobDescription": {
+              "value": "120"
+            },
+            "fontSizeJobtitle": {
+              "value": ""
+            },
+            "fontSizeJobDes": {
+              "value": ""
+            },
+            "company_logo_height": {
+              "value": "70"
+            },
+            "mercuri_logo_large_formats": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14684/4/a08a72dbf4934c68b57a04792c87eb44/5.png"
+            },
+            "mercuri_logo_small": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14745/1/1a116e3055304c64b910b2195a5749ec/7.png"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "Variant_ID": {
+              "value": "DE-24880"
+            },
+            "Creative_dimensions": {
+              "value": "336x280"
+            },
+            "line_id": {
+              "value": ""
+            },
+            "product_selector": {
+              "value": ""
+            },
+            "company_name": {
+              "value": "anonym"
+            },
+            "job_title": {
+              "value": "Senior Projektentwickler (m/w/d)"
+            },
+            "description_text": {
+              "value": "Unser Mandant ist ein renommiertes Unternehmen mit Fokus auf großvolumige Immobilienentwicklungen. Finanzstark, antizyklisch und langfristig ausgerichtet bietet das Unternehmen spannende Prestigeprojekte, hohe Stabilität und sichere Perspektiven."
+            },
+            "placement_text": {
+              "value": "Baden-Württemberg"
+            },
+            "cta_text": {
+              "value": "Mehr lesen"
+            },
+            "company_logo": {
+              "value": "https://www.mercuriurval.com/UI/assets/images/logo.png"
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "font_color": {
+              "value": ""
+            },
+            "click": {
+              "value": "https://www.mercuriurval.com/de-de/opportunity/?jobadid=76357&refno=DE-24880&preview=true*"
+            },
+            "truncJobtitle": {
+              "value": ""
+            },
+            "truncJobDescription": {
+              "value": "100"
+            },
+            "fontSizeJobtitle": {
+              "value": ""
+            },
+            "fontSizeJobDes": {
+              "value": ""
+            },
+            "company_logo_height": {
+              "value": "60"
+            },
+            "mercuri_logo_large_formats": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14684/4/a08a72dbf4934c68b57a04792c87eb44/5.png"
+            },
+            "mercuri_logo_small": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14745/1/1a116e3055304c64b910b2195a5749ec/7.png"
+            }
+          }
+        },
+        {
+          "isIncluded": false,
+          "data": {
+            "Variant_ID": {
+              "value": "DE-24880"
+            },
+            "Creative_dimensions": {
+              "value": "320x100"
+            },
+            "line_id": {
+              "value": ""
+            },
+            "product_selector": {
+              "value": ""
+            },
+            "company_name": {
+              "value": "anonym"
+            },
+            "job_title": {
+              "value": "Senior Projektentwickler (m/w/d)"
+            },
+            "description_text": {
+              "value": "Unser Mandant ist ein renommiertes Unternehmen mit Fokus auf großvolumige Immobilienentwicklungen. Finanzstark, antizyklisch und langfristig ausgerichtet bietet das Unternehmen spannende Prestigeprojekte, hohe Stabilität und sichere Perspektiven."
+            },
+            "placement_text": {
+              "value": "Baden-Württemberg"
+            },
+            "cta_text": {
+              "value": "Mehr lesen"
+            },
+            "company_logo": {
+              "value": "https://www.mercuriurval.com/UI/assets/images/logo.png"
+            },
+            "bg_image": {
+              "value": ""
+            },
+            "font_color": {
+              "value": ""
+            },
+            "click": {
+              "value": "https://www.mercuriurval.com/de-de/opportunity/?jobadid=76357&refno=DE-24880&preview=true*"
+            },
+            "truncJobtitle": {
+              "value": ""
+            },
+            "truncJobDescription": {
+              "value": "100"
+            },
+            "fontSizeJobtitle": {
+              "value": ""
+            },
+            "fontSizeJobDes": {
+              "value": ""
+            },
+            "company_logo_height": {
+              "value": "40"
+            },
+            "mercuri_logo_large_formats": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14684/4/a08a72dbf4934c68b57a04792c87eb44/5.png"
+            },
+            "mercuri_logo_small": {
+              "value": "https://lemonpi-prod-templates.s3.amazonaws.com/a216/14745/1/1a116e3055304c64b910b2195a5749ec/7.png"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fonts": {
+    "Google": [],
+    "Choreograph": [
+      {
+        "advertiserId": 249,
+        "url": "https://assets.lemonpi.io/a/font/249/HelveticaNeueLTStd-Bd?v=700",
+        "family": "HelveticaNeueLTStd-Bd",
+        "variant": "700"
+      },
+      {
+        "advertiserId": 249,
+        "url": "https://assets.lemonpi.io/a/font/249/HelveticaNeueLTStd-Heavy?v=900",
+        "family": "HelveticaNeueLTStd-Heavy",
+        "variant": "900"
+      },
+      {
+        "advertiserId": 249,
+        "url": "https://assets.lemonpi.io/a/font/249/HelveticaNeueLTStd-Lt?v=300",
+        "family": "HelveticaNeueLTStd-Lt",
+        "variant": "300"
+      }
+    ]
+  },
+  "agency": {
+    "id": 7,
+    "name": "Xaxis Sweden"
+  },
+  "advertiser": {
+    "id": 249,
+    "name": "Mercuri Urval DE"
+  },
+  "folders": {
+    "selectedFolderId": 13262
+  },
+  "port": 60376
+}
